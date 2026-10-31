@@ -46,6 +46,7 @@ const defaultState = () => ({
   view: "home",
   readerBookId: "3-juan",
   readerOrigin: "home",
+  readerChapter: null,
   completedChapters: {},
   toast: ""
 });
@@ -77,7 +78,19 @@ function isBookComplete(book) { return getCompletedChapters(book).length >= book
 function totalCompletedChapters() { return Object.values(state.completedChapters).reduce((sum, chapters) => sum + chapters.length, 0); }
 function totalCompletedBooks() { return BOOKS.filter(isBookComplete).length; }
 function currentBook() { return BOOKS.find((book) => !isBookComplete(book)) || BOOKS[BOOKS.length - 1]; }
-function currentChapter(book = currentBook()) { return Math.min((getCompletedChapters(book).length || 0) + 1, book.chapters); }
+function currentChapter(book = currentBook()) {
+  const completed = new Set(getCompletedChapters(book));
+  for (let chapter = 1; chapter <= book.chapters; chapter += 1) {
+    if (!completed.has(chapter)) return chapter;
+  }
+  return book.chapters;
+}
+function readerChapter(book) {
+  const selected = state.readerBookId === book.id && Number.isInteger(state.readerChapter)
+    ? state.readerChapter
+    : currentChapter(book);
+  return Math.max(1, Math.min(selected, book.chapters));
+}
 function percent(value, total) { return total ? Math.round((value / total) * 100) : 0; }
 function escapeHtml(value) { return String(value).replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char])); }
 
@@ -193,15 +206,27 @@ function renderMore() {
   return `<main class="screen"><div class="hero-copy"><p class="eyebrow">Más</p><h1>Tu experiencia.</h1><p>Preferencias sencillas para mantener la ruta a tu ritmo.</p></div><div class="more-list" style="margin-top:24px"><div class="more-row"><span><strong>Meta de lectura</strong><span>${state.goal === "none" ? "Sin fecha" : `${state.goal} días`}</span></span><button class="button button-secondary" data-action="change-goal">Cambiar</button></div><div class="more-row"><span><strong>Progreso local</strong><span>Guardado en este dispositivo</span></span><span aria-label="Activado">${icon("check", 17)}</span></div><div class="more-row"><span><strong>Contenido</strong><span>Texto y videos con fuente por definir</span></span><span aria-hidden="true">${icon("chevronRight", 18)}</span></div></div><div class="context-card" style="margin-top:24px"><h3>Una nota sobre este prototipo</h3><p style="margin-bottom:0">La lectura que ves aquí es una maqueta de interacción. El contenido bíblico y los videos reales se integrarán después de resolver las licencias.</p></div></main>`;
 }
 
+function renderChapterList(book, selectedChapter) {
+  const completed = new Set(getCompletedChapters(book));
+  const rows = Array.from({ length: book.chapters }, (_, index) => {
+    const chapter = index + 1;
+    const done = completed.has(chapter);
+    const selected = chapter === selectedChapter;
+    const status = done ? "Leído" : selected ? "En curso" : "";
+    return `<button class="chapter-row ${done ? "is-complete" : ""} ${selected ? "is-current" : ""}" data-action="select-chapter" data-chapter="${chapter}" aria-label="Capítulo ${chapter}${done ? ", leído" : ", pendiente"}" ${selected ? 'aria-current="step"' : ""}><span class="chapter-number">${done ? icon("check", 15) : chapter}</span><span class="chapter-label">Capítulo ${chapter}</span><span class="chapter-status">${status}</span></button>`;
+  }).join("");
+  return `<section class="chapter-panel" aria-labelledby="chapter-list-title"><div class="chapter-panel-header"><div><p class="eyebrow">Tu avance</p><h2 id="chapter-list-title">Capítulos</h2></div><strong>${completed.size} de ${book.chapters}</strong></div><div class="chapter-grid">${rows}</div></section>`;
+}
+
 function renderReader() {
   const book = getBook(state.readerBookId);
-  const chapter = currentChapter(book);
+  const chapter = readerChapter(book);
   const completed = getCompletedChapters(book).includes(chapter);
   const bookProgress = getCompletedChapters(book).length;
   const origin = state.readerOrigin === "route" ? "Ruta" : "Hoy";
   const video = getBookVideo(book);
   const contextVideo = video ? renderVideoCard(video) : renderPendingVideoCard();
-  return `<main><header class="reader-topbar"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><div class="reader-topbar-copy"><strong>${escapeHtml(book.name)}</strong><span>Capítulo ${chapter} de ${book.chapters} · Libro ${book.index + 1} de 66</span></div><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></header><nav class="reader-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="breadcrumb-link" data-action="back-context">${icon(origin === "Ruta" ? "route" : "house", 15)}<span>${origin}</span></button><span class="breadcrumb-separator" aria-hidden="true">${icon("chevronRight", 15)}</span><span class="breadcrumb-current" aria-current="page">${escapeHtml(book.name)}</span></nav><div class="reader-progress">${progressBar(bookProgress, book.chapters, "Progreso del libro")}</div><article class="reader-content"><p class="eyebrow">Antes de leer</p><h1>${escapeHtml(book.name)}<br><span style="color:var(--brand)">Capítulo ${chapter}</span></h1><div class="context-card"><h3>Lee con un poco de contexto</h3>${contextVideo}</div><div class="reading-copy"><p class="reading-note">Contenido de demostración: aquí se integrará el texto bíblico autorizado. La interfaz ya está preparada para guardar tu check por capítulo.</p><p>La lectura comienza aquí. El objetivo de esta pantalla es mantener el foco: una página cómoda, controles claros y un solo siguiente paso.</p><p>Cuando termines este capítulo, marca tu avance. Si haces una pausa, tu progreso permanecerá guardado en este dispositivo.</p></div></article><footer class="reader-footer"><button class="button button-primary button-wide" data-action="complete-chapter">${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button></footer></main>`;
+  return `<main><header class="reader-topbar"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><div class="reader-topbar-copy"><strong>${escapeHtml(book.name)}</strong><span>Capítulo ${chapter} de ${book.chapters} · Libro ${book.index + 1} de 66</span></div><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></header><nav class="reader-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="breadcrumb-link" data-action="back-context">${icon(origin === "Ruta" ? "route" : "house", 15)}<span>${origin}</span></button><span class="breadcrumb-separator" aria-hidden="true">${icon("chevronRight", 15)}</span><span class="breadcrumb-current" aria-current="page">${escapeHtml(book.name)}</span></nav><div class="reader-progress">${progressBar(bookProgress, book.chapters, "Progreso del libro")}</div><article class="reader-content"><p class="eyebrow">Antes de leer</p><h1>${escapeHtml(book.name)}<br><span style="color:var(--brand)">Capítulo ${chapter}</span></h1><div class="context-card"><h3>Lee con un poco de contexto</h3>${contextVideo}</div>${renderChapterList(book, chapter)}<div class="reading-copy"><p class="reading-note">Contenido de demostración: aquí se integrará el texto bíblico autorizado. La interfaz ya está preparada para guardar tu check por capítulo.</p><p>La lectura comienza aquí. El objetivo de esta pantalla es mantener el foco: una página cómoda, controles claros y un solo siguiente paso.</p><p>Cuando termines este capítulo, marca tu avance. Si haces una pausa, tu progreso permanecerá guardado en este dispositivo.</p></div></article><footer class="reader-footer"><button class="button button-primary button-wide" data-action="complete-chapter">${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button></footer></main>`;
 }
 
 function renderNav() {
@@ -212,6 +237,7 @@ function renderNav() {
 function openReader(bookId = currentBook().id) {
   state.readerBookId = bookId;
   state.readerOrigin = state.view === "route" ? "route" : "home";
+  state.readerChapter = currentChapter(getBook(bookId));
   if (state.onboardingStep === 3 && bookId === "3-juan") state.onboardingComplete = true;
   state.view = "reader";
   saveState();
@@ -239,7 +265,7 @@ function activateVideo(button) {
 
 function completeChapter() {
   const book = getBook(state.readerBookId);
-  const chapter = currentChapter(book);
+  const chapter = readerChapter(book);
   const chapters = new Set(getCompletedChapters(book));
   chapters.add(chapter);
   state.completedChapters[book.id] = [...chapters].sort((a, b) => a - b);
@@ -248,8 +274,12 @@ function completeChapter() {
     state.onboardingComplete = true;
     state.view = "home";
     showToast("Primer libro completado. Tu ruta ya comenzó.");
+  } else if (!finishedBook) {
+    state.readerChapter = currentChapter(book);
+    showToast(`Capítulo ${chapter} guardado.`);
   } else {
     state.view = "home";
+    state.readerChapter = null;
     showToast(finishedBook ? `${book.name} completado. Siguiente: ${BOOKS[book.index + 1]?.name || "Salmos"}.` : `Capítulo ${chapter} guardado.`);
   }
   saveState();
@@ -277,6 +307,7 @@ function bindEvents() {
       if (action === "show-route") { state.view = "route"; saveState(); render(); }
       if (action === "show-progress") { state.view = "progress"; saveState(); render(); }
       if (action === "open-book") { openReader(element.dataset.bookId); }
+      if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); saveState(); render(); }
       if (action === "back-home" || action === "back-context") { state.view = state.readerOrigin === "route" ? "route" : "home"; saveState(); render(); }
       if (action === "complete-chapter") { completeChapter(); }
       if (action === "change-goal") {
