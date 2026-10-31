@@ -181,6 +181,7 @@ function render() {
   root.innerHTML = state.onboardingComplete || state.view === "reader" ? renderApp() : renderOnboarding();
   document.body.classList.toggle("kb-navigation-open", Boolean(state.navigationOpen));
   bindEvents();
+  setupReaderSectionNav();
   if (state.navigationOpen) document.querySelector(".kb-navigation-close")?.focus({preventScroll:true});
   bindImageSkeletons();
   if (state.view === "reader" && !state.readerBookInfoOpen) {
@@ -547,7 +548,7 @@ function renderReadingCopy(book, chapter) {
     return `<div class="reading-copy reading-copy-pending ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" data-reading-content><p class="reading-note">${icon("sparkles", 17)}<span><strong>${loadState === "error" ? "Sin conexión:" : "Cargando Biblia:"}</strong> ${message}</span></p><p>Mientras tanto, puedes explorar el contexto del libro, navegar sus capítulos y guardar tu avance cuando el texto esté listo.</p></div>`;
   }
 
-  return `<section class="reading-copy scripture-passage ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" data-reading-content aria-labelledby="scripture-title"><div class="scripture-source"><span><strong>${translation.name}</strong><small>${translation.license} · ${translation.publisher}</small></span><a href="${passage.sourceUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div><h2 id="scripture-title" class="sr-only">${escapeHtml(book.name)} ${chapter}</h2><div class="verse-list">${passage.verses.map((verse) => `${getPericopes(book.id, chapter).filter(section => section.startVerse === verse.number && !["needs-translation", "needs-editorial-translation"].includes(section.status)).map(section => `<h3 class="kb-pericope-heading">${escapeHtml(section.title)}</h3>`).join("")}<p class="scripture-verse"><sup>${verse.number}</sup><span>${escapeHtml(verse.text)}</span></p>`).join("")}</div><p class="scripture-attribution">Texto de ${translation.name}. ${translation.license}.</p></section>`;
+  return `<section class="reading-copy scripture-passage ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" data-reading-content aria-labelledby="scripture-title"><div class="scripture-source"><span><strong>${translation.name}</strong><small>${translation.license} · ${translation.publisher}</small></span><a href="${passage.sourceUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div><h2 id="scripture-title" class="sr-only">${escapeHtml(book.name)} ${chapter}</h2><div class="verse-list">${passage.verses.map((verse) => `${getPericopes(book.id, chapter).filter(section => section.startVerse === verse.number && !["needs-translation", "needs-editorial-translation"].includes(section.status)).map(section => `<h3 id="kb-section-${book.id}-${chapter}-${section.startVerse}" class="kb-pericope-heading">${escapeHtml(section.title)}</h3>`).join("")}<p class="scripture-verse"><sup>${verse.number}</sup><span>${escapeHtml(verse.text)}</span></p>`).join("")}</div><p class="scripture-attribution">Texto de ${translation.name}. ${translation.license}.</p></section>`;
 }
 
 function renderBookTextCredits(book) {
@@ -561,6 +562,67 @@ function renderBookTextCredits(book) {
   }).join("") : '<p class="kb-reader-credit-empty">No se han identificado recopiladores específicos para este libro en el registro.</p>';
   return `<aside class="kb-reader-credits" aria-label="Autor y recopiladores del libro"><p class="eyebrow">Personas detrás del texto</p><div class="kb-reader-credit-group"><h3>Autor</h3>${authorContent}</div><div class="kb-reader-credit-group"><h3>Recopiladores</h3>${compilerContent}</div><p class="kb-reader-credit-disclaimer">Las atribuciones tradicionales y las funciones documentadas no son equivalentes.</p></aside>`;
 }
+function readerSections(book, chapter) {
+  return getPericopes(book.id, chapter).filter(section => section.title && !["needs-translation", "needs-editorial-translation"].includes(section.status));
+}
+function renderReaderSectionNav(book, chapter) {
+  const sections = readerSections(book, chapter);
+  if (sections.length < 2) return "";
+  return `<nav class="kb-section-nav" aria-label="Secciones de ${escapeHtml(book.name)} capítulo ${chapter}"><div class="kb-section-tabs">${sections.map((section, index) => `<a class="kb-section-tab" href="#kb-section-${book.id}-${chapter}-${section.startVerse}" data-section-verse="${section.startVerse}" ${index === 0 ? 'aria-current="location"' : ""}>${escapeHtml(section.title)}</a>`).join("")}</div></nav>`;
+}
+let sectionNavCleanup = null;
+function setupReaderSectionNav() {
+  sectionNavCleanup?.();
+  sectionNavCleanup = null;
+  const nav = document.querySelector(".kb-section-nav");
+  if (!nav) return;
+  const header = document.querySelector(".reader-topbar");
+  const tabs = [...nav.querySelectorAll(".kb-section-tab")];
+  const targets = tabs.map(tab => document.getElementById(tab.hash.slice(1)));
+  if (targets.some(target => !target)) return;
+  const controller = new AbortController();
+  const updatePosition = () => {
+    const height = header?.getBoundingClientRect().height || 0;
+    nav.style.top = height + "px";
+    document.documentElement.style.setProperty("--kb-section-offset", (height + nav.getBoundingClientRect().height + 18) + "px");
+  };
+  const activate = index => {
+    tabs.forEach((tab, i) => {
+      if (i === index) tab.setAttribute("aria-current", "location");
+      else tab.removeAttribute("aria-current");
+    });
+    const tab = tabs[index];
+    if (tab && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      tab.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    }
+  };
+  let frame = 0;
+  const track = () => {
+    if (frame) return;
+    frame = requestAnimationFrame(() => {
+      frame = 0;
+      const threshold = nav.getBoundingClientRect().bottom + 26;
+      let current = 0;
+      targets.forEach((target, i) => { if (target.getBoundingClientRect().top <= threshold) current = i; });
+      activate(current);
+    });
+  };
+  tabs.forEach((tab, index) => tab.addEventListener("click", event => {
+    event.preventDefault();
+    updatePosition();
+    const target = targets[index];
+    const offset = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--kb-section-offset")) || 150;
+    window.scrollTo({ top: window.scrollY + target.getBoundingClientRect().top - offset, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+    history.replaceState(null, "", tab.hash);
+    activate(index);
+  }, { signal: controller.signal }));
+  window.addEventListener("scroll", track, { passive: true, signal: controller.signal });
+  window.addEventListener("resize", () => { updatePosition(); track(); }, { passive: true, signal: controller.signal });
+  updatePosition();
+  track();
+  sectionNavCleanup = () => { controller.abort(); if (frame) cancelAnimationFrame(frame); document.documentElement.style.removeProperty("--kb-section-offset"); };
+}
+
 function renderReader() {
   const book = getBook(state.readerBookId);
   const chapter = readerChapter(book);
@@ -573,7 +635,7 @@ function renderReader() {
   const readerBody = `${renderReaderContext(book, contextVideo)}${renderChapterList(book, chapter)}${state.readerBookInfoOpen ? renderBookInfoPage(book) : renderReadingCopy(book, chapter) + (chapter === book.chapters ? renderBookTextCredits(book) : "")}`;
   const readProgress = Number.isFinite(state.readerReadingProgress) ? state.readerReadingProgress : 0;
   const readerFooter = state.readerBookInfoOpen ? "" : `<footer class="reader-footer"><div class="reader-reading-meter" data-reading-meter><div class="reader-reading-meter-copy"><span data-reading-progress-label>${readProgress}% leído</span><span>Capítulo ${chapter}</span></div><div class="reader-reading-track" role="progressbar" aria-label="Progreso de lectura del capítulo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${readProgress}"><div class="reader-reading-fill" data-reading-progress-fill style="width:${readProgress}%"></div></div></div><button class="button button-primary button-wide" data-action="${completed && chapter < book.chapters ? "continue-chapter" : "complete-chapter"}" data-complete-chapter ${completed ? 'data-completed="true"' : ""} ${!completed && readProgress < 100 ? "disabled" : ""}>${completed && chapter < book.chapters ? `Continuar al capítulo ${chapter + 1} ${icon("chevronRight", 17)}` : chapter === book.chapters ? `Completar libro ${icon("check", 17)}` : "Marcar como leído"}</button></footer>`;
-  return `<main class="reader-page" style="${categoryStyle(book.category)}"><header class="reader-topbar kb-reader-compact-header"><div class="kb-reader-toolbar"><button class="reader-back kb-reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 21)}</button><div class="kb-reader-toolbar-right"><button class="reader-format-button kb-reader-format" data-action="toggle-reader-format" aria-label="Formato de lectura" aria-expanded="${state.readerDisplayOpen}" aria-controls="reader-display-menu">${icon("sliders", 19)}</button><div class="reader-more-anchor"><button class="icon-button reader-more-trigger" data-action="toggle-reader-more" aria-label="Más opciones del capítulo" aria-haspopup="menu" aria-expanded="${Boolean(state.readerMoreOpen)}" aria-controls="reader-more-menu">${icon("ellipsis", 20)}</button>${state.readerMoreOpen ? `<div class="reader-more-popover" id="reader-more-menu" role="menu">${completed ? `<button role="menuitem" data-action="mark-chapter-unread">${icon("bookOpen", 17)}<span>Marcar como no leído</span></button>` : `<p>Este capítulo aún no está marcado como leído.</p>`}</div>` : ""}</div></div></div><div class="kb-reader-selector-row">${renderReaderSelection(book, chapter)}</div></header>${renderReaderDisplayMenu()}<div class="reader-progress"><div class="reader-progress-copy"><span>Progreso del libro</span><strong>${bookProgress} de ${book.chapters} capítulos</strong></div><div class="progress-track" role="progressbar" aria-label="Progreso del libro" aria-valuemin="0" aria-valuemax="${book.chapters}" aria-valuenow="${bookProgress}"><div class="progress-fill" style="width:${percent(bookProgress, book.chapters)}%"></div></div></div><article class="reader-content"><div class="reader-heading"><div class="reader-meta-pill"><span>Capítulo ${chapter} de ${book.chapters}</span></div><h1>${escapeHtml(book.name)}</h1></div>${readerBody}</article>${readerFooter}</main>`;
+  return `<main class="reader-page" style="${categoryStyle(book.category)}"><header class="reader-topbar kb-reader-compact-header"><div class="kb-reader-toolbar"><button class="reader-back kb-reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 21)}</button><div class="kb-reader-toolbar-right"><button class="reader-format-button kb-reader-format" data-action="toggle-reader-format" aria-label="Formato de lectura" aria-expanded="${state.readerDisplayOpen}" aria-controls="reader-display-menu">${icon("sliders", 19)}</button><div class="reader-more-anchor"><button class="icon-button reader-more-trigger" data-action="toggle-reader-more" aria-label="Más opciones del capítulo" aria-haspopup="menu" aria-expanded="${Boolean(state.readerMoreOpen)}" aria-controls="reader-more-menu">${icon("ellipsis", 20)}</button>${state.readerMoreOpen ? `<div class="reader-more-popover" id="reader-more-menu" role="menu">${completed ? `<button role="menuitem" data-action="mark-chapter-unread">${icon("bookOpen", 17)}<span>Marcar como no leído</span></button>` : `<p>Este capítulo aún no está marcado como leído.</p>`}</div>` : ""}</div></div></div><div class="kb-reader-selector-row">${renderReaderSelection(book, chapter)}</div></header>${renderReaderSectionNav(book, chapter)}${renderReaderDisplayMenu()}<div class="reader-progress"><div class="reader-progress-copy"><span>Progreso del libro</span><strong>${bookProgress} de ${book.chapters} capítulos</strong></div><div class="progress-track" role="progressbar" aria-label="Progreso del libro" aria-valuemin="0" aria-valuemax="${book.chapters}" aria-valuenow="${bookProgress}"><div class="progress-fill" style="width:${percent(bookProgress, book.chapters)}%"></div></div></div><article class="reader-content"><div class="reader-heading"><div class="reader-meta-pill"><span>Capítulo ${chapter} de ${book.chapters}</span></div><h1>${escapeHtml(book.name)}</h1></div>${readerBody}</article>${readerFooter}</main>`;
 }
 
 function renderNav() {
