@@ -581,3 +581,12 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .kol-discovery-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:12px 18px;border-radius:12px;background:#9e5038;color:#fff;text-decoration:none;font-weight:600;font-size:.92rem}
 .kol-discovery-link:focus-visible{outline:3px solid #29231f;outline-offset:3px}
 @media(prefers-reduced-motion:no-preference){.kol-discovery-link{transition:background .2s ease}.kol-discovery-link:hover{background:#803d2b}}
+
+/* Loading state for editorial video thumbnails */
+.video-poster.is-loading{position:relative;overflow:hidden;background:#e9e4db}
+.video-poster.is-loading::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(105deg,#e9e4db 15%,#f7f3ec 40%,#e9e4db 65%);background-size:200% 100%;animation:video-skeleton-shimmer 1.5s ease-in-out infinite;pointer-events:none}
+.video-poster.is-loading .video-thumbnail{opacity:0}
+.video-poster.is-loading .video-poster-content{visibility:hidden}
+.video-poster.image-failed{background:#e9e4db}
+@keyframes video-skeleton-shimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+@media(prefers-reduced-motion:reduce){.video-poster.is-loading::before{animation:none;background:#e9e4db}}
