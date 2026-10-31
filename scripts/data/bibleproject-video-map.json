@@ -195,6 +195,9 @@
     {
       "key": "cantares",
       "sourcePath": "cantares",
+      "sourcePaths": [
+        "cantar-de-los-cantares"
+      ],
       "id": "bp-cantares",
       "bookIds": [
         "cantares"

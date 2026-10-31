@@ -109,6 +109,64 @@ export function parseVideoPage(html, pageUrl) {
   };
 }
 
+const BOOK_LABELS = {
+  genesis: "Génesis", exodo: "Éxodo", levitico: "Levítico", numeros: "Números", deuteronomio: "Deuteronomio",
+  josue: "Josué", jueces: "Jueces", rut: "Rut", "1-samuel": "1 Samuel", "2-samuel": "2 Samuel",
+  "1-2-reyes": "1 y 2 Reyes", "esdras-nehemias": "Esdras-Nehemías", ester: "Ester", job: "Job", salmos: "Salmos",
+  proverbios: "Proverbios", eclesiastes: "Eclesiastés", cantares: "Cantar de los Cantares", isaias: "Isaías",
+  jeremias: "Jeremías", lamentaciones: "Lamentaciones", ezequiel: "Ezequiel", daniel: "Daniel", oseas: "Oseas",
+  joel: "Joel", amos: "Amós", abdias: "Abdías", jonas: "Jonás", miqueas: "Miqueas", nahum: "Nahúm",
+  habacuc: "Habacuc", sofonias: "Sofonías", hageo: "Hageo", zacarias: "Zacarías", malaquias: "Malaquías",
+  "1-2-cronicas": "1 y 2 Crónicas", mateo: "Mateo", marcos: "Marcos", juan: "Juan", lucas: "Lucas", hechos: "Hechos",
+  romanos: "Romanos", "1-corintios": "1 Corintios", "2-corintios": "2 Corintios", galatas: "Gálatas", efesios: "Efesios",
+  filipenses: "Filipenses", colosenses: "Colosenses", "1-tesalonicenses": "1 Tesalonicenses", "2-tesalonicenses": "2 Tesalonicenses",
+  "1-timoteo": "1 Timoteo", "2-timoteo": "2 Timoteo", tito: "Tito", filemon: "Filemón", hebreos: "Hebreos",
+  santiago: "Santiago", "1-pedro": "1 Pedro", "2-pedro": "2 Pedro", "1-3-juan": "1–3 Juan", judas: "Judas", apocalipsis: "Apocalipsis"
+};
+
+function titleFromEntry(entry) {
+  if (entry.title) return entry.title;
+  const key = entry.key;
+  const base = Object.keys(BOOK_LABELS).sort((a, b) => b.length - a.length).find(candidate => key === candidate || key.startsWith(`${candidate}-`));
+  if (!base) return key.replaceAll("-", " ");
+  const suffix = key.slice(base.length).replace(/^-/, "").replace(/(\d+)-(\d+)/, "$1–$2");
+  return suffix ? `${BOOK_LABELS[base]} ${suffix}` : BOOK_LABELS[base];
+}
+
+export function parseMuxCatalog(html) {
+  const media = new Map();
+  for (const match of html.matchAll(/https?:\/\/stream\.mux\.com\/[^"'<>\s]+/gi)) {
+    try {
+      const url = new URL(decodeHtml(match[0]));
+      const download = url.searchParams.get("download");
+      const playbackId = url.pathname.split("/").filter(Boolean)[0];
+      if (!download || !playbackId) continue;
+      const key = decodeURIComponent(download).replace(/\.mp4$/i, "");
+      media.set(key, { key, playbackId, videoUrl: url.href });
+    } catch {
+      // Ignore malformed links and continue with the official catalog.
+    }
+  }
+  return media;
+}
+
+export function parseMuxVideo(entry, media, catalogUrl) {
+  const title = titleFromEntry(entry);
+  const thumbnailUrl = `https://image.mux.com/${media.playbackId}/thumbnail.jpg`;
+  return {
+    title,
+    description: `${title}. Video oficial de Proyecto Biblia.`,
+    duration: "Video",
+    mediaProvider: "mux",
+    playbackId: media.playbackId,
+    videoUrl: media.videoUrl,
+    embedUrl: `https://player.mux.com/${media.playbackId}`,
+    thumbnailUrl,
+    thumbnail: thumbnailUrl,
+    pageUrl: catalogUrl
+  };
+}
+
 async function fetchPage(url) {
   const response = await fetch(url, { headers: REQUEST_HEADERS, signal: AbortSignal.timeout(20000) });
   if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
@@ -150,20 +208,39 @@ function normalizedRecord(entry, parsed, existing) {
 export async function importRegistry({ map, existing, strict = false, fetchImpl = fetch, onProgress = () => {} }) {
   const videos = {};
   const unresolved = [];
+  let catalogMedia = new Map();
+  let catalogError = null;
+  try {
+    const response = await fetchImpl(map.catalogUrl, { headers: REQUEST_HEADERS, signal: AbortSignal.timeout(20000) });
+    if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+    catalogMedia = parseMuxCatalog(await response.text());
+  } catch (error) {
+    catalogError = error;
+  }
   for (const entry of map.videos) {
     const previous = existing.videos?.[entry.id];
     let parsed = null;
     let resolvedUrl = null;
     let lastError = null;
-    for (const url of candidateUrls(entry)) {
-      try {
-        const response = await fetchImpl(url, { headers: REQUEST_HEADERS, signal: AbortSignal.timeout(20000) });
-        if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-        parsed = parseVideoPage(await response.text(), url);
-        if (parsed) { resolvedUrl = url; break; }
-        lastError = new Error("No se encontró un video de YouTube en la página");
-      } catch (error) {
-        lastError = error;
+    const sourceKeys = [entry.sourcePath, ...(entry.sourcePaths || [])];
+    if (!previous?.youtubeId) {
+      const muxMedia = sourceKeys.map(key => catalogMedia.get(key)).find(Boolean);
+      if (muxMedia) {
+        parsed = parseMuxVideo(entry, muxMedia, map.catalogUrl);
+        resolvedUrl = map.catalogUrl;
+      } else {
+        lastError = catalogError || new Error("No se encontró el video en el catálogo oficial");
+        for (const url of candidateUrls(entry)) {
+          try {
+            const response = await fetchImpl(url, { headers: REQUEST_HEADERS, signal: AbortSignal.timeout(20000) });
+            if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+            parsed = parseVideoPage(await response.text(), url);
+            if (parsed) { resolvedUrl = url; break; }
+            lastError = new Error("No se encontró un video de YouTube en la página");
+          } catch (error) {
+            lastError = error;
+          }
+        }
       }
     }
     if (!parsed && !previous?.youtubeId) {

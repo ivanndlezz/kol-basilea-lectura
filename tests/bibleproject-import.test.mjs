@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { extractYoutubeId, importRegistry, parseVideoPage } from "../scripts/import-bibleproject-videos.mjs";
+import { extractYoutubeId, importRegistry, parseMuxCatalog, parseMuxVideo, parseVideoPage } from "../scripts/import-bibleproject-videos.mjs";
 
 const fixture = `<!doctype html>
 <html><head>
@@ -21,6 +21,14 @@ test("BibleProject importer extracts YouTube metadata", () => {
 
 test("BibleProject importer ignores pages without an embedded YouTube video", () => {
   assert.equal(parseVideoPage("<html><head><meta property=\"og:title\" content=\"Sin video\"></head></html>", "https://example.com"), null);
+});
+
+test("BibleProject importer resolves official Mux catalog links to iframe and thumbnail URLs", () => {
+  const catalog = parseMuxCatalog('<a href="https://stream.mux.com/PLAYBACK123/high.mp4?download=genesis-1-11.mp4">Video</a>');
+  const video = parseMuxVideo({ key: "genesis-1-11", bookIds: ["genesis"] }, catalog.get("genesis-1-11"), "https://bibleproject.com/es/downloads/");
+  assert.equal(video.playbackId, "PLAYBACK123");
+  assert.equal(video.embedUrl, "https://player.mux.com/PLAYBACK123");
+  assert.equal(video.thumbnailUrl, "https://image.mux.com/PLAYBACK123/thumbnail.jpg");
 });
 
 test("BibleProject importer creates ID mappings for shared and split books", async () => {

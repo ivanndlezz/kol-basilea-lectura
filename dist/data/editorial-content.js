@@ -7,7 +7,7 @@ const videoRegistry = await videoResponse.json();
 const resolveVideos = bookId => (videoRegistry.videoByBook[bookId] || []).map(resourceId => {
   const video = videoRegistry.videos[resourceId];
   if (!video) throw new Error(`Missing video resource: ${resourceId}`);
-  return { ...video, id: video.youtubeId };
+  return { ...video, id: video.youtubeId || video.playbackId };
 });
 const resolveVideo = bookId => resolveVideos(bookId)[0] || null;
 export const JUAN_VIDEO = resolveVideo("1-juan");
