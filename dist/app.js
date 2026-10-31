@@ -1,58 +1,9 @@
 import { getBibleChapter, getBibleTranslation } from "./data/bible-rvr1909.js";
+import { BOOKS, CATEGORIES, TOTAL_CHAPTERS, getCatalogBook } from "./data/bible-catalog.js";
+import { JUAN_VIDEO, getBookEditorial } from "./data/editorial-content.js";
+import { completedChapters, isBookFinished, completedChapterCount, completedBookCount, nextReadingBook, nextReadingChapter, markChapterComplete } from "./data/reading-progress.js";
 
-const BOOKS = [
-  ["3 Juan", 1], ["2 Juan", 1], ["1 Juan", 5], ["Filemón", 1], ["Judas", 1], ["Abdías", 1], ["Ageo", 2], ["Tito", 3],
-  ["2 Tesalonicenses", 3], ["Nahúm", 3], ["2 Pedro", 3], ["Sofonías", 3], ["Jonás", 4], ["Colosenses", 4], ["1 Tesalonicenses", 5],
-  ["Malaquías", 4], ["Filipenses", 4], ["1 Pedro", 5], ["Rut", 4], ["Cantares", 8], ["Santiago", 5], ["Habacuc", 3], ["Joel", 3],
-  ["Miqueas", 7], ["Amós", 9], ["Lamentaciones", 5], ["Oseas", 14], ["1 Timoteo", 6], ["2 Timoteo", 4], ["Eclesiastés", 12],
-  ["Gálatas", 6], ["Esdras", 10], ["Efesios", 6], ["Nehemías", 13], ["Ester", 10], ["Romanos", 16], ["Hechos", 28],
-  ["Proverbios", 31], ["Hebreos", 13], ["Zacarías", 14], ["Daniel", 12], ["Apocalipsis", 22], ["2 Corintios", 13], ["1 Corintios", 16],
-  ["Job", 42], ["1 Crónicas", 29], ["Marcos", 16], ["Josué", 24], ["2 Crónicas", 36], ["Mateo", 28], ["Jueces", 21],
-  ["Deuteronomio", 34], ["Ezequiel", 48], ["Levítico", 27], ["Juan", 21], ["1 Reyes", 22], ["2 Reyes", 25], ["1 Samuel", 31],
-  ["2 Samuel", 24], ["Números", 36], ["Isaías", 66], ["Éxodo", 40], ["Lucas", 24], ["Génesis", 50], ["Jeremías", 52], ["Salmos", 150]
-].map(([name, chapters], index) => ({ id: slugify(name), name, chapters, index }));
-
-const CATEGORIES = [
-  { id: "all", label: "Todos" },
-  { id: "law", label: "La Ley" },
-  { id: "history", label: "Históricos" },
-  { id: "wisdom", label: "Poéticos y sapienciales" },
-  { id: "major-prophets", label: "Profetas mayores" },
-  { id: "minor-prophets", label: "Los 12 profetas menores" },
-  { id: "gospels", label: "Evangelios" },
-  { id: "church-history", label: "Historia de la iglesia" },
-  { id: "paul-letters", label: "Cartas de Pablo" },
-  { id: "general-letters", label: "Cartas generales" },
-  { id: "apocalypse", label: "Apocalipsis" }
-];
-
-const CATEGORY_BY_BOOK = {
-  "Génesis": "law", "Éxodo": "law", "Levítico": "law", "Números": "law", "Deuteronomio": "law",
-  "Josué": "history", "Jueces": "history", "Rut": "history", "1 Samuel": "history", "2 Samuel": "history", "1 Reyes": "history", "2 Reyes": "history", "1 Crónicas": "history", "2 Crónicas": "history", "Esdras": "history", "Nehemías": "history", "Ester": "history",
-  "Job": "wisdom", "Salmos": "wisdom", "Proverbios": "wisdom", "Eclesiastés": "wisdom", "Cantares": "wisdom",
-  "Isaías": "major-prophets", "Jeremías": "major-prophets", "Lamentaciones": "major-prophets", "Ezequiel": "major-prophets", "Daniel": "major-prophets",
-  "Oseas": "minor-prophets", "Joel": "minor-prophets", "Amós": "minor-prophets", "Abdías": "minor-prophets", "Jonás": "minor-prophets", "Miqueas": "minor-prophets", "Nahúm": "minor-prophets", "Habacuc": "minor-prophets", "Sofonías": "minor-prophets", "Ageo": "minor-prophets", "Zacarías": "minor-prophets", "Malaquías": "minor-prophets",
-  "Mateo": "gospels", "Marcos": "gospels", "Lucas": "gospels", "Juan": "gospels",
-  "Hechos": "church-history",
-  "Romanos": "paul-letters", "1 Corintios": "paul-letters", "2 Corintios": "paul-letters", "Gálatas": "paul-letters", "Efesios": "paul-letters", "Filipenses": "paul-letters", "Colosenses": "paul-letters", "1 Tesalonicenses": "paul-letters", "2 Tesalonicenses": "paul-letters", "1 Timoteo": "paul-letters", "2 Timoteo": "paul-letters", "Tito": "paul-letters", "Filemón": "paul-letters",
-  "Hebreos": "general-letters", "Santiago": "general-letters", "1 Pedro": "general-letters", "2 Pedro": "general-letters", "1 Juan": "general-letters", "2 Juan": "general-letters", "3 Juan": "general-letters", "Judas": "general-letters",
-  "Apocalipsis": "apocalypse"
-};
-
-BOOKS.forEach((book) => { book.category = CATEGORY_BY_BOOK[book.name] || "general-letters"; });
-
-const TOTAL_CHAPTERS = BOOKS.reduce((sum, book) => sum + book.chapters, 0);
 const STORAGE_KEY = "kol-basilea-lectura-v1";
-const JUAN_VIDEO = {
-  id: "wQtMnuBzb4c",
-  title: "Resumen de 1–3 Juan",
-  description: "Un panorama animado sobre las tres cartas y sus temas de vida, verdad y amor.",
-  duration: "10:58",
-  thumbnail: "https://ik.imagekit.io/bpweb1/web/media/video-images/new-testament-overview/123-john/tr:q-65,w-800/123-john_16.9.jpg",
-  pageUrl: "https://bibleproject.com/es/guides/libro-de-1-3-juan/",
-  youtubeUrl: "https://www.youtube.com/watch?v=wQtMnuBzb4c"
-};
-
 const ICONS = {
   checkCircle: '<circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/>',
   smartphone: '<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>',
@@ -160,19 +111,13 @@ function bindReaderReadingProgress() {
   readerProgressBound = true;
 }
 
-function getBook(id) { return BOOKS.find((book) => book.id === id) || BOOKS[0]; }
-function getCompletedChapters(book) { return state.completedChapters[book.id] || []; }
-function isBookComplete(book) { return getCompletedChapters(book).length >= book.chapters; }
-function totalCompletedChapters() { return Object.values(state.completedChapters).reduce((sum, chapters) => sum + chapters.length, 0); }
-function totalCompletedBooks() { return BOOKS.filter(isBookComplete).length; }
-function currentBook() { return BOOKS.find((book) => !isBookComplete(book)) || BOOKS[BOOKS.length - 1]; }
-function currentChapter(book = currentBook()) {
-  const completed = new Set(getCompletedChapters(book));
-  for (let chapter = 1; chapter <= book.chapters; chapter += 1) {
-    if (!completed.has(chapter)) return chapter;
-  }
-  return book.chapters;
-}
+function getBook(id) { return getCatalogBook(id); }
+function getCompletedChapters(book) { return completedChapters(state, book); }
+function isBookComplete(book) { return isBookFinished(state, book); }
+function totalCompletedChapters() { return completedChapterCount(state); }
+function totalCompletedBooks() { return completedBookCount(state); }
+function currentBook() { return nextReadingBook(state); }
+function currentChapter(book = currentBook()) { return nextReadingChapter(state, book); }
 function readerChapter(book) {
   const selected = state.readerBookId === book.id && Number.isInteger(state.readerChapter)
     ? state.readerChapter
@@ -485,10 +430,9 @@ function activateVideo(button) {
 function completeChapter() {
   const book = getBook(state.readerBookId);
   const chapter = readerChapter(book);
-  const chapters = new Set(getCompletedChapters(book));
   const wasComplete = isBookComplete(book);
-  chapters.add(chapter);
-  state.completedChapters[book.id] = [...chapters].sort((a, b) => a - b);
+  const updatedProgress = markChapterComplete(state, book, chapter);
+  state.completedChapters = updatedProgress.completedChapters;
   const finishedBook = isBookComplete(book);
   state.justCompletedBookId = finishedBook && !wasComplete ? book.id : null;
   if (state.onboardingStep === 3 && book.index === 0) {
