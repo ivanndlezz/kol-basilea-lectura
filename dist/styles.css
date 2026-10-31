@@ -1018,3 +1018,7 @@ a:not([class]):visited{color:var(--brand-dark)}
 @keyframes kb-milestone-enter{from{transform:translateY(100%)}to{transform:translateY(0)}}
 @keyframes kb-milestone-fill{from{stroke-dashoffset:490.09}to{stroke-dashoffset:var(--milestone-offset)}}
 @media(prefers-reduced-motion:reduce){.kb-milestone-sheet,.kb-milestone-ring-fill{animation:none}}
+
+/* Editorial pericope headings: distinct from canonical scripture verses. */
+.scripture-passage .kb-pericope-heading { font-family: inherit; font-size: 1.17em; font-weight: 700; line-height: 1.32; letter-spacing: -0.015em; margin: 1.8em 0 0.75em; color: inherit; }
+.scripture-passage .kb-pericope-heading:first-child { margin-top: 0.65em; }
