@@ -799,3 +799,23 @@ body.kb-navigation-open{overflow:hidden;touch-action:none}
 .kb-navigation-project .lucide-icon:first-child,.kb-navigation-note strong{color:var(--accent)}
 .kb-cover-number,.kb-cover-star{color:#e9bd79}
 :where(button,a,input,select):focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* One category color follows every book from discovery through reading. */
+.category-filter-chip{position:relative;display:inline-flex;align-items:center;gap:7px}
+.category-filter-chip::before{content:"";width:9px;height:9px;flex:0 0 9px;border-radius:50%;background:var(--category-color,var(--brand))}
+.category-filter-chip.is-selected{background:var(--category-color,var(--brand));border-color:var(--category-color,var(--brand));color:#fff;box-shadow:none}
+.category-filter-chip.is-selected::before{background:#fff}
+.category-filter-chip:hover:not(.is-selected){border-color:var(--category-color,var(--brand));color:var(--ink)}
+.category-result-label strong{color:var(--category-color,var(--brand))}
+.route-row .route-number{border-color:var(--category-color,var(--brand));color:var(--category-color,var(--brand))}
+.route-row.is-current{border-color:var(--category-color,var(--brand))}
+.route-row.is-current .route-status{color:var(--category-color,var(--brand))}
+.kb-hero .kb-hero-top>span{color:var(--category-color,var(--brand))}
+.kb-hero .kb-current-chapter{border-color:var(--category-color,var(--brand))}
+.kb-spine.is-done{background:var(--category-color,var(--brand))}
+.kb-spine.is-next{background:color-mix(in srgb,var(--category-color,var(--brand)) 55%,var(--surface))}
+.reader-page .reader-translation-pill{border-color:color-mix(in srgb,var(--category-color,var(--brand)) 35%,var(--line))}
+.reader-page .reader-selection-button,.reader-page .reader-topbar-link{color:var(--category-color,var(--brand))}
+.reader-page .chapter-panel-header strong,.reader-page .book-info-kicker{color:var(--category-color,var(--brand))}
+.reader-page .reader-reading-fill{background:var(--category-color,var(--brand))}
+.book-info-page .book-info-themes>span{border-color:color-mix(in srgb,var(--category-color,var(--brand)) 38%,var(--line))}
