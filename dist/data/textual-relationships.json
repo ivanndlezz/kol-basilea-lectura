@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "relationships": [
+    {
+      "personId": "escribas-juda",
+      "book": "Génesis",
+      "role": "Recopilación y edición",
+      "evidence": "Reconstrucción histórica",
+      "source": "Tradiciones israelitas; atribución mosaica",
+      "reference": "https://www.bibleodyssey.org/articles/who-wrote-the-pentateuch/",
+      "note": "La formación del Pentateuco implicó distintas etapas y tradiciones. No se conocen los nombres de sus redactores finales."
+    },
+    {
+      "personId": "escribas-juda",
+      "book": "Éxodo",
+      "role": "Recopilación y edición",
+      "evidence": "Reconstrucción histórica",
+      "source": "Tradiciones israelitas; atribución mosaica",
+      "reference": "https://www.bibleodyssey.org/articles/who-wrote-the-pentateuch/",
+      "note": "La formación del Pentateuco implicó distintas etapas y tradiciones. No se conocen los nombres de sus redactores finales."
+    },
+    {
+      "personId": "escribas-juda",
+      "book": "Levítico",
+      "role": "Recopilación y edición",
+      "evidence": "Reconstrucción histórica",
+      "source": "Tradiciones israelitas; atribución mosaica",
+      "reference": "https://www.bibleodyssey.org/articles/who-wrote-the-pentateuch/",
+      "note": "La formación del Pentateuco implicó distintas etapas y tradiciones. No se conocen los nombres de sus redactores finales."
+    },
+    {
+      "personId": "escribas-juda",
+      "book": "Números",
+      "role": "Recopilación y edición",
+      "evidence": "Reconstrucción histórica",
+      "source": "Tradiciones israelitas; atribución mosaica",
+      "reference": "https://www.bibleodyssey.org/articles/who-wrote-the-pentateuch/",
+      "note": "La formación del Pentateuco implicó distintas etapas y tradiciones. No se conocen los nombres de sus redactores finales."
+    },
+    {
+      "personId": "escribas-juda",
+      "book": "Deuteronomio",
+      "role": "Recopilación y edición",
+      "evidence": "Reconstrucción histórica",
+      "source": "Tradiciones israelitas; atribución mosaica",
+      "reference": "https://www.bibleodyssey.org/articles/who-wrote-the-pentateuch/",
+      "note": "La formación del Pentateuco implicó distintas etapas y tradiciones. No se conocen los nombres de sus redactores finales."
+    },
+    {
+      "personId": "esdras",
+      "book": "Esdras",
+      "role": "Escriba y transmisor de la Ley",
+      "evidence": "Testimonio bíblico",
+      "source": "La Ley de Moisés",
+      "reference": "https://www.sefaria.org/Nehemiah.8",
+      "note": "Esdras 7:6 lo presenta como escriba versado en la Ley y Nehemías 8 lo muestra leyéndola públicamente. No se puede afirmar que recopiló por sí solo todo el Pentateuco."
+    },
+    {
+      "personId": "esdras",
+      "book": "Nehemías",
+      "role": "Escriba y transmisor de la Ley",
+      "evidence": "Testimonio bíblico",
+      "source": "La Ley de Moisés",
+      "reference": "https://www.sefaria.org/Nehemiah.8",
+      "note": "Esdras 7:6 lo presenta como escriba versado en la Ley y Nehemías 8 lo muestra leyéndola públicamente. No se puede afirmar que recopiló por sí solo todo el Pentateuco."
+    },
+    {
+      "personId": "baruc",
+      "book": "Jeremías",
+      "role": "Escriba de Jeremías",
+      "evidence": "Escriba identificado",
+      "source": "Palabras dictadas por Jeremías",
+      "reference": "https://www.sefaria.org/Jeremiah.36",
+      "note": "Jeremías 36:4 y 36:18 narran que Baruc escribió al dictado del profeta. Esto no demuestra que compilara él solo la versión final del libro."
+    },
+    {
+      "personId": "tercio",
+      "book": "Romanos",
+      "role": "Escriba de Pablo",
+      "evidence": "Escriba identificado",
+      "source": "Pablo de Tarso",
+      "reference": "https://www.biblegateway.com/passage/?search=Romans%2016%3A22",
+      "note": "En Romanos 16:22 Tercio se presenta expresamente como quien escribió la carta."
+    },
+    {
+      "personId": "sostenes",
+      "book": "1 Corintios",
+      "role": "Colaborador nombrado en la carta",
+      "evidence": "Colaborador mencionado",
+      "source": "Pablo y Sóstenes",
+      "reference": "https://www.biblegateway.com/passage/?search=1%20Corinthians%201%3A1",
+      "note": "1 Corintios 1:1 lo nombra junto a Pablo; no afirma que actuara como escriba material de la carta."
+    },
+    {
+      "personId": "timoteo",
+      "book": "2 Corintios",
+      "role": "Colaborador y cosignatario",
+      "evidence": "Colaborador mencionado",
+      "source": "Pablo y sus colaboradores",
+      "reference": "https://www.biblegateway.com/passage/?search=2%20Corinthians%201%3A1",
+      "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada."
+    },
+    {
+      "personId": "timoteo",
+      "book": "Filipenses",
+      "role": "Colaborador y cosignatario",
+      "evidence": "Colaborador mencionado",
+      "source": "Pablo y sus colaboradores",
+      "reference": "https://www.biblegateway.com/passage/?search=2%20Corinthians%201%3A1",
+      "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada."
+    },
+    {
+      "personId": "timoteo",
+      "book": "Colosenses",
+      "role": "Colaborador y cosignatario",
+      "evidence": "Colaborador mencionado",
+      "source": "Pablo y sus colaboradores",
+      "reference": "https://www.biblegateway.com/passage/?search=2%20Corinthians%201%3A1",
+      "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada."
+    },
+    {
+      "personId": "timoteo",
+      "book": "1 Tesalonicenses",
+      "role": "Colaborador y cosignatario",
+      "evidence": "Colaborador mencionado",
+      "source": "Pablo y sus colaboradores",
+      "reference": "https://www.biblegateway.com/passage/?search=2%20Corinthians%201%3A1",
+      "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada."
+    },
+    {
+      "personId": "timoteo",
+      "book": "2 Tesalonicenses",
+      "role": "Colaborador y cosignatario",
+      "evidence": "Colaborador mencionado",
+      "source": "Pablo y sus colaboradores",
+      "reference": "https://www.biblegateway.com/passage/?search=2%20Corinthians%201%3A1",
+      "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada."
+    },
+    {
+      "personId": "timoteo",
+      "book": "Filemón",
+      "role": "Colaborador y cosignatario",
+      "evidence": "Colaborador mencionado",
+      "source": "Pablo y sus colaboradores",
+      "reference": "https://www.biblegateway.com/passage/?search=2%20Corinthians%201%3A1",
+      "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada."
+    },
+    {
+      "personId": "silvano",
+      "book": "1 Tesalonicenses",
+      "role": "Colaborador y mediador epistolar",
+      "evidence": "Función discutida",
+      "source": "Pablo; tradición petrina",
+      "reference": "https://www.biblegateway.com/passage/?search=1%20Peter%205%3A12",
+      "note": "Es nombrado junto a Pablo en Tesalonicenses. En 1 Pedro 5:12 aparece como mediador de la carta, pero es discutido si fue escriba o portador."
+    },
+    {
+      "personId": "silvano",
+      "book": "2 Tesalonicenses",
+      "role": "Colaborador y mediador epistolar",
+      "evidence": "Función discutida",
+      "source": "Pablo; tradición petrina",
+      "reference": "https://www.biblegateway.com/passage/?search=1%20Peter%205%3A12",
+      "note": "Es nombrado junto a Pablo en Tesalonicenses. En 1 Pedro 5:12 aparece como mediador de la carta, pero es discutido si fue escriba o portador."
+    },
+    {
+      "personId": "silvano",
+      "book": "1 Pedro",
+      "role": "Colaborador y mediador epistolar",
+      "evidence": "Función discutida",
+      "source": "Pablo; tradición petrina",
+      "reference": "https://www.biblegateway.com/passage/?search=1%20Peter%205%3A12",
+      "note": "Es nombrado junto a Pablo en Tesalonicenses. En 1 Pedro 5:12 aparece como mediador de la carta, pero es discutido si fue escriba o portador."
+    },
+    {
+      "personId": "lucas",
+      "book": "Lucas",
+      "role": "Investigación y ordenación narrativa",
+      "evidence": "Atribución tradicional",
+      "source": "Testimonios y tradiciones anteriores",
+      "reference": "https://www.biblegateway.com/passage/?search=Luke%201%3A1-4",
+      "note": "Lucas 1:1-4 describe la consulta de relatos anteriores y una exposición ordenada. El texto no identifica por nombre a su autor; Lucas es la atribución tradicional."
+    },
+    {
+      "personId": "lucas",
+      "book": "Hechos",
+      "role": "Investigación y ordenación narrativa",
+      "evidence": "Atribución tradicional",
+      "source": "Testimonios y tradiciones anteriores",
+      "reference": "https://www.biblegateway.com/passage/?search=Luke%201%3A1-4",
+      "note": "Lucas 1:1-4 describe la consulta de relatos anteriores y una exposición ordenada. El texto no identifica por nombre a su autor; Lucas es la atribución tradicional."
+    },
+    {
+      "personId": "compiladores-proverbios",
+      "book": "Proverbios",
+      "role": "Copistas y recopiladores",
+      "evidence": "Recopilación textual explícita",
+      "source": "Proverbios de Salomón",
+      "reference": "https://www.biblegateway.com/passage/?search=Proverbs%2025%3A1",
+      "note": "Proverbios 25:1 atribuye a los hombres de Ezequías la copia de una colección de proverbios salomónicos."
+    },
+    {
+      "personId": "colecciones-salmos",
+      "book": "Salmos",
+      "role": "Compilación de colecciones poéticas",
+      "evidence": "Proceso editorial colectivo",
+      "source": "David, Asaf, hijos de Coré y otras tradiciones",
+      "reference": "https://www.bibleodyssey.org/articles/psalms/",
+      "note": "El Salterio reúne colecciones y atribuciones diversas; no se identifica un compilador único."
+    }
+  ]
+}
