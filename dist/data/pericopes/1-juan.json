@@ -1,0 +1,141 @@
+{
+  "bookId": "1-juan",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Divisiones tomadas de los encabezados BSB; títulos adaptados al español por Kol Basilea."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "title": "La palabra de vida",
+          "sourceTitle": "The Word of Life",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/1.htm"
+        },
+        {
+          "startVerse": 5,
+          "title": "Caminar en la luz",
+          "sourceTitle": "Walking in the Light",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/1.htm"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "title": "Jesús, nuestro abogado",
+          "sourceTitle": "Jesus Our Advocate",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/2.htm"
+        },
+        {
+          "startVerse": 7,
+          "title": "Un mandamiento nuevo",
+          "sourceTitle": "A New Commandment",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/2.htm"
+        },
+        {
+          "startVerse": 15,
+          "title": "No améis al mundo",
+          "sourceTitle": "Do Not Love the World",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/2.htm"
+        },
+        {
+          "startVerse": 18,
+          "title": "Cuidado con los anticristos",
+          "sourceTitle": "Beware of Antichrists",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/2.htm"
+        },
+        {
+          "startVerse": 24,
+          "title": "Permaneced en Cristo",
+          "sourceTitle": "Remain in Christ",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/2.htm"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "title": "Hijos de Dios",
+          "sourceTitle": "Children of God",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/3.htm"
+        },
+        {
+          "startVerse": 11,
+          "title": "Amémonos unos a otros",
+          "sourceTitle": "Love One Another",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/3.htm"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "title": "Examinad los espíritus",
+          "sourceTitle": "Testing the Spirits",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/4.htm"
+        },
+        {
+          "startVerse": 7,
+          "title": "El amor viene de Dios",
+          "sourceTitle": "Love Comes from God",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/4.htm"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "title": "La victoria sobre el mundo",
+          "sourceTitle": "Overcoming the World",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/5.htm"
+        },
+        {
+          "startVerse": 9,
+          "title": "El testimonio de Dios acerca de su Hijo",
+          "sourceTitle": "God’s Testimony about His Son",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/5.htm"
+        },
+        {
+          "startVerse": 13,
+          "title": "La oración eficaz",
+          "sourceTitle": "Effective Prayer",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/5.htm"
+        },
+        {
+          "startVerse": 18,
+          "title": "El Dios verdadero",
+          "sourceTitle": "The True God",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/1_juan/5.htm"
+        }
+      ]
+    }
+  ]
+}
