@@ -23,6 +23,8 @@ jobs:
           grep -n -A 7 -B 5 '\\\\v 16' /tmp/rv1909-usfm/05-NUMspaRV1909.usfm | head -80 || true
       - name: Convert and validate 66 books
         run: node scripts/convert-usfm.mjs /tmp/rv1909-usfm dist/data/rvr1909
+      - name: Validate generated text and verse counts
+        run: node scripts/validate-generated.mjs
       - name: Run regression tests
         run: npm run check
       - uses: actions/upload-artifact@v4
