@@ -6,7 +6,7 @@ Este repositorio pertenece al universo conceptual de **Kol Basilea**, pero manti
 
 ## Estado actual
 
-Fase de definición de producto y UI.
+Prototipo UI mobile-first en construcción, ejecutable localmente sin registro ni backend.
 
 La propuesta ya cuenta con:
 
@@ -19,9 +19,24 @@ La propuesta ya cuenta con:
 - persistencia local inicial sin registro;
 - análisis comparativo de seis referencias de UI y gamificación.
 
+La primera vertical funcional incluye onboarding de tres pasos, lector de 3 Juan, guardado local del check de capítulo, ruta completa, progreso y preferencias de meta.
+
+## Preview local
+
+Con Python instalado, ejecuta desde la raíz del repositorio:
+
+```bash
+python3 -m http.server 4173 --directory dist
+```
+
+Después abre [http://127.0.0.1:4173/](http://127.0.0.1:4173/).
+
+La UI aplica criterios relevantes de Apple HIG: tipografía del sistema, áreas seguras para dispositivos con notch, controles táctiles amplios, estados de foco visibles, navegación inferior móvil, jerarquía clara y respeto por `prefers-reduced-motion`.
+
 ## Documentación
 
 - [Especificación de producto](docs/especificacion-producto.md)
+- [Especificación UI](docs/especificacion-ui.md)
 - [Análisis de referencias UI](docs/analisis-referencias-ui.md)
 
 ## Relación con Kol Basilea
@@ -41,5 +56,5 @@ La propuesta ya cuenta con:
 
 ## Próximo paso
 
-Convertir los principios de la bitácora UI en una especificación concreta de pantallas, estados, navegación y componentes para el MVP.
+Convertir este prototipo en una especificación concreta de pantallas, estados, navegación y componentes para el MVP, y sustituir los contenidos de demostración por fuentes bíblicas y videos con licencia definida.
 
