@@ -42,6 +42,8 @@ jobs:
           unzip -q /tmp/spaRV1909_usfm.zip -d /tmp/rv1909-usfm
       - name: Generate 66 Bible JSON files
         run: node scripts/convert-usfm.mjs /tmp/rv1909-usfm dist/data/rvr1909
+      - name: Validate generated text and verse counts
+        run: node scripts/validate-generated.mjs
       - name: Validate application and Bible
         run: npm run check
       - name: Setup Pages
