@@ -74,5 +74,5 @@ export const getCatalogBook = (id) => BOOK_BY_ID.get(id) || BOOKS[0];
 export const getCanonicalBooks = () => [...BOOKS].sort((a, b) => a.canonicalOrder - b.canonicalOrder);
 export const getReadingBooks = () => BOOKS;
 export const getBooksByCategory = (category) => category === "all" ? BOOKS : BOOKS.filter(book => book.category === category);
-if (BOOKS.length !== 66 || TOTAL_CHAPTERS !== 1189 || CANONICAL_INDEX.size !== 66 || BOOKS.some(book => !book.canonicalOrder)) throw new Error("Invalid Bible catalog");
+if (BOOKS.length !== 66 || TOTAL_CHAPTERS !== 1189 || new Set(BOOKS.map(book => book.canonicalOrder)).size !== 66 || BOOKS.some(book => !book.canonicalOrder || !book.category)) throw new Error("Invalid Bible catalog");
 
