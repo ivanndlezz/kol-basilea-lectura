@@ -4,21 +4,22 @@
 const videoResponse = await fetch(new URL("./media/videos.json", import.meta.url));
 if (!videoResponse.ok) throw new Error("Cannot load editorial video registry");
 const videoRegistry = await videoResponse.json();
-const resolveVideo = bookId => {
-  const resourceId = videoRegistry.videoByBook[bookId]?.[0];
-  if (!resourceId) return null;
+const resolveVideos = bookId => (videoRegistry.videoByBook[bookId] || []).map(resourceId => {
   const video = videoRegistry.videos[resourceId];
   if (!video) throw new Error(`Missing video resource: ${resourceId}`);
   return { ...video, id: video.youtubeId };
-};
+});
+const resolveVideo = bookId => resolveVideos(bookId)[0] || null;
 export const JUAN_VIDEO = resolveVideo("1-juan");
 export const EDITORIAL_BY_BOOK = Object.freeze(Object.fromEntries(
   Object.keys(videoRegistry.videoByBook).map(bookId => {
-    const video = resolveVideo(bookId);
-    return [bookId, { video, introductionSummary: video.description, sourceAttribution: "Proyecto Biblia", sourceUrl: video.pageUrl }];
+    const videos = resolveVideos(bookId);
+    const video = videos[0] || null;
+    return [bookId, { video, videos, introductionSummary: video?.description || "", sourceAttribution: "Proyecto Biblia", sourceUrl: video?.pageUrl || null }];
   })
 ));
 export function getBookEditorial(bookId) { return EDITORIAL_BY_BOOK[bookId] || null; }
+export function getBookEditorialVideos(bookId) { return getBookEditorial(bookId)?.videos || []; }
 
 export const BOOK_INFO = {
   "1-juan": {

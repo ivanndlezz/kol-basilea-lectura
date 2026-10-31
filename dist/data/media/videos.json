@@ -1,16 +1,32 @@
 {
-  "version": 1,
+  "version": 2,
+  "source": {
+    "provider": "bibleproject",
+    "language": "es",
+    "catalogUrl": "https://bibleproject.com/es/downloads/",
+    "mapVersion": 1
+  },
   "videos": {
     "bp-juan123": {
       "provider": "bibleproject",
       "language": "es",
+      "kind": "book-overview",
+      "sourceKey": "1-3-juan",
+      "bookIds": [
+        "1-juan",
+        "2-juan",
+        "3-juan"
+      ],
+      "order": 1,
       "youtubeId": "wQtMnuBzb4c",
       "title": "Resumen de 1–3 Juan",
       "description": "Un panorama animado sobre las tres cartas y sus temas de vida, verdad y amor.",
       "duration": "10:58",
       "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/new-testament-overview/123-john/tr:q-65,w-800/123-john_16.9.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/bpweb1/web/media/video-images/new-testament-overview/123-john/tr:q-65,w-800/123-john_16.9.jpg",
       "pageUrl": "https://bibleproject.com/es/guides/libro-de-1-3-juan/",
-      "youtubeUrl": "https://www.youtube.com/watch?v=wQtMnuBzb4c"
+      "youtubeUrl": "https://www.youtube.com/watch?v=wQtMnuBzb4c",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/wQtMnuBzb4c?rel=0&modestbranding=1&playsinline=1"
     }
   },
   "videoByBook": {

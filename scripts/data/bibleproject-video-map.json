@@ -1,0 +1,702 @@
+{
+  "version": 1,
+  "provider": "bibleproject",
+  "language": "es",
+  "catalogUrl": "https://bibleproject.com/es/downloads/",
+  "notes": "Mapa editorial explícito de los videos de resumen disponibles para los 66 libros. Las páginas se resuelven durante la importación y no se adivinan en la interfaz.",
+  "videos": [
+    {
+      "key": "genesis-1-11",
+      "sourcePath": "genesis-1-11",
+      "id": "bp-genesis-1-11",
+      "bookIds": [
+        "genesis"
+      ],
+      "order": 1,
+      "chapterStart": 1,
+      "chapterEnd": 11
+    },
+    {
+      "key": "genesis-12-50",
+      "sourcePath": "genesis-12-50",
+      "id": "bp-genesis-12-50",
+      "bookIds": [
+        "genesis"
+      ],
+      "order": 1,
+      "chapterStart": 12,
+      "chapterEnd": 50
+    },
+    {
+      "key": "exodo-1-18",
+      "sourcePath": "exodo-1-18",
+      "id": "bp-exodo-1-18",
+      "bookIds": [
+        "exodo"
+      ],
+      "order": 1,
+      "chapterStart": 1,
+      "chapterEnd": 18
+    },
+    {
+      "key": "exodo-19-40",
+      "sourcePath": "exodo-19-40",
+      "id": "bp-exodo-19-40",
+      "bookIds": [
+        "exodo"
+      ],
+      "order": 1,
+      "chapterStart": 19,
+      "chapterEnd": 40
+    },
+    {
+      "key": "levitico",
+      "sourcePath": "levitico",
+      "id": "bp-levitico",
+      "bookIds": [
+        "levitico"
+      ],
+      "order": 1
+    },
+    {
+      "key": "numeros",
+      "sourcePath": "numeros",
+      "id": "bp-numeros",
+      "bookIds": [
+        "numeros"
+      ],
+      "order": 1
+    },
+    {
+      "key": "deuteronomio",
+      "sourcePath": "deuteronomio",
+      "id": "bp-deuteronomio",
+      "bookIds": [
+        "deuteronomio"
+      ],
+      "order": 1
+    },
+    {
+      "key": "josue",
+      "sourcePath": "josue",
+      "id": "bp-josue",
+      "bookIds": [
+        "josue"
+      ],
+      "order": 1
+    },
+    {
+      "key": "jueces",
+      "sourcePath": "jueces",
+      "id": "bp-jueces",
+      "bookIds": [
+        "jueces"
+      ],
+      "order": 1
+    },
+    {
+      "key": "rut",
+      "sourcePath": "rut",
+      "id": "bp-rut",
+      "bookIds": [
+        "rut"
+      ],
+      "order": 1
+    },
+    {
+      "key": "1-samuel",
+      "sourcePath": "1-samuel",
+      "id": "bp-1-samuel",
+      "bookIds": [
+        "1-samuel"
+      ],
+      "order": 1
+    },
+    {
+      "key": "2-samuel",
+      "sourcePath": "2-samuel",
+      "id": "bp-2-samuel",
+      "bookIds": [
+        "2-samuel"
+      ],
+      "order": 1
+    },
+    {
+      "key": "1-2-reyes",
+      "sourcePath": "1-2-reyes",
+      "sourcePaths": [
+        "1-y-2-reyes"
+      ],
+      "id": "bp-1-2-reyes",
+      "bookIds": [
+        "1-reyes",
+        "2-reyes"
+      ],
+      "order": 1
+    },
+    {
+      "key": "esdras-nehemias",
+      "sourcePath": "esdras-nehemias",
+      "sourcePaths": [
+        "esdras-y-nehemias"
+      ],
+      "id": "bp-esdras-nehemias",
+      "bookIds": [
+        "esdras",
+        "nehemias"
+      ],
+      "order": 1
+    },
+    {
+      "key": "ester",
+      "sourcePath": "ester",
+      "id": "bp-ester",
+      "bookIds": [
+        "ester"
+      ],
+      "order": 1
+    },
+    {
+      "key": "job",
+      "sourcePath": "job",
+      "id": "bp-job",
+      "bookIds": [
+        "job"
+      ],
+      "order": 1
+    },
+    {
+      "key": "salmos",
+      "sourcePath": "salmos",
+      "id": "bp-salmos",
+      "bookIds": [
+        "salmos"
+      ],
+      "order": 1
+    },
+    {
+      "key": "proverbios",
+      "sourcePath": "proverbios",
+      "id": "bp-proverbios",
+      "bookIds": [
+        "proverbios"
+      ],
+      "order": 1
+    },
+    {
+      "key": "eclesiastes",
+      "sourcePath": "eclesiastes",
+      "id": "bp-eclesiastes",
+      "bookIds": [
+        "eclesiastes"
+      ],
+      "order": 1
+    },
+    {
+      "key": "cantares",
+      "sourcePath": "cantares",
+      "id": "bp-cantares",
+      "bookIds": [
+        "cantares"
+      ],
+      "order": 1
+    },
+    {
+      "key": "isaias-1-39",
+      "sourcePath": "isaias-1-39",
+      "id": "bp-isaias-1-39",
+      "bookIds": [
+        "isaias"
+      ],
+      "order": 1,
+      "chapterStart": 1,
+      "chapterEnd": 39
+    },
+    {
+      "key": "isaias-40-66",
+      "sourcePath": "isaias-40-66",
+      "id": "bp-isaias-40-66",
+      "bookIds": [
+        "isaias"
+      ],
+      "order": 1,
+      "chapterStart": 40,
+      "chapterEnd": 66
+    },
+    {
+      "key": "jeremias",
+      "sourcePath": "jeremias",
+      "id": "bp-jeremias",
+      "bookIds": [
+        "jeremias"
+      ],
+      "order": 1
+    },
+    {
+      "key": "lamentaciones",
+      "sourcePath": "lamentaciones",
+      "id": "bp-lamentaciones",
+      "bookIds": [
+        "lamentaciones"
+      ],
+      "order": 1
+    },
+    {
+      "key": "ezequiel-1-33",
+      "sourcePath": "ezequiel-1-33",
+      "id": "bp-ezequiel-1-33",
+      "bookIds": [
+        "ezequiel"
+      ],
+      "order": 1,
+      "chapterStart": 1,
+      "chapterEnd": 33
+    },
+    {
+      "key": "ezequiel-34-48",
+      "sourcePath": "ezequiel-34-48",
+      "id": "bp-ezequiel-34-48",
+      "bookIds": [
+        "ezequiel"
+      ],
+      "order": 1,
+      "chapterStart": 34,
+      "chapterEnd": 48
+    },
+    {
+      "key": "daniel",
+      "sourcePath": "daniel",
+      "id": "bp-daniel",
+      "bookIds": [
+        "daniel"
+      ],
+      "order": 1
+    },
+    {
+      "key": "oseas",
+      "sourcePath": "oseas",
+      "id": "bp-oseas",
+      "bookIds": [
+        "oseas"
+      ],
+      "order": 1
+    },
+    {
+      "key": "joel",
+      "sourcePath": "joel",
+      "id": "bp-joel",
+      "bookIds": [
+        "joel"
+      ],
+      "order": 1
+    },
+    {
+      "key": "amos",
+      "sourcePath": "amos",
+      "id": "bp-amos",
+      "bookIds": [
+        "amos"
+      ],
+      "order": 1
+    },
+    {
+      "key": "abdias",
+      "sourcePath": "abdias",
+      "id": "bp-abdias",
+      "bookIds": [
+        "abdias"
+      ],
+      "order": 1
+    },
+    {
+      "key": "jonas",
+      "sourcePath": "jonas",
+      "id": "bp-jonas",
+      "bookIds": [
+        "jonas"
+      ],
+      "order": 1
+    },
+    {
+      "key": "miqueas",
+      "sourcePath": "miqueas",
+      "id": "bp-miqueas",
+      "bookIds": [
+        "miqueas"
+      ],
+      "order": 1
+    },
+    {
+      "key": "nahum",
+      "sourcePath": "nahum",
+      "id": "bp-nahum",
+      "bookIds": [
+        "nahum"
+      ],
+      "order": 1
+    },
+    {
+      "key": "habacuc",
+      "sourcePath": "habacuc",
+      "id": "bp-habacuc",
+      "bookIds": [
+        "habacuc"
+      ],
+      "order": 1
+    },
+    {
+      "key": "sofonias",
+      "sourcePath": "sofonias",
+      "id": "bp-sofonias",
+      "bookIds": [
+        "sofonias"
+      ],
+      "order": 1
+    },
+    {
+      "key": "hageo",
+      "sourcePath": "hageo",
+      "id": "bp-hageo",
+      "bookIds": [
+        "ageo"
+      ],
+      "order": 1
+    },
+    {
+      "key": "zacarias",
+      "sourcePath": "zacarias",
+      "id": "bp-zacarias",
+      "bookIds": [
+        "zacarias"
+      ],
+      "order": 1
+    },
+    {
+      "key": "malaquias",
+      "sourcePath": "malaquias",
+      "id": "bp-malaquias",
+      "bookIds": [
+        "malaquias"
+      ],
+      "order": 1
+    },
+    {
+      "key": "1-2-cronicas",
+      "sourcePath": "1-2-cronicas",
+      "sourcePaths": [
+        "1-y-2-cronicas"
+      ],
+      "id": "bp-1-2-cronicas",
+      "bookIds": [
+        "1-cronicas",
+        "2-cronicas"
+      ],
+      "order": 1
+    },
+    {
+      "key": "mateo-1-13",
+      "sourcePath": "mateo-1-13",
+      "id": "bp-mateo-1-13",
+      "bookIds": [
+        "mateo"
+      ],
+      "order": 1,
+      "chapterStart": 1,
+      "chapterEnd": 13
+    },
+    {
+      "key": "mateo-14-28",
+      "sourcePath": "mateo-14-28",
+      "id": "bp-mateo-14-28",
+      "bookIds": [
+        "mateo"
+      ],
+      "order": 1,
+      "chapterStart": 14,
+      "chapterEnd": 28
+    },
+    {
+      "key": "marcos",
+      "sourcePath": "marcos",
+      "id": "bp-marcos",
+      "bookIds": [
+        "marcos"
+      ],
+      "order": 1
+    },
+    {
+      "key": "juan-1-12",
+      "sourcePath": "juan-1-12",
+      "id": "bp-juan-1-12",
+      "bookIds": [
+        "juan"
+      ],
+      "order": 1,
+      "chapterStart": 1,
+      "chapterEnd": 12
+    },
+    {
+      "key": "juan-13-21",
+      "sourcePath": "juan-13-21",
+      "id": "bp-juan-13-21",
+      "bookIds": [
+        "juan"
+      ],
+      "order": 1,
+      "chapterStart": 13,
+      "chapterEnd": 21
+    },
+    {
+      "key": "lucas-1-9",
+      "sourcePath": "lucas-1-9",
+      "id": "bp-lucas-1-9",
+      "bookIds": [
+        "lucas"
+      ],
+      "order": 1,
+      "chapterStart": 1,
+      "chapterEnd": 9
+    },
+    {
+      "key": "lucas-10-24",
+      "sourcePath": "lucas-10-24",
+      "id": "bp-lucas-10-24",
+      "bookIds": [
+        "lucas"
+      ],
+      "order": 1,
+      "chapterStart": 10,
+      "chapterEnd": 24
+    },
+    {
+      "key": "hechos-1-12",
+      "sourcePath": "hechos-1-12",
+      "id": "bp-hechos-1-12",
+      "bookIds": [
+        "hechos"
+      ],
+      "order": 1,
+      "chapterStart": 1,
+      "chapterEnd": 12
+    },
+    {
+      "key": "hechos-13-28",
+      "sourcePath": "hechos-13-28",
+      "id": "bp-hechos-13-28",
+      "bookIds": [
+        "hechos"
+      ],
+      "order": 1,
+      "chapterStart": 13,
+      "chapterEnd": 28
+    },
+    {
+      "key": "romanos-1-4",
+      "sourcePath": "romanos-1-4",
+      "id": "bp-romanos-1-4",
+      "bookIds": [
+        "romanos"
+      ],
+      "order": 1,
+      "chapterStart": 1,
+      "chapterEnd": 4
+    },
+    {
+      "key": "romanos-5-16",
+      "sourcePath": "romanos-5-16",
+      "id": "bp-romanos-5-16",
+      "bookIds": [
+        "romanos"
+      ],
+      "order": 1,
+      "chapterStart": 5,
+      "chapterEnd": 16
+    },
+    {
+      "key": "1-corintios",
+      "sourcePath": "1-corintios",
+      "id": "bp-1-corintios",
+      "bookIds": [
+        "1-corintios"
+      ],
+      "order": 1
+    },
+    {
+      "key": "2-corintios",
+      "sourcePath": "2-corintios",
+      "id": "bp-2-corintios",
+      "bookIds": [
+        "2-corintios"
+      ],
+      "order": 1
+    },
+    {
+      "key": "galatas",
+      "sourcePath": "galatas",
+      "id": "bp-galatas",
+      "bookIds": [
+        "galatas"
+      ],
+      "order": 1
+    },
+    {
+      "key": "efesios",
+      "sourcePath": "efesios",
+      "id": "bp-efesios",
+      "bookIds": [
+        "efesios"
+      ],
+      "order": 1
+    },
+    {
+      "key": "filipenses",
+      "sourcePath": "filipenses",
+      "id": "bp-filipenses",
+      "bookIds": [
+        "filipenses"
+      ],
+      "order": 1
+    },
+    {
+      "key": "colosenses",
+      "sourcePath": "colosenses",
+      "id": "bp-colosenses",
+      "bookIds": [
+        "colosenses"
+      ],
+      "order": 1
+    },
+    {
+      "key": "1-tesalonicenses",
+      "sourcePath": "1-tesalonicenses",
+      "id": "bp-1-tesalonicenses",
+      "bookIds": [
+        "1-tesalonicenses"
+      ],
+      "order": 1
+    },
+    {
+      "key": "2-tesalonicenses",
+      "sourcePath": "2-tesalonicenses",
+      "id": "bp-2-tesalonicenses",
+      "bookIds": [
+        "2-tesalonicenses"
+      ],
+      "order": 1
+    },
+    {
+      "key": "1-timoteo",
+      "sourcePath": "1-timoteo",
+      "id": "bp-1-timoteo",
+      "bookIds": [
+        "1-timoteo"
+      ],
+      "order": 1
+    },
+    {
+      "key": "2-timoteo",
+      "sourcePath": "2-timoteo",
+      "id": "bp-2-timoteo",
+      "bookIds": [
+        "2-timoteo"
+      ],
+      "order": 1
+    },
+    {
+      "key": "tito",
+      "sourcePath": "tito",
+      "id": "bp-tito",
+      "bookIds": [
+        "tito"
+      ],
+      "order": 1
+    },
+    {
+      "key": "filemon",
+      "sourcePath": "filemon",
+      "id": "bp-filemon",
+      "bookIds": [
+        "filemon"
+      ],
+      "order": 1
+    },
+    {
+      "key": "hebreos",
+      "sourcePath": "hebreos",
+      "id": "bp-hebreos",
+      "bookIds": [
+        "hebreos"
+      ],
+      "order": 1
+    },
+    {
+      "key": "santiago",
+      "sourcePath": "santiago",
+      "id": "bp-santiago",
+      "bookIds": [
+        "santiago"
+      ],
+      "order": 1
+    },
+    {
+      "key": "1-pedro",
+      "sourcePath": "1-pedro",
+      "id": "bp-1-pedro",
+      "bookIds": [
+        "1-pedro"
+      ],
+      "order": 1
+    },
+    {
+      "key": "2-pedro",
+      "sourcePath": "2-pedro",
+      "id": "bp-2-pedro",
+      "bookIds": [
+        "2-pedro"
+      ],
+      "order": 1
+    },
+    {
+      "key": "1-3-juan",
+      "sourcePath": "1-3-juan",
+      "id": "bp-juan123",
+      "bookIds": [
+        "1-juan",
+        "2-juan",
+        "3-juan"
+      ],
+      "order": 1
+    },
+    {
+      "key": "judas",
+      "sourcePath": "judas",
+      "id": "bp-judas",
+      "bookIds": [
+        "judas"
+      ],
+      "order": 1
+    },
+    {
+      "key": "apocalipsis-1-11",
+      "sourcePath": "apocalipsis-1-11",
+      "id": "bp-apocalipsis-1-11",
+      "bookIds": [
+        "apocalipsis"
+      ],
+      "order": 1,
+      "chapterStart": 1,
+      "chapterEnd": 11
+    },
+    {
+      "key": "apocalipsis-12-22",
+      "sourcePath": "apocalipsis-12-22",
+      "id": "bp-apocalipsis-12-22",
+      "bookIds": [
+        "apocalipsis"
+      ],
+      "order": 1,
+      "chapterStart": 12,
+      "chapterEnd": 22
+    }
+  ]
+}

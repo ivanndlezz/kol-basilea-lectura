@@ -17,6 +17,7 @@ const peopleRegistry = await readJson("catalog/people.json");
 const sourceRegistry = await readJson("catalog/sources.json");
 const relationshipRegistry = await readJson("catalog/relationships.json");
 const videoRegistry = await readJson("media/videos.json");
+const videoMap = JSON.parse(await readFile(new URL("./data/bibleproject-video-map.json", import.meta.url), "utf8"));
 
 const books = booksRegistry.books;
 const people = peopleRegistry.people;
@@ -57,10 +58,45 @@ for (const relationship of relationships) {
   relationshipKeys.add(key);
 }
 
+const mapKeys = new Set();
+const mapResourceIds = new Set();
+const mappedBookIds = new Set();
+for (const entry of videoMap.videos) {
+  assert(typeof entry.key === "string" && entry.key, "Video map contains an invalid key");
+  assert(!mapKeys.has(entry.key), `Video map contains duplicate key ${entry.key}`);
+  mapKeys.add(entry.key);
+  assert(typeof entry.id === "string" && entry.id, `Video map entry ${entry.key} is missing an ID`);
+  assert(!mapResourceIds.has(entry.id), `Video map contains duplicate resource ID ${entry.id}`);
+  mapResourceIds.add(entry.id);
+  assert(Array.isArray(entry.bookIds) && entry.bookIds.length > 0, `Video map entry ${entry.key} is missing bookIds`);
+  for (const bookId of entry.bookIds) {
+    assert(bookIds.has(bookId), `Video map entry ${entry.key} references missing book ${bookId}`);
+    mappedBookIds.add(bookId);
+  }
+  if (entry.chapterStart != null || entry.chapterEnd != null) {
+    assert(Number.isInteger(entry.chapterStart) && Number.isInteger(entry.chapterEnd) && entry.chapterStart >= 1 && entry.chapterEnd >= entry.chapterStart, `Video map entry ${entry.key} has an invalid chapter range`);
+  }
+}
+assert(mappedBookIds.size === books.length, `Video map covers ${mappedBookIds.size} books instead of ${books.length}`);
+
 for (const [bookId, resourceIds] of Object.entries(videoRegistry.videoByBook)) {
   assert(bookIds.has(bookId), `Video mapping references missing book ${bookId}`);
   assert(Array.isArray(resourceIds) && resourceIds.length > 0, `Video mapping is empty for ${bookId}`);
   for (const resourceId of resourceIds) assert(videoRegistry.videos[resourceId], `Video mapping references missing resource ${resourceId}`);
+}
+
+for (const [resourceId, video] of Object.entries(videoRegistry.videos)) {
+  assert(video.provider === "bibleproject", `Video ${resourceId} has an unexpected provider`);
+  assert(video.language === "es", `Video ${resourceId} has an unexpected language`);
+  assert(typeof video.youtubeId === "string" && /^[A-Za-z0-9_-]{11}$/.test(video.youtubeId), `Video ${resourceId} has an invalid YouTube ID`);
+  assert(typeof video.pageUrl === "string" && video.pageUrl, `Video ${resourceId} is missing pageUrl`);
+  new URL(video.pageUrl);
+  assert(typeof video.embedUrl === "string" && video.embedUrl.includes(video.youtubeId), `Video ${resourceId} is missing embedUrl`);
+  new URL(video.embedUrl);
+  const thumbnailUrl = video.thumbnailUrl || video.thumbnail;
+  assert(typeof thumbnailUrl === "string" && thumbnailUrl, `Video ${resourceId} is missing thumbnail`);
+  new URL(thumbnailUrl);
+  if (video.bookIds) for (const bookId of video.bookIds) assert(bookIds.has(bookId), `Video ${resourceId} references missing book ${bookId}`);
 }
 
 console.log(`PASS: ${books.length} books, ${people.length} people, ${sources.length} sources, ${relationships.length} relationships, and ${Object.keys(videoRegistry.videos).length} video resources are referentially intact`);

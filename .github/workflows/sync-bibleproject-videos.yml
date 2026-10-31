@@ -1,0 +1,59 @@
+name: Sync BibleProject video metadata
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * 1"
+  push:
+    branches: ["main"]
+    paths:
+      - "scripts/import-bibleproject-videos.mjs"
+      - "scripts/data/bibleproject-video-map.json"
+      - ".github/workflows/sync-bibleproject-videos.yml"
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Import official Spanish video metadata
+        run: node scripts/import-bibleproject-videos.mjs --strict --report /tmp/bibleproject-video-report.json
+      - name: Validate referential integrity
+        run: npm run validate:data
+      - name: Commit generated registry
+        id: commit
+        run: |
+          if git diff --quiet -- dist/data/media/videos.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/data/media/videos.json
+          git commit -m "Sync BibleProject video metadata"
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Deploy updated registry
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run static.yml --ref main
+      - name: Upload import report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bibleproject-video-import-report
+          path: /tmp/bibleproject-video-report.json
+          if-no-files-found: ignore
+

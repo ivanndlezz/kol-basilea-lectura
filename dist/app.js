@@ -4,7 +4,7 @@ import { getLoadedBibleChapter, getBookLoadState, loadBibleBook } from "./data/b
 import { getPericopes, loadPericopes } from "./data/pericopes.js";
 const pericopeLoadRequested = new Set();
 import { BOOKS, CATEGORIES, TOTAL_CHAPTERS, getCatalogBook, getCategoryColor, narrativeBookTitle } from "./data/bible-catalog.js";
-import { JUAN_VIDEO, BOOK_INFO, getBookEditorial } from "./data/editorial-content.js";
+import { JUAN_VIDEO, BOOK_INFO, getBookEditorial, getBookEditorialVideos } from "./data/editorial-content.js";
 import { completedChapters, isBookFinished, completedChapterCount, completedBookCount, nextReadingBook, nextReadingChapter, markChapterComplete } from "./data/reading-progress.js";
 
 const STORAGE_KEY = "kol-basilea-lectura-v1";
@@ -204,6 +204,16 @@ function getBookVideo(book) {
   return getBookEditorial(book.id)?.video || null;
 }
 
+function getBookVideos(book) {
+  return getBookEditorialVideos(book.id);
+}
+
+function getBookVideosForChapter(book, chapter) {
+  const videos = getBookVideos(book);
+  const scoped = videos.filter(video => video.chapterStart == null || (chapter >= video.chapterStart && chapter <= video.chapterEnd));
+  return scoped.length ? scoped : videos;
+}
+
 function getBookInfo(book) {
   const category = CATEGORIES.find((item) => item.id === book.category)?.label || "Ruta editorial";
   return BOOK_INFO[book.id] || {
@@ -217,7 +227,9 @@ function getBookInfo(book) {
 }
 
 function renderVideoCard(video) {
-  return `<div class="video-card" data-video-card data-video-id="${video.id}" data-video-title="${escapeHtml(video.title)}"><div class="video-placeholder video-poster is-loading" data-video-shell><img class="video-thumbnail" data-skeleton-image src="${video.thumbnail}" alt="" aria-hidden="true" loading="lazy" decoding="async"><div class="video-poster-content"><button class="video-play-button" type="button" data-action="play-video" aria-label="Reproducir ${escapeHtml(video.title)}">${icon("play", 38)}</button><span class="video-duration">${video.duration}</span></div></div><div class="video-meta"><span class="video-kicker">Contexto compartido</span><h3>${escapeHtml(video.title)}</h3><p>${escapeHtml(video.description)}</p><div class="video-meta-footer"><span>Proyecto Biblia es el autor y propietario de este video.</span><a href="${video.pageUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div></div></div>`;
+  const embedUrl = video.embedUrl || `https://www.youtube-nocookie.com/embed/${video.id}?rel=0&modestbranding=1&playsinline=1`;
+  const thumbnail = video.thumbnailUrl || video.thumbnail;
+  return `<div class="video-card" data-video-card data-video-id="${video.id}" data-video-embed-url="${escapeHtml(embedUrl)}" data-video-title="${escapeHtml(video.title)}"><div class="video-placeholder video-poster is-loading" data-video-shell><img class="video-thumbnail" data-skeleton-image src="${thumbnail}" alt="" aria-hidden="true" loading="lazy" decoding="async"><div class="video-poster-content"><button class="video-play-button" type="button" data-action="play-video" aria-label="Reproducir ${escapeHtml(video.title)}">${icon("play", 38)}</button><span class="video-duration">${video.duration}</span></div></div><div class="video-meta"><span class="video-kicker">Contexto compartido</span><h3>${escapeHtml(video.title)}</h3><p>${escapeHtml(video.description)}</p><div class="video-meta-footer"><span>Proyecto Biblia es el autor y propietario de este video.</span><a href="${video.pageUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div></div></div>`;
 }
 
 function renderPendingVideoCard() {
@@ -595,9 +607,13 @@ function renderReaderDisplayMenu() {
   return `<div id="reader-display-menu" class="reader-display-menu" role="dialog" aria-label="Formato de lectura" ${state.readerDisplayOpen ? "" : "hidden"}><div class="display-menu-section"><span class="display-menu-label">Tipografía</span><div class="display-choice-grid display-choice-grid-two"><button class="display-choice ${serif ? "is-selected" : ""}" data-action="set-reader-font" data-font="serif" aria-pressed="${serif}">Serif</button><button class="display-choice ${!serif ? "is-selected" : ""}" data-action="set-reader-font" data-font="sans" aria-pressed="${!serif}">Sans</button></div></div><div class="display-menu-section"><span class="display-menu-label">Tema</span><div class="display-choice-grid"><button class="display-choice ${light ? "is-selected" : ""}" data-action="set-reader-theme" data-theme="light" aria-pressed="${light}">Claro</button><button class="display-choice display-choice-sepia ${sepia ? "is-selected" : ""}" data-action="set-reader-theme" data-theme="sepia" aria-pressed="${sepia}">Sepia</button><button class="display-choice display-choice-dark ${dark ? "is-selected" : ""}" data-action="set-reader-theme" data-theme="dark" aria-pressed="${dark}">Oscuro</button></div></div></div>`;
 }
 
-function renderReaderContext(book, contextVideo) {
+function renderReaderContext(book, contextVideos) {
   const open = state.readerContextOpen;
-  return `<section class="reader-context ${open ? "is-open" : "is-collapsed"}" aria-labelledby="reader-context-title"><button class="reader-context-toggle" data-action="toggle-reader-context" aria-expanded="${open}" aria-controls="reader-context-content"><span class="reader-context-heading"><span class="reader-context-icon" aria-hidden="true">${icon("play", 16)}</span><span><strong id="reader-context-title">Contexto en video: ${book.id === "3-juan" || book.id === "2-juan" || book.id === "1-juan" ? "Resumen de 1–3 Juan" : "Contexto editorial"}</strong><small>${getBookVideo(book) ? "10:58 min · Proyecto Biblia" : "Video de este libro · próximamente"}</small></span></span>${icon("chevronRight", 18)}</button><div id="reader-context-content" class="reader-context-content" ${open ? "" : "hidden"}>${contextVideo}</div></section>`;
+  const videos = contextVideos.filter(Boolean);
+  const duration = videos.map(video => video.duration).filter(Boolean).join(" · ");
+  const title = videos.length > 1 ? `Contexto en video · ${videos.length} partes` : book.id === "3-juan" || book.id === "2-juan" || book.id === "1-juan" ? "Resumen de 1–3 Juan" : "Contexto editorial";
+  const content = videos.length ? videos.map(renderVideoCard).join("") : renderPendingVideoCard();
+  return `<section class="reader-context ${open ? "is-open" : "is-collapsed"}" aria-labelledby="reader-context-title"><button class="reader-context-toggle" data-action="toggle-reader-context" aria-expanded="${open}" aria-controls="reader-context-content"><span class="reader-context-heading"><span class="reader-context-icon" aria-hidden="true">${icon("play", 16)}</span><span><strong id="reader-context-title">${title}</strong><small>${videos.length ? `${duration} · Proyecto Biblia` : "Video de este libro · próximamente"}</small></span></span>${icon("chevronRight", 18)}</button><div id="reader-context-content" class="reader-context-content" ${open ? "" : "hidden"}>${content}</div></section>`;
 }
 
 function renderReaderSelection(book, chapter) {
@@ -702,9 +718,8 @@ function renderReader() {
   const bookProgress = getCompletedChapters(book).length;
   const routeProgress = totalCompletedChapters();
   const origin = state.readerOrigin === "route" ? "Ruta" : state.readerOrigin === "library" ? "Biblioteca" : state.readerOrigin === "authors" ? "Autores" : "Hoy";
-  const video = getBookVideo(book);
-  const contextVideo = video ? renderVideoCard(video) : renderPendingVideoCard();
-  const readerBody = `${renderReaderContext(book, contextVideo)}${renderChapterList(book, chapter)}${state.readerBookInfoOpen ? renderBookInfoPage(book) : renderReadingCopy(book, chapter) + (chapter === book.chapters ? renderBookTextCredits(book) : "")}`;
+  const contextVideos = getBookVideosForChapter(book, chapter);
+  const readerBody = `${renderReaderContext(book, contextVideos)}${renderChapterList(book, chapter)}${state.readerBookInfoOpen ? renderBookInfoPage(book) : renderReadingCopy(book, chapter) + (chapter === book.chapters ? renderBookTextCredits(book) : "")}`;
   const readProgress = Number.isFinite(state.readerReadingProgress) ? state.readerReadingProgress : 0;
   const readerFooter = state.readerBookInfoOpen ? "" : `<footer class="reader-footer"><div class="reader-reading-meter" data-reading-meter><div class="reader-reading-meter-copy"><span data-reading-progress-label>${readProgress}% leído</span><span>Capítulo ${chapter}</span></div><div class="reader-reading-track" role="progressbar" aria-label="Progreso de lectura del capítulo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${readProgress}"><div class="reader-reading-fill" data-reading-progress-fill style="width:${readProgress}%"></div></div></div><button class="button button-primary button-wide" data-action="${completed && chapter < book.chapters ? "continue-chapter" : "complete-chapter"}" data-complete-chapter ${completed ? 'data-completed="true"' : ""} ${!completed && readProgress < 100 ? "disabled" : ""}>${completed && chapter < book.chapters ? `Continuar al capítulo ${chapter + 1} ${icon("chevronRight", 17)}` : chapter === book.chapters ? `Completar libro ${icon("check", 17)}` : "Marcar como leído"}</button></footer>`;
   return `<main class="reader-page" style="${categoryStyle(book.category)}"><header class="reader-topbar kb-reader-compact-header"><div class="kb-reader-toolbar"><button class="reader-back kb-reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 21)}</button><div class="kb-reader-toolbar-right"><button class="reader-format-button kb-reader-format" data-action="toggle-reader-format" aria-label="Formato de lectura" aria-expanded="${state.readerDisplayOpen}" aria-controls="reader-display-menu">${icon("sliders", 19)}</button><div class="reader-more-anchor"><button class="icon-button reader-more-trigger" data-action="toggle-reader-more" aria-label="Más opciones del capítulo" aria-haspopup="menu" aria-expanded="${Boolean(state.readerMoreOpen)}" aria-controls="reader-more-menu">${icon("ellipsis", 20)}</button>${state.readerMoreOpen ? `<div class="reader-more-popover" id="reader-more-menu" role="menu">${completed ? `<button role="menuitem" data-action="mark-chapter-unread">${icon("bookOpen", 17)}<span>Marcar como no leído</span></button>` : `<p>Este capítulo aún no está marcado como leído.</p>`}</div>` : ""}</div></div></div><div class="kb-reader-selector-row">${renderReaderSelection(book, chapter)}</div></header>${renderReaderDisplayMenu()}<div class="reader-progress"><div class="reader-progress-copy"><span>Progreso del libro</span><strong>${bookProgress} de ${book.chapters} capítulos</strong></div><div class="progress-track" role="progressbar" aria-label="Progreso del libro" aria-valuemin="0" aria-valuemax="${book.chapters}" aria-valuenow="${bookProgress}"><div class="progress-fill" style="width:${percent(bookProgress, book.chapters)}%"></div></div></div><article class="reader-content"><div class="reader-heading"><div class="reader-meta-pill"><span>Capítulo ${chapter} de ${book.chapters}</span></div><h1>${escapeHtml(book.name)}</h1></div>${readerBody}</article>${readerFooter}</main>`;
@@ -739,7 +754,13 @@ function activateVideo(button) {
   if (!videoId || !shell) return;
 
   const iframe = document.createElement("iframe");
-  iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&playsinline=1&rel=0&modestbranding=1`;
+  const embedUrl = card.dataset.videoEmbedUrl || `https://www.youtube-nocookie.com/embed/${videoId}`;
+  const embed = new URL(embedUrl);
+  embed.searchParams.set("autoplay", "1");
+  embed.searchParams.set("playsinline", "1");
+  embed.searchParams.set("rel", "0");
+  embed.searchParams.set("modestbranding", "1");
+  iframe.src = embed.toString();
   iframe.title = title;
   iframe.loading = "eager";
   iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
