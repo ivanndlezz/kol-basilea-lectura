@@ -45,6 +45,7 @@ const defaultState = () => ({
   readerOrigin: "home",
   readerChapter: null,
   routeCategory: "all",
+  libraryCategory: "all",
   readerContextOpen: true,
   readerDisplayOpen: false,
   chapterSheetOpen: false,
@@ -231,7 +232,7 @@ function renderTopbar() {
 }
 
 function renderNavigationSheet() {
-  const items = [["home","house","Hoy","Tu siguiente lectura"],["route","bookOpen","Biblioteca bíblica","Explora los 66 libros"],["progress","chart","Mi progreso","Capítulos y libros leídos"],["more","sliders","Configuración","Meta y preferencias"]];
+  const items = [["home","house","Hoy","Tu siguiente lectura"],["route","map","Ruta de lectura","Sigue la secuencia editorial"],["library","bookOpen","Biblioteca bíblica","Explora libremente los 66 libros"],["progress","chart","Mi progreso","Capítulos y libros leídos"],["more","sliders","Configuración","Meta y preferencias"]];
   const appearance = [["system","Automático","smartphone"],["light","Claro","sun"],["dark","Oscuro","moon"]];
   const selectedIcon = state.appAppearance === "dark" ? "moon" : state.appAppearance === "light" ? "sun" : "sun";
   return `<div class="kb-navigation-layer ${state.navigationOpen ? "is-open" : ""}" ${state.navigationOpen ? "" : "hidden"}>
@@ -246,12 +247,13 @@ function renderNavigationSheet() {
 }
 
 function renderBreadcrumb(view) {
-  const labels = { route: "Ruta", progress: "Progreso", more: "Más" };
+  const labels = { route: "Ruta", library: "Biblioteca", progress: "Progreso", more: "Configuración" };
   return `<nav class="breadcrumbs" aria-label="Ruta de navegación"><button class="breadcrumb-link" data-action="navigate" data-view="home">${icon("house", 15)}<span>Hoy</span></button><span class="breadcrumb-separator" aria-hidden="true">${icon("chevronRight", 15)}</span><span class="breadcrumb-current" aria-current="page">${labels[view] || "Hoy"}</span></nav>`;
 }
 
 function renderView() {
   if (state.view === "route") return renderRoute();
+  if (state.view === "library") return renderLibrary();
   if (state.view === "progress") return renderProgress();
   if (state.view === "more") return renderMore();
   return renderHome();
@@ -303,7 +305,15 @@ function renderRoute() {
   const done = totalCompletedBooks();
   const selectedCategory = CATEGORIES.find((category) => category.id === state.routeCategory) || CATEGORIES[0];
   const visibleBooks = state.routeCategory === "all" ? BOOKS : BOOKS.filter((book) => book.category === state.routeCategory);
-  return `<main class="screen"><div class="route-header"><p class="eyebrow">La ruta completa</p><h1>Libro por libro.</h1><p>Una secuencia editorial de 66 libros. Puedes recorrerla completa o explorarla por categorías.</p></div><div class="route-summary"><div class="stat-pill"><strong>${done}</strong> / 66 libros</div><div class="stat-pill"><strong>${totalCompletedChapters()}</strong> / ${TOTAL_CHAPTERS} capítulos</div></div><div class="category-filter" role="tablist" aria-label="Filtrar la ruta por categoría">${CATEGORIES.map((category) => `<button class="category-filter-chip ${category.id === state.routeCategory ? "is-selected" : ""}" style="${categoryStyle(category.id)}" data-action="filter-route-category" data-category="${category.id}" role="tab" aria-selected="${category.id === state.routeCategory}">${escapeHtml(category.label)}</button>`).join("")}</div><div class="category-result-label" style="${categoryStyle(selectedCategory.id)}"><span>${escapeHtml(selectedCategory.label)}</span><strong>${visibleBooks.length} ${visibleBooks.length === 1 ? "libro" : "libros"}</strong></div><div class="route-list">${visibleBooks.map(routeRow).join("")}</div></main>`;
+  return `<main class="screen"><div class="route-header"><p class="eyebrow">Tu ruta de lectura</p><h1>Libro por libro.</h1><p>Sigue la secuencia editorial de 66 libros, sin fechas ni atrasos.</p></div><div class="route-summary"><div class="stat-pill"><strong>${done}</strong> / 66 libros</div><div class="stat-pill"><strong>${totalCompletedChapters()}</strong> / ${TOTAL_CHAPTERS} capítulos</div></div><div class="route-list">${BOOKS.map(routeRow).join("")}</div></main>`;
+}
+
+function renderLibrary() {
+  const categoryId = CATEGORIES.some(category => category.id === state.libraryCategory) ? state.libraryCategory : "all";
+  const selected = CATEGORIES.find(category => category.id === categoryId) || CATEGORIES[0];
+  const books = categoryId === "all" ? BOOKS : BOOKS.filter(book => book.category === categoryId);
+  const ordered = [...books].sort((a, b) => a.name.localeCompare(b.name, "es"));
+  return `<main class="screen kb-library-page"><header class="route-header"><p class="eyebrow">Biblioteca bíblica</p><h1>Explora los libros.</h1><p>66 libros para descubrir a tu ritmo, sin alterar tu ruta de lectura.</p></header><div class="category-filter" role="group" aria-label="Filtrar biblioteca por categoría">${CATEGORIES.map(category => `<button class="category-filter-chip ${category.id === categoryId ? "is-selected" : ""}" style="${categoryStyle(category.id)}" data-action="filter-library-category" data-category="${category.id}" aria-pressed="${category.id === categoryId}">${escapeHtml(category.label)}</button>`).join("")}</div><div class="category-result-label" style="${categoryStyle(categoryId)}"><span>${escapeHtml(selected.label)}</span><strong>${ordered.length} ${ordered.length === 1 ? "libro" : "libros"}</strong></div><div class="kb-library-grid">${ordered.map(book => `<button class="kb-library-tile" data-action="open-book" data-book-id="${book.id}" style="${categoryStyle(book.category)}" aria-label="Abrir ${escapeHtml(book.name)}">${renderBookCover(book, isBookComplete(book))}<span class="kb-library-tile-name">${escapeHtml(book.name)}</span><span class="kb-library-tile-meta">${book.chapters} ${book.chapters === 1 ? "capítulo" : "capítulos"}</span></button>`).join("")}</div></main>`;
 }
 
 const CATEGORY_SHORT_LABELS = Object.freeze({
@@ -420,14 +430,14 @@ function renderReader() {
 }
 
 function renderNav() {
-  const items = [["home", "house", "Hoy"], ["route", "route", "Ruta"], ["progress", "chart", "Progreso"], ["more", "menu", "Más"]];
+  const items = [["home", "house", "Hoy"], ["route", "route", "Ruta"], ["progress", "chart", "Progreso"], ["library", "bookOpen", "Biblioteca"]];
   return `<nav class="bottom-nav" aria-label="Navegación principal">${items.map(([view, iconName, label]) => `<button class="nav-item ${state.view === view ? "is-active" : ""}" data-action="navigate" data-view="${view}" ${state.view === view ? 'aria-current="page"' : ""}><span class="nav-icon" aria-hidden="true">${icon(iconName, 19)}</span><span>${label}</span></button>`).join("")}</nav>`;
 }
 
 function openReader(bookId = currentBook().id) {
   state.justCompletedBookId = null;
   state.readerBookId = bookId;
-  state.readerOrigin = state.view === "route" ? "route" : "home";
+  state.readerOrigin = ["route", "library"].includes(state.view) ? state.view : "home";
   state.readerChapter = currentChapter(getBook(bookId));
   state.chapterSheetOpen = false;
   state.readerBookInfoOpen = false;
@@ -506,6 +516,7 @@ function bindEvents() {
       if (action === "open-more") { state.view = "more"; saveState(); render(); }
       if (action === "show-route") { state.view = "route"; saveState(); render(); }
       if (action === "show-progress") { state.view = "progress"; saveState(); render(); }
+      if (action === "filter-library-category") { state.libraryCategory = CATEGORIES.some(category => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "filter-route-category") { state.routeCategory = CATEGORIES.some((category) => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "open-book") { openReader(element.dataset.bookId); }
       if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); state.chapterSheetOpen = false; state.readerBookInfoOpen = false; state.readerReadingProgress = 0; saveState(); render(); }
