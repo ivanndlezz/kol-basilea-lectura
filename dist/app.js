@@ -433,7 +433,7 @@ function renderReader() {
   const contextVideo = video ? renderVideoCard(video) : renderPendingVideoCard();
   const readerBody = `${renderReaderContext(book, contextVideo)}${renderChapterList(book, chapter)}${state.readerBookInfoOpen ? renderBookInfoPage(book) : renderReadingCopy(book, chapter)}`;
   const readProgress = Number.isFinite(state.readerReadingProgress) ? state.readerReadingProgress : 0;
-  const readerFooter = state.readerBookInfoOpen ? "" : `<footer class="reader-footer"><div class="reader-reading-meter" data-reading-meter><div class="reader-reading-meter-copy"><span data-reading-progress-label>${readProgress}% leído</span><span>Capítulo ${chapter}</span></div><div class="reader-reading-track" role="progressbar" aria-label="Progreso de lectura del capítulo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${readProgress}"><div class="reader-reading-fill" data-reading-progress-fill style="width:${readProgress}%"></div></div></div><button class="button button-primary button-wide" data-action="complete-chapter" data-complete-chapter ${completed ? 'data-completed="true"' : ""} ${!completed && readProgress < 100 ? "disabled" : ""}>${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button></footer>`;
+  const readerFooter = state.readerBookInfoOpen ? "" : `<footer class="reader-footer"><div class="reader-reading-meter" data-reading-meter><div class="reader-reading-meter-copy"><span data-reading-progress-label>${readProgress}% leído</span><span>Capítulo ${chapter}</span></div><div class="reader-reading-track" role="progressbar" aria-label="Progreso de lectura del capítulo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${readProgress}"><div class="reader-reading-fill" data-reading-progress-fill style="width:${readProgress}%"></div></div></div><button class="button button-primary button-wide" data-action="${completed && chapter < book.chapters ? "continue-chapter" : "complete-chapter"}" data-complete-chapter ${completed ? 'data-completed="true"' : ""} ${!completed && readProgress < 100 ? "disabled" : ""}>${completed && chapter < book.chapters ? `Continuar al capítulo ${chapter + 1} ${icon("chevronRight", 17)}` : chapter === book.chapters ? `Completar libro ${icon("check", 17)}` : "Marcar como leído"}</button></footer>`;
   return `<main class="reader-page" style="${categoryStyle(book.category)}"><header class="reader-topbar"><div class="reader-topbar-left"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><span class="reader-topbar-divider" aria-hidden="true"></span><nav class="reader-topbar-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="reader-topbar-link" data-action="back-context">${origin}</button><span aria-hidden="true">${icon("chevronRight", 13)}</span><strong>${escapeHtml(book.name)} ${chapter}</strong><span class="reader-book-index">${book.index + 1}/66</span></nav></div><div class="reader-topbar-actions"><button class="reader-format-button" data-action="toggle-reader-format" aria-expanded="${state.readerDisplayOpen}" aria-controls="reader-display-menu">${icon("sliders", 16)}<span>Formato</span></button><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></div><div class="reader-route-progress" role="progressbar" aria-label="Progreso total de la ruta" aria-valuemin="0" aria-valuemax="${TOTAL_CHAPTERS}" aria-valuenow="${routeProgress}"><div style="width:${percent(routeProgress, TOTAL_CHAPTERS)}%"></div></div></header>${renderReaderSelection(book, chapter)}${renderReaderDisplayMenu()}<div class="reader-progress"><div class="reader-progress-copy"><span>Progreso del libro</span><strong>${bookProgress} de ${book.chapters} capítulos</strong></div><div class="progress-track" role="progressbar" aria-label="Progreso del libro" aria-valuemin="0" aria-valuemax="${book.chapters}" aria-valuenow="${bookProgress}"><div class="progress-fill" style="width:${percent(bookProgress, book.chapters)}%"></div></div></div><article class="reader-content"><div class="reader-heading"><div class="reader-meta-pill"><span>Capítulo ${chapter} de ${book.chapters}</span></div><h1>${escapeHtml(book.name)}</h1></div>${readerBody}</article>${readerFooter}</main>`;
 }
 
@@ -475,35 +475,50 @@ function activateVideo(button) {
   card.classList.add("is-playing");
 }
 
-function completeChapter() {
+function continueChapter() {
   const book = getBook(state.readerBookId);
   const chapter = readerChapter(book);
-  const wasComplete = isBookComplete(book);
-  const updatedProgress = markChapterComplete(state, book, chapter);
-  state.completedChapters = updatedProgress.completedChapters;
-  const finishedBook = isBookComplete(book);
+  if (!getCompletedChapters(book).includes(chapter) || chapter >= book.chapters) return;
+  state.readerChapter = chapter + 1;
   state.readerReadingProgress = 0;
   state.readerBookInfoOpen = false;
   state.chapterSheetOpen = false;
   state.readerDisplayOpen = false;
+  saveState();
+  render();
+  window.scrollTo({ top: 0, behavior: "instant" });
+}
+
+function completeChapter() {
+  const book = getBook(state.readerBookId);
+  const chapter = readerChapter(book);
+  const wasComplete = isBookComplete(book);
+  if (!getCompletedChapters(book).includes(chapter)) {
+    const updatedProgress = markChapterComplete(state, book, chapter);
+    state.completedChapters = updatedProgress.completedChapters;
+  }
+  const finishedBook = isBookComplete(book);
   if (state.onboardingStep === 3 && book.index === 0) state.onboardingComplete = true;
   if (finishedBook && !wasComplete) {
     state.justCompletedBookId = book.id;
     state.interludeBookId = book.id;
-    state.readerChapter = null;
     state.view = "interlude";
-  } else if (!finishedBook) {
-    // Continue to the next unread chapter without leaving the reader.
-    state.readerChapter = currentChapter(book);
-    state.view = "reader";
+    state.readerChapter = null;
+  } else if (finishedBook && chapter === book.chapters) {
+    // A previously completed book returns to its interlude only on explicit request.
+    state.interludeBookId = book.id;
+    state.view = "interlude";
   } else {
-    // An already completed book must not replay its completion celebration.
-    state.readerChapter = currentChapter(book);
+    // Keep the current chapter visible and expose the explicit Continue action.
     state.view = "reader";
   }
+  state.readerReadingProgress = 0;
+  state.readerBookInfoOpen = false;
+  state.chapterSheetOpen = false;
+  state.readerDisplayOpen = false;
   saveState();
   render();
-  window.scrollTo({ top: 0, behavior: "instant" });
+  if (state.view === "interlude") window.scrollTo({ top: 0, behavior: "instant" });
 }
 
 
@@ -545,6 +560,7 @@ function bindEvents() {
       if (action === "set-reader-theme") { state.readerTheme = ["light", "sepia", "dark"].includes(element.dataset.theme) ? element.dataset.theme : "light"; state.readerDisplayOpen = false; saveState(); render(); }
       if (action === "back-home" || action === "back-context") { state.view = ["route", "library"].includes(state.readerOrigin) ? state.readerOrigin : "home"; saveState(); render(); }
       if (action === "complete-chapter") { completeChapter(); }
+      if (action === "continue-chapter") { continueChapter(); }
       if (action === "interlude-next") { const finished = getBook(state.interludeBookId); const next = finished && BOOKS[finished.index + 1]; if (next) { state.view = "home"; state.interludeBookId = null; openReader(next.id); window.scrollTo({ top: 0, behavior: "instant" }); } }
       if (action === "interlude-home") { state.interludeBookId = null; state.view = "home"; saveState(); render(); window.scrollTo({ top: 0, behavior: "instant" }); }
       if (action === "set-appearance") { const value = element.dataset.appearance; if (["system", "light", "dark"].includes(value)) { state.appAppearance = value; state.appearancePopoverOpen = false; saveState(); render(); document.querySelector(".kb-appearance-toggle")?.focus({preventScroll:true}); } }
