@@ -1,4 +1,4 @@
-const CACHE = "kol-basilea-lectura-bible-v1";
+const CACHE = "kol-basilea-lectura-ui-v2";
 const CORE = ["./", "./index.html", "./styles.css", "./app.js", "./data/bible-catalog.js", "./data/bible-rvr1909.js", "./data/bible-loader.js", "./data/editorial-content.js", "./data/reading-progress.js"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
@@ -24,7 +24,7 @@ self.addEventListener("fetch", event => {
     }));
     return;
   }
-  event.respondWith(fetch(request).then(async response => {
+  event.respondWith(fetch(request, { cache: "no-store" }).then(async response => {
     if (response.ok) {
       const cache = await caches.open(CACHE);
       await cache.put(request,response.clone());
