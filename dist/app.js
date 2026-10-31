@@ -247,7 +247,7 @@ function renderTopbar() {
 }
 
 function renderNavigationSheet() {
-  const items = [["home","house","Hoy","Tu siguiente lectura"],["route","map","Ruta de lectura","Sigue la secuencia editorial"],["library","bookOpen","Biblioteca bíblica","Explora libremente los 66 libros"],["authors","users","Autores bíblicos","Personas, tradiciones y atribuciones"],["progress","chart","Mi progreso","Capítulos y libros leídos"],["more","sliders","Configuración","Meta y preferencias"]];
+  const items = [["home","house","Hoy","Tu siguiente lectura"],["route","map","Ruta de lectura","Sigue la secuencia editorial"],["library","bookOpen","Biblioteca bíblica","Explora libremente los 66 libros"],["authors","users","Autores bíblicos","Personas, tradiciones y atribuciones"],["compilation","bookOpen","Recopilación de textos","Los libros y quienes los recopilaron"],["progress","chart","Mi progreso","Capítulos y libros leídos"],["more","sliders","Configuración","Meta y preferencias"]];
   const appearance = [["system","Automático","smartphone"],["light","Claro","sun"],["dark","Oscuro","moon"]];
   const selectedIcon = state.appAppearance === "dark" ? "moon" : state.appAppearance === "light" ? "sun" : "sun";
   return `<div class="kb-navigation-layer ${state.navigationOpen ? "is-open" : ""}" ${state.navigationOpen ? "" : "hidden"}>
@@ -262,7 +262,7 @@ function renderNavigationSheet() {
 }
 
 function renderBreadcrumb(view) {
-  const labels = { route: "Ruta", library: "Biblioteca", progress: "Progreso", more: "Configuración", authors: "Autores bíblicos" };
+  const labels = { route: "Ruta", library: "Biblioteca", progress: "Progreso", more: "Configuración", authors: "Autores bíblicos", compilation: "Recopilación" };
   return `<nav class="breadcrumbs" aria-label="Ruta de navegación"><button class="breadcrumb-link" data-action="navigate" data-view="home">${icon("house", 15)}<span>Hoy</span></button><span class="breadcrumb-separator" aria-hidden="true">${icon("chevronRight", 15)}</span><span class="breadcrumb-current" aria-current="page">${labels[view] || "Hoy"}</span></nav>`;
 }
 
@@ -270,6 +270,7 @@ function renderView() {
   if (state.view === "route") return renderRoute();
   if (state.view === "library") return renderLibrary();
   if (state.view === "authors") return renderAuthors();
+  if (state.view === "compilation") return renderCompilation();
   if (state.view === "progress") return renderProgress();
   if (state.view === "more") return renderMore();
   return renderHome();
@@ -320,6 +321,13 @@ function bookChip(book) {
 function renderRoute() {
   const done = totalCompletedBooks();
   return `<main class="screen"><div class="route-header"><p class="eyebrow">Tu ruta de lectura</p><h1>Libro por libro.</h1><p>Sigue la secuencia editorial de 66 libros, sin fechas ni atrasos.</p></div><div class="route-summary"><div class="stat-pill"><strong>${done}</strong> / 66 libros</div><div class="stat-pill"><strong>${totalCompletedChapters()}</strong> / ${TOTAL_CHAPTERS} capítulos</div></div><div class="route-list">${BOOKS.map(routeRow).join("")}</div></main>`;
+}
+
+
+function renderCompilation() {
+  const book = BOOKS.find(item => item.name === "Génesis");
+  if (!book) return "";
+  return `<main class="screen kb-compilation-page"><header class="kb-compilation-heading"><p class="eyebrow">Recopilación de los textos</p><h1>Génesis</h1><span class="kb-compilation-category" style="${categoryStyle(book.category)}">La Ley · Antiguo Testamento</span></header><article class="kb-compilation-card"><div class="kb-compilation-image"><svg class="kb-compilation-art" viewBox="0 0 720 380" role="img" aria-label="Ilustración artística de escribas trabajando con rollos antiguos" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="c-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DCC5A0"/><stop offset="1" stop-color="#AB855D"/></linearGradient><linearGradient id="c-paper" x1="0" x2="1"><stop stop-color="#F7E6C5"/><stop offset="1" stop-color="#E8C99B"/></linearGradient></defs><rect width="720" height="380" fill="url(#c-bg)"/><path d="M0 0h720v160Q360 116 0 160Z" fill="#8F6E4F" opacity=".38"/><path d="M45 0v210M675 0v210" stroke="#EAD6B3" stroke-width="28" opacity=".32"/><path d="M0 290q360-70 720 0v90H0Z" fill="#7B5940"/><path d="M72 267h576l44 113H25Z" fill="#A16C47"/><path d="M80 278h560" stroke="#D0A175" stroke-width="9"/><g fill="#3F4937"><path d="M118 271q-25-103 15-147 45-33 82 10 29 45 4 137Z"/><path d="M490 274q-22-100 17-146 42-32 78 10 30 48 9 136Z"/></g><g fill="#BE946B"><circle cx="171" cy="120" r="36"/><circle cx="546" cy="121" r="35"/></g><path d="M133 113q12-47 53-36 21 7 26 29-37-17-79 7ZM511 115q8-43 47-37 23 4 29 29-36-17-76 8Z" fill="#413B2E"/><path d="M212 202q73 8 107 78M500 199q-68 9-96 81" stroke="#BC936E" stroke-width="27" stroke-linecap="round"/><path d="M270 248l-12 23m198-25 11 23" stroke="#6B4A30" stroke-width="5"/><path d="M244 255q119-22 238 0l-13 80q-106-20-215 0Z" fill="url(#c-paper)" stroke="#A37D54" stroke-width="5"/><g stroke="#9A7853" stroke-width="3" opacity=".7"><path d="M284 270h163M277 285h173M274 300h177M269 316h182"/></g><g fill="#7C5A3D"><rect x="243" y="246" width="13" height="99" rx="6"/><rect x="473" y="246" width="13" height="99" rx="6"/></g><path d="M326 258l-24 44" stroke="#47372A" stroke-width="4"/><path d="M370 182q8-30 22-36 17 18 9 39l-9 72" fill="#DDD0B3" stroke="#6F634C" stroke-width="3"/><path d="M390 250v30" stroke="#44392A" stroke-width="4"/><g fill="#F2D6A6" opacity=".75"><circle cx="70" cy="58" r="3"/><circle cx="645" cy="64" r="3"/><circle cx="356" cy="66" r="2"/></g></svg></div><div class="kb-compilation-content"><p class="eyebrow">Recopilación de los textos</p><h2>Escribas de Israel y Judá</h2><div class="kb-compilation-divider"></div><p class="kb-compilation-question">¿Quién es la fuente de los textos?</p><h3>Tradición oral de Moisés</h3></div></article><button class="kb-compilation-open" data-action="open-book" data-book-id="${book.id}">Leer Génesis ${icon("chevronRight",18)}</button></main>`;
 }
 
 function renderAuthors() {
