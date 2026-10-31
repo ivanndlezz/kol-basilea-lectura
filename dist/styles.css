@@ -996,3 +996,25 @@ a:not([class]):visited{color:var(--brand-dark)}
 .reader-page .kb-reader-selector-row .reader-translation-pill{display:flex;align-items:center;padding:8px 12px;border-left:1px solid #fff;border-radius:0;background:transparent;font-size:13px;white-space:nowrap}
 .reader-page .reader-progress{padding-top:9px;padding-bottom:9px}
 @media(min-width:700px){.reader-page .kb-reader-toolbar,.reader-page .kb-reader-selector-row{padding-left:24px;padding-right:24px}}
+
+/* One-time reading milestones: compact editorial bottom sheet */
+.kb-milestone-layer{position:fixed;inset:0;z-index:2000;display:flex;align-items:flex-end;justify-content:center}
+.kb-milestone-backdrop{position:absolute;inset:0;border:0;background:rgba(15,29,22,.45)}
+.kb-milestone-sheet{position:relative;z-index:1;width:min(100%,520px);max-height:94dvh;overflow-y:auto;padding:12px 26px calc(26px + env(safe-area-inset-bottom));border-radius:28px 28px 0 0;background:#fbfcf9;color:#20332c;text-align:center;box-shadow:0 -16px 60px rgba(0,0,0,.12);animation:kb-milestone-enter .45s cubic-bezier(.2,.8,.2,1) both}
+.kb-milestone-grip{width:38px;height:4px;border-radius:8px;background:#d9dfd9;margin:0 auto 24px}
+.kb-milestone-sheet>.eyebrow{font-size:11px;letter-spacing:.13em;margin:0 0 10px;color:#2b795c}
+.kb-milestone-sheet h2{font-size:clamp(25px,6vw,34px);line-height:1.15;margin:0 0 10px}
+.kb-milestone-description{font-size:14px;line-height:1.5;color:#6d7a71;margin:0 auto;max-width:320px}
+.kb-milestone-ring{width:196px;height:196px;position:relative;margin:22px auto 15px}
+.kb-milestone-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.kb-milestone-ring circle{fill:none;stroke-width:9}
+.kb-milestone-ring-track{stroke:#e5ede7}
+.kb-milestone-ring-fill{stroke:#2b795c;stroke-linecap:round;stroke-dasharray:490.09;stroke-dashoffset:var(--milestone-offset);animation:kb-milestone-fill 1.4s ease-out both}
+.kb-milestone-ring-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.kb-milestone-ring-center strong{font-size:49px;line-height:1.1}
+.kb-milestone-ring-center span{font-size:13px;color:#6d7a71}
+.kb-milestone-ring-center small{font-size:14px;font-weight:700;color:#2b795c;margin-top:5px}
+.kb-milestone-footnote{font-size:12px;color:#758077;margin:0 0 22px}
+@keyframes kb-milestone-enter{from{transform:translateY(100%)}to{transform:translateY(0)}}
+@keyframes kb-milestone-fill{from{stroke-dashoffset:490.09}to{stroke-dashoffset:var(--milestone-offset)}}
+@media(prefers-reduced-motion:reduce){.kb-milestone-sheet,.kb-milestone-ring-fill{animation:none}}
