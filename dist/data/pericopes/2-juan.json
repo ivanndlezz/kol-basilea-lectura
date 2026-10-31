@@ -1,0 +1,36 @@
+{
+  "bookId": "2-juan",
+  "chapter": 1,
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://biblehub.com/bsb/2_john/1.htm",
+    "license": "Public domain",
+    "note": "Los límites de las secciones proceden de BSB; los títulos en español son adaptaciones editoriales de Kol Basilea."
+  },
+  "sections": [
+    {
+      "startVerse": 1,
+      "title": "Saludo del anciano",
+      "sourceTitle": "A Greeting from the Elder",
+      "status": "reviewed"
+    },
+    {
+      "startVerse": 4,
+      "title": "Caminar en la verdad",
+      "sourceTitle": "Walking in the Truth",
+      "status": "reviewed"
+    },
+    {
+      "startVerse": 7,
+      "title": "Cuidado con los engañadores",
+      "sourceTitle": "Beware of Deceivers",
+      "status": "reviewed"
+    },
+    {
+      "startVerse": 12,
+      "title": "Despedida",
+      "sourceTitle": "Conclusion",
+      "status": "reviewed"
+    }
+  ]
+}
