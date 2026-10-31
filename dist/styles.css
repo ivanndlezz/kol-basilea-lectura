@@ -701,3 +701,12 @@ body[data-app-appearance="dark"] .kol-discovery-link{background:#a9563b}
 .appearance-option-text strong{font-size:14px}
 .appearance-option-text small{font-size:11px}
 .appearance-option-check{width:20px}
+
+/* Native-feeling Settings hierarchy */
+.settings-screen{padding-top:6px}
+.settings-title{font-size:clamp(22px,5.2vw,27px);font-weight:720;line-height:1.25;letter-spacing:-.025em;text-align:center;margin:8px 0 25px}
+.settings-list{margin-top:0!important;display:grid;gap:14px}
+.settings-screen .appearance-setting{padding:16px 16px 17px}
+.settings-screen .appearance-setting h2{font-size:15px;font-weight:650;color:var(--ink-muted);margin-bottom:12px}
+.settings-screen .appearance-option{min-height:55px}
+.settings-screen .appearance-option-text small{font-size:11px}
