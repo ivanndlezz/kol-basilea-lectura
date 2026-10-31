@@ -17,6 +17,8 @@ const ICONS = {
   chart: '<path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.953C12.449 1.995 12 2.448 12 3v8a1 1 0 0 0 1 1z"/><path d="M21.21 15.89A10 10 0 1 1 8.11 2.79"/><path d="M12 12v8a1 1 0 0 0 1 1h8a10.02 10.02 0 0 0-9-9z"/>',
   menu: '<line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/>',
   sliders: '<line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="1" x2="7" y1="14" y2="14"/><line x1="9" x2="15" y1="8" y2="8"/><line x1="17" x2="23" y1="16" y2="16"/>',
+  x: '<path d="M18 6 6 18M6 6l12 12"/>',
+  externalLink: '<path d="M15 3h6v6M10 14 21 3"/><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/>',
   ellipsis: '<circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/>',
   arrowLeft: '<path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>',
   chevronRight: '<path d="m9 18 6-6-6-6"/>',
@@ -166,6 +168,7 @@ function render() {
   root.innerHTML = state.onboardingComplete || state.view === "reader" ? renderApp() : renderOnboarding();
   document.body.classList.toggle("kb-navigation-open", Boolean(state.navigationOpen));
   bindEvents();
+  if (state.navigationOpen) document.querySelector(".kb-navigation-close")?.focus({preventScroll:true});
   bindImageSkeletons();
   if (state.view === "reader" && !state.readerBookInfoOpen) {
     const bookId = state.readerBookId;
@@ -228,14 +231,14 @@ function renderTopbar() {
 }
 
 function renderNavigationSheet() {
-  const items = [["home","house","Hoy","Continúa tu lectura"],["route","route","Explorar los 66 libros","Tu biblioteca y ruta"],["progress","chart","Mi progreso","Capítulos y libros leídos"],["more","sliders","Configuración","Meta y preferencias"]];
+  const items = [["home","house","Hoy","Tu siguiente lectura"],["route","bookOpen","Biblioteca bíblica","Explora los 66 libros"],["progress","chart","Mi progreso","Capítulos y libros leídos"],["more","sliders","Configuración","Meta y preferencias"]];
   const appearance = [["system","Automático","smartphone"],["light","Claro","sun"],["dark","Oscuro","moon"]];
-  const selectedIcon = state.appAppearance === "dark" ? "moon" : state.appAppearance === "light" ? "sun" : "smartphone";
+  const selectedIcon = state.appAppearance === "dark" ? "moon" : state.appAppearance === "light" ? "sun" : "sun";
   return `<div class="kb-navigation-layer ${state.navigationOpen ? "is-open" : ""}" ${state.navigationOpen ? "" : "hidden"}>
     <button class="kb-navigation-backdrop" data-action="close-navigation" aria-label="Cerrar menú"></button>
     <aside class="kb-navigation-sheet" id="kb-navigation-sheet" role="dialog" aria-modal="true" aria-labelledby="kb-navigation-title">
       <div class="kb-navigation-head"><div><p class="eyebrow">Kol Basilea</p><h2 id="kb-navigation-title">Explorar</h2></div><button class="kb-navigation-close" data-action="close-navigation" aria-label="Cerrar menú">${icon("x",22)}</button></div>
-      <nav class="kb-navigation-links" aria-label="Secciones del proyecto">${items.map(([view,symbol,label,detail]) => `<button class="kb-navigation-link ${state.view === view ? "is-current" : ""}" data-action="navigation-go" data-view="${view}" ${state.view === view ? 'aria-current="page"' : ""}><span class="kb-navigation-link-icon">${icon(symbol,20)}</span><span class="kb-navigation-link-copy"><strong>${label}</strong><small>${detail}</small></span>${icon("chevronRight",17)}</button>`).join("")}</nav>
+      <nav class="kb-navigation-links" aria-label="Secciones del proyecto">${items.map(([view,symbol,label,detail]) => `<button class="kb-navigation-link ${state.view === view ? "is-current" : ""}" data-action="navigation-go" data-view="${view}" ${state.view === view ? 'aria-current="page"' : ""}><span class="kb-navigation-link-icon">${icon(symbol,20)}</span><span class="kb-navigation-link-copy"><strong>${label}</strong><small>${detail}</small></span>${icon("chevronRight",17)}</button>`).join("")}</nav><a class="kb-navigation-project" href="https://ivanndlezz.github.io/kol-basilea/" target="_blank" rel="noopener noreferrer">${icon("info",19)}<span>Conoce Kol Basilea</span>${icon("externalLink",16)}</a>
       <div class="kb-navigation-footer"><div class="kb-navigation-appearance"><span class="kb-navigation-appearance-label">Apariencia</span><div class="kb-navigation-popover-anchor"><button class="kb-appearance-toggle" data-action="toggle-appearance-popover" aria-expanded="${state.appearancePopoverOpen}" aria-controls="kb-appearance-popover" aria-label="Elegir apariencia: ${appearance.find(([value]) => value === state.appAppearance)?.[1] || "Automático"}">${icon(selectedIcon,19)}<span>${appearance.find(([value]) => value === state.appAppearance)?.[1] || "Automático"}</span>${icon("chevronDown",15)}</button>
       <div id="kb-appearance-popover" class="kb-appearance-popover" role="group" aria-label="Opciones de apariencia" ${state.appearancePopoverOpen ? "" : "hidden"}>${appearance.map(([value,label,symbol]) => `<button class="kb-appearance-choice ${state.appAppearance === value ? "is-selected" : ""}" data-action="set-appearance" data-appearance="${value}" aria-pressed="${state.appAppearance === value}">${icon(symbol,19)}<span>${label}</span>${state.appAppearance === value ? icon("check",17) : ""}</button>`).join("")}</div></div></div><a class="kb-navigation-external" href="https://klef.agency/" target="_blank" rel="noopener noreferrer" style="display:none">Más</a><p class="kb-navigation-note">Tu recorrido por las Escrituras, a tu ritmo.</p></div>
     </aside>
@@ -488,9 +491,9 @@ function bindEvents() {
       if (action === "play-video") { activateVideo(element); }
       if (action === "navigate") { state.view = element.dataset.view; state.navigationOpen = false; saveState(); render(); }
       if (action === "toggle-navigation") { state.navigationOpen = !state.navigationOpen; state.appearancePopoverOpen = false; render(); }
-      if (action === "close-navigation") { state.navigationOpen = false; state.appearancePopoverOpen = false; render(); }
+      if (action === "close-navigation") { state.navigationOpen = false; state.appearancePopoverOpen = false; render(); document.querySelector(".kb-menu-trigger")?.focus({preventScroll:true}); }
       if (action === "navigation-go") { state.view = element.dataset.view; state.navigationOpen = false; state.appearancePopoverOpen = false; saveState(); render(); window.scrollTo({ top: 0, behavior: "instant" }); }
-      if (action === "toggle-appearance-popover") { state.appearancePopoverOpen = !state.appearancePopoverOpen; render(); }
+      if (action === "toggle-appearance-popover") { state.appearancePopoverOpen = !state.appearancePopoverOpen; render(); document.querySelector(".kb-appearance-toggle")?.focus({preventScroll:true}); }
       if (action === "open-more") { state.view = "more"; saveState(); render(); }
       if (action === "show-route") { state.view = "route"; saveState(); render(); }
       if (action === "show-progress") { state.view = "progress"; saveState(); render(); }
@@ -507,7 +510,7 @@ function bindEvents() {
       if (action === "set-reader-theme") { state.readerTheme = ["light", "sepia", "dark"].includes(element.dataset.theme) ? element.dataset.theme : "light"; state.readerDisplayOpen = false; saveState(); render(); }
       if (action === "back-home" || action === "back-context") { state.view = state.readerOrigin === "route" ? "route" : "home"; saveState(); render(); }
       if (action === "complete-chapter") { completeChapter(); }
-      if (action === "set-appearance") { const value = element.dataset.appearance; if (["system", "light", "dark"].includes(value)) { state.appAppearance = value; state.appearancePopoverOpen = false; saveState(); render(); } }
+      if (action === "set-appearance") { const value = element.dataset.appearance; if (["system", "light", "dark"].includes(value)) { state.appAppearance = value; state.appearancePopoverOpen = false; saveState(); render(); document.querySelector(".kb-appearance-toggle")?.focus({preventScroll:true}); } }
       if (action === "change-goal") {
         const nextGoal = state.goal === "365" ? "180" : state.goal === "180" ? "none" : "365";
         state.goal = nextGoal;
@@ -520,6 +523,17 @@ function bindEvents() {
   });
 }
 
+document.addEventListener("keydown", event => {
+  if (!state.navigationOpen) return;
+  if (event.key === "Escape") { event.preventDefault(); state.navigationOpen = false; state.appearancePopoverOpen = false; render(); document.querySelector(".kb-menu-trigger")?.focus({preventScroll:true}); return; }
+  if (event.key !== "Tab") return;
+  const dialog = document.querySelector("#kb-navigation-sheet");
+  const focusable = [...(dialog?.querySelectorAll('button:not([disabled]),a[href]') || [])].filter(el => el.getClientRects().length);
+  if (!focusable.length) return;
+  const first = focusable[0], last = focusable[focusable.length - 1];
+  if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+  else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+});
 bindReaderReadingProgress();
 render();
 updateReaderReadingProgress();
