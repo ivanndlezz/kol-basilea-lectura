@@ -884,3 +884,32 @@ a:not([class]):visited{color:var(--brand-dark)}
 .reader-more-popover button{display:flex;align-items:center;gap:10px;width:100%;min-height:45px;padding:10px 12px;border:0;border-radius:11px;background:transparent;color:var(--ink);font-size:14px;font-weight:650;text-align:left}
 .reader-more-popover button:hover,.reader-more-popover button:focus-visible{background:var(--brand-soft)}
 .reader-more-popover p{margin:0;padding:12px;font-size:13px;line-height:1.4;color:var(--ink-muted)}
+
+/* Biblical authors: mobile-first editorial directory and accessible profiles. */
+.kb-authors-page .route-header{margin-bottom:22px}
+.kb-authors-page .category-filter{margin:0 0 18px}
+.kb-authors-count{font-size:12px;color:var(--ink-muted);font-weight:650;margin:8px 0 15px}
+.kb-authors-list{display:grid;gap:10px}
+.kb-author-card{width:100%;display:flex;align-items:center;gap:14px;padding:14px;border:1px solid var(--line);border-radius:18px;background:var(--surface);color:var(--ink);text-align:left;-webkit-appearance:none;appearance:none}
+.kb-author-avatar,.kb-author-monogram{display:grid;place-items:center;flex-shrink:0;background:var(--brand-soft);color:var(--brand-dark);font-family:Georgia,serif;font-size:25px;font-weight:700;border-radius:15px;width:58px;height:66px}
+.kb-author-card-copy{display:grid;flex:1;gap:4px;min-width:0}
+.kb-author-card-copy strong{font-size:16px;color:var(--accent)}
+.kb-author-card-copy small{font-size:12px;line-height:1.45;color:var(--ink-muted)}
+.kb-author-card-copy em{font-size:11px;font-style:normal;font-weight:700;color:var(--brand-dark)}
+.kb-author-card>.lucide-icon{flex-shrink:0;color:var(--ink-muted)}
+.kb-authors-disclaimer{margin:25px 2px 10px;color:var(--ink-muted);font-size:12px;line-height:1.6}
+.kb-author-back{display:inline-flex;align-items:center;gap:9px;border:0;background:transparent;color:var(--brand-dark);font-size:13px;font-weight:750;padding:8px 0;margin-bottom:24px}
+.kb-author-profile-header{text-align:center;display:flex;flex-direction:column;align-items:center;gap:11px;padding:18px 0 28px}
+.kb-author-monogram{width:100px;height:112px;font-size:54px;border-radius:26px;background:var(--brand-dark);color:#fff}
+.kb-author-profile-header .eyebrow{margin:7px 0 0}
+.kb-author-profile-header h1{margin:0;font-size:clamp(32px,8vw,46px);letter-spacing:-.04em}
+.kb-author-profile-header>p:last-child{line-height:1.6;color:var(--ink-muted);margin:0;max-width:36ch}
+.kb-author-status{padding:6px 12px;border-radius:20px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:800}
+.kb-author-note{padding:22px;border-radius:20px;background:var(--surface);border:1px solid var(--line);margin-bottom:25px}
+.kb-author-note h2,.kb-author-books h2{font-size:19px;margin:0 0 12px}
+.kb-author-note p,.kb-author-books>p{line-height:1.65;color:var(--ink-muted);font-size:14px;margin:0}
+.kb-author-book-list{display:grid;gap:8px;margin:18px 0 24px}
+.kb-author-book{display:flex;align-items:center;gap:13px;padding:15px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--ink);text-align:left}
+.kb-author-book strong{flex:1;font-size:14px;color:var(--accent)}
+.kb-author-book-color{height:26px;width:7px;border-radius:7px;background:var(--category-color,var(--brand))}
+.kb-authors-page .category-filter-chip.is-selected{background:var(--brand);border-color:var(--brand)}
