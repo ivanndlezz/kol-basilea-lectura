@@ -63,6 +63,8 @@ const defaultState = () => ({
   readerBookInfoOpen: false,
   readerReadingProgress: 0,
   completedChapters: {},
+  celebratedMilestones: [],
+  activeMilestone: null,
   toast: ""
 });
 
@@ -85,7 +87,7 @@ function loadState() {
 }
 
 function saveState() {
-  const { toast, navigationOpen, appearancePopoverOpen, readerMoreOpen, ...persisted } = state;
+  const { toast, navigationOpen, appearancePopoverOpen, readerMoreOpen, activeMilestone, ...persisted } = state;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(persisted));
 }
 
@@ -230,9 +232,18 @@ function goalOption(value, title, subtitle) {
   return `<button type="button" class="goal-option ${selected ? "is-selected" : ""}" data-action="choose-goal" data-goal="${value}" aria-pressed="${selected}"><span><strong>${title}</strong><span>${subtitle}</span></span>${selected ? `<span class="checkmark" aria-hidden="true">${icon("check", 20)}</span>` : ""}</button>`;
 }
 
+const READING_MILESTONES = [1,3,5,10,20,33,50,66];
+function renderMilestoneSheet() {
+  const count = state.activeMilestone;
+  if (!READING_MILESTONES.includes(count)) return "";
+  const progress = count / 66 * 100;
+  const messages = {1:["Tu primer libro.","Una historia terminada. Un camino que apenas comienza."],3:["Tres libros en tu estantería.","Tu colección empieza a tomar forma."],5:["Cinco libros leídos.","Cada página es parte de tu recorrido."],10:["Diez libros.","Ya conoces diez historias de las Escrituras."],20:["Veinte libros.","Un recorrido construido a tu propio ritmo."],33:["A mitad del camino.","Has terminado la mitad de los libros de tu ruta."],50:["Cincuenta libros.","Una colección llena de historias y descubrimientos."],66:["Tu biblioteca está completa.","Has terminado los 66 libros de esta ruta."]};
+  const [title,description] = messages[count];
+  return `<div class="kb-milestone-layer" role="presentation"><button class="kb-milestone-backdrop" data-action="dismiss-milestone" aria-label="Cerrar celebración"></button><section class="kb-milestone-sheet" role="dialog" aria-modal="true" aria-labelledby="kb-milestone-title"><div class="kb-milestone-grip" aria-hidden="true"></div><p class="eyebrow">Hito de lectura</p><h2 id="kb-milestone-title">${title}</h2><p class="kb-milestone-description">${description}</p><div class="kb-milestone-ring" role="img" aria-label="${count} de 66 libros, ${progress.toFixed(1)} por ciento"><svg viewBox="0 0 200 200" aria-hidden="true"><circle class="kb-milestone-ring-track" cx="100" cy="100" r="78"/><circle class="kb-milestone-ring-fill" cx="100" cy="100" r="78" style="--milestone-offset:${(490.09*(1-count/66)).toFixed(2)}"/></svg><div class="kb-milestone-ring-center"><strong>${count}</strong><span>de 66 libros</span><small>${progress.toFixed(1)}%</small></div></div><p class="kb-milestone-footnote">Sin prisa ni rachas. Cada libro cuenta.</p><button class="button button-primary button-wide" data-action="dismiss-milestone">Continuar mi camino</button></section></div>`;
+}
 function renderApp() {
   const content = state.view === "reader" ? renderReader() : state.view === "interlude" ? renderInterlude() : renderView();
-  return `<div class="app-shell ${state.view === "reader" ? "is-reading" : ""}">${["reader", "interlude"].includes(state.view) ? content : `${renderTopbar()}${state.view === "home" ? "" : renderBreadcrumb(state.view)}${content}${renderNav()}`}${renderNavigationSheet()}${state.toast ? `<div class="toast" role="status">${escapeHtml(state.toast)}</div>` : ""}</div>`;
+  return `<div class="app-shell ${state.view === "reader" ? "is-reading" : ""}">${["reader", "interlude"].includes(state.view) ? content : `${renderTopbar()}${state.view === "home" ? "" : renderBreadcrumb(state.view)}${content}${renderNav()}`}${renderNavigationSheet()}${renderMilestoneSheet()}${state.toast ? `<div class="toast" role="status">${escapeHtml(state.toast)}</div>` : ""}</div>`;
 }
 
 
@@ -624,6 +635,11 @@ function completeChapter() {
   if (state.onboardingStep === 3 && book.index === 0) state.onboardingComplete = true;
   if (finishedBook && !wasComplete) {
     state.justCompletedBookId = book.id;
+    const finishedCount = totalCompletedBooks();
+    if (READING_MILESTONES.includes(finishedCount) && !state.celebratedMilestones.includes(finishedCount)) {
+      state.activeMilestone = finishedCount;
+      state.celebratedMilestones = [...state.celebratedMilestones, finishedCount];
+    }
     state.interludeBookId = book.id;
     state.view = "interlude";
     state.readerChapter = null;
@@ -697,6 +713,7 @@ function bindEvents() {
         state.readerReadingProgress = 0;
         saveState(); render();
       }
+      if (action === "dismiss-milestone") { state.activeMilestone = null; saveState(); render(); }
       if (action === "complete-chapter") { completeChapter(); }
       if (action === "continue-chapter") { continueChapter(); }
       if (action === "interlude-next") { const finished = getBook(state.interludeBookId); const next = finished && BOOKS[finished.index + 1]; if (next) { state.view = "home"; state.interludeBookId = null; openReader(next.id); window.scrollTo({ top: 0, behavior: "instant" }); } }
