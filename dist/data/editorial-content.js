@@ -1,22 +1,23 @@
 /** Editorial material is separate from Scripture and reader progress.
  * Do not infer missing history, authorship, video sources or licenses.
  */
-export const JUAN_VIDEO = {
-  id: "wQtMnuBzb4c",
-  title: "Resumen de 1–3 Juan",
-  description: "Un panorama animado sobre las tres cartas y sus temas de vida, verdad y amor.",
-  duration: "10:58",
-  thumbnail: "https://ik.imagekit.io/bpweb1/web/media/video-images/new-testament-overview/123-john/tr:q-65,w-800/123-john_16.9.jpg",
-  pageUrl: "https://bibleproject.com/es/guides/libro-de-1-3-juan/",
-  youtubeUrl: "https://www.youtube.com/watch?v=wQtMnuBzb4c"
+const videoResponse = await fetch(new URL("./media/videos.json", import.meta.url));
+if (!videoResponse.ok) throw new Error("Cannot load editorial video registry");
+const videoRegistry = await videoResponse.json();
+const resolveVideo = bookId => {
+  const resourceId = videoRegistry.videoByBook[bookId]?.[0];
+  if (!resourceId) return null;
+  const video = videoRegistry.videos[resourceId];
+  if (!video) throw new Error(`Missing video resource: ${resourceId}`);
+  return { ...video, id: video.youtubeId };
 };
-
-
-export const EDITORIAL_BY_BOOK = Object.freeze({
-  "1-juan": { video: JUAN_VIDEO, introductionSummary: JUAN_VIDEO.description, sourceAttribution: "Proyecto Biblia", sourceUrl: JUAN_VIDEO.pageUrl },
-  "2-juan": { video: JUAN_VIDEO, introductionSummary: JUAN_VIDEO.description, sourceAttribution: "Proyecto Biblia", sourceUrl: JUAN_VIDEO.pageUrl },
-  "3-juan": { video: JUAN_VIDEO, introductionSummary: JUAN_VIDEO.description, sourceAttribution: "Proyecto Biblia", sourceUrl: JUAN_VIDEO.pageUrl }
-});
+export const JUAN_VIDEO = resolveVideo("1-juan");
+export const EDITORIAL_BY_BOOK = Object.freeze(Object.fromEntries(
+  Object.keys(videoRegistry.videoByBook).map(bookId => {
+    const video = resolveVideo(bookId);
+    return [bookId, { video, introductionSummary: video.description, sourceAttribution: "Proyecto Biblia", sourceUrl: video.pageUrl }];
+  })
+));
 export function getBookEditorial(bookId) { return EDITORIAL_BY_BOOK[bookId] || null; }
 
 export const BOOK_INFO = {
