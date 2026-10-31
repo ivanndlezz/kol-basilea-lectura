@@ -576,7 +576,6 @@ function setupReaderSectionNav() {
   sectionNavCleanup = null;
   const nav = document.querySelector(".kb-section-nav");
   if (!nav) return;
-  const header = document.querySelector(".reader-topbar");
   const tabs = [...nav.querySelectorAll(".kb-section-tab")];
   const targets = tabs.map(tab => document.getElementById(tab.hash.slice(1)));
   if (targets.some(target => !target)) return;
@@ -585,7 +584,10 @@ function setupReaderSectionNav() {
     const height = nav.getBoundingClientRect().height;
     document.documentElement.style.setProperty("--kb-section-offset", (height + 18) + "px");
   };
+  let activeIndex = -1;
   const activate = index => {
+    if (activeIndex === index) return;
+    activeIndex = index;
     tabs.forEach((tab, i) => {
       if (i === index) tab.setAttribute("aria-current", "location");
       else tab.removeAttribute("aria-current");
@@ -601,7 +603,6 @@ function setupReaderSectionNav() {
     if (frame) return;
     frame = requestAnimationFrame(() => {
       frame = 0;
-      updatePosition();
       const threshold = nav.getBoundingClientRect().bottom + 26;
       let current = 0;
       targets.forEach((target, i) => { if (target.getBoundingClientRect().top <= threshold) current = i; });
