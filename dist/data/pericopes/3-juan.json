@@ -1,0 +1,44 @@
+{
+  "bookId": "3-juan",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Divisiones tomadas de los encabezados BSB; títulos adaptados al español por Kol Basilea."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "title": "Saludo del anciano",
+          "sourceTitle": "A Greeting from the Elder",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/3_juan/1.htm"
+        },
+        {
+          "startVerse": 5,
+          "title": "La hospitalidad de Gayo",
+          "sourceTitle": "Gaius Commended for Hospitality",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/3_juan/1.htm"
+        },
+        {
+          "startVerse": 9,
+          "title": "Diótrefes y Demetrio",
+          "sourceTitle": "Diotrephes and Demetrius",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/3_juan/1.htm"
+        },
+        {
+          "startVerse": 13,
+          "title": "Despedida",
+          "sourceTitle": "Conclusion",
+          "status": "reviewed",
+          "sourceUrl": "https://biblehub.com/bsb/3_juan/1.htm"
+        }
+      ]
+    }
+  ]
+}
