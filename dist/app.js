@@ -380,7 +380,7 @@ function renderCompilation() {
 }
 function renderAuthorPortrait(person) {
   const seed = encodeURIComponent("kol-basilea-" + person.id);
-  const url = `https://api.dicebear.com/9.x/adventurer/svg?seed=${seed}&backgroundColor=transparent`;
+  const url = `https://api.dicebear.com/9.x/notionists/svg?seed=${seed}&backgroundColor=transparent`;
   const initial = escapeHtml(person.name.slice(0,1));
   return `<span class="kb-avatar-fallback" aria-label="Representación de ${escapeHtml(person.name)}"><span class="kb-avatar-initial">${initial}</span><img class="kb-author-portrait" src="${url}" alt="" loading="lazy" decoding="async" onload="this.parentElement.classList.add('is-loaded')" onerror="this.remove()" /></span>`;
 }
