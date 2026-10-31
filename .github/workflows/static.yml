@@ -31,6 +31,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download RVR1909 official USFM
+        run: |
+          curl --fail --location --retry 3 --silent --show-error 'https://ebible.org/Scriptures/spaRV1909_usfm.zip' -o /tmp/spaRV1909_usfm.zip
+          mkdir -p /tmp/rv1909-usfm
+          unzip -q /tmp/spaRV1909_usfm.zip -d /tmp/rv1909-usfm
+      - name: Generate 66 Bible JSON files
+        run: node scripts/convert-usfm.mjs /tmp/rv1909-usfm dist/data/rvr1909
+      - name: Validate application and Bible
+        run: npm run check
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
