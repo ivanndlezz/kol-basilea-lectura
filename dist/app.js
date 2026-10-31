@@ -286,6 +286,12 @@ function renderBookCover(book, completed = false) {
 function renderBookShelf(rewardIndex = -1) {
   return `<div class="kb-shelf" role="img" aria-label="Estantería: ${totalCompletedBooks()} de 66 libros terminados">${BOOKS.map((book, index) => `<span class="kb-spine ${isBookComplete(book) ? "is-done" : ""} ${!isBookComplete(book) && currentBook().id === book.id ? "is-next" : ""} ${index === rewardIndex ? "just-added" : ""}" style="height:${24 + (index * 7 % 4) * 3}px;${categoryStyle(book.category)}" aria-hidden="true"></span>`).join("")}</div>`;
 }
+function renderHomeAuthor(book) {
+  const candidates = authorsForBook(book.name).filter(person => person.kind !== "collective" && person.id !== "autores-anonimos");
+  const person = candidates[0];
+  if (!person) return "";
+  return `<button type="button" class="kb-home-author" data-action="open-author" data-author-id="${escapeHtml(person.id)}" aria-label="Ver ficha de ${escapeHtml(person.name)}"><span class="kb-home-author-avatar">${renderAuthorPortrait(person)}</span><span class="kb-home-author-label"><small>Autor atribuido</small><strong>${escapeHtml(person.name)}</strong></span>${icon("chevronRight",14)}</button>`;
+}
 function renderHome() {
   const book = currentBook();
   const chapter = currentChapter(book);
@@ -302,7 +308,7 @@ function renderHome() {
     <section class="kb-verbs" aria-label="Cómo funciona"><div class="kb-verb"><span>${icon("bookOpen", 18)}<strong>Lee</strong></span><small>Un capítulo a la vez</small></div><div class="kb-verb"><span>${icon("checkCircle", 18)}<strong>Marca</strong></span><small>Guarda tu avance</small></div><div class="kb-verb"><span>${icon("bookOpen", 18)}<strong>Colecciona</strong></span><small>66 libros, sin rachas</small></div></section>
     <section class="kb-hero" style="${categoryStyle(book.category)}" aria-labelledby="kb-book-title">
       <div class="kb-hero-top"><span>Tu siguiente lectura</span><strong class="kb-counter ${rewardIndex >= 0 ? "kb-counter-reward" : ""}">${doneBooks} / 66 libros</strong></div>
-      <div class="kb-hero-book">${renderBookCover(book)}<div><h2 id="kb-book-title">${escapeHtml(book.name)}</h2><p>${book.chapters === 1 ? "Carta · 1 capítulo" : `${book.chapters} capítulos`} · Libro ${book.index + 1} de 66</p><p class="kb-current-chapter">Capítulo ${chapter} de ${book.chapters}</p></div></div>
+      <div class="kb-hero-book">${renderBookCover(book)}<div><h2 id="kb-book-title">${escapeHtml(book.name)}</h2><p>${book.chapters === 1 ? "Carta · 1 capítulo" : `${book.chapters} capítulos`} · Libro ${book.index + 1} de 66</p><p class="kb-current-chapter">Capítulo ${chapter} de ${book.chapters}</p>${renderHomeAuthor(book)}</div></div>
       <div class="kb-context">${icon("sparkles", 17)}<span>${context}</span></div>
       <button class="button button-primary kb-start" data-action="open-reader">${completed ? "Continuar leyendo" : "Comenzar a leer"} <span aria-hidden="true">→</span></button>
       <div class="kb-shelf-wrap">${renderBookShelf(rewardIndex)}<div class="kb-shelf-caption"><strong>Tu estantería</strong><span>${total} de 1189 capítulos</span></div></div>
