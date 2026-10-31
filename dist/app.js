@@ -581,29 +581,9 @@ function setupReaderSectionNav() {
   const targets = tabs.map(tab => document.getElementById(tab.hash.slice(1)));
   if (targets.some(target => !target)) return;
   const controller = new AbortController();
-  const placeholder = document.createElement("div");
-  placeholder.className = "kb-section-placeholder";
-  nav.before(placeholder);
-  const passage = nav.closest(".scripture-passage");
   const updatePosition = () => {
-    const safeTop = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--kb-safe-top")) || 0;
-    const height = nav.offsetHeight;
-    const shouldFix = placeholder.getBoundingClientRect().top <= safeTop && passage.getBoundingClientRect().bottom > safeTop + height;
-    if (shouldFix) {
-      const bounds = placeholder.getBoundingClientRect();
-      placeholder.style.height = height + "px";
-      nav.style.width = bounds.width + "px";
-      nav.style.left = bounds.left + "px";
-      nav.style.top = safeTop + "px";
-      nav.classList.add("is-fixed");
-    } else {
-      nav.classList.remove("is-fixed");
-      nav.style.width = "";
-      nav.style.left = "";
-      nav.style.top = "";
-      placeholder.style.height = "";
-    }
-    document.documentElement.style.setProperty("--kb-section-offset", (height + safeTop + 18) + "px");
+    const height = nav.getBoundingClientRect().height;
+    document.documentElement.style.setProperty("--kb-section-offset", (height + 18) + "px");
   };
   const activate = index => {
     tabs.forEach((tab, i) => {
@@ -641,7 +621,7 @@ function setupReaderSectionNav() {
   window.addEventListener("resize", () => { updatePosition(); track(); }, { passive: true, signal: controller.signal });
   updatePosition();
   track();
-  sectionNavCleanup = () => { controller.abort(); if (frame) cancelAnimationFrame(frame); placeholder.remove(); document.documentElement.style.removeProperty("--kb-section-offset"); };
+  sectionNavCleanup = () => { controller.abort(); if (frame) cancelAnimationFrame(frame); document.documentElement.style.removeProperty("--kb-section-offset"); };
 }
 
 function renderReader() {
