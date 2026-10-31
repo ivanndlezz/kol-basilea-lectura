@@ -138,6 +138,7 @@ Incluye:
 - selección directa de un capítulo desde la lista para revisar o continuar en otro punto;
 - en libros de más de 12 capítulos, vista resumida de capítulos cercanos y acción “Ver todos los capítulos”;
 - navegador completo de capítulos en side-sheet para escritorio y bottom sheet para móvil;
+- barra compacta de consumo con libro/capítulo seleccionable y traducción visible;
 - barra de progreso total en el encabezado y progreso independiente del libro;
 - sección de contexto en video colapsable, que no carga la miniatura hasta que la sección está abierta;
 - menú “Formato” para cambiar entre tipografía serif/sans y temas claro, sepia u oscuro;
@@ -145,6 +146,8 @@ Incluye:
 - botón textual de regreso a la vista de origen.
 
 El lector debe mantener el foco en una sola acción principal y evitar acciones competitivas o distracciones innecesarias. La lista de capítulos funciona como navegación secundaria: el capítulo actual se destaca, y al guardar un capítulo el check aparece de inmediato mientras el lector avanza al siguiente pendiente. El menú de formato se considera una preferencia persistente, no una acción de lectura.
+
+La referencia visual aportada para la Bible App inspira una navegación de lectura más directa: el libro y capítulo permanecen identificables arriba, la traducción se ve como una elección explícita y el texto ocupa la mayor parte de la pantalla. Kol Basilea adopta esa claridad mediante una barra de selección conectada al índice de capítulos, pero conserva su regreso explícito, el contexto en video y el progreso por capítulos.
 
 ### Recurso implementado: 1–3 Juan
 
