@@ -306,11 +306,20 @@ function renderRoute() {
   return `<main class="screen"><div class="route-header"><p class="eyebrow">La ruta completa</p><h1>Libro por libro.</h1><p>Una secuencia editorial de 66 libros. Puedes recorrerla completa o explorarla por categorías.</p></div><div class="route-summary"><div class="stat-pill"><strong>${done}</strong> / 66 libros</div><div class="stat-pill"><strong>${totalCompletedChapters()}</strong> / ${TOTAL_CHAPTERS} capítulos</div></div><div class="category-filter" role="tablist" aria-label="Filtrar la ruta por categoría">${CATEGORIES.map((category) => `<button class="category-filter-chip ${category.id === state.routeCategory ? "is-selected" : ""}" style="${categoryStyle(category.id)}" data-action="filter-route-category" data-category="${category.id}" role="tab" aria-selected="${category.id === state.routeCategory}">${escapeHtml(category.label)}</button>`).join("")}</div><div class="category-result-label" style="${categoryStyle(selectedCategory.id)}"><span>${escapeHtml(selectedCategory.label)}</span><strong>${visibleBooks.length} ${visibleBooks.length === 1 ? "libro" : "libros"}</strong></div><div class="route-list">${visibleBooks.map(routeRow).join("")}</div></main>`;
 }
 
+const CATEGORY_SHORT_LABELS = Object.freeze({
+  law: "Ley", history: "Históricos", wisdom: "Sabiduría",
+  "major-prophets": "Profetas", "minor-prophets": "Menores",
+  gospels: "Evangelios", "church-history": "Historia",
+  "paul-letters": "Pablo", "general-letters": "Generales",
+  apocalypse: "Apocalíptica"
+});
+
 function routeRow(book) {
   const done = isBookComplete(book);
   const current = book.id === currentBook().id;
   const completed = getCompletedChapters(book).length;
-  return `<button class="route-row ${done ? "is-done" : ""} ${current ? "is-current" : ""}" style="${categoryStyle(book.category)}" data-action="open-book" data-book-id="${book.id}"><span class="route-number">${done ? icon("check", 17) : book.index + 1}</span><span><strong>${escapeHtml(book.name)}</strong><small>${completed} de ${book.chapters} capítulos</small></span><span class="route-status">${done ? "Listo" : current ? "Siguiente" : ""}</span></button>`;
+  const category = CATEGORIES.find(item => item.id === book.category);
+  return `<button class="route-row ${done ? "is-done" : ""} ${current ? "is-current" : ""}" style="${categoryStyle(book.category)}" data-action="open-book" data-book-id="${book.id}"><span class="route-number">${done ? icon("check", 17) : book.index + 1}</span><span class="route-row-content"><strong>${escapeHtml(book.name)}</strong><small>${completed} de ${book.chapters} capítulos</small></span><span class="route-row-side"><span class="route-category-tag" aria-label="Categoría: ${escapeHtml(category?.label || "")}">${escapeHtml(CATEGORY_SHORT_LABELS[book.category] || "Libro")}</span>${done || current ? `<span class="route-status">${done ? "Listo" : "Siguiente"}</span>` : ""}</span></button>`;
 }
 
 function renderProgress() {
