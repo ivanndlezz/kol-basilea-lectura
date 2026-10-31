@@ -481,7 +481,7 @@ function bindEvents() {
       if (action === "show-progress") { state.view = "progress"; saveState(); render(); }
       if (action === "filter-route-category") { state.routeCategory = CATEGORIES.some((category) => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "open-book") { openReader(element.dataset.bookId); }
-      if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); state.chapterSheetOpen = false; state.readerBookInfoOpen = false; saveState(); render(); }
+      if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); state.chapterSheetOpen = false; state.readerBookInfoOpen = false; state.readerReadingProgress = 0; saveState(); render(); }
       if (action === "open-book-info") { state.readerBookInfoOpen = true; state.chapterSheetOpen = false; saveState(); render(); }
       if (action === "close-book-info") { state.readerBookInfoOpen = false; saveState(); render(); }
       if (action === "toggle-chapter-sheet") { state.chapterSheetOpen = !state.chapterSheetOpen; saveState(); render(); }
