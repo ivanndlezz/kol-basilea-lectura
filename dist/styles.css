@@ -570,3 +570,14 @@ p { color: var(--ink-muted); line-height: 1.52; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* Kol Basilea editorial discovery */
+.kol-discovery{margin:24px 0;border:1px solid rgba(115,83,63,.14);border-radius:20px;overflow:hidden;background:#f6efe5;color:#29231f;box-shadow:0 8px 24px rgba(36,29,22,.045)}
+.kol-discovery-image{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center}
+.kol-discovery-content{padding:22px 20px 24px}
+.kol-discovery-content .eyebrow{color:#a14e36;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px}
+.kol-discovery-content h2{font-family:Georgia,serif;font-size:clamp(1.6rem,6vw,2rem);line-height:1.14;letter-spacing:-.025em;margin:0 0 12px;color:#29231f}
+.kol-discovery-content>p:not(.eyebrow){color:#605851;font-size:.95rem;line-height:1.55;margin:0 0 20px}
+.kol-discovery-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:12px 18px;border-radius:12px;background:#9e5038;color:#fff;text-decoration:none;font-weight:600;font-size:.92rem}
+.kol-discovery-link:focus-visible{outline:3px solid #29231f;outline-offset:3px}
+@media(prefers-reduced-motion:no-preference){.kol-discovery-link{transition:background .2s ease}.kol-discovery-link:hover{background:#803d2b}}
