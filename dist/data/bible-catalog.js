@@ -23,14 +23,23 @@ export const CATEGORIES = [
   { id: "church-history", label: "Historia de la iglesia" },
   { id: "paul-letters", label: "Cartas de Pablo" },
   { id: "general-letters", label: "Cartas generales" },
-  { id: "apocalypse", label: "Apocalipsis" }
+  { id: "apocalypse", label: "Literatura apocalíptica" }
 ];
+
+/** Shared editorial palette for tags, book covers and category accents. */
+export const CATEGORY_COLORS = Object.freeze({
+  all: "#2C7658", law: "#B8793C", history: "#607C54", wisdom: "#A66C83",
+  "major-prophets": "#A75B45", "minor-prophets": "#C48D45", gospels: "#287F72",
+  "church-history": "#658A81", "paul-letters": "#846B9B",
+  "general-letters": "#8A7056", apocalypse: "#655A80"
+});
+export const getCategoryColor = (id) => CATEGORY_COLORS[id] || CATEGORY_COLORS.all;
 
 const CATEGORY_BY_BOOK = {
   "Génesis": "law", "Éxodo": "law", "Levítico": "law", "Números": "law", "Deuteronomio": "law",
   "Josué": "history", "Jueces": "history", "Rut": "history", "1 Samuel": "history", "2 Samuel": "history", "1 Reyes": "history", "2 Reyes": "history", "1 Crónicas": "history", "2 Crónicas": "history", "Esdras": "history", "Nehemías": "history", "Ester": "history",
   "Job": "wisdom", "Salmos": "wisdom", "Proverbios": "wisdom", "Eclesiastés": "wisdom", "Cantares": "wisdom",
-  "Isaías": "major-prophets", "Jeremías": "major-prophets", "Lamentaciones": "major-prophets", "Ezequiel": "major-prophets", "Daniel": "major-prophets",
+  "Isaías": "major-prophets", "Jeremías": "major-prophets", "Lamentaciones": "major-prophets", "Ezequiel": "major-prophets", "Daniel": "apocalypse",
   "Oseas": "minor-prophets", "Joel": "minor-prophets", "Amós": "minor-prophets", "Abdías": "minor-prophets", "Jonás": "minor-prophets", "Miqueas": "minor-prophets", "Nahúm": "minor-prophets", "Habacuc": "minor-prophets", "Sofonías": "minor-prophets", "Ageo": "minor-prophets", "Zacarías": "minor-prophets", "Malaquías": "minor-prophets",
   "Mateo": "gospels", "Marcos": "gospels", "Lucas": "gospels", "Juan": "gospels",
   "Hechos": "church-history",
