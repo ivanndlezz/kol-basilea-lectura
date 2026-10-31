@@ -142,7 +142,7 @@ El lector debe mantener el foco en una sola acción y evitar acciones competitiv
 - **Estados:** `default`, `pressed`, `selected`, `completed`, `current`, `disabled` y `focus-visible`.
 - **Progreso:** barra lineal para unidades pequeñas y anillo para resumen global.
 - **Feedback:** toast breve después de guardar o cambiar una preferencia.
-- **Iconografía:** provisionalmente textual en el prototipo; deberá migrar a un sistema consistente de iconos accesibles antes de producción.
+- **Iconografía:** Lucide mediante SVG inline, con `aria-hidden` en iconos decorativos y etiquetas accesibles en los botones que dependen de un icono.
 
 ## Estados que deben diseñarse
 

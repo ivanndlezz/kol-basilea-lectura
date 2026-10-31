@@ -53,6 +53,7 @@ La UI aplica criterios relevantes de Apple HIG: tipografía del sistema, áreas 
 - gamificación subordinada al significado;
 - experiencia móvil, cálida y no denominacional;
 - sin registro obligatorio para comenzar.
+- iconografía Lucide inline, consistente y sin dependencia de red.
 
 ## Próximo paso
 
