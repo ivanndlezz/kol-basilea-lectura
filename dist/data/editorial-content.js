@@ -18,3 +18,16 @@ export const EDITORIAL_BY_BOOK = Object.freeze({
   "3-juan": { video: JUAN_VIDEO, introductionSummary: JUAN_VIDEO.description, sourceAttribution: "Proyecto Biblia", sourceUrl: JUAN_VIDEO.pageUrl }
 });
 export function getBookEditorial(bookId) { return EDITORIAL_BY_BOOK[bookId] || null; }
+
+export const BOOK_INFO = {
+  "1-juan": {
+    lead: "Una carta pastoral sobre la vida, la verdad y el amor.",
+    body: "1 Juan anima a comunidades de creyentes a permanecer en la verdad y a reconocer el amor fraternal como una expresión concreta de la comunión con Dios.",
+    context: "Tradicionalmente se ha vinculado con Juan y con comunidades de Asia Menor hacia el final del siglo I. Presentamos este dato como contexto histórico editorial, no como una certeza absoluta.",
+    themes: ["Luz y tinieblas", "Verdad y error", "Vida y amor"],
+    sourceLabel: "Referencia de introducción consultada en Bible App",
+    sourceUrl: "https://www.bible.com/es/bible/149/1JN.INTRO1.RVR1960"
+  }
+};
+
+
