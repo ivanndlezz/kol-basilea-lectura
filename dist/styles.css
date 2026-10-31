@@ -1022,3 +1022,13 @@ a:not([class]):visited{color:var(--brand-dark)}
 /* Editorial pericope headings: distinct from canonical scripture verses. */
 .scripture-passage .kb-pericope-heading { font-family: inherit; font-size: 1.17em; font-weight: 700; line-height: 1.32; letter-spacing: -0.015em; margin: 1.8em 0 0.75em; color: inherit; }
 .scripture-passage .kb-pericope-heading:first-child { margin-top: 0.65em; }
+
+/* Contextual chapter section navigation, anchored to editorial pericopes. */
+.kb-section-nav { position: sticky; top: 0; z-index: 29; background: color-mix(in srgb, var(--paper) 94%, transparent); backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
+.kb-section-tabs { display: flex; align-items: stretch; gap: 2px; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; padding: 0 12px; }
+.kb-section-tabs::-webkit-scrollbar { display: none; }
+.kb-section-tab { display: inline-flex; align-items: center; flex: 0 0 auto; min-height: 46px; padding: 9px 14px; border-bottom: 2px solid transparent; color: var(--ink-muted); font: 500 13px/1.3 -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif; white-space: nowrap; text-decoration: none; }
+.kb-section-tab[aria-current="location"] { color: var(--ink); border-bottom-color: currentColor; font-weight: 700; }
+.kb-section-tab:focus-visible { outline: 2px solid currentColor; outline-offset: -4px; border-radius: 4px; }
+.kb-pericope-heading[id] { scroll-margin-top: var(--kb-section-offset, 160px); }
+@media (prefers-reduced-motion: reduce) { .kb-section-tabs { scroll-behavior: auto; } }
