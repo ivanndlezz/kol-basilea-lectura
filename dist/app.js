@@ -15,6 +15,7 @@ const ICONS = {
   sparkles: '<path d="M9.937 15.5A2 2 0 0 0 8.5 14.063L2 12l6.5-2.063A2 2 0 0 0 9.937 8.5L12 2l2.063 6.5A2 2 0 0 0 15.5 9.937L22 12l-6.5 2.063a2 2 0 0 0-1.437 1.437L12 22z"/><path d="M20 3v4"/><path d="M22 5h-4"/>',
   house: '<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>',
   route: '<path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/>',
+  scrollText: '<path d="M8 21h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H8"/><path d="M6 17V5a2 2 0 0 0-4 0v12a4 4 0 0 0 4 4h2"/><path d="M10 8h8M10 12h8M10 16h5"/>',
   chart: '<path d="M3 3v18h18"/><path d="M8 16v-5"/><path d="M13 16V7"/><path d="M18 16V4"/>',
   users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
   menu: '<line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/>',
@@ -247,7 +248,7 @@ function renderTopbar() {
 }
 
 function renderNavigationSheet() {
-  const items = [["home","house","Hoy","Tu siguiente lectura"],["route","map","Ruta de lectura","Sigue la secuencia editorial"],["library","bookOpen","Biblioteca bíblica","Explora libremente los 66 libros"],["authors","users","Autores bíblicos","Personas, tradiciones y atribuciones"],["compilation","bookOpen","Recopilación de textos","Los libros y quienes los recopilaron"],["progress","chart","Mi progreso","Capítulos y libros leídos"],["more","sliders","Configuración","Meta y preferencias"]];
+  const items = [["home","house","Hoy","Tu siguiente lectura"],["route","route","Ruta de lectura","Sigue la secuencia editorial"],["library","bookOpen","Biblioteca bíblica","Explora libremente los 66 libros"],["authors","users","Autores bíblicos","Personas, tradiciones y atribuciones"],["compilation","scrollText","Recopilación de textos","Los libros y quienes los recopilaron"],["progress","chart","Mi progreso","Capítulos y libros leídos"],["more","sliders","Configuración","Meta y preferencias"]];
   const appearance = [["system","Automático","smartphone"],["light","Claro","sun"],["dark","Oscuro","moon"]];
   const selectedIcon = state.appAppearance === "dark" ? "moon" : state.appAppearance === "light" ? "sun" : "sun";
   return `<div class="kb-navigation-layer ${state.navigationOpen ? "is-open" : ""}" ${state.navigationOpen ? "" : "hidden"}>
