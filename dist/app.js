@@ -444,7 +444,7 @@ function renderReader() {
   const completed = getCompletedChapters(book).includes(chapter);
   const bookProgress = getCompletedChapters(book).length;
   const routeProgress = totalCompletedChapters();
-  const origin = state.readerOrigin === "route" ? "Ruta" : state.readerOrigin === "library" ? "Biblioteca" : "Hoy";
+  const origin = state.readerOrigin === "route" ? "Ruta" : state.readerOrigin === "library" ? "Biblioteca" : state.readerOrigin === "authors" ? "Autores" : "Hoy";
   const video = getBookVideo(book);
   const contextVideo = video ? renderVideoCard(video) : renderPendingVideoCard();
   const readerBody = `${renderReaderContext(book, contextVideo)}${renderChapterList(book, chapter)}${state.readerBookInfoOpen ? renderBookInfoPage(book) : renderReadingCopy(book, chapter)}`;
@@ -461,7 +461,7 @@ function renderNav() {
 function openReader(bookId = currentBook().id) {
   state.justCompletedBookId = null;
   state.readerBookId = bookId;
-  state.readerOrigin = ["route", "library"].includes(state.view) ? state.view : "home";
+  state.readerOrigin = ["route", "library", "authors"].includes(state.view) ? state.view : "home";
   state.readerChapter = currentChapter(getBook(bookId));
   state.chapterSheetOpen = false;
   state.readerBookInfoOpen = false;
@@ -578,7 +578,7 @@ function bindEvents() {
       if (action === "toggle-reader-context") { state.readerContextOpen = !state.readerContextOpen; saveState(); render(); }
       if (action === "set-reader-font") { state.readerFont = element.dataset.font === "sans" ? "sans" : "serif"; state.readerDisplayOpen = false; saveState(); render(); }
       if (action === "set-reader-theme") { state.readerTheme = ["light", "sepia", "dark"].includes(element.dataset.theme) ? element.dataset.theme : "light"; state.readerDisplayOpen = false; saveState(); render(); }
-      if (action === "back-home" || action === "back-context") { state.view = ["route", "library"].includes(state.readerOrigin) ? state.readerOrigin : "home"; saveState(); render(); }
+      if (action === "back-home" || action === "back-context") { state.view = ["route", "library", "authors"].includes(state.readerOrigin) ? state.readerOrigin : "home"; saveState(); render(); }
       if (action === "toggle-reader-more") { state.readerMoreOpen = !state.readerMoreOpen; render(); document.querySelector(".reader-more-trigger")?.focus({preventScroll:true}); }
       if (action === "mark-chapter-unread") {
         const book = getBook(state.readerBookId);
