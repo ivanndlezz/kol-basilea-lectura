@@ -36,6 +36,8 @@ const defaultState = () => ({
   onboardingStep: 1,
   goal: "365",
   appAppearance: "system",
+  navigationOpen: false,
+  appearancePopoverOpen: false,
   view: "home",
   readerBookId: "3-juan",
   readerOrigin: "home",
@@ -65,14 +67,14 @@ function slugify(value) {
 function loadState() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    return { ...defaultState(), ...saved, toast: "" };
+    return { ...defaultState(), ...saved, toast: "", navigationOpen: false, appearancePopoverOpen: false };
   } catch {
     return defaultState();
   }
 }
 
 function saveState() {
-  const { toast, ...persisted } = state;
+  const { toast, navigationOpen, appearancePopoverOpen, ...persisted } = state;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(persisted));
 }
 
@@ -162,6 +164,7 @@ function render() {
   document.body.dataset.readerTheme = state.view === "reader" ? state.readerTheme : "light";
   document.body.dataset.appAppearance = state.appAppearance || "system";
   root.innerHTML = state.onboardingComplete || state.view === "reader" ? renderApp() : renderOnboarding();
+  document.body.classList.toggle("kb-navigation-open", Boolean(state.navigationOpen));
   bindEvents();
   bindImageSkeletons();
   if (state.view === "reader" && !state.readerBookInfoOpen) {
@@ -217,11 +220,26 @@ function goalOption(value, title, subtitle) {
 
 function renderApp() {
   const content = state.view === "reader" ? renderReader() : renderView();
-  return `<div class="app-shell ${state.view === "reader" ? "is-reading" : ""}">${state.view === "reader" ? content : `${renderTopbar()}${state.view === "home" ? "" : renderBreadcrumb(state.view)}${content}${renderNav()}`}${state.toast ? `<div class="toast" role="status">${escapeHtml(state.toast)}</div>` : ""}</div>`;
+  return `<div class="app-shell ${state.view === "reader" ? "is-reading" : ""}">${state.view === "reader" ? content : `${renderTopbar()}${state.view === "home" ? "" : renderBreadcrumb(state.view)}${content}${renderNav()}`}${renderNavigationSheet()}${state.toast ? `<div class="toast" role="status">${escapeHtml(state.toast)}</div>` : ""}</div>`;
 }
 
 function renderTopbar() {
-  return `<header class="topbar"><div class="brand"><span class="brand-mark" aria-hidden="true">${icon("bookOpen", 18)}</span>Kol Basilea</div><button class="profile-button" data-action="open-more" aria-label="Abrir más opciones">${icon("ellipsis", 20)}</button></header>`;
+  return `<header class="topbar"><div class="brand"><span class="brand-mark" aria-hidden="true">${icon("bookOpen", 18)}</span>Kol Basilea</div><button class="profile-button kb-menu-trigger" data-action="toggle-navigation" aria-label="Abrir menú de navegación" aria-haspopup="dialog" aria-controls="kb-navigation-sheet" aria-expanded="${state.navigationOpen}">${icon("menu", 23)}</button></header>`;
+}
+
+function renderNavigationSheet() {
+  const items = [["home","house","Hoy","Continúa tu lectura"],["route","route","Explorar los 66 libros","Tu biblioteca y ruta"],["progress","chart","Mi progreso","Capítulos y libros leídos"],["more","sliders","Configuración","Meta y preferencias"]];
+  const appearance = [["system","Automático","smartphone"],["light","Claro","sun"],["dark","Oscuro","moon"]];
+  const selectedIcon = state.appAppearance === "dark" ? "moon" : state.appAppearance === "light" ? "sun" : "smartphone";
+  return `<div class="kb-navigation-layer ${state.navigationOpen ? "is-open" : ""}" ${state.navigationOpen ? "" : "hidden"}>
+    <button class="kb-navigation-backdrop" data-action="close-navigation" aria-label="Cerrar menú"></button>
+    <aside class="kb-navigation-sheet" id="kb-navigation-sheet" role="dialog" aria-modal="true" aria-labelledby="kb-navigation-title">
+      <div class="kb-navigation-head"><div><p class="eyebrow">Kol Basilea</p><h2 id="kb-navigation-title">Explorar</h2></div><button class="kb-navigation-close" data-action="close-navigation" aria-label="Cerrar menú">${icon("x",22)}</button></div>
+      <nav class="kb-navigation-links" aria-label="Secciones del proyecto">${items.map(([view,symbol,label,detail]) => `<button class="kb-navigation-link ${state.view === view ? "is-current" : ""}" data-action="navigation-go" data-view="${view}" ${state.view === view ? 'aria-current="page"' : ""}><span class="kb-navigation-link-icon">${icon(symbol,20)}</span><span class="kb-navigation-link-copy"><strong>${label}</strong><small>${detail}</small></span>${icon("chevronRight",17)}</button>`).join("")}</nav>
+      <div class="kb-navigation-footer"><div class="kb-navigation-appearance"><span class="kb-navigation-appearance-label">Apariencia</span><div class="kb-navigation-popover-anchor"><button class="kb-appearance-toggle" data-action="toggle-appearance-popover" aria-expanded="${state.appearancePopoverOpen}" aria-controls="kb-appearance-popover" aria-label="Elegir apariencia: ${appearance.find(([value]) => value === state.appAppearance)?.[1] || "Automático"}">${icon(selectedIcon,19)}<span>${appearance.find(([value]) => value === state.appAppearance)?.[1] || "Automático"}</span>${icon("chevronDown",15)}</button>
+      <div id="kb-appearance-popover" class="kb-appearance-popover" role="group" aria-label="Opciones de apariencia" ${state.appearancePopoverOpen ? "" : "hidden"}>${appearance.map(([value,label,symbol]) => `<button class="kb-appearance-choice ${state.appAppearance === value ? "is-selected" : ""}" data-action="set-appearance" data-appearance="${value}" aria-pressed="${state.appAppearance === value}">${icon(symbol,19)}<span>${label}</span>${state.appAppearance === value ? icon("check",17) : ""}</button>`).join("")}</div></div></div><a class="kb-navigation-external" href="https://klef.agency/" target="_blank" rel="noopener noreferrer" style="display:none">Más</a><p class="kb-navigation-note">Tu recorrido por las Escrituras, a tu ritmo.</p></div>
+    </aside>
+  </div>`;
 }
 
 function renderBreadcrumb(view) {
@@ -468,7 +486,11 @@ function bindEvents() {
       if (action === "open-reader") { openReader(state.onboardingStep === 3 ? "3-juan" : currentBook().id); }
       if (action === "skip-onboarding") { state.onboardingComplete = true; saveState(); render(); showToast("Puedes comenzar cuando quieras."); }
       if (action === "play-video") { activateVideo(element); }
-      if (action === "navigate") { state.view = element.dataset.view; saveState(); render(); }
+      if (action === "navigate") { state.view = element.dataset.view; state.navigationOpen = false; saveState(); render(); }
+      if (action === "toggle-navigation") { state.navigationOpen = !state.navigationOpen; state.appearancePopoverOpen = false; render(); }
+      if (action === "close-navigation") { state.navigationOpen = false; state.appearancePopoverOpen = false; render(); }
+      if (action === "navigation-go") { state.view = element.dataset.view; state.navigationOpen = false; state.appearancePopoverOpen = false; saveState(); render(); window.scrollTo({ top: 0, behavior: "instant" }); }
+      if (action === "toggle-appearance-popover") { state.appearancePopoverOpen = !state.appearancePopoverOpen; render(); }
       if (action === "open-more") { state.view = "more"; saveState(); render(); }
       if (action === "show-route") { state.view = "route"; saveState(); render(); }
       if (action === "show-progress") { state.view = "progress"; saveState(); render(); }
@@ -485,7 +507,7 @@ function bindEvents() {
       if (action === "set-reader-theme") { state.readerTheme = ["light", "sepia", "dark"].includes(element.dataset.theme) ? element.dataset.theme : "light"; state.readerDisplayOpen = false; saveState(); render(); }
       if (action === "back-home" || action === "back-context") { state.view = state.readerOrigin === "route" ? "route" : "home"; saveState(); render(); }
       if (action === "complete-chapter") { completeChapter(); }
-      if (action === "set-appearance") { const value = element.dataset.appearance; if (["system", "light", "dark"].includes(value)) { state.appAppearance = value; saveState(); render(); } }
+      if (action === "set-appearance") { const value = element.dataset.appearance; if (["system", "light", "dark"].includes(value)) { state.appAppearance = value; state.appearancePopoverOpen = false; saveState(); render(); } }
       if (action === "change-goal") {
         const nextGoal = state.goal === "365" ? "180" : state.goal === "180" ? "none" : "365";
         state.goal = nextGoal;
