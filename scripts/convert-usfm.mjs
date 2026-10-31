@@ -12,7 +12,8 @@ const CODE_TO_NAME = Object.fromEntries([
 ]);
 const BOOK_BY_NAME = new Map(BOOKS.map(b => [b.name,b]));
 function clean(text) {
-  return text.replace(/\\f\s+\+?\w+\s+[^\\]*?\\f\*/g,"")
+  return text.replace(/\\w\s+([^\\]*?)\|[^\\]*?\\w\*/g,"$1")
+    .replace(/\\f\s+\+?\w+\s+[^\\]*?\\f\*/g,"")
     .replace(/\\(?:x|f)\s+[\s\S]*?\\(?:x|f)\*/g,"")
     .replace(/\\(?:add|bd|bdit|em|it|nd|sc|wj|qt|sig|tl|bk|pn|k|ord|no|sup|pro|rb|sls|dc|ior|iqt|lik|lit|rq|fig|w|wa|wg|wh)\*?/g,"")
     .replace(/\\\+?\w+\*?/g,"")
@@ -27,7 +28,7 @@ export function parseUsfm(input) {
   const flush = () => {
     if (verse === null) return;
     const normalized = clean(text);
-    if (!normalized) throw new Error("Empty verse "+book.id+" "+chapter+":"+verse+" raw="+JSON.stringify(text)+" source="+JSON.stringify(input.slice(input.indexOf("\\v "+verse,input.indexOf("\\c "+chapter)),input.indexOf("\\v "+verse,input.indexOf("\\c "+chapter))+550)));
+    if (!normalized) { console.warn("Omitted empty source verse marker: "+book.id+" "+chapter+":"+verse); verse=null; text=""; return; }
     const verses = chapters[chapter].verses;
     if (verses.some(v=>v.number===verse)) throw new Error("Duplicate verse "+book.id+" "+chapter+":"+verse);
     verses.push({number:verse,text:normalized,...(heading?{heading}: {})});
