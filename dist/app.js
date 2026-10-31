@@ -17,6 +17,7 @@ const JUAN_VIDEO = {
   title: "Resumen de 1–3 Juan",
   description: "Un panorama animado sobre las tres cartas y sus temas de vida, verdad y amor.",
   duration: "10:58",
+  thumbnail: "https://ik.imagekit.io/bpweb1/web/media/video-images/new-testament-overview/123-john/tr:q-65,w-800/123-john_16.9.jpg",
   pageUrl: "https://bibleproject.com/es/guides/libro-de-1-3-juan/",
   youtubeUrl: "https://www.youtube.com/watch?v=wQtMnuBzb4c"
 };
@@ -85,7 +86,7 @@ function getBookVideo(book) {
 }
 
 function renderVideoCard(video) {
-  return `<div class="video-card" data-video-card data-video-id="${video.id}" data-video-title="${escapeHtml(video.title)}"><div class="video-placeholder video-poster" data-video-shell><img class="video-thumbnail" src="https://i.ytimg.com/vi/${video.id}/hqdefault.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"><div class="video-poster-content"><span class="video-overline">Proyecto Biblia · Video oficial</span><strong>1–3 Juan</strong><button class="video-play-button" type="button" data-action="play-video" aria-label="Reproducir ${escapeHtml(video.title)}">${icon("play", 20)}</button><small>${video.duration} · Se cargará al reproducir</small></div></div><div class="video-meta"><span class="video-kicker">Contexto compartido</span><h3>${escapeHtml(video.title)}</h3><p>${escapeHtml(video.description)}</p><div class="video-meta-footer"><span>Proyecto Biblia es el autor y propietario de este video.</span><a href="${video.pageUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div></div></div>`;
+  return `<div class="video-card" data-video-card data-video-id="${video.id}" data-video-title="${escapeHtml(video.title)}"><div class="video-placeholder video-poster" data-video-shell><img class="video-thumbnail" src="${video.thumbnail}" alt="" aria-hidden="true" loading="lazy" decoding="async"><div class="video-poster-content"><button class="video-play-button" type="button" data-action="play-video" aria-label="Reproducir ${escapeHtml(video.title)}">${icon("play", 38)}</button><span class="video-duration">${video.duration}</span></div></div><div class="video-meta"><span class="video-kicker">Contexto compartido</span><h3>${escapeHtml(video.title)}</h3><p>${escapeHtml(video.description)}</p><div class="video-meta-footer"><span>Proyecto Biblia es el autor y propietario de este video.</span><a href="${video.pageUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div></div></div>`;
 }
 
 function renderPendingVideoCard() {
