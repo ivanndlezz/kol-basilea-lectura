@@ -8,8 +8,9 @@ const [peopleRegistry, relationshipRegistry] = await Promise.all([
   readRegistry("./people.json"),
   readRegistry("./textual-relationships.json")
 ]);
-export const AUTHORS = peopleRegistry.people;
-export const AUTHOR_BY_ID = new Map(AUTHORS.map(person => [person.id, person]));
+export const PEOPLE = peopleRegistry.people;
+export const AUTHORS = PEOPLE.filter(person => person.showInAuthors !== false);
+export const AUTHOR_BY_ID = new Map(PEOPLE.map(person => [person.id, person]));
 export const authorsForBook = name => AUTHORS.filter(person => person.books.includes(name));
 export const TEXTUAL_RELATIONSHIPS = relationshipRegistry.relationships;
 export const relationshipsForBook = name => TEXTUAL_RELATIONSHIPS.filter(item => item.book === name);
