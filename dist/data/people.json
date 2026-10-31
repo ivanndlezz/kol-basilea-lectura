@@ -15,7 +15,8 @@
         "Deuteronomio"
       ],
       "note": "La tradición atribuye la Torá a Moisés; la investigación histórica reconoce una composición y edición prolongadas.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "david",
@@ -27,7 +28,8 @@
         "Salmos"
       ],
       "note": "Muchos salmos llevan encabezamientos relacionados con David; el Salterio es una colección de autores y épocas diversos.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "salomon",
@@ -41,7 +43,8 @@
         "Cantares"
       ],
       "note": "La tradición lo relaciona con estos libros; sus colecciones y atribuciones requieren análisis por separado.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "asaf",
@@ -53,7 +56,8 @@
         "Salmos"
       ],
       "note": "Algunos encabezamientos del Salterio identifican salmos de Asaf; pueden indicar autoría o tradición musical.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "hijos-de-core",
@@ -65,7 +69,8 @@
         "Salmos"
       ],
       "note": "Diversos salmos se atribuyen a los hijos de Coré en sus encabezamientos.",
-      "kind": "collective"
+      "kind": "collective",
+      "showInAuthors": true
     },
     {
       "id": "isaias",
@@ -77,7 +82,8 @@
         "Isaías"
       ],
       "note": "El libro contiene tradiciones asociadas al profeta y materiales que muchos investigadores sitúan en períodos posteriores.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "jeremias",
@@ -90,7 +96,8 @@
         "Lamentaciones"
       ],
       "note": "Jeremías conserva tradiciones proféticas vinculadas con él; Lamentaciones es anónimo y su atribución a Jeremías es tradicional.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "baruc",
@@ -102,7 +109,8 @@
         "Jeremías"
       ],
       "note": "Jeremías 36 menciona a Baruc como escriba de palabras dictadas por Jeremías; no implica autoría exclusiva del libro.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "ezequiel",
@@ -114,7 +122,8 @@
         "Ezequiel"
       ],
       "note": "El libro presenta discursos en su nombre; su transmisión y redacción pueden incluir trabajo editorial.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "daniel",
@@ -126,7 +135,8 @@
         "Daniel"
       ],
       "note": "La atribución tradicional es a Daniel; la datación académica dominante sitúa la forma final del libro en el siglo II a. C.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "oseas",
@@ -138,7 +148,8 @@
         "Oseas"
       ],
       "note": "El libro conserva oráculos asociados a Oseas y una historia de transmisión editorial.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "joel",
@@ -150,7 +161,8 @@
         "Joel"
       ],
       "note": "El texto identifica a Joel; su fecha histórica sigue debatida.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "amos",
@@ -162,7 +174,8 @@
         "Amós"
       ],
       "note": "El libro presenta palabras y visiones de Amós, con posible edición posterior.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "abdias",
@@ -174,7 +187,8 @@
         "Abdías"
       ],
       "note": "La obra se atribuye a Abdías en su encabezamiento; los datos biográficos son escasos.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "jonas",
@@ -186,7 +200,8 @@
         "Jonás"
       ],
       "note": "Jonás es el personaje principal; el libro no identifica explícitamente a su autor.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "miqueas",
@@ -198,7 +213,8 @@
         "Miqueas"
       ],
       "note": "La colección presenta oráculos de Miqueas y puede reflejar etapas de edición.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "nahum",
@@ -210,7 +226,8 @@
         "Nahúm"
       ],
       "note": "El encabezamiento lo identifica como Nahúm de Elcos; se conoce poco de su vida.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "habacuc",
@@ -222,7 +239,8 @@
         "Habacuc"
       ],
       "note": "El texto nombra a Habacuc, aunque el proceso de composición no es plenamente conocido.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "sofonias",
@@ -234,7 +252,8 @@
         "Sofonías"
       ],
       "note": "El encabezamiento identifica al profeta; la obra presenta señales de transmisión editorial.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "ageo",
@@ -246,7 +265,8 @@
         "Ageo"
       ],
       "note": "El libro fecha varios oráculos atribuidos a Ageo en época persa.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "zacarias",
@@ -258,7 +278,8 @@
         "Zacarías"
       ],
       "note": "Zacarías 1–8 se vincula con el profeta; muchos estudios distinguen materiales posteriores en 9–14.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "malaquias",
@@ -270,7 +291,8 @@
         "Malaquías"
       ],
       "note": "Malʾākî puede entenderse como «mi mensajero»; la identidad histórica del autor no es segura.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "esdras",
@@ -283,7 +305,8 @@
         "Nehemías"
       ],
       "note": "Las memorias de Esdras y Nehemías forman parte de obras compuestas y editadas; no se puede atribuirles todo el texto.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "nehemias",
@@ -295,7 +318,8 @@
         "Nehemías"
       ],
       "note": "Algunas secciones tienen forma de memorias en primera persona; el libro incluye otros materiales.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "pablo",
@@ -319,7 +343,8 @@
         "Tito"
       ],
       "note": "Siete cartas son ampliamente aceptadas como auténticas; la autoría de las demás cartas atribuidas a Pablo es objeto de debate.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "juan",
@@ -335,7 +360,8 @@
         "Apocalipsis"
       ],
       "note": "El Evangelio y las cartas presentan relaciones literarias; Apocalipsis identifica a su autor como Juan, sin demostrar que sea el mismo autor.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "pedro",
@@ -348,7 +374,8 @@
         "2 Pedro"
       ],
       "note": "Las cartas llevan su nombre; la autoría petrina, especialmente de 2 Pedro, es discutida en investigación histórica.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "santiago",
@@ -360,7 +387,8 @@
         "Santiago"
       ],
       "note": "La carta se presenta como de Santiago; la identificación con el hermano de Jesús es tradicional y debatida.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "judas",
@@ -372,7 +400,8 @@
         "Judas"
       ],
       "note": "El autor se identifica como Judas, hermano de Santiago; su identificación histórica exacta es discutida.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "marcos",
@@ -384,7 +413,8 @@
         "Marcos"
       ],
       "note": "El evangelio no identifica a su autor; la atribución a Marcos procede de testimonios cristianos posteriores.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "lucas",
@@ -397,7 +427,8 @@
         "Hechos"
       ],
       "note": "Ambas obras comparten autor literario anónimo; su identificación con Lucas es tradicional.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "mateo",
@@ -409,7 +440,8 @@
         "Mateo"
       ],
       "note": "El evangelio es anónimo; la atribución a Mateo pertenece a la tradición cristiana antigua.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "autor-hebreos",
@@ -421,7 +453,8 @@
         "Hebreos"
       ],
       "note": "Hebreos no nombra a su autor; la atribución a Pablo no es generalmente aceptada en los estudios actuales.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": true
     },
     {
       "id": "autores-anonimos",
@@ -451,7 +484,8 @@
         "Deuteronomio"
       ],
       "note": "Numerosos libros no identifican a un autor individual; algunas obras muestran composición, recopilación y edición en distintas etapas.",
-      "kind": "collective"
+      "kind": "collective",
+      "showInAuthors": true
     },
     {
       "id": "escribas-juda",
@@ -467,7 +501,8 @@
         "Deuteronomio"
       ],
       "note": "La formación del Pentateuco implicó distintas etapas y tradiciones. No se conocen los nombres de sus redactores finales.",
-      "kind": "collective"
+      "kind": "collective",
+      "showInAuthors": false
     },
     {
       "id": "tercio",
@@ -479,7 +514,8 @@
         "Romanos"
       ],
       "note": "En Romanos 16:22 Tercio se presenta expresamente como quien escribió la carta.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": false
     },
     {
       "id": "sostenes",
@@ -491,7 +527,8 @@
         "1 Corintios"
       ],
       "note": "1 Corintios 1:1 lo nombra junto a Pablo; no afirma que actuara como escriba material de la carta.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": false
     },
     {
       "id": "timoteo",
@@ -508,7 +545,8 @@
         "Filemón"
       ],
       "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": false
     },
     {
       "id": "silvano",
@@ -522,7 +560,8 @@
         "1 Pedro"
       ],
       "note": "Es nombrado junto a Pablo en Tesalonicenses. En 1 Pedro 5:12 aparece como mediador de la carta, pero es discutido si fue escriba o portador.",
-      "kind": "person"
+      "kind": "person",
+      "showInAuthors": false
     },
     {
       "id": "compiladores-proverbios",
@@ -534,7 +573,8 @@
         "Proverbios"
       ],
       "note": "Proverbios 25:1 atribuye a los hombres de Ezequías la copia de una colección de proverbios salomónicos.",
-      "kind": "collective"
+      "kind": "collective",
+      "showInAuthors": false
     },
     {
       "id": "colecciones-salmos",
@@ -546,7 +586,8 @@
         "Salmos"
       ],
       "note": "El Salterio reúne colecciones y atribuciones diversas; no se identifica un compilador único.",
-      "kind": "collective"
+      "kind": "collective",
+      "showInAuthors": false
     }
   ]
 }
