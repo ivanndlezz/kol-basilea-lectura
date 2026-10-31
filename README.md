@@ -19,7 +19,7 @@ La propuesta ya cuenta con:
 - persistencia local inicial sin registro;
 - análisis comparativo de seis referencias de UI y gamificación.
 
-La primera vertical funcional incluye onboarding de tres pasos, lector de 3 Juan con el capítulo 1 de Reina-Valera 1909, guardado local del check de capítulo, ruta completa, progreso y preferencias de meta.
+La primera vertical funcional incluye onboarding de tres pasos, lector de 3 Juan y 1 Juan con Reina-Valera 1909, guardado local del check de capítulo, ruta completa, progreso y preferencias de meta.
 
 ## Preview local
 

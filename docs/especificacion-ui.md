@@ -156,7 +156,7 @@ El mismo recurso se trata como panorama del conjunto, no como tres videos distin
 
 ### Fuente bíblica inicial integrada
 
-El lector ya puede mostrar el capítulo 1 de 3 Juan con Reina-Valera 1909, identificada como dominio público y con enlace a la fuente eBible.org. El contenido vive en `dist/data/bible-rvr1909.js` mediante un adaptador que separa la traducción, el capítulo y los metadatos de licencia. Los capítulos aún no integrados muestran un estado de preparación en lugar de texto demostrativo.
+El lector ya puede mostrar el capítulo 1 de 3 Juan y los cinco capítulos de 1 Juan con Reina-Valera 1909, identificada como dominio público y con enlace a la fuente eBible.org. El contenido vive en `dist/data/bible-rvr1909.js` mediante un adaptador que separa la traducción, el capítulo y los metadatos de licencia. Los capítulos aún no integrados muestran un estado de preparación en lugar de texto demostrativo.
 
 ## Componentes visuales
 
