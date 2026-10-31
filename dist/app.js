@@ -12,6 +12,14 @@ const BOOKS = [
 
 const TOTAL_CHAPTERS = BOOKS.reduce((sum, book) => sum + book.chapters, 0);
 const STORAGE_KEY = "kol-basilea-lectura-v1";
+const JUAN_VIDEO = {
+  id: "wQtMnuBzb4c",
+  title: "Resumen de 1–3 Juan",
+  description: "Un panorama animado sobre las tres cartas y sus temas de vida, verdad y amor.",
+  duration: "10:58",
+  pageUrl: "https://bibleproject.com/es/guides/libro-de-1-3-juan/",
+  youtubeUrl: "https://www.youtube.com/watch?v=wQtMnuBzb4c"
+};
 
 const ICONS = {
   sparkles: '<path d="M9.937 15.5A2 2 0 0 0 8.5 14.063L2 12l6.5-2.063A2 2 0 0 0 9.937 8.5L12 2l2.063 6.5A2 2 0 0 0 15.5 9.937L22 12l-6.5 2.063a2 2 0 0 0-1.437 1.437L12 22z"/><path d="M20 3v4"/><path d="M22 5h-4"/>',
@@ -72,6 +80,18 @@ function currentChapter(book = currentBook()) { return Math.min((getCompletedCha
 function percent(value, total) { return total ? Math.round((value / total) * 100) : 0; }
 function escapeHtml(value) { return String(value).replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char])); }
 
+function getBookVideo(book) {
+  return ["3-juan", "2-juan", "1-juan"].includes(book.id) ? JUAN_VIDEO : null;
+}
+
+function renderVideoCard(video) {
+  return `<div class="video-card" data-video-card data-video-id="${video.id}" data-video-title="${escapeHtml(video.title)}"><div class="video-placeholder video-poster" data-video-shell><div class="video-poster-content"><span class="video-overline">Proyecto Biblia · Video oficial</span><strong>1–3 Juan</strong><button class="video-play-button" type="button" data-action="play-video" aria-label="Reproducir ${escapeHtml(video.title)}">${icon("play", 20)}</button><small>${video.duration} · Se cargará al reproducir</small></div></div><div class="video-meta"><span class="video-kicker">Contexto compartido</span><h3>${escapeHtml(video.title)}</h3><p>${escapeHtml(video.description)}</p><div class="video-meta-footer"><span>Proyecto Biblia es el autor y propietario de este video.</span><a href="${video.pageUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div></div></div>`;
+}
+
+function renderPendingVideoCard() {
+  return `<div class="video-card video-card-pending"><div class="video-placeholder"><div class="video-poster-content"><span class="video-overline">Contexto editorial</span>${icon("sparkles", 22)}<small>Video de este libro · próximamente</small></div></div></div>`;
+}
+
 function progressBar(value, total, label = "Progreso") {
   const amount = percent(value, total);
   return `<div class="progress-label"><span>${label}</span><strong>${value} de ${total}</strong></div><div class="progress-track" role="progressbar" aria-label="${label}" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${value}"><div class="progress-fill" style="width:${amount}%"></div></div>`;
@@ -98,7 +118,7 @@ function renderOnboarding() {
 
   if (step === 3) {
     const book = BOOKS[0];
-    body = `<div class="hero-copy"><p class="eyebrow">Tu primer libro</p><h1>Comenzamos con<br>${book.name}.</h1><p>Antes de leer, puedes conocer el contexto. Después, marca tu capítulo y mira cómo empieza a crecer tu ruta.</p></div><div class="context-card"><div class="video-placeholder"><div><button type="button" data-action="preview-video" aria-label="Reproducir vista previa del video">${icon("play", 18)}</button><small>Video de contexto · 4 min</small></div></div><h3>Una carta breve para comenzar</h3><p>Vista previa de contenido. El texto bíblico y el video final se incorporarán cuando se definan las fuentes y licencias.</p></div>`;
+    body = `<div class="hero-copy"><p class="eyebrow">Tu primer libro</p><h1>Comenzamos con<br>${book.name}.</h1><p>Antes de leer, puedes conocer el contexto. Después, marca tu capítulo y mira cómo empieza a crecer tu ruta.</p></div><div class="context-card"><h3>Empieza con el contexto</h3>${renderVideoCard(JUAN_VIDEO)}</div>`;
   }
 
   return `<main class="onboarding-shell"><div class="onboarding-top"><div class="brand"><span class="brand-mark" aria-hidden="true">${icon("sparkles", 16)}</span>Kol Basilea</div><span class="progress-meta">Paso ${step} de 3</span></div><div class="progress-track" role="progressbar" aria-label="Progreso del inicio" aria-valuemin="1" aria-valuemax="3" aria-valuenow="${step}"><div class="progress-fill" style="width:${progress}%"></div></div><section class="onboarding-body">${body}</section><div class="onboarding-actions">${step === 1 ? `<button class="button button-primary button-wide" data-action="onboarding-next">Comenzar con 3 Juan</button><button class="button button-quiet button-wide" data-action="skip-onboarding">Explorar la ruta primero</button>` : step === 2 ? `<button class="button button-primary button-wide" data-action="onboarding-next">Continuar</button>` : `<button class="button button-primary button-wide" data-action="open-reader">Abrir 3 Juan</button>`}</div></main>`;
@@ -178,7 +198,9 @@ function renderReader() {
   const completed = getCompletedChapters(book).includes(chapter);
   const bookProgress = getCompletedChapters(book).length;
   const origin = state.readerOrigin === "route" ? "Ruta" : "Hoy";
-  return `<main><header class="reader-topbar"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><div class="reader-topbar-copy"><strong>${escapeHtml(book.name)}</strong><span>Capítulo ${chapter} de ${book.chapters} · Libro ${book.index + 1} de 66</span></div><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></header><nav class="reader-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="breadcrumb-link" data-action="back-context">${icon(origin === "Ruta" ? "route" : "house", 15)}<span>${origin}</span></button><span class="breadcrumb-separator" aria-hidden="true">${icon("chevronRight", 15)}</span><span class="breadcrumb-current" aria-current="page">${escapeHtml(book.name)}</span></nav><div class="reader-progress">${progressBar(bookProgress, book.chapters, "Progreso del libro")}</div><article class="reader-content"><p class="eyebrow">Antes de leer</p><h1>${escapeHtml(book.name)}<br><span style="color:var(--brand)">Capítulo ${chapter}</span></h1><div class="context-card"><div class="video-placeholder"><div><button type="button" data-action="preview-video" aria-label="Reproducir video de contexto">${icon("play", 18)}</button><small>Video de contexto · vista previa</small></div></div><h3>Lee con un poco de contexto</h3><p style="margin-bottom:0">Este espacio mostrará una introducción histórica y literaria breve antes de la lectura.</p></div><div class="reading-copy"><p class="reading-note">Contenido de demostración: aquí se integrará el texto bíblico autorizado. La interfaz ya está preparada para guardar tu check por capítulo.</p><p>La lectura comienza aquí. El objetivo de esta pantalla es mantener el foco: una página cómoda, controles claros y un solo siguiente paso.</p><p>Cuando termines este capítulo, marca tu avance. Si haces una pausa, tu progreso permanecerá guardado en este dispositivo.</p></div></article><footer class="reader-footer"><button class="button button-primary button-wide" data-action="complete-chapter">${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button></footer></main>`;
+  const video = getBookVideo(book);
+  const contextVideo = video ? renderVideoCard(video) : renderPendingVideoCard();
+  return `<main><header class="reader-topbar"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><div class="reader-topbar-copy"><strong>${escapeHtml(book.name)}</strong><span>Capítulo ${chapter} de ${book.chapters} · Libro ${book.index + 1} de 66</span></div><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></header><nav class="reader-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="breadcrumb-link" data-action="back-context">${icon(origin === "Ruta" ? "route" : "house", 15)}<span>${origin}</span></button><span class="breadcrumb-separator" aria-hidden="true">${icon("chevronRight", 15)}</span><span class="breadcrumb-current" aria-current="page">${escapeHtml(book.name)}</span></nav><div class="reader-progress">${progressBar(bookProgress, book.chapters, "Progreso del libro")}</div><article class="reader-content"><p class="eyebrow">Antes de leer</p><h1>${escapeHtml(book.name)}<br><span style="color:var(--brand)">Capítulo ${chapter}</span></h1><div class="context-card"><h3>Lee con un poco de contexto</h3>${contextVideo}</div><div class="reading-copy"><p class="reading-note">Contenido de demostración: aquí se integrará el texto bíblico autorizado. La interfaz ya está preparada para guardar tu check por capítulo.</p><p>La lectura comienza aquí. El objetivo de esta pantalla es mantener el foco: una página cómoda, controles claros y un solo siguiente paso.</p><p>Cuando termines este capítulo, marca tu avance. Si haces una pausa, tu progreso permanecerá guardado en este dispositivo.</p></div></article><footer class="reader-footer"><button class="button button-primary button-wide" data-action="complete-chapter">${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button></footer></main>`;
 }
 
 function renderNav() {
@@ -193,6 +215,25 @@ function openReader(bookId = currentBook().id) {
   state.view = "reader";
   saveState();
   render();
+}
+
+function activateVideo(button) {
+  const card = button.closest("[data-video-card]");
+  if (!card || card.classList.contains("is-playing")) return;
+  const videoId = card.dataset.videoId;
+  const title = card.dataset.videoTitle || "Video de contexto";
+  const shell = card.querySelector("[data-video-shell]");
+  if (!videoId || !shell) return;
+
+  const iframe = document.createElement("iframe");
+  iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&playsinline=1&rel=0&modestbranding=1`;
+  iframe.title = title;
+  iframe.loading = "eager";
+  iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+  iframe.allowFullscreen = true;
+  iframe.referrerPolicy = "strict-origin-when-cross-origin";
+  shell.replaceChildren(iframe);
+  card.classList.add("is-playing");
 }
 
 function completeChapter() {
@@ -229,7 +270,7 @@ function bindEvents() {
       if (action === "choose-goal") { state.goal = element.dataset.goal; saveState(); render(); }
       if (action === "open-reader") { openReader(state.onboardingStep === 3 ? "3-juan" : currentBook().id); }
       if (action === "skip-onboarding") { state.onboardingComplete = true; saveState(); render(); showToast("Puedes comenzar cuando quieras."); }
-      if (action === "preview-video") { showToast("Vista previa: el video se integrará en la siguiente fase."); }
+      if (action === "play-video") { activateVideo(element); }
       if (action === "navigate") { state.view = element.dataset.view; saveState(); render(); }
       if (action === "open-more") { state.view = "more"; saveState(); render(); }
       if (action === "show-route") { state.view = "route"; saveState(); render(); }
