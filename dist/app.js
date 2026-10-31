@@ -2,6 +2,7 @@ import { AUTHORS, AUTHOR_BY_ID, authorsForBook, COMPILATION_PEOPLE, relationship
 import { getBibleChapter, getBibleTranslation } from "./data/bible-rvr1909.js";
 import { getLoadedBibleChapter, getBookLoadState, loadBibleBook } from "./data/bible-loader.js";
 import { getPericopes, loadPericopes } from "./data/pericopes.js";
+const pericopeLoadRequested = new Set();
 import { BOOKS, CATEGORIES, TOTAL_CHAPTERS, getCatalogBook, getCategoryColor, narrativeBookTitle } from "./data/bible-catalog.js";
 import { JUAN_VIDEO, BOOK_INFO, getBookEditorial } from "./data/editorial-content.js";
 import { completedChapters, isBookFinished, completedChapterCount, completedBookCount, nextReadingBook, nextReadingChapter, markChapterComplete } from "./data/reading-progress.js";
@@ -184,7 +185,8 @@ function render() {
   bindImageSkeletons();
   if (state.view === "reader" && !state.readerBookInfoOpen) {
     const bookId = state.readerBookId;
-    if (["1-juan", "2-juan", "3-juan"].includes(bookId) && !getPericopes(bookId, 1).length) {
+    if (!pericopeLoadRequested.has(bookId)) {
+      pericopeLoadRequested.add(bookId);
       loadPericopes(bookId).then(data => { if (data && state.view === "reader" && state.readerBookId === bookId) render(); });
     }
     if (getBookLoadState(bookId) === "idle") {
