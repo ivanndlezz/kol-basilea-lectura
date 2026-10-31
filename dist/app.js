@@ -1,4 +1,5 @@
 import { getBibleChapter, getBibleTranslation } from "./data/bible-rvr1909.js";
+import { getLoadedBibleChapter, getBookLoadState, loadBibleBook } from "./data/bible-loader.js";
 import { BOOKS, CATEGORIES, TOTAL_CHAPTERS, getCatalogBook } from "./data/bible-catalog.js";
 import { JUAN_VIDEO, BOOK_INFO, getBookEditorial } from "./data/editorial-content.js";
 import { completedChapters, isBookFinished, completedChapterCount, completedBookCount, nextReadingBook, nextReadingChapter, markChapterComplete } from "./data/reading-progress.js";
@@ -163,6 +164,14 @@ function render() {
   root.innerHTML = state.onboardingComplete || state.view === "reader" ? renderApp() : renderOnboarding();
   bindEvents();
   bindImageSkeletons();
+  if (state.view === "reader" && !state.readerBookInfoOpen) {
+    const bookId = state.readerBookId;
+    if (getBookLoadState(bookId) === "idle") {
+      loadBibleBook(bookId).then(() => {
+        if (state.view === "reader" && state.readerBookId === bookId) render();
+      }).catch(error => console.warn("Bible book load failed", bookId, error));
+    }
+  }
 }
 
 function bindImageSkeletons() {
@@ -353,11 +362,13 @@ function renderReaderSelection(book, chapter) {
 }
 
 function renderReadingCopy(book, chapter) {
-  const passage = getBibleChapter(book.id, chapter, state.readerTranslation);
+  const passage = getLoadedBibleChapter(book.id, chapter, state.readerTranslation) || getBibleChapter(book.id, chapter, state.readerTranslation);
   const translation = getBibleTranslation(state.readerTranslation);
 
   if (!passage) {
-    return `<div class="reading-copy reading-copy-pending ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" data-reading-content><p class="reading-note">${icon("sparkles", 17)}<span><strong>Texto en preparación:</strong> Este capítulo estará disponible cuando terminemos de integrar la fuente autorizada.</span></p><p>Mientras tanto, puedes explorar el contexto del libro, navegar sus capítulos y guardar tu avance cuando el texto esté listo.</p></div>`;
+    const loadState = getBookLoadState(book.id);
+    const message = loadState === "error" ? "No pudimos descargar este libro. Comprueba tu conexión y vuelve a abrirlo." : "Descargando el texto bíblico de este libro…";
+    return `<div class="reading-copy reading-copy-pending ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" data-reading-content><p class="reading-note">${icon("sparkles", 17)}<span><strong>${loadState === "error" ? "Sin conexión:" : "Cargando Biblia:"}</strong> ${message}</span></p><p>Mientras tanto, puedes explorar el contexto del libro, navegar sus capítulos y guardar tu avance cuando el texto esté listo.</p></div>`;
   }
 
   return `<section class="reading-copy scripture-passage ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" data-reading-content aria-labelledby="scripture-title"><div class="scripture-source"><span><strong>${translation.name}</strong><small>${translation.license} · ${translation.publisher}</small></span><a href="${passage.sourceUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div><h2 id="scripture-title" class="sr-only">${escapeHtml(book.name)} ${chapter}</h2><div class="verse-list">${passage.verses.map((verse) => `<p class="scripture-verse"><sup>${verse.number}</sup><span>${escapeHtml(verse.text)}</span></p>`).join("")}</div><p class="scripture-attribution">Texto de ${translation.name}. ${translation.license}.</p></section>`;
