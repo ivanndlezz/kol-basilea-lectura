@@ -43,6 +43,7 @@ const defaultState = () => ({
   view: "home",
   readerBookId: "3-juan",
   readerOrigin: "home",
+  interludeBookId: null,
   readerChapter: null,
   routeCategory: "all",
   libraryCategory: "all",
@@ -223,8 +224,17 @@ function goalOption(value, title, subtitle) {
 }
 
 function renderApp() {
-  const content = state.view === "reader" ? renderReader() : renderView();
-  return `<div class="app-shell ${state.view === "reader" ? "is-reading" : ""}">${state.view === "reader" ? content : `${renderTopbar()}${state.view === "home" ? "" : renderBreadcrumb(state.view)}${content}${renderNav()}`}${renderNavigationSheet()}${state.toast ? `<div class="toast" role="status">${escapeHtml(state.toast)}</div>` : ""}</div>`;
+  const content = state.view === "reader" ? renderReader() : state.view === "interlude" ? renderInterlude() : renderView();
+  return `<div class="app-shell ${state.view === "reader" ? "is-reading" : ""}">${["reader", "interlude"].includes(state.view) ? content : `${renderTopbar()}${state.view === "home" ? "" : renderBreadcrumb(state.view)}${content}${renderNav()}`}${renderNavigationSheet()}${state.toast ? `<div class="toast" role="status">${escapeHtml(state.toast)}</div>` : ""}</div>`;
+}
+
+
+function renderInterlude() {
+  const book = getBook(state.interludeBookId || state.justCompletedBookId);
+  if (!book || !isBookComplete(book)) return renderHome();
+  const next = BOOKS[book.index + 1];
+  const completed = totalCompletedBooks();
+  return `<main class="kb-interlude" style="${categoryStyle(book.category)}"><div class="kb-interlude-inner"><p class="eyebrow">Un libro más en tu estantería</p><div class="kb-interlude-emblem" aria-hidden="true">${icon("sparkles",32)}</div><div class="kb-interlude-cover">${renderBookCover(book,true)}</div><p class="kb-interlude-overline">Libro ${book.index + 1} de 66 · Completado</p><h1>Terminaste ${escapeHtml(book.name)}.</h1><p class="kb-interlude-copy">Cada libro es un descubrimiento. Hoy has añadido uno más a tu recorrido.</p><div class="kb-interlude-progress"><strong>${completed} de 66 libros</strong><span>${totalCompletedChapters()} de ${TOTAL_CHAPTERS} capítulos leídos</span></div>${next ? `<div class="kb-interlude-next"><span>Tu próximo libro</span><div class="kb-interlude-next-book" style="${categoryStyle(next.category)}"><span class="kb-interlude-next-mark"></span><strong>${escapeHtml(next.name)}</strong><small>${next.chapters} ${next.chapters === 1 ? "capítulo" : "capítulos"}</small></div></div><button class="button button-primary button-wide" data-action="interlude-next">Comenzar ${escapeHtml(next.name)} ${icon("chevronRight",18)}</button>` : `<p class="kb-interlude-copy">¡Has completado los 66 libros de esta ruta!</p>`}<button class="button button-quiet button-wide" data-action="interlude-home">Volver a Hoy</button></div></main>`;
 }
 
 function renderTopbar() {
@@ -472,23 +482,30 @@ function completeChapter() {
   const updatedProgress = markChapterComplete(state, book, chapter);
   state.completedChapters = updatedProgress.completedChapters;
   const finishedBook = isBookComplete(book);
-  state.justCompletedBookId = finishedBook && !wasComplete ? book.id : null;
-  if (state.onboardingStep === 3 && book.index === 0) {
-    state.onboardingComplete = true;
-    state.view = "home";
-    showToast("Primer libro completado. Tu ruta ya comenzó.");
-  } else if (!finishedBook) {
-    state.readerChapter = currentChapter(book);
-    showToast(`Capítulo ${chapter} guardado.`);
-  } else {
-    state.view = "home";
-    state.readerChapter = null;
-    showToast(finishedBook ? `${book.name} completado. Siguiente: ${BOOKS[book.index + 1]?.name || "Salmos"}.` : `Capítulo ${chapter} guardado.`);
-  }
   state.readerReadingProgress = 0;
+  state.readerBookInfoOpen = false;
+  state.chapterSheetOpen = false;
+  state.readerDisplayOpen = false;
+  if (state.onboardingStep === 3 && book.index === 0) state.onboardingComplete = true;
+  if (finishedBook && !wasComplete) {
+    state.justCompletedBookId = book.id;
+    state.interludeBookId = book.id;
+    state.readerChapter = null;
+    state.view = "interlude";
+  } else if (!finishedBook) {
+    // Continue to the next unread chapter without leaving the reader.
+    state.readerChapter = currentChapter(book);
+    state.view = "reader";
+  } else {
+    // An already completed book must not replay its completion celebration.
+    state.readerChapter = currentChapter(book);
+    state.view = "reader";
+  }
   saveState();
   render();
+  window.scrollTo({ top: 0, behavior: "instant" });
 }
+
 
 function showToast(message) {
   clearTimeout(toastTimer);
@@ -528,6 +545,8 @@ function bindEvents() {
       if (action === "set-reader-theme") { state.readerTheme = ["light", "sepia", "dark"].includes(element.dataset.theme) ? element.dataset.theme : "light"; state.readerDisplayOpen = false; saveState(); render(); }
       if (action === "back-home" || action === "back-context") { state.view = ["route", "library"].includes(state.readerOrigin) ? state.readerOrigin : "home"; saveState(); render(); }
       if (action === "complete-chapter") { completeChapter(); }
+      if (action === "interlude-next") { const finished = getBook(state.interludeBookId); const next = finished && BOOKS[finished.index + 1]; if (next) { state.view = "home"; state.interludeBookId = null; openReader(next.id); window.scrollTo({ top: 0, behavior: "instant" }); } }
+      if (action === "interlude-home") { state.interludeBookId = null; state.view = "home"; saveState(); render(); window.scrollTo({ top: 0, behavior: "instant" }); }
       if (action === "set-appearance") { const value = element.dataset.appearance; if (["system", "light", "dark"].includes(value)) { state.appAppearance = value; state.appearancePopoverOpen = false; saveState(); render(); document.querySelector(".kb-appearance-toggle")?.focus({preventScroll:true}); } }
       if (action === "change-goal") {
         const nextGoal = state.goal === "365" ? "180" : state.goal === "180" ? "none" : "365";
