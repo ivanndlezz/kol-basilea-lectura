@@ -145,6 +145,7 @@ Incluye:
 - menú “Formato” para cambiar entre tipografía serif/sans y temas claro, sepia u oscuro;
 - breadcrumb con el origen y el libro actual;
 - botón textual de regreso a la vista de origen.
+- en móvil, una barra sticky inferior con porcentaje de lectura del capítulo y la acción para marcarlo como completado; el CTA permanece muted y deshabilitado hasta llegar al final del texto;
 
 El lector debe mantener el foco en una sola acción principal y evitar acciones competitivas o distracciones innecesarias. La lista de capítulos funciona como navegación secundaria: el capítulo actual se destaca, y al guardar un capítulo el check aparece de inmediato mientras el lector avanza al siguiente pendiente. El menú de formato se considera una preferencia persistente, no una acción de lectura.
 
@@ -213,6 +214,8 @@ El lector ya puede mostrar el capítulo 1 de 3 Juan y los cinco capítulos de 1 
 - Después de marcar un capítulo pendiente, el lector conserva la vista, muestra el check y propone el siguiente capítulo pendiente, salvo al terminar el libro.
 - El video de contexto se puede contraer y el contenido multimedia permanece diferido mientras está cerrado.
 - El menú de formato permite cambiar tipografía y tema sin perder el capítulo ni el progreso.
+- En móvil, el lector muestra una barra sticky inferior con la acción “Marcar capítulo X como leído” y una barra de lectura que refleja el desplazamiento real dentro del texto.
+- El CTA de completar solo se habilita al alcanzar el final del documento; llegar al 100% de lectura activa el botón sin recargar la pantalla.
 - Los libros largos no generan una lista extensa dentro del lector: muestran capítulos cercanos y abren el índice completo bajo demanda.
 - El índice completo permite saltar a cualquier capítulo, muestra el capítulo actual y se cierra al seleccionar uno o tocar fuera del panel.
 - Desde cualquier vista secundaria se puede volver a Hoy mediante breadcrumb; desde el lector se puede volver a la vista que lo abrió.

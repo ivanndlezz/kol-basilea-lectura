@@ -90,12 +90,15 @@ const defaultState = () => ({
   readerTheme: "light",
   readerTranslation: "rvr1909",
   readerBookInfoOpen: false,
+  readerReadingProgress: 0,
   completedChapters: {},
   toast: ""
 });
 
 let state = loadState();
 let toastTimer;
+let readerProgressBound = false;
+let readerProgressFrame = null;
 
 function slugify(value) {
   return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -113,6 +116,42 @@ function loadState() {
 function saveState() {
   const { toast, ...persisted } = state;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(persisted));
+}
+
+function updateReaderReadingProgress() {
+  const meter = document.querySelector("[data-reading-meter]");
+  const passage = document.querySelector("[data-reading-content]");
+  if (!meter || !passage) return;
+
+  const passageTop = passage.getBoundingClientRect().top + window.scrollY;
+  const readingPoint = window.scrollY + window.innerHeight * 0.68;
+  const atDocumentEnd = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+  const progress = atDocumentEnd ? 100 : Math.max(0, Math.min(100, Math.round(((readingPoint - passageTop) / Math.max(passage.offsetHeight, 1)) * 100)));
+  state.readerReadingProgress = progress;
+
+  const label = meter.querySelector("[data-reading-progress-label]");
+  const fill = meter.querySelector("[data-reading-progress-fill]");
+  const track = meter.querySelector("[role=progressbar]");
+  const completeButton = document.querySelector("[data-complete-chapter]");
+  if (label) label.textContent = `${progress}% leído`;
+  if (fill) fill.style.width = `${progress}%`;
+  if (track) track.setAttribute("aria-valuenow", String(progress));
+  if (completeButton && !completeButton.dataset.completed) completeButton.disabled = progress < 100;
+}
+
+function scheduleReaderReadingProgress() {
+  if (readerProgressFrame) return;
+  readerProgressFrame = window.requestAnimationFrame(() => {
+    readerProgressFrame = null;
+    updateReaderReadingProgress();
+  });
+}
+
+function bindReaderReadingProgress() {
+  if (readerProgressBound) return;
+  window.addEventListener("scroll", scheduleReaderReadingProgress, { passive: true });
+  window.addEventListener("resize", scheduleReaderReadingProgress);
+  readerProgressBound = true;
 }
 
 function getBook(id) { return BOOKS.find((book) => book.id === id) || BOOKS[0]; }
@@ -338,10 +377,10 @@ function renderReadingCopy(book, chapter) {
   const translation = getBibleTranslation(state.readerTranslation);
 
   if (!passage) {
-    return `<div class="reading-copy reading-copy-pending ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}"><p class="reading-note">${icon("sparkles", 17)}<span><strong>Texto en preparación:</strong> Este capítulo estará disponible cuando terminemos de integrar la fuente autorizada.</span></p><p>Mientras tanto, puedes explorar el contexto del libro, navegar sus capítulos y guardar tu avance cuando el texto esté listo.</p></div>`;
+    return `<div class="reading-copy reading-copy-pending ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" data-reading-content><p class="reading-note">${icon("sparkles", 17)}<span><strong>Texto en preparación:</strong> Este capítulo estará disponible cuando terminemos de integrar la fuente autorizada.</span></p><p>Mientras tanto, puedes explorar el contexto del libro, navegar sus capítulos y guardar tu avance cuando el texto esté listo.</p></div>`;
   }
 
-  return `<section class="reading-copy scripture-passage ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" aria-labelledby="scripture-title"><div class="scripture-source"><span><strong>${translation.name}</strong><small>${translation.license} · ${translation.publisher}</small></span><a href="${passage.sourceUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div><h2 id="scripture-title" class="sr-only">${escapeHtml(book.name)} ${chapter}</h2><div class="verse-list">${passage.verses.map((verse) => `<p class="scripture-verse"><sup>${verse.number}</sup><span>${escapeHtml(verse.text)}</span></p>`).join("")}</div><p class="scripture-attribution">Texto de ${translation.name}. ${translation.license}.</p></section>`;
+  return `<section class="reading-copy scripture-passage ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" data-reading-content aria-labelledby="scripture-title"><div class="scripture-source"><span><strong>${translation.name}</strong><small>${translation.license} · ${translation.publisher}</small></span><a href="${passage.sourceUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div><h2 id="scripture-title" class="sr-only">${escapeHtml(book.name)} ${chapter}</h2><div class="verse-list">${passage.verses.map((verse) => `<p class="scripture-verse"><sup>${verse.number}</sup><span>${escapeHtml(verse.text)}</span></p>`).join("")}</div><p class="scripture-attribution">Texto de ${translation.name}. ${translation.license}.</p></section>`;
 }
 
 function renderReader() {
@@ -354,7 +393,8 @@ function renderReader() {
   const video = getBookVideo(book);
   const contextVideo = video ? renderVideoCard(video) : renderPendingVideoCard();
   const readerBody = `${renderReaderContext(book, contextVideo)}${renderChapterList(book, chapter)}${state.readerBookInfoOpen ? renderBookInfoPage(book) : renderReadingCopy(book, chapter)}`;
-  const readerFooter = state.readerBookInfoOpen ? "" : `<footer class="reader-footer"><button class="button button-primary button-wide" data-action="complete-chapter">${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button></footer>`;
+  const readProgress = Number.isFinite(state.readerReadingProgress) ? state.readerReadingProgress : 0;
+  const readerFooter = state.readerBookInfoOpen ? "" : `<footer class="reader-footer"><div class="reader-reading-meter" data-reading-meter><div class="reader-reading-meter-copy"><span data-reading-progress-label>${readProgress}% leído</span><span>Capítulo ${chapter}</span></div><div class="reader-reading-track" role="progressbar" aria-label="Progreso de lectura del capítulo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${readProgress}"><div class="reader-reading-fill" data-reading-progress-fill style="width:${readProgress}%"></div></div></div><button class="button button-primary button-wide" data-action="complete-chapter" data-complete-chapter ${completed ? 'data-completed="true"' : ""} ${!completed && readProgress < 100 ? "disabled" : ""}>${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button></footer>`;
   return `<main class="reader-page"><header class="reader-topbar"><div class="reader-topbar-left"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><span class="reader-topbar-divider" aria-hidden="true"></span><nav class="reader-topbar-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="reader-topbar-link" data-action="back-context">${origin}</button><span aria-hidden="true">${icon("chevronRight", 13)}</span><strong>${escapeHtml(book.name)} ${chapter}</strong><span class="reader-book-index">${book.index + 1}/66</span></nav></div><div class="reader-topbar-actions"><button class="reader-format-button" data-action="toggle-reader-format" aria-expanded="${state.readerDisplayOpen}" aria-controls="reader-display-menu">${icon("sliders", 16)}<span>Formato</span></button><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></div><div class="reader-route-progress" role="progressbar" aria-label="Progreso total de la ruta" aria-valuemin="0" aria-valuemax="${TOTAL_CHAPTERS}" aria-valuenow="${routeProgress}"><div style="width:${percent(routeProgress, TOTAL_CHAPTERS)}%"></div></div></header>${renderReaderSelection(book, chapter)}${renderReaderDisplayMenu()}<div class="reader-progress"><div class="reader-progress-copy"><span>Libro ${book.index + 1} de 66</span><strong>${bookProgress} de ${book.chapters} capítulos</strong></div><div class="progress-track" role="progressbar" aria-label="Progreso del libro" aria-valuemin="0" aria-valuemax="${book.chapters}" aria-valuenow="${bookProgress}"><div class="progress-fill" style="width:${percent(bookProgress, book.chapters)}%"></div></div></div><article class="reader-content"><div class="reader-heading"><div class="reader-meta-pill"><span>Libro ${book.index + 1} de 66</span><span aria-hidden="true">•</span><span>Capítulo ${chapter} de ${book.chapters}</span></div><h1>${escapeHtml(book.name)}</h1></div>${readerBody}</article>${readerFooter}</main>`;
 }
 
@@ -369,6 +409,7 @@ function openReader(bookId = currentBook().id) {
   state.readerChapter = currentChapter(getBook(bookId));
   state.chapterSheetOpen = false;
   state.readerBookInfoOpen = false;
+  state.readerReadingProgress = 0;
   if (state.onboardingStep === 3 && bookId === "3-juan") state.onboardingComplete = true;
   state.view = "reader";
   saveState();
@@ -413,6 +454,7 @@ function completeChapter() {
     state.readerChapter = null;
     showToast(finishedBook ? `${book.name} completado. Siguiente: ${BOOKS[book.index + 1]?.name || "Salmos"}.` : `Capítulo ${chapter} guardado.`);
   }
+  state.readerReadingProgress = 0;
   saveState();
   render();
 }
@@ -462,4 +504,6 @@ function bindEvents() {
   });
 }
 
+bindReaderReadingProgress();
 render();
+updateReaderReadingProgress();
