@@ -1,6 +1,7 @@
 import { AUTHORS, AUTHOR_BY_ID, authorsForBook, COMPILATION_PEOPLE, relationshipsForBook } from "./data/biblical-authors.js";
 import { getBibleChapter, getBibleTranslation } from "./data/bible-rvr1909.js";
 import { getLoadedBibleChapter, getBookLoadState, loadBibleBook } from "./data/bible-loader.js";
+import { getPericopes, loadPericopes } from "./data/pericopes.js";
 import { BOOKS, CATEGORIES, TOTAL_CHAPTERS, getCatalogBook, getCategoryColor, narrativeBookTitle } from "./data/bible-catalog.js";
 import { JUAN_VIDEO, BOOK_INFO, getBookEditorial } from "./data/editorial-content.js";
 import { completedChapters, isBookFinished, completedChapterCount, completedBookCount, nextReadingBook, nextReadingChapter, markChapterComplete } from "./data/reading-progress.js";
@@ -183,6 +184,9 @@ function render() {
   bindImageSkeletons();
   if (state.view === "reader" && !state.readerBookInfoOpen) {
     const bookId = state.readerBookId;
+    if (bookId === "2-juan" && !getPericopes(bookId, 1).length) {
+      loadPericopes(bookId).then(data => { if (data && state.view === "reader" && state.readerBookId === bookId) render(); });
+    }
     if (getBookLoadState(bookId) === "idle") {
       loadBibleBook(bookId).then(() => {
         if (state.view === "reader" && state.readerBookId === bookId) render();
@@ -541,7 +545,7 @@ function renderReadingCopy(book, chapter) {
     return `<div class="reading-copy reading-copy-pending ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" data-reading-content><p class="reading-note">${icon("sparkles", 17)}<span><strong>${loadState === "error" ? "Sin conexión:" : "Cargando Biblia:"}</strong> ${message}</span></p><p>Mientras tanto, puedes explorar el contexto del libro, navegar sus capítulos y guardar tu avance cuando el texto esté listo.</p></div>`;
   }
 
-  return `<section class="reading-copy scripture-passage ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" data-reading-content aria-labelledby="scripture-title"><div class="scripture-source"><span><strong>${translation.name}</strong><small>${translation.license} · ${translation.publisher}</small></span><a href="${passage.sourceUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div><h2 id="scripture-title" class="sr-only">${escapeHtml(book.name)} ${chapter}</h2><div class="verse-list">${passage.verses.map((verse) => `<p class="scripture-verse"><sup>${verse.number}</sup><span>${escapeHtml(verse.text)}</span></p>`).join("")}</div><p class="scripture-attribution">Texto de ${translation.name}. ${translation.license}.</p></section>`;
+  return `<section class="reading-copy scripture-passage ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" data-reading-content aria-labelledby="scripture-title"><div class="scripture-source"><span><strong>${translation.name}</strong><small>${translation.license} · ${translation.publisher}</small></span><a href="${passage.sourceUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div><h2 id="scripture-title" class="sr-only">${escapeHtml(book.name)} ${chapter}</h2><div class="verse-list">${passage.verses.map((verse) => `${getPericopes(book.id, chapter).filter(section => section.startVerse === verse.number).map(section => `<h3 class="kb-pericope-heading">${escapeHtml(section.title)}</h3>`).join("")}<p class="scripture-verse"><sup>${verse.number}</sup><span>${escapeHtml(verse.text)}</span></p>`).join("")}</div><p class="scripture-attribution">Texto de ${translation.name}. ${translation.license}.</p></section>`;
 }
 
 function renderBookTextCredits(book) {
