@@ -1,4 +1,4 @@
-const CACHE = "kol-basilea-lectura-ui-v2";
+const CACHE = "kol-basilea-lectura-ui-v3";
 const CORE = ["./", "./index.html", "./styles.css", "./app.js", "./data/bible-catalog.js", "./data/bible-rvr1909.js", "./data/bible-loader.js", "./data/editorial-content.js", "./data/reading-progress.js"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
