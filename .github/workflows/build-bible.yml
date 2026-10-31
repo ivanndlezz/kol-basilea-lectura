@@ -1,0 +1,29 @@
+name: Build full RVR1909 Bible
+on:
+  push:
+    paths:
+      - 'scripts/convert-usfm.mjs'
+      - '.github/workflows/build-bible.yml'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download verified official USFM
+        run: |
+          curl --fail --location --retry 3 --silent --show-error 'https://ebible.org/Scriptures/spaRV1909_usfm.zip' -o /tmp/spaRV1909_usfm.zip
+          mkdir -p /tmp/rv1909-usfm
+          unzip -q /tmp/spaRV1909_usfm.zip -d /tmp/rv1909-usfm
+      - name: Convert and validate 66 books
+        run: node scripts/convert-usfm.mjs /tmp/rv1909-usfm dist/data/rvr1909
+      - name: Run regression tests
+        run: npm run check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rvr1909-json
+          path: dist/data/rvr1909/
+          retention-days: 7
