@@ -1037,7 +1037,3 @@ a:not([class]):visited{color:var(--brand-dark)}
 .scripture-passage > .kb-section-nav { margin: 14px 0 24px; }
 .scripture-passage > .kb-section-nav .kb-section-tabs { padding-inline: 0; }
 
-/* iOS Safari: fixed positioning avoids nested sticky containment. */
-:root { --kb-safe-top: env(safe-area-inset-top, 0px); }
-.kb-section-nav.is-fixed { position: fixed; z-index: 45; margin: 0; box-sizing: border-box; }
-.kb-section-placeholder { height: 0; }
