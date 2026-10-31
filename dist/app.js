@@ -259,7 +259,7 @@ function renderView() {
 
 function renderBookCover(book, completed = false) {
   const title = escapeHtml(book.name).replace(/ /g, "<br>");
-  const palette = ["#195b45", "#71563e", "#345b72", "#71536b", "#775d38", "#3d6660"];
+  const palette = ["#174c3a", "#2c7658", "#a45e34", "#527454", "#c87535", "#496f58"];
   return `<div class="kb-cover" style="--cover-color:${palette[Math.floor(book.index / 11) % palette.length]}" aria-hidden="true"><div class="kb-cover-face"><span class="kb-cover-star">✦</span><span class="kb-cover-title">${title}</span><span class="kb-cover-number">LIBRO ${book.index + 1}</span></div>${completed ? `<span class="kb-cover-stamp">${icon("check", 18)}</span>` : ""}</div>`;
 }
 function renderBookShelf(rewardIndex = -1) {
