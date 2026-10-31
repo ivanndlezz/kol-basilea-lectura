@@ -6,10 +6,20 @@
     <meta name="theme-color" content="#f6f7f4" />
     <meta name="description" content="Kol Basilea: una ruta progresiva para leer la Biblia." />
     <title>Kol Basilea · Lectura</title>
-    <link rel="stylesheet" href="./styles.css?v=20261031-reader-render-fix-1" />
+    <link rel="stylesheet" href="./styles.css?v=20261031-cache-recovery-2" />
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="./app.js?v=20261031-reader-render-fix-1"></script>
+    <script>
+      window.addEventListener("error", function(event) {
+        if (!document.querySelector("#app")?.children.length) {
+          document.querySelector("#app").innerHTML = '<main style="padding:32px 24px;font-family:system-ui;max-width:520px;margin:12vh auto;color:#20332c"><h1>No pudimos abrir la lectura</h1><p>Es posible que Safari tenga una versión anterior guardada.</p><button onclick="location.reload()" style="background:#245a44;color:white;border:0;border-radius:12px;padding:14px 20px;font-size:16px">Volver a intentar</button></main>';
+        }
+      });
+      window.addEventListener("unhandledrejection", function(event) {
+        if (!document.querySelector("#app")?.children.length) window.dispatchEvent(new Event("error"));
+      });
+    </script>
+    <script type="module" src="./app.js?v=20261031-cache-recovery-2"></script>
   </body>
 </html>
