@@ -23,7 +23,10 @@ for path in sorted(Path("dist/data/pericopes").glob("*.json")):
         for section in chapter.get("sections", []):
             if section.get("status") != "needs-translation": continue
             title = translator.translate(section["sourceTitle"]).strip()
-            if not title or title == section["sourceTitle"]: raise SystemExit(f"Translation missing: {path}: {section['sourceTitle']}")
+            if not title: raise SystemExit(f"Translation missing: {path}: {section['sourceTitle']}")
+            if title == section["sourceTitle"]:
+                section["status"] = "needs-editorial-translation"
+                continue
             section["title"] = title[:1].upper() + title[1:]
             section["status"] = "machine-translated"
             count += 1
