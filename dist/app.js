@@ -672,7 +672,7 @@ function bindEvents() {
       if (action === "open-compiler") { state.selectedCompilerId = element.dataset.compilerId; saveState(); render(); window.scrollTo({top:0,behavior:"instant"}); }
       if (action === "compilation-back") { state.selectedCompilerId = null; saveState(); render(); window.scrollTo({top:0,behavior:"instant"}); }
       if (action === "filter-authors") { state.authorsFilter = element.dataset.filter; state.selectedAuthorId = null; saveState(); render(); }
-      if (action === "open-author") { state.selectedAuthorId = element.dataset.authorId; saveState(); render(); window.scrollTo({top:0,behavior:"instant"}); }
+      if (action === "open-author") { state.view = "authors"; state.selectedAuthorId = element.dataset.authorId; state.navigationOpen = false; saveState(); render(); window.scrollTo({top:0,behavior:"instant"}); }
       if (action === "authors-back") { state.selectedAuthorId = null; saveState(); render(); window.scrollTo({top:0,behavior:"instant"}); }
       if (action === "filter-library-category") { state.libraryCategory = CATEGORIES.some(category => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "filter-route-category") { state.routeCategory = CATEGORIES.some((category) => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
