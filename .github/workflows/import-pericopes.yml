@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/import-pericopes.yml'
       - 'scripts/extract-pericopes.py'
+      - 'scripts/translate-pericopes.py'
 permissions:
   contents: write
 jobs:
@@ -19,6 +20,10 @@ jobs:
           unzip -q /tmp/bsb_usfm.zip -d /tmp/bsb-usfm
       - name: Extract section drafts
         run: python3 scripts/extract-pericopes.py --input /tmp/bsb-usfm --output dist/data/pericopes
+      - name: Install offline translation model tooling
+        run: python3 -m pip install --quiet argostranslate
+      - name: Translate new headings into Spanish
+        run: python3 scripts/translate-pericopes.py
       - name: Report coverage
         run: |
           python3 - <<'PY'
