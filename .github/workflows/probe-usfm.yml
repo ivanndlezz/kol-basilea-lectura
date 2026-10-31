@@ -1,0 +1,22 @@
+name: Probe official RVR1909 USFM archive
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/probe-usfm.yml'
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect source archive
+        run: |
+          set -eux
+          for url in "https://ebible.org/spaRV1909/spaRV1909_usfm.zip" "https://ebible.org/Scriptures/spaRV1909_usfm.zip"; do
+            echo "$url"
+            curl -L -sS -o /tmp/usfm.zip -w 'HTTP %{http_code} bytes %{size_download}\n' "$url"
+            if unzip -t /tmp/usfm.zip >/dev/null 2>&1; then
+              unzip -Z1 /tmp/usfm.zip | head -25
+              exit 0
+            fi
+          done
+          exit 1
