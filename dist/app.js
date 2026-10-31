@@ -378,11 +378,18 @@ function renderCompilation() {
   }
   return `<main class="screen kb-compilation-page"><header class="route-header"><p class="eyebrow">Personas y Escrituras</p><h1>Recopilación de textos.</h1><p>Los libros, sus fuentes y quienes participaron en su transmisión.</p></header><div class="kb-compilation-count">${ordered.length} historias de transmisión textual</div><div class="kb-compilation-editorial-list">${ordered.map(person=>`<button class="kb-compilation-editorial-card" data-action="open-compiler" data-compiler-id="${person.id}"><span class="kb-compilation-editorial-art">${art(person)}</span><span class="kb-compilation-editorial-copy"><small class="kb-compilation-editorial-kicker" style="${categoryStyle(compilationCategory(person))}">${escapeHtml(person.role)}</small><strong class="kb-compilation-editorial-title">${escapeHtml(compilationBookName(person))}</strong><span class="kb-compilation-editorial-person">${escapeHtml(person.name)}</span><span class="kb-compilation-editorial-source"><span>Fuente de los textos</span><b>${person.id==="escribas-juda"?"Tradición oral de Moisés":escapeHtml(person.source)}</b></span></span><span class="kb-compilation-editorial-chevron">${icon("chevronRight",18)}</span></button>`).join("")}</div><p class="kb-compilation-art-credit">Imágenes: obras de dominio público de Wikimedia Commons. Son representaciones artísticas posteriores, no documentos visuales de los acontecimientos.</p></main>`;
 }
+const AUTHOR_ARTWORKS = {
+  "moises": {file:"Rembrandt - Moses with the Ten Commandments - Google Art Project.jpg",artist:"Rembrandt",work:"Moisés con las tablas de la Ley"},
+  "david": {file:"David Playing the Harp 1670 Jan de Bray.jpg",artist:"Jan de Bray",work:"David tocando el arpa"}
+};
 function renderAuthorPortrait(person) {
-  const seed = encodeURIComponent("kol-basilea-" + person.id);
-  const url = `https://api.dicebear.com/9.x/notionists/svg?seed=${seed}&backgroundColor=transparent`;
+  const normalized = person.name.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+  const collective = /hijos de|escribas|recopiladores|hombres de|autores|grupo|comunidad/i.test(person.name);
+  const artwork = !collective && (AUTHOR_ARTWORKS[person.id] || AUTHOR_ARTWORKS[normalized]);
   const initial = escapeHtml(person.name.slice(0,1));
-  return `<span class="kb-avatar-fallback" aria-label="Representación de ${escapeHtml(person.name)}"><span class="kb-avatar-initial">${initial}</span><img class="kb-author-portrait" src="${url}" alt="" loading="lazy" decoding="async" onload="this.parentElement.classList.add('is-loaded')" onerror="this.remove()" /></span>`;
+  if (!artwork) return `<span class="kb-author-editorial-initial" aria-hidden="true">${collective ? "✦" : initial}</span>`;
+  const url = "https://commons.wikimedia.org/wiki/Special:FilePath/" + encodeURIComponent(artwork.file) + "?width=320";
+  return `<span class="kb-author-classic-image"><span class="kb-author-editorial-initial" aria-hidden="true">${initial}</span><img class="kb-author-portrait" src="${url}" alt="Representación artística de ${escapeHtml(person.name)} en una obra de ${escapeHtml(artwork.artist)}" loading="lazy" decoding="async" onload="this.parentElement.classList.add('is-loaded')" onerror="this.remove()" /></span>`;
 }
 
 function renderAuthors() {
