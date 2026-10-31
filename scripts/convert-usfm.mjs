@@ -17,6 +17,7 @@ function clean(text) {
     .replace(/\\(?:x|f)\s+[\s\S]*?\\(?:x|f)\*/g,"")
     .replace(/\\(?:add|bd|bdit|em|it|nd|sc|wj|qt|sig|tl|bk|pn|k|ord|no|sup|pro|rb|sls|dc|ior|iqt|lik|lit|rq|fig|w|wa|wg|wh)\*?/g,"")
     .replace(/\\\+?\w+\*?/g,"")
+    .replace(/\|[a-z][a-z0-9-]*="[^"]*"/gi,"")
     .replace(/\s+/g," ").trim();
 }
 export function parseUsfm(input) {
