@@ -1,6 +1,10 @@
 name: Import BSB pericope drafts
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/import-pericopes.yml'
+      - 'scripts/extract-pericopes.py'
 permissions:
   contents: write
 jobs:
