@@ -876,3 +876,11 @@ a:not([class]):visited{color:var(--brand-dark)}
 .kb-interlude-next-book strong{flex:1;font-size:18px}
 .kb-interlude-next-book small{color:var(--ink-muted)}
 .kb-interlude .button{width:100%}
+
+/* Chapter-specific overflow menu, independent from the global hamburger. */
+.reader-more-anchor{position:relative;display:flex;align-items:center}
+.reader-more-trigger[aria-expanded="true"]{background:var(--brand-soft);color:var(--brand-dark)}
+.reader-more-popover{position:absolute;right:0;top:calc(100% + 9px);z-index:70;width:min(265px,78vw);padding:7px;border:1px solid var(--line);border-radius:16px;background:var(--surface);color:var(--ink);box-shadow:0 16px 45px rgba(0,0,0,.17)}
+.reader-more-popover button{display:flex;align-items:center;gap:10px;width:100%;min-height:45px;padding:10px 12px;border:0;border-radius:11px;background:transparent;color:var(--ink);font-size:14px;font-weight:650;text-align:left}
+.reader-more-popover button:hover,.reader-more-popover button:focus-visible{background:var(--brand-soft)}
+.reader-more-popover p{margin:0;padding:12px;font-size:13px;line-height:1.4;color:var(--ink-muted)}
