@@ -957,3 +957,12 @@ a:not([class]):visited{color:var(--brand-dark)}
 .kb-home-author-label small{font-size:10px;color:var(--ink-muted,#718078);font-weight:500}
 .kb-home-author-label strong{font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .kb-home-author>svg{opacity:.55;flex:none}
+
+/* Smaller, quieter author attribution in next-reading card */
+.kb-home-author{gap:6px;margin-top:7px;padding:2px 7px 2px 2px;border-color:#e4e9e4;background:transparent;box-shadow:none}
+.kb-home-author-avatar{width:25px;height:25px}
+.kb-home-author-avatar .kb-author-editorial-initial{font-size:14px}
+.kb-home-author-label{gap:0}
+.kb-home-author-label small{font-size:9px;line-height:1.15}
+.kb-home-author-label strong{font-size:11px;line-height:1.25;font-weight:600}
+.kb-home-author>svg{width:12px;height:12px;opacity:.4}
