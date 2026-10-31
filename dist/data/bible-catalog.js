@@ -12,6 +12,47 @@ export const BOOKS = [
   ["2 Samuel", 24], ["Números", 36], ["Isaías", 66], ["Éxodo", 40], ["Lucas", 24], ["Génesis", 50], ["Jeremías", 52], ["Salmos", 150]
 ].map(([name, chapters], index) => ({ id: slugify(name), name, chapters, index }));
 
+/** Narrative labels for completed-book messages, independent of canonical references. */
+const NARRATIVE_BOOK_TITLES = Object.freeze({
+  "1 Samuel": "el primer libro de Samuel",
+  "2 Samuel": "el segundo libro de Samuel",
+  "1 Reyes": "el primer libro de los Reyes",
+  "2 Reyes": "el segundo libro de los Reyes",
+  "1 Crónicas": "el primer libro de las Crónicas",
+  "2 Crónicas": "el segundo libro de las Crónicas",
+  "1 Corintios": "la primera carta a los Corintios",
+  "2 Corintios": "la segunda carta a los Corintios",
+  "1 Tesalonicenses": "la primera carta a los Tesalonicenses",
+  "2 Tesalonicenses": "la segunda carta a los Tesalonicenses",
+  "1 Timoteo": "la primera carta a Timoteo",
+  "2 Timoteo": "la segunda carta a Timoteo",
+  "1 Pedro": "la primera carta de Pedro",
+  "2 Pedro": "la segunda carta de Pedro",
+  "1 Juan": "la primera carta de Juan",
+  "2 Juan": "la segunda carta de Juan",
+  "3 Juan": "la tercera carta de Juan",
+  "Romanos": "la carta a los Romanos",
+  "Gálatas": "la carta a los Gálatas",
+  "Efesios": "la carta a los Efesios",
+  "Filipenses": "la carta a los Filipenses",
+  "Colosenses": "la carta a los Colosenses",
+  "Tito": "la carta a Tito",
+  "Filemón": "la carta a Filemón",
+  "Hebreos": "la carta a los Hebreos",
+  "Santiago": "la carta de Santiago",
+  "Judas": "la carta de Judas",
+  "Mateo": "el Evangelio según Mateo",
+  "Marcos": "el Evangelio según Marcos",
+  "Lucas": "el Evangelio según Lucas",
+  "Juan": "el Evangelio según Juan",
+  "Hechos": "el libro de los Hechos",
+  "Salmos": "el libro de los Salmos",
+  "Proverbios": "el libro de los Proverbios",
+  "Cantares": "el Cantar de los Cantares",
+  "Apocalipsis": "el Apocalipsis"
+});
+export const narrativeBookTitle = name => NARRATIVE_BOOK_TITLES[name] || name;
+
 export const CATEGORIES = [
   { id: "all", label: "Todos" },
   { id: "law", label: "La Ley" },
