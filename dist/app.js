@@ -79,6 +79,7 @@ const defaultState = () => ({
   onboardingComplete: false,
   onboardingStep: 1,
   goal: "365",
+  appAppearance: "system",
   view: "home",
   readerBookId: "3-juan",
   readerOrigin: "home",
@@ -220,6 +221,7 @@ function progressBar(value, total, label = "Progreso") {
 function render() {
   const root = document.querySelector("#app");
   document.body.dataset.readerTheme = state.view === "reader" ? state.readerTheme : "light";
+  document.body.dataset.appAppearance = state.appAppearance || "system";
   root.innerHTML = state.onboardingComplete || state.view === "reader" ? renderApp() : renderOnboarding();
   bindEvents();
   bindImageSkeletons();
@@ -272,7 +274,7 @@ function renderApp() {
 }
 
 function renderTopbar() {
-  return `<header class="topbar"><div class="brand"><span class="brand-mark" aria-hidden="true">${icon("sparkles", 16)}</span>Kol Basilea</div><button class="profile-button" data-action="open-more" aria-label="Abrir más opciones">${icon("ellipsis", 20)}</button></header>`;
+  return `<header class="topbar"><div class="brand"><span class="brand-mark" aria-hidden="true">${icon("bookOpen", 18)}</span>Kol Basilea</div><button class="profile-button" data-action="open-more" aria-label="Abrir más opciones">${icon("ellipsis", 20)}</button></header>`;
 }
 
 function renderBreadcrumb(view) {
@@ -297,11 +299,11 @@ function renderHome() {
   const intro = getBookInfo(book);
   const discovery = `<section class="kol-discovery" aria-labelledby="kol-discovery-title"><img class="kol-discovery-image" src="https://ivanndlezz.github.io/kol-basilea/assets/historias-del-reino-portada-redisenada.jpg" alt="Ilustración editorial original de Historias del Reino, Kol Basilea" loading="lazy" decoding="async"><div class="kol-discovery-content"><p class="eyebrow">Descubre Kol Basilea</p><h2 id="kol-discovery-title">Cada historia tiene un mundo detrás.</h2><p>Leer es el comienzo. Descubre los personajes, acontecimientos y contextos que dieron forma a las Escrituras.</p><a class="kol-discovery-link" href="https://ivanndlezz.github.io/kol-basilea/historias-del-reino/un-choque-de-mundos-mentes-y-personas/" target="_blank" rel="noopener noreferrer">Leer en Kol Basilea <span aria-hidden="true">↗</span></a></div></section>`;
   return `<main class="screen home-screen">
-    <header class="hero-copy home-intro"><p class="eyebrow">Tu camino por las Escrituras</p><h1>Descubre la Biblia, un libro a la vez.</h1><p>Una ruta de lectura para conocer las Escrituras, comprender su contexto y avanzar a tu propio ritmo.</p></header>
-    <section class="card current-card reading-next" aria-labelledby="reading-next-title"><div class="reading-next-heading"><span class="reading-next-symbol" aria-hidden="true">${icon("bookOpen", 18)}</span><span>Tu siguiente lectura</span></div><h2 id="reading-next-title">${escapeHtml(book.name)}</h2><p class="reading-next-description">${escapeHtml(intro.lead)}</p><p class="book-meta">Capítulo ${chapter} de ${book.chapters} · Libro ${book.index + 1} de 66</p>${completed ? progressBar(completed, book.chapters, `Tu recorrido por ${book.name}`) : ""}<div class="button-row reading-actions"><button class="button button-primary" data-action="open-reader">${completed ? "Continuar leyendo" : "Comenzar a leer"}</button><button class="button button-secondary" data-action="show-route">Explorar los libros</button></div></section>
+    <header class="hero-copy home-intro"><p class="eyebrow">Tu camino por las Escrituras</p><h1>Descubre la Biblia, un libro a la vez.</h1><p>Una ruta de lectura diseñada para ayudarte a conocer las Escrituras, comprender su contexto y avanzar a tu propio ritmo.</p></header>
+    <section class="card current-card reading-next" aria-labelledby="reading-next-title"><div class="reading-next-heading"><span class="reading-next-symbol" aria-hidden="true">${icon("bookOpen", 18)}</span><span>Tu siguiente lectura</span></div><h2 id="reading-next-title">${escapeHtml(book.name)}</h2><p class="reading-next-description">${escapeHtml(intro.lead)}</p><div class="reading-next-meta"><span>Capítulo ${chapter} de ${book.chapters}</span><span>${book.index === 0 ? "Primero" : `Libro ${book.index + 1}`} de 66 libros</span></div>${completed ? progressBar(completed, book.chapters, `Tu recorrido por ${book.name}`) : ""}<div class="button-row reading-actions"><button class="button button-primary" data-action="open-reader">${completed ? "Continuar leyendo" : "Comenzar a leer"} <span aria-hidden="true">→</span></button></div></section>
     <section class="reading-method" aria-labelledby="reading-method-title"><h2 id="reading-method-title">Así funciona tu recorrido</h2><div class="reading-method-grid"><div class="reading-method-step"><span class="method-icon" aria-hidden="true">${icon("bookOpen", 20)}</span><strong>Lee</strong><span>A tu ritmo</span></div><div class="reading-method-step"><span class="method-icon" aria-hidden="true">${icon("info", 20)}</span><strong>Comprende</strong><span>Con contexto</span></div><div class="reading-method-step"><span class="method-icon" aria-hidden="true">${icon("route", 20)}</span><strong>Avanza</strong><span>Libro a libro</span></div></div></section>
-    <div class="section-heading"><h2>Tu camino recorrido</h2><a href="#" data-action="show-progress">Ver todo</a></div><div class="soft-card milestone-card"><div class="milestone-icon" aria-hidden="true">${icon("sparkles", 20)}</div><div><h3>${doneBooks ? `${doneBooks} ${doneBooks === 1 ? "libro descubierto" : "libros descubiertos"}` : "Tu historia de lectura comienza aquí"}</h3><p>${doneBooks ? `Has recorrido ${doneBooks} de 66 libros y ${total} capítulos. Cada paso permanece contigo.` : "Cada capítulo que leas será parte de tu recorrido. No hay días perdidos ni prisa por terminar."}</p></div></div>
     <div class="section-heading"><h2>Tu biblioteca</h2><a href="#" data-action="show-route">Explorar todos</a></div><p class="home-library-lead">Los libros que has recorrido y los que están por descubrir.</p><div class="book-strip" aria-label="Libros cercanos en la ruta">${recentBooks.map(bookChip).join("")}</div>
+    <div class="section-heading"><h2>Tu camino recorrido</h2><a href="#" data-action="show-progress">Ver todo</a></div><div class="soft-card milestone-card"><div class="milestone-icon" aria-hidden="true">${icon("sparkles", 20)}</div><div><h3>${doneBooks ? `${doneBooks} ${doneBooks === 1 ? "libro descubierto" : "libros descubiertos"}` : "Tu historia de lectura comienza aquí"}</h3><p>${doneBooks ? `Has recorrido ${doneBooks} de 66 libros y ${total} capítulos. Cada paso permanece contigo.` : "Cada capítulo que leas será parte de tu recorrido. No hay días perdidos ni prisa por terminar."}</p></div></div>
     ${discovery}
   </main>`;
 }
@@ -335,7 +337,7 @@ function renderProgress() {
 }
 
 function renderMore() {
-  return `<main class="screen"><div class="hero-copy"><p class="eyebrow">Más</p><h1>Tu experiencia.</h1><p>Preferencias sencillas para mantener la ruta a tu ritmo.</p></div><div class="more-list" style="margin-top:24px"><div class="more-row"><span><strong>Meta de lectura</strong><span>${state.goal === "none" ? "Sin fecha" : `${state.goal} días`}</span></span><button class="button button-secondary" data-action="change-goal">Cambiar</button></div><div class="more-row"><span><strong>Progreso local</strong><span>Guardado en este dispositivo</span></span><span aria-label="Activado">${icon("check", 17)}</span></div><div class="more-row"><span><strong>Contenido</strong><span>Texto y videos con fuente por definir</span></span><span aria-hidden="true">${icon("chevronRight", 18)}</span></div></div><div class="context-card" style="margin-top:24px"><h3>Una nota sobre este prototipo</h3><p style="margin-bottom:0">La lectura que ves aquí es una maqueta de interacción. El contenido bíblico y los videos reales se integrarán después de resolver las licencias.</p></div></main>`;
+  return `<main class="screen"><div class="hero-copy"><p class="eyebrow">Más</p><h1>Tu experiencia.</h1><p>Preferencias sencillas para mantener la ruta a tu ritmo.</p></div><div class="more-list" style="margin-top:24px"><div class="more-row"><span><strong>Meta de lectura</strong><span>${state.goal === "none" ? "Sin fecha" : `${state.goal} días`}</span></span><button class="button button-secondary" data-action="change-goal">Cambiar</button></div><div class="more-row"><span><strong>Apariencia</strong><span>${state.appAppearance === "dark" ? "Oscuro" : state.appAppearance === "light" ? "Claro" : "Automático"}</span></span><button class="button button-secondary" data-action="change-appearance">Cambiar</button></div><div class="more-row"><span><strong>Progreso local</strong><span>Guardado en este dispositivo</span></span><span aria-label="Activado">${icon("check", 17)}</span></div><div class="more-row"><span><strong>Contenido</strong><span>Texto y videos con fuente por definir</span></span><span aria-hidden="true">${icon("chevronRight", 18)}</span></div></div><div class="context-card" style="margin-top:24px"><h3>Una nota sobre este prototipo</h3><p style="margin-bottom:0">La lectura que ves aquí es una maqueta de interacción. El contenido bíblico y los videos reales se integrarán después de resolver las licencias.</p></div></main>`;
 }
 
 function renderChapterButton(book, chapter, selectedChapter, variant = "chapter-row") {
@@ -516,6 +518,7 @@ function bindEvents() {
       if (action === "set-reader-theme") { state.readerTheme = ["light", "sepia", "dark"].includes(element.dataset.theme) ? element.dataset.theme : "light"; state.readerDisplayOpen = false; saveState(); render(); }
       if (action === "back-home" || action === "back-context") { state.view = state.readerOrigin === "route" ? "route" : "home"; saveState(); render(); }
       if (action === "complete-chapter") { completeChapter(); }
+      if (action === "change-appearance") { state.appAppearance = state.appAppearance === "system" ? "dark" : state.appAppearance === "dark" ? "light" : "system"; saveState(); render(); }
       if (action === "change-goal") {
         const nextGoal = state.goal === "365" ? "180" : state.goal === "180" ? "none" : "365";
         state.goal = nextGoal;
