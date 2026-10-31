@@ -13,44 +13,44 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Beginning",
-          "title": "The Beginning",
-          "status": "needs-translation"
+          "title": "El comienzo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "The Witness of John",
-          "title": "The Witness of John",
-          "status": "needs-translation"
+          "title": "El testigo de John",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "The Word Became Flesh",
-          "title": "The Word Became Flesh",
-          "status": "needs-translation"
+          "title": "La Palabra se convirtió en carne",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "The Mission of John the Baptist",
-          "title": "The Mission of John the Baptist",
-          "status": "needs-translation"
+          "title": "La Misión de Juan el Bautista",
+          "status": "machine-translated"
         },
         {
           "startVerse": 29,
           "sourceTitle": "Jesus the Lamb of God",
-          "title": "Jesus the Lamb of God",
-          "status": "needs-translation"
+          "title": "Jesús el Cordero de Dios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 35,
           "sourceTitle": "The First Disciples",
-          "title": "The First Disciples",
-          "status": "needs-translation"
+          "title": "Los primeros discípulos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 43,
           "sourceTitle": "Jesus Calls Philip and Nathanael",
-          "title": "Jesus Calls Philip and Nathanael",
-          "status": "needs-translation"
+          "title": "Jesús llama a Felipe y Nathanael",
+          "status": "machine-translated"
         }
       ]
     },
@@ -60,14 +60,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Wedding at Cana",
-          "title": "The Wedding at Cana",
-          "status": "needs-translation"
+          "title": "La boda en Cana",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Jesus Cleanses the Temple",
-          "title": "Jesus Cleanses the Temple",
-          "status": "needs-translation"
+          "title": "Jesús limpia el Templo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -77,14 +77,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jesus and Nicodemus",
-          "title": "Jesus and Nicodemus",
-          "status": "needs-translation"
+          "title": "Jesús y Nicodemo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "John’s Testimony about Jesus",
-          "title": "John’s Testimony about Jesus",
-          "status": "needs-translation"
+          "title": "El testimonio de Juan sobre Jesús",
+          "status": "machine-translated"
         }
       ]
     },
@@ -94,26 +94,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jesus and the Samaritan Woman",
-          "title": "Jesus and the Samaritan Woman",
-          "status": "needs-translation"
+          "title": "Jesús y la mujer samaritana",
+          "status": "machine-translated"
         },
         {
           "startVerse": 27,
           "sourceTitle": "The Disciples Return and Marvel",
-          "title": "The Disciples Return and Marvel",
-          "status": "needs-translation"
+          "title": "Los discípulos regresan y se maravillan",
+          "status": "machine-translated"
         },
         {
           "startVerse": 39,
           "sourceTitle": "Many Samaritans Believe",
-          "title": "Many Samaritans Believe",
-          "status": "needs-translation"
+          "title": "Muchos samaritanos creen",
+          "status": "machine-translated"
         },
         {
           "startVerse": 43,
           "sourceTitle": "Jesus Heals the Official’s Son",
-          "title": "Jesus Heals the Official’s Son",
-          "status": "needs-translation"
+          "title": "Jesús sana al Hijo del Oficial",
+          "status": "machine-translated"
         }
       ]
     },
@@ -123,26 +123,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Pool of Bethesda",
-          "title": "The Pool of Bethesda",
-          "status": "needs-translation"
+          "title": "La piscina de Bethesda",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "The Father and the Son",
-          "title": "The Father and the Son",
-          "status": "needs-translation"
+          "title": "El Padre y el Hijo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 31,
           "sourceTitle": "Testimonies about Jesus",
-          "title": "Testimonies about Jesus",
-          "status": "needs-translation"
+          "title": "Testimonios sobre Jesús",
+          "status": "machine-translated"
         },
         {
           "startVerse": 39,
           "sourceTitle": "The Witness of Scripture",
-          "title": "The Witness of Scripture",
-          "status": "needs-translation"
+          "title": "El Testigo de la Escritura",
+          "status": "machine-translated"
         }
       ]
     },
@@ -152,32 +152,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Feeding of the Five Thousand",
-          "title": "The Feeding of the Five Thousand",
-          "status": "needs-translation"
+          "title": "La alimentación de los cinco mil",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Jesus Walks on Water",
-          "title": "Jesus Walks on Water",
-          "status": "needs-translation"
+          "title": "Jesús camina sobre el agua",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "Jesus the Bread of Life",
-          "title": "Jesus the Bread of Life",
-          "status": "needs-translation"
+          "title": "Jesús el Pan de la Vida",
+          "status": "machine-translated"
         },
         {
           "startVerse": 59,
           "sourceTitle": "Many Disciples Turn Back",
-          "title": "Many Disciples Turn Back",
-          "status": "needs-translation"
+          "title": "Muchos discípulos vuelven",
+          "status": "machine-translated"
         },
         {
           "startVerse": 67,
           "sourceTitle": "Peter’s Confession of Faith",
-          "title": "Peter’s Confession of Faith",
-          "status": "needs-translation"
+          "title": "La confesión de la fe de Pedro",
+          "status": "machine-translated"
         }
       ]
     },
@@ -187,32 +187,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jesus Teaches at the Feast",
-          "title": "Jesus Teaches at the Feast",
-          "status": "needs-translation"
+          "title": "Jesús enseña en la fiesta",
+          "status": "machine-translated"
         },
         {
           "startVerse": 25,
           "sourceTitle": "Is Jesus the Christ?",
-          "title": "Is Jesus the Christ?",
-          "status": "needs-translation"
+          "title": "¿Es Jesús el Cristo?",
+          "status": "machine-translated"
         },
         {
           "startVerse": 37,
           "sourceTitle": "Living Water",
-          "title": "Living Water",
-          "status": "needs-translation"
+          "title": "Agua viva",
+          "status": "machine-translated"
         },
         {
           "startVerse": 40,
           "sourceTitle": "Division over Jesus",
-          "title": "Division over Jesus",
-          "status": "needs-translation"
+          "title": "División sobre Jesús",
+          "status": "machine-translated"
         },
         {
           "startVerse": 45,
           "sourceTitle": "The Unbelief of the Jewish Leaders",
-          "title": "The Unbelief of the Jewish Leaders",
-          "status": "needs-translation"
+          "title": "La incredulidad de los líderes judíos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -222,26 +222,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Woman Caught in Adultery",
-          "title": "The Woman Caught in Adultery",
-          "status": "needs-translation"
+          "title": "La mujer atrapada en adulterio",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Jesus the Light of the World",
-          "title": "Jesus the Light of the World",
-          "status": "needs-translation"
+          "title": "Jesús la Luz del Mundo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 30,
           "sourceTitle": "The Truth Will Set You Free",
-          "title": "The Truth Will Set You Free",
-          "status": "needs-translation"
+          "title": "La verdad te hará libre",
+          "status": "machine-translated"
         },
         {
           "startVerse": 48,
           "sourceTitle": "Before Abraham Was Born, I Am",
-          "title": "Before Abraham Was Born, I Am",
-          "status": "needs-translation"
+          "title": "Antes de que Abraham naciera, yo soy",
+          "status": "machine-translated"
         }
       ]
     },
@@ -251,20 +251,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jesus Heals the Man Born Blind",
-          "title": "Jesus Heals the Man Born Blind",
-          "status": "needs-translation"
+          "title": "Jesús sana al hombre nacido ciego",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Pharisees Investigate the Healing",
-          "title": "The Pharisees Investigate the Healing",
-          "status": "needs-translation"
+          "title": "Los fariseos investigan la curación",
+          "status": "machine-translated"
         },
         {
           "startVerse": 35,
           "sourceTitle": "Spiritual Blindness",
-          "title": "Spiritual Blindness",
-          "status": "needs-translation"
+          "title": "Ciego espiritual",
+          "status": "machine-translated"
         }
       ]
     },
@@ -274,20 +274,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jesus the Good Shepherd",
-          "title": "Jesus the Good Shepherd",
-          "status": "needs-translation"
+          "title": "Jesús el Buen Pastor",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "Jesus at the Feast of Dedication",
-          "title": "Jesus at the Feast of Dedication",
-          "status": "needs-translation"
+          "title": "Jesús en la Fiesta de la Dedicación",
+          "status": "machine-translated"
         },
         {
           "startVerse": 40,
           "sourceTitle": "John’s Testimony Confirmed",
-          "title": "John’s Testimony Confirmed",
-          "status": "needs-translation"
+          "title": "Testimonio de John Confirmado",
+          "status": "machine-translated"
         }
       ]
     },
@@ -297,26 +297,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Death of Lazarus",
-          "title": "The Death of Lazarus",
-          "status": "needs-translation"
+          "title": "La muerte de Lázaro",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Jesus Comforts Martha and Mary",
-          "title": "Jesus Comforts Martha and Mary",
-          "status": "needs-translation"
+          "title": "Jesús Conforta Marta y María",
+          "status": "machine-translated"
         },
         {
           "startVerse": 38,
           "sourceTitle": "Jesus Raises Lazarus",
-          "title": "Jesus Raises Lazarus",
-          "status": "needs-translation"
+          "title": "Jesús levanta a Lázaro",
+          "status": "machine-translated"
         },
         {
           "startVerse": 45,
           "sourceTitle": "The Plot to Kill Jesus",
-          "title": "The Plot to Kill Jesus",
-          "status": "needs-translation"
+          "title": "El Plot para Matar a Jesús",
+          "status": "machine-translated"
         }
       ]
     },
@@ -326,32 +326,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "Mary Anoints Jesus",
-          "title": "Mary Anoints Jesus",
-          "status": "needs-translation"
+          "title": "María unge Jesús",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "The Plot to Kill Lazarus",
-          "title": "The Plot to Kill Lazarus",
-          "status": "needs-translation"
+          "title": "El Plot para matar a Lázaro",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "The Triumphal Entry",
-          "title": "The Triumphal Entry",
-          "status": "needs-translation"
+          "title": "La entrada Triumphal",
+          "status": "machine-translated"
         },
         {
           "startVerse": 20,
           "sourceTitle": "Jesus Predicts His Death",
-          "title": "Jesus Predicts His Death",
-          "status": "needs-translation"
+          "title": "Jesús predice su muerte",
+          "status": "machine-translated"
         },
         {
           "startVerse": 37,
           "sourceTitle": "Belief and Unbelief",
-          "title": "Belief and Unbelief",
-          "status": "needs-translation"
+          "title": "La creencia y la incredulidad",
+          "status": "machine-translated"
         }
       ]
     },
@@ -361,26 +361,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jesus Washes His Disciples’ Feet",
-          "title": "Jesus Washes His Disciples’ Feet",
-          "status": "needs-translation"
+          "title": "Jesús lava los pies de sus discípulos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "Jesus Predicts His Betrayal",
-          "title": "Jesus Predicts His Betrayal",
-          "status": "needs-translation"
+          "title": "Jesús predice su traición",
+          "status": "machine-translated"
         },
         {
           "startVerse": 31,
           "sourceTitle": "Love One Another",
-          "title": "Love One Another",
-          "status": "needs-translation"
+          "title": "Amor uno otro",
+          "status": "machine-translated"
         },
         {
           "startVerse": 36,
           "sourceTitle": "Jesus Predicts Peter’s Denial",
-          "title": "Jesus Predicts Peter’s Denial",
-          "status": "needs-translation"
+          "title": "Jesús predice la negación de Pedro",
+          "status": "machine-translated"
         }
       ]
     },
@@ -390,26 +390,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "In My Father’s House Are Many Rooms",
-          "title": "In My Father’s House Are Many Rooms",
-          "status": "needs-translation"
+          "title": "En la casa de mi padre son muchas habitaciones",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "The Way, the Truth, and the Life",
-          "title": "The Way, the Truth, and the Life",
-          "status": "needs-translation"
+          "title": "El Camino, la Verdad y la Vida",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "Jesus Promises the Holy Spirit",
-          "title": "Jesus Promises the Holy Spirit",
-          "status": "needs-translation"
+          "title": "Jesús promete el Espíritu Santo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 27,
           "sourceTitle": "Peace I Leave with You",
-          "title": "Peace I Leave with You",
-          "status": "needs-translation"
+          "title": "Paz Me voy contigo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -419,20 +419,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jesus the True Vine",
-          "title": "Jesus the True Vine",
-          "status": "needs-translation"
+          "title": "Jesús la Viña Verdadera",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "No Greater Love",
-          "title": "No Greater Love",
-          "status": "needs-translation"
+          "title": "No es un amor más grande",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "The Hatred of the World",
-          "title": "The Hatred of the World",
-          "status": "needs-translation"
+          "title": "El odio del mundo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -443,25 +443,25 @@
           "startVerse": 1,
           "sourceTitle": "Persecution Foretold",
           "title": "Persecution Foretold",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 5,
           "sourceTitle": "The Promise of the Holy Spirit",
-          "title": "The Promise of the Holy Spirit",
-          "status": "needs-translation"
+          "title": "La promesa del Espíritu Santo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Grief Will Turn to Joy",
-          "title": "Grief Will Turn to Joy",
-          "status": "needs-translation"
+          "title": "Grief se convertirá en Joy",
+          "status": "machine-translated"
         },
         {
           "startVerse": 23,
           "sourceTitle": "Ask in My Name",
-          "title": "Ask in My Name",
-          "status": "needs-translation"
+          "title": "Preguntar en mi nombre",
+          "status": "machine-translated"
         }
       ]
     },
@@ -471,20 +471,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Prayer for the Son",
-          "title": "Prayer for the Son",
-          "status": "needs-translation"
+          "title": "Oración para el Hijo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Prayer for the Disciples",
-          "title": "Prayer for the Disciples",
-          "status": "needs-translation"
+          "title": "Oración por los discípulos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 20,
           "sourceTitle": "Prayer for All Believers",
-          "title": "Prayer for All Believers",
-          "status": "needs-translation"
+          "title": "Oración por todos los creyentes",
+          "status": "machine-translated"
         }
       ]
     },
@@ -494,32 +494,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Betrayal of Jesus",
-          "title": "The Betrayal of Jesus",
-          "status": "needs-translation"
+          "title": "La traición de Jesús",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "Peter’s First Denial",
-          "title": "Peter’s First Denial",
-          "status": "needs-translation"
+          "title": "Primera negación de Peter",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "Jesus before the High Priest",
-          "title": "Jesus before the High Priest",
-          "status": "needs-translation"
+          "title": "Jesús ante el Sumo Sacerdote",
+          "status": "machine-translated"
         },
         {
           "startVerse": 25,
           "sourceTitle": "Peter’s Second and Third Denials",
-          "title": "Peter’s Second and Third Denials",
-          "status": "needs-translation"
+          "title": "La segunda y tercera negación de Pedro",
+          "status": "machine-translated"
         },
         {
           "startVerse": 28,
           "sourceTitle": "Jesus before Pilate",
-          "title": "Jesus before Pilate",
-          "status": "needs-translation"
+          "title": "Jesús antes de Pilato",
+          "status": "machine-translated"
         }
       ]
     },
@@ -529,32 +529,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Soldiers Mock Jesus",
-          "title": "The Soldiers Mock Jesus",
-          "status": "needs-translation"
+          "title": "Los soldados se burlan de Jesús",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "The Crucifixion",
-          "title": "The Crucifixion",
-          "status": "needs-translation"
+          "title": "La crucifixión",
+          "status": "machine-translated"
         },
         {
           "startVerse": 28,
           "sourceTitle": "The Death of Jesus",
-          "title": "The Death of Jesus",
-          "status": "needs-translation"
+          "title": "La muerte de Jesús",
+          "status": "machine-translated"
         },
         {
           "startVerse": 31,
           "sourceTitle": "Jesus’ Side Is Pierced",
-          "title": "Jesus’ Side Is Pierced",
-          "status": "needs-translation"
+          "title": "El lado de Jesús es perforado",
+          "status": "machine-translated"
         },
         {
           "startVerse": 38,
           "sourceTitle": "The Burial of Jesus",
-          "title": "The Burial of Jesus",
-          "status": "needs-translation"
+          "title": "El entierro de Jesús",
+          "status": "machine-translated"
         }
       ]
     },
@@ -564,32 +564,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Resurrection",
-          "title": "The Resurrection",
-          "status": "needs-translation"
+          "title": "La Resurrección",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Jesus Appears to Mary Magdalene",
-          "title": "Jesus Appears to Mary Magdalene",
-          "status": "needs-translation"
+          "title": "Jesús aparece a María Magdalena",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "Jesus Appears to the Disciples",
-          "title": "Jesus Appears to the Disciples",
-          "status": "needs-translation"
+          "title": "Jesús aparece a los discípulos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 24,
           "sourceTitle": "Jesus Appears to Thomas",
-          "title": "Jesus Appears to Thomas",
-          "status": "needs-translation"
+          "title": "Jesús aparece a Tomás",
+          "status": "machine-translated"
         },
         {
           "startVerse": 30,
           "sourceTitle": "The Purpose of John’s Book",
-          "title": "The Purpose of John’s Book",
-          "status": "needs-translation"
+          "title": "El propósito del libro de Juan",
+          "status": "machine-translated"
         }
       ]
     },
@@ -599,20 +599,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jesus Appears by the Sea of Tiberias",
-          "title": "Jesus Appears by the Sea of Tiberias",
-          "status": "needs-translation"
+          "title": "Jesús aparece por el Mar de Tiberias",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "Jesus and Peter",
-          "title": "Jesus and Peter",
-          "status": "needs-translation"
+          "title": "Jesús y Pedro",
+          "status": "machine-translated"
         },
         {
           "startVerse": 20,
           "sourceTitle": "Jesus and the Beloved Disciple",
-          "title": "Jesus and the Beloved Disciple",
-          "status": "needs-translation"
+          "title": "Jesús y el discípulo amado",
+          "status": "machine-translated"
         }
       ]
     }

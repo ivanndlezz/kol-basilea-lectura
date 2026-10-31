@@ -14,25 +14,25 @@
           "startVerse": 1,
           "sourceTitle": "A Greeting from Jude",
           "title": "A Greeting from Jude",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 3,
           "sourceTitle": "God’s Judgment on the Ungodly",
-          "title": "God’s Judgment on the Ungodly",
-          "status": "needs-translation"
+          "title": "Juicio de Dios sobre el impío",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "A Call to Persevere",
-          "title": "A Call to Persevere",
-          "status": "needs-translation"
+          "title": "Una llamada a Persevere",
+          "status": "machine-translated"
         },
         {
           "startVerse": 24,
           "sourceTitle": "Doxology",
-          "title": "Doxology",
-          "status": "needs-translation"
+          "title": "Doxología",
+          "status": "machine-translated"
         }
       ]
     }

@@ -13,14 +13,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "God Instructs Joshua",
-          "title": "God Instructs Joshua",
-          "status": "needs-translation"
+          "title": "Dios instruye a Josué",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Joshua Takes Charge",
-          "title": "Joshua Takes Charge",
-          "status": "needs-translation"
+          "title": "Joshua toma carga",
+          "status": "machine-translated"
         }
       ]
     },
@@ -30,14 +30,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Rahab Welcomes the Spies",
-          "title": "Rahab Welcomes the Spies",
-          "status": "needs-translation"
+          "title": "Rahab recibe a los espías",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "The Promise to Rahab",
-          "title": "The Promise to Rahab",
-          "status": "needs-translation"
+          "title": "La promesa de Rahab",
+          "status": "machine-translated"
         }
       ]
     },
@@ -47,8 +47,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Crossing the Jordan",
-          "title": "Crossing the Jordan",
-          "status": "needs-translation"
+          "title": "Cruzando el Jordán",
+          "status": "machine-translated"
         }
       ]
     },
@@ -58,14 +58,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Twelve Stones from the Jordan",
-          "title": "Twelve Stones from the Jordan",
-          "status": "needs-translation"
+          "title": "Doce piedras del Jordán",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "The Camp at Gilgal",
-          "title": "The Camp at Gilgal",
-          "status": "needs-translation"
+          "title": "El campamento en Gilgal",
+          "status": "machine-translated"
         }
       ]
     },
@@ -75,14 +75,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Circumcision and Passover at Gilgal",
-          "title": "The Circumcision and Passover at Gilgal",
-          "status": "needs-translation"
+          "title": "La Circuncisión y la Pascua en Gilgal",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Commander of the LORD’s Army",
-          "title": "The Commander of the LORD’s Army",
-          "status": "needs-translation"
+          "title": "El Comandante del Ejército del Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -92,8 +92,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Walls of Jericho",
-          "title": "The Walls of Jericho",
-          "status": "needs-translation"
+          "title": "Las paredes de Jericó",
+          "status": "machine-translated"
         }
       ]
     },
@@ -103,14 +103,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Defeat at Ai",
-          "title": "The Defeat at Ai",
-          "status": "needs-translation"
+          "title": "La derrota en Ai",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "The Sin of Achan",
-          "title": "The Sin of Achan",
-          "status": "needs-translation"
+          "title": "El pecado de Achan",
+          "status": "machine-translated"
         }
       ]
     },
@@ -120,14 +120,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Conquest of Ai",
-          "title": "The Conquest of Ai",
-          "status": "needs-translation"
+          "title": "La conquista de Ai",
+          "status": "machine-translated"
         },
         {
           "startVerse": 30,
           "sourceTitle": "Joshua Renews the Covenant",
-          "title": "Joshua Renews the Covenant",
-          "status": "needs-translation"
+          "title": "Josué renueva la alianza",
+          "status": "machine-translated"
         }
       ]
     },
@@ -137,8 +137,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Deceit of the Gibeonites",
-          "title": "The Deceit of the Gibeonites",
-          "status": "needs-translation"
+          "title": "El engaño de los gabaonitas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -148,20 +148,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Day the Sun Stood Still",
-          "title": "The Day the Sun Stood Still",
-          "status": "needs-translation"
+          "title": "El día en que el Sol se detuvo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "The Victory at Makkedah",
-          "title": "The Victory at Makkedah",
-          "status": "needs-translation"
+          "title": "La victoria en Makkedah",
+          "status": "machine-translated"
         },
         {
           "startVerse": 29,
           "sourceTitle": "Conquest of the Southern Cities",
-          "title": "Conquest of the Southern Cities",
-          "status": "needs-translation"
+          "title": "Conquista de las Ciudades del Sur",
+          "status": "machine-translated"
         }
       ]
     },
@@ -172,13 +172,13 @@
           "startVerse": 1,
           "sourceTitle": "Conquest of the Northern Cities",
           "title": "Conquest of the Northern Cities",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Joshua Takes the Whole Land",
-          "title": "Joshua Takes the Whole Land",
-          "status": "needs-translation"
+          "title": "Joshua toma la tierra entera",
+          "status": "machine-translated"
         }
       ]
     },
@@ -188,14 +188,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Kings Defeated East of the Jordan",
-          "title": "The Kings Defeated East of the Jordan",
-          "status": "needs-translation"
+          "title": "Los reyes derrotaron al este del Jordán",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "The Kings Defeated West of the Jordan",
-          "title": "The Kings Defeated West of the Jordan",
-          "status": "needs-translation"
+          "title": "Los reyes derrotaron al oeste del Jordán",
+          "status": "machine-translated"
         }
       ]
     },
@@ -205,32 +205,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "Lands Yet Unconquered",
-          "title": "Lands Yet Unconquered",
-          "status": "needs-translation"
+          "title": "Lands yet Unconquered",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "The Inheritance East of the Jordan",
-          "title": "The Inheritance East of the Jordan",
-          "status": "needs-translation"
+          "title": "La herencia oriental del Jordán",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "Reuben’s Inheritance",
-          "title": "Reuben’s Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia de Rubén",
+          "status": "machine-translated"
         },
         {
           "startVerse": 24,
           "sourceTitle": "Gad’s Inheritance",
-          "title": "Gad’s Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia de Gad",
+          "status": "machine-translated"
         },
         {
           "startVerse": 29,
           "sourceTitle": "Manasseh’s Eastern Inheritance",
-          "title": "Manasseh’s Eastern Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia oriental de Manasseh",
+          "status": "machine-translated"
         }
       ]
     },
@@ -240,14 +240,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Land Division West of the Jordan",
-          "title": "Land Division West of the Jordan",
-          "status": "needs-translation"
+          "title": "Land Division Oeste del Jordán",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Caleb Requests Hebron",
-          "title": "Caleb Requests Hebron",
-          "status": "needs-translation"
+          "title": "Caleb pide Hebrón",
+          "status": "machine-translated"
         }
       ]
     },
@@ -257,20 +257,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Judah’s Inheritance",
-          "title": "Judah’s Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia de Judá",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "Caleb’s Portion and Conquest",
-          "title": "Caleb’s Portion and Conquest",
-          "status": "needs-translation"
+          "title": "Porción y conquista de Caleb",
+          "status": "machine-translated"
         },
         {
           "startVerse": 20,
           "sourceTitle": "The Cities of Judah",
-          "title": "The Cities of Judah",
-          "status": "needs-translation"
+          "title": "Las ciudades de Judá",
+          "status": "machine-translated"
         }
       ]
     },
@@ -280,8 +280,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Ephraim’s Inheritance",
-          "title": "Ephraim’s Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia de Efraín",
+          "status": "machine-translated"
         }
       ]
     },
@@ -291,8 +291,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Manasseh’s Western Inheritance",
-          "title": "Manasseh’s Western Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia occidental de Manasseh",
+          "status": "machine-translated"
         }
       ]
     },
@@ -302,14 +302,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Remainder Divided",
-          "title": "The Remainder Divided",
-          "status": "needs-translation"
+          "title": "El Restante Dividido",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Benjamin’s Inheritance",
-          "title": "Benjamin’s Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia de Benjamin",
+          "status": "machine-translated"
         }
       ]
     },
@@ -319,44 +319,44 @@
         {
           "startVerse": 1,
           "sourceTitle": "Simeon’s Inheritance",
-          "title": "Simeon’s Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia de Simeon",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Zebulun’s Inheritance",
-          "title": "Zebulun’s Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia de Zebulun",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Issachar’s Inheritance",
-          "title": "Issachar’s Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia de Issachar",
+          "status": "machine-translated"
         },
         {
           "startVerse": 24,
           "sourceTitle": "Asher’s Inheritance",
-          "title": "Asher’s Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia de Asher",
+          "status": "machine-translated"
         },
         {
           "startVerse": 32,
           "sourceTitle": "Naphtali’s Inheritance",
-          "title": "Naphtali’s Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia de Naphtali",
+          "status": "machine-translated"
         },
         {
           "startVerse": 40,
           "sourceTitle": "Dan’s Inheritance",
-          "title": "Dan’s Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia de Dan",
+          "status": "machine-translated"
         },
         {
           "startVerse": 49,
           "sourceTitle": "Joshua’s Inheritance",
-          "title": "Joshua’s Inheritance",
-          "status": "needs-translation"
+          "title": "La herencia de Josué",
+          "status": "machine-translated"
         }
       ]
     },
@@ -366,8 +366,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Six Cities of Refuge",
-          "title": "Six Cities of Refuge",
-          "status": "needs-translation"
+          "title": "Seis ciudades de refugio",
+          "status": "machine-translated"
         }
       ]
     },
@@ -377,8 +377,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Forty-Eight Cities for the Levites",
-          "title": "Forty-Eight Cities for the Levites",
-          "status": "needs-translation"
+          "title": "Cuarenta y ocho ciudades para los levitas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -388,14 +388,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Eastern Tribes Return Home",
-          "title": "The Eastern Tribes Return Home",
-          "status": "needs-translation"
+          "title": "Las tribus orientales regresan a casa",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "The Altar of Witness",
-          "title": "The Altar of Witness",
-          "status": "needs-translation"
+          "title": "El Altar de Testigos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -405,8 +405,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Joshua’s Charge to Leaders",
-          "title": "Joshua’s Charge to Leaders",
-          "status": "needs-translation"
+          "title": "La carga de Josué a los líderes",
+          "status": "machine-translated"
         }
       ]
     },
@@ -416,20 +416,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Joshua Reviews Israel’s History",
-          "title": "Joshua Reviews Israel’s History",
-          "status": "needs-translation"
+          "title": "Josué revisa la historia de Israel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Choose Whom You Will Serve",
-          "title": "Choose Whom You Will Serve",
-          "status": "needs-translation"
+          "title": "Elige a quien servirás",
+          "status": "machine-translated"
         },
         {
           "startVerse": 29,
           "sourceTitle": "Joshua’s Death and Burial",
-          "title": "Joshua’s Death and Burial",
-          "status": "needs-translation"
+          "title": "Muerte y entierro de Josué",
+          "status": "machine-translated"
         }
       ]
     }

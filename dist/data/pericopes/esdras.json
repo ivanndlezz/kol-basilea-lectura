@@ -13,14 +13,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Proclamation of Cyrus",
-          "title": "The Proclamation of Cyrus",
-          "status": "needs-translation"
+          "title": "La proclamación de Ciro",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "Cyrus Restores the Holy Vessels",
-          "title": "Cyrus Restores the Holy Vessels",
-          "status": "needs-translation"
+          "title": "Ciro Restaura los vasos sagrados",
+          "status": "machine-translated"
         }
       ]
     },
@@ -30,14 +30,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The List of Returning Exiles",
-          "title": "The List of Returning Exiles",
-          "status": "needs-translation"
+          "title": "La lista de exilios de retorno",
+          "status": "machine-translated"
         },
         {
           "startVerse": 68,
           "sourceTitle": "Offerings by the Exiles",
-          "title": "Offerings by the Exiles",
-          "status": "needs-translation"
+          "title": "Ofertas de los Exiles",
+          "status": "machine-translated"
         }
       ]
     },
@@ -47,14 +47,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Sacrifices Restored",
-          "title": "Sacrifices Restored",
-          "status": "needs-translation"
+          "title": "Sacrificios restaurados",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "Temple Restoration Begins",
-          "title": "Temple Restoration Begins",
-          "status": "needs-translation"
+          "title": "La restauración del templo comienza",
+          "status": "machine-translated"
         }
       ]
     },
@@ -64,20 +64,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Adversaries Hinder the Work",
-          "title": "Adversaries Hinder the Work",
-          "status": "needs-translation"
+          "title": "Adversaries Hinder el Trabajo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Opposition under Xerxes and Artaxerxes",
-          "title": "Opposition under Xerxes and Artaxerxes",
-          "status": "needs-translation"
+          "title": "Oposición bajo Xerxes y Artaxerxes",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "The Decree of Artaxerxes",
-          "title": "The Decree of Artaxerxes",
-          "status": "needs-translation"
+          "title": "El Decreto de Artajerjes",
+          "status": "machine-translated"
         }
       ]
     },
@@ -88,13 +88,13 @@
           "startVerse": 1,
           "sourceTitle": "Temple Rebuilding Resumes",
           "title": "Temple Rebuilding Resumes",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Tattenai’s Letter to Darius",
-          "title": "Tattenai’s Letter to Darius",
-          "status": "needs-translation"
+          "title": "Carta de Tattenai a Darío",
+          "status": "machine-translated"
         }
       ]
     },
@@ -104,26 +104,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Decree of Darius",
-          "title": "The Decree of Darius",
-          "status": "needs-translation"
+          "title": "El Decreto de Darío",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Temple Completed",
-          "title": "The Temple Completed",
-          "status": "needs-translation"
+          "title": "El Templo Completado",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Dedication of the Temple",
-          "title": "Dedication of the Temple",
-          "status": "needs-translation"
+          "title": "Dedicación del Templo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "The Returned Exiles Keep the Passover",
-          "title": "The Returned Exiles Keep the Passover",
-          "status": "needs-translation"
+          "title": "Los exilios devueltos mantienen la Pascua",
+          "status": "machine-translated"
         }
       ]
     },
@@ -133,20 +133,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Ezra Arrives in Jerusalem",
-          "title": "Ezra Arrives in Jerusalem",
-          "status": "needs-translation"
+          "title": "Ezra Llega a Jerusalén",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Artaxerxes’ Letter for Ezra",
-          "title": "Artaxerxes’ Letter for Ezra",
-          "status": "needs-translation"
+          "title": "Carta de Artaxerxes para Ezra",
+          "status": "machine-translated"
         },
         {
           "startVerse": 27,
           "sourceTitle": "Ezra Blesses God",
-          "title": "Ezra Blesses God",
-          "status": "needs-translation"
+          "title": "Ezra Bendice a Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -156,32 +156,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Exiles Who Returned with Ezra",
-          "title": "The Exiles Who Returned with Ezra",
-          "status": "needs-translation"
+          "title": "Los Exiles que regresaron con Ezra",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "Ezra Sends for the Levites",
-          "title": "Ezra Sends for the Levites",
-          "status": "needs-translation"
+          "title": "Ezra envía a los levitas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 21,
           "sourceTitle": "Fasting for Protection",
-          "title": "Fasting for Protection",
-          "status": "needs-translation"
+          "title": "Ayuno para la protección",
+          "status": "machine-translated"
         },
         {
           "startVerse": 24,
           "sourceTitle": "Priests to Guard the Offerings",
-          "title": "Priests to Guard the Offerings",
-          "status": "needs-translation"
+          "title": "Sacerdotes para cuidar las ofertas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 32,
           "sourceTitle": "Arrival in Jerusalem",
-          "title": "Arrival in Jerusalem",
-          "status": "needs-translation"
+          "title": "Llegada a Jerusalén",
+          "status": "machine-translated"
         }
       ]
     },
@@ -191,14 +191,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Intermarriage with Neighboring Peoples",
-          "title": "Intermarriage with Neighboring Peoples",
-          "status": "needs-translation"
+          "title": "El matrimonio con pueblos vecinos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "Ezra’s Prayer of Confession",
-          "title": "Ezra’s Prayer of Confession",
-          "status": "needs-translation"
+          "title": "Oración de Confesión de Ezra",
+          "status": "machine-translated"
         }
       ]
     },
@@ -208,20 +208,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Shecaniah’s Encouragement",
-          "title": "Shecaniah’s Encouragement",
-          "status": "needs-translation"
+          "title": "El estímulo de Shecaniah",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "The People’s Confession of Sin",
-          "title": "The People’s Confession of Sin",
-          "status": "needs-translation"
+          "title": "La confesión popular del pecado",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "Those Guilty of Intermarriage",
-          "title": "Those Guilty of Intermarriage",
-          "status": "needs-translation"
+          "title": "Esos culpables de matrimonio",
+          "status": "machine-translated"
         }
       ]
     }

@@ -13,26 +13,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Greeting from James",
-          "title": "A Greeting from James",
-          "status": "needs-translation"
+          "title": "Un saludo de James",
+          "status": "machine-translated"
         },
         {
           "startVerse": 2,
           "sourceTitle": "Rejoicing in Trials",
           "title": "Rejoicing in Trials",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 13,
           "sourceTitle": "Good and Perfect Gifts",
-          "title": "Good and Perfect Gifts",
-          "status": "needs-translation"
+          "title": "Regalos buenos y perfectos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "Hearing and Doing",
-          "title": "Hearing and Doing",
-          "status": "needs-translation"
+          "title": "Audiencia y Doing",
+          "status": "machine-translated"
         }
       ]
     },
@@ -42,14 +42,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Warning against Favoritism",
-          "title": "A Warning against Favoritism",
-          "status": "needs-translation"
+          "title": "Una advertencia contra el favoritismo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Faith and Works",
-          "title": "Faith and Works",
-          "status": "needs-translation"
+          "title": "La fe y las obras",
+          "status": "machine-translated"
         }
       ]
     },
@@ -59,14 +59,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Taming the Tongue",
-          "title": "Taming the Tongue",
-          "status": "needs-translation"
+          "title": "Taming el Lenguaje",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Wisdom from Above",
-          "title": "The Wisdom from Above",
-          "status": "needs-translation"
+          "title": "La Sabiduría desde arriba",
+          "status": "machine-translated"
         }
       ]
     },
@@ -76,20 +76,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Warning against Pride",
-          "title": "A Warning against Pride",
-          "status": "needs-translation"
+          "title": "Una advertencia contra el orgullo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "Drawing Near to God",
-          "title": "Drawing Near to God",
-          "status": "needs-translation"
+          "title": "Dibujo cerca de Dios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "Do Not Boast about Tomorrow",
-          "title": "Do Not Boast about Tomorrow",
-          "status": "needs-translation"
+          "title": "No te preocupes por mañana",
+          "status": "machine-translated"
         }
       ]
     },
@@ -99,26 +99,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Warning to the Rich",
-          "title": "A Warning to the Rich",
-          "status": "needs-translation"
+          "title": "Una advertencia para el rico",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "Patience in Suffering",
           "title": "Patience in Suffering",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Prayer of Faith",
-          "title": "The Prayer of Faith",
-          "status": "needs-translation"
+          "title": "La oración de la fe",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "Restoring a Sinner",
-          "title": "Restoring a Sinner",
-          "status": "needs-translation"
+          "title": "Restaurar un Sinner",
+          "status": "machine-translated"
         }
       ]
     }

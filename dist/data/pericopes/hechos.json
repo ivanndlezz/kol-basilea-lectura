@@ -14,19 +14,19 @@
           "startVerse": 1,
           "sourceTitle": "Prologue",
           "title": "Prologue",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 6,
           "sourceTitle": "The Ascension",
-          "title": "The Ascension",
-          "status": "needs-translation"
+          "title": "La Ascensión",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Matthias Replaces Judas",
-          "title": "Matthias Replaces Judas",
-          "status": "needs-translation"
+          "title": "Matthias reemplaza a Judas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,26 +36,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Holy Spirit at Pentecost",
-          "title": "The Holy Spirit at Pentecost",
-          "status": "needs-translation"
+          "title": "El Espíritu Santo en Pentecostés",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Peter Addresses the Crowd",
-          "title": "Peter Addresses the Crowd",
-          "status": "needs-translation"
+          "title": "Peter dirige el Crowd",
+          "status": "machine-translated"
         },
         {
           "startVerse": 37,
           "sourceTitle": "Three Thousand Believe",
-          "title": "Three Thousand Believe",
-          "status": "needs-translation"
+          "title": "Tres mil cree",
+          "status": "machine-translated"
         },
         {
           "startVerse": 42,
           "sourceTitle": "The Fellowship of Believers",
-          "title": "The Fellowship of Believers",
-          "status": "needs-translation"
+          "title": "La beca de los creyentes",
+          "status": "machine-translated"
         }
       ]
     },
@@ -65,14 +65,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Lame Man Walks",
-          "title": "A Lame Man Walks",
-          "status": "needs-translation"
+          "title": "Un hombre cojo camina",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Peter Speaks in Solomon’s Colonnade",
-          "title": "Peter Speaks in Solomon’s Colonnade",
-          "status": "needs-translation"
+          "title": "Peter habla en el Colonnade de Salomón",
+          "status": "machine-translated"
         }
       ]
     },
@@ -82,26 +82,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Peter and John before the Sanhedrin",
-          "title": "Peter and John before the Sanhedrin",
-          "status": "needs-translation"
+          "title": "Pedro y Juan antes del Sanedrín",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Name Forbidden",
-          "title": "The Name Forbidden",
-          "status": "needs-translation"
+          "title": "El Nombre Prohibido",
+          "status": "machine-translated"
         },
         {
           "startVerse": 23,
           "sourceTitle": "The Believers’ Prayer",
-          "title": "The Believers’ Prayer",
-          "status": "needs-translation"
+          "title": "La oración de los creyentes",
+          "status": "machine-translated"
         },
         {
           "startVerse": 32,
           "sourceTitle": "Sharing among Believers",
-          "title": "Sharing among Believers",
-          "status": "needs-translation"
+          "title": "Compartir entre creyentes",
+          "status": "machine-translated"
         }
       ]
     },
@@ -111,32 +111,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "Ananias and Sapphira",
-          "title": "Ananias and Sapphira",
-          "status": "needs-translation"
+          "title": "Ananias y Sapphira",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "The Apostles Heal Many",
-          "title": "The Apostles Heal Many",
-          "status": "needs-translation"
+          "title": "Los apóstoles sanan a muchos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "The Apostles Arrested and Freed",
-          "title": "The Apostles Arrested and Freed",
-          "status": "needs-translation"
+          "title": "Los Apóstoles arrestados y liberados",
+          "status": "machine-translated"
         },
         {
           "startVerse": 24,
           "sourceTitle": "The Apostles before the Sanhedrin",
-          "title": "The Apostles before the Sanhedrin",
-          "status": "needs-translation"
+          "title": "Los Apóstoles ante el Sanedrín",
+          "status": "machine-translated"
         },
         {
           "startVerse": 33,
           "sourceTitle": "Gamaliel’s Advice",
-          "title": "Gamaliel’s Advice",
-          "status": "needs-translation"
+          "title": "Consejo de Gamaliel",
+          "status": "machine-translated"
         }
       ]
     },
@@ -146,14 +146,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Choosing of the Seven",
-          "title": "The Choosing of the Seven",
-          "status": "needs-translation"
+          "title": "La elección de los siete",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "The Arrest of Stephen",
-          "title": "The Arrest of Stephen",
-          "status": "needs-translation"
+          "title": "El arresto de Stephen",
+          "status": "machine-translated"
         }
       ]
     },
@@ -163,56 +163,56 @@
         {
           "startVerse": 1,
           "sourceTitle": "Stephen’s Address: The Call of Abraham",
-          "title": "Stephen’s Address: The Call of Abraham",
-          "status": "needs-translation"
+          "title": "Discurso de Esteban: La llamada de Abraham",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "Joseph Sold into Egypt",
-          "title": "Joseph Sold into Egypt",
-          "status": "needs-translation"
+          "title": "José Vendido en Egipto",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "Israel Oppressed in Egypt",
-          "title": "Israel Oppressed in Egypt",
-          "status": "needs-translation"
+          "title": "Israel Oprimido en Egipto",
+          "status": "machine-translated"
         },
         {
           "startVerse": 20,
           "sourceTitle": "The Birth and Adoption of Moses",
-          "title": "The Birth and Adoption of Moses",
-          "status": "needs-translation"
+          "title": "El nacimiento y la adopción de Moisés",
+          "status": "machine-translated"
         },
         {
           "startVerse": 23,
           "sourceTitle": "The Rejection and Flight of Moses",
-          "title": "The Rejection and Flight of Moses",
-          "status": "needs-translation"
+          "title": "El rechazo y el vuelo de Moisés",
+          "status": "machine-translated"
         },
         {
           "startVerse": 30,
           "sourceTitle": "The Call of Moses",
-          "title": "The Call of Moses",
-          "status": "needs-translation"
+          "title": "El Llamamiento de Moisés",
+          "status": "machine-translated"
         },
         {
           "startVerse": 39,
           "sourceTitle": "The Rebellion of Israel",
-          "title": "The Rebellion of Israel",
-          "status": "needs-translation"
+          "title": "La rebelión de Israel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 44,
           "sourceTitle": "The Tabernacle of the Testimony",
-          "title": "The Tabernacle of the Testimony",
-          "status": "needs-translation"
+          "title": "El Tabernáculo del Testimonio",
+          "status": "machine-translated"
         },
         {
           "startVerse": 54,
           "sourceTitle": "The Stoning of Stephen",
-          "title": "The Stoning of Stephen",
-          "status": "needs-translation"
+          "title": "La historia de Stephen",
+          "status": "machine-translated"
         }
       ]
     },
@@ -222,26 +222,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Saul Persecutes the Church",
-          "title": "Saul Persecutes the Church",
-          "status": "needs-translation"
+          "title": "Saul persigue a la Iglesia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 4,
           "sourceTitle": "Philip in Samaria",
-          "title": "Philip in Samaria",
-          "status": "needs-translation"
+          "title": "Felipe en Samaria",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "Simon the Sorcerer",
-          "title": "Simon the Sorcerer",
-          "status": "needs-translation"
+          "title": "Simon el Hechicero",
+          "status": "machine-translated"
         },
         {
           "startVerse": 26,
           "sourceTitle": "Philip and the Ethiopian",
           "title": "Philip and the Ethiopian",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     },
@@ -251,44 +251,44 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Road to Damascus",
-          "title": "The Road to Damascus",
-          "status": "needs-translation"
+          "title": "El camino a Damasco",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Ananias Baptizes Saul",
-          "title": "Ananias Baptizes Saul",
-          "status": "needs-translation"
+          "title": "Ananías bautiza a Saul",
+          "status": "machine-translated"
         },
         {
           "startVerse": 20,
           "sourceTitle": "Saul Preaches at Damascus",
-          "title": "Saul Preaches at Damascus",
-          "status": "needs-translation"
+          "title": "Saul Preaches en Damasco",
+          "status": "machine-translated"
         },
         {
           "startVerse": 23,
           "sourceTitle": "The Escape from Damascus",
-          "title": "The Escape from Damascus",
-          "status": "needs-translation"
+          "title": "El escape de Damasco",
+          "status": "machine-translated"
         },
         {
           "startVerse": 26,
           "sourceTitle": "Saul in Jerusalem",
-          "title": "Saul in Jerusalem",
-          "status": "needs-translation"
+          "title": "Saulo en Jerusalén",
+          "status": "machine-translated"
         },
         {
           "startVerse": 31,
           "sourceTitle": "The Healing of Aeneas",
-          "title": "The Healing of Aeneas",
-          "status": "needs-translation"
+          "title": "La curación de las enfermedades",
+          "status": "machine-translated"
         },
         {
           "startVerse": 36,
           "sourceTitle": "The Raising of Tabitha",
-          "title": "The Raising of Tabitha",
-          "status": "needs-translation"
+          "title": "El aumento de Tabitha",
+          "status": "machine-translated"
         }
       ]
     },
@@ -298,38 +298,38 @@
         {
           "startVerse": 1,
           "sourceTitle": "Cornelius Sends for Peter",
-          "title": "Cornelius Sends for Peter",
-          "status": "needs-translation"
+          "title": "Cornelius envía a Peter",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "Peter’s Vision",
-          "title": "Peter’s Vision",
-          "status": "needs-translation"
+          "title": "Visión de Peter",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Peter Called to Caesarea",
-          "title": "Peter Called to Caesarea",
-          "status": "needs-translation"
+          "title": "Pedro llamó a Cesarea",
+          "status": "machine-translated"
         },
         {
           "startVerse": 24,
           "sourceTitle": "Peter Visits Cornelius",
-          "title": "Peter Visits Cornelius",
-          "status": "needs-translation"
+          "title": "Peter visita Cornelius",
+          "status": "machine-translated"
         },
         {
           "startVerse": 34,
           "sourceTitle": "Good News for the Gentiles",
-          "title": "Good News for the Gentiles",
-          "status": "needs-translation"
+          "title": "Buenas noticias para los gentiles",
+          "status": "machine-translated"
         },
         {
           "startVerse": 44,
           "sourceTitle": "The Gentiles Receive the Holy Spirit",
-          "title": "The Gentiles Receive the Holy Spirit",
-          "status": "needs-translation"
+          "title": "Los gentiles reciben el Espíritu Santo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -339,14 +339,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Peter’s Report at Jerusalem",
-          "title": "Peter’s Report at Jerusalem",
-          "status": "needs-translation"
+          "title": "Informe de Pedro en Jerusalén",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "The Church at Antioch",
-          "title": "The Church at Antioch",
-          "status": "needs-translation"
+          "title": "La Iglesia en Antioquía",
+          "status": "machine-translated"
         }
       ]
     },
@@ -357,19 +357,19 @@
           "startVerse": 1,
           "sourceTitle": "James Killed, Peter Imprisoned",
           "title": "James Killed, Peter Imprisoned",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 5,
           "sourceTitle": "The Rescue of Peter",
-          "title": "The Rescue of Peter",
-          "status": "needs-translation"
+          "title": "El rescate de Pedro",
+          "status": "machine-translated"
         },
         {
           "startVerse": 20,
           "sourceTitle": "The Death of Herod",
-          "title": "The Death of Herod",
-          "status": "needs-translation"
+          "title": "La muerte de Herodes",
+          "status": "machine-translated"
         }
       ]
     },
@@ -379,26 +379,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s First Missionary Journey Begins",
-          "title": "Paul’s First Missionary Journey Begins",
-          "status": "needs-translation"
+          "title": "El primer viaje misionero de Paul comienza",
+          "status": "machine-translated"
         },
         {
           "startVerse": 4,
           "sourceTitle": "On Cyprus",
-          "title": "On Cyprus",
-          "status": "needs-translation"
+          "title": "Sobre Chipre",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "In Pisidian Antioch",
           "title": "In Pisidian Antioch",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 42,
           "sourceTitle": "A Light for the Gentiles",
-          "title": "A Light for the Gentiles",
-          "status": "needs-translation"
+          "title": "Una luz para los gentiles",
+          "status": "machine-translated"
         }
       ]
     },
@@ -408,20 +408,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul and Barnabas at Iconium",
-          "title": "Paul and Barnabas at Iconium",
-          "status": "needs-translation"
+          "title": "Paul y Bernabé en Iconio",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "The Visit to Lystra and Derbe",
-          "title": "The Visit to Lystra and Derbe",
-          "status": "needs-translation"
+          "title": "La visita a Lystra y Derbe",
+          "status": "machine-translated"
         },
         {
           "startVerse": 21,
           "sourceTitle": "Strengthening the Disciples",
-          "title": "Strengthening the Disciples",
-          "status": "needs-translation"
+          "title": "Fortalecimiento de las disciplinas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -431,32 +431,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Dispute over Circumcision",
-          "title": "The Dispute over Circumcision",
-          "status": "needs-translation"
+          "title": "La controversia sobre la circuncisión",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "The Council at Jerusalem",
-          "title": "The Council at Jerusalem",
-          "status": "needs-translation"
+          "title": "El Consejo en Jerusalén",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "The Letter to the Gentile Believers",
-          "title": "The Letter to the Gentile Believers",
-          "status": "needs-translation"
+          "title": "La carta a los creyentes gentiles",
+          "status": "machine-translated"
         },
         {
           "startVerse": 30,
           "sourceTitle": "The Believers at Antioch Rejoice",
-          "title": "The Believers at Antioch Rejoice",
-          "status": "needs-translation"
+          "title": "Los creyentes en Antioquía",
+          "status": "machine-translated"
         },
         {
           "startVerse": 36,
           "sourceTitle": "Paul’s Second Missionary Journey Begins",
-          "title": "Paul’s Second Missionary Journey Begins",
-          "status": "needs-translation"
+          "title": "El segundo viaje misionero de Paul comienza",
+          "status": "machine-translated"
         }
       ]
     },
@@ -466,38 +466,38 @@
         {
           "startVerse": 1,
           "sourceTitle": "Timothy Joins Paul and Silas",
-          "title": "Timothy Joins Paul and Silas",
-          "status": "needs-translation"
+          "title": "Timothy se une a Pablo y Silas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Paul’s Vision of the Macedonian",
-          "title": "Paul’s Vision of the Macedonian",
-          "status": "needs-translation"
+          "title": "Visión de Pablo del macedonio",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Lydia’s Conversion in Philippi",
-          "title": "Lydia’s Conversion in Philippi",
-          "status": "needs-translation"
+          "title": "Conversión de Lydia en Philippi",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Paul and Silas Imprisoned",
-          "title": "Paul and Silas Imprisoned",
-          "status": "needs-translation"
+          "title": "Paul y Silas encarceladas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 25,
           "sourceTitle": "The Conversion of the Jailer",
-          "title": "The Conversion of the Jailer",
-          "status": "needs-translation"
+          "title": "La Conversión del Jailer",
+          "status": "machine-translated"
         },
         {
           "startVerse": 35,
           "sourceTitle": "An Official Apology",
-          "title": "An Official Apology",
-          "status": "needs-translation"
+          "title": "Una disculpa oficial",
+          "status": "machine-translated"
         }
       ]
     },
@@ -507,26 +507,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Uproar in Thessalonica",
-          "title": "The Uproar in Thessalonica",
-          "status": "needs-translation"
+          "title": "El Uproar en Tesalónica",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "The Character of the Bereans",
-          "title": "The Character of the Bereans",
-          "status": "needs-translation"
+          "title": "El carácter de los bereanos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Paul in Athens",
-          "title": "Paul in Athens",
-          "status": "needs-translation"
+          "title": "Paul en Atenas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "Paul’s Address in the Areopagus",
-          "title": "Paul’s Address in the Areopagus",
-          "status": "needs-translation"
+          "title": "Discurso de Pablo en el Areópago",
+          "status": "machine-translated"
         }
       ]
     },
@@ -537,25 +537,25 @@
           "startVerse": 1,
           "sourceTitle": "Paul Ministers in Corinth",
           "title": "Paul Ministers in Corinth",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Paul before Gallio",
-          "title": "Paul before Gallio",
-          "status": "needs-translation"
+          "title": "Paul antes de Gallio",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "Paul Returns to Antioch",
-          "title": "Paul Returns to Antioch",
-          "status": "needs-translation"
+          "title": "Pablo regresa a Antioquía",
+          "status": "machine-translated"
         },
         {
           "startVerse": 23,
           "sourceTitle": "Paul’s Third Missionary Journey Begins",
-          "title": "Paul’s Third Missionary Journey Begins",
-          "status": "needs-translation"
+          "title": "El tercer viaje misionero de Pablo comienza",
+          "status": "machine-translated"
         }
       ]
     },
@@ -565,26 +565,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Holy Spirit Received at Ephesus",
-          "title": "The Holy Spirit Received at Ephesus",
-          "status": "needs-translation"
+          "title": "El Espíritu Santo Recibido en Efeso",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "Paul Ministers in Ephesus",
           "title": "Paul Ministers in Ephesus",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 13,
           "sourceTitle": "Seven Sons of Sceva",
-          "title": "Seven Sons of Sceva",
-          "status": "needs-translation"
+          "title": "Siete Hijos de Sceva",
+          "status": "machine-translated"
         },
         {
           "startVerse": 21,
           "sourceTitle": "The Riot in Ephesus",
-          "title": "The Riot in Ephesus",
-          "status": "needs-translation"
+          "title": "El Río en Éfeso",
+          "status": "machine-translated"
         }
       ]
     },
@@ -594,26 +594,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul in Macedonia and Greece",
-          "title": "Paul in Macedonia and Greece",
-          "status": "needs-translation"
+          "title": "Pablo en Macedonia y Grecia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "Eutychus Revived at Troas",
-          "title": "Eutychus Revived at Troas",
-          "status": "needs-translation"
+          "title": "Eutychus revivió en Troas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "From Troas to Miletus",
-          "title": "From Troas to Miletus",
-          "status": "needs-translation"
+          "title": "De Troas a Miletus",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Paul’s Farewell to the Ephesians",
-          "title": "Paul’s Farewell to the Ephesians",
-          "status": "needs-translation"
+          "title": "La despedida de Pablo a los Efesios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -623,32 +623,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Journey to Jerusalem",
-          "title": "Paul’s Journey to Jerusalem",
-          "status": "needs-translation"
+          "title": "Viaje de Pablo a Jerusalén",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "Paul Visits Philip the Evangelist",
-          "title": "Paul Visits Philip the Evangelist",
-          "status": "needs-translation"
+          "title": "Paul visita a Felipe Evangelista",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Paul’s Arrival at Jerusalem",
-          "title": "Paul’s Arrival at Jerusalem",
-          "status": "needs-translation"
+          "title": "Llegada de Pablo a Jerusalén",
+          "status": "machine-translated"
         },
         {
           "startVerse": 27,
           "sourceTitle": "Paul Seized at the Temple",
-          "title": "Paul Seized at the Temple",
-          "status": "needs-translation"
+          "title": "Paul Seized en el Templo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 37,
           "sourceTitle": "Paul Addresses the Crowd",
-          "title": "Paul Addresses the Crowd",
-          "status": "needs-translation"
+          "title": "Paul habla del Crowd",
+          "status": "machine-translated"
         }
       ]
     },
@@ -658,14 +658,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Defense to the Crowd",
-          "title": "Paul’s Defense to the Crowd",
-          "status": "needs-translation"
+          "title": "La Defensa de Pablo al Crowd",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "Paul the Roman Citizen",
-          "title": "Paul the Roman Citizen",
-          "status": "needs-translation"
+          "title": "Paul el Ciudadano Romano",
+          "status": "machine-translated"
         }
       ]
     },
@@ -675,20 +675,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul before the Sanhedrin",
-          "title": "Paul before the Sanhedrin",
-          "status": "needs-translation"
+          "title": "Pablo antes del Sanedrín",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "The Plot to Kill Paul",
-          "title": "The Plot to Kill Paul",
-          "status": "needs-translation"
+          "title": "El Plot para matar a Paul",
+          "status": "machine-translated"
         },
         {
           "startVerse": 23,
           "sourceTitle": "Paul Sent to Felix",
-          "title": "Paul Sent to Felix",
-          "status": "needs-translation"
+          "title": "Paul envió a Félix",
+          "status": "machine-translated"
         }
       ]
     },
@@ -698,20 +698,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Tertullus Prosecutes Paul",
-          "title": "Tertullus Prosecutes Paul",
-          "status": "needs-translation"
+          "title": "Tertullus persigue a Pablo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Paul’s Defense to Felix",
-          "title": "Paul’s Defense to Felix",
-          "status": "needs-translation"
+          "title": "Defensa de Pablo a Félix",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "The Verdict Postponed",
           "title": "The Verdict Postponed",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     },
@@ -721,26 +721,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Trial before Festus",
-          "title": "Paul’s Trial before Festus",
-          "status": "needs-translation"
+          "title": "El juicio de Pablo antes de Festus",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Paul Appeals to Caesar",
-          "title": "Paul Appeals to Caesar",
-          "status": "needs-translation"
+          "title": "Pablo llama a César",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "Festus Consults Agrippa",
           "title": "Festus Consults Agrippa",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 23,
           "sourceTitle": "Paul before Agrippa and Bernice",
-          "title": "Paul before Agrippa and Bernice",
-          "status": "needs-translation"
+          "title": "Paul antes de Agrippa y Bernice",
+          "status": "machine-translated"
         }
       ]
     },
@@ -750,14 +750,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Testimony to Agrippa",
-          "title": "Paul’s Testimony to Agrippa",
-          "status": "needs-translation"
+          "title": "Testimonio de Pablo para Agrippa",
+          "status": "machine-translated"
         },
         {
           "startVerse": 24,
           "sourceTitle": "Festus Interrupts Paul’s Defense",
-          "title": "Festus Interrupts Paul’s Defense",
-          "status": "needs-translation"
+          "title": "Festus interrumpe la defensa de Pablo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -767,20 +767,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul Sails for Rome",
-          "title": "Paul Sails for Rome",
-          "status": "needs-translation"
+          "title": "Pablo saluda a Roma",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Storm at Sea",
-          "title": "The Storm at Sea",
-          "status": "needs-translation"
+          "title": "La tormenta en el mar",
+          "status": "machine-translated"
         },
         {
           "startVerse": 27,
           "sourceTitle": "The Shipwreck",
-          "title": "The Shipwreck",
-          "status": "needs-translation"
+          "title": "El naufragio",
+          "status": "machine-translated"
         }
       ]
     },
@@ -791,19 +791,19 @@
           "startVerse": 1,
           "sourceTitle": "Ashore on Malta",
           "title": "Ashore on Malta",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Paul Arrives in Italy",
-          "title": "Paul Arrives in Italy",
-          "status": "needs-translation"
+          "title": "Paul Llega a Italia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Paul Preaches at Rome",
-          "title": "Paul Preaches at Rome",
-          "status": "needs-translation"
+          "title": "Paul Preaches en Roma",
+          "status": "machine-translated"
         }
       ]
     }

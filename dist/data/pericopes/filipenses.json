@@ -13,32 +13,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "Greetings from Paul and Timothy",
-          "title": "Greetings from Paul and Timothy",
-          "status": "needs-translation"
+          "title": "Saludos de Pablo y Timothy",
+          "status": "machine-translated"
         },
         {
           "startVerse": 3,
           "sourceTitle": "Thanksgiving and Prayer",
-          "title": "Thanksgiving and Prayer",
-          "status": "needs-translation"
+          "title": "Acción de Gracias y Oración",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Paul’s Trials Advance the Gospel",
-          "title": "Paul’s Trials Advance the Gospel",
-          "status": "needs-translation"
+          "title": "Los juicios de Pablo Avanzan el Evangelio",
+          "status": "machine-translated"
         },
         {
           "startVerse": 21,
           "sourceTitle": "To Live Is Christ",
-          "title": "To Live Is Christ",
-          "status": "needs-translation"
+          "title": "Vivir es Cristo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 27,
           "sourceTitle": "Worthy of the Gospel",
           "title": "Worthy of the Gospel",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     },
@@ -48,26 +48,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "One in Christ",
-          "title": "One in Christ",
-          "status": "needs-translation"
+          "title": "Uno en Cristo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "The Mind of Christ",
-          "title": "The Mind of Christ",
-          "status": "needs-translation"
+          "title": "La mente de Cristo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Lights in the World",
-          "title": "Lights in the World",
-          "status": "needs-translation"
+          "title": "Luces en el mundo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "Timothy and Epaphroditus",
-          "title": "Timothy and Epaphroditus",
-          "status": "needs-translation"
+          "title": "Timothy y Epaphroditus",
+          "status": "machine-translated"
         }
       ]
     },
@@ -77,20 +77,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Righteousness through Faith in Christ",
-          "title": "Righteousness through Faith in Christ",
-          "status": "needs-translation"
+          "title": "La justicia mediante la fe en Cristo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Pressing on toward the Goal",
-          "title": "Pressing on toward the Goal",
-          "status": "needs-translation"
+          "title": "Presionando hacia el Objetivo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Citizenship in Heaven",
-          "title": "Citizenship in Heaven",
-          "status": "needs-translation"
+          "title": "Ciudadanía en el Cielo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -100,20 +100,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Rejoice in the Lord",
-          "title": "Rejoice in the Lord",
-          "status": "needs-translation"
+          "title": "Alégrense en el Señor",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "The Generosity of the Philippians",
-          "title": "The Generosity of the Philippians",
-          "status": "needs-translation"
+          "title": "La Generosidad de los Filipenses",
+          "status": "machine-translated"
         },
         {
           "startVerse": 21,
           "sourceTitle": "Final Greetings",
-          "title": "Final Greetings",
-          "status": "needs-translation"
+          "title": "Saludos finales",
+          "status": "machine-translated"
         }
       ]
     }

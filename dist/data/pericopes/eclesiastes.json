@@ -13,14 +13,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Everything Is Futile",
-          "title": "Everything Is Futile",
-          "status": "needs-translation"
+          "title": "Todo es fútil",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "With Wisdom Comes Sorrow",
-          "title": "With Wisdom Comes Sorrow",
-          "status": "needs-translation"
+          "title": "Con la Sabiduría llega dolor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -30,20 +30,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Futility of Pleasure",
-          "title": "The Futility of Pleasure",
-          "status": "needs-translation"
+          "title": "La futilidad del placer",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "The Wise and the Foolish",
-          "title": "The Wise and the Foolish",
-          "status": "needs-translation"
+          "title": "El Wise y el Foolish",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "The Futility of Work",
-          "title": "The Futility of Work",
-          "status": "needs-translation"
+          "title": "La futilidad del trabajo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -53,20 +53,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "To Everything There Is a Season",
-          "title": "To Everything There Is a Season",
-          "status": "needs-translation"
+          "title": "A todo hay una temporada",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "God’s Works Remain Forever",
-          "title": "God’s Works Remain Forever",
-          "status": "needs-translation"
+          "title": "Las obras de Dios permanecen para siempre",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "From Dust to Dust",
-          "title": "From Dust to Dust",
-          "status": "needs-translation"
+          "title": "De Dust a Dust",
+          "status": "machine-translated"
         }
       ]
     },
@@ -76,14 +76,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Evil of Oppression",
-          "title": "The Evil of Oppression",
-          "status": "needs-translation"
+          "title": "El mal de la opresión",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Futility of Power",
-          "title": "The Futility of Power",
-          "status": "needs-translation"
+          "title": "La Futilidad del Poder",
+          "status": "machine-translated"
         }
       ]
     },
@@ -93,14 +93,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Approaching God with Fear",
-          "title": "Approaching God with Fear",
-          "status": "needs-translation"
+          "title": "Acercándose a Dios con miedo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "The Futility of Wealth",
-          "title": "The Futility of Wealth",
-          "status": "needs-translation"
+          "title": "La futilidad de la riqueza",
+          "status": "machine-translated"
         }
       ]
     },
@@ -110,8 +110,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Futility of Life",
-          "title": "The Futility of Life",
-          "status": "needs-translation"
+          "title": "La Futilidad de la Vida",
+          "status": "machine-translated"
         }
       ]
     },
@@ -121,14 +121,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Value of Wisdom",
-          "title": "The Value of Wisdom",
-          "status": "needs-translation"
+          "title": "El valor de la sabiduría",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "The Limits of Human Wisdom",
-          "title": "The Limits of Human Wisdom",
-          "status": "needs-translation"
+          "title": "Los límites de la sabiduría humana",
+          "status": "machine-translated"
         }
       ]
     },
@@ -138,20 +138,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Obey the King",
-          "title": "Obey the King",
-          "status": "needs-translation"
+          "title": "Obedezca al Rey",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Fear God",
-          "title": "Fear God",
-          "status": "needs-translation"
+          "title": "Miedo a Dios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "God’s Ways Are Mysterious",
-          "title": "God’s Ways Are Mysterious",
-          "status": "needs-translation"
+          "title": "Los caminos de Dios son misteriosos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -161,20 +161,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Death Comes to Good and Bad",
-          "title": "Death Comes to Good and Bad",
-          "status": "needs-translation"
+          "title": "La muerte viene al bien y al mal",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "Enjoy Your Portion in This Life",
-          "title": "Enjoy Your Portion in This Life",
-          "status": "needs-translation"
+          "title": "Disfruta de tu porción en esta vida",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "Wisdom Is Better than Strength",
-          "title": "Wisdom Is Better than Strength",
-          "status": "needs-translation"
+          "title": "La sabiduría es mejor que la fuerza",
+          "status": "machine-translated"
         }
       ]
     },
@@ -184,8 +184,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Wisdom and Folly",
-          "title": "Wisdom and Folly",
-          "status": "needs-translation"
+          "title": "Sabiduría y Folly",
+          "status": "machine-translated"
         }
       ]
     },
@@ -196,13 +196,13 @@
           "startVerse": 1,
           "sourceTitle": "Cast Your Bread upon the Waters",
           "title": "Cast Your Bread upon the Waters",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 7,
           "sourceTitle": "Enjoy Your Years",
-          "title": "Enjoy Your Years",
-          "status": "needs-translation"
+          "title": "Disfruta tus años",
+          "status": "machine-translated"
         }
       ]
     },
@@ -212,14 +212,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Remember Your Creator",
-          "title": "Remember Your Creator",
-          "status": "needs-translation"
+          "title": "Recuerda a tu Creador",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "The Whole Duty of Man",
-          "title": "The Whole Duty of Man",
-          "status": "needs-translation"
+          "title": "El deber total del hombre",
+          "status": "machine-translated"
         }
       ]
     }

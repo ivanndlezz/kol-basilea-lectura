@@ -14,7 +14,7 @@
           "startVerse": 1,
           "sourceTitle": "The Burden against Nineveh",
           "title": "The Burden against Nineveh",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     },
@@ -24,8 +24,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Overthrow of Nineveh",
-          "title": "The Overthrow of Nineveh",
-          "status": "needs-translation"
+          "title": "El Overthrow of Nineveh",
+          "status": "machine-translated"
         }
       ]
     },
@@ -35,8 +35,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Judgment on Nineveh",
-          "title": "Judgment on Nineveh",
-          "status": "needs-translation"
+          "title": "Juicio sobre Nínive",
+          "status": "machine-translated"
         }
       ]
     }

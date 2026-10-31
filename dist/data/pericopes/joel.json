@@ -13,20 +13,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Invasion of Locusts",
-          "title": "The Invasion of Locusts",
-          "status": "needs-translation"
+          "title": "La invasión de la langosta",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "A Call to Mourning",
-          "title": "A Call to Mourning",
-          "status": "needs-translation"
+          "title": "Una llamada a la burla",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "A Call to Repentance",
-          "title": "A Call to Repentance",
-          "status": "needs-translation"
+          "title": "Una llamada a la recuperación",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,26 +36,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Army of Locusts",
-          "title": "The Army of Locusts",
-          "status": "needs-translation"
+          "title": "El ejército de langostas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Return with All Your Heart",
-          "title": "Return with All Your Heart",
-          "status": "needs-translation"
+          "title": "Regresa con todo tu corazón",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "Restoration Promised",
-          "title": "Restoration Promised",
-          "status": "needs-translation"
+          "title": "Restauración Prometida",
+          "status": "machine-translated"
         },
         {
           "startVerse": 28,
           "sourceTitle": "I Will Pour Out My Spirit",
-          "title": "I Will Pour Out My Spirit",
-          "status": "needs-translation"
+          "title": "Voy a derramar mi Espíritu",
+          "status": "machine-translated"
         }
       ]
     },
@@ -65,14 +65,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Judges the Nations",
-          "title": "The LORD Judges the Nations",
-          "status": "needs-translation"
+          "title": "El Señor juzga a las Naciones",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Blessings for God’s People",
-          "title": "Blessings for God’s People",
-          "status": "needs-translation"
+          "title": "Bendiciones para el pueblo de Dios",
+          "status": "machine-translated"
         }
       ]
     }

@@ -13,8 +13,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Nehemiah’s Prayer",
-          "title": "Nehemiah’s Prayer",
-          "status": "needs-translation"
+          "title": "Oración de Nehemías",
+          "status": "machine-translated"
         }
       ]
     },
@@ -24,14 +24,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Nehemiah Sent to Jerusalem",
-          "title": "Nehemiah Sent to Jerusalem",
-          "status": "needs-translation"
+          "title": "Nehemías envió a Jerusalén",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Nehemiah Inspects the Walls",
-          "title": "Nehemiah Inspects the Walls",
-          "status": "needs-translation"
+          "title": "Nehemías inspecciona los muros",
+          "status": "machine-translated"
         }
       ]
     },
@@ -41,8 +41,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Builders of the Walls",
-          "title": "The Builders of the Walls",
-          "status": "needs-translation"
+          "title": "Los constructores de las paredes",
+          "status": "machine-translated"
         }
       ]
     },
@@ -52,14 +52,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Work Ridiculed",
-          "title": "The Work Ridiculed",
-          "status": "needs-translation"
+          "title": "El trabajo rígido",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "Discouragement Overcome",
-          "title": "Discouragement Overcome",
-          "status": "needs-translation"
+          "title": "Sobrecomiso de información",
+          "status": "machine-translated"
         }
       ]
     },
@@ -69,14 +69,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Nehemiah Defends the Oppressed",
-          "title": "Nehemiah Defends the Oppressed",
-          "status": "needs-translation"
+          "title": "Nehemías defiende a los oprimidos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Nehemiah’s Generosity",
-          "title": "Nehemiah’s Generosity",
-          "status": "needs-translation"
+          "title": "Generosidad de Nehemías",
+          "status": "machine-translated"
         }
       ]
     },
@@ -86,14 +86,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Sanballat’s Conspiracy",
-          "title": "Sanballat’s Conspiracy",
-          "status": "needs-translation"
+          "title": "Conspiración de Sanballat",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "Completion of the Wall",
-          "title": "Completion of the Wall",
-          "status": "needs-translation"
+          "title": "Finalización de la Muralla",
+          "status": "machine-translated"
         }
       ]
     },
@@ -103,20 +103,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Securing the City",
-          "title": "Securing the City",
-          "status": "needs-translation"
+          "title": "Asegurando la ciudad",
+          "status": "machine-translated"
         },
         {
           "startVerse": 4,
           "sourceTitle": "The List of Returning Exiles",
-          "title": "The List of Returning Exiles",
-          "status": "needs-translation"
+          "title": "La lista de exilios de retorno",
+          "status": "machine-translated"
         },
         {
           "startVerse": 70,
           "sourceTitle": "Offerings by the Exiles",
-          "title": "Offerings by the Exiles",
-          "status": "needs-translation"
+          "title": "Ofertas de los Exiles",
+          "status": "machine-translated"
         }
       ]
     },
@@ -126,14 +126,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Ezra Reads the Law",
-          "title": "Ezra Reads the Law",
-          "status": "needs-translation"
+          "title": "Ezra lee la ley",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Feast of Tabernacles",
-          "title": "The Feast of Tabernacles",
-          "status": "needs-translation"
+          "title": "La fiesta de los Tabernáculos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -143,8 +143,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The People Confess Their Sins",
-          "title": "The People Confess Their Sins",
-          "status": "needs-translation"
+          "title": "El pueblo confiesa sus pecados",
+          "status": "machine-translated"
         }
       ]
     },
@@ -155,13 +155,13 @@
           "startVerse": 1,
           "sourceTitle": "Signers of the Covenant",
           "title": "Signers of the Covenant",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 28,
           "sourceTitle": "The Vows of the Covenant",
-          "title": "The Vows of the Covenant",
-          "status": "needs-translation"
+          "title": "Los Votos del Pacto",
+          "status": "machine-translated"
         }
       ]
     },
@@ -171,14 +171,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jerusalem’s New Settlers",
-          "title": "Jerusalem’s New Settlers",
-          "status": "needs-translation"
+          "title": "Nuevos colonos de Jerusalén",
+          "status": "machine-translated"
         },
         {
           "startVerse": 20,
           "sourceTitle": "Residents Outside Jerusalem",
-          "title": "Residents Outside Jerusalem",
-          "status": "needs-translation"
+          "title": "Residentes fuera de Jerusalén",
+          "status": "machine-translated"
         }
       ]
     },
@@ -188,20 +188,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Priests and Levites Who Returned",
-          "title": "The Priests and Levites Who Returned",
-          "status": "needs-translation"
+          "title": "Los sacerdotes y levitas que regresaron",
+          "status": "machine-translated"
         },
         {
           "startVerse": 27,
           "sourceTitle": "The Dedication of the Wall",
-          "title": "The Dedication of the Wall",
-          "status": "needs-translation"
+          "title": "La Dedicación del Muro",
+          "status": "machine-translated"
         },
         {
           "startVerse": 44,
           "sourceTitle": "Provisions for Temple Worship",
           "title": "Provisions for Temple Worship",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     },
@@ -211,32 +211,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "Foreigners Excluded",
-          "title": "Foreigners Excluded",
-          "status": "needs-translation"
+          "title": "Extranjeros excluidos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 4,
           "sourceTitle": "The Temple Cleansed",
-          "title": "The Temple Cleansed",
-          "status": "needs-translation"
+          "title": "El Templo Limpiado",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Tithes Restored",
           "title": "Tithes Restored",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 15,
           "sourceTitle": "The Sabbath Restored",
-          "title": "The Sabbath Restored",
-          "status": "needs-translation"
+          "title": "El sábado restaurado",
+          "status": "machine-translated"
         },
         {
           "startVerse": 23,
           "sourceTitle": "Intermarriage Forbidden",
           "title": "Intermarriage Forbidden",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     }

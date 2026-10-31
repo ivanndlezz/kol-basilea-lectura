@@ -13,14 +13,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Call to Rebuild the Temple",
-          "title": "A Call to Rebuild the Temple",
-          "status": "needs-translation"
+          "title": "Una llamada para reconstruir el Templo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "The People Obey",
-          "title": "The People Obey",
-          "status": "needs-translation"
+          "title": "La gente obedece",
+          "status": "machine-translated"
         }
       ]
     },
@@ -30,20 +30,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Coming Glory of God’s House",
-          "title": "The Coming Glory of God’s House",
-          "status": "needs-translation"
+          "title": "La gloria venidera de la Casa de Dios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Blessings for a Defiled People",
-          "title": "Blessings for a Defiled People",
-          "status": "needs-translation"
+          "title": "Bendiciones para un pueblo contaminado",
+          "status": "machine-translated"
         },
         {
           "startVerse": 20,
           "sourceTitle": "Zerubbabel the LORD’s Signet Ring",
-          "title": "Zerubbabel the LORD’s Signet Ring",
-          "status": "needs-translation"
+          "title": "Zerubbabel el anillo de la señal del Señor",
+          "status": "machine-translated"
         }
       ]
     }

@@ -13,20 +13,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Greeting from Peter",
-          "title": "A Greeting from Peter",
-          "status": "needs-translation"
+          "title": "Un saludo de Pedro",
+          "status": "machine-translated"
         },
         {
           "startVerse": 3,
           "sourceTitle": "Partakers of the Divine Nature",
           "title": "Partakers of the Divine Nature",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Eyewitnesses of His Majesty",
-          "title": "Eyewitnesses of His Majesty",
-          "status": "needs-translation"
+          "title": "Testigos de Su Majestad",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,8 +36,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Deliverance from False Prophets",
-          "title": "Deliverance from False Prophets",
-          "status": "needs-translation"
+          "title": "La liberación de los falsos profetas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -47,20 +47,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Coming Judgment",
-          "title": "The Coming Judgment",
-          "status": "needs-translation"
+          "title": "El próximo fallo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "The Day of the Lord",
-          "title": "The Day of the Lord",
-          "status": "needs-translation"
+          "title": "El Día del Señor",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Final Exhortations",
-          "title": "Final Exhortations",
-          "status": "needs-translation"
+          "title": "Exhortaciones finales",
+          "status": "machine-translated"
         }
       ]
     }

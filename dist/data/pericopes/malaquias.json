@@ -13,14 +13,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD’s Love for Israel",
-          "title": "The LORD’s Love for Israel",
-          "status": "needs-translation"
+          "title": "Amor del Señor por Israel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "The Polluted Offerings",
-          "title": "The Polluted Offerings",
-          "status": "needs-translation"
+          "title": "Las ofertas contaminadas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -30,14 +30,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Warning to the Priests",
-          "title": "A Warning to the Priests",
-          "status": "needs-translation"
+          "title": "Una advertencia a los sacerdotes",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Judah’s Unfaithfulness",
-          "title": "Judah’s Unfaithfulness",
-          "status": "needs-translation"
+          "title": "La infidelidad de Judá",
+          "status": "machine-translated"
         }
       ]
     },
@@ -47,20 +47,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Will Send My Messenger",
-          "title": "I Will Send My Messenger",
-          "status": "needs-translation"
+          "title": "Enviaré a mi Mensajero",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Robbing God",
-          "title": "Robbing God",
-          "status": "needs-translation"
+          "title": "Robbing Dios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Book of Remembrance",
-          "title": "The Book of Remembrance",
-          "status": "needs-translation"
+          "title": "El Libro del Recuerdo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -70,8 +70,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Day of the LORD",
-          "title": "The Day of the LORD",
-          "status": "needs-translation"
+          "title": "Día del Señor",
+          "status": "machine-translated"
         }
       ]
     }

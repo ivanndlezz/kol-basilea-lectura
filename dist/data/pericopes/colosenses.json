@@ -13,26 +13,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Greetings from Paul and Timothy",
-          "title": "Greetings from Paul and Timothy",
-          "status": "needs-translation"
+          "title": "Saludos de Pablo y Timothy",
+          "status": "machine-translated"
         },
         {
           "startVerse": 3,
           "sourceTitle": "Thanksgiving and Prayer",
-          "title": "Thanksgiving and Prayer",
-          "status": "needs-translation"
+          "title": "Acción de Gracias y Oración",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "The Supremacy of the Son",
-          "title": "The Supremacy of the Son",
-          "status": "needs-translation"
+          "title": "La supremacía del Hijo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 24,
           "sourceTitle": "Paul’s Suffering for the Church",
-          "title": "Paul’s Suffering for the Church",
-          "status": "needs-translation"
+          "title": "El sufrimiento de Pablo para la Iglesia",
+          "status": "machine-translated"
         }
       ]
     },
@@ -43,13 +43,13 @@
           "startVerse": 1,
           "sourceTitle": "Absent in Body, Present in Spirit",
           "title": "Absent in Body, Present in Spirit",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Alive with Christ",
-          "title": "Alive with Christ",
-          "status": "needs-translation"
+          "title": "Vivo con Cristo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -59,20 +59,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Put On the New Self",
-          "title": "Put On the New Self",
-          "status": "needs-translation"
+          "title": "Poner en el Nuevo Ser",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "Christian Households",
           "title": "Christian Households",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 22,
           "sourceTitle": "Serving with Honor",
-          "title": "Serving with Honor",
-          "status": "needs-translation"
+          "title": "Servir con honor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -82,20 +82,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Prayerful Speech and Actions",
-          "title": "Prayerful Speech and Actions",
-          "status": "needs-translation"
+          "title": "Oración y Acciones",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "Greetings from Paul’s Fellow Workers",
-          "title": "Greetings from Paul’s Fellow Workers",
-          "status": "needs-translation"
+          "title": "Saludos de los Fellow Workers de Paul",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "Signature and Final Instructions",
-          "title": "Signature and Final Instructions",
-          "status": "needs-translation"
+          "title": "Firma y Instrucciones Finales",
+          "status": "machine-translated"
         }
       ]
     }

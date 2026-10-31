@@ -13,14 +13,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Greetings to the Thessalonians",
-          "title": "Greetings to the Thessalonians",
-          "status": "needs-translation"
+          "title": "Saludos a los tesalonicenses",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "Christ’s Coming",
-          "title": "Christ’s Coming",
-          "status": "needs-translation"
+          "title": "Cristo viene",
+          "status": "machine-translated"
         }
       ]
     },
@@ -31,13 +31,13 @@
           "startVerse": 1,
           "sourceTitle": "The Man of Lawlessness",
           "title": "The Man of Lawlessness",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 13,
           "sourceTitle": "Stand Firm",
           "title": "Stand Firm",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     },
@@ -47,20 +47,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Request for Prayer",
-          "title": "Request for Prayer",
-          "status": "needs-translation"
+          "title": "Solicitud de oración",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "A Warning against Idleness",
-          "title": "A Warning against Idleness",
-          "status": "needs-translation"
+          "title": "Una advertencia contra la ociosidad",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Signature and Final Greetings",
-          "title": "Signature and Final Greetings",
-          "status": "needs-translation"
+          "title": "Firma y saludos finales",
+          "status": "machine-translated"
         }
       ]
     }

@@ -13,14 +13,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Destruction of Edom",
-          "title": "The Destruction of Edom",
-          "status": "needs-translation"
+          "title": "La destrucción de Edom",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "The Deliverance of Israel",
-          "title": "The Deliverance of Israel",
-          "status": "needs-translation"
+          "title": "La liberación de Israel",
+          "status": "machine-translated"
         }
       ]
     }

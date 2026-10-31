@@ -13,8 +13,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Judgment on Israel’s Neighbors",
-          "title": "Judgment on Israel’s Neighbors",
-          "status": "needs-translation"
+          "title": "Juicio sobre los vecinos de Israel",
+          "status": "machine-translated"
         }
       ]
     },
@@ -24,8 +24,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Judgment on Moab, Judah, and Israel",
-          "title": "Judgment on Moab, Judah, and Israel",
-          "status": "needs-translation"
+          "title": "Juicio sobre Moab, Judá e Israel",
+          "status": "machine-translated"
         }
       ]
     },
@@ -35,8 +35,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Witnesses against Israel",
-          "title": "Witnesses against Israel",
-          "status": "needs-translation"
+          "title": "Testigos contra Israel",
+          "status": "machine-translated"
         }
       ]
     },
@@ -46,8 +46,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Punishment Brings No Repentance",
-          "title": "Punishment Brings No Repentance",
-          "status": "needs-translation"
+          "title": "El castigo no trae arrepentimiento",
+          "status": "machine-translated"
         }
       ]
     },
@@ -58,19 +58,19 @@
           "startVerse": 1,
           "sourceTitle": "A Lamentation against Israel",
           "title": "A Lamentation against Israel",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 4,
           "sourceTitle": "A Call to Repentance",
-          "title": "A Call to Repentance",
-          "status": "needs-translation"
+          "title": "Una llamada a la recuperación",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Woe to Rebellious Israel",
-          "title": "Woe to Rebellious Israel",
-          "status": "needs-translation"
+          "title": "Ay de Israel rebelde",
+          "status": "machine-translated"
         }
       ]
     },
@@ -80,14 +80,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Woe to Those at Ease in Zion",
-          "title": "Woe to Those at Ease in Zion",
-          "status": "needs-translation"
+          "title": "Ay de los que están en Ease en Sión",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "The Pride of Israel",
-          "title": "The Pride of Israel",
-          "status": "needs-translation"
+          "title": "El orgullo de Israel",
+          "status": "machine-translated"
         }
       ]
     },
@@ -97,14 +97,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Locusts, Fire, and Plumb Line",
-          "title": "The Locusts, Fire, and Plumb Line",
-          "status": "needs-translation"
+          "title": "Las langostas, el fuego y la línea Plumb",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Amaziah Accuses Amos",
           "title": "Amaziah Accuses Amos",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     },
@@ -114,8 +114,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Basket of Summer Fruit",
-          "title": "The Basket of Summer Fruit",
-          "status": "needs-translation"
+          "title": "La cesta de la fruta de verano",
+          "status": "machine-translated"
         }
       ]
     },
@@ -125,14 +125,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Destruction of Israel",
-          "title": "The Destruction of Israel",
-          "status": "needs-translation"
+          "title": "La destrucción de Israel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "A Promise of Restoration",
-          "title": "A Promise of Restoration",
-          "status": "needs-translation"
+          "title": "Una promesa de restauración",
+          "status": "machine-translated"
         }
       ]
     }

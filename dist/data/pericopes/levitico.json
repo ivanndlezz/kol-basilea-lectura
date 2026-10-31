@@ -13,8 +13,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Laws for Burnt Offerings",
-          "title": "Laws for Burnt Offerings",
-          "status": "needs-translation"
+          "title": "Leyes para Ofertas Quemadas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -24,8 +24,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Laws for Grain Offerings",
-          "title": "Laws for Grain Offerings",
-          "status": "needs-translation"
+          "title": "Leyes para las ofertas de grano",
+          "status": "machine-translated"
         }
       ]
     },
@@ -35,8 +35,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Laws for Peace Offerings",
-          "title": "Laws for Peace Offerings",
-          "status": "needs-translation"
+          "title": "Leyes para las Ofertas de la Paz",
+          "status": "machine-translated"
         }
       ]
     },
@@ -46,8 +46,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Laws for Sin Offerings",
-          "title": "Laws for Sin Offerings",
-          "status": "needs-translation"
+          "title": "Leyes de Sin Ofertas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -57,14 +57,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Sins Requiring a Sin Offering",
-          "title": "Sins Requiring a Sin Offering",
-          "status": "needs-translation"
+          "title": "Sins Requiriendo una Oferta de Sin",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Laws for Guilt Offerings",
-          "title": "Laws for Guilt Offerings",
-          "status": "needs-translation"
+          "title": "Leyes para ofertas de culpabilidad",
+          "status": "machine-translated"
         }
       ]
     },
@@ -74,26 +74,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Sins Requiring a Guilt Offering",
-          "title": "Sins Requiring a Guilt Offering",
-          "status": "needs-translation"
+          "title": "Sins Requiriendo una Oferta de Culpa",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "The Burnt Offering",
-          "title": "The Burnt Offering",
-          "status": "needs-translation"
+          "title": "La oferta quemada",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "The Grain Offering",
-          "title": "The Grain Offering",
-          "status": "needs-translation"
+          "title": "Ofrecimiento de grano",
+          "status": "machine-translated"
         },
         {
           "startVerse": 24,
           "sourceTitle": "The Sin Offering",
-          "title": "The Sin Offering",
-          "status": "needs-translation"
+          "title": "El Sin Ofreciendo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -103,26 +103,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Guilt Offering",
-          "title": "The Guilt Offering",
-          "status": "needs-translation"
+          "title": "La oferta de culpables",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "The Peace Offering",
-          "title": "The Peace Offering",
-          "status": "needs-translation"
+          "title": "La oferta de paz",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "Fat and Blood Forbidden",
           "title": "Fat and Blood Forbidden",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 28,
           "sourceTitle": "The Priests’ Portion",
-          "title": "The Priests’ Portion",
-          "status": "needs-translation"
+          "title": "Porción de los sacerdotes",
+          "status": "machine-translated"
         }
       ]
     },
@@ -132,26 +132,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Moses Consecrates Aaron and His Sons",
-          "title": "Moses Consecrates Aaron and His Sons",
-          "status": "needs-translation"
+          "title": "Moisés consagra a Aarón y a sus hijos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "The Priests’ Sin Offering",
-          "title": "The Priests’ Sin Offering",
-          "status": "needs-translation"
+          "title": "Ofrecimiento del pecado de los sacerdotes",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "The Priests’ Burnt Offering",
-          "title": "The Priests’ Burnt Offering",
-          "status": "needs-translation"
+          "title": "Oferta de los sacerdotes quemados",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "The Ram of Ordination",
-          "title": "The Ram of Ordination",
-          "status": "needs-translation"
+          "title": "El Ram de la Ordenación",
+          "status": "machine-translated"
         }
       ]
     },
@@ -161,8 +161,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Aaron’s First Offerings",
-          "title": "Aaron’s First Offerings",
-          "status": "needs-translation"
+          "title": "Las primeras ofertas de Aaron",
+          "status": "machine-translated"
         }
       ]
     },
@@ -172,14 +172,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Sin of Nadab and Abihu",
-          "title": "The Sin of Nadab and Abihu",
-          "status": "needs-translation"
+          "title": "El pecado de Nadab y Abihu",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "Restrictions for Priests",
-          "title": "Restrictions for Priests",
-          "status": "needs-translation"
+          "title": "Restricciones para los sacerdotes",
+          "status": "machine-translated"
         }
       ]
     },
@@ -189,8 +189,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Clean and Unclean Animals",
-          "title": "Clean and Unclean Animals",
-          "status": "needs-translation"
+          "title": "Animales limpios y sucios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -200,8 +200,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Purification after Childbirth",
-          "title": "Purification after Childbirth",
-          "status": "needs-translation"
+          "title": "Purificación después del parto",
+          "status": "machine-translated"
         }
       ]
     },
@@ -211,14 +211,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Laws about Skin Diseases",
-          "title": "Laws about Skin Diseases",
-          "status": "needs-translation"
+          "title": "Leyes sobre enfermedades de la piel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 47,
           "sourceTitle": "Laws about Mildew",
-          "title": "Laws about Mildew",
-          "status": "needs-translation"
+          "title": "Leyes sobre Mildew",
+          "status": "machine-translated"
         }
       ]
     },
@@ -228,20 +228,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Cleansing from Skin Diseases",
-          "title": "Cleansing from Skin Diseases",
-          "status": "needs-translation"
+          "title": "Limpieza de enfermedades de la piel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 33,
           "sourceTitle": "Signs of Home Contamination",
-          "title": "Signs of Home Contamination",
-          "status": "needs-translation"
+          "title": "Signos de contaminación casera",
+          "status": "machine-translated"
         },
         {
           "startVerse": 48,
           "sourceTitle": "Cleansing a Home",
-          "title": "Cleansing a Home",
-          "status": "needs-translation"
+          "title": "Limpieza de un hogar",
+          "status": "machine-translated"
         }
       ]
     },
@@ -251,26 +251,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Uncleanness of Men",
-          "title": "The Uncleanness of Men",
-          "status": "needs-translation"
+          "title": "La inmundicia de los hombres",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Cleansing of Men",
-          "title": "The Cleansing of Men",
-          "status": "needs-translation"
+          "title": "La limpieza de los hombres",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "The Uncleanness of Women",
-          "title": "The Uncleanness of Women",
-          "status": "needs-translation"
+          "title": "La inmundicia de la mujer",
+          "status": "machine-translated"
         },
         {
           "startVerse": 28,
           "sourceTitle": "The Cleansing of Women",
-          "title": "The Cleansing of Women",
-          "status": "needs-translation"
+          "title": "La limpieza de las mujeres",
+          "status": "machine-translated"
         }
       ]
     },
@@ -280,8 +280,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Day of Atonement",
-          "title": "The Day of Atonement",
-          "status": "needs-translation"
+          "title": "El Día de la Expiación",
+          "status": "machine-translated"
         }
       ]
     },
@@ -291,14 +291,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Place of Sacrifice",
-          "title": "The Place of Sacrifice",
-          "status": "needs-translation"
+          "title": "El lugar del sacrificio",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Laws against Eating Blood",
-          "title": "Laws against Eating Blood",
-          "status": "needs-translation"
+          "title": "Leyes contra Comer Sangre",
+          "status": "machine-translated"
         }
       ]
     },
@@ -308,8 +308,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Unlawful Sexual Relations",
-          "title": "Unlawful Sexual Relations",
-          "status": "needs-translation"
+          "title": "Relaciones sexuales ilícitas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -319,20 +319,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Commandments for Holiness",
-          "title": "Commandments for Holiness",
-          "status": "needs-translation"
+          "title": "Mandamientos para la Santidad",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "Love Your Neighbor",
-          "title": "Love Your Neighbor",
-          "status": "needs-translation"
+          "title": "Ama a tu vecino",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "Keep My Statutes",
-          "title": "Keep My Statutes",
-          "status": "needs-translation"
+          "title": "Mantener mis estatutos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -342,20 +342,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Punishments for Disobedience",
-          "title": "Punishments for Disobedience",
-          "status": "needs-translation"
+          "title": "Castigos para la desobediencia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Punishments for Sexual Immorality",
-          "title": "Punishments for Sexual Immorality",
-          "status": "needs-translation"
+          "title": "Castigos para la inmortalidad sexual",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "Distinguish between Clean and Unclean",
-          "title": "Distinguish between Clean and Unclean",
-          "status": "needs-translation"
+          "title": "Distinguir entre limpio y sucio",
+          "status": "machine-translated"
         }
       ]
     },
@@ -365,14 +365,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Holiness Required of Priests",
-          "title": "Holiness Required of Priests",
-          "status": "needs-translation"
+          "title": "Santidad requerida de los sacerdotes",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Restrictions against Those with Blemishes",
-          "title": "Restrictions against Those with Blemishes",
-          "status": "needs-translation"
+          "title": "Restricciones contra Aquellos con Blemishes",
+          "status": "machine-translated"
         }
       ]
     },
@@ -382,14 +382,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Restrictions against the Unclean",
-          "title": "Restrictions against the Unclean",
-          "status": "needs-translation"
+          "title": "Restricciones contra el tío",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Worthy Offerings",
-          "title": "Worthy Offerings",
-          "status": "needs-translation"
+          "title": "Ofertas amargas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -399,44 +399,44 @@
         {
           "startVerse": 1,
           "sourceTitle": "Feasts and Sabbaths",
-          "title": "Feasts and Sabbaths",
-          "status": "needs-translation"
+          "title": "Fiestas y sábados",
+          "status": "machine-translated"
         },
         {
           "startVerse": 4,
           "sourceTitle": "Passover and the Feast of Unleavened Bread",
-          "title": "Passover and the Feast of Unleavened Bread",
-          "status": "needs-translation"
+          "title": "La pascua y la fiesta del pan sin levadura",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "The Feast of Firstfruits",
-          "title": "The Feast of Firstfruits",
-          "status": "needs-translation"
+          "title": "La fiesta de los primeros frutos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "The Feast of Weeks",
-          "title": "The Feast of Weeks",
-          "status": "needs-translation"
+          "title": "Fiesta de Semanas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 23,
           "sourceTitle": "The Feast of Trumpets",
-          "title": "The Feast of Trumpets",
-          "status": "needs-translation"
+          "title": "La Fiesta de las Trompetas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 26,
           "sourceTitle": "The Day of Atonement",
-          "title": "The Day of Atonement",
-          "status": "needs-translation"
+          "title": "El Día de la Expiación",
+          "status": "machine-translated"
         },
         {
           "startVerse": 33,
           "sourceTitle": "The Feast of Tabernacles",
-          "title": "The Feast of Tabernacles",
-          "status": "needs-translation"
+          "title": "La fiesta de los Tabernáculos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -446,26 +446,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Oil for the Lamps",
-          "title": "The Oil for the Lamps",
-          "status": "needs-translation"
+          "title": "El aceite para las lámparas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "The Showbread",
-          "title": "The Showbread",
-          "status": "needs-translation"
+          "title": "El pan del espectáculo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Punishment for Blasphemy",
-          "title": "Punishment for Blasphemy",
-          "status": "needs-translation"
+          "title": "Castigo por la blasfemia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "An Eye for an Eye",
-          "title": "An Eye for an Eye",
-          "status": "needs-translation"
+          "title": "Un ojo para un ojo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -475,50 +475,50 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Seventh Year",
-          "title": "The Seventh Year",
-          "status": "needs-translation"
+          "title": "El Séptimo Año",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "The Year of Jubilee",
-          "title": "The Year of Jubilee",
-          "status": "needs-translation"
+          "title": "El Año del Jubileo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "Return of Property",
-          "title": "Return of Property",
-          "status": "needs-translation"
+          "title": "Restitución de bienes",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "The Blessing of Obedience",
-          "title": "The Blessing of Obedience",
-          "status": "needs-translation"
+          "title": "La bendición de la obediencia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 23,
           "sourceTitle": "The Law of Redemption",
-          "title": "The Law of Redemption",
-          "status": "needs-translation"
+          "title": "La Ley de Redención",
+          "status": "machine-translated"
         },
         {
           "startVerse": 35,
           "sourceTitle": "Redemption of the Poor",
-          "title": "Redemption of the Poor",
-          "status": "needs-translation"
+          "title": "Redención de los pobres",
+          "status": "machine-translated"
         },
         {
           "startVerse": 39,
           "sourceTitle": "Redemption of Bondmen",
-          "title": "Redemption of Bondmen",
-          "status": "needs-translation"
+          "title": "Redención de Bondmen",
+          "status": "machine-translated"
         },
         {
           "startVerse": 47,
           "sourceTitle": "Redemption of Servants",
-          "title": "Redemption of Servants",
-          "status": "needs-translation"
+          "title": "Redención de sirvientes",
+          "status": "machine-translated"
         }
       ]
     },
@@ -528,20 +528,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Additional Blessings of Obedience",
-          "title": "Additional Blessings of Obedience",
-          "status": "needs-translation"
+          "title": "Bendiciones adicionales de la obediencia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Punishments for Disobedience",
-          "title": "Punishments for Disobedience",
-          "status": "needs-translation"
+          "title": "Castigos para la desobediencia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 40,
           "sourceTitle": "God Remembers Those Who Repent",
-          "title": "God Remembers Those Who Repent",
-          "status": "needs-translation"
+          "title": "Dios recuerda a los que se arrepienten",
+          "status": "machine-translated"
         }
       ]
     },
@@ -551,14 +551,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Rules about Valuations",
-          "title": "Rules about Valuations",
-          "status": "needs-translation"
+          "title": "Reglas sobre Valuaciones",
+          "status": "machine-translated"
         },
         {
           "startVerse": 30,
           "sourceTitle": "Instruction on Tithes",
-          "title": "Instruction on Tithes",
-          "status": "needs-translation"
+          "title": "Instrucción sobre Tithes",
+          "status": "machine-translated"
         }
       ]
     }

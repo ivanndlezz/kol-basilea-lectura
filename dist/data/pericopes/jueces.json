@@ -13,20 +13,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Conquest of Canaan Proceeds",
-          "title": "The Conquest of Canaan Proceeds",
-          "status": "needs-translation"
+          "title": "La conquista de las procesiones cananeas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "The Capture of Jerusalem and Hebron",
-          "title": "The Capture of Jerusalem and Hebron",
-          "status": "needs-translation"
+          "title": "La Captura de Jerusalén y Hebrón",
+          "status": "machine-translated"
         },
         {
           "startVerse": 27,
           "sourceTitle": "The Failure to Complete the Conquest",
-          "title": "The Failure to Complete the Conquest",
-          "status": "needs-translation"
+          "title": "El fracaso para completar la conquista",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,26 +36,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Israel Rebuked at Bochim",
-          "title": "Israel Rebuked at Bochim",
-          "status": "needs-translation"
+          "title": "Israel reprendió a Bochim",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Joshua’s Death and Burial",
-          "title": "Joshua’s Death and Burial",
-          "status": "needs-translation"
+          "title": "Muerte y entierro de Josué",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Israel’s Unfaithfulness",
-          "title": "Israel’s Unfaithfulness",
-          "status": "needs-translation"
+          "title": "La infidelidad de Israel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Judges Raised Up",
-          "title": "Judges Raised Up",
-          "status": "needs-translation"
+          "title": "Jueces levantadas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -65,26 +65,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Nations Left to Test Israel",
-          "title": "Nations Left to Test Israel",
-          "status": "needs-translation"
+          "title": "Naciones izquierdas para probar a Israel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "Othniel",
           "title": "Othniel",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Ehud",
           "title": "Ehud",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 31,
           "sourceTitle": "Shamgar",
           "title": "Shamgar",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     },
@@ -94,14 +94,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Deborah and Barak",
-          "title": "Deborah and Barak",
-          "status": "needs-translation"
+          "title": "Deborah y Barak",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Jael Kills Sisera",
-          "title": "Jael Kills Sisera",
-          "status": "needs-translation"
+          "title": "Jael mata a Sisera",
+          "status": "machine-translated"
         }
       ]
     },
@@ -111,8 +111,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Song of Deborah and Barak",
-          "title": "The Song of Deborah and Barak",
-          "status": "needs-translation"
+          "title": "La canción de Deborah y Barak",
+          "status": "machine-translated"
         }
       ]
     },
@@ -122,26 +122,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Midian Oppresses Israel",
-          "title": "Midian Oppresses Israel",
-          "status": "needs-translation"
+          "title": "Midian Oprime Israel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "The Call of Gideon",
-          "title": "The Call of Gideon",
-          "status": "needs-translation"
+          "title": "La llamada de Gideon",
+          "status": "machine-translated"
         },
         {
           "startVerse": 25,
           "sourceTitle": "Gideon Destroys Baal’s Altar",
-          "title": "Gideon Destroys Baal’s Altar",
-          "status": "needs-translation"
+          "title": "Gideon destruye el Altar de Baal",
+          "status": "machine-translated"
         },
         {
           "startVerse": 33,
           "sourceTitle": "The Sign of the Fleece",
-          "title": "The Sign of the Fleece",
-          "status": "needs-translation"
+          "title": "El signo de la Fleece",
+          "status": "machine-translated"
         }
       ]
     },
@@ -151,20 +151,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Gideon’s Army of Three Hundred",
-          "title": "Gideon’s Army of Three Hundred",
-          "status": "needs-translation"
+          "title": "Ejército de Gideon de trescientos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "The Sword of Gideon",
-          "title": "The Sword of Gideon",
-          "status": "needs-translation"
+          "title": "La Espada de Gideon",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "Gideon Defeats Midian",
           "title": "Gideon Defeats Midian",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     },
@@ -174,26 +174,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Gideon Defeats Zebah and Zalmunna",
-          "title": "Gideon Defeats Zebah and Zalmunna",
-          "status": "needs-translation"
+          "title": "Gideon Defeats Zebah y Zalmunna",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "Gideon’s Ephod",
-          "title": "Gideon’s Ephod",
-          "status": "needs-translation"
+          "title": "Ephod de Gideon",
+          "status": "machine-translated"
         },
         {
           "startVerse": 28,
           "sourceTitle": "Forty Years of Peace",
-          "title": "Forty Years of Peace",
-          "status": "needs-translation"
+          "title": "Cuarenta años de paz",
+          "status": "machine-translated"
         },
         {
           "startVerse": 32,
           "sourceTitle": "Gideon’s Death",
-          "title": "Gideon’s Death",
-          "status": "needs-translation"
+          "title": "La muerte de Gideon",
+          "status": "machine-translated"
         }
       ]
     },
@@ -203,32 +203,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "Abimelech’s Conspiracy",
-          "title": "Abimelech’s Conspiracy",
-          "status": "needs-translation"
+          "title": "Conspiración de Abimelech",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "Jotham’s Parable",
-          "title": "Jotham’s Parable",
-          "status": "needs-translation"
+          "title": "La parábola de Jotham",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "Gaal Conspires with the Shechemites",
-          "title": "Gaal Conspires with the Shechemites",
-          "status": "needs-translation"
+          "title": "Gaal Conspire con los jequemitas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 30,
           "sourceTitle": "The Fall of Shechem",
-          "title": "The Fall of Shechem",
-          "status": "needs-translation"
+          "title": "La caída de Shechem",
+          "status": "machine-translated"
         },
         {
           "startVerse": 50,
           "sourceTitle": "Abimelech’s Punishment",
-          "title": "Abimelech’s Punishment",
-          "status": "needs-translation"
+          "title": "Castigo de Abimelech",
+          "status": "machine-translated"
         }
       ]
     },
@@ -239,19 +239,19 @@
           "startVerse": 1,
           "sourceTitle": "Tola",
           "title": "Tola",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 3,
           "sourceTitle": "Jair",
           "title": "Jair",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Oppression by the Philistines and Ammonites",
-          "title": "Oppression by the Philistines and Ammonites",
-          "status": "needs-translation"
+          "title": "Opresión por los filisteos y los amonitas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -261,14 +261,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jephthah Delivers Israel",
-          "title": "Jephthah Delivers Israel",
-          "status": "needs-translation"
+          "title": "Jefté libra a Israel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 29,
           "sourceTitle": "Jephthah’s Tragic Vow",
-          "title": "Jephthah’s Tragic Vow",
-          "status": "needs-translation"
+          "title": "El Voto Trágico de Jephthah",
+          "status": "machine-translated"
         }
       ]
     },
@@ -279,13 +279,13 @@
           "startVerse": 1,
           "sourceTitle": "Jephthah Defeats Ephraim",
           "title": "Jephthah Defeats Ephraim",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 8,
           "sourceTitle": "Ibzan, Elon, and Abdon",
-          "title": "Ibzan, Elon, and Abdon",
-          "status": "needs-translation"
+          "title": "Ibzan, Elon y Abdon",
+          "status": "machine-translated"
         }
       ]
     },
@@ -295,8 +295,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Birth of Samson",
-          "title": "The Birth of Samson",
-          "status": "needs-translation"
+          "title": "El nacimiento de Sansón",
+          "status": "machine-translated"
         }
       ]
     },
@@ -306,14 +306,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Samson’s Marriage",
-          "title": "Samson’s Marriage",
-          "status": "needs-translation"
+          "title": "Matrimonio de Samson",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "Samson’s Riddle",
-          "title": "Samson’s Riddle",
-          "status": "needs-translation"
+          "title": "Samson Riddle",
+          "status": "machine-translated"
         }
       ]
     },
@@ -323,8 +323,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Samson’s Revenge",
-          "title": "Samson’s Revenge",
-          "status": "needs-translation"
+          "title": "La venganza de Samson",
+          "status": "machine-translated"
         }
       ]
     },
@@ -335,25 +335,25 @@
           "startVerse": 1,
           "sourceTitle": "Samson Escapes Gaza",
           "title": "Samson Escapes Gaza",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 4,
           "sourceTitle": "Samson and Delilah",
           "title": "Samson and Delilah",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 15,
           "sourceTitle": "Delilah Learns the Secret",
-          "title": "Delilah Learns the Secret",
-          "status": "needs-translation"
+          "title": "Delilah Aprende el Secreto",
+          "status": "machine-translated"
         },
         {
           "startVerse": 23,
           "sourceTitle": "Samson’s Vengeance and Death",
-          "title": "Samson’s Vengeance and Death",
-          "status": "needs-translation"
+          "title": "La venganza y la muerte de Samson",
+          "status": "machine-translated"
         }
       ]
     },
@@ -363,8 +363,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Micah’s Idolatry",
-          "title": "Micah’s Idolatry",
-          "status": "needs-translation"
+          "title": "Idolatry de Micah",
+          "status": "machine-translated"
         }
       ]
     },
@@ -374,14 +374,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Danites Settle in Laish",
-          "title": "The Danites Settle in Laish",
-          "status": "needs-translation"
+          "title": "Los danitas se asientan en Laish",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "The Danites Take Micah’s Idols",
-          "title": "The Danites Take Micah’s Idols",
-          "status": "needs-translation"
+          "title": "Los danitas toman los ídolos de Micah",
+          "status": "machine-translated"
         }
       ]
     },
@@ -391,8 +391,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Crime of the Benjamites",
-          "title": "The Crime of the Benjamites",
-          "status": "needs-translation"
+          "title": "El crimen de los benjamitas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -402,14 +402,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Decree of the Assembly",
-          "title": "The Decree of the Assembly",
-          "status": "needs-translation"
+          "title": "El Decreto de la Asamblea",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "Civil War against Benjamin",
-          "title": "Civil War against Benjamin",
-          "status": "needs-translation"
+          "title": "Guerra civil contra Benjamin",
+          "status": "machine-translated"
         }
       ]
     },
@@ -419,8 +419,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Wives for the Benjamites",
-          "title": "Wives for the Benjamites",
-          "status": "needs-translation"
+          "title": "Esposas para los benjamitas",
+          "status": "machine-translated"
         }
       ]
     }

@@ -13,20 +13,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul Greets the Corinthians",
-          "title": "Paul Greets the Corinthians",
-          "status": "needs-translation"
+          "title": "Pablo saluda a los Corintios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 3,
           "sourceTitle": "The God of All Comfort",
-          "title": "The God of All Comfort",
-          "status": "needs-translation"
+          "title": "El Dios de Todo Confort",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Paul’s Change of Plans",
-          "title": "Paul’s Change of Plans",
-          "status": "needs-translation"
+          "title": "Cambio de planes de Pablo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,14 +36,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Reaffirm Your Love",
-          "title": "Reaffirm Your Love",
-          "status": "needs-translation"
+          "title": "Reafirma tu amor",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Triumph in Christ",
-          "title": "Triumph in Christ",
-          "status": "needs-translation"
+          "title": "Triunfo en Cristo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -53,14 +53,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Ministers of a New Covenant",
-          "title": "Ministers of a New Covenant",
-          "status": "needs-translation"
+          "title": "Ministros de un nuevo Pacto",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "The Glory of the New Covenant",
-          "title": "The Glory of the New Covenant",
-          "status": "needs-translation"
+          "title": "La Gloria del Nuevo Pacto",
+          "status": "machine-translated"
         }
       ]
     },
@@ -70,14 +70,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Light of the Gospel",
-          "title": "The Light of the Gospel",
-          "status": "needs-translation"
+          "title": "La Luz del Evangelio",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "Treasure in Jars of Clay",
-          "title": "Treasure in Jars of Clay",
-          "status": "needs-translation"
+          "title": "Tesoro en Jars de Clay",
+          "status": "machine-translated"
         }
       ]
     },
@@ -87,14 +87,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Our Eternal Dwelling",
-          "title": "Our Eternal Dwelling",
-          "status": "needs-translation"
+          "title": "Nuestra eterna morada",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Ambassadors for Christ",
-          "title": "Ambassadors for Christ",
-          "status": "needs-translation"
+          "title": "Embajadores para Cristo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -104,14 +104,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Hardships and God’s Grace",
-          "title": "Paul’s Hardships and God’s Grace",
-          "status": "needs-translation"
+          "title": "Las Hardships de Pablo y la Gracia de Dios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Do Not Be Unequally Yoked",
-          "title": "Do Not Be Unequally Yoked",
-          "status": "needs-translation"
+          "title": "No seas malvada.",
+          "status": "machine-translated"
         }
       ]
     },
@@ -121,8 +121,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Joy in the Corinthians",
-          "title": "Paul’s Joy in the Corinthians",
-          "status": "needs-translation"
+          "title": "La alegría de Pablo en los Corintios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -132,14 +132,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Generosity Commended",
-          "title": "Generosity Commended",
-          "status": "needs-translation"
+          "title": "Generosidad recomendada",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Titus Commended",
           "title": "Titus Commended",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     },
@@ -149,8 +149,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "God Loves a Cheerful Giver",
-          "title": "God Loves a Cheerful Giver",
-          "status": "needs-translation"
+          "title": "Dios ama a un dador alegre",
+          "status": "machine-translated"
         }
       ]
     },
@@ -160,8 +160,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Apostolic Authority",
-          "title": "Paul’s Apostolic Authority",
-          "status": "needs-translation"
+          "title": "Autoridad Apostólica de Pablo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -171,14 +171,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul and the False Apostles",
-          "title": "Paul and the False Apostles",
-          "status": "needs-translation"
+          "title": "Pablo y los Apóstoles Falsos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Paul’s Suffering and Service",
-          "title": "Paul’s Suffering and Service",
-          "status": "needs-translation"
+          "title": "Sufrimiento y servicio de Paul",
+          "status": "machine-translated"
         }
       ]
     },
@@ -188,20 +188,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Revelation",
-          "title": "Paul’s Revelation",
-          "status": "needs-translation"
+          "title": "Apocalipsis de Pablo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "Paul’s Thorn and God’s Grace",
-          "title": "Paul’s Thorn and God’s Grace",
-          "status": "needs-translation"
+          "title": "Paul Thorn y la Gracia de Dios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Paul’s Concern for the Corinthians",
-          "title": "Paul’s Concern for the Corinthians",
-          "status": "needs-translation"
+          "title": "La preocupación de Pablo por los Corintios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -211,14 +211,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Examine Yourselves",
-          "title": "Examine Yourselves",
-          "status": "needs-translation"
+          "title": "Examinar Tirselves",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Benediction and Farewell",
           "title": "Benediction and Farewell",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     }

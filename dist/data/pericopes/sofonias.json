@@ -13,14 +13,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Zephaniah Prophesies Judgment on Judah",
-          "title": "Zephaniah Prophesies Judgment on Judah",
-          "status": "needs-translation"
+          "title": "Sofonías Profecías Juicio sobre Judá",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "The Day of the LORD",
-          "title": "The Day of the LORD",
-          "status": "needs-translation"
+          "title": "Día del Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -30,26 +30,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Call to Repentance",
-          "title": "A Call to Repentance",
-          "status": "needs-translation"
+          "title": "Una llamada a la recuperación",
+          "status": "machine-translated"
         },
         {
           "startVerse": 4,
           "sourceTitle": "Judgment on the Philistines",
-          "title": "Judgment on the Philistines",
-          "status": "needs-translation"
+          "title": "Juicio sobre los filisteos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "Judgment on Moab and Ammon",
-          "title": "Judgment on Moab and Ammon",
-          "status": "needs-translation"
+          "title": "Juicio sobre Moab y Amón",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Judgment on Cush and Assyria",
-          "title": "Judgment on Cush and Assyria",
-          "status": "needs-translation"
+          "title": "Juicio sobre Cush y Asiria",
+          "status": "machine-translated"
         }
       ]
     },
@@ -59,26 +59,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Judgment on Jerusalem",
-          "title": "Judgment on Jerusalem",
-          "status": "needs-translation"
+          "title": "Juicio sobre Jerusalén",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Purification of the Nations",
-          "title": "Purification of the Nations",
-          "status": "needs-translation"
+          "title": "Purificación de las Naciones",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "A Faithful Remnant",
-          "title": "A Faithful Remnant",
-          "status": "needs-translation"
+          "title": "Un remanente fiel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Israel’s Restoration",
-          "title": "Israel’s Restoration",
-          "status": "needs-translation"
+          "title": "Restauración de Israel",
+          "status": "machine-translated"
         }
       ]
     }

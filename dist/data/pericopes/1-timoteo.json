@@ -13,20 +13,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Greeting to Timothy",
-          "title": "Paul’s Greeting to Timothy",
-          "status": "needs-translation"
+          "title": "Paul saluda a Timothy",
+          "status": "machine-translated"
         },
         {
           "startVerse": 3,
           "sourceTitle": "Correcting False Teachers",
-          "title": "Correcting False Teachers",
-          "status": "needs-translation"
+          "title": "Corregir maestros falsos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "God’s Grace to Paul",
-          "title": "God’s Grace to Paul",
-          "status": "needs-translation"
+          "title": "Gracia de Dios a Pablo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,14 +36,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Call to Prayer",
-          "title": "A Call to Prayer",
-          "status": "needs-translation"
+          "title": "Una llamada a la oración",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "Instructions to Women",
-          "title": "Instructions to Women",
-          "status": "needs-translation"
+          "title": "Instrucciones a la mujer",
+          "status": "machine-translated"
         }
       ]
     },
@@ -53,20 +53,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Qualifications for Overseers",
-          "title": "Qualifications for Overseers",
-          "status": "needs-translation"
+          "title": "Calificaciones para los espectadores",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "Qualifications for Deacons",
-          "title": "Qualifications for Deacons",
-          "status": "needs-translation"
+          "title": "Calificaciones para Diáconos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "The Mystery of Godliness",
-          "title": "The Mystery of Godliness",
-          "status": "needs-translation"
+          "title": "El misterio de la piedad",
+          "status": "machine-translated"
         }
       ]
     },
@@ -76,14 +76,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Warning against Apostasy",
-          "title": "A Warning against Apostasy",
-          "status": "needs-translation"
+          "title": "Una advertencia contra la Apostasía",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "A Good Servant of Jesus Christ",
-          "title": "A Good Servant of Jesus Christ",
-          "status": "needs-translation"
+          "title": "Un buen siervo de Jesucristo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -94,25 +94,25 @@
           "startVerse": 1,
           "sourceTitle": "Reproof and Respect",
           "title": "Reproof and Respect",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 3,
           "sourceTitle": "Honoring True Widows",
-          "title": "Honoring True Widows",
-          "status": "needs-translation"
+          "title": "Honrar a las viudas verdaderas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Honoring Elders",
-          "title": "Honoring Elders",
-          "status": "needs-translation"
+          "title": "Honrar a los Ancianos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 21,
           "sourceTitle": "A Charge to Timothy",
-          "title": "A Charge to Timothy",
-          "status": "needs-translation"
+          "title": "Una carga para Timothy",
+          "status": "machine-translated"
         }
       ]
     },
@@ -122,38 +122,38 @@
         {
           "startVerse": 1,
           "sourceTitle": "Serving with Honor",
-          "title": "Serving with Honor",
-          "status": "needs-translation"
+          "title": "Servir con honor",
+          "status": "machine-translated"
         },
         {
           "startVerse": 3,
           "sourceTitle": "Reject False Doctrines",
-          "title": "Reject False Doctrines",
-          "status": "needs-translation"
+          "title": "Rechazar las Doctrinas Falsas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Godliness with Contentment",
-          "title": "Godliness with Contentment",
-          "status": "needs-translation"
+          "title": "Santidad con el contenido",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Fight the Good Fight",
-          "title": "Fight the Good Fight",
-          "status": "needs-translation"
+          "title": "Lucha contra la Buena Lucha",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "A Charge to the Rich",
-          "title": "A Charge to the Rich",
-          "status": "needs-translation"
+          "title": "Una carga para los ricos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 20,
           "sourceTitle": "Guard the Faith",
-          "title": "Guard the Faith",
-          "status": "needs-translation"
+          "title": "Guarde la fe",
+          "status": "machine-translated"
         }
       ]
     }

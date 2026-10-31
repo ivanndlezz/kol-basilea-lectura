@@ -13,32 +13,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "Greetings from Paul and Sosthenes",
-          "title": "Greetings from Paul and Sosthenes",
-          "status": "needs-translation"
+          "title": "Saludos de Paul y Sosthenes",
+          "status": "machine-translated"
         },
         {
           "startVerse": 4,
           "sourceTitle": "Thanksgiving",
-          "title": "Thanksgiving",
-          "status": "needs-translation"
+          "title": "Acción de Gracias",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Unity in the Church",
-          "title": "Unity in the Church",
-          "status": "needs-translation"
+          "title": "Unidad en la Iglesia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "The Message of the Cross",
-          "title": "The Message of the Cross",
-          "status": "needs-translation"
+          "title": "El Mensaje de la Cruz",
+          "status": "machine-translated"
         },
         {
           "startVerse": 26,
           "sourceTitle": "Wisdom from God",
-          "title": "Wisdom from God",
-          "status": "needs-translation"
+          "title": "Sabiduría de Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -48,14 +48,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Message by the Spirit’s Power",
-          "title": "Paul’s Message by the Spirit’s Power",
-          "status": "needs-translation"
+          "title": "Mensaje de Pablo por el poder del Espíritu",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Spiritual Wisdom",
-          "title": "Spiritual Wisdom",
-          "status": "needs-translation"
+          "title": "Sabiduría espiritual",
+          "status": "machine-translated"
         }
       ]
     },
@@ -65,20 +65,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "God’s Fellow Workers",
-          "title": "God’s Fellow Workers",
-          "status": "needs-translation"
+          "title": "Los Trabajadores Fellow de Dios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Christ Our Foundation",
-          "title": "Christ Our Foundation",
-          "status": "needs-translation"
+          "title": "Cristo Nuestra Fundación",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "God’s Temple and God’s Wisdom",
-          "title": "God’s Temple and God’s Wisdom",
-          "status": "needs-translation"
+          "title": "Templo de Dios y la Sabiduría de Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -88,14 +88,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Servants of Christ",
-          "title": "Servants of Christ",
-          "status": "needs-translation"
+          "title": "Servidores de Cristo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Paul’s Fatherly Warning",
-          "title": "Paul’s Fatherly Warning",
-          "status": "needs-translation"
+          "title": "Advertencia paterna de Pablo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -105,14 +105,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Immorality Rebuked",
-          "title": "Immorality Rebuked",
-          "status": "needs-translation"
+          "title": "Inmoralidad reprendida",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "Expel the Immoral Brother",
-          "title": "Expel the Immoral Brother",
-          "status": "needs-translation"
+          "title": "Expelen el Hermano Inmoral",
+          "status": "machine-translated"
         }
       ]
     },
@@ -122,20 +122,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Lawsuits among Believers",
-          "title": "Lawsuits among Believers",
-          "status": "needs-translation"
+          "title": "Trajes entre creyentes",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "Members of Christ",
-          "title": "Members of Christ",
-          "status": "needs-translation"
+          "title": "Miembros de Cristo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "The Temple of the Holy Spirit",
-          "title": "The Temple of the Holy Spirit",
-          "status": "needs-translation"
+          "title": "El Templo del Espíritu Santo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -145,20 +145,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Principles of Marriage",
-          "title": "Principles of Marriage",
-          "status": "needs-translation"
+          "title": "Principios del matrimonio",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Live Your Calling",
-          "title": "Live Your Calling",
-          "status": "needs-translation"
+          "title": "Vive tu llamada",
+          "status": "machine-translated"
         },
         {
           "startVerse": 25,
           "sourceTitle": "The Unmarried and Widowed",
-          "title": "The Unmarried and Widowed",
-          "status": "needs-translation"
+          "title": "Los solteros y dotados",
+          "status": "machine-translated"
         }
       ]
     },
@@ -168,8 +168,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Food Sacrificed to Idols",
-          "title": "Food Sacrificed to Idols",
-          "status": "needs-translation"
+          "title": "Alimentos sacrificados a ídolos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -179,20 +179,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Rights of an Apostle",
-          "title": "The Rights of an Apostle",
-          "status": "needs-translation"
+          "title": "Los derechos de un apóstol",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "Paul the Servant to All",
-          "title": "Paul the Servant to All",
-          "status": "needs-translation"
+          "title": "Pablo el siervo de todos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 24,
           "sourceTitle": "Run Your Race to Win",
-          "title": "Run Your Race to Win",
-          "status": "needs-translation"
+          "title": "Corre tu carrera para ganar",
+          "status": "machine-translated"
         }
       ]
     },
@@ -202,20 +202,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Warnings from Israel’s Past",
-          "title": "Warnings from Israel’s Past",
-          "status": "needs-translation"
+          "title": "Advertencias del pasado de Israel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Flee from Idolatry",
-          "title": "Flee from Idolatry",
-          "status": "needs-translation"
+          "title": "Flee de Idolatry",
+          "status": "machine-translated"
         },
         {
           "startVerse": 23,
           "sourceTitle": "All to God’s Glory",
-          "title": "All to God’s Glory",
-          "status": "needs-translation"
+          "title": "Todo a la Gloria de Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -225,14 +225,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Roles in Worship",
-          "title": "Roles in Worship",
-          "status": "needs-translation"
+          "title": "Papeles en la adoración",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Sharing in the Lord’s Supper",
-          "title": "Sharing in the Lord’s Supper",
-          "status": "needs-translation"
+          "title": "Compartir en la cena del Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -242,20 +242,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Spiritual Gifts",
-          "title": "Spiritual Gifts",
-          "status": "needs-translation"
+          "title": "Regalos espirituales",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "The Body of Christ",
-          "title": "The Body of Christ",
-          "status": "needs-translation"
+          "title": "El Cuerpo de Cristo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 27,
           "sourceTitle": "The Greater Gifts",
-          "title": "The Greater Gifts",
-          "status": "needs-translation"
+          "title": "Los regalos más grandes",
+          "status": "machine-translated"
         }
       ]
     },
@@ -265,8 +265,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Love",
-          "title": "Love",
-          "status": "needs-translation"
+          "title": "Amor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -276,14 +276,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Prophecy and Tongues",
-          "title": "Prophecy and Tongues",
-          "status": "needs-translation"
+          "title": "Profecía y Lenguas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 26,
           "sourceTitle": "Orderly Worship",
-          "title": "Orderly Worship",
-          "status": "needs-translation"
+          "title": "Adoración ordenada",
+          "status": "machine-translated"
         }
       ]
     },
@@ -293,32 +293,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Resurrection of Christ",
-          "title": "The Resurrection of Christ",
-          "status": "needs-translation"
+          "title": "La resurrección de Cristo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "The Resurrection of the Dead",
-          "title": "The Resurrection of the Dead",
-          "status": "needs-translation"
+          "title": "La resurrección de los muertos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 20,
           "sourceTitle": "The Order of Resurrection",
-          "title": "The Order of Resurrection",
-          "status": "needs-translation"
+          "title": "La Orden de Resurrección",
+          "status": "machine-translated"
         },
         {
           "startVerse": 35,
           "sourceTitle": "The Resurrection Body",
-          "title": "The Resurrection Body",
-          "status": "needs-translation"
+          "title": "El Cuerpo de Resurrección",
+          "status": "machine-translated"
         },
         {
           "startVerse": 50,
           "sourceTitle": "Where, O Death, Is Your Victory?",
-          "title": "Where, O Death, Is Your Victory?",
-          "status": "needs-translation"
+          "title": "¿Dónde está tu victoria?",
+          "status": "machine-translated"
         }
       ]
     },
@@ -328,32 +328,32 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Collection for the Saints",
-          "title": "The Collection for the Saints",
-          "status": "needs-translation"
+          "title": "La Colección para los Santos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "Paul’s Travel Plans",
-          "title": "Paul’s Travel Plans",
-          "status": "needs-translation"
+          "title": "Planes de viaje de Paul",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Timothy and Apollos",
-          "title": "Timothy and Apollos",
-          "status": "needs-translation"
+          "title": "Timothy y Apolos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "Concluding Exhortations",
-          "title": "Concluding Exhortations",
-          "status": "needs-translation"
+          "title": "Exhortaciones finales",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "Signature and Final Greetings",
-          "title": "Signature and Final Greetings",
-          "status": "needs-translation"
+          "title": "Firma y saludos finales",
+          "status": "machine-translated"
         }
       ]
     }

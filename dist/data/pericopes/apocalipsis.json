@@ -14,19 +14,19 @@
           "startVerse": 1,
           "sourceTitle": "Prologue",
           "title": "Prologue",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 4,
           "sourceTitle": "John Greets the Seven Churches",
-          "title": "John Greets the Seven Churches",
-          "status": "needs-translation"
+          "title": "Juan saluda a las Siete Iglesias",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "John’s Vision on Patmos",
-          "title": "John’s Vision on Patmos",
-          "status": "needs-translation"
+          "title": "Visión de John en Patmos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,26 +36,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "To the Church in Ephesus",
-          "title": "To the Church in Ephesus",
-          "status": "needs-translation"
+          "title": "A la Iglesia en Éfeso",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "To the Church in Smyrna",
-          "title": "To the Church in Smyrna",
-          "status": "needs-translation"
+          "title": "A la Iglesia en Smyrna",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "To the Church in Pergamum",
-          "title": "To the Church in Pergamum",
-          "status": "needs-translation"
+          "title": "A la Iglesia en Pergamum",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "To the Church in Thyatira",
-          "title": "To the Church in Thyatira",
-          "status": "needs-translation"
+          "title": "A la Iglesia en Tiatira",
+          "status": "machine-translated"
         }
       ]
     },
@@ -65,20 +65,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "To the Church in Sardis",
-          "title": "To the Church in Sardis",
-          "status": "needs-translation"
+          "title": "A la Iglesia en Sardis",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "To the Church in Philadelphia",
-          "title": "To the Church in Philadelphia",
-          "status": "needs-translation"
+          "title": "A la Iglesia en Filadelfia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "To the Church in Laodicea",
-          "title": "To the Church in Laodicea",
-          "status": "needs-translation"
+          "title": "A la Iglesia en Laodicea",
+          "status": "machine-translated"
         }
       ]
     },
@@ -88,14 +88,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Throne in Heaven",
-          "title": "The Throne in Heaven",
-          "status": "needs-translation"
+          "title": "El Trono en el Cielo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "Worship of the Creator",
-          "title": "Worship of the Creator",
-          "status": "needs-translation"
+          "title": "La adoración del Creador",
+          "status": "machine-translated"
         }
       ]
     },
@@ -105,14 +105,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Lamb Takes the Scroll",
-          "title": "The Lamb Takes the Scroll",
-          "status": "needs-translation"
+          "title": "El Cordero toma el Scroll",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "The Lamb Exalted",
-          "title": "The Lamb Exalted",
-          "status": "needs-translation"
+          "title": "El Cordero Exaltado",
+          "status": "machine-translated"
         }
       ]
     },
@@ -122,38 +122,38 @@
         {
           "startVerse": 1,
           "sourceTitle": "The First Seal: The White Horse",
-          "title": "The First Seal: The White Horse",
-          "status": "needs-translation"
+          "title": "El primer sello: El caballo blanco",
+          "status": "machine-translated"
         },
         {
           "startVerse": 3,
           "sourceTitle": "The Second Seal: War",
-          "title": "The Second Seal: War",
-          "status": "needs-translation"
+          "title": "El segundo sello: guerra",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "The Third Seal: Famine",
-          "title": "The Third Seal: Famine",
-          "status": "needs-translation"
+          "title": "El tercer sello: hambre",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "The Fourth Seal: Death",
-          "title": "The Fourth Seal: Death",
-          "status": "needs-translation"
+          "title": "El Cuarto Sello: Muerte",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "The Fifth Seal: The Martyrs",
-          "title": "The Fifth Seal: The Martyrs",
-          "status": "needs-translation"
+          "title": "El quinto sello: los mártires",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "The Sixth Seal: Terror",
-          "title": "The Sixth Seal: Terror",
-          "status": "needs-translation"
+          "title": "El sexto sello: terror",
+          "status": "machine-translated"
         }
       ]
     },
@@ -163,14 +163,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "144,000 Sealed",
-          "title": "144,000 Sealed",
-          "status": "needs-translation"
+          "title": "144.000 Sealed",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "Praise from the Great Multitude",
-          "title": "Praise from the Great Multitude",
-          "status": "needs-translation"
+          "title": "Elogio de la Gran Multitude",
+          "status": "machine-translated"
         }
       ]
     },
@@ -180,14 +180,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Seventh Seal",
-          "title": "The Seventh Seal",
-          "status": "needs-translation"
+          "title": "El Séptimo Sello",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "The First Four Trumpets",
-          "title": "The First Four Trumpets",
-          "status": "needs-translation"
+          "title": "Las cuatro primeras trompetas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -197,14 +197,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Fifth Trumpet",
-          "title": "The Fifth Trumpet",
-          "status": "needs-translation"
+          "title": "La Quinta Trumpet",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Sixth Trumpet",
-          "title": "The Sixth Trumpet",
-          "status": "needs-translation"
+          "title": "La Sexta Trompeta",
+          "status": "machine-translated"
         }
       ]
     },
@@ -214,8 +214,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Angel and the Small Scroll",
-          "title": "The Angel and the Small Scroll",
-          "status": "needs-translation"
+          "title": "El Ángel y la Pequeña Pergamino",
+          "status": "machine-translated"
         }
       ]
     },
@@ -225,20 +225,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Two Witnesses",
-          "title": "The Two Witnesses",
-          "status": "needs-translation"
+          "title": "Los dos testigos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "The Witnesses Killed and Raised",
-          "title": "The Witnesses Killed and Raised",
-          "status": "needs-translation"
+          "title": "Los testigos mataron y aumentaron",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "The Seventh Trumpet",
-          "title": "The Seventh Trumpet",
-          "status": "needs-translation"
+          "title": "La Séptima Trompeta",
+          "status": "machine-translated"
         }
       ]
     },
@@ -248,20 +248,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Woman and the Dragon",
-          "title": "The Woman and the Dragon",
-          "status": "needs-translation"
+          "title": "La mujer y el dragón",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "The War in Heaven",
-          "title": "The War in Heaven",
-          "status": "needs-translation"
+          "title": "La Guerra en el Cielo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Woman Persecuted",
-          "title": "The Woman Persecuted",
-          "status": "needs-translation"
+          "title": "La mujer perseguida",
+          "status": "machine-translated"
         }
       ]
     },
@@ -271,20 +271,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Beast from the Sea",
-          "title": "The Beast from the Sea",
-          "status": "needs-translation"
+          "title": "La Bestia del Mar",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "The Beast from the Earth",
-          "title": "The Beast from the Earth",
-          "status": "needs-translation"
+          "title": "La Bestia de la Tierra",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "The Mark of the Beast",
-          "title": "The Mark of the Beast",
-          "status": "needs-translation"
+          "title": "La marca de la Bestia",
+          "status": "machine-translated"
         }
       ]
     },
@@ -294,20 +294,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Lamb and the 144,000",
-          "title": "The Lamb and the 144,000",
-          "status": "needs-translation"
+          "title": "El Cordero y los 144.000",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "The Three Angels and Babylon’s Fall",
-          "title": "The Three Angels and Babylon’s Fall",
-          "status": "needs-translation"
+          "title": "Los tres ángeles y la caída de Babilonia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "The Harvest of the Earth",
-          "title": "The Harvest of the Earth",
-          "status": "needs-translation"
+          "title": "La cosecha de la Tierra",
+          "status": "machine-translated"
         }
       ]
     },
@@ -317,14 +317,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Song of Moses and the Lamb",
-          "title": "The Song of Moses and the Lamb",
-          "status": "needs-translation"
+          "title": "La Canción de Moisés y el Cordero",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "Preparation for Judgment",
-          "title": "Preparation for Judgment",
-          "status": "needs-translation"
+          "title": "Preparación para el fallo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -334,14 +334,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The First Six Bowls of Wrath",
-          "title": "The First Six Bowls of Wrath",
-          "status": "needs-translation"
+          "title": "Los primeros seis arcos de Wrath",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "The Seventh Bowl of Wrath",
-          "title": "The Seventh Bowl of Wrath",
-          "status": "needs-translation"
+          "title": "El séptimo arco de Wrath",
+          "status": "machine-translated"
         }
       ]
     },
@@ -351,20 +351,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Woman on the Beast",
-          "title": "The Woman on the Beast",
-          "status": "needs-translation"
+          "title": "La mujer en la Bestia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "The Mystery Explained",
-          "title": "The Mystery Explained",
-          "status": "needs-translation"
+          "title": "El misterio explicado",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "The Victory of the Lamb",
-          "title": "The Victory of the Lamb",
-          "status": "needs-translation"
+          "title": "La Victoria del Cordero",
+          "status": "machine-translated"
         }
       ]
     },
@@ -374,20 +374,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Babylon Is Fallen",
-          "title": "Babylon Is Fallen",
-          "status": "needs-translation"
+          "title": "Babylon es Fallen",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "Lament over Babylon",
-          "title": "Lament over Babylon",
-          "status": "needs-translation"
+          "title": "Lamento sobre Babilonia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 21,
           "sourceTitle": "The Doom of Babylon",
-          "title": "The Doom of Babylon",
-          "status": "needs-translation"
+          "title": "El destino de Babilonia",
+          "status": "machine-translated"
         }
       ]
     },
@@ -397,26 +397,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Rejoicing in Heaven",
-          "title": "Rejoicing in Heaven",
-          "status": "needs-translation"
+          "title": "Alégrense en el Cielo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "The Marriage of the Lamb",
-          "title": "The Marriage of the Lamb",
-          "status": "needs-translation"
+          "title": "El matrimonio del cordero",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "The Rider on the White Horse",
-          "title": "The Rider on the White Horse",
-          "status": "needs-translation"
+          "title": "El jinete en el caballo blanco",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Defeat of the Beast and False Prophet",
-          "title": "Defeat of the Beast and False Prophet",
-          "status": "needs-translation"
+          "title": "La derrota de la Bestia y el Falso Profeta",
+          "status": "machine-translated"
         }
       ]
     },
@@ -426,20 +426,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Satan Bound",
-          "title": "Satan Bound",
-          "status": "needs-translation"
+          "title": "Satanás Bound",
+          "status": "machine-translated"
         },
         {
           "startVerse": 7,
           "sourceTitle": "Satan Cast into the Lake of Fire",
-          "title": "Satan Cast into the Lake of Fire",
-          "status": "needs-translation"
+          "title": "Satanás fundido en el lago de fuego",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Judgment before the Great White Throne",
-          "title": "Judgment before the Great White Throne",
-          "status": "needs-translation"
+          "title": "Juicio ante el Gran Trono Blanco",
+          "status": "machine-translated"
         }
       ]
     },
@@ -449,14 +449,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "A New Heaven and a New Earth",
-          "title": "A New Heaven and a New Earth",
-          "status": "needs-translation"
+          "title": "Un Nuevo Cielo y una Nueva Tierra",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "The New Jerusalem",
-          "title": "The New Jerusalem",
-          "status": "needs-translation"
+          "title": "La Nueva Jerusalén",
+          "status": "machine-translated"
         }
       ]
     },
@@ -466,20 +466,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The River of Life",
-          "title": "The River of Life",
-          "status": "needs-translation"
+          "title": "El río de la vida",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Jesus Is Coming",
-          "title": "Jesus Is Coming",
-          "status": "needs-translation"
+          "title": "Jesús viene",
+          "status": "machine-translated"
         },
         {
           "startVerse": 18,
           "sourceTitle": "Nothing May Be Added or Removed",
-          "title": "Nothing May Be Added or Removed",
-          "status": "needs-translation"
+          "title": "Nada puede ser añadido o eliminado",
+          "status": "machine-translated"
         }
       ]
     }

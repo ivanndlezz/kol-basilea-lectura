@@ -13,14 +13,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "BOOK I",
-          "title": "BOOK I",
-          "status": "needs-translation"
+          "title": "RESERVA",
+          "status": "machine-translated"
         },
         {
           "startVerse": 1,
           "sourceTitle": "The Two Paths",
-          "title": "The Two Paths",
-          "status": "needs-translation"
+          "title": "Los dos caminos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -30,8 +30,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Triumphant Messiah",
-          "title": "The Triumphant Messiah",
-          "status": "needs-translation"
+          "title": "El Mesías Triumphant",
+          "status": "machine-translated"
         }
       ]
     },
@@ -41,8 +41,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Deliver Me, O LORD!",
-          "title": "Deliver Me, O LORD!",
-          "status": "needs-translation"
+          "title": "¡Déjenme, Señor!",
+          "status": "machine-translated"
         }
       ]
     },
@@ -52,8 +52,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Answer Me When I Call!",
-          "title": "Answer Me When I Call!",
-          "status": "needs-translation"
+          "title": "¡Respóndeme cuando llame!",
+          "status": "machine-translated"
         }
       ]
     },
@@ -63,8 +63,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Give Ear to My Words",
-          "title": "Give Ear to My Words",
-          "status": "needs-translation"
+          "title": "Dar oído a mis palabras",
+          "status": "machine-translated"
         }
       ]
     },
@@ -74,8 +74,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Do Not Rebuke Me in Your Anger",
-          "title": "Do Not Rebuke Me in Your Anger",
-          "status": "needs-translation"
+          "title": "No me reprendas en tu ira",
+          "status": "machine-translated"
         }
       ]
     },
@@ -85,8 +85,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Take Refuge in You",
-          "title": "I Take Refuge in You",
-          "status": "needs-translation"
+          "title": "Me refugio en ti",
+          "status": "machine-translated"
         }
       ]
     },
@@ -96,8 +96,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "How Majestic Is Your Name!",
-          "title": "How Majestic Is Your Name!",
-          "status": "needs-translation"
+          "title": "¡Cómo Majestic es tu nombre!",
+          "status": "machine-translated"
         }
       ]
     },
@@ -107,8 +107,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Will Give Thanks to the LORD",
-          "title": "I Will Give Thanks to the LORD",
-          "status": "needs-translation"
+          "title": "Daré gracias al Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -118,8 +118,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Perils of the Pilgrim",
-          "title": "The Perils of the Pilgrim",
-          "status": "needs-translation"
+          "title": "Los peligros del peregrino",
+          "status": "machine-translated"
         }
       ]
     },
@@ -129,8 +129,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "In the LORD I Take Refuge",
-          "title": "In the LORD I Take Refuge",
-          "status": "needs-translation"
+          "title": "En el Señor tomo refugio",
+          "status": "machine-translated"
         }
       ]
     },
@@ -140,8 +140,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Godly Are No More",
-          "title": "The Godly Are No More",
-          "status": "needs-translation"
+          "title": "El Dios no es más",
+          "status": "machine-translated"
         }
       ]
     },
@@ -151,8 +151,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "How Long, O LORD?",
-          "title": "How Long, O LORD?",
-          "status": "needs-translation"
+          "title": "¿Cuánto tiempo, Señor?",
+          "status": "machine-translated"
         }
       ]
     },
@@ -162,8 +162,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Fool Says There Is No God",
-          "title": "The Fool Says There Is No God",
-          "status": "needs-translation"
+          "title": "El tonto dice que no hay Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -173,8 +173,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Who May Dwell on Your Holy Mountain?",
-          "title": "Who May Dwell on Your Holy Mountain?",
-          "status": "needs-translation"
+          "title": "¿Quién puede morar en tu santa montaña?",
+          "status": "machine-translated"
         }
       ]
     },
@@ -184,8 +184,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Presence of the LORD",
-          "title": "The Presence of the LORD",
-          "status": "needs-translation"
+          "title": "La Presencia del Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -195,8 +195,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Hear My Righteous Plea",
-          "title": "Hear My Righteous Plea",
-          "status": "needs-translation"
+          "title": "Escucha mi justa plegaria",
+          "status": "machine-translated"
         }
       ]
     },
@@ -206,8 +206,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Is My Rock",
-          "title": "The LORD Is My Rock",
-          "status": "needs-translation"
+          "title": "El Señor es mi roca",
+          "status": "machine-translated"
         }
       ]
     },
@@ -217,8 +217,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Heavens Declare the Glory of God",
-          "title": "The Heavens Declare the Glory of God",
-          "status": "needs-translation"
+          "title": "Los Cielos Declaran la Gloria de Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -228,8 +228,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Day of Trouble",
-          "title": "The Day of Trouble",
-          "status": "needs-translation"
+          "title": "El Día de los Problemas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -239,8 +239,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "After the Battle",
-          "title": "After the Battle",
-          "status": "needs-translation"
+          "title": "Después de la batalla",
+          "status": "machine-translated"
         }
       ]
     },
@@ -250,8 +250,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Psalm of the Cross",
-          "title": "The Psalm of the Cross",
-          "status": "needs-translation"
+          "title": "El Salmo de la Cruz",
+          "status": "machine-translated"
         }
       ]
     },
@@ -261,8 +261,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Is My Shepherd",
-          "title": "The LORD Is My Shepherd",
-          "status": "needs-translation"
+          "title": "El Señor es mi Pastor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -272,8 +272,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Earth Is the LORD’s",
-          "title": "The Earth Is the LORD’s",
-          "status": "needs-translation"
+          "title": "La Tierra Es el Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -283,8 +283,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "To You I Lift Up My Soul",
-          "title": "To You I Lift Up My Soul",
-          "status": "needs-translation"
+          "title": "A ti levanto mi alma",
+          "status": "machine-translated"
         }
       ]
     },
@@ -294,8 +294,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Vindicate Me, O LORD",
-          "title": "Vindicate Me, O LORD",
-          "status": "needs-translation"
+          "title": "Vindicadme, oh Jehová",
+          "status": "machine-translated"
         }
       ]
     },
@@ -305,8 +305,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Is My Salvation",
-          "title": "The LORD Is My Salvation",
-          "status": "needs-translation"
+          "title": "El Señor es mi salvación",
+          "status": "machine-translated"
         }
       ]
     },
@@ -316,8 +316,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Is My Strength",
-          "title": "The LORD Is My Strength",
-          "status": "needs-translation"
+          "title": "El Señor es mi fuerza",
+          "status": "machine-translated"
         }
       ]
     },
@@ -327,8 +327,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Ascribe Glory to the LORD",
-          "title": "Ascribe Glory to the LORD",
-          "status": "needs-translation"
+          "title": "Ascribe Gloria al Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -338,8 +338,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "You Turned My Mourning into Dancing",
-          "title": "You Turned My Mourning into Dancing",
-          "status": "needs-translation"
+          "title": "Has convertido mi rayo en bailar",
+          "status": "machine-translated"
         }
       ]
     },
@@ -349,8 +349,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Into Your Hands I Commit My Spirit",
-          "title": "Into Your Hands I Commit My Spirit",
-          "status": "needs-translation"
+          "title": "En tus manos encomiendo mi Espíritu",
+          "status": "machine-translated"
         }
       ]
     },
@@ -360,8 +360,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Joy of Forgiveness",
-          "title": "The Joy of Forgiveness",
-          "status": "needs-translation"
+          "title": "La alegría del perdón",
+          "status": "machine-translated"
         }
       ]
     },
@@ -371,8 +371,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Praise to the Creator",
-          "title": "Praise to the Creator",
-          "status": "needs-translation"
+          "title": "Alabado sea el Creador",
+          "status": "machine-translated"
         }
       ]
     },
@@ -382,8 +382,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Taste and See That the LORD Is Good",
-          "title": "Taste and See That the LORD Is Good",
-          "status": "needs-translation"
+          "title": "Pruebe y vea que el Señor es bueno",
+          "status": "machine-translated"
         }
       ]
     },
@@ -393,8 +393,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Contend with My Opponents, O LORD",
-          "title": "Contend with My Opponents, O LORD",
-          "status": "needs-translation"
+          "title": "Contender con Mis oponentes, O Jehová",
+          "status": "machine-translated"
         }
       ]
     },
@@ -404,8 +404,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Transgression of the Wicked",
-          "title": "The Transgression of the Wicked",
-          "status": "needs-translation"
+          "title": "La transgresión de los Wicked",
+          "status": "machine-translated"
         }
       ]
     },
@@ -415,8 +415,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Delight Yourself in the LORD",
-          "title": "Delight Yourself in the LORD",
-          "status": "needs-translation"
+          "title": "Deleite en el Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -426,8 +426,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Do Not Rebuke Me in Your Anger",
-          "title": "Do Not Rebuke Me in Your Anger",
-          "status": "needs-translation"
+          "title": "No me reprendas en tu ira",
+          "status": "machine-translated"
         }
       ]
     },
@@ -437,8 +437,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Will Watch My Ways",
-          "title": "I Will Watch My Ways",
-          "status": "needs-translation"
+          "title": "Veré mis caminos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -448,8 +448,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Waited Patiently for the LORD",
-          "title": "I Waited Patiently for the LORD",
-          "status": "needs-translation"
+          "title": "Esperé pacientemente para el Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -459,8 +459,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Victory over Betrayal",
-          "title": "Victory over Betrayal",
-          "status": "needs-translation"
+          "title": "Victoria sobre Betrayal",
+          "status": "machine-translated"
         }
       ]
     },
@@ -470,14 +470,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "BOOK II",
-          "title": "BOOK II",
-          "status": "needs-translation"
+          "title": "RESERVA II",
+          "status": "machine-translated"
         },
         {
           "startVerse": 1,
           "sourceTitle": "As the Deer Pants for the Water",
-          "title": "As the Deer Pants for the Water",
-          "status": "needs-translation"
+          "title": "Como los pantalones de ciervo para el agua",
+          "status": "machine-translated"
         }
       ]
     },
@@ -487,8 +487,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Send Out Your Light",
-          "title": "Send Out Your Light",
-          "status": "needs-translation"
+          "title": "Envía tu luz",
+          "status": "machine-translated"
         }
       ]
     },
@@ -498,8 +498,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Redeem Us, O God",
-          "title": "Redeem Us, O God",
-          "status": "needs-translation"
+          "title": "Redeem Us, oh Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -509,8 +509,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "My Heart Is Stirred by a Noble Theme",
-          "title": "My Heart Is Stirred by a Noble Theme",
-          "status": "needs-translation"
+          "title": "Mi corazón está lleno de un tema noble",
+          "status": "machine-translated"
         }
       ]
     },
@@ -520,8 +520,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "God Is Our Refuge and Strength",
-          "title": "God Is Our Refuge and Strength",
-          "status": "needs-translation"
+          "title": "Dios es nuestro refugio y fuerza",
+          "status": "machine-translated"
         }
       ]
     },
@@ -531,8 +531,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Clap Your Hands, All You Peoples",
-          "title": "Clap Your Hands, All You Peoples",
-          "status": "needs-translation"
+          "title": "Aplauda tus manos, todos tus pueblos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -542,8 +542,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Broken Bondage",
-          "title": "Broken Bondage",
-          "status": "needs-translation"
+          "title": "Bonos rotos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -553,8 +553,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Evanescence of Wealth",
-          "title": "The Evanescence of Wealth",
-          "status": "needs-translation"
+          "title": "La Evanescencia de la Wealth",
+          "status": "machine-translated"
         }
       ]
     },
@@ -564,8 +564,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Mighty One Calls",
-          "title": "The Mighty One Calls",
-          "status": "needs-translation"
+          "title": "El Poderoso Llama",
+          "status": "machine-translated"
         }
       ]
     },
@@ -575,8 +575,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Create in Me a Clean Heart, O God",
-          "title": "Create in Me a Clean Heart, O God",
-          "status": "needs-translation"
+          "title": "Cree en mí un corazón limpio, oh Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -586,8 +586,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Why Do You Boast of Evil?",
-          "title": "Why Do You Boast of Evil?",
-          "status": "needs-translation"
+          "title": "¿Por qué te cagas del mal?",
+          "status": "machine-translated"
         }
       ]
     },
@@ -597,8 +597,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Fool Says There Is No God",
-          "title": "The Fool Says There Is No God",
-          "status": "needs-translation"
+          "title": "El tonto dice que no hay Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -608,8 +608,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Save Me by Your Name",
-          "title": "Save Me by Your Name",
-          "status": "needs-translation"
+          "title": "Guardame por tu nombre",
+          "status": "machine-translated"
         }
       ]
     },
@@ -619,8 +619,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Cast Your Burden upon the LORD",
-          "title": "Cast Your Burden upon the LORD",
-          "status": "needs-translation"
+          "title": "Cast Your Burden on the Lord",
+          "status": "machine-translated"
         }
       ]
     },
@@ -630,8 +630,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Be Merciful to Me, O God",
-          "title": "Be Merciful to Me, O God",
-          "status": "needs-translation"
+          "title": "Sé misericordioso conmigo, oh Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -641,8 +641,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "In You My Soul Takes Refuge",
-          "title": "In You My Soul Takes Refuge",
-          "status": "needs-translation"
+          "title": "En ti mi alma toma refugio",
+          "status": "machine-translated"
         }
       ]
     },
@@ -652,8 +652,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "God Judges the Earth",
-          "title": "God Judges the Earth",
-          "status": "needs-translation"
+          "title": "Dios juzga la Tierra",
+          "status": "machine-translated"
         }
       ]
     },
@@ -663,8 +663,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Deliver Me from My Enemies",
-          "title": "Deliver Me from My Enemies",
-          "status": "needs-translation"
+          "title": "Líbrame de mis enemigos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -674,8 +674,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Victory with God",
-          "title": "Victory with God",
-          "status": "needs-translation"
+          "title": "Victoria con Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -685,8 +685,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "You Have Heard My Vows",
-          "title": "You Have Heard My Vows",
-          "status": "needs-translation"
+          "title": "Has oído mis votos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -696,8 +696,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Waiting on God",
-          "title": "Waiting on God",
-          "status": "needs-translation"
+          "title": "Esperando a Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -707,8 +707,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Thirsting for God",
-          "title": "Thirsting for God",
-          "status": "needs-translation"
+          "title": "Ladrones por Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -718,8 +718,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Hurtful Tongue",
-          "title": "The Hurtful Tongue",
-          "status": "needs-translation"
+          "title": "El Lenguaje Hurto",
+          "status": "machine-translated"
         }
       ]
     },
@@ -729,8 +729,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Praise Awaits God in Zion",
-          "title": "Praise Awaits God in Zion",
-          "status": "needs-translation"
+          "title": "Elogio espera a Dios en Sión",
+          "status": "machine-translated"
         }
       ]
     },
@@ -740,8 +740,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Make a Joyful Noise",
-          "title": "Make a Joyful Noise",
-          "status": "needs-translation"
+          "title": "Hacer un ruido alegre",
+          "status": "machine-translated"
         }
       ]
     },
@@ -751,8 +751,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "May God Cause His Face to Shine upon Us",
-          "title": "May God Cause His Face to Shine upon Us",
-          "status": "needs-translation"
+          "title": "Que Dios haga brillar su rostro sobre nosotros",
+          "status": "machine-translated"
         }
       ]
     },
@@ -762,8 +762,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "God’s Enemies Are Scattered",
-          "title": "God’s Enemies Are Scattered",
-          "status": "needs-translation"
+          "title": "Los enemigos de Dios están estafados",
+          "status": "machine-translated"
         }
       ]
     },
@@ -773,8 +773,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Waters Are up to My Neck",
-          "title": "The Waters Are up to My Neck",
-          "status": "needs-translation"
+          "title": "Las Aguas están a Mi Cuello",
+          "status": "machine-translated"
         }
       ]
     },
@@ -784,8 +784,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Hurry, O LORD, to Help Me!",
-          "title": "Hurry, O LORD, to Help Me!",
-          "status": "needs-translation"
+          "title": "¡Deprisa, Señor, para ayudarme!",
+          "status": "machine-translated"
         }
       ]
     },
@@ -795,8 +795,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Be My Rock of Refuge",
-          "title": "Be My Rock of Refuge",
-          "status": "needs-translation"
+          "title": "Sé mi roca de refugio",
+          "status": "machine-translated"
         }
       ]
     },
@@ -806,8 +806,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Endow the King with Your Justice",
-          "title": "Endow the King with Your Justice",
-          "status": "needs-translation"
+          "title": "Dotar al Rey con Su Justicia",
+          "status": "machine-translated"
         }
       ]
     },
@@ -817,14 +817,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "BOOK III",
-          "title": "BOOK III",
-          "status": "needs-translation"
+          "title": "RESERVA III",
+          "status": "machine-translated"
         },
         {
           "startVerse": 1,
           "sourceTitle": "Surely God Is Good to Israel",
-          "title": "Surely God Is Good to Israel",
-          "status": "needs-translation"
+          "title": "Ciertamente Dios es bueno para Israel",
+          "status": "machine-translated"
         }
       ]
     },
@@ -834,8 +834,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Why Have You Rejected Us Forever?",
-          "title": "Why Have You Rejected Us Forever?",
-          "status": "needs-translation"
+          "title": "¿Por qué nos rechazaste para siempre?",
+          "status": "machine-translated"
         }
       ]
     },
@@ -845,8 +845,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "God’s Righteous Judgment",
-          "title": "God’s Righteous Judgment",
-          "status": "needs-translation"
+          "title": "Juicio justo de Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -856,8 +856,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "God’s Name Is Great in Israel",
-          "title": "God’s Name Is Great in Israel",
-          "status": "needs-translation"
+          "title": "El nombre de Dios es grande en Israel",
+          "status": "machine-translated"
         }
       ]
     },
@@ -867,8 +867,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "In the Day of Trouble I Sought the Lord",
-          "title": "In the Day of Trouble I Sought the Lord",
-          "status": "needs-translation"
+          "title": "En el Día de los Problemas I Sought the Lord",
+          "status": "machine-translated"
         }
       ]
     },
@@ -878,8 +878,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Will Open My Mouth in Parables",
-          "title": "I Will Open My Mouth in Parables",
-          "status": "needs-translation"
+          "title": "Abriré mi boca en parábolas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -889,8 +889,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Prayer for Deliverance",
-          "title": "A Prayer for Deliverance",
-          "status": "needs-translation"
+          "title": "Una oración por la liberación",
+          "status": "machine-translated"
         }
       ]
     },
@@ -900,8 +900,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Hear Us, O Shepherd of Israel",
-          "title": "Hear Us, O Shepherd of Israel",
-          "status": "needs-translation"
+          "title": "Oídnos, oh Pastor de Israel",
+          "status": "machine-translated"
         }
       ]
     },
@@ -911,8 +911,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Sing for Joy to God Our Strength",
-          "title": "Sing for Joy to God Our Strength",
-          "status": "needs-translation"
+          "title": "Cantar por la alegría a Dios Nuestra fuerza",
+          "status": "machine-translated"
         }
       ]
     },
@@ -922,8 +922,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "God Presides in the Divine Assembly",
-          "title": "God Presides in the Divine Assembly",
-          "status": "needs-translation"
+          "title": "Dios preside en la Asamblea Divina",
+          "status": "machine-translated"
         }
       ]
     },
@@ -933,8 +933,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "O God, Be Not Silent",
-          "title": "O God, Be Not Silent",
-          "status": "needs-translation"
+          "title": "Dios, no seas silencioso",
+          "status": "machine-translated"
         }
       ]
     },
@@ -944,8 +944,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Better Is One Day in Your Courts",
-          "title": "Better Is One Day in Your Courts",
-          "status": "needs-translation"
+          "title": "Mejor es un día en sus tribunales",
+          "status": "machine-translated"
         }
       ]
     },
@@ -955,8 +955,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "You Showed Favor to Your Land",
-          "title": "You Showed Favor to Your Land",
-          "status": "needs-translation"
+          "title": "Usted mostró favor a su tierra",
+          "status": "machine-translated"
         }
       ]
     },
@@ -966,8 +966,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Tried but Trusting",
-          "title": "Tried but Trusting",
-          "status": "needs-translation"
+          "title": "Tried pero Trusting",
+          "status": "machine-translated"
         }
       ]
     },
@@ -977,8 +977,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Loves the Gates of Zion",
-          "title": "The LORD Loves the Gates of Zion",
-          "status": "needs-translation"
+          "title": "El Señor ama las puertas de Sión",
+          "status": "machine-translated"
         }
       ]
     },
@@ -988,8 +988,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Cry Out before You",
-          "title": "I Cry Out before You",
-          "status": "needs-translation"
+          "title": "Lloro ante ti",
+          "status": "machine-translated"
         }
       ]
     },
@@ -999,8 +999,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Will Sing of His Love Forever",
-          "title": "I Will Sing of His Love Forever",
-          "status": "needs-translation"
+          "title": "Cantaré su amor para siempre.",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1010,14 +1010,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "BOOK IV",
-          "title": "BOOK IV",
-          "status": "needs-translation"
+          "title": "RESERVA IV",
+          "status": "machine-translated"
         },
         {
           "startVerse": 1,
           "sourceTitle": "From Everlasting to Everlasting",
-          "title": "From Everlasting to Everlasting",
-          "status": "needs-translation"
+          "title": "De Everlasting a Everlasting",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1027,8 +1027,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "You Are My Refuge and My Fortress",
-          "title": "You Are My Refuge and My Fortress",
-          "status": "needs-translation"
+          "title": "Tú eres mi refugio y mi fortaleza",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1038,8 +1038,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "How Great Are Your Works!",
-          "title": "How Great Are Your Works!",
-          "status": "needs-translation"
+          "title": "¡Qué grande son tus obras!",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1049,8 +1049,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Reigns!",
-          "title": "The LORD Reigns!",
-          "status": "needs-translation"
+          "title": "¡El Señor Reina!",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1060,8 +1060,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Will Not Forget His People",
-          "title": "The LORD Will Not Forget His People",
-          "status": "needs-translation"
+          "title": "El Señor no olvidará a su pueblo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1071,8 +1071,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Do Not Harden Your Hearts",
-          "title": "Do Not Harden Your Hearts",
-          "status": "needs-translation"
+          "title": "No endurezcan sus corazones",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1082,8 +1082,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Sing to the LORD, All the Earth",
-          "title": "Sing to the LORD, All the Earth",
-          "status": "needs-translation"
+          "title": "Cantad al Señor, toda la tierra",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1093,8 +1093,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Let the Earth Rejoice",
-          "title": "Let the Earth Rejoice",
-          "status": "needs-translation"
+          "title": "Que la Tierra se regocije",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1104,8 +1104,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Sing to the LORD a New Song",
-          "title": "Sing to the LORD a New Song",
-          "status": "needs-translation"
+          "title": "Canta al Señor una nueva canción",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1115,8 +1115,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Reigns!",
-          "title": "The LORD Reigns!",
-          "status": "needs-translation"
+          "title": "¡El Señor Reina!",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1126,8 +1126,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Make a Joyful Noise",
-          "title": "Make a Joyful Noise",
-          "status": "needs-translation"
+          "title": "Hacer un ruido alegre",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1137,8 +1137,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Will Set No Worthless Thing before My Eyes",
-          "title": "I Will Set No Worthless Thing before My Eyes",
-          "status": "needs-translation"
+          "title": "No voy a establecer ninguna cosa sin valor antes de mis ojos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1148,8 +1148,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Prayer of the Afflicted",
-          "title": "The Prayer of the Afflicted",
-          "status": "needs-translation"
+          "title": "La Oración de los Afligidos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1159,8 +1159,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Bless the LORD, O My Soul",
-          "title": "Bless the LORD, O My Soul",
-          "status": "needs-translation"
+          "title": "Bendice al Señor, Mi alma",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1170,8 +1170,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "How Many Are Your Works, O LORD!",
-          "title": "How Many Are Your Works, O LORD!",
-          "status": "needs-translation"
+          "title": "¡Cuántos son tus obras, Señor!",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1181,8 +1181,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Tell of His Wonders",
-          "title": "Tell of His Wonders",
-          "status": "needs-translation"
+          "title": "Cuento de Sus Maravillas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1192,8 +1192,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Give Thanks to the LORD, for He Is Good",
-          "title": "Give Thanks to the LORD, for He Is Good",
-          "status": "needs-translation"
+          "title": "Da gracias al Señor, porque es bueno",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1203,14 +1203,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "BOOK V",
-          "title": "BOOK V",
-          "status": "needs-translation"
+          "title": "RESERVA V",
+          "status": "machine-translated"
         },
         {
           "startVerse": 1,
           "sourceTitle": "Thanksgiving for Deliverance",
-          "title": "Thanksgiving for Deliverance",
-          "status": "needs-translation"
+          "title": "Acción de Gracias por la liberación",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1220,8 +1220,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Israel’s Kingdom Blessing",
-          "title": "Israel’s Kingdom Blessing",
-          "status": "needs-translation"
+          "title": "Bendición del Reino de Israel",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1231,8 +1231,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Song of the Slandered",
-          "title": "The Song of the Slandered",
-          "status": "needs-translation"
+          "title": "La canción de los calumniados",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1242,8 +1242,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "God’s Faithful Messiah",
-          "title": "God’s Faithful Messiah",
-          "status": "needs-translation"
+          "title": "El Mesías fiel de Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1253,8 +1253,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Majestic Is His Work",
-          "title": "Majestic Is His Work",
-          "status": "needs-translation"
+          "title": "Majestic es su trabajo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1264,8 +1264,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Blessed Fear of the LORD",
-          "title": "The Blessed Fear of the LORD",
-          "status": "needs-translation"
+          "title": "El Miedo Bendito del Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1275,8 +1275,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Exalts the Humble",
-          "title": "The LORD Exalts the Humble",
-          "status": "needs-translation"
+          "title": "El Señor exalta el Humble",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1286,8 +1286,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Psalm of Exodus",
-          "title": "A Psalm of Exodus",
-          "status": "needs-translation"
+          "title": "Un salmo del éxodo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1297,8 +1297,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "To Your Name Be the Glory",
-          "title": "To Your Name Be the Glory",
-          "status": "needs-translation"
+          "title": "A su nombre Sea la Gloria",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1308,8 +1308,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Has Heard My Voice",
-          "title": "The LORD Has Heard My Voice",
-          "status": "needs-translation"
+          "title": "El Señor ha escuchado mi voz",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1320,7 +1320,7 @@
           "startVerse": 1,
           "sourceTitle": "Extol Him, All You Peoples",
           "title": "Extol Him, All You Peoples",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     },
@@ -1330,8 +1330,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Is on My Side",
-          "title": "The LORD Is on My Side",
-          "status": "needs-translation"
+          "title": "El Señor está en mi lado",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1341,8 +1341,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Your Word Is a Lamp to My Feet",
-          "title": "Your Word Is a Lamp to My Feet",
-          "status": "needs-translation"
+          "title": "Tu palabra es una lámpara a mis pies",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1352,8 +1352,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "In My Distress I Cried to the LORD",
-          "title": "In My Distress I Cried to the LORD",
-          "status": "needs-translation"
+          "title": "En mi angustia Crié al Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1363,8 +1363,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Lift Up My Eyes to the Hills",
-          "title": "I Lift Up My Eyes to the Hills",
-          "status": "needs-translation"
+          "title": "Levanto los ojos a las colinas",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1374,8 +1374,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Pray for the Peace of Jerusalem",
-          "title": "Pray for the Peace of Jerusalem",
-          "status": "needs-translation"
+          "title": "Orad por la Paz de Jerusalén",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1385,8 +1385,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Lift Up My Eyes to You",
-          "title": "I Lift Up My Eyes to You",
-          "status": "needs-translation"
+          "title": "Levanto los ojos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1396,8 +1396,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Our Help Is in the Name of the LORD",
-          "title": "Our Help Is in the Name of the LORD",
-          "status": "needs-translation"
+          "title": "Nuestra ayuda Está en el nombre del Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1407,8 +1407,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Surrounds His People",
-          "title": "The LORD Surrounds His People",
-          "status": "needs-translation"
+          "title": "El Señor rodea a su pueblo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1418,8 +1418,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Zion’s Captives Restored",
-          "title": "Zion’s Captives Restored",
-          "status": "needs-translation"
+          "title": "Los prisioneros de Sión restaurados",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1429,8 +1429,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Children Are a Heritage from the LORD",
-          "title": "Children Are a Heritage from the LORD",
-          "status": "needs-translation"
+          "title": "Los hijos son un patrimonio del Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1440,8 +1440,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Blessed Fear of the LORD",
-          "title": "The Blessed Fear of the LORD",
-          "status": "needs-translation"
+          "title": "El Miedo Bendito del Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1451,8 +1451,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Cords of the Wicked",
-          "title": "The Cords of the Wicked",
-          "status": "needs-translation"
+          "title": "Los cordones de los Wicked",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1462,8 +1462,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Out of the Depths",
-          "title": "Out of the Depths",
-          "status": "needs-translation"
+          "title": "Fuera de las profundidades",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1473,8 +1473,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Have Stilled My Soul",
-          "title": "I Have Stilled My Soul",
-          "status": "needs-translation"
+          "title": "He seguido mi alma",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1484,8 +1484,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Has Chosen Zion",
-          "title": "The LORD Has Chosen Zion",
-          "status": "needs-translation"
+          "title": "El Señor ha elegido a Sión",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1495,8 +1495,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "How Pleasant to Live in Harmony!",
-          "title": "How Pleasant to Live in Harmony!",
-          "status": "needs-translation"
+          "title": "¡Qué agradable vivir en armonía!",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1506,8 +1506,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Bless the LORD, All You Servants",
-          "title": "Bless the LORD, All You Servants",
-          "status": "needs-translation"
+          "title": "Bendice al Señor, todos los siervos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1517,8 +1517,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Give Praise, O Servants of the LORD",
-          "title": "Give Praise, O Servants of the LORD",
-          "status": "needs-translation"
+          "title": "Da alabanzas, siervos del Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1528,8 +1528,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "His Loving Devotion Endures Forever",
-          "title": "His Loving Devotion Endures Forever",
-          "status": "needs-translation"
+          "title": "Sus Dotaciones de Devoción Amantísimas para siempre",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1539,8 +1539,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "By the Rivers of Babylon",
-          "title": "By the Rivers of Babylon",
-          "status": "needs-translation"
+          "title": "Por los ríos de Babilonia",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1550,8 +1550,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Thankful Heart",
-          "title": "A Thankful Heart",
-          "status": "needs-translation"
+          "title": "Un corazón agradecido",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1561,8 +1561,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "You Have Searched Me and Known Me",
-          "title": "You Have Searched Me and Known Me",
-          "status": "needs-translation"
+          "title": "Me has buscado y me has conocido",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1572,8 +1572,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Rescue Me from Evil Men",
-          "title": "Rescue Me from Evil Men",
-          "status": "needs-translation"
+          "title": "Rescate Me de Hombres Malignos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1583,8 +1583,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Come Quickly to Me",
-          "title": "Come Quickly to Me",
-          "status": "needs-translation"
+          "title": "Ven rápido a mí",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1594,8 +1594,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Lift My Voice to the LORD",
-          "title": "I Lift My Voice to the LORD",
-          "status": "needs-translation"
+          "title": "Levanto mi voz al Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1605,8 +1605,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Stretch Out My Hands to You",
-          "title": "I Stretch Out My Hands to You",
-          "status": "needs-translation"
+          "title": "Te estrangulo las manos.",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1616,8 +1616,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Blessed Be the LORD, My Rock",
-          "title": "Blessed Be the LORD, My Rock",
-          "status": "needs-translation"
+          "title": "Bendito sea el Señor, Mi Roca",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1627,8 +1627,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "I Will Exalt You, My God and King",
-          "title": "I Will Exalt You, My God and King",
-          "status": "needs-translation"
+          "title": "Te exalto, Mi Dios y Rey",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1638,8 +1638,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Praise the LORD, O My Soul",
-          "title": "Praise the LORD, O My Soul",
-          "status": "needs-translation"
+          "title": "Alabado sea el Señor, Mi alma",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1649,8 +1649,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "It Is Good to Sing Praises",
-          "title": "It Is Good to Sing Praises",
-          "status": "needs-translation"
+          "title": "Es bueno para las alabanzas del canto",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1660,8 +1660,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Praise the LORD from the Heavens",
-          "title": "Praise the LORD from the Heavens",
-          "status": "needs-translation"
+          "title": "Alabado sea Jehová desde los cielos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1671,8 +1671,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Sing to the LORD a New Song",
-          "title": "Sing to the LORD a New Song",
-          "status": "needs-translation"
+          "title": "Canta al Señor una nueva canción",
+          "status": "machine-translated"
         }
       ]
     },
@@ -1682,8 +1682,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Let Everything That Has Breath Praise the LORD",
-          "title": "Let Everything That Has Breath Praise the LORD",
-          "status": "needs-translation"
+          "title": "Que todo lo que tiene aliento Alaba al Señor",
+          "status": "machine-translated"
         }
       ]
     }

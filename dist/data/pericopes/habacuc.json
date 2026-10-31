@@ -13,20 +13,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Habakkuk’s First Complaint",
-          "title": "Habakkuk’s First Complaint",
-          "status": "needs-translation"
+          "title": "Primera queja de Habakkuk",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "The LORD’s Answer",
-          "title": "The LORD’s Answer",
-          "status": "needs-translation"
+          "title": "Respuesta del Señor",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Habakkuk’s Second Complaint",
-          "title": "Habakkuk’s Second Complaint",
-          "status": "needs-translation"
+          "title": "Segunda queja de Habakkuk",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,14 +36,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The LORD Answers Again",
-          "title": "The LORD Answers Again",
-          "status": "needs-translation"
+          "title": "El Señor responde de nuevo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Woe to the Chaldeans",
-          "title": "Woe to the Chaldeans",
-          "status": "needs-translation"
+          "title": "Ay de los caldeos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -53,14 +53,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Habakkuk’s Prayer",
-          "title": "Habakkuk’s Prayer",
-          "status": "needs-translation"
+          "title": "La oración de Habakkuk",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Habakkuk Rejoices",
           "title": "Habakkuk Rejoices",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     }

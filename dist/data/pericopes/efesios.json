@@ -13,20 +13,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Greeting to the Ephesians",
-          "title": "Paul’s Greeting to the Ephesians",
-          "status": "needs-translation"
+          "title": "El saludo de Pablo a los Efesios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 3,
           "sourceTitle": "Spiritual Blessings",
-          "title": "Spiritual Blessings",
-          "status": "needs-translation"
+          "title": "Bendiciones espirituales",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "Spiritual Wisdom",
-          "title": "Spiritual Wisdom",
-          "status": "needs-translation"
+          "title": "Sabiduría espiritual",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,20 +36,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Alive with Christ",
-          "title": "Alive with Christ",
-          "status": "needs-translation"
+          "title": "Vivo con Cristo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "One in Christ",
-          "title": "One in Christ",
-          "status": "needs-translation"
+          "title": "Uno en Cristo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "Christ Our Cornerstone",
-          "title": "Christ Our Cornerstone",
-          "status": "needs-translation"
+          "title": "Cristo Nuestra Cornerstone",
+          "status": "machine-translated"
         }
       ]
     },
@@ -59,14 +59,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Mystery of the Gospel",
-          "title": "The Mystery of the Gospel",
-          "status": "needs-translation"
+          "title": "El misterio del Evangelio",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Paul’s Prayer for the Ephesians",
-          "title": "Paul’s Prayer for the Ephesians",
-          "status": "needs-translation"
+          "title": "La oración de Pablo por los Efesios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -76,14 +76,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Unity in the Body",
-          "title": "Unity in the Body",
-          "status": "needs-translation"
+          "title": "Unidad en el Cuerpo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "New Life in Christ",
-          "title": "New Life in Christ",
-          "status": "needs-translation"
+          "title": "Nueva vida en Cristo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -93,20 +93,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Imitators of God",
-          "title": "Imitators of God",
-          "status": "needs-translation"
+          "title": "Imitadores de Dios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "Children of Light",
-          "title": "Children of Light",
-          "status": "needs-translation"
+          "title": "Hijos de la Luz",
+          "status": "machine-translated"
         },
         {
           "startVerse": 21,
           "sourceTitle": "Wives and Husbands",
-          "title": "Wives and Husbands",
-          "status": "needs-translation"
+          "title": "Esposas y maridos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -116,26 +116,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Children and Parents",
-          "title": "Children and Parents",
-          "status": "needs-translation"
+          "title": "Niños y padres",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "Serving with Honor",
-          "title": "Serving with Honor",
-          "status": "needs-translation"
+          "title": "Servir con honor",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "The Full Armor of God",
-          "title": "The Full Armor of God",
-          "status": "needs-translation"
+          "title": "La Armadura Llena de Dios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 21,
           "sourceTitle": "Final Greetings",
-          "title": "Final Greetings",
-          "status": "needs-translation"
+          "title": "Saludos finales",
+          "status": "machine-translated"
         }
       ]
     }

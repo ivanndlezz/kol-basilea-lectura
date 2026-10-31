@@ -13,26 +13,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "A Greeting from Peter",
-          "title": "A Greeting from Peter",
-          "status": "needs-translation"
+          "title": "Un saludo de Pedro",
+          "status": "machine-translated"
         },
         {
           "startVerse": 3,
           "sourceTitle": "A Living Hope",
-          "title": "A Living Hope",
-          "status": "needs-translation"
+          "title": "Una esperanza viva",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "A Call to Holiness",
-          "title": "A Call to Holiness",
-          "status": "needs-translation"
+          "title": "Un llamado a la santidad",
+          "status": "machine-translated"
         },
         {
           "startVerse": 22,
           "sourceTitle": "The Enduring Word",
-          "title": "The Enduring Word",
-          "status": "needs-translation"
+          "title": "La palabra duradera",
+          "status": "machine-translated"
         }
       ]
     },
@@ -43,19 +43,19 @@
           "startVerse": 1,
           "sourceTitle": "The Living Stone and Chosen People",
           "title": "The Living Stone and Chosen People",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 13,
           "sourceTitle": "Submission to Authorities",
           "title": "Submission to Authorities",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 21,
           "sourceTitle": "Christ’s Example of Suffering",
-          "title": "Christ’s Example of Suffering",
-          "status": "needs-translation"
+          "title": "Ejemplo de sufrimiento de Cristo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -65,20 +65,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Wives and Husbands",
-          "title": "Wives and Husbands",
-          "status": "needs-translation"
+          "title": "Esposas y maridos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "Turning from Evil",
-          "title": "Turning from Evil",
-          "status": "needs-translation"
+          "title": "Volviendo del mal",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "Suffering for Righteousness",
-          "title": "Suffering for Righteousness",
-          "status": "needs-translation"
+          "title": "Sufrimiento por la justicia",
+          "status": "machine-translated"
         }
       ]
     },
@@ -88,14 +88,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Living for God’s Glory",
-          "title": "Living for God’s Glory",
-          "status": "needs-translation"
+          "title": "Vivir para la Gloria de Dios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Suffering as Christians",
-          "title": "Suffering as Christians",
-          "status": "needs-translation"
+          "title": "Sufrir como cristianos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -105,20 +105,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Instructions to Elders",
-          "title": "Instructions to Elders",
-          "status": "needs-translation"
+          "title": "Instrucciones a los Ancianos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "Cast Your Cares on Him",
-          "title": "Cast Your Cares on Him",
-          "status": "needs-translation"
+          "title": "Cast Your Cares on him",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Benediction and Farewell",
           "title": "Benediction and Farewell",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     }

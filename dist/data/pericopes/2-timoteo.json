@@ -13,20 +13,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Greeting to Timothy",
-          "title": "Paul’s Greeting to Timothy",
-          "status": "needs-translation"
+          "title": "Paul saluda a Timothy",
+          "status": "machine-translated"
         },
         {
           "startVerse": 3,
           "sourceTitle": "Faithfulness under Persecution",
-          "title": "Faithfulness under Persecution",
-          "status": "needs-translation"
+          "title": "Fidelidad bajo la persecución",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "Holding to Sound Teaching",
-          "title": "Holding to Sound Teaching",
-          "status": "needs-translation"
+          "title": "Mantener la Enseñanza Sonora",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,14 +36,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Grace and Perseverance",
-          "title": "Grace and Perseverance",
-          "status": "needs-translation"
+          "title": "Gracia y perseverancia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 14,
           "sourceTitle": "The Lord’s Approved Workman",
-          "title": "The Lord’s Approved Workman",
-          "status": "needs-translation"
+          "title": "El hombre de trabajo aprobado del Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -53,14 +53,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Evil in the Last Days",
-          "title": "Evil in the Last Days",
-          "status": "needs-translation"
+          "title": "Mal en los últimos días",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "All Scripture Is God-Breathed",
-          "title": "All Scripture Is God-Breathed",
-          "status": "needs-translation"
+          "title": "Todas las Escrituras están prometidas por Dios",
+          "status": "machine-translated"
         }
       ]
     },
@@ -70,26 +70,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Preach the Word",
-          "title": "Preach the Word",
-          "status": "needs-translation"
+          "title": "Predicar la Palabra",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "Personal Concerns",
-          "title": "Personal Concerns",
-          "status": "needs-translation"
+          "title": "Preocupaciones personales",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "The Lord Remains Faithful",
-          "title": "The Lord Remains Faithful",
-          "status": "needs-translation"
+          "title": "El Señor permanece fiel",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "Final Greetings",
-          "title": "Final Greetings",
-          "status": "needs-translation"
+          "title": "Saludos finales",
+          "status": "machine-translated"
         }
       ]
     }

@@ -13,20 +13,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Naomi Becomes a Widow",
-          "title": "Naomi Becomes a Widow",
-          "status": "needs-translation"
+          "title": "Naomi se convierte en viuda",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Ruth’s Loyalty to Naomi",
-          "title": "Ruth’s Loyalty to Naomi",
-          "status": "needs-translation"
+          "title": "La lealtad de Ruth a Naomi",
+          "status": "machine-translated"
         },
         {
           "startVerse": 19,
           "sourceTitle": "The Return to Bethlehem",
-          "title": "The Return to Bethlehem",
-          "status": "needs-translation"
+          "title": "El regreso a Belén",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,8 +36,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Boaz Meets Ruth",
-          "title": "Boaz Meets Ruth",
-          "status": "needs-translation"
+          "title": "Boaz se reúne con Ruth",
+          "status": "machine-translated"
         }
       ]
     },
@@ -47,8 +47,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Ruth’s Redemption Assured",
-          "title": "Ruth’s Redemption Assured",
-          "status": "needs-translation"
+          "title": "Seguro de Redención de Ruth",
+          "status": "machine-translated"
         }
       ]
     },
@@ -59,19 +59,19 @@
           "startVerse": 1,
           "sourceTitle": "Boaz Redeems Ruth",
           "title": "Boaz Redeems Ruth",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 13,
           "sourceTitle": "Boaz Marries Ruth",
           "title": "Boaz Marries Ruth",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 18,
           "sourceTitle": "The Line of David",
-          "title": "The Line of David",
-          "status": "needs-translation"
+          "title": "La Línea de David",
+          "status": "machine-translated"
         }
       ]
     }

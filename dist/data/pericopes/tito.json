@@ -13,20 +13,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Greeting to Titus",
-          "title": "Paul’s Greeting to Titus",
-          "status": "needs-translation"
+          "title": "Paul saluda a Titus",
+          "status": "machine-translated"
         },
         {
           "startVerse": 5,
           "sourceTitle": "Appointing Elders on Crete",
-          "title": "Appointing Elders on Crete",
-          "status": "needs-translation"
+          "title": "Designación de ancianos en Creta",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Correcting False Teachers",
-          "title": "Correcting False Teachers",
-          "status": "needs-translation"
+          "title": "Corregir maestros falsos",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,14 +36,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Teaching Sound Doctrine",
-          "title": "Teaching Sound Doctrine",
-          "status": "needs-translation"
+          "title": "Doctrina de Sonido",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "God’s Grace Brings Salvation",
-          "title": "God’s Grace Brings Salvation",
-          "status": "needs-translation"
+          "title": "La gracia de Dios trae salvación",
+          "status": "machine-translated"
         }
       ]
     },
@@ -53,20 +53,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Heirs of Grace",
-          "title": "Heirs of Grace",
-          "status": "needs-translation"
+          "title": "Herederos de la Gracia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 9,
           "sourceTitle": "Avoid Divisions",
-          "title": "Avoid Divisions",
-          "status": "needs-translation"
+          "title": "Evitar divisiones",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Final Remarks and Greetings",
-          "title": "Final Remarks and Greetings",
-          "status": "needs-translation"
+          "title": "Observaciones finales y saludos",
+          "status": "machine-translated"
         }
       ]
     }

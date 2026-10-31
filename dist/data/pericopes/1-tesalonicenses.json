@@ -13,8 +13,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Greetings to the Thessalonians",
-          "title": "Greetings to the Thessalonians",
-          "status": "needs-translation"
+          "title": "Saludos a los tesalonicenses",
+          "status": "machine-translated"
         }
       ]
     },
@@ -24,14 +24,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Ministry",
-          "title": "Paul’s Ministry",
-          "status": "needs-translation"
+          "title": "Ministerio de Paul",
+          "status": "machine-translated"
         },
         {
           "startVerse": 17,
           "sourceTitle": "Paul’s Longing to Visit",
-          "title": "Paul’s Longing to Visit",
-          "status": "needs-translation"
+          "title": "Paul está deseando visitar",
+          "status": "machine-translated"
         }
       ]
     },
@@ -41,14 +41,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Timothy’s Visit",
-          "title": "Timothy’s Visit",
-          "status": "needs-translation"
+          "title": "Visita de Timothy",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "Timothy’s Encouraging Report",
-          "title": "Timothy’s Encouraging Report",
-          "status": "needs-translation"
+          "title": "Timothy Encouraging Report",
+          "status": "machine-translated"
         }
       ]
     },
@@ -58,14 +58,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Living to Please God",
-          "title": "Living to Please God",
-          "status": "needs-translation"
+          "title": "Vivir para Por favor Dios",
+          "status": "machine-translated"
         },
         {
           "startVerse": 13,
           "sourceTitle": "The Return of the Lord",
-          "title": "The Return of the Lord",
-          "status": "needs-translation"
+          "title": "El retorno del Señor",
+          "status": "machine-translated"
         }
       ]
     },
@@ -75,20 +75,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Day of the Lord",
-          "title": "The Day of the Lord",
-          "status": "needs-translation"
+          "title": "El Día del Señor",
+          "status": "machine-translated"
         },
         {
           "startVerse": 12,
           "sourceTitle": "Christian Living",
           "title": "Christian Living",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         },
         {
           "startVerse": 23,
           "sourceTitle": "Final Blessings and Instructions",
-          "title": "Final Blessings and Instructions",
-          "status": "needs-translation"
+          "title": "Bendiciones e instrucciones finales",
+          "status": "machine-translated"
         }
       ]
     }

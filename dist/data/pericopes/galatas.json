@@ -13,20 +13,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Paul’s Greeting to the Galatians",
-          "title": "Paul’s Greeting to the Galatians",
-          "status": "needs-translation"
+          "title": "Pablo saluda a los Gálatas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 6,
           "sourceTitle": "No Other Gospel",
-          "title": "No Other Gospel",
-          "status": "needs-translation"
+          "title": "No Otro Evangelio",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Paul Preaches the Gospel",
-          "title": "Paul Preaches the Gospel",
-          "status": "needs-translation"
+          "title": "Pablo predica el Evangelio",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,14 +36,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Council at Jerusalem",
-          "title": "The Council at Jerusalem",
-          "status": "needs-translation"
+          "title": "El Consejo en Jerusalén",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Paul Confronts Cephas",
           "title": "Paul Confronts Cephas",
-          "status": "needs-translation"
+          "status": "needs-editorial-translation"
         }
       ]
     },
@@ -53,26 +53,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Faith and Belief",
-          "title": "Faith and Belief",
-          "status": "needs-translation"
+          "title": "Fe y creencia",
+          "status": "machine-translated"
         },
         {
           "startVerse": 10,
           "sourceTitle": "Christ Has Redeemed Us",
-          "title": "Christ Has Redeemed Us",
-          "status": "needs-translation"
+          "title": "Cristo nos ha redimido",
+          "status": "machine-translated"
         },
         {
           "startVerse": 15,
           "sourceTitle": "The Purpose of the Law",
-          "title": "The Purpose of the Law",
-          "status": "needs-translation"
+          "title": "El propósito de la ley",
+          "status": "machine-translated"
         },
         {
           "startVerse": 26,
           "sourceTitle": "Sons through Faith in Christ",
-          "title": "Sons through Faith in Christ",
-          "status": "needs-translation"
+          "title": "Hijos a través de la fe en Cristo",
+          "status": "machine-translated"
         }
       ]
     },
@@ -82,20 +82,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Sons and Heirs",
-          "title": "Sons and Heirs",
-          "status": "needs-translation"
+          "title": "Hijos y herederos",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "Paul’s Concern for the Galatians",
-          "title": "Paul’s Concern for the Galatians",
-          "status": "needs-translation"
+          "title": "La preocupación de Pablo por los Gálatas",
+          "status": "machine-translated"
         },
         {
           "startVerse": 21,
           "sourceTitle": "Hagar and Sarah",
-          "title": "Hagar and Sarah",
-          "status": "needs-translation"
+          "title": "Hagar y Sarah",
+          "status": "machine-translated"
         }
       ]
     },
@@ -105,14 +105,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Freedom in Christ",
-          "title": "Freedom in Christ",
-          "status": "needs-translation"
+          "title": "Libertad en Cristo",
+          "status": "machine-translated"
         },
         {
           "startVerse": 16,
           "sourceTitle": "Walking by the Spirit",
-          "title": "Walking by the Spirit",
-          "status": "needs-translation"
+          "title": "Caminando por el Espíritu",
+          "status": "machine-translated"
         }
       ]
     },
@@ -122,14 +122,14 @@
         {
           "startVerse": 1,
           "sourceTitle": "Carry One Another’s Burdens",
-          "title": "Carry One Another’s Burdens",
-          "status": "needs-translation"
+          "title": "Carry One Another's Burdens",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Final Warnings and Blessings",
-          "title": "Final Warnings and Blessings",
-          "status": "needs-translation"
+          "title": "Advertencias y bendiciones finales",
+          "status": "machine-translated"
         }
       ]
     }

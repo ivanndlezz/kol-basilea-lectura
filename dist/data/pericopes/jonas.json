@@ -13,20 +13,20 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jonah Flees from the LORD",
-          "title": "Jonah Flees from the LORD",
-          "status": "needs-translation"
+          "title": "Jonás Huye del Señor",
+          "status": "machine-translated"
         },
         {
           "startVerse": 4,
           "sourceTitle": "The Great Storm",
-          "title": "The Great Storm",
-          "status": "needs-translation"
+          "title": "La gran tormenta",
+          "status": "machine-translated"
         },
         {
           "startVerse": 11,
           "sourceTitle": "Jonah Cast into the Sea",
-          "title": "Jonah Cast into the Sea",
-          "status": "needs-translation"
+          "title": "Jonás fundido en el mar",
+          "status": "machine-translated"
         }
       ]
     },
@@ -36,8 +36,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jonah’s Prayer",
-          "title": "Jonah’s Prayer",
-          "status": "needs-translation"
+          "title": "Oración de Jonás",
+          "status": "machine-translated"
         }
       ]
     },
@@ -47,8 +47,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "The Ninevites Repent",
-          "title": "The Ninevites Repent",
-          "status": "needs-translation"
+          "title": "Los Ninevites Repent",
+          "status": "machine-translated"
         }
       ]
     },
@@ -58,8 +58,8 @@
         {
           "startVerse": 1,
           "sourceTitle": "Jonah’s Anger at the LORD’s Compassion",
-          "title": "Jonah’s Anger at the LORD’s Compassion",
-          "status": "needs-translation"
+          "title": "El ira de Jonás en la compasión de Jehová",
+          "status": "machine-translated"
         }
       ]
     }

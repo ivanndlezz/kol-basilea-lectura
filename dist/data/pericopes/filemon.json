@@ -13,26 +13,26 @@
         {
           "startVerse": 1,
           "sourceTitle": "Greetings from Paul and Timothy",
-          "title": "Greetings from Paul and Timothy",
-          "status": "needs-translation"
+          "title": "Saludos de Pablo y Timothy",
+          "status": "machine-translated"
         },
         {
           "startVerse": 4,
           "sourceTitle": "Philemon’s Faith and Love",
-          "title": "Philemon’s Faith and Love",
-          "status": "needs-translation"
+          "title": "La fe y el amor de Philemon",
+          "status": "machine-translated"
         },
         {
           "startVerse": 8,
           "sourceTitle": "Paul’s Appeal for Onesimus",
-          "title": "Paul’s Appeal for Onesimus",
-          "status": "needs-translation"
+          "title": "Llamamiento de Pablo para Onesimus",
+          "status": "machine-translated"
         },
         {
           "startVerse": 23,
           "sourceTitle": "Additional Greetings",
-          "title": "Additional Greetings",
-          "status": "needs-translation"
+          "title": "Saludos adicionales",
+          "status": "machine-translated"
         }
       ]
     }
