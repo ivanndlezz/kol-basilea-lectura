@@ -819,3 +819,13 @@ body.kb-navigation-open{overflow:hidden;touch-action:none}
 .reader-page .chapter-panel-header strong,.reader-page .book-info-kicker{color:var(--category-color,var(--brand))}
 .reader-page .reader-reading-fill{background:var(--category-color,var(--brand))}
 .book-info-page .book-info-themes>span{border-color:color-mix(in srgb,var(--category-color,var(--brand)) 38%,var(--line))}
+
+/* Route: sequence numbers are neutral; category is communicated by a labeled tag. */
+.route-row .route-number{color:var(--ink-muted);border:0;background:var(--surface-soft)}
+.route-row.is-done .route-number{background:var(--brand);color:#fff}
+.route-row{grid-template-columns:38px minmax(0,1fr) auto;gap:12px}
+.route-row-content{min-width:0}
+.route-row-side{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:6px;min-width:0}
+.route-category-tag{display:inline-flex;align-items:center;justify-content:center;max-width:130px;min-height:24px;padding:4px 9px;border-radius:999px;background:color-mix(in srgb,var(--category-color,var(--brand)) 15%,var(--surface));border:1px solid color-mix(in srgb,var(--category-color,var(--brand)) 28%,transparent);color:var(--category-color,var(--brand));font-size:11px;font-weight:800;letter-spacing:.01em;white-space:nowrap}
+.route-row .route-status{font-size:11px}
+@media(max-width:390px){.route-row{gap:9px;padding:10px}.route-category-tag{padding:4px 7px;font-size:10px;max-width:105px}}
