@@ -131,7 +131,7 @@ Incluye:
 - libro, capítulo y posición dentro de los 66 libros;
 - introducción “Antes de leer”;
 - video de contexto embebible o placeholder durante el MVP;
-- área de texto bíblico con fuente autorizada;
+- área de texto bíblico con fuente, traducción y licencia visibles;
 - botón “Marcar capítulo X como leído”;
 - lista compacta de todos los capítulos del libro, con estados pendiente, en curso y leído;
 - check visual en cada capítulo completado y contador “X de Y”;
@@ -153,6 +153,10 @@ Para 3 Juan, 2 Juan y 1 Juan se reutiliza como contexto compartido el video ofic
 La UI no carga el iframe al entrar a la pantalla: muestra la miniatura oficial de YouTube con `loading="lazy"` y crea el reproductor `youtube-nocookie` solamente después de una acción explícita de reproducir. El video se reproduce sin descargarlo ni almacenarlo localmente. La tarjeta identifica a Proyecto Biblia, enlaza la fuente y comunica que el reproductor se carga bajo demanda.
 
 El mismo recurso se trata como panorama del conjunto, no como tres videos distintos. En la ruta actual se presenta con especial relevancia al entrar a 3 Juan y queda disponible desde 2 Juan y 1 Juan.
+
+### Fuente bíblica inicial integrada
+
+El lector ya puede mostrar el capítulo 1 de 3 Juan con Reina-Valera 1909, identificada como dominio público y con enlace a la fuente eBible.org. El contenido vive en `dist/data/bible-rvr1909.js` mediante un adaptador que separa la traducción, el capítulo y los metadatos de licencia. Los capítulos aún no integrados muestran un estado de preparación en lugar de texto demostrativo.
 
 ## Componentes visuales
 
@@ -215,6 +219,7 @@ El primer prototipo vive en `dist/` como HTML, CSS y JavaScript sin build step:
 - `dist/index.html`: shell de la aplicación;
 - `dist/styles.css`: tokens, layout, componentes y responsive;
 - `dist/app.js`: navegación, onboarding, ruta, lector, progreso y persistencia local.
+- `dist/data/bible-rvr1909.js`: primera fuente de lectura local y adaptador de contenido bíblico.
 
 Para verlo localmente:
 

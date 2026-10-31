@@ -83,6 +83,8 @@ El usuario debe poder abrir la app, ver el siguiente paso y marcar avance sin na
 
 La app no debe asumir que el texto bíblico puede copiarse o redistribuirse libremente. El MVP puede funcionar con enlaces a una fuente autorizada o con una traducción cuyo permiso esté confirmado. La traducción, los videos y cualquier material editorial deberán registrar su fuente y condiciones de uso.
 
+La primera integración técnica utiliza Reina-Valera 1909 para el capítulo 1 de 3 Juan, identificada como dominio público por eBible.org. Esta integración sirve para validar el lector y no constituye todavía la decisión editorial definitiva para los 66 libros. Cada traducción debe conservar sus metadatos de fuente, licencia y atribución dentro del modelo de contenido.
+
 ## 6. Ruta editorial completa
 
 La siguiente secuencia conserva el orden original de 60 libros aportado en la conversación y añade exactamente seis libros:

@@ -419,6 +419,18 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .reading-copy { max-width: 590px; margin: 0 auto; padding: 10px 0 20px; }
 .reading-copy p { color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: 19px; line-height: 1.72; }
 .reading-note { padding: 14px 16px; border-left: 3px solid var(--gold); border-radius: 0 12px 12px 0; background: var(--gold-soft); color: #704a1e; font-size: 13px; line-height: 1.5; }
+.scripture-passage { padding-top: 20px; }
+.scripture-source { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 24px; padding-bottom: 14px; border-bottom: 1px solid var(--line); color: var(--ink-muted); font-size: 12px; }
+.scripture-source strong, .scripture-source small { display: block; }
+.scripture-source strong { color: var(--ink); font-size: 13px; }
+.scripture-source small { margin-top: 3px; font-size: 11px; }
+.scripture-source a { flex: 0 0 auto; color: var(--brand); font-size: 12px; font-weight: 800; text-decoration: none; }
+.scripture-source a:hover { text-decoration: underline; }
+.verse-list { display: grid; gap: 18px; }
+.scripture-verse { display: grid; grid-template-columns: 25px minmax(0, 1fr); gap: 8px; margin: 0; }
+.scripture-verse sup { padding-top: 5px; color: var(--brand); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; font-size: 11px; font-weight: 800; line-height: 1; }
+.scripture-verse span { min-width: 0; }
+.scripture-attribution { margin-top: 30px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--ink-muted) !important; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif !important; font-size: 11px !important; line-height: 1.45 !important; }
 .reader-footer { position: sticky; bottom: 0; padding: 15px 20px calc(15px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); background: rgba(246, 247, 244, .94); backdrop-filter: blur(16px); }
 
 /* Reader refinements inspired by the supplied reference: quieter chrome, editorial reading space, and explicit display controls. */
@@ -473,6 +485,8 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .reader-context + .chapter-panel { margin-top: 22px; }
 .reader-font-serif p:not(.reading-note) { font-family: Georgia, "Times New Roman", serif; }
 .reader-font-sans p:not(.reading-note) { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; font-size: 17px; line-height: 1.7; }
+.reader-font-sans .scripture-verse { font-size: 17px; line-height: 1.7; }
+.reader-font-sans .scripture-verse sup, .reader-font-sans .scripture-attribution { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif !important; }
 .reading-note { display: flex; align-items: flex-start; gap: 9px; color: var(--ink-muted); }
 .reading-note .lucide-icon { flex: 0 0 auto; margin-top: 1px; color: var(--gold); }
 .reading-note strong { color: var(--ink); }
