@@ -367,18 +367,49 @@ function renderCompilation() {
   return `<main class="screen kb-compilation-page"><header class="route-header"><p class="eyebrow">Personas y Escrituras</p><h1>Recopilación de textos.</h1><p>Los libros, sus fuentes y quienes participaron en su transmisión.</p></header><div class="kb-compilation-count">${ordered.length} historias de transmisión textual</div><div class="kb-compilation-editorial-list">${ordered.map(person=>`<button class="kb-compilation-editorial-card" data-action="open-compiler" data-compiler-id="${person.id}"><span class="kb-compilation-editorial-art">${art(person)}</span><span class="kb-compilation-editorial-copy"><small class="kb-compilation-editorial-kicker" style="${categoryStyle(compilationCategory(person))}">${escapeHtml(person.role)}</small><strong class="kb-compilation-editorial-title">${escapeHtml(compilationBookName(person))}</strong><span class="kb-compilation-editorial-person">${escapeHtml(person.name)}</span><span class="kb-compilation-editorial-source"><span>Fuente de los textos</span><b>${person.id==="escribas-juda"?"Tradición oral de Moisés":escapeHtml(person.source)}</b></span></span><span class="kb-compilation-editorial-chevron">${icon("chevronRight",18)}</span></button>`).join("")}</div><p class="kb-compilation-art-credit">Imágenes: obras de dominio público de Wikimedia Commons. Son representaciones artísticas posteriores, no documentos visuales de los acontecimientos.</p></main>`;
 }
 const AUTHOR_ARTWORKS = {
-  "moises": {file:"Rembrandt - Moses with the Ten Commandments - Google Art Project.jpg",artist:"Rembrandt",work:"Moisés con las tablas de la Ley"},
-  "david": {file:"David Playing the Harp 1670 Jan de Bray.jpg",artist:"Jan de Bray",work:"David tocando el arpa"}
+  moises: "Rembrandt - Moses with the Ten Commandments - Google Art Project.jpg",
+  david: "David Playing the Harp 1670 Jan de Bray.jpg"
 };
-function renderAuthorPortrait(person) {
-  const normalized = person.name.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
-  const collective = /hijos de|escribas|recopiladores|hombres de|autores|grupo|comunidad/i.test(person.name);
-  const artwork = !collective && (AUTHOR_ARTWORKS[person.id] || AUTHOR_ARTWORKS[normalized]);
-  const initial = escapeHtml(person.name.slice(0,1));
-  if (!artwork) return `<span class="kb-author-editorial-initial" aria-hidden="true">${collective ? "✦" : initial}</span>`;
-  const url = "https://commons.wikimedia.org/wiki/Special:FilePath/" + encodeURIComponent(artwork.file) + "?width=320";
-  return `<span class="kb-author-classic-image"><span class="kb-author-editorial-initial" aria-hidden="true">${initial}</span><img class="kb-author-portrait" src="${url}" alt="Representación artística de ${escapeHtml(person.name)} en una obra de ${escapeHtml(artwork.artist)}" loading="lazy" decoding="async" onload="this.parentElement.classList.add('is-loaded')" onerror="this.remove()" /></span>`;
+const artRequestCache = new Map();
+async function resolvePublicDomainArt(query) {
+  if (!artRequestCache.has(query)) artRequestCache.set(query, (async () => {
+    const params = new URLSearchParams({action:"query",generator:"search",gsrsearch:"filetype:bitmap " + query,gsrnamespace:"6",gsrlimit:"12",prop:"imageinfo",iiprop:"url|extmetadata",iiurlwidth:"360",format:"json",origin:"*"});
+    const response = await fetch("https://commons.wikimedia.org/w/api.php?" + params);
+    if (!response.ok) return null;
+    const payload = await response.json();
+    const pages = Object.values(payload.query?.pages || {}).sort((a,b)=>(a.index||99)-(b.index||99));
+    for (const page of pages) {
+      const info = page.imageinfo?.[0], meta = info?.extmetadata || {};
+      const license = (meta.LicenseShortName?.value || "").toLowerCase();
+      const usage = (meta.UsageTerms?.value || "").toLowerCase();
+      if (!info?.thumburl || !/public domain|pd-old|pd-art|cc0|pdm/.test(license+" "+usage)) continue;
+      if (!/\.(jpg|jpeg|png|webp)$/i.test(page.title)) continue;
+      return {url:info.thumburl,page:info.descriptionurl,artist:meta.Artist?.value||"",license:meta.LicenseShortName?.value||"Public domain"};
+    }
+    return null;
+  })().catch(()=>null));
+  return artRequestCache.get(query);
 }
+function renderAuthorPortrait(person) {
+  const initial = escapeHtml(person.name.slice(0,1));
+  const art = person.portrait;
+  if (!art?.query) return `<span class="kb-author-editorial-initial" aria-hidden="true">${initial}</span>`;
+  return `<span class="kb-author-classic-image" data-art-query="${escapeHtml(art.query)}" data-art-id="${escapeHtml(person.id)}"><span class="kb-author-editorial-initial" aria-hidden="true">${person.kind==="collective"?"✦":initial}</span><img class="kb-author-portrait" alt="${escapeHtml(art.alt)}" loading="lazy" decoding="async" hidden /></span>`;
+}
+function hydrateAuthorArtwork() {
+  document.querySelectorAll(".kb-author-classic-image[data-art-query]:not([data-art-started])").forEach(async node => {
+    node.dataset.artStarted = "true";
+    const img = node.querySelector("img");
+    const art = await resolvePublicDomainArt(node.dataset.artQuery);
+    if (!art || !node.isConnected || !img) return;
+    img.onload = () => {img.hidden=false;node.classList.add("is-loaded");};
+    img.onerror = () => {img.hidden=true;};
+    img.src = art.url;
+    node.title = "Arte histórico · " + art.license + " · Wikimedia Commons";
+  });
+}
+const artObserver = new MutationObserver(() => hydrateAuthorArtwork());
+artObserver.observe(document.documentElement,{childList:true,subtree:true});
 
 function renderAuthors() {
   const filters = [["all","Todos"],["Antiguo Testamento","Antiguo Testamento"],["Nuevo Testamento","Nuevo Testamento"],["disputed","Autoría discutida"]];
