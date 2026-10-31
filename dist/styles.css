@@ -60,6 +60,33 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   padding: calc(18px + env(safe-area-inset-top)) 20px 14px;
 }
 
+.breadcrumbs, .reader-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 32px;
+  padding: 0 20px 10px;
+  color: var(--ink-muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.breadcrumb-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 32px;
+  padding: 0 2px;
+  border: 0;
+  background: transparent;
+  color: var(--brand);
+  font-size: inherit;
+  font-weight: 800;
+}
+
+.breadcrumb-separator { display: grid; place-items: center; color: var(--ink-muted); }
+.breadcrumb-current { color: var(--ink); }
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -276,12 +303,14 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .more-row strong { display: block; font-size: 15px; }
 .more-row span { display: block; margin-top: 3px; color: var(--ink-muted); font-size: 12px; }
 
-.reader-topbar { display: flex; align-items: center; gap: 12px; padding: calc(12px + env(safe-area-inset-top)) 16px 12px; }
+.reader-topbar { display: grid; grid-template-columns: minmax(116px, auto) 1fr 44px; align-items: center; gap: 10px; padding: calc(12px + env(safe-area-inset-top)) 16px 8px; }
+.reader-back { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 3px; border: 0; background: transparent; color: var(--brand-dark); font-size: 13px; font-weight: 800; text-align: left; }
 .reader-topbar .icon-button { flex: 0 0 44px; }
 .reader-topbar-copy { min-width: 0; flex: 1; }
 .reader-topbar-copy strong, .reader-topbar-copy span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .reader-topbar-copy strong { font-size: 15px; }
 .reader-topbar-copy span { margin-top: 3px; color: var(--ink-muted); font-size: 12px; }
+.reader-breadcrumbs { padding: 0 16px 10px; }
 .reader-progress { padding: 0 16px 18px; }
 .reader-content { padding: 10px 22px 24px; }
 .reader-content h1 { margin-bottom: 18px; font-size: 32px; }

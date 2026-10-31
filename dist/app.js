@@ -36,6 +36,7 @@ const defaultState = () => ({
   goal: "365",
   view: "home",
   readerBookId: "3-juan",
+  readerOrigin: "home",
   completedChapters: {},
   toast: ""
 });
@@ -110,11 +111,16 @@ function goalOption(value, title, subtitle) {
 
 function renderApp() {
   const content = state.view === "reader" ? renderReader() : renderView();
-  return `<div class="app-shell ${state.view === "reader" ? "is-reading" : ""}">${state.view === "reader" ? content : `${renderTopbar()}${content}${renderNav()}`}${state.toast ? `<div class="toast" role="status">${escapeHtml(state.toast)}</div>` : ""}</div>`;
+  return `<div class="app-shell ${state.view === "reader" ? "is-reading" : ""}">${state.view === "reader" ? content : `${renderTopbar()}${state.view === "home" ? "" : renderBreadcrumb(state.view)}${content}${renderNav()}`}${state.toast ? `<div class="toast" role="status">${escapeHtml(state.toast)}</div>` : ""}</div>`;
 }
 
 function renderTopbar() {
   return `<header class="topbar"><div class="brand"><span class="brand-mark" aria-hidden="true">${icon("sparkles", 16)}</span>Kol Basilea</div><button class="profile-button" data-action="open-more" aria-label="Abrir más opciones">${icon("ellipsis", 20)}</button></header>`;
+}
+
+function renderBreadcrumb(view) {
+  const labels = { route: "Ruta", progress: "Progreso", more: "Más" };
+  return `<nav class="breadcrumbs" aria-label="Ruta de navegación"><button class="breadcrumb-link" data-action="navigate" data-view="home">${icon("house", 15)}<span>Hoy</span></button><span class="breadcrumb-separator" aria-hidden="true">${icon("chevronRight", 15)}</span><span class="breadcrumb-current" aria-current="page">${labels[view] || "Hoy"}</span></nav>`;
 }
 
 function renderView() {
@@ -171,7 +177,8 @@ function renderReader() {
   const chapter = currentChapter(book);
   const completed = getCompletedChapters(book).includes(chapter);
   const bookProgress = getCompletedChapters(book).length;
-  return `<main><header class="reader-topbar"><button class="icon-button" data-action="back-home" aria-label="Volver">${icon("arrowLeft", 20)}</button><div class="reader-topbar-copy"><strong>${escapeHtml(book.name)}</strong><span>Capítulo ${chapter} de ${book.chapters} · Libro ${book.index + 1} de 66</span></div><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></header><div class="reader-progress">${progressBar(bookProgress, book.chapters, "Progreso del libro")}</div><article class="reader-content"><p class="eyebrow">Antes de leer</p><h1>${escapeHtml(book.name)}<br><span style="color:var(--brand)">Capítulo ${chapter}</span></h1><div class="context-card"><div class="video-placeholder"><div><button type="button" data-action="preview-video" aria-label="Reproducir video de contexto">${icon("play", 18)}</button><small>Video de contexto · vista previa</small></div></div><h3>Lee con un poco de contexto</h3><p style="margin-bottom:0">Este espacio mostrará una introducción histórica y literaria breve antes de la lectura.</p></div><div class="reading-copy"><p class="reading-note">Contenido de demostración: aquí se integrará el texto bíblico autorizado. La interfaz ya está preparada para guardar tu check por capítulo.</p><p>La lectura comienza aquí. El objetivo de esta pantalla es mantener el foco: una página cómoda, controles claros y un solo siguiente paso.</p><p>Cuando termines este capítulo, marca tu avance. Si haces una pausa, tu progreso permanecerá guardado en este dispositivo.</p></div></article><footer class="reader-footer"><button class="button button-primary button-wide" data-action="complete-chapter">${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button></footer></main>`;
+  const origin = state.readerOrigin === "route" ? "Ruta" : "Hoy";
+  return `<main><header class="reader-topbar"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><div class="reader-topbar-copy"><strong>${escapeHtml(book.name)}</strong><span>Capítulo ${chapter} de ${book.chapters} · Libro ${book.index + 1} de 66</span></div><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></header><nav class="reader-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="breadcrumb-link" data-action="back-context">${icon(origin === "Ruta" ? "route" : "house", 15)}<span>${origin}</span></button><span class="breadcrumb-separator" aria-hidden="true">${icon("chevronRight", 15)}</span><span class="breadcrumb-current" aria-current="page">${escapeHtml(book.name)}</span></nav><div class="reader-progress">${progressBar(bookProgress, book.chapters, "Progreso del libro")}</div><article class="reader-content"><p class="eyebrow">Antes de leer</p><h1>${escapeHtml(book.name)}<br><span style="color:var(--brand)">Capítulo ${chapter}</span></h1><div class="context-card"><div class="video-placeholder"><div><button type="button" data-action="preview-video" aria-label="Reproducir video de contexto">${icon("play", 18)}</button><small>Video de contexto · vista previa</small></div></div><h3>Lee con un poco de contexto</h3><p style="margin-bottom:0">Este espacio mostrará una introducción histórica y literaria breve antes de la lectura.</p></div><div class="reading-copy"><p class="reading-note">Contenido de demostración: aquí se integrará el texto bíblico autorizado. La interfaz ya está preparada para guardar tu check por capítulo.</p><p>La lectura comienza aquí. El objetivo de esta pantalla es mantener el foco: una página cómoda, controles claros y un solo siguiente paso.</p><p>Cuando termines este capítulo, marca tu avance. Si haces una pausa, tu progreso permanecerá guardado en este dispositivo.</p></div></article><footer class="reader-footer"><button class="button button-primary button-wide" data-action="complete-chapter">${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button></footer></main>`;
 }
 
 function renderNav() {
@@ -181,6 +188,7 @@ function renderNav() {
 
 function openReader(bookId = currentBook().id) {
   state.readerBookId = bookId;
+  state.readerOrigin = state.view === "route" ? "route" : "home";
   if (state.onboardingStep === 3 && bookId === "3-juan") state.onboardingComplete = true;
   state.view = "reader";
   saveState();
@@ -227,7 +235,7 @@ function bindEvents() {
       if (action === "show-route") { state.view = "route"; saveState(); render(); }
       if (action === "show-progress") { state.view = "progress"; saveState(); render(); }
       if (action === "open-book") { openReader(element.dataset.bookId); }
-      if (action === "back-home") { state.view = "home"; saveState(); render(); }
+      if (action === "back-home" || action === "back-context") { state.view = state.readerOrigin === "route" ? "route" : "home"; saveState(); render(); }
       if (action === "complete-chapter") { completeChapter(); }
       if (action === "change-goal") {
         const nextGoal = state.goal === "365" ? "180" : state.goal === "180" ? "none" : "365";

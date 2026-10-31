@@ -45,6 +45,8 @@ La navegación principal tiene cuatro destinos:
 
 El lector es una vista enfocada fuera de la navegación inferior. Tiene botón de regreso arriba y una acción fija al final para marcar el capítulo.
 
+Las vistas secundarias muestran una ruta contextual visible: `Hoy › Ruta`, `Hoy › Progreso` o `Hoy › Más`. El lector conserva el origen desde el que se abrió y ofrece una salida explícita como `Volver a Ruta` o `Volver a Hoy`, además de `Ruta › Libro` como breadcrumb del contenido actual.
+
 ## Flujo de onboarding
 
 ### Paso 1 — Orientación
@@ -129,7 +131,8 @@ Incluye:
 - video de contexto embebible o placeholder durante el MVP;
 - área de texto bíblico con fuente autorizada;
 - botón “Marcar capítulo X como leído”;
-- botón de regreso.
+- breadcrumb con el origen y el libro actual;
+- botón textual de regreso a la vista de origen.
 
 El lector debe mantener el foco en una sola acción y evitar acciones competitivas o distracciones innecesarias.
 
@@ -170,6 +173,7 @@ El lector debe mantener el foco en una sola acción y evitar acciones competitiv
 - Todos los botones principales son operables con toque, teclado y lector de pantalla básico.
 - No hay scroll horizontal en móvil.
 - El lector conserva una acción primaria visible y no depende de una racha diaria.
+- Desde cualquier vista secundaria se puede volver a Hoy mediante breadcrumb; desde el lector se puede volver a la vista que lo abrió.
 - El prototipo comunica claramente qué textos y videos son demostrativos mientras se resuelven licencias.
 
 ## Implementación actual
