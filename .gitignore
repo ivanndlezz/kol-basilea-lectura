@@ -1,0 +1,21 @@
+# Sistema operativo y editores
+.DS_Store
+.idea/
+.vscode/
+
+# Dependencias y builds
+node_modules/
+dist/
+build/
+.next/
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Archivos temporales
+*.log
+coverage/
+.cache/
+
