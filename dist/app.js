@@ -204,7 +204,7 @@ function getBookInfo(book) {
 }
 
 function renderVideoCard(video) {
-  return `<div class="video-card" data-video-card data-video-id="${video.id}" data-video-title="${escapeHtml(video.title)}"><div class="video-placeholder video-poster" data-video-shell><img class="video-thumbnail" src="${video.thumbnail}" alt="" aria-hidden="true" loading="lazy" decoding="async"><div class="video-poster-content"><button class="video-play-button" type="button" data-action="play-video" aria-label="Reproducir ${escapeHtml(video.title)}">${icon("play", 38)}</button><span class="video-duration">${video.duration}</span></div></div><div class="video-meta"><span class="video-kicker">Contexto compartido</span><h3>${escapeHtml(video.title)}</h3><p>${escapeHtml(video.description)}</p><div class="video-meta-footer"><span>Proyecto Biblia es el autor y propietario de este video.</span><a href="${video.pageUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div></div></div>`;
+  return `<div class="video-card" data-video-card data-video-id="${video.id}" data-video-title="${escapeHtml(video.title)}"><div class="video-placeholder video-poster is-loading" data-video-shell><img class="video-thumbnail" data-skeleton-image src="${video.thumbnail}" alt="" aria-hidden="true" loading="lazy" decoding="async"><div class="video-poster-content"><button class="video-play-button" type="button" data-action="play-video" aria-label="Reproducir ${escapeHtml(video.title)}">${icon("play", 38)}</button><span class="video-duration">${video.duration}</span></div></div><div class="video-meta"><span class="video-kicker">Contexto compartido</span><h3>${escapeHtml(video.title)}</h3><p>${escapeHtml(video.description)}</p><div class="video-meta-footer"><span>Proyecto Biblia es el autor y propietario de este video.</span><a href="${video.pageUrl}" target="_blank" rel="noreferrer">Ver fuente</a></div></div></div>`;
 }
 
 function renderPendingVideoCard() {
@@ -221,6 +221,22 @@ function render() {
   document.body.dataset.readerTheme = state.view === "reader" ? state.readerTheme : "light";
   root.innerHTML = state.onboardingComplete || state.view === "reader" ? renderApp() : renderOnboarding();
   bindEvents();
+  bindImageSkeletons();
+}
+
+function bindImageSkeletons() {
+  document.querySelectorAll("[data-skeleton-image]").forEach((img) => {
+    const shell = img.closest("[data-video-shell]");
+    if (!shell) return;
+    const finish = () => shell.classList.remove("is-loading");
+    const fail = () => { shell.classList.remove("is-loading"); shell.classList.add("image-failed"); };
+    img.addEventListener("load", finish, { once: true });
+    img.addEventListener("error", fail, { once: true });
+    if (img.complete) {
+      if (img.naturalWidth > 0) finish();
+      else fail();
+    }
+  });
 }
 
 function renderOnboarding() {
