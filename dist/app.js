@@ -501,3 +501,12 @@ function bindEvents() {
 bindReaderReadingProgress();
 render();
 updateReaderReadingProgress();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(error => console.warn("Offline cache unavailable", error)));
+}
+window.addEventListener("online", () => {
+  if (state.view !== "reader" || getBookLoadState(state.readerBookId) !== "error") return;
+  const bookId = state.readerBookId;
+  loadBibleBook(bookId).then(() => { if (state.view === "reader" && state.readerBookId === bookId) render(); }).catch(() => {});
+});
