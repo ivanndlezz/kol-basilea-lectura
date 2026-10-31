@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Download public-domain BSB USFM
         run: |
-          curl --fail --location --retry 3 https://ebible.org/engbsb/engbsb_usfm.zip -o /tmp/bsb_usfm.zip
+          curl --fail --location --retry 3 https://bereanbible.com/bsb_usfm.zip -o /tmp/bsb_usfm.zip
           mkdir -p /tmp/bsb-usfm
           unzip -q /tmp/bsb_usfm.zip -d /tmp/bsb-usfm
       - name: Extract section drafts
