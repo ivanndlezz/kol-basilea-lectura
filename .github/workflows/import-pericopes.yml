@@ -1,0 +1,32 @@
+name: Import BSB pericope drafts
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download public-domain BSB USFM
+        run: |
+          curl --fail --location --retry 3 https://ebible.org/engbsb/engbsb_usfm.zip -o /tmp/bsb_usfm.zip
+          mkdir -p /tmp/bsb-usfm
+          unzip -q /tmp/bsb_usfm.zip -d /tmp/bsb-usfm
+      - name: Extract section drafts
+        run: python3 scripts/extract-pericopes.py --input /tmp/bsb-usfm --output dist/data/pericopes
+      - name: Report coverage
+        run: |
+          python3 - <<'PY'
+          import json, pathlib
+          files=list(pathlib.Path('dist/data/pericopes').glob('*.json'))
+          sections=sum(len(c.get('sections',[])) for f in files for c in (json.loads(f.read_text()).get('chapters') or [json.loads(f.read_text())]))
+          print(f'Books: {len(files)}/66; sections: {sections}')
+          if len(files)!=66: raise SystemExit('Incomplete coverage: review USFM input and parser')
+          PY
+      - name: Commit extracted drafts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/data/pericopes/
+          git diff --cached --quiet || (git commit -m "Import public-domain BSB pericope drafts for 66 books" && git push)
