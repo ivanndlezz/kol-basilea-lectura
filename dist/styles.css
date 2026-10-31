@@ -855,3 +855,24 @@ a:not([class]):visited{color:var(--brand-dark)}
 .kb-library-tile-name{font-size:14px;font-weight:800;line-height:1.2;color:var(--accent)}
 .kb-library-tile-meta{font-size:11px;color:var(--ink-muted)}
 @media(min-width:680px){.kb-library-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Book completion: a quiet editorial interlude, not an abrupt return home. */
+.kb-interlude{min-height:100dvh;padding:calc(env(safe-area-inset-top,0px) + 40px) 22px calc(env(safe-area-inset-bottom,0px) + 32px);background:var(--surface);color:var(--ink);display:flex;align-items:center;justify-content:center}
+.kb-interlude-inner{width:min(100%,430px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:17px}
+.kb-interlude .eyebrow{color:var(--category-color,var(--brand));margin:0}
+.kb-interlude-emblem{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--category-color,var(--brand)) 12%,var(--surface));color:var(--category-color,var(--brand))}
+.kb-interlude-cover{margin:5px auto 0}
+.kb-interlude-cover .kb-cover{width:120px;height:165px;min-height:165px}
+.kb-interlude-overline{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-muted);font-weight:700;margin:0}
+.kb-interlude h1{font-size:clamp(28px,7vw,40px);line-height:1.1;letter-spacing:-.04em;margin:0}
+.kb-interlude-copy{max-width:32ch;line-height:1.55;color:var(--ink-muted);margin:0}
+.kb-interlude-progress{display:flex;flex-direction:column;gap:4px;padding:16px 22px;border-radius:18px;background:var(--surface-soft);width:100%}
+.kb-interlude-progress strong{color:var(--brand-dark);font-size:17px}
+.kb-interlude-progress span{color:var(--ink-muted);font-size:13px}
+.kb-interlude-next{width:100%;display:flex;flex-direction:column;gap:9px;text-align:left;margin-top:8px}
+.kb-interlude-next>span{font-size:12px;color:var(--ink-muted);font-weight:700}
+.kb-interlude-next-book{display:flex;align-items:center;gap:11px;border:1px solid var(--line);background:var(--surface);border-radius:15px;padding:15px}
+.kb-interlude-next-mark{width:9px;height:34px;border-radius:9px;background:var(--category-color,var(--brand))}
+.kb-interlude-next-book strong{flex:1;font-size:18px}
+.kb-interlude-next-book small{color:var(--ink-muted)}
+.kb-interlude .button{width:100%}
