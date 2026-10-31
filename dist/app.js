@@ -1,3 +1,4 @@
+import { AUTHORS, AUTHOR_BY_ID, authorsForBook } from "./data/biblical-authors.js";
 import { getBibleChapter, getBibleTranslation } from "./data/bible-rvr1909.js";
 import { getLoadedBibleChapter, getBookLoadState, loadBibleBook } from "./data/bible-loader.js";
 import { BOOKS, CATEGORIES, TOTAL_CHAPTERS, getCatalogBook, getCategoryColor } from "./data/bible-catalog.js";
@@ -15,6 +16,7 @@ const ICONS = {
   house: '<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>',
   route: '<path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/>',
   chart: '<path d="M3 3v18h18"/><path d="M8 16v-5"/><path d="M13 16V7"/><path d="M18 16V4"/>',
+  users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
   menu: '<line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/>',
   sliders: '<line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="1" x2="7" y1="14" y2="14"/><line x1="9" x2="15" y1="8" y2="8"/><line x1="17" x2="23" y1="16" y2="16"/>',
   x: '<path d="M18 6 6 18M6 6l12 12"/>',
@@ -47,6 +49,8 @@ const defaultState = () => ({
   readerChapter: null,
   routeCategory: "all",
   libraryCategory: "all",
+  authorsFilter: "all",
+  selectedAuthorId: null,
   readerContextOpen: true,
   readerDisplayOpen: false,
   readerMoreOpen: false,
@@ -243,7 +247,7 @@ function renderTopbar() {
 }
 
 function renderNavigationSheet() {
-  const items = [["home","house","Hoy","Tu siguiente lectura"],["route","map","Ruta de lectura","Sigue la secuencia editorial"],["library","bookOpen","Biblioteca bíblica","Explora libremente los 66 libros"],["progress","chart","Mi progreso","Capítulos y libros leídos"],["more","sliders","Configuración","Meta y preferencias"]];
+  const items = [["home","house","Hoy","Tu siguiente lectura"],["route","map","Ruta de lectura","Sigue la secuencia editorial"],["library","bookOpen","Biblioteca bíblica","Explora libremente los 66 libros"],["authors","users","Autores bíblicos","Personas, tradiciones y atribuciones"],["progress","chart","Mi progreso","Capítulos y libros leídos"],["more","sliders","Configuración","Meta y preferencias"]];
   const appearance = [["system","Automático","smartphone"],["light","Claro","sun"],["dark","Oscuro","moon"]];
   const selectedIcon = state.appAppearance === "dark" ? "moon" : state.appAppearance === "light" ? "sun" : "sun";
   return `<div class="kb-navigation-layer ${state.navigationOpen ? "is-open" : ""}" ${state.navigationOpen ? "" : "hidden"}>
@@ -258,13 +262,14 @@ function renderNavigationSheet() {
 }
 
 function renderBreadcrumb(view) {
-  const labels = { route: "Ruta", library: "Biblioteca", progress: "Progreso", more: "Configuración" };
+  const labels = { route: "Ruta", library: "Biblioteca", progress: "Progreso", more: "Configuración", authors: "Autores bíblicos" };
   return `<nav class="breadcrumbs" aria-label="Ruta de navegación"><button class="breadcrumb-link" data-action="navigate" data-view="home">${icon("house", 15)}<span>Hoy</span></button><span class="breadcrumb-separator" aria-hidden="true">${icon("chevronRight", 15)}</span><span class="breadcrumb-current" aria-current="page">${labels[view] || "Hoy"}</span></nav>`;
 }
 
 function renderView() {
   if (state.view === "route") return renderRoute();
   if (state.view === "library") return renderLibrary();
+  if (state.view === "authors") return renderAuthors();
   if (state.view === "progress") return renderProgress();
   if (state.view === "more") return renderMore();
   return renderHome();
@@ -315,6 +320,16 @@ function bookChip(book) {
 function renderRoute() {
   const done = totalCompletedBooks();
   return `<main class="screen"><div class="route-header"><p class="eyebrow">Tu ruta de lectura</p><h1>Libro por libro.</h1><p>Sigue la secuencia editorial de 66 libros, sin fechas ni atrasos.</p></div><div class="route-summary"><div class="stat-pill"><strong>${done}</strong> / 66 libros</div><div class="stat-pill"><strong>${totalCompletedChapters()}</strong> / ${TOTAL_CHAPTERS} capítulos</div></div><div class="route-list">${BOOKS.map(routeRow).join("")}</div></main>`;
+}
+
+function renderAuthors() {
+  const filters = [["all","Todos"],["Antiguo Testamento","Antiguo Testamento"],["Nuevo Testamento","Nuevo Testamento"],["disputed","Autoría discutida"]];
+  const visible = AUTHORS.filter(person => state.authorsFilter === "all" || (state.authorsFilter === "disputed" ? /discutida|compleja|anónimo|tradicional/i.test(person.status) : person.testament === state.authorsFilter));
+  const person = AUTHOR_BY_ID.get(state.selectedAuthorId);
+  if (person) {
+    return `<main class="screen kb-authors-page"><button class="kb-author-back" data-action="authors-back">${icon("arrowLeft",18)} Todos los autores</button><header class="kb-author-profile-header"><span class="kb-author-monogram" aria-hidden="true">${escapeHtml(person.name.slice(0,1))}</span><p class="eyebrow">Personas y Escrituras</p><h1>${escapeHtml(person.name)}</h1><span class="kb-author-status">${escapeHtml(person.status)}</span><p>${escapeHtml(person.description)}</p></header><section class="kb-author-note"><h2>Sobre su autoría</h2><p>${escapeHtml(person.note)}</p></section><section class="kb-author-books"><h2>Libros relacionados</h2><p>La relación puede ser una atribución tradicional, una referencia textual o una tradición editorial; no implica autoría demostrada.</p><div class="kb-author-book-list">${person.books.map(name => { const book = BOOKS.find(item => item.name === name); return book ? `<button class="kb-author-book" style="${categoryStyle(book.category)}" data-action="open-book" data-book-id="${book.id}"><span class="kb-author-book-color"></span><strong>${escapeHtml(book.name)}</strong>${icon("chevronRight",17)}</button>` : ""; }).join("")}</div></section></main>`;
+  }
+  return `<main class="screen kb-authors-page"><header class="route-header"><p class="eyebrow">Personas y Escrituras</p><h1>Autores bíblicos.</h1><p>Conoce a quienes escribieron, recopilaron y transmitieron los textos bíblicos, y qué sabemos realmente sobre sus atribuciones.</p></header><div class="category-filter" role="group" aria-label="Filtrar autores">${filters.map(([id,label]) => `<button class="category-filter-chip ${state.authorsFilter === id ? "is-selected" : ""}" data-action="filter-authors" data-filter="${id}" aria-pressed="${state.authorsFilter === id}">${label}</button>`).join("")}</div><div class="kb-authors-count">${visible.length} fichas · Atribuciones tradicionales e históricas</div><div class="kb-authors-list">${visible.map(person => `<button class="kb-author-card" data-action="open-author" data-author-id="${person.id}"><span class="kb-author-avatar" aria-hidden="true">${escapeHtml(person.name.slice(0,1))}</span><span class="kb-author-card-copy"><strong>${escapeHtml(person.name)}</strong><small>${escapeHtml(person.description)}</small><em>${escapeHtml(person.status)}</em></span>${icon("chevronRight",17)}</button>`).join("")}</div><p class="kb-authors-disclaimer">Las atribuciones tradicionales no siempre coinciden con las conclusiones de la investigación histórica. Los textos anónimos y las obras colectivas se presentan como tales.</p></main>`;
 }
 
 function renderLibrary() {
@@ -543,11 +558,14 @@ function bindEvents() {
       if (action === "navigate") { state.view = element.dataset.view; state.navigationOpen = false; saveState(); render(); }
       if (action === "toggle-navigation") { state.navigationOpen = !state.navigationOpen; state.appearancePopoverOpen = false; render(); }
       if (action === "close-navigation") { state.navigationOpen = false; state.appearancePopoverOpen = false; render(); document.querySelector(".kb-menu-trigger")?.focus({preventScroll:true}); }
-      if (action === "navigation-go") { state.view = element.dataset.view; state.navigationOpen = false; state.appearancePopoverOpen = false; saveState(); render(); window.scrollTo({ top: 0, behavior: "instant" }); }
+      if (action === "navigation-go") { state.view = element.dataset.view; if (state.view === "authors") state.selectedAuthorId = null; state.navigationOpen = false; state.appearancePopoverOpen = false; saveState(); render(); window.scrollTo({ top: 0, behavior: "instant" }); }
       if (action === "toggle-appearance-popover") { state.appearancePopoverOpen = !state.appearancePopoverOpen; render(); document.querySelector(".kb-appearance-toggle")?.focus({preventScroll:true}); }
       if (action === "open-more") { state.view = "more"; saveState(); render(); }
       if (action === "show-route") { state.view = "route"; saveState(); render(); }
       if (action === "show-progress") { state.view = "progress"; saveState(); render(); }
+      if (action === "filter-authors") { state.authorsFilter = element.dataset.filter; state.selectedAuthorId = null; saveState(); render(); }
+      if (action === "open-author") { state.selectedAuthorId = element.dataset.authorId; saveState(); render(); window.scrollTo({top:0,behavior:"instant"}); }
+      if (action === "authors-back") { state.selectedAuthorId = null; saveState(); render(); window.scrollTo({top:0,behavior:"instant"}); }
       if (action === "filter-library-category") { state.libraryCategory = CATEGORIES.some(category => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "filter-route-category") { state.routeCategory = CATEGORIES.some((category) => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "open-book") { openReader(element.dataset.bookId); }
