@@ -28,6 +28,7 @@ const ICONS = {
   route: '<circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-1a3.5 3.5 0 0 1 0-7H18"/><circle cx="18" cy="5" r="3"/>',
   chart: '<path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.953C12.449 1.995 12 2.448 12 3v8a1 1 0 0 0 1 1z"/><path d="M21.21 15.89A10 10 0 1 1 8.11 2.79"/><path d="M12 12v8a1 1 0 0 0 1 1h8a10.02 10.02 0 0 0-9-9z"/>',
   menu: '<line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/>',
+  sliders: '<line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="1" x2="7" y1="14" y2="14"/><line x1="9" x2="15" y1="8" y2="8"/><line x1="17" x2="23" y1="16" y2="16"/>',
   ellipsis: '<circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/>',
   arrowLeft: '<path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>',
   chevronRight: '<path d="m9 18 6-6-6-6"/>',
@@ -47,6 +48,10 @@ const defaultState = () => ({
   readerBookId: "3-juan",
   readerOrigin: "home",
   readerChapter: null,
+  readerContextOpen: true,
+  readerDisplayOpen: false,
+  readerFont: "serif",
+  readerTheme: "light",
   completedChapters: {},
   toast: ""
 });
@@ -113,6 +118,7 @@ function progressBar(value, total, label = "Progreso") {
 
 function render() {
   const root = document.querySelector("#app");
+  document.body.dataset.readerTheme = state.view === "reader" ? state.readerTheme : "light";
   root.innerHTML = state.onboardingComplete || state.view === "reader" ? renderApp() : renderOnboarding();
   bindEvents();
 }
@@ -218,15 +224,29 @@ function renderChapterList(book, selectedChapter) {
   return `<section class="chapter-panel" aria-labelledby="chapter-list-title"><div class="chapter-panel-header"><div><p class="eyebrow">Tu avance</p><h2 id="chapter-list-title">Capítulos</h2></div><strong>${completed.size} de ${book.chapters}</strong></div><div class="chapter-grid">${rows}</div></section>`;
 }
 
+function renderReaderDisplayMenu() {
+  const serif = state.readerFont === "serif";
+  const light = state.readerTheme === "light";
+  const sepia = state.readerTheme === "sepia";
+  const dark = state.readerTheme === "dark";
+  return `<div id="reader-display-menu" class="reader-display-menu" role="dialog" aria-label="Formato de lectura" ${state.readerDisplayOpen ? "" : "hidden"}><div class="display-menu-section"><span class="display-menu-label">Tipografía</span><div class="display-choice-grid display-choice-grid-two"><button class="display-choice ${serif ? "is-selected" : ""}" data-action="set-reader-font" data-font="serif" aria-pressed="${serif}">Serif</button><button class="display-choice ${!serif ? "is-selected" : ""}" data-action="set-reader-font" data-font="sans" aria-pressed="${!serif}">Sans</button></div></div><div class="display-menu-section"><span class="display-menu-label">Tema</span><div class="display-choice-grid"><button class="display-choice ${light ? "is-selected" : ""}" data-action="set-reader-theme" data-theme="light" aria-pressed="${light}">Claro</button><button class="display-choice display-choice-sepia ${sepia ? "is-selected" : ""}" data-action="set-reader-theme" data-theme="sepia" aria-pressed="${sepia}">Sepia</button><button class="display-choice display-choice-dark ${dark ? "is-selected" : ""}" data-action="set-reader-theme" data-theme="dark" aria-pressed="${dark}">Oscuro</button></div></div></div>`;
+}
+
+function renderReaderContext(book, contextVideo) {
+  const open = state.readerContextOpen;
+  return `<section class="reader-context ${open ? "is-open" : "is-collapsed"}" aria-labelledby="reader-context-title"><button class="reader-context-toggle" data-action="toggle-reader-context" aria-expanded="${open}" aria-controls="reader-context-content"><span class="reader-context-heading"><span class="reader-context-icon" aria-hidden="true">${icon("play", 16)}</span><span><strong id="reader-context-title">Contexto en video: ${book.id === "3-juan" || book.id === "2-juan" || book.id === "1-juan" ? "Resumen de 1–3 Juan" : "Contexto editorial"}</strong><small>${getBookVideo(book) ? "10:58 min · Proyecto Biblia" : "Video de este libro · próximamente"}</small></span></span>${icon("chevronRight", 18)}</button><div id="reader-context-content" class="reader-context-content" ${open ? "" : "hidden"}>${contextVideo}</div></section>`;
+}
+
 function renderReader() {
   const book = getBook(state.readerBookId);
   const chapter = readerChapter(book);
   const completed = getCompletedChapters(book).includes(chapter);
   const bookProgress = getCompletedChapters(book).length;
+  const routeProgress = totalCompletedChapters();
   const origin = state.readerOrigin === "route" ? "Ruta" : "Hoy";
   const video = getBookVideo(book);
   const contextVideo = video ? renderVideoCard(video) : renderPendingVideoCard();
-  return `<main><header class="reader-topbar"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><div class="reader-topbar-copy"><strong>${escapeHtml(book.name)}</strong><span>Capítulo ${chapter} de ${book.chapters} · Libro ${book.index + 1} de 66</span></div><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></header><nav class="reader-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="breadcrumb-link" data-action="back-context">${icon(origin === "Ruta" ? "route" : "house", 15)}<span>${origin}</span></button><span class="breadcrumb-separator" aria-hidden="true">${icon("chevronRight", 15)}</span><span class="breadcrumb-current" aria-current="page">${escapeHtml(book.name)}</span></nav><div class="reader-progress">${progressBar(bookProgress, book.chapters, "Progreso del libro")}</div><article class="reader-content"><p class="eyebrow">Antes de leer</p><h1>${escapeHtml(book.name)}<br><span style="color:var(--brand)">Capítulo ${chapter}</span></h1><div class="context-card"><h3>Lee con un poco de contexto</h3>${contextVideo}</div>${renderChapterList(book, chapter)}<div class="reading-copy"><p class="reading-note">Contenido de demostración: aquí se integrará el texto bíblico autorizado. La interfaz ya está preparada para guardar tu check por capítulo.</p><p>La lectura comienza aquí. El objetivo de esta pantalla es mantener el foco: una página cómoda, controles claros y un solo siguiente paso.</p><p>Cuando termines este capítulo, marca tu avance. Si haces una pausa, tu progreso permanecerá guardado en este dispositivo.</p></div></article><footer class="reader-footer"><button class="button button-primary button-wide" data-action="complete-chapter">${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button></footer></main>`;
+  return `<main class="reader-page"><header class="reader-topbar"><div class="reader-topbar-left"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><span class="reader-topbar-divider" aria-hidden="true"></span><nav class="reader-topbar-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="reader-topbar-link" data-action="back-context">${origin}</button><span aria-hidden="true">${icon("chevronRight", 13)}</span><strong>${escapeHtml(book.name)} ${chapter}</strong><span class="reader-book-index">${book.index + 1}/66</span></nav></div><div class="reader-topbar-actions"><button class="reader-format-button" data-action="toggle-reader-format" aria-expanded="${state.readerDisplayOpen}" aria-controls="reader-display-menu">${icon("sliders", 16)}<span>Formato</span></button><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></div><div class="reader-route-progress" role="progressbar" aria-label="Progreso total de la ruta" aria-valuemin="0" aria-valuemax="${TOTAL_CHAPTERS}" aria-valuenow="${routeProgress}"><div style="width:${percent(routeProgress, TOTAL_CHAPTERS)}%"></div></div></header>${renderReaderDisplayMenu()}<div class="reader-progress"><div class="reader-progress-copy"><span>Libro ${book.index + 1} de 66</span><strong>${bookProgress} de ${book.chapters} capítulos</strong></div><div class="progress-track" role="progressbar" aria-label="Progreso del libro" aria-valuemin="0" aria-valuemax="${book.chapters}" aria-valuenow="${bookProgress}"><div class="progress-fill" style="width:${percent(bookProgress, book.chapters)}%"></div></div></div><article class="reader-content"><div class="reader-heading"><div class="reader-meta-pill"><span>Libro ${book.index + 1} de 66</span><span aria-hidden="true">•</span><span>Capítulo ${chapter} de ${book.chapters}</span></div><h1>${escapeHtml(book.name)}</h1></div>${renderReaderContext(book, contextVideo)}${renderChapterList(book, chapter)}<div class="reading-copy ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}"><p class="reading-note">${icon("sparkles", 17)}<span><strong>Nota de demostración:</strong> El texto bíblico autorizado aparecerá aquí. Puedes guardar tu avance al finalizar la lectura.</span></p><p class="reader-dropcap">La lectura comienza aquí. El objetivo de esta pantalla es mantener el foco: una página cómoda, controles claros y un solo siguiente paso sin distracciones innecesarias.</p><p>Cuando termines este capítulo, marca tu avance. Si haces una pausa, tu progreso permanecerá guardado automáticamente en este dispositivo.</p></div></article><footer class="reader-footer"><button class="button button-primary button-wide" data-action="complete-chapter">${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button></footer></main>`;
 }
 
 function renderNav() {
@@ -308,6 +328,10 @@ function bindEvents() {
       if (action === "show-progress") { state.view = "progress"; saveState(); render(); }
       if (action === "open-book") { openReader(element.dataset.bookId); }
       if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); saveState(); render(); }
+      if (action === "toggle-reader-format") { state.readerDisplayOpen = !state.readerDisplayOpen; saveState(); render(); }
+      if (action === "toggle-reader-context") { state.readerContextOpen = !state.readerContextOpen; saveState(); render(); }
+      if (action === "set-reader-font") { state.readerFont = element.dataset.font === "sans" ? "sans" : "serif"; state.readerDisplayOpen = false; saveState(); render(); }
+      if (action === "set-reader-theme") { state.readerTheme = ["light", "sepia", "dark"].includes(element.dataset.theme) ? element.dataset.theme : "light"; state.readerDisplayOpen = false; saveState(); render(); }
       if (action === "back-home" || action === "back-context") { state.view = state.readerOrigin === "route" ? "route" : "home"; saveState(); render(); }
       if (action === "complete-chapter") { completeChapter(); }
       if (action === "change-goal") {

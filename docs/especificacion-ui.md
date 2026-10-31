@@ -134,10 +134,13 @@ Incluye:
 - lista compacta de todos los capítulos del libro, con estados pendiente, en curso y leído;
 - check visual en cada capítulo completado y contador “X de Y”;
 - selección directa de un capítulo desde la lista para revisar o continuar en otro punto;
+- barra de progreso total en el encabezado y progreso independiente del libro;
+- sección de contexto en video colapsable, que no carga la miniatura hasta que la sección está abierta;
+- menú “Formato” para cambiar entre tipografía serif/sans y temas claro, sepia u oscuro;
 - breadcrumb con el origen y el libro actual;
 - botón textual de regreso a la vista de origen.
 
-El lector debe mantener el foco en una sola acción principal y evitar acciones competitivas o distracciones innecesarias. La lista de capítulos funciona como navegación secundaria: el capítulo actual se destaca, y al guardar un capítulo el check aparece de inmediato mientras el lector avanza al siguiente pendiente.
+El lector debe mantener el foco en una sola acción principal y evitar acciones competitivas o distracciones innecesarias. La lista de capítulos funciona como navegación secundaria: el capítulo actual se destaca, y al guardar un capítulo el check aparece de inmediato mientras el lector avanza al siguiente pendiente. El menú de formato se considera una preferencia persistente, no una acción de lectura.
 
 ### Recurso implementado: 1–3 Juan
 
@@ -163,8 +166,10 @@ El mismo recurso se trata como panorama del conjunto, no como tres videos distin
 - primer ingreso sin progreso;
 - onboarding en cada paso;
 - video no disponible o no iniciado;
+- contexto de video abierto y colapsado;
 - capítulo disponible y pendiente;
 - lista de capítulos con capítulo actual seleccionado;
+- lector en tema claro, sepia u oscuro;
 - capítulo completado;
 - libro completado;
 - pausa con progreso conservado;
@@ -188,6 +193,8 @@ El mismo recurso se trata como panorama del conjunto, no como tres videos distin
 - La lista del lector muestra todos los capítulos del libro, identifica el capítulo actual y convierte en check los capítulos guardados.
 - Al seleccionar un capítulo, el título y la acción primaria se actualizan al capítulo seleccionado sin perder el progreso existente.
 - Después de marcar un capítulo pendiente, el lector conserva la vista, muestra el check y propone el siguiente capítulo pendiente, salvo al terminar el libro.
+- El video de contexto se puede contraer y el contenido multimedia permanece diferido mientras está cerrado.
+- El menú de formato permite cambiar tipografía y tema sin perder el capítulo ni el progreso.
 - Desde cualquier vista secundaria se puede volver a Hoy mediante breadcrumb; desde el lector se puede volver a la vista que lo abrió.
 - El prototipo comunica claramente qué textos y videos son demostrativos mientras se resuelven licencias.
 
