@@ -296,7 +296,7 @@ function bookChip(book) {
   const completed = getCompletedChapters(book).length;
   const done = isBookComplete(book);
   const isCurrent = book.id === currentBook().id;
-  return `<button class="book-chip ${done ? "is-done" : ""} ${isCurrent ? "is-current" : ""}" data-action="open-book" data-book-id="${book.id}"><small>${done ? "Completado" : isCurrent ? "Ahora" : `Libro ${book.index + 1}`}</small><strong>${escapeHtml(book.name)}</strong><span>${completed}/${book.chapters} capítulos</span></button>`;
+  return `<button class="book-chip ${done ? "is-done" : ""} ${isCurrent ? "is-current" : ""}" style="${categoryStyle(book.category)}" data-action="open-book" data-book-id="${book.id}"><small>${done ? "Completado" : isCurrent ? "Ahora" : `Libro ${book.index + 1}`}</small><strong>${escapeHtml(book.name)}</strong><span>${completed}/${book.chapters} capítulos</span></button>`;
 }
 
 function renderRoute() {
