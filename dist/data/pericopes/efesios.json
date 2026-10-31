@@ -1,0 +1,143 @@
+{
+  "bookId": "efesios",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul’s Greeting to the Ephesians",
+          "title": "Paul’s Greeting to the Ephesians",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Spiritual Blessings",
+          "title": "Spiritual Blessings",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Spiritual Wisdom",
+          "title": "Spiritual Wisdom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Alive with Christ",
+          "title": "Alive with Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "One in Christ",
+          "title": "One in Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Christ Our Cornerstone",
+          "title": "Christ Our Cornerstone",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Mystery of the Gospel",
+          "title": "The Mystery of the Gospel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Paul’s Prayer for the Ephesians",
+          "title": "Paul’s Prayer for the Ephesians",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Unity in the Body",
+          "title": "Unity in the Body",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "New Life in Christ",
+          "title": "New Life in Christ",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Imitators of God",
+          "title": "Imitators of God",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Children of Light",
+          "title": "Children of Light",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Wives and Husbands",
+          "title": "Wives and Husbands",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Children and Parents",
+          "title": "Children and Parents",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Serving with Honor",
+          "title": "Serving with Honor",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Full Armor of God",
+          "title": "The Full Armor of God",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Final Greetings",
+          "title": "Final Greetings",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

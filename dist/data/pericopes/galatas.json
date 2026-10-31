@@ -1,0 +1,137 @@
+{
+  "bookId": "galatas",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul’s Greeting to the Galatians",
+          "title": "Paul’s Greeting to the Galatians",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "No Other Gospel",
+          "title": "No Other Gospel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Paul Preaches the Gospel",
+          "title": "Paul Preaches the Gospel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Council at Jerusalem",
+          "title": "The Council at Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Paul Confronts Cephas",
+          "title": "Paul Confronts Cephas",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Faith and Belief",
+          "title": "Faith and Belief",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Christ Has Redeemed Us",
+          "title": "Christ Has Redeemed Us",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Purpose of the Law",
+          "title": "The Purpose of the Law",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "Sons through Faith in Christ",
+          "title": "Sons through Faith in Christ",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Sons and Heirs",
+          "title": "Sons and Heirs",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Paul’s Concern for the Galatians",
+          "title": "Paul’s Concern for the Galatians",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Hagar and Sarah",
+          "title": "Hagar and Sarah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Freedom in Christ",
+          "title": "Freedom in Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Walking by the Spirit",
+          "title": "Walking by the Spirit",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Carry One Another’s Burdens",
+          "title": "Carry One Another’s Burdens",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Final Warnings and Blessings",
+          "title": "Final Warnings and Blessings",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

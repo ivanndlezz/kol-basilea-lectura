@@ -1,0 +1,521 @@
+{
+  "bookId": "job",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job’s Character and Wealth",
+          "title": "Job’s Character and Wealth",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Satan’s First Attack",
+          "title": "Satan’s First Attack",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Job Loses His Children and Possessions",
+          "title": "Job Loses His Children and Possessions",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Loses His Health",
+          "title": "Job Loses His Health",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Job’s Three Friends",
+          "title": "Job’s Three Friends",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Laments His Birth",
+          "title": "Job Laments His Birth",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Eliphaz: The Innocent Prosper",
+          "title": "Eliphaz: The Innocent Prosper",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Eliphaz Continues: God Blesses those Who Seek Him",
+          "title": "Eliphaz Continues: God Blesses those Who Seek Him",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Replies: My Complaint Is Just",
+          "title": "Job Replies: My Complaint Is Just",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Continues: Life Seems Futile",
+          "title": "Job Continues: Life Seems Futile",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Bildad: Job Should Repent",
+          "title": "Bildad: Job Should Repent",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job: How Can I Contend with God?",
+          "title": "Job: How Can I Contend with God?",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job’s Plea to God",
+          "title": "Job’s Plea to God",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Zophar Rebukes Job",
+          "title": "Zophar Rebukes Job",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Presents His Case",
+          "title": "Job Presents His Case",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Prepares His Case",
+          "title": "Job Prepares His Case",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Laments the Finality of Death",
+          "title": "Job Laments the Finality of Death",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Eliphaz: Job Does Not Fear God",
+          "title": "Eliphaz: Job Does Not Fear God",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Decries His Comforters",
+          "title": "Job Decries His Comforters",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Prepares for Death",
+          "title": "Job Prepares for Death",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Bildad: God Punishes the Wicked",
+          "title": "Bildad: God Punishes the Wicked",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job: My Redeemer Lives",
+          "title": "Job: My Redeemer Lives",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Zophar: Destruction Awaits the Wicked",
+          "title": "Zophar: Destruction Awaits the Wicked",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job: God Will Punish the Wicked",
+          "title": "Job: God Will Punish the Wicked",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Eliphaz: Can a Man Be of Use to God?",
+          "title": "Eliphaz: Can a Man Be of Use to God?",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Longs for God",
+          "title": "Job Longs for God",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job: Judgment for the Wicked",
+          "title": "Job: Judgment for the Wicked",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Bildad: Man Cannot Be Righteous",
+          "title": "Bildad: Man Cannot Be Righteous",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job: Who Can Understand God’s Majesty?",
+          "title": "Job: Who Can Understand God’s Majesty?",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Affirms His Integrity",
+          "title": "Job Affirms His Integrity",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Wicked Man’s Portion",
+          "title": "The Wicked Man’s Portion",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Where Can Wisdom Be Found?",
+          "title": "Where Can Wisdom Be Found?",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job’s Former Blessings",
+          "title": "Job’s Former Blessings",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job’s Honor Turned to Contempt",
+          "title": "Job’s Honor Turned to Contempt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Job’s Prosperity Becomes Calamity",
+          "title": "Job’s Prosperity Becomes Calamity",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job’s Final Appeal",
+          "title": "Job’s Final Appeal",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Elihu Rebukes Job’s Friends",
+          "title": "Elihu Rebukes Job’s Friends",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Elihu Rebukes Job",
+          "title": "Elihu Rebukes Job",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Elihu Confirms God’s Justice",
+          "title": "Elihu Confirms God’s Justice",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Elihu Recalls God’s Justice",
+          "title": "Elihu Recalls God’s Justice",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Elihu Describes God’s Power",
+          "title": "Elihu Describes God’s Power",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Elihu Proclaims God’s Majesty",
+          "title": "Elihu Proclaims God’s Majesty",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The LORD Challenges Job",
+          "title": "The LORD Challenges Job",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The LORD Speaks of His Creation",
+          "title": "The LORD Speaks of His Creation",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Humbles Himself before the LORD",
+          "title": "Job Humbles Himself before the LORD",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The LORD Challenges Job Again",
+          "title": "The LORD Challenges Job Again",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The LORD’s Power Shown in Leviathan",
+          "title": "The LORD’s Power Shown in Leviathan",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Job Submits Himself to the LORD",
+          "title": "Job Submits Himself to the LORD",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The LORD Rebukes Job’s Friends",
+          "title": "The LORD Rebukes Job’s Friends",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The LORD Blesses Job",
+          "title": "The LORD Blesses Job",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

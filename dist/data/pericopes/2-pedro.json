@@ -1,0 +1,68 @@
+{
+  "bookId": "2-pedro",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Greeting from Peter",
+          "title": "A Greeting from Peter",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Partakers of the Divine Nature",
+          "title": "Partakers of the Divine Nature",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Eyewitnesses of His Majesty",
+          "title": "Eyewitnesses of His Majesty",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Deliverance from False Prophets",
+          "title": "Deliverance from False Prophets",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Coming Judgment",
+          "title": "The Coming Judgment",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Day of the Lord",
+          "title": "The Day of the Lord",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Final Exhortations",
+          "title": "Final Exhortations",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

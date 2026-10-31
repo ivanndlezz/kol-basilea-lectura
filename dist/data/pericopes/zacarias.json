@@ -1,0 +1,231 @@
+{
+  "bookId": "zacarias",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Call to Repentance",
+          "title": "A Call to Repentance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Vision of the Horses",
+          "title": "The Vision of the Horses",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Vision of the Horns and the Craftsmen",
+          "title": "The Vision of the Horns and the Craftsmen",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Vision of the Measuring Line",
+          "title": "The Vision of the Measuring Line",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Redemption of Zion",
+          "title": "The Redemption of Zion",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Vision of Joshua the High Priest",
+          "title": "The Vision of Joshua the High Priest",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Vision of the Lampstand and Olive Trees",
+          "title": "The Vision of the Lampstand and Olive Trees",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Vision of the Flying Scroll",
+          "title": "The Vision of the Flying Scroll",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Vision of the Woman in a Basket",
+          "title": "The Vision of the Woman in a Basket",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Vision of the Four Chariots",
+          "title": "The Vision of the Four Chariots",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Crown and the Temple",
+          "title": "The Crown and the Temple",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Call to Justice and Mercy",
+          "title": "A Call to Justice and Mercy",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Restoration of Jerusalem",
+          "title": "The Restoration of Jerusalem",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Burden against Israel’s Enemies",
+          "title": "The Burden against Israel’s Enemies",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Zion’s Coming King",
+          "title": "Zion’s Coming King",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The LORD Will Save His People",
+          "title": "The LORD Will Save His People",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judah and Israel Will Be Restored",
+          "title": "Judah and Israel Will Be Restored",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Doomed Flock",
+          "title": "The Doomed Flock",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Thirty Pieces of Silver",
+          "title": "Thirty Pieces of Silver",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Coming Deliverance of Jerusalem",
+          "title": "The Coming Deliverance of Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Mourning the One They Pierced",
+          "title": "Mourning the One They Pierced",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "An End to Idolatry",
+          "title": "An End to Idolatry",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Shepherd Struck, the Sheep Scattered",
+          "title": "The Shepherd Struck, the Sheep Scattered",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Destroyers of Jerusalem Destroyed",
+          "title": "The Destroyers of Jerusalem Destroyed",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "All Nations Will Worship the King",
+          "title": "All Nations Will Worship the King",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

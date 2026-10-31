@@ -1,0 +1,126 @@
+{
+  "bookId": "santiago",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Greeting from James",
+          "title": "A Greeting from James",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 2,
+          "sourceTitle": "Rejoicing in Trials",
+          "title": "Rejoicing in Trials",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Good and Perfect Gifts",
+          "title": "Good and Perfect Gifts",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Hearing and Doing",
+          "title": "Hearing and Doing",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Warning against Favoritism",
+          "title": "A Warning against Favoritism",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Faith and Works",
+          "title": "Faith and Works",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Taming the Tongue",
+          "title": "Taming the Tongue",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Wisdom from Above",
+          "title": "The Wisdom from Above",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Warning against Pride",
+          "title": "A Warning against Pride",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Drawing Near to God",
+          "title": "Drawing Near to God",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Do Not Boast about Tomorrow",
+          "title": "Do Not Boast about Tomorrow",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Warning to the Rich",
+          "title": "A Warning to the Rich",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Patience in Suffering",
+          "title": "Patience in Suffering",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Prayer of Faith",
+          "title": "The Prayer of Faith",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Restoring a Sinner",
+          "title": "Restoring a Sinner",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

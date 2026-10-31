@@ -1,0 +1,40 @@
+{
+  "bookId": "filemon",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Greetings from Paul and Timothy",
+          "title": "Greetings from Paul and Timothy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Philemon’s Faith and Love",
+          "title": "Philemon’s Faith and Love",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Paul’s Appeal for Onesimus",
+          "title": "Paul’s Appeal for Onesimus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Additional Greetings",
+          "title": "Additional Greetings",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

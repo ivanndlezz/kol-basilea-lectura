@@ -1,0 +1,140 @@
+{
+  "bookId": "amos",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment on Israel’s Neighbors",
+          "title": "Judgment on Israel’s Neighbors",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment on Moab, Judah, and Israel",
+          "title": "Judgment on Moab, Judah, and Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Witnesses against Israel",
+          "title": "Witnesses against Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Punishment Brings No Repentance",
+          "title": "Punishment Brings No Repentance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Lamentation against Israel",
+          "title": "A Lamentation against Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "A Call to Repentance",
+          "title": "A Call to Repentance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Woe to Rebellious Israel",
+          "title": "Woe to Rebellious Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Woe to Those at Ease in Zion",
+          "title": "Woe to Those at Ease in Zion",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Pride of Israel",
+          "title": "The Pride of Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Locusts, Fire, and Plumb Line",
+          "title": "The Locusts, Fire, and Plumb Line",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Amaziah Accuses Amos",
+          "title": "Amaziah Accuses Amos",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Basket of Summer Fruit",
+          "title": "The Basket of Summer Fruit",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Destruction of Israel",
+          "title": "The Destruction of Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "A Promise of Restoration",
+          "title": "A Promise of Restoration",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "bookId": "josue",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God Instructs Joshua",
+          "title": "God Instructs Joshua",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Joshua Takes Charge",
+          "title": "Joshua Takes Charge",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Rahab Welcomes the Spies",
+          "title": "Rahab Welcomes the Spies",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Promise to Rahab",
+          "title": "The Promise to Rahab",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Crossing the Jordan",
+          "title": "Crossing the Jordan",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Twelve Stones from the Jordan",
+          "title": "Twelve Stones from the Jordan",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The Camp at Gilgal",
+          "title": "The Camp at Gilgal",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Circumcision and Passover at Gilgal",
+          "title": "The Circumcision and Passover at Gilgal",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Commander of the LORD’s Army",
+          "title": "The Commander of the LORD’s Army",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Walls of Jericho",
+          "title": "The Walls of Jericho",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Defeat at Ai",
+          "title": "The Defeat at Ai",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Sin of Achan",
+          "title": "The Sin of Achan",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Conquest of Ai",
+          "title": "The Conquest of Ai",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "Joshua Renews the Covenant",
+          "title": "Joshua Renews the Covenant",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Deceit of the Gibeonites",
+          "title": "The Deceit of the Gibeonites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Day the Sun Stood Still",
+          "title": "The Day the Sun Stood Still",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Victory at Makkedah",
+          "title": "The Victory at Makkedah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Conquest of the Southern Cities",
+          "title": "Conquest of the Southern Cities",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Conquest of the Northern Cities",
+          "title": "Conquest of the Northern Cities",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Joshua Takes the Whole Land",
+          "title": "Joshua Takes the Whole Land",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Kings Defeated East of the Jordan",
+          "title": "The Kings Defeated East of the Jordan",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Kings Defeated West of the Jordan",
+          "title": "The Kings Defeated West of the Jordan",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Lands Yet Unconquered",
+          "title": "Lands Yet Unconquered",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Inheritance East of the Jordan",
+          "title": "The Inheritance East of the Jordan",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Reuben’s Inheritance",
+          "title": "Reuben’s Inheritance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Gad’s Inheritance",
+          "title": "Gad’s Inheritance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Manasseh’s Eastern Inheritance",
+          "title": "Manasseh’s Eastern Inheritance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Land Division West of the Jordan",
+          "title": "Land Division West of the Jordan",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Caleb Requests Hebron",
+          "title": "Caleb Requests Hebron",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judah’s Inheritance",
+          "title": "Judah’s Inheritance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Caleb’s Portion and Conquest",
+          "title": "Caleb’s Portion and Conquest",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Cities of Judah",
+          "title": "The Cities of Judah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Ephraim’s Inheritance",
+          "title": "Ephraim’s Inheritance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Manasseh’s Western Inheritance",
+          "title": "Manasseh’s Western Inheritance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Remainder Divided",
+          "title": "The Remainder Divided",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Benjamin’s Inheritance",
+          "title": "Benjamin’s Inheritance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Simeon’s Inheritance",
+          "title": "Simeon’s Inheritance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Zebulun’s Inheritance",
+          "title": "Zebulun’s Inheritance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Issachar’s Inheritance",
+          "title": "Issachar’s Inheritance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Asher’s Inheritance",
+          "title": "Asher’s Inheritance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 32,
+          "sourceTitle": "Naphtali’s Inheritance",
+          "title": "Naphtali’s Inheritance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 40,
+          "sourceTitle": "Dan’s Inheritance",
+          "title": "Dan’s Inheritance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 49,
+          "sourceTitle": "Joshua’s Inheritance",
+          "title": "Joshua’s Inheritance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Six Cities of Refuge",
+          "title": "Six Cities of Refuge",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Forty-Eight Cities for the Levites",
+          "title": "Forty-Eight Cities for the Levites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Eastern Tribes Return Home",
+          "title": "The Eastern Tribes Return Home",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Altar of Witness",
+          "title": "The Altar of Witness",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Joshua’s Charge to Leaders",
+          "title": "Joshua’s Charge to Leaders",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Joshua Reviews Israel’s History",
+          "title": "Joshua Reviews Israel’s History",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Choose Whom You Will Serve",
+          "title": "Choose Whom You Will Serve",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Joshua’s Death and Burial",
+          "title": "Joshua’s Death and Burial",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

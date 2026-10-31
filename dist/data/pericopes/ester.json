@@ -1,0 +1,181 @@
+{
+  "bookId": "ester",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Xerxes’ Royal Feast",
+          "title": "Xerxes’ Royal Feast",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Queen Vashti’s Refusal",
+          "title": "Queen Vashti’s Refusal",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Queen Vashti Deposed",
+          "title": "Queen Vashti Deposed",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Seeking Vashti’s Successor",
+          "title": "Seeking Vashti’s Successor",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Esther Finds Favor",
+          "title": "Esther Finds Favor",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Esther Becomes Queen",
+          "title": "Esther Becomes Queen",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Mordecai Uncovers a Conspiracy",
+          "title": "Mordecai Uncovers a Conspiracy",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Haman’s Plot against the Jews",
+          "title": "Haman’s Plot against the Jews",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Mordecai Appeals to Esther",
+          "title": "Mordecai Appeals to Esther",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Esther Approaches the King",
+          "title": "Esther Approaches the King",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Haman’s Plot against Mordecai",
+          "title": "Haman’s Plot against Mordecai",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Mordecai Is Honored",
+          "title": "Mordecai Is Honored",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Esther Pleads for Her People",
+          "title": "Esther Pleads for Her People",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Hanging of Haman",
+          "title": "The Hanging of Haman",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Esther Appeals for the Jews",
+          "title": "Esther Appeals for the Jews",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Decree of Xerxes",
+          "title": "The Decree of Xerxes",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Jews Destroy Their Enemies",
+          "title": "The Jews Destroy Their Enemies",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Haman’s Sons Hanged",
+          "title": "Haman’s Sons Hanged",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Feast of Purim Instituted",
+          "title": "The Feast of Purim Instituted",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Tribute to Xerxes and Mordecai",
+          "title": "Tribute to Xerxes and Mordecai",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

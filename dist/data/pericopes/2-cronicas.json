@@ -1,0 +1,827 @@
+{
+  "bookId": "2-cronicas",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Solomon’s Prayer for Wisdom",
+          "title": "Solomon’s Prayer for Wisdom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Solomon’s Riches",
+          "title": "Solomon’s Riches",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Preparations for the Temple",
+          "title": "Preparations for the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Hiram’s Reply to Solomon",
+          "title": "Hiram’s Reply to Solomon",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Temple Construction Begins",
+          "title": "Temple Construction Begins",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Temple’s Interior",
+          "title": "The Temple’s Interior",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Cherubim",
+          "title": "The Cherubim",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Veil and Pillars",
+          "title": "The Veil and Pillars",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Bronze Altar and Molten Sea",
+          "title": "The Bronze Altar and Molten Sea",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Ten Basins, Lampstands, and Tables",
+          "title": "The Ten Basins, Lampstands, and Tables",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Courts",
+          "title": "The Courts",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Completion of the Bronze Works",
+          "title": "Completion of the Bronze Works",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Completion of the Gold Furnishings",
+          "title": "Completion of the Gold Furnishings",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Ark Enters the Temple",
+          "title": "The Ark Enters the Temple",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Solomon Blesses the LORD",
+          "title": "Solomon Blesses the LORD",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Solomon’s Prayer of Dedication",
+          "title": "Solomon’s Prayer of Dedication",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Fire from Heaven",
+          "title": "Fire from Heaven",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Sacrifices of Dedication",
+          "title": "Sacrifices of Dedication",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The LORD’s Response to Solomon",
+          "title": "The LORD’s Response to Solomon",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Solomon’s Additional Achievements",
+          "title": "Solomon’s Additional Achievements",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Queen of Sheba",
+          "title": "The Queen of Sheba",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Solomon’s Wealth and Splendor",
+          "title": "Solomon’s Wealth and Splendor",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "The Death of Solomon",
+          "title": "The Death of Solomon",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Rebellion against Rehoboam",
+          "title": "Rebellion against Rehoboam",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Kingdom Divided",
+          "title": "The Kingdom Divided",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Shemaiah’s Prophecy",
+          "title": "Shemaiah’s Prophecy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Rehoboam Fortifies Judah",
+          "title": "Rehoboam Fortifies Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Jeroboam Forsakes the Priests and Levites",
+          "title": "Jeroboam Forsakes the Priests and Levites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Rehoboam’s Family",
+          "title": "Rehoboam’s Family",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Shishak Raids Jerusalem",
+          "title": "Shishak Raids Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Rehoboam’s Reign and Death",
+          "title": "Rehoboam’s Reign and Death",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Abijah Reigns in Judah",
+          "title": "Abijah Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Civil War against Jeroboam",
+          "title": "Civil War against Jeroboam",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Asa Reigns in Judah",
+          "title": "Asa Reigns in Judah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Prophecy of Azariah",
+          "title": "The Prophecy of Azariah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Asa’s Reforms",
+          "title": "Asa’s Reforms",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "War between Asa and Baasha",
+          "title": "War between Asa and Baasha",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Hanani’s Message to Asa",
+          "title": "Hanani’s Message to Asa",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Death and Burial of Asa",
+          "title": "The Death and Burial of Asa",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jehoshaphat Reigns in Judah",
+          "title": "Jehoshaphat Reigns in Judah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jehoshaphat Allies with Ahab",
+          "title": "Jehoshaphat Allies with Ahab",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Micaiah Prophesies against Ahab",
+          "title": "Micaiah Prophesies against Ahab",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "Ahab’s Defeat and Death",
+          "title": "Ahab’s Defeat and Death",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jehoshaphat Reproved by Jehu",
+          "title": "Jehoshaphat Reproved by Jehu",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Jehoshaphat’s Reforms",
+          "title": "Jehoshaphat’s Reforms",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "War against Jehoshaphat",
+          "title": "War against Jehoshaphat",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Jehoshaphat’s Prayer",
+          "title": "Jehoshaphat’s Prayer",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Prophecy of Jahaziel",
+          "title": "The Prophecy of Jahaziel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Enemies Destroy Themselves",
+          "title": "The Enemies Destroy Themselves",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "The Joyful Return",
+          "title": "The Joyful Return",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Summary of Jehoshaphat’s Reign",
+          "title": "Summary of Jehoshaphat’s Reign",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "Jehoshaphat’s Fleet Is Wrecked",
+          "title": "Jehoshaphat’s Fleet Is Wrecked",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jehoram Reigns in Judah",
+          "title": "Jehoram Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Edom and Libnah Rebel",
+          "title": "Edom and Libnah Rebel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Elijah’s Letter to Jehoram",
+          "title": "Elijah’s Letter to Jehoram",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Jehoram’s Disease and Death",
+          "title": "Jehoram’s Disease and Death",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Ahaziah Reigns in Judah",
+          "title": "Ahaziah Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Jehu Kills the Princes of Judah",
+          "title": "Jehu Kills the Princes of Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Athaliah and Joash",
+          "title": "Athaliah and Joash",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Joash Anointed King of Judah",
+          "title": "Joash Anointed King of Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Death of Athaliah",
+          "title": "The Death of Athaliah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Jehoiada Restores the Worship of the LORD",
+          "title": "Jehoiada Restores the Worship of the LORD",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Joash Repairs the Temple",
+          "title": "Joash Repairs the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Jehoiada’s Death and Burial",
+          "title": "Jehoiada’s Death and Burial",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Wickedness of Joash",
+          "title": "The Wickedness of Joash",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "The Death of Joash",
+          "title": "The Death of Joash",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Amaziah Reigns in Judah",
+          "title": "Amaziah Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Amaziah’s Victories",
+          "title": "Amaziah’s Victories",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Amaziah Rebuked for Idolatry",
+          "title": "Amaziah Rebuked for Idolatry",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Jehoash Defeats Amaziah",
+          "title": "Jehoash Defeats Amaziah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "The Death of Amaziah",
+          "title": "The Death of Amaziah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Uzziah Reigns in Judah",
+          "title": "Uzziah Reigns in Judah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jotham Reigns in Judah",
+          "title": "Jotham Reigns in Judah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Ahaz Reigns in Judah",
+          "title": "Ahaz Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Aram Defeats Judah",
+          "title": "Aram Defeats Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Idolatry of Ahaz",
+          "title": "The Idolatry of Ahaz",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Hezekiah Cleanses the Temple",
+          "title": "Hezekiah Cleanses the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Hezekiah Restores Temple Worship",
+          "title": "Hezekiah Restores Temple Worship",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Hezekiah Proclaims a Passover",
+          "title": "Hezekiah Proclaims a Passover",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Hezekiah Celebrates the Passover",
+          "title": "Hezekiah Celebrates the Passover",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Destruction of Idols",
+          "title": "The Destruction of Idols",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Contributions for Worship",
+          "title": "Contributions for Worship",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Hezekiah Organizes the Priests",
+          "title": "Hezekiah Organizes the Priests",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Sennacherib Invades Judah",
+          "title": "Sennacherib Invades Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Sennacherib Threatens Jerusalem",
+          "title": "Sennacherib Threatens Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Jerusalem Delivered from the Assyrians",
+          "title": "Jerusalem Delivered from the Assyrians",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Hezekiah’s Illness and Recovery",
+          "title": "Hezekiah’s Illness and Recovery",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 32,
+          "sourceTitle": "Hezekiah’s Death",
+          "title": "Hezekiah’s Death",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Manasseh Reigns in Judah",
+          "title": "Manasseh Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Manasseh’s Repentance and Restoration",
+          "title": "Manasseh’s Repentance and Restoration",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Amon Reigns in Judah",
+          "title": "Amon Reigns in Judah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Josiah Reigns in Judah",
+          "title": "Josiah Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Josiah Destroys Idolatry",
+          "title": "Josiah Destroys Idolatry",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Josiah Repairs the Temple",
+          "title": "Josiah Repairs the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Hilkiah Finds the Book of the Law",
+          "title": "Hilkiah Finds the Book of the Law",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Huldah’s Prophecy",
+          "title": "Huldah’s Prophecy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Josiah Renews the Covenant",
+          "title": "Josiah Renews the Covenant",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Josiah Restores the Passover",
+          "title": "Josiah Restores the Passover",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Death of Josiah",
+          "title": "The Death of Josiah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Laments over Josiah",
+          "title": "Laments over Josiah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jehoahaz Succeeds Josiah",
+          "title": "Jehoahaz Succeeds Josiah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Jehoiakim Reigns in Judah",
+          "title": "Jehoiakim Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Jehoiachin Reigns in Judah",
+          "title": "Jehoiachin Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Zedekiah Reigns in Judah",
+          "title": "Zedekiah Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Fall of Jerusalem",
+          "title": "The Fall of Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "The Proclamation of Cyrus",
+          "title": "The Proclamation of Cyrus",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

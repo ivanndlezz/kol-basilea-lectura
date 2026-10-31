@@ -1,0 +1,1149 @@
+{
+  "bookId": "genesis",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Creation",
+          "title": "The Creation",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "The First Day",
+          "title": "The First Day",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Second Day",
+          "title": "The Second Day",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Third Day",
+          "title": "The Third Day",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Fourth Day",
+          "title": "The Fourth Day",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Fifth Day",
+          "title": "The Fifth Day",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "The Sixth Day",
+          "title": "The Sixth Day",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Seventh Day",
+          "title": "The Seventh Day",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Man and Woman in the Garden",
+          "title": "Man and Woman in the Garden",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Serpent’s Deception",
+          "title": "The Serpent’s Deception",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "God Arraigns Adam and Eve",
+          "title": "God Arraigns Adam and Eve",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Fate of the Serpent",
+          "title": "The Fate of the Serpent",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Punishment of Mankind",
+          "title": "The Punishment of Mankind",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Expulsion from Paradise",
+          "title": "The Expulsion from Paradise",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Cain and Abel",
+          "title": "Cain and Abel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Descendants of Cain",
+          "title": "The Descendants of Cain",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Seth and Enosh",
+          "title": "Seth and Enosh",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Descendants of Adam",
+          "title": "The Descendants of Adam",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "God Takes Up Enoch",
+          "title": "God Takes Up Enoch",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "From Methuselah to Noah",
+          "title": "From Methuselah to Noah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Corruption on the Earth",
+          "title": "Corruption on the Earth",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Noah’s Favor with God",
+          "title": "Noah’s Favor with God",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Preparing the Ark",
+          "title": "Preparing the Ark",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Great Flood",
+          "title": "The Great Flood",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Ark Rests on Ararat",
+          "title": "The Ark Rests on Ararat",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Noah Sends a Raven and a Dove",
+          "title": "Noah Sends a Raven and a Dove",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Exiting the Ark",
+          "title": "Exiting the Ark",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Noah Builds an Altar",
+          "title": "Noah Builds an Altar",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Covenant of the Rainbow",
+          "title": "The Covenant of the Rainbow",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Noah’s Shame and Canaan’s Curse",
+          "title": "Noah’s Shame and Canaan’s Curse",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "Shem’s Blessing and Noah’s Death",
+          "title": "Shem’s Blessing and Noah’s Death",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Table of Nations",
+          "title": "The Table of Nations",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 2,
+          "sourceTitle": "The Japhethites",
+          "title": "The Japhethites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Hamites",
+          "title": "The Hamites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Semites",
+          "title": "The Semites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Tower of Babel",
+          "title": "The Tower of Babel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Genealogy from Shem to Abram",
+          "title": "Genealogy from Shem to Abram",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "Terah’s Descendants",
+          "title": "Terah’s Descendants",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Call of Abram",
+          "title": "The Call of Abram",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Abram and Sarai in Egypt",
+          "title": "Abram and Sarai in Egypt",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Abram and Lot Part Ways",
+          "title": "Abram and Lot Part Ways",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Lot Proceeds toward Sodom",
+          "title": "Lot Proceeds toward Sodom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "God Renews the Promise to Abram",
+          "title": "God Renews the Promise to Abram",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The War of the Kings",
+          "title": "The War of the Kings",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Abram Rescues Lot",
+          "title": "Abram Rescues Lot",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Melchizedek Blesses Abram",
+          "title": "Melchizedek Blesses Abram",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God’s Covenant with Abram",
+          "title": "God’s Covenant with Abram",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "God Confirms His Promise",
+          "title": "God Confirms His Promise",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Hagar and Ishmael",
+          "title": "Hagar and Ishmael",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Abraham to Father Many Nations",
+          "title": "Abraham to Father Many Nations",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Covenant of Circumcision",
+          "title": "The Covenant of Circumcision",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Three Visitors",
+          "title": "The Three Visitors",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Sarah Laughs at the Promise",
+          "title": "Sarah Laughs at the Promise",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Abraham Intercedes for Sodom",
+          "title": "Abraham Intercedes for Sodom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Lot Welcomes the Angels",
+          "title": "Lot Welcomes the Angels",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Lot Flees to Zoar",
+          "title": "Lot Flees to Zoar",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "The Destruction of Sodom and Gomorrah",
+          "title": "The Destruction of Sodom and Gomorrah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "Lot and His Daughters",
+          "title": "Lot and His Daughters",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Abraham, Sarah, and Abimelech",
+          "title": "Abraham, Sarah, and Abimelech",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Birth of Isaac",
+          "title": "The Birth of Isaac",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Sarah Turns against Hagar",
+          "title": "Sarah Turns against Hagar",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "The Covenant at Beersheba",
+          "title": "The Covenant at Beersheba",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Offering of Isaac",
+          "title": "The Offering of Isaac",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The LORD Provides the Sacrifice",
+          "title": "The LORD Provides the Sacrifice",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Sons of Nahor",
+          "title": "The Sons of Nahor",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Death and Burial of Sarah",
+          "title": "The Death and Burial of Sarah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Wife for Isaac",
+          "title": "A Wife for Isaac",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Rebekah Is Chosen",
+          "title": "Rebekah Is Chosen",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 62,
+          "sourceTitle": "Isaac Marries Rebekah",
+          "title": "Isaac Marries Rebekah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Abraham and Keturah",
+          "title": "Abraham and Keturah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Death of Abraham",
+          "title": "The Death of Abraham",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Descendants of Ishmael",
+          "title": "The Descendants of Ishmael",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Jacob and Esau",
+          "title": "Jacob and Esau",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Esau Sells His Birthright",
+          "title": "Esau Sells His Birthright",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God’s Promise to Isaac",
+          "title": "God’s Promise to Isaac",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Isaac Deceives Abimelech",
+          "title": "Isaac Deceives Abimelech",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Isaac’s Prosperity",
+          "title": "Isaac’s Prosperity",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "Isaac’s Covenant with Abimelech",
+          "title": "Isaac’s Covenant with Abimelech",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "Esau’s Wives",
+          "title": "Esau’s Wives",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Isaac Blesses Jacob",
+          "title": "Isaac Blesses Jacob",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "Esau’s Lost Hope",
+          "title": "Esau’s Lost Hope",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jacob’s Departure",
+          "title": "Jacob’s Departure",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Esau Marries Mahalath",
+          "title": "Esau Marries Mahalath",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Jacob’s Ladder",
+          "title": "Jacob’s Ladder",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Stone of Bethel",
+          "title": "The Stone of Bethel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jacob Meets Rachel",
+          "title": "Jacob Meets Rachel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Jacob Marries Leah and Rachel",
+          "title": "Jacob Marries Leah and Rachel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Reuben, Simeon, Levi, and Judah",
+          "title": "Reuben, Simeon, Levi, and Judah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Dan and Naphtali",
+          "title": "Dan and Naphtali",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Gad and Asher",
+          "title": "Gad and Asher",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Issachar, Zebulun, and Dinah",
+          "title": "Issachar, Zebulun, and Dinah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Joseph",
+          "title": "Joseph",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Jacob Prospers",
+          "title": "Jacob Prospers",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jacob Flees from Laban",
+          "title": "Jacob Flees from Laban",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Laban Pursues Jacob",
+          "title": "Laban Pursues Jacob",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 43,
+          "sourceTitle": "Jacob’s Covenant with Laban",
+          "title": "Jacob’s Covenant with Laban",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jacob Prepares to Meet Esau",
+          "title": "Jacob Prepares to Meet Esau",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Jacob Wrestles with God",
+          "title": "Jacob Wrestles with God",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jacob Meets Esau",
+          "title": "Jacob Meets Esau",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Jacob Settles in Shechem",
+          "title": "Jacob Settles in Shechem",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Defiling of Dinah",
+          "title": "The Defiling of Dinah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Revenge of Dinah’s Brothers",
+          "title": "The Revenge of Dinah’s Brothers",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jacob Returns to Bethel",
+          "title": "Jacob Returns to Bethel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Benjamin Born, Rachel Dies",
+          "title": "Benjamin Born, Rachel Dies",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Sons of Jacob",
+          "title": "The Sons of Jacob",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "The Death of Isaac",
+          "title": "The Death of Isaac",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Descendants of Esau",
+          "title": "The Descendants of Esau",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Descendants of Seir",
+          "title": "The Descendants of Seir",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "The Kings of Edom",
+          "title": "The Kings of Edom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Joseph’s Dreams",
+          "title": "Joseph’s Dreams",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Joseph Sold into Egypt",
+          "title": "Joseph Sold into Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Jacob Mourns Joseph",
+          "title": "Jacob Mourns Joseph",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judah and Tamar",
+          "title": "Judah and Tamar",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "The Birth of Perez and Zerah",
+          "title": "The Birth of Perez and Zerah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Joseph and Potiphar’s Wife",
+          "title": "Joseph and Potiphar’s Wife",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Joseph Falsely Imprisoned",
+          "title": "Joseph Falsely Imprisoned",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Cupbearer and the Baker",
+          "title": "The Cupbearer and the Baker",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Dreams of Pharaoh",
+          "title": "The Dreams of Pharaoh",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Joseph Interprets Pharaoh’s Dreams",
+          "title": "Joseph Interprets Pharaoh’s Dreams",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 37,
+          "sourceTitle": "Joseph Given Charge of Egypt",
+          "title": "Joseph Given Charge of Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 46,
+          "sourceTitle": "The Seven Years of Plenty",
+          "title": "The Seven Years of Plenty",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 53,
+          "sourceTitle": "The Famine Begins",
+          "title": "The Famine Begins",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Joseph’s Brothers Sent to Egypt",
+          "title": "Joseph’s Brothers Sent to Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Joseph’s Brothers Return to Canaan",
+          "title": "Joseph’s Brothers Return to Canaan",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Return to Egypt with Benjamin",
+          "title": "The Return to Egypt with Benjamin",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Joseph’s Hospitality to His Brothers",
+          "title": "Joseph’s Hospitality to His Brothers",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Benjamin and the Silver Cup",
+          "title": "Benjamin and the Silver Cup",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Judah Pleads for Benjamin",
+          "title": "Judah Pleads for Benjamin",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Joseph Reveals His Identity",
+          "title": "Joseph Reveals His Identity",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Joseph Sends for His Father",
+          "title": "Joseph Sends for His Father",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Pharaoh Invites Jacob to Egypt",
+          "title": "Pharaoh Invites Jacob to Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "The Revival of Jacob",
+          "title": "The Revival of Jacob",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jacob’s Journey to Egypt",
+          "title": "Jacob’s Journey to Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Those Who Went to Egypt",
+          "title": "Those Who Went to Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Children of Leah",
+          "title": "The Children of Leah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Children of Zilpah",
+          "title": "The Children of Zilpah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The Children of Rachel",
+          "title": "The Children of Rachel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "The Children of Bilhah",
+          "title": "The Children of Bilhah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "Jacob Arrives in Egypt",
+          "title": "Jacob Arrives in Egypt",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jacob Settles in Goshen",
+          "title": "Jacob Settles in Goshen",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Famine Continues",
+          "title": "The Famine Continues",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "The Israelites Prosper in Goshen",
+          "title": "The Israelites Prosper in Goshen",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 48,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jacob Blesses Ephraim and Manasseh",
+          "title": "Jacob Blesses Ephraim and Manasseh",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jacob Blesses His Sons",
+          "title": "Jacob Blesses His Sons",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "The Death of Jacob",
+          "title": "The Death of Jacob",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Mourning and Burial for Jacob",
+          "title": "Mourning and Burial for Jacob",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Joseph Comforts His Brothers",
+          "title": "Joseph Comforts His Brothers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "The Death of Joseph",
+          "title": "The Death of Joseph",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

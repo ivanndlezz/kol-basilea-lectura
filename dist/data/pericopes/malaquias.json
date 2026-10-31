@@ -1,0 +1,79 @@
+{
+  "bookId": "malaquias",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The LORD’s Love for Israel",
+          "title": "The LORD’s Love for Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Polluted Offerings",
+          "title": "The Polluted Offerings",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Warning to the Priests",
+          "title": "A Warning to the Priests",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Judah’s Unfaithfulness",
+          "title": "Judah’s Unfaithfulness",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "I Will Send My Messenger",
+          "title": "I Will Send My Messenger",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Robbing God",
+          "title": "Robbing God",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Book of Remembrance",
+          "title": "The Book of Remembrance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Day of the LORD",
+          "title": "The Day of the LORD",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

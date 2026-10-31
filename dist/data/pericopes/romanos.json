@@ -1,0 +1,373 @@
+{
+  "bookId": "romanos",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul Greets the Saints in Rome",
+          "title": "Paul Greets the Saints in Rome",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Unashamed of the Gospel",
+          "title": "Unashamed of the Gospel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "God’s Wrath against Sin",
+          "title": "God’s Wrath against Sin",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God’s Righteous Judgment",
+          "title": "God’s Righteous Judgment",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Jews and the Law",
+          "title": "The Jews and the Law",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God Remains Faithful",
+          "title": "God Remains Faithful",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "There Is No One Righteous",
+          "title": "There Is No One Righteous",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Righteousness through Faith in Christ",
+          "title": "Righteousness through Faith in Christ",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Abraham Justified by Faith",
+          "title": "Abraham Justified by Faith",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Abraham Receives the Promise",
+          "title": "Abraham Receives the Promise",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Triumph of Faith",
+          "title": "The Triumph of Faith",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Christ’s Sacrifice for the Ungodly",
+          "title": "Christ’s Sacrifice for the Ungodly",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Death in Adam, Life in Christ",
+          "title": "Death in Adam, Life in Christ",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Dead to Sin, Alive to God",
+          "title": "Dead to Sin, Alive to God",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Wages of Sin",
+          "title": "The Wages of Sin",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Release from the Law",
+          "title": "Release from the Law",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "God’s Law Is Holy",
+          "title": "God’s Law Is Holy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Struggling with Sin",
+          "title": "Struggling with Sin",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Walking by the Spirit",
+          "title": "Walking by the Spirit",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Heirs with Christ",
+          "title": "Heirs with Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Future Glory",
+          "title": "Future Glory",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "God Works in All Things",
+          "title": "God Works in All Things",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "More than Conquerors",
+          "title": "More than Conquerors",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul’s Concern for the Jews",
+          "title": "Paul’s Concern for the Jews",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "God’s Sovereign Choice",
+          "title": "God’s Sovereign Choice",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "Israel’s Unbelief",
+          "title": "Israel’s Unbelief",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Word Brings Salvation",
+          "title": "The Word Brings Salvation",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Remnant Chosen by Grace",
+          "title": "A Remnant Chosen by Grace",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Ingrafting of the Gentiles",
+          "title": "The Ingrafting of the Gentiles",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "All Israel Will Be Saved",
+          "title": "All Israel Will Be Saved",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "A Hymn of Praise",
+          "title": "A Hymn of Praise",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Living Sacrifices",
+          "title": "Living Sacrifices",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Love, Zeal, Hope, Hospitality",
+          "title": "Love, Zeal, Hope, Hospitality",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Forgiveness",
+          "title": "Forgiveness",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Submission to Authorities",
+          "title": "Submission to Authorities",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Love Fulfills the Law",
+          "title": "Love Fulfills the Law",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Day Is Near",
+          "title": "The Day Is Near",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Law of Liberty",
+          "title": "The Law of Liberty",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Law of Love",
+          "title": "The Law of Love",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Accept One Another",
+          "title": "Accept One Another",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Christ the Servant of Jews and Gentiles",
+          "title": "Christ the Servant of Jews and Gentiles",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Paul the Minister to the Gentiles",
+          "title": "Paul the Minister to the Gentiles",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Paul’s Travel Plans",
+          "title": "Paul’s Travel Plans",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Personal Greetings and Love",
+          "title": "Personal Greetings and Love",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Avoid Divisions",
+          "title": "Avoid Divisions",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Greetings from Paul’s Fellow Workers",
+          "title": "Greetings from Paul’s Fellow Workers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Doxology",
+          "title": "Doxology",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "bookId": "colosenses",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Greetings from Paul and Timothy",
+          "title": "Greetings from Paul and Timothy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Thanksgiving and Prayer",
+          "title": "Thanksgiving and Prayer",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Supremacy of the Son",
+          "title": "The Supremacy of the Son",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Paul’s Suffering for the Church",
+          "title": "Paul’s Suffering for the Church",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Absent in Body, Present in Spirit",
+          "title": "Absent in Body, Present in Spirit",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Alive with Christ",
+          "title": "Alive with Christ",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Put On the New Self",
+          "title": "Put On the New Self",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Christian Households",
+          "title": "Christian Households",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Serving with Honor",
+          "title": "Serving with Honor",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Prayerful Speech and Actions",
+          "title": "Prayerful Speech and Actions",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Greetings from Paul’s Fellow Workers",
+          "title": "Greetings from Paul’s Fellow Workers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Signature and Final Instructions",
+          "title": "Signature and Final Instructions",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

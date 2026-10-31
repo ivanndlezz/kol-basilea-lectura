@@ -1,0 +1,1069 @@
+{
+  "bookId": "mateo",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Genealogy of Jesus",
+          "title": "The Genealogy of Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Birth of Jesus",
+          "title": "The Birth of Jesus",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Pilgrimage of the Magi",
+          "title": "The Pilgrimage of the Magi",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Flight to Egypt",
+          "title": "The Flight to Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Weeping and Great Mourning",
+          "title": "Weeping and Great Mourning",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The Return to Nazareth",
+          "title": "The Return to Nazareth",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Mission of John the Baptist",
+          "title": "The Mission of John the Baptist",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Baptism of Jesus",
+          "title": "The Baptism of Jesus",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Temptation of Jesus",
+          "title": "The Temptation of Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Jesus Begins His Ministry",
+          "title": "Jesus Begins His Ministry",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The First Disciples",
+          "title": "The First Disciples",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Jesus Heals the Multitudes",
+          "title": "Jesus Heals the Multitudes",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Sermon on the Mount",
+          "title": "The Sermon on the Mount",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "The Beatitudes",
+          "title": "The Beatitudes",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Salt and Light",
+          "title": "Salt and Light",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Fulfillment of the Law",
+          "title": "The Fulfillment of the Law",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Anger and Reconciliation",
+          "title": "Anger and Reconciliation",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "Adultery",
+          "title": "Adultery",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Divorce",
+          "title": "Divorce",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "Oaths and Vows",
+          "title": "Oaths and Vows",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 38,
+          "sourceTitle": "Love Your Enemies",
+          "title": "Love Your Enemies",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Giving to the Needy",
+          "title": "Giving to the Needy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Lord’s Prayer",
+          "title": "The Lord’s Prayer",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Proper Fasting",
+          "title": "Proper Fasting",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Treasures in Heaven",
+          "title": "Treasures in Heaven",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "The Lamp of the Body",
+          "title": "The Lamp of the Body",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Do Not Worry",
+          "title": "Do Not Worry",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judging Others",
+          "title": "Judging Others",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Ask, Seek, Knock",
+          "title": "Ask, Seek, Knock",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Narrow Gate",
+          "title": "The Narrow Gate",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "A Tree and Its Fruit",
+          "title": "A Tree and Its Fruit",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "The House on the Rock",
+          "title": "The House on the Rock",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Authority of Jesus",
+          "title": "The Authority of Jesus",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Leper’s Prayer",
+          "title": "The Leper’s Prayer",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Faith of the Centurion",
+          "title": "The Faith of the Centurion",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Jesus Heals at Peter’s House",
+          "title": "Jesus Heals at Peter’s House",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Cost of Discipleship",
+          "title": "The Cost of Discipleship",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Jesus Calms the Storm",
+          "title": "Jesus Calms the Storm",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Demons and the Pigs",
+          "title": "The Demons and the Pigs",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jesus Heals a Paralytic",
+          "title": "Jesus Heals a Paralytic",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Jesus Calls Matthew",
+          "title": "Jesus Calls Matthew",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Questions about Fasting",
+          "title": "Questions about Fasting",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Patches and the Wineskins",
+          "title": "The Patches and the Wineskins",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Healing Touch of Jesus",
+          "title": "The Healing Touch of Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "Jesus Heals the Blind and Mute",
+          "title": "Jesus Heals the Blind and Mute",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "The Lord of the Harvest",
+          "title": "The Lord of the Harvest",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Twelve Apostles",
+          "title": "The Twelve Apostles",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Ministry of the Twelve",
+          "title": "The Ministry of the Twelve",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Sheep among Wolves",
+          "title": "Sheep among Wolves",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "Fear God Alone",
+          "title": "Fear God Alone",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 32,
+          "sourceTitle": "Confessing Christ",
+          "title": "Confessing Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "Not Peace but a Sword",
+          "title": "Not Peace but a Sword",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 40,
+          "sourceTitle": "The Reward of Service",
+          "title": "The Reward of Service",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "John’s Inquiry",
+          "title": "John’s Inquiry",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Jesus Testifies about John",
+          "title": "Jesus Testifies about John",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Woe to the Unrepentant",
+          "title": "Woe to the Unrepentant",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Rest for the Weary",
+          "title": "Rest for the Weary",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Lord of the Sabbath",
+          "title": "The Lord of the Sabbath",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Jesus Heals on the Sabbath",
+          "title": "Jesus Heals on the Sabbath",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "God’s Chosen Servant",
+          "title": "God’s Chosen Servant",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "A House Divided",
+          "title": "A House Divided",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "The Unpardonable Sin",
+          "title": "The Unpardonable Sin",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "Good and Bad Fruit",
+          "title": "Good and Bad Fruit",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 38,
+          "sourceTitle": "The Sign of Jonah",
+          "title": "The Sign of Jonah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 43,
+          "sourceTitle": "An Unclean Spirit Returns",
+          "title": "An Unclean Spirit Returns",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 46,
+          "sourceTitle": "Jesus’ Mother and Brothers",
+          "title": "Jesus’ Mother and Brothers",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Parable of the Sower",
+          "title": "The Parable of the Sower",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Purpose of Jesus’ Parables",
+          "title": "The Purpose of Jesus’ Parables",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Parable of the Sower Explained",
+          "title": "The Parable of the Sower Explained",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "The Parable of the Weeds",
+          "title": "The Parable of the Weeds",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "The Parable of the Mustard Seed",
+          "title": "The Parable of the Mustard Seed",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "The Parable of the Leaven",
+          "title": "The Parable of the Leaven",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "I Will Open My Mouth in Parables",
+          "title": "I Will Open My Mouth in Parables",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "The Parable of the Weeds Explained",
+          "title": "The Parable of the Weeds Explained",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 44,
+          "sourceTitle": "The Parables of the Treasure and the Pearl",
+          "title": "The Parables of the Treasure and the Pearl",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 47,
+          "sourceTitle": "The Parable of the Net",
+          "title": "The Parable of the Net",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 53,
+          "sourceTitle": "The Rejection at Nazareth",
+          "title": "The Rejection at Nazareth",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Beheading of John",
+          "title": "The Beheading of John",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Feeding of the Five Thousand",
+          "title": "The Feeding of the Five Thousand",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Jesus Walks on Water",
+          "title": "Jesus Walks on Water",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "Jesus Heals at Gennesaret",
+          "title": "Jesus Heals at Gennesaret",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Tradition of the Elders",
+          "title": "The Tradition of the Elders",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "What Defiles a Man",
+          "title": "What Defiles a Man",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Faith of the Canaanite Woman",
+          "title": "The Faith of the Canaanite Woman",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "The Feeding of the Four Thousand",
+          "title": "The Feeding of the Four Thousand",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Demand for a Sign",
+          "title": "The Demand for a Sign",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Leaven of the Pharisees and Sadducees",
+          "title": "The Leaven of the Pharisees and Sadducees",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Peter’s Confession of Christ",
+          "title": "Peter’s Confession of Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Christ’s Passion Foretold",
+          "title": "Christ’s Passion Foretold",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Take Up Your Cross",
+          "title": "Take Up Your Cross",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Transfiguration",
+          "title": "The Transfiguration",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Boy with a Demon",
+          "title": "The Boy with a Demon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The Power of Faith",
+          "title": "The Power of Faith",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "The Second Prediction of the Passion",
+          "title": "The Second Prediction of the Passion",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "The Temple Tax",
+          "title": "The Temple Tax",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Greatest in the Kingdom",
+          "title": "The Greatest in the Kingdom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Temptations and Trespasses",
+          "title": "Temptations and Trespasses",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Parable of the Lost Sheep",
+          "title": "The Parable of the Lost Sheep",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "A Brother Who Sins",
+          "title": "A Brother Who Sins",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Ask in My Name",
+          "title": "Ask in My Name",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Unforgiving Servant",
+          "title": "The Unforgiving Servant",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Teachings about Divorce",
+          "title": "Teachings about Divorce",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Jesus Blesses the Children",
+          "title": "Jesus Blesses the Children",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Rich Young Man",
+          "title": "The Rich Young Man",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Parable of the Workers",
+          "title": "The Parable of the Workers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Third Prediction of the Passion",
+          "title": "The Third Prediction of the Passion",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "A Mother’s Request",
+          "title": "A Mother’s Request",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "The Blind Men by the Road",
+          "title": "The Blind Men by the Road",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Triumphal Entry",
+          "title": "The Triumphal Entry",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Jesus Cleanses the Temple",
+          "title": "Jesus Cleanses the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Barren Fig Tree",
+          "title": "The Barren Fig Tree",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Jesus’ Authority Challenged",
+          "title": "Jesus’ Authority Challenged",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Parable of the Two Sons",
+          "title": "The Parable of the Two Sons",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "The Parable of the Wicked Tenants",
+          "title": "The Parable of the Wicked Tenants",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Parable of the Banquet",
+          "title": "The Parable of the Banquet",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Paying Taxes to Caesar",
+          "title": "Paying Taxes to Caesar",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "The Sadducees and the Resurrection",
+          "title": "The Sadducees and the Resurrection",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "The Greatest Commandment",
+          "title": "The Greatest Commandment",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 41,
+          "sourceTitle": "Whose Son Is the Christ?",
+          "title": "Whose Son Is the Christ?",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Woes to Scribes and Pharisees",
+          "title": "Woes to Scribes and Pharisees",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 37,
+          "sourceTitle": "Lament over Jerusalem",
+          "title": "Lament over Jerusalem",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Temple Destruction and Other Signs",
+          "title": "Temple Destruction and Other Signs",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Witnessing to All Nations",
+          "title": "Witnessing to All Nations",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Abomination of Desolation",
+          "title": "The Abomination of Desolation",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "The Return of the Son of Man",
+          "title": "The Return of the Son of Man",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 32,
+          "sourceTitle": "The Lesson of the Fig Tree",
+          "title": "The Lesson of the Fig Tree",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "Readiness at Any Hour",
+          "title": "Readiness at Any Hour",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Parable of the Ten Virgins",
+          "title": "The Parable of the Ten Virgins",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Parable of the Talents",
+          "title": "The Parable of the Talents",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "The Sheep and the Goats",
+          "title": "The Sheep and the Goats",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Plot to Kill Jesus",
+          "title": "The Plot to Kill Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Jesus Anointed at Bethany",
+          "title": "Jesus Anointed at Bethany",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Judas Agrees to Betray Jesus",
+          "title": "Judas Agrees to Betray Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Preparing the Passover",
+          "title": "Preparing the Passover",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Last Supper",
+          "title": "The Last Supper",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Jesus Predicts Peter’s Denial",
+          "title": "Jesus Predicts Peter’s Denial",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "Jesus Prays at Gethsemane",
+          "title": "Jesus Prays at Gethsemane",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 47,
+          "sourceTitle": "The Betrayal of Jesus",
+          "title": "The Betrayal of Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 57,
+          "sourceTitle": "Jesus before the Sanhedrin",
+          "title": "Jesus before the Sanhedrin",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 69,
+          "sourceTitle": "Peter Denies Jesus",
+          "title": "Peter Denies Jesus",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jesus Delivered to Pilate",
+          "title": "Jesus Delivered to Pilate",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Judas Hangs Himself",
+          "title": "Judas Hangs Himself",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Jesus before Pilate",
+          "title": "Jesus before Pilate",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Crowd Chooses Barabbas",
+          "title": "The Crowd Chooses Barabbas",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Pilate Washes His Hands",
+          "title": "Pilate Washes His Hands",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "The Soldiers Mock Jesus",
+          "title": "The Soldiers Mock Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 32,
+          "sourceTitle": "The Crucifixion",
+          "title": "The Crucifixion",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 45,
+          "sourceTitle": "The Death of Jesus",
+          "title": "The Death of Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 57,
+          "sourceTitle": "The Burial of Jesus",
+          "title": "The Burial of Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 62,
+          "sourceTitle": "The Guards at the Tomb",
+          "title": "The Guards at the Tomb",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Resurrection",
+          "title": "The Resurrection",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Report of the Guards",
+          "title": "The Report of the Guards",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Great Commission",
+          "title": "The Great Commission",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

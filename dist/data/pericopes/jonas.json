@@ -1,0 +1,67 @@
+{
+  "bookId": "jonas",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jonah Flees from the LORD",
+          "title": "Jonah Flees from the LORD",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "The Great Storm",
+          "title": "The Great Storm",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Jonah Cast into the Sea",
+          "title": "Jonah Cast into the Sea",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jonah’s Prayer",
+          "title": "Jonah’s Prayer",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Ninevites Repent",
+          "title": "The Ninevites Repent",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jonah’s Anger at the LORD’s Compassion",
+          "title": "Jonah’s Anger at the LORD’s Compassion",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

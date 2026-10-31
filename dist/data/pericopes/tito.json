@@ -1,0 +1,74 @@
+{
+  "bookId": "tito",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul’s Greeting to Titus",
+          "title": "Paul’s Greeting to Titus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Appointing Elders on Crete",
+          "title": "Appointing Elders on Crete",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Correcting False Teachers",
+          "title": "Correcting False Teachers",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Teaching Sound Doctrine",
+          "title": "Teaching Sound Doctrine",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "God’s Grace Brings Salvation",
+          "title": "God’s Grace Brings Salvation",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Heirs of Grace",
+          "title": "Heirs of Grace",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Avoid Divisions",
+          "title": "Avoid Divisions",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Final Remarks and Greetings",
+          "title": "Final Remarks and Greetings",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

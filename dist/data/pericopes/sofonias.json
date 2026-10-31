@@ -1,0 +1,86 @@
+{
+  "bookId": "sofonias",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Zephaniah Prophesies Judgment on Judah",
+          "title": "Zephaniah Prophesies Judgment on Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Day of the LORD",
+          "title": "The Day of the LORD",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Call to Repentance",
+          "title": "A Call to Repentance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Judgment on the Philistines",
+          "title": "Judgment on the Philistines",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Judgment on Moab and Ammon",
+          "title": "Judgment on Moab and Ammon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Judgment on Cush and Assyria",
+          "title": "Judgment on Cush and Assyria",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment on Jerusalem",
+          "title": "Judgment on Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Purification of the Nations",
+          "title": "Purification of the Nations",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "A Faithful Remnant",
+          "title": "A Faithful Remnant",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Israel’s Restoration",
+          "title": "Israel’s Restoration",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

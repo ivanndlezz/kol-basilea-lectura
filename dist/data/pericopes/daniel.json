@@ -1,0 +1,269 @@
+{
+  "bookId": "daniel",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Daniel Removed to Babylon",
+          "title": "Daniel Removed to Babylon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Daniel’s Faithfulness",
+          "title": "Daniel’s Faithfulness",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Daniel’s Wisdom",
+          "title": "Daniel’s Wisdom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Nebuchadnezzar’s Troubling Dream",
+          "title": "Nebuchadnezzar’s Troubling Dream",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Dream Revealed to Daniel",
+          "title": "The Dream Revealed to Daniel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Daniel Interprets the Dream",
+          "title": "Daniel Interprets the Dream",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 46,
+          "sourceTitle": "Nebuchadnezzar Promotes Daniel",
+          "title": "Nebuchadnezzar Promotes Daniel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Nebuchadnezzar’s Golden Statue",
+          "title": "Nebuchadnezzar’s Golden Statue",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Shadrach, Meshach, and Abednego Accused",
+          "title": "Shadrach, Meshach, and Abednego Accused",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The Fiery Furnace",
+          "title": "The Fiery Furnace",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Nebuchadnezzar Confesses God’s Kingdom",
+          "title": "Nebuchadnezzar Confesses God’s Kingdom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Nebuchadnezzar’s Dream of a Great Tree",
+          "title": "Nebuchadnezzar’s Dream of a Great Tree",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Daniel Interprets the Second Dream",
+          "title": "Daniel Interprets the Second Dream",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Second Dream Fulfilled",
+          "title": "The Second Dream Fulfilled",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "Nebuchadnezzar Restored",
+          "title": "Nebuchadnezzar Restored",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Belshazzar’s Feast",
+          "title": "Belshazzar’s Feast",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Handwriting on the Wall",
+          "title": "The Handwriting on the Wall",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Daniel Interprets the Handwriting",
+          "title": "Daniel Interprets the Handwriting",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Plot against Daniel",
+          "title": "The Plot against Daniel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Daniel in the Lions’ Den",
+          "title": "Daniel in the Lions’ Den",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Darius Honors God",
+          "title": "Darius Honors God",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Daniel’s Vision of the Four Beasts",
+          "title": "Daniel’s Vision of the Four Beasts",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Daniel’s Vision of the Ancient of Days",
+          "title": "Daniel’s Vision of the Ancient of Days",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Daniel’s Vision of the Son of Man",
+          "title": "Daniel’s Vision of the Son of Man",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Daniel’s Visions Interpreted",
+          "title": "Daniel’s Visions Interpreted",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Daniel’s Vision of the Ram and the Goat",
+          "title": "Daniel’s Vision of the Ram and the Goat",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Gabriel Interprets Daniel’s Vision",
+          "title": "Gabriel Interprets Daniel’s Vision",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Daniel’s Prayer for His People",
+          "title": "Daniel’s Prayer for His People",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Gabriel’s Prophecy of the Seventy Weeks",
+          "title": "Gabriel’s Prophecy of the Seventy Weeks",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Daniel’s Vision by the Tigris",
+          "title": "Daniel’s Vision by the Tigris",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Kings of the South and North",
+          "title": "Kings of the South and North",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "The King Who Exalts Himself",
+          "title": "The King Who Exalts Himself",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The End Times",
+          "title": "The End Times",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

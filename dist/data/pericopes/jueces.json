@@ -1,0 +1,428 @@
+{
+  "bookId": "jueces",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Conquest of Canaan Proceeds",
+          "title": "The Conquest of Canaan Proceeds",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Capture of Jerusalem and Hebron",
+          "title": "The Capture of Jerusalem and Hebron",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "The Failure to Complete the Conquest",
+          "title": "The Failure to Complete the Conquest",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Israel Rebuked at Bochim",
+          "title": "Israel Rebuked at Bochim",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Joshua’s Death and Burial",
+          "title": "Joshua’s Death and Burial",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Israel’s Unfaithfulness",
+          "title": "Israel’s Unfaithfulness",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Judges Raised Up",
+          "title": "Judges Raised Up",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Nations Left to Test Israel",
+          "title": "Nations Left to Test Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Othniel",
+          "title": "Othniel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Ehud",
+          "title": "Ehud",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Shamgar",
+          "title": "Shamgar",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Deborah and Barak",
+          "title": "Deborah and Barak",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Jael Kills Sisera",
+          "title": "Jael Kills Sisera",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Song of Deborah and Barak",
+          "title": "The Song of Deborah and Barak",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Midian Oppresses Israel",
+          "title": "Midian Oppresses Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Call of Gideon",
+          "title": "The Call of Gideon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Gideon Destroys Baal’s Altar",
+          "title": "Gideon Destroys Baal’s Altar",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "The Sign of the Fleece",
+          "title": "The Sign of the Fleece",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Gideon’s Army of Three Hundred",
+          "title": "Gideon’s Army of Three Hundred",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Sword of Gideon",
+          "title": "The Sword of Gideon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Gideon Defeats Midian",
+          "title": "Gideon Defeats Midian",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Gideon Defeats Zebah and Zalmunna",
+          "title": "Gideon Defeats Zebah and Zalmunna",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Gideon’s Ephod",
+          "title": "Gideon’s Ephod",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "Forty Years of Peace",
+          "title": "Forty Years of Peace",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 32,
+          "sourceTitle": "Gideon’s Death",
+          "title": "Gideon’s Death",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Abimelech’s Conspiracy",
+          "title": "Abimelech’s Conspiracy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Jotham’s Parable",
+          "title": "Jotham’s Parable",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Gaal Conspires with the Shechemites",
+          "title": "Gaal Conspires with the Shechemites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "The Fall of Shechem",
+          "title": "The Fall of Shechem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 50,
+          "sourceTitle": "Abimelech’s Punishment",
+          "title": "Abimelech’s Punishment",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Tola",
+          "title": "Tola",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Jair",
+          "title": "Jair",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Oppression by the Philistines and Ammonites",
+          "title": "Oppression by the Philistines and Ammonites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jephthah Delivers Israel",
+          "title": "Jephthah Delivers Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Jephthah’s Tragic Vow",
+          "title": "Jephthah’s Tragic Vow",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jephthah Defeats Ephraim",
+          "title": "Jephthah Defeats Ephraim",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Ibzan, Elon, and Abdon",
+          "title": "Ibzan, Elon, and Abdon",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Birth of Samson",
+          "title": "The Birth of Samson",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Samson’s Marriage",
+          "title": "Samson’s Marriage",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Samson’s Riddle",
+          "title": "Samson’s Riddle",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Samson’s Revenge",
+          "title": "Samson’s Revenge",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Samson Escapes Gaza",
+          "title": "Samson Escapes Gaza",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Samson and Delilah",
+          "title": "Samson and Delilah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Delilah Learns the Secret",
+          "title": "Delilah Learns the Secret",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Samson’s Vengeance and Death",
+          "title": "Samson’s Vengeance and Death",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Micah’s Idolatry",
+          "title": "Micah’s Idolatry",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Danites Settle in Laish",
+          "title": "The Danites Settle in Laish",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Danites Take Micah’s Idols",
+          "title": "The Danites Take Micah’s Idols",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Crime of the Benjamites",
+          "title": "The Crime of the Benjamites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Decree of the Assembly",
+          "title": "The Decree of the Assembly",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Civil War against Benjamin",
+          "title": "Civil War against Benjamin",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Wives for the Benjamites",
+          "title": "Wives for the Benjamites",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

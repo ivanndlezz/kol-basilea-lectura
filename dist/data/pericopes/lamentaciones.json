@@ -1,0 +1,78 @@
+{
+  "bookId": "lamentaciones",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "How Lonely Lies the City!",
+          "title": "How Lonely Lies the City!",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God’s Anger over Jerusalem",
+          "title": "God’s Anger over Jerusalem",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Prophet’s Afflictions",
+          "title": "The Prophet’s Afflictions",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The Prophet’s Hope",
+          "title": "The Prophet’s Hope",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 37,
+          "sourceTitle": "God’s Justice",
+          "title": "God’s Justice",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Distress of Zion",
+          "title": "The Distress of Zion",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Prayer for Restoration",
+          "title": "A Prayer for Restoration",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "bookId": "joel",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Invasion of Locusts",
+          "title": "The Invasion of Locusts",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "A Call to Mourning",
+          "title": "A Call to Mourning",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "A Call to Repentance",
+          "title": "A Call to Repentance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Army of Locusts",
+          "title": "The Army of Locusts",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Return with All Your Heart",
+          "title": "Return with All Your Heart",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Restoration Promised",
+          "title": "Restoration Promised",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "I Will Pour Out My Spirit",
+          "title": "I Will Pour Out My Spirit",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The LORD Judges the Nations",
+          "title": "The LORD Judges the Nations",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Blessings for God’s People",
+          "title": "Blessings for God’s People",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "bookId": "miqueas",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment to Come",
+          "title": "Judgment to Come",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Weeping and Mourning",
+          "title": "Weeping and Mourning",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Woe to Oppressors",
+          "title": "Woe to Oppressors",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Reproof of False Prophets",
+          "title": "Reproof of False Prophets",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Remnant of Israel",
+          "title": "The Remnant of Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Rulers and Prophets Condemned",
+          "title": "Rulers and Prophets Condemned",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Mountain of the House of the LORD",
+          "title": "The Mountain of the House of the LORD",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Restoration of Zion",
+          "title": "The Restoration of Zion",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Ruler from Bethlehem",
+          "title": "A Ruler from Bethlehem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Remnant of Jacob",
+          "title": "The Remnant of Jacob",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Case against Israel",
+          "title": "The Case against Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Punishment of Israel",
+          "title": "The Punishment of Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Israel’s Great Misery",
+          "title": "Israel’s Great Misery",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Israel’s Confession and Comfort",
+          "title": "Israel’s Confession and Comfort",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "God’s Compassion on Israel",
+          "title": "God’s Compassion on Israel",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+{
+  "bookId": "1-corintios",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Greetings from Paul and Sosthenes",
+          "title": "Greetings from Paul and Sosthenes",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Thanksgiving",
+          "title": "Thanksgiving",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Unity in the Church",
+          "title": "Unity in the Church",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Message of the Cross",
+          "title": "The Message of the Cross",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "Wisdom from God",
+          "title": "Wisdom from God",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul’s Message by the Spirit’s Power",
+          "title": "Paul’s Message by the Spirit’s Power",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Spiritual Wisdom",
+          "title": "Spiritual Wisdom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God’s Fellow Workers",
+          "title": "God’s Fellow Workers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Christ Our Foundation",
+          "title": "Christ Our Foundation",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "God’s Temple and God’s Wisdom",
+          "title": "God’s Temple and God’s Wisdom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Servants of Christ",
+          "title": "Servants of Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Paul’s Fatherly Warning",
+          "title": "Paul’s Fatherly Warning",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Immorality Rebuked",
+          "title": "Immorality Rebuked",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Expel the Immoral Brother",
+          "title": "Expel the Immoral Brother",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Lawsuits among Believers",
+          "title": "Lawsuits among Believers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Members of Christ",
+          "title": "Members of Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Temple of the Holy Spirit",
+          "title": "The Temple of the Holy Spirit",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Principles of Marriage",
+          "title": "Principles of Marriage",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Live Your Calling",
+          "title": "Live Your Calling",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "The Unmarried and Widowed",
+          "title": "The Unmarried and Widowed",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Food Sacrificed to Idols",
+          "title": "Food Sacrificed to Idols",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Rights of an Apostle",
+          "title": "The Rights of an Apostle",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Paul the Servant to All",
+          "title": "Paul the Servant to All",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Run Your Race to Win",
+          "title": "Run Your Race to Win",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Warnings from Israel’s Past",
+          "title": "Warnings from Israel’s Past",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Flee from Idolatry",
+          "title": "Flee from Idolatry",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "All to God’s Glory",
+          "title": "All to God’s Glory",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Roles in Worship",
+          "title": "Roles in Worship",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Sharing in the Lord’s Supper",
+          "title": "Sharing in the Lord’s Supper",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Spiritual Gifts",
+          "title": "Spiritual Gifts",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Body of Christ",
+          "title": "The Body of Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "The Greater Gifts",
+          "title": "The Greater Gifts",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Love",
+          "title": "Love",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Prophecy and Tongues",
+          "title": "Prophecy and Tongues",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "Orderly Worship",
+          "title": "Orderly Worship",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Resurrection of Christ",
+          "title": "The Resurrection of Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Resurrection of the Dead",
+          "title": "The Resurrection of the Dead",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Order of Resurrection",
+          "title": "The Order of Resurrection",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "The Resurrection Body",
+          "title": "The Resurrection Body",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 50,
+          "sourceTitle": "Where, O Death, Is Your Victory?",
+          "title": "Where, O Death, Is Your Victory?",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Collection for the Saints",
+          "title": "The Collection for the Saints",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Paul’s Travel Plans",
+          "title": "Paul’s Travel Plans",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Timothy and Apollos",
+          "title": "Timothy and Apollos",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Concluding Exhortations",
+          "title": "Concluding Exhortations",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Signature and Final Greetings",
+          "title": "Signature and Final Greetings",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

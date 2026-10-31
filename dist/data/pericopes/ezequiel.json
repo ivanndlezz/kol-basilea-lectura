@@ -1,0 +1,935 @@
+{
+  "bookId": "ezequiel",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Ezekiel’s Vision by the River Kebar",
+          "title": "Ezekiel’s Vision by the River Kebar",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "The Four Living Creatures",
+          "title": "The Four Living Creatures",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Four Wheels",
+          "title": "The Four Wheels",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "The Divine Glory",
+          "title": "The Divine Glory",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Ezekiel’s Call",
+          "title": "Ezekiel’s Call",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Ezekiel Eats the Scroll",
+          "title": "Ezekiel Eats the Scroll",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "A Watchman for Israel",
+          "title": "A Watchman for Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Sign of Jerusalem’s Siege",
+          "title": "A Sign of Jerusalem’s Siege",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Defiled Bread",
+          "title": "The Defiled Bread",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Razor of Judgment",
+          "title": "The Razor of Judgment",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Famine, Sword, and Dispersion",
+          "title": "Famine, Sword, and Dispersion",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment against Idolatry",
+          "title": "Judgment against Idolatry",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "A Remnant to Be Blessed",
+          "title": "A Remnant to Be Blessed",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Hour of Doom",
+          "title": "The Hour of Doom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Desolation of Israel",
+          "title": "The Desolation of Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Vision of Idolatry in the Temple",
+          "title": "The Vision of Idolatry in the Temple",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Execution of the Idolaters",
+          "title": "Execution of the Idolaters",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God’s Glory Exits the Temple",
+          "title": "God’s Glory Exits the Temple",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Evil in High Places",
+          "title": "Evil in High Places",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "A Promise of Restoration",
+          "title": "A Promise of Restoration",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "God’s Glory Leaves Jerusalem",
+          "title": "God’s Glory Leaves Jerusalem",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Signs of the Coming Captivity",
+          "title": "Signs of the Coming Captivity",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Presumptuous Proverb",
+          "title": "The Presumptuous Proverb",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Reproof of False Prophets",
+          "title": "Reproof of False Prophets",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Reproof of False Prophetesses",
+          "title": "Reproof of False Prophetesses",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Idolatrous Elders Condemned",
+          "title": "Idolatrous Elders Condemned",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Four Dire Judgments",
+          "title": "Four Dire Judgments",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jerusalem the Useless Vine",
+          "title": "Jerusalem the Useless Vine",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jerusalem’s Unfaithfulness",
+          "title": "Jerusalem’s Unfaithfulness",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "Judgment on Jerusalem",
+          "title": "Judgment on Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 59,
+          "sourceTitle": "The Covenant Remembered",
+          "title": "The Covenant Remembered",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Parable of Two Eagles and a Vine",
+          "title": "The Parable of Two Eagles and a Vine",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Parable Explained",
+          "title": "The Parable Explained",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Soul Who Sins Will Die",
+          "title": "The Soul Who Sins Will Die",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Lament for the Princes of Israel",
+          "title": "A Lament for the Princes of Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Israel’s Rebellion in Egypt",
+          "title": "Israel’s Rebellion in Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Israel’s Rebellion in the Wilderness",
+          "title": "Israel’s Rebellion in the Wilderness",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "Israel’s Rebellion in the Land",
+          "title": "Israel’s Rebellion in the Land",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "Judgment and Restoration",
+          "title": "Judgment and Restoration",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 45,
+          "sourceTitle": "A Prophecy against the South",
+          "title": "A Prophecy against the South",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God’s Sword of Judgment",
+          "title": "God’s Sword of Judgment",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Sins of Jerusalem",
+          "title": "The Sins of Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Refining Furnace",
+          "title": "The Refining Furnace",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Israel’s Wicked Leaders",
+          "title": "Israel’s Wicked Leaders",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Two Adulterous Sisters",
+          "title": "The Two Adulterous Sisters",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Oholibah to Be Plagued",
+          "title": "Oholibah to Be Plagued",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "Judgment on Both Sisters",
+          "title": "Judgment on Both Sisters",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Parable of the Cooking Pot",
+          "title": "The Parable of the Cooking Pot",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Ezekiel’s Wife Dies",
+          "title": "Ezekiel’s Wife Dies",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Prophecy against Ammon",
+          "title": "A Prophecy against Ammon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "A Prophecy against Moab",
+          "title": "A Prophecy against Moab",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "A Prophecy against Edom",
+          "title": "A Prophecy against Edom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "A Prophecy against the Philistines",
+          "title": "A Prophecy against the Philistines",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Prophecy against Tyre",
+          "title": "A Prophecy against Tyre",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Lament for Tyre",
+          "title": "A Lament for Tyre",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Prophecy against the Ruler of Tyre",
+          "title": "A Prophecy against the Ruler of Tyre",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "A Lament for the King of Tyre",
+          "title": "A Lament for the King of Tyre",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "A Prophecy against Sidon",
+          "title": "A Prophecy against Sidon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "The Restoration of Israel",
+          "title": "The Restoration of Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Prophecy against Pharaoh",
+          "title": "A Prophecy against Pharaoh",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Desolation of Egypt",
+          "title": "The Desolation of Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Egypt the Reward of Nebuchadnezzar",
+          "title": "Egypt the Reward of Nebuchadnezzar",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Lament for Egypt",
+          "title": "A Lament for Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Pharaoh’s Power Broken",
+          "title": "Pharaoh’s Power Broken",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Egypt Will Fall like Assyria",
+          "title": "Egypt Will Fall like Assyria",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Lament for Pharaoh King of Egypt",
+          "title": "A Lament for Pharaoh King of Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Egypt Cast into the Pit",
+          "title": "Egypt Cast into the Pit",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Ezekiel the Watchman for Israel",
+          "title": "Ezekiel the Watchman for Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Message of the Watchman",
+          "title": "The Message of the Watchman",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Word of Jerusalem’s Fall",
+          "title": "Word of Jerusalem’s Fall",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Prophecy against Israel’s Shepherds",
+          "title": "A Prophecy against Israel’s Shepherds",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Good Shepherd",
+          "title": "The Good Shepherd",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "The Covenant of Peace",
+          "title": "The Covenant of Peace",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Prophecy against Mount Seir",
+          "title": "A Prophecy against Mount Seir",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Prophecy to the Mountains of Israel",
+          "title": "A Prophecy to the Mountains of Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "A New Heart and a New Spirit",
+          "title": "A New Heart and a New Spirit",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Valley of Dry Bones",
+          "title": "The Valley of Dry Bones",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "One Nation with One King",
+          "title": "One Nation with One King",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Prophecy against Gog",
+          "title": "A Prophecy against Gog",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Slaughter of Gog’s Armies",
+          "title": "The Slaughter of Gog’s Armies",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Israel to Be Restored",
+          "title": "Israel to Be Restored",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Man with a Measuring Rod",
+          "title": "The Man with a Measuring Rod",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The East Gate",
+          "title": "The East Gate",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Outer Court",
+          "title": "The Outer Court",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The North Gate",
+          "title": "The North Gate",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "The South Gate",
+          "title": "The South Gate",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Gates of the Inner Court",
+          "title": "The Gates of the Inner Court",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 38,
+          "sourceTitle": "Eight Tables for Sacrifices",
+          "title": "Eight Tables for Sacrifices",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 44,
+          "sourceTitle": "Chambers for Ministry",
+          "title": "Chambers for Ministry",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 47,
+          "sourceTitle": "The Inner Court",
+          "title": "The Inner Court",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Inside the Temple",
+          "title": "Inside the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Outside the Temple",
+          "title": "Outside the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Interior Structures",
+          "title": "The Interior Structures",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Chambers for the Priests",
+          "title": "Chambers for the Priests",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Outer Measurements",
+          "title": "The Outer Measurements",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Glory of the LORD Returns to the Temple",
+          "title": "The Glory of the LORD Returns to the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Altar of Sacrifice",
+          "title": "The Altar of Sacrifice",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The East Gate Assigned to the Prince",
+          "title": "The East Gate Assigned to the Prince",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Reproof of the Levites",
+          "title": "Reproof of the Levites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Duties of the Priests",
+          "title": "The Duties of the Priests",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Consecration of the Land",
+          "title": "Consecration of the Land",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Prince’s Portion",
+          "title": "The Prince’s Portion",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Honest Scales",
+          "title": "Honest Scales",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Offerings and Feasts",
+          "title": "Offerings and Feasts",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Prince’s Offerings",
+          "title": "The Prince’s Offerings",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The Courts for Boiling and Baking",
+          "title": "The Courts for Boiling and Baking",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Waters from under the Temple",
+          "title": "Waters from under the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Borders of the Land",
+          "title": "The Borders of the Land",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 48,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Portions for the Tribes",
+          "title": "The Portions for the Tribes",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Portions for the Priests and Levites",
+          "title": "The Portions for the Priests and Levites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Common Portion",
+          "title": "The Common Portion",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Portion for the Prince",
+          "title": "The Portion for the Prince",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "The Portions for the Remaining Tribes",
+          "title": "The Portions for the Remaining Tribes",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "The City Gates and Dimensions",
+          "title": "The City Gates and Dimensions",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

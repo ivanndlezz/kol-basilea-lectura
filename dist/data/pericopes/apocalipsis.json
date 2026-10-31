@@ -1,0 +1,487 @@
+{
+  "bookId": "apocalipsis",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Prologue",
+          "title": "Prologue",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "John Greets the Seven Churches",
+          "title": "John Greets the Seven Churches",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "John’s Vision on Patmos",
+          "title": "John’s Vision on Patmos",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "To the Church in Ephesus",
+          "title": "To the Church in Ephesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "To the Church in Smyrna",
+          "title": "To the Church in Smyrna",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "To the Church in Pergamum",
+          "title": "To the Church in Pergamum",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "To the Church in Thyatira",
+          "title": "To the Church in Thyatira",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "To the Church in Sardis",
+          "title": "To the Church in Sardis",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "To the Church in Philadelphia",
+          "title": "To the Church in Philadelphia",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "To the Church in Laodicea",
+          "title": "To the Church in Laodicea",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Throne in Heaven",
+          "title": "The Throne in Heaven",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Worship of the Creator",
+          "title": "Worship of the Creator",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Lamb Takes the Scroll",
+          "title": "The Lamb Takes the Scroll",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Lamb Exalted",
+          "title": "The Lamb Exalted",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The First Seal: The White Horse",
+          "title": "The First Seal: The White Horse",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "The Second Seal: War",
+          "title": "The Second Seal: War",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Third Seal: Famine",
+          "title": "The Third Seal: Famine",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Fourth Seal: Death",
+          "title": "The Fourth Seal: Death",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Fifth Seal: The Martyrs",
+          "title": "The Fifth Seal: The Martyrs",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Sixth Seal: Terror",
+          "title": "The Sixth Seal: Terror",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "144,000 Sealed",
+          "title": "144,000 Sealed",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Praise from the Great Multitude",
+          "title": "Praise from the Great Multitude",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Seventh Seal",
+          "title": "The Seventh Seal",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The First Four Trumpets",
+          "title": "The First Four Trumpets",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Fifth Trumpet",
+          "title": "The Fifth Trumpet",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Sixth Trumpet",
+          "title": "The Sixth Trumpet",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Angel and the Small Scroll",
+          "title": "The Angel and the Small Scroll",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Two Witnesses",
+          "title": "The Two Witnesses",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Witnesses Killed and Raised",
+          "title": "The Witnesses Killed and Raised",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Seventh Trumpet",
+          "title": "The Seventh Trumpet",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Woman and the Dragon",
+          "title": "The Woman and the Dragon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The War in Heaven",
+          "title": "The War in Heaven",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Woman Persecuted",
+          "title": "The Woman Persecuted",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Beast from the Sea",
+          "title": "The Beast from the Sea",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Beast from the Earth",
+          "title": "The Beast from the Earth",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Mark of the Beast",
+          "title": "The Mark of the Beast",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Lamb and the 144,000",
+          "title": "The Lamb and the 144,000",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Three Angels and Babylon’s Fall",
+          "title": "The Three Angels and Babylon’s Fall",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Harvest of the Earth",
+          "title": "The Harvest of the Earth",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Song of Moses and the Lamb",
+          "title": "The Song of Moses and the Lamb",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Preparation for Judgment",
+          "title": "Preparation for Judgment",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The First Six Bowls of Wrath",
+          "title": "The First Six Bowls of Wrath",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Seventh Bowl of Wrath",
+          "title": "The Seventh Bowl of Wrath",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Woman on the Beast",
+          "title": "The Woman on the Beast",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Mystery Explained",
+          "title": "The Mystery Explained",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Victory of the Lamb",
+          "title": "The Victory of the Lamb",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Babylon Is Fallen",
+          "title": "Babylon Is Fallen",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Lament over Babylon",
+          "title": "Lament over Babylon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Doom of Babylon",
+          "title": "The Doom of Babylon",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Rejoicing in Heaven",
+          "title": "Rejoicing in Heaven",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Marriage of the Lamb",
+          "title": "The Marriage of the Lamb",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Rider on the White Horse",
+          "title": "The Rider on the White Horse",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Defeat of the Beast and False Prophet",
+          "title": "Defeat of the Beast and False Prophet",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Satan Bound",
+          "title": "Satan Bound",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Satan Cast into the Lake of Fire",
+          "title": "Satan Cast into the Lake of Fire",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Judgment before the Great White Throne",
+          "title": "Judgment before the Great White Throne",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A New Heaven and a New Earth",
+          "title": "A New Heaven and a New Earth",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The New Jerusalem",
+          "title": "The New Jerusalem",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The River of Life",
+          "title": "The River of Life",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Jesus Is Coming",
+          "title": "Jesus Is Coming",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Nothing May Be Added or Removed",
+          "title": "Nothing May Be Added or Removed",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

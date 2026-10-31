@@ -1,0 +1,97 @@
+{
+  "bookId": "2-timoteo",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul’s Greeting to Timothy",
+          "title": "Paul’s Greeting to Timothy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Faithfulness under Persecution",
+          "title": "Faithfulness under Persecution",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Holding to Sound Teaching",
+          "title": "Holding to Sound Teaching",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Grace and Perseverance",
+          "title": "Grace and Perseverance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Lord’s Approved Workman",
+          "title": "The Lord’s Approved Workman",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Evil in the Last Days",
+          "title": "Evil in the Last Days",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "All Scripture Is God-Breathed",
+          "title": "All Scripture Is God-Breathed",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Preach the Word",
+          "title": "Preach the Word",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Personal Concerns",
+          "title": "Personal Concerns",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Lord Remains Faithful",
+          "title": "The Lord Remains Faithful",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Final Greetings",
+          "title": "Final Greetings",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

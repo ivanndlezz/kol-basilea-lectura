@@ -1,0 +1,40 @@
+{
+  "bookId": "judas",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Greeting from Jude",
+          "title": "A Greeting from Jude",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "God’s Judgment on the Ungodly",
+          "title": "God’s Judgment on the Ungodly",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "A Call to Persevere",
+          "title": "A Call to Persevere",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Doxology",
+          "title": "Doxology",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "bookId": "2-samuel",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Saul’s Death Reported to David",
+          "title": "Saul’s Death Reported to David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "David’s Song for Saul and Jonathan",
+          "title": "David’s Song for Saul and Jonathan",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Anointed King of Judah",
+          "title": "David Anointed King of Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Ish-bosheth Made King of Israel",
+          "title": "Ish-bosheth Made King of Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Battle of Gibeon",
+          "title": "The Battle of Gibeon",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The House of David Strengthened",
+          "title": "The House of David Strengthened",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Abner Joins David",
+          "title": "Abner Joins David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Joab Murders Abner",
+          "title": "Joab Murders Abner",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "David Mourns for Abner",
+          "title": "David Mourns for Abner",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Murder of Ish-bosheth",
+          "title": "The Murder of Ish-bosheth",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Execution of Rechab and Baanah",
+          "title": "The Execution of Rechab and Baanah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Anointed King of All Israel",
+          "title": "David Anointed King of All Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "David Conquers Jerusalem",
+          "title": "David Conquers Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "David’s Family Grows",
+          "title": "David’s Family Grows",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Two Victories over the Philistines",
+          "title": "Two Victories over the Philistines",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Fetches the Ark",
+          "title": "David Fetches the Ark",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Uzzah Touches the Ark",
+          "title": "Uzzah Touches the Ark",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Ark Brought to Jerusalem",
+          "title": "The Ark Brought to Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Michal’s Contempt for David",
+          "title": "Michal’s Contempt for David",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God’s Covenant with David",
+          "title": "God’s Covenant with David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "David’s Prayer of Thanksgiving",
+          "title": "David’s Prayer of Thanksgiving",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David’s Triumphs",
+          "title": "David’s Triumphs",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "David’s Officers",
+          "title": "David’s Officers",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David and Mephibosheth",
+          "title": "David and Mephibosheth",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David’s Messengers Disgraced",
+          "title": "David’s Messengers Disgraced",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "David Defeats Ammon and Aram",
+          "title": "David Defeats Ammon and Aram",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David and Bathsheba",
+          "title": "David and Bathsheba",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "David Arranges Uriah’s Death",
+          "title": "David Arranges Uriah’s Death",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "David Marries Bathsheba",
+          "title": "David Marries Bathsheba",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Nathan Rebukes David",
+          "title": "Nathan Rebukes David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "David’s Loss and Repentance",
+          "title": "David’s Loss and Repentance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Solomon’s Birth",
+          "title": "Solomon’s Birth",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "The Capture of Rabbah",
+          "title": "The Capture of Rabbah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Amnon and Tamar",
+          "title": "Amnon and Tamar",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Absalom’s Revenge on Amnon",
+          "title": "Absalom’s Revenge on Amnon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "Absalom Flees to Geshur",
+          "title": "Absalom Flees to Geshur",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Absalom’s Return to Jerusalem",
+          "title": "Absalom’s Return to Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "Absalom Reconciled to David",
+          "title": "Absalom Reconciled to David",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Absalom’s Conspiracy",
+          "title": "Absalom’s Conspiracy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "David Flees Jerusalem",
+          "title": "David Flees Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "David Weeps at the Mount of Olives",
+          "title": "David Weeps at the Mount of Olives",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David and Ziba",
+          "title": "David and Ziba",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Shimei Curses David",
+          "title": "Shimei Curses David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Counsel of Ahithophel and Hushai",
+          "title": "The Counsel of Ahithophel and Hushai",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Hushai Counters Ahithophel’s Advice",
+          "title": "Hushai Counters Ahithophel’s Advice",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Hushai’s Warning Saves David",
+          "title": "Hushai’s Warning Saves David",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Absalom Killed",
+          "title": "Absalom Killed",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "David Mourns for Absalom",
+          "title": "David Mourns for Absalom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Joab Reproves David",
+          "title": "Joab Reproves David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "David Restored as King",
+          "title": "David Restored as King",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Shimei Pardoned",
+          "title": "Shimei Pardoned",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Mephibosheth Excused",
+          "title": "Mephibosheth Excused",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "David’s Kindness to Barzillai",
+          "title": "David’s Kindness to Barzillai",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 41,
+          "sourceTitle": "Contention over the King",
+          "title": "Contention over the King",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Sheba’s Rebellion",
+          "title": "Sheba’s Rebellion",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Avenges the Gibeonites",
+          "title": "David Avenges the Gibeonites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Four Battles against the Philistines",
+          "title": "Four Battles against the Philistines",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David’s Song of Deliverance",
+          "title": "David’s Song of Deliverance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David’s Last Song",
+          "title": "David’s Last Song",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "David’s Mighty Men",
+          "title": "David’s Mighty Men",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David’s Military Census",
+          "title": "David’s Military Census",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Judgment for David’s Sin",
+          "title": "Judgment for David’s Sin",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "A Plague on Israel",
+          "title": "A Plague on Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "David Builds an Altar",
+          "title": "David Builds an Altar",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,566 @@
+{
+  "bookId": "levitico",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Laws for Burnt Offerings",
+          "title": "Laws for Burnt Offerings",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Laws for Grain Offerings",
+          "title": "Laws for Grain Offerings",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Laws for Peace Offerings",
+          "title": "Laws for Peace Offerings",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Laws for Sin Offerings",
+          "title": "Laws for Sin Offerings",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Sins Requiring a Sin Offering",
+          "title": "Sins Requiring a Sin Offering",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Laws for Guilt Offerings",
+          "title": "Laws for Guilt Offerings",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Sins Requiring a Guilt Offering",
+          "title": "Sins Requiring a Guilt Offering",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Burnt Offering",
+          "title": "The Burnt Offering",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Grain Offering",
+          "title": "The Grain Offering",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "The Sin Offering",
+          "title": "The Sin Offering",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Guilt Offering",
+          "title": "The Guilt Offering",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Peace Offering",
+          "title": "The Peace Offering",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Fat and Blood Forbidden",
+          "title": "Fat and Blood Forbidden",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Priests’ Portion",
+          "title": "The Priests’ Portion",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Moses Consecrates Aaron and His Sons",
+          "title": "Moses Consecrates Aaron and His Sons",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Priests’ Sin Offering",
+          "title": "The Priests’ Sin Offering",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Priests’ Burnt Offering",
+          "title": "The Priests’ Burnt Offering",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "The Ram of Ordination",
+          "title": "The Ram of Ordination",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Aaron’s First Offerings",
+          "title": "Aaron’s First Offerings",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Sin of Nadab and Abihu",
+          "title": "The Sin of Nadab and Abihu",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Restrictions for Priests",
+          "title": "Restrictions for Priests",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Clean and Unclean Animals",
+          "title": "Clean and Unclean Animals",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Purification after Childbirth",
+          "title": "Purification after Childbirth",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Laws about Skin Diseases",
+          "title": "Laws about Skin Diseases",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 47,
+          "sourceTitle": "Laws about Mildew",
+          "title": "Laws about Mildew",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Cleansing from Skin Diseases",
+          "title": "Cleansing from Skin Diseases",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "Signs of Home Contamination",
+          "title": "Signs of Home Contamination",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 48,
+          "sourceTitle": "Cleansing a Home",
+          "title": "Cleansing a Home",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Uncleanness of Men",
+          "title": "The Uncleanness of Men",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Cleansing of Men",
+          "title": "The Cleansing of Men",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The Uncleanness of Women",
+          "title": "The Uncleanness of Women",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Cleansing of Women",
+          "title": "The Cleansing of Women",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Day of Atonement",
+          "title": "The Day of Atonement",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Place of Sacrifice",
+          "title": "The Place of Sacrifice",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Laws against Eating Blood",
+          "title": "Laws against Eating Blood",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Unlawful Sexual Relations",
+          "title": "Unlawful Sexual Relations",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Commandments for Holiness",
+          "title": "Commandments for Holiness",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Love Your Neighbor",
+          "title": "Love Your Neighbor",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Keep My Statutes",
+          "title": "Keep My Statutes",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Punishments for Disobedience",
+          "title": "Punishments for Disobedience",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Punishments for Sexual Immorality",
+          "title": "Punishments for Sexual Immorality",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Distinguish between Clean and Unclean",
+          "title": "Distinguish between Clean and Unclean",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Holiness Required of Priests",
+          "title": "Holiness Required of Priests",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Restrictions against Those with Blemishes",
+          "title": "Restrictions against Those with Blemishes",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Restrictions against the Unclean",
+          "title": "Restrictions against the Unclean",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Worthy Offerings",
+          "title": "Worthy Offerings",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Feasts and Sabbaths",
+          "title": "Feasts and Sabbaths",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Passover and the Feast of Unleavened Bread",
+          "title": "Passover and the Feast of Unleavened Bread",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Feast of Firstfruits",
+          "title": "The Feast of Firstfruits",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Feast of Weeks",
+          "title": "The Feast of Weeks",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "The Feast of Trumpets",
+          "title": "The Feast of Trumpets",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "The Day of Atonement",
+          "title": "The Day of Atonement",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "The Feast of Tabernacles",
+          "title": "The Feast of Tabernacles",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Oil for the Lamps",
+          "title": "The Oil for the Lamps",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Showbread",
+          "title": "The Showbread",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Punishment for Blasphemy",
+          "title": "Punishment for Blasphemy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "An Eye for an Eye",
+          "title": "An Eye for an Eye",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Seventh Year",
+          "title": "The Seventh Year",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Year of Jubilee",
+          "title": "The Year of Jubilee",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Return of Property",
+          "title": "Return of Property",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Blessing of Obedience",
+          "title": "The Blessing of Obedience",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "The Law of Redemption",
+          "title": "The Law of Redemption",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "Redemption of the Poor",
+          "title": "Redemption of the Poor",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 39,
+          "sourceTitle": "Redemption of Bondmen",
+          "title": "Redemption of Bondmen",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 47,
+          "sourceTitle": "Redemption of Servants",
+          "title": "Redemption of Servants",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Additional Blessings of Obedience",
+          "title": "Additional Blessings of Obedience",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Punishments for Disobedience",
+          "title": "Punishments for Disobedience",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 40,
+          "sourceTitle": "God Remembers Those Who Repent",
+          "title": "God Remembers Those Who Repent",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Rules about Valuations",
+          "title": "Rules about Valuations",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "Instruction on Tithes",
+          "title": "Instruction on Tithes",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

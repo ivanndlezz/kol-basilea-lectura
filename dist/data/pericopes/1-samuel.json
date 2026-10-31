@@ -1,0 +1,586 @@
+{
+  "bookId": "1-samuel",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Elkanah and His Wives",
+          "title": "Elkanah and His Wives",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Hannah Prays for a Son",
+          "title": "Hannah Prays for a Son",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The Birth of Samuel",
+          "title": "The Birth of Samuel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Hannah’s Prayer of Thanksgiving",
+          "title": "Hannah’s Prayer of Thanksgiving",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Eli’s Wicked Sons",
+          "title": "Eli’s Wicked Sons",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "A Prophecy against the House of Eli",
+          "title": "A Prophecy against the House of Eli",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The LORD Calls Samuel",
+          "title": "The LORD Calls Samuel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Samuel Shares the Vision",
+          "title": "Samuel Shares the Vision",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Philistines Capture the Ark",
+          "title": "The Philistines Capture the Ark",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Death of Eli",
+          "title": "The Death of Eli",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Ark Afflicts the Philistines",
+          "title": "The Ark Afflicts the Philistines",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Ark Returned to Israel",
+          "title": "The Ark Returned to Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Samuel Subdues the Philistines",
+          "title": "Samuel Subdues the Philistines",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Israel Demands a King",
+          "title": "Israel Demands a King",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Samuel’s Warning",
+          "title": "Samuel’s Warning",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "God Grants the Request",
+          "title": "God Grants the Request",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Saul Chosen as King",
+          "title": "Saul Chosen as King",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Samuel Anoints Saul",
+          "title": "Samuel Anoints Saul",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Samuel’s Signs Fulfilled",
+          "title": "Samuel’s Signs Fulfilled",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Saul Proclaimed King",
+          "title": "Saul Proclaimed King",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Saul Defeats the Ammonites",
+          "title": "Saul Defeats the Ammonites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Saul Confirmed as King",
+          "title": "Saul Confirmed as King",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Samuel’s Farewell Address",
+          "title": "Samuel’s Farewell Address",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "War with the Philistines",
+          "title": "War with the Philistines",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Saul’s Unlawful Sacrifice",
+          "title": "Saul’s Unlawful Sacrifice",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Israel without Weapons",
+          "title": "Israel without Weapons",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jonathan’s Victory over the Philistines",
+          "title": "Jonathan’s Victory over the Philistines",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Jonathan Eats the Honey",
+          "title": "Jonathan Eats the Honey",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 37,
+          "sourceTitle": "The People Save Jonathan",
+          "title": "The People Save Jonathan",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 47,
+          "sourceTitle": "Saul’s Victories",
+          "title": "Saul’s Victories",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Saul’s Disobedience",
+          "title": "Saul’s Disobedience",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Samuel Denounces Saul",
+          "title": "Samuel Denounces Saul",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Saul’s Confession",
+          "title": "Saul’s Confession",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Samuel Anoints David",
+          "title": "Samuel Anoints David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "David Serves Saul",
+          "title": "David Serves Saul",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Goliath’s Challenge",
+          "title": "Goliath’s Challenge",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "David Accepts the Challenge",
+          "title": "David Accepts the Challenge",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 38,
+          "sourceTitle": "David Slays Goliath",
+          "title": "David Slays Goliath",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jonathan Befriends David",
+          "title": "Jonathan Befriends David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Saul Envies David",
+          "title": "Saul Envies David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "David Marries Michal",
+          "title": "David Marries Michal",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Saul Tries to Kill David",
+          "title": "Saul Tries to Kill David",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jonathan Helps David",
+          "title": "Jonathan Helps David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Jonathan and David Renew Their Covenant",
+          "title": "Jonathan and David Renew Their Covenant",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "Saul Seeks to Kill Jonathan",
+          "title": "Saul Seeks to Kill Jonathan",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Takes the Consecrated Bread",
+          "title": "David Takes the Consecrated Bread",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "David Flees to Gath",
+          "title": "David Flees to Gath",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Flees to Adullam and Mizpeh",
+          "title": "David Flees to Adullam and Mizpeh",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Saul Slays the Priests of Nob",
+          "title": "Saul Slays the Priests of Nob",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Delivers Keilah",
+          "title": "David Delivers Keilah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Saul Pursues David",
+          "title": "Saul Pursues David",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Spares Saul",
+          "title": "David Spares Saul",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "David’s Oath to Saul",
+          "title": "David’s Oath to Saul",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Death of Samuel",
+          "title": "The Death of Samuel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 2,
+          "sourceTitle": "David, Nabal, and Abigail",
+          "title": "David, Nabal, and Abigail",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Abigail Intercedes for Nabal",
+          "title": "Abigail Intercedes for Nabal",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 39,
+          "sourceTitle": "David Marries Abigail",
+          "title": "David Marries Abigail",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Again Spares Saul",
+          "title": "David Again Spares Saul",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "David Reproves Abner",
+          "title": "David Reproves Abner",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Saul Acknowledges His Sin",
+          "title": "Saul Acknowledges His Sin",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David and the Philistines",
+          "title": "David and the Philistines",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Philistines Gather against Israel",
+          "title": "The Philistines Gather against Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Saul and the Medium of Endor",
+          "title": "Saul and the Medium of Endor",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Philistines Reject David",
+          "title": "The Philistines Reject David",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Amalekites Raid Ziklag",
+          "title": "The Amalekites Raid Ziklag",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "David Destroys the Amalekites",
+          "title": "David Destroys the Amalekites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Spoils Are Divided",
+          "title": "The Spoils Are Divided",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Saul’s Overthrow and Death",
+          "title": "Saul’s Overthrow and Death",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Philistines Possess the Towns",
+          "title": "The Philistines Possess the Towns",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Jabesh-gilead’s Tribute to Saul",
+          "title": "Jabesh-gilead’s Tribute to Saul",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "bookId": "hebreos",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Supremacy of the Son",
+          "title": "The Supremacy of the Son",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Salvation Confirmed",
+          "title": "Salvation Confirmed",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Jesus like His Brothers",
+          "title": "Jesus like His Brothers",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jesus Our Apostle and High Priest",
+          "title": "Jesus Our Apostle and High Priest",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Do Not Harden Your Hearts",
+          "title": "Do Not Harden Your Hearts",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Peril of Unbelief",
+          "title": "The Peril of Unbelief",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Sabbath Rest",
+          "title": "The Sabbath Rest",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Living Word",
+          "title": "The Living Word",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Perfect High Priest",
+          "title": "The Perfect High Priest",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Milk and Solid Food",
+          "title": "Milk and Solid Food",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Call to Maturity",
+          "title": "A Call to Maturity",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "God’s Unchangeable Promise",
+          "title": "God’s Unchangeable Promise",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Melchizedek and Abraham",
+          "title": "Melchizedek and Abraham",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "A Superior Priesthood",
+          "title": "A Superior Priesthood",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Christ’s Eternal Priesthood",
+          "title": "Christ’s Eternal Priesthood",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The New Covenant",
+          "title": "The New Covenant",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Earthly Tabernacle",
+          "title": "The Earthly Tabernacle",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Redemption through His Blood",
+          "title": "Redemption through His Blood",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Christ’s Perfect Sacrifice",
+          "title": "Christ’s Perfect Sacrifice",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "A Call to Persevere",
+          "title": "A Call to Persevere",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Faith and Assurance",
+          "title": "Faith and Assurance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "The Faith of Abel, Enoch, Noah",
+          "title": "The Faith of Abel, Enoch, Noah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Faith of Abraham and Sarah",
+          "title": "The Faith of Abraham and Sarah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Faith of Isaac, Jacob, and Joseph",
+          "title": "The Faith of Isaac, Jacob, and Joseph",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "The Faith of Moses",
+          "title": "The Faith of Moses",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "The Faith of Many",
+          "title": "The Faith of Many",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Call to Endurance",
+          "title": "A Call to Endurance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "God Disciplines His Sons",
+          "title": "God Disciplines His Sons",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "A Call to Holiness",
+          "title": "A Call to Holiness",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "An Unshakable Kingdom",
+          "title": "An Unshakable Kingdom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Brotherly Love",
+          "title": "Brotherly Love",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Christ’s Unchanging Nature",
+          "title": "Christ’s Unchanging Nature",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Sacrifice, Obedience, and Prayer",
+          "title": "Sacrifice, Obedience, and Prayer",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Benediction and Farewell",
+          "title": "Benediction and Farewell",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

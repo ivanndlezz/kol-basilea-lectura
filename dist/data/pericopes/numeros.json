@@ -1,0 +1,869 @@
+{
+  "bookId": "numeros",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The First Census of Israel",
+          "title": "The First Census of Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Leaders of the Tribes",
+          "title": "The Leaders of the Tribes",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Number of Every Tribe",
+          "title": "The Number of Every Tribe",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 47,
+          "sourceTitle": "The Exemption of the Levites",
+          "title": "The Exemption of the Levites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Order of the Camps",
+          "title": "The Order of the Camps",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Sons of Aaron",
+          "title": "The Sons of Aaron",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Duties of the Levites",
+          "title": "The Duties of the Levites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Numbering of the Levites",
+          "title": "The Numbering of the Levites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Gershonites",
+          "title": "The Gershonites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "The Kohathites",
+          "title": "The Kohathites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "The Merarites",
+          "title": "The Merarites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 38,
+          "sourceTitle": "Moses and Aaron",
+          "title": "Moses and Aaron",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 40,
+          "sourceTitle": "The Redemption of the Firstborn",
+          "title": "The Redemption of the Firstborn",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Duties of the Kohathites",
+          "title": "The Duties of the Kohathites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Duties of the Gershonites",
+          "title": "The Duties of the Gershonites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "The Duties of the Merarites",
+          "title": "The Duties of the Merarites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "The Numbering of the Levite Clans",
+          "title": "The Numbering of the Levite Clans",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Cleansing the Camps",
+          "title": "Cleansing the Camps",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Confession and Restitution",
+          "title": "Confession and Restitution",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Adultery Test",
+          "title": "The Adultery Test",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Nazirite Vow",
+          "title": "The Nazirite Vow",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Aaron’s Blessing",
+          "title": "Aaron’s Blessing",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Offerings of Dedication",
+          "title": "Offerings of Dedication",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Lampstand",
+          "title": "The Lampstand",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Cleansing the Levites",
+          "title": "Cleansing the Levites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Retirement for Levites",
+          "title": "Retirement for Levites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Second Passover",
+          "title": "The Second Passover",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Cloud above the Tabernacle",
+          "title": "The Cloud above the Tabernacle",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Two Silver Trumpets",
+          "title": "The Two Silver Trumpets",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "From Sinai to Paran",
+          "title": "From Sinai to Paran",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Complaints of the People",
+          "title": "The Complaints of the People",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Complaint of Moses",
+          "title": "The Complaint of Moses",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Seventy Elders Anointed",
+          "title": "Seventy Elders Anointed",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "The Quail and the Plague",
+          "title": "The Quail and the Plague",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Complaint of Miriam and Aaron",
+          "title": "The Complaint of Miriam and Aaron",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Spies Explore Canaan",
+          "title": "The Spies Explore Canaan",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "The Reports of the Spies",
+          "title": "The Reports of the Spies",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Israel’s Rebellion",
+          "title": "Israel’s Rebellion",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Moses Intercedes for Israel",
+          "title": "Moses Intercedes for Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "God’s Forgiveness and Judgment",
+          "title": "God’s Forgiveness and Judgment",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "The Plague on the Ten Spies",
+          "title": "The Plague on the Ten Spies",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 40,
+          "sourceTitle": "The Defeat at Hormah",
+          "title": "The Defeat at Hormah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Laws about Offerings",
+          "title": "Laws about Offerings",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Offerings for Unintentional Sins",
+          "title": "Offerings for Unintentional Sins",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 32,
+          "sourceTitle": "A Sabbath-Breaker Stoned",
+          "title": "A Sabbath-Breaker Stoned",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 37,
+          "sourceTitle": "The Law of Tassels",
+          "title": "The Law of Tassels",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Korah’s Rebellion",
+          "title": "Korah’s Rebellion",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Moses Separates the People",
+          "title": "Moses Separates the People",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Earth Swallows Korah",
+          "title": "The Earth Swallows Korah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "The Censers Reserved for Holy Use",
+          "title": "The Censers Reserved for Holy Use",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 41,
+          "sourceTitle": "Murmuring and Plague",
+          "title": "Murmuring and Plague",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Aaron’s Staff Buds",
+          "title": "Aaron’s Staff Buds",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Duties of Priests and Levites",
+          "title": "Duties of Priests and Levites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Offerings for Priests and Levites",
+          "title": "Offerings for Priests and Levites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Red Heifer",
+          "title": "The Red Heifer",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Purification of the Unclean",
+          "title": "Purification of the Unclean",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Water from the Rock",
+          "title": "Water from the Rock",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Edom Refuses Passage",
+          "title": "Edom Refuses Passage",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "The Death of Aaron",
+          "title": "The Death of Aaron",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Defeat of Arad",
+          "title": "The Defeat of Arad",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "The Bronze Serpent",
+          "title": "The Bronze Serpent",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Journey to Moab",
+          "title": "The Journey to Moab",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Defeat of Sihon",
+          "title": "The Defeat of Sihon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "The Defeat of Og",
+          "title": "The Defeat of Og",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Balak Summons Balaam",
+          "title": "Balak Summons Balaam",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "The Angel and Balaam’s Donkey",
+          "title": "The Angel and Balaam’s Donkey",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Balaam’s First Oracle",
+          "title": "Balaam’s First Oracle",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Balaam’s Second Oracle",
+          "title": "Balaam’s Second Oracle",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Balaam’s Third Oracle",
+          "title": "Balaam’s Third Oracle",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Balak Dismisses Balaam",
+          "title": "Balak Dismisses Balaam",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Balaam’s Fourth Oracle",
+          "title": "Balaam’s Fourth Oracle",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Balaam’s Final Three Oracles",
+          "title": "Balaam’s Final Three Oracles",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Moab Seduces Israel",
+          "title": "Moab Seduces Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Zeal of Phinehas",
+          "title": "The Zeal of Phinehas",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Second Census of Israel",
+          "title": "The Second Census of Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Tribe of Reuben",
+          "title": "The Tribe of Reuben",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Tribe of Simeon",
+          "title": "The Tribe of Simeon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Tribe of Gad",
+          "title": "The Tribe of Gad",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The Tribe of Judah",
+          "title": "The Tribe of Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "The Tribe of Issachar",
+          "title": "The Tribe of Issachar",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "The Tribe of Zebulun",
+          "title": "The Tribe of Zebulun",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Tribe of Manasseh",
+          "title": "The Tribe of Manasseh",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "The Tribe of Ephraim",
+          "title": "The Tribe of Ephraim",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 38,
+          "sourceTitle": "The Tribe of Benjamin",
+          "title": "The Tribe of Benjamin",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 42,
+          "sourceTitle": "The Tribe of Dan",
+          "title": "The Tribe of Dan",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 44,
+          "sourceTitle": "The Tribe of Asher",
+          "title": "The Tribe of Asher",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 48,
+          "sourceTitle": "The Tribe of Naphtali",
+          "title": "The Tribe of Naphtali",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 52,
+          "sourceTitle": "Inheritance by Lot",
+          "title": "Inheritance by Lot",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 57,
+          "sourceTitle": "The Levites Numbered",
+          "title": "The Levites Numbered",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 63,
+          "sourceTitle": "Only Caleb and Joshua Remain",
+          "title": "Only Caleb and Joshua Remain",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Daughters of Zelophehad",
+          "title": "The Daughters of Zelophehad",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Moses Requests a Successor",
+          "title": "Moses Requests a Successor",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Joshua to Succeed Moses",
+          "title": "Joshua to Succeed Moses",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Daily Offerings",
+          "title": "The Daily Offerings",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Sabbath Offerings",
+          "title": "The Sabbath Offerings",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Monthly Offerings",
+          "title": "The Monthly Offerings",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Passover and the Feast of Unleavened Bread",
+          "title": "Passover and the Feast of Unleavened Bread",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "The Feast of Weeks",
+          "title": "The Feast of Weeks",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Feast of Trumpets",
+          "title": "The Feast of Trumpets",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Day of Atonement",
+          "title": "The Day of Atonement",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Feast of Tabernacles",
+          "title": "The Feast of Tabernacles",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Laws about Vows",
+          "title": "Laws about Vows",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Vengeance on Midian",
+          "title": "Vengeance on Midian",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Division of the Spoils",
+          "title": "Division of the Spoils",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 48,
+          "sourceTitle": "The Voluntary Offering",
+          "title": "The Voluntary Offering",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Tribes East of the Jordan",
+          "title": "The Tribes East of the Jordan",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Forty-Two Journeys of the Israelites",
+          "title": "Forty-Two Journeys of the Israelites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 50,
+          "sourceTitle": "Instructions for Occupying Canaan",
+          "title": "Instructions for Occupying Canaan",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Boundaries of Canaan",
+          "title": "The Boundaries of Canaan",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Leaders to Divide the Land",
+          "title": "Leaders to Divide the Land",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Forty-Eight Cities for the Levites",
+          "title": "Forty-Eight Cities for the Levites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Six Cities of Refuge",
+          "title": "Six Cities of Refuge",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Zelophehad’s Daughters Marry",
+          "title": "Zelophehad’s Daughters Marry",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

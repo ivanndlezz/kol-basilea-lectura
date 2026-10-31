@@ -1,0 +1,28 @@
+{
+  "bookId": "abdias",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Destruction of Edom",
+          "title": "The Destruction of Edom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Deliverance of Israel",
+          "title": "The Deliverance of Israel",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

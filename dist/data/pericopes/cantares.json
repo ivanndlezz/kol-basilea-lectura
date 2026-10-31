@@ -1,0 +1,327 @@
+{
+  "bookId": "cantares",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Bride Confesses Her Love",
+          "title": "The Bride Confesses Her Love",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 2,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Friends",
+          "title": "The Friends",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Friends",
+          "title": "The Friends",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Bridegroom",
+          "title": "The Bridegroom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Friends",
+          "title": "The Friends",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Bridegroom",
+          "title": "The Bridegroom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Bridegroom",
+          "title": "The Bridegroom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Bride’s Admiration",
+          "title": "The Bride’s Admiration",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 2,
+          "sourceTitle": "The Bridegroom",
+          "title": "The Bridegroom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Bridegroom",
+          "title": "The Bridegroom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Friends",
+          "title": "The Friends",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Bride’s Dream",
+          "title": "The Bride’s Dream",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Solomon Arrives on His Wedding Day",
+          "title": "Solomon Arrives on His Wedding Day",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Solomon Admires His Bride",
+          "title": "Solomon Admires His Bride",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Bridegroom",
+          "title": "The Bridegroom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Bride and Her Beloved",
+          "title": "The Bride and Her Beloved",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Bridegroom",
+          "title": "The Bridegroom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 2,
+          "sourceTitle": "The Friends",
+          "title": "The Friends",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 2,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Friends",
+          "title": "The Friends",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Together in the Garden",
+          "title": "Together in the Garden",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Friends",
+          "title": "The Friends",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 2,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "The Bridegroom",
+          "title": "The Bridegroom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Friends",
+          "title": "The Friends",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Bridegroom",
+          "title": "The Bridegroom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Friends",
+          "title": "The Friends",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Bridegroom",
+          "title": "The Bridegroom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 1,
+          "sourceTitle": "Admiration by the Bridegroom",
+          "title": "Admiration by the Bridegroom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Longing for Her Beloved",
+          "title": "Longing for Her Beloved",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Friends",
+          "title": "The Friends",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Friends",
+          "title": "The Friends",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Bridegroom",
+          "title": "The Bridegroom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Bride",
+          "title": "The Bride",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

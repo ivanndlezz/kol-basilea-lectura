@@ -1,0 +1,1003 @@
+{
+  "bookId": "jeremias",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Call of Jeremiah",
+          "title": "The Call of Jeremiah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Israel Has Forsaken God",
+          "title": "Israel Has Forsaken God",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Consequence of Israel’s Sin",
+          "title": "The Consequence of Israel’s Sin",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Israel’s Unfaithfulness",
+          "title": "Israel’s Unfaithfulness",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Wages of the Harlot",
+          "title": "The Wages of the Harlot",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Judah Follows Israel’s Example",
+          "title": "Judah Follows Israel’s Example",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "A Call to Repentance",
+          "title": "A Call to Repentance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Plea to Return",
+          "title": "A Plea to Return",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Disaster from the North",
+          "title": "Disaster from the North",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Lamentation for Judah",
+          "title": "Lamentation for Judah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "No One Is Just",
+          "title": "No One Is Just",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Judgment Proclaimed",
+          "title": "Judgment Proclaimed",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jerusalem’s Final Warning",
+          "title": "Jerusalem’s Final Warning",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "An Invasion from the North",
+          "title": "An Invasion from the North",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jeremiah’s Message at the Temple Gate",
+          "title": "Jeremiah’s Message at the Temple Gate",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Judah’s Idolatry Persists",
+          "title": "Judah’s Idolatry Persists",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "The Valley of Slaughter",
+          "title": "The Valley of Slaughter",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judah’s Sin and Punishment",
+          "title": "Judah’s Sin and Punishment",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The People Respond",
+          "title": "The People Respond",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Jeremiah Weeps for His People",
+          "title": "Jeremiah Weeps for His People",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Lament over Zion",
+          "title": "A Lament over Zion",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Sovereignty of God",
+          "title": "The Sovereignty of God",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Coming Captivity of Judah",
+          "title": "The Coming Captivity of Judah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Broken Covenant",
+          "title": "The Broken Covenant",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "A Plot against Jeremiah",
+          "title": "A Plot against Jeremiah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Prosperity of the Wicked",
+          "title": "The Prosperity of the Wicked",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "God’s Answer to Jeremiah",
+          "title": "God’s Answer to Jeremiah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "A Message for Israel’s Neighbors",
+          "title": "A Message for Israel’s Neighbors",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Linen Loincloth",
+          "title": "The Linen Loincloth",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Wineskins",
+          "title": "The Wineskins",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Captivity Threatened",
+          "title": "Captivity Threatened",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Drought, Famine, Sword, and Plague",
+          "title": "Drought, Famine, Sword, and Plague",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "A Prayer for Mercy",
+          "title": "A Prayer for Mercy",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment to Continue",
+          "title": "Judgment to Continue",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Jeremiah’s Woe",
+          "title": "Jeremiah’s Woe",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The LORD’s Promise",
+          "title": "The LORD’s Promise",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Disaster Predicted",
+          "title": "Disaster Predicted",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "God Will Restore Israel",
+          "title": "God Will Restore Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Sin and Punishment of Judah",
+          "title": "The Sin and Punishment of Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Jeremiah’s Prayer for Deliverance",
+          "title": "Jeremiah’s Prayer for Deliverance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Restoring the Sabbath",
+          "title": "Restoring the Sabbath",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Potter and the Clay",
+          "title": "The Potter and the Clay",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Another Plot against Jeremiah",
+          "title": "Another Plot against Jeremiah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Broken Jar",
+          "title": "The Broken Jar",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Pashhur Persecutes Jeremiah",
+          "title": "Pashhur Persecutes Jeremiah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Jeremiah’s Complaint",
+          "title": "Jeremiah’s Complaint",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jerusalem Will Fall to Babylon",
+          "title": "Jerusalem Will Fall to Babylon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "A Message to the House of David",
+          "title": "A Message to the House of David",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Warning to Judah’s Kings",
+          "title": "A Warning to Judah’s Kings",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "A Warning about the Palace",
+          "title": "A Warning about the Palace",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "A Warning about Shallum",
+          "title": "A Warning about Shallum",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "A Warning about Jehoiakim",
+          "title": "A Warning about Jehoiakim",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "A Warning to Coniah",
+          "title": "A Warning to Coniah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David’s Righteous Branch",
+          "title": "David’s Righteous Branch",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Lying Prophets",
+          "title": "Lying Prophets",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "False Prophecies",
+          "title": "False Prophecies",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Good and Bad Figs",
+          "title": "The Good and Bad Figs",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Seventy Years of Captivity",
+          "title": "Seventy Years of Captivity",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Cup of God’s Wrath",
+          "title": "The Cup of God’s Wrath",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "The Cry of the Shepherds",
+          "title": "The Cry of the Shepherds",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Warning to the Cities of Judah",
+          "title": "A Warning to the Cities of Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Jeremiah Threatened with Death",
+          "title": "Jeremiah Threatened with Death",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Jeremiah Spared from Death",
+          "title": "Jeremiah Spared from Death",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Prophet Uriah",
+          "title": "The Prophet Uriah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Yoke of Nebuchadnezzar",
+          "title": "The Yoke of Nebuchadnezzar",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Hananiah’s False Prophecy",
+          "title": "Hananiah’s False Prophecy",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jeremiah’s Letter to the Exiles",
+          "title": "Jeremiah’s Letter to the Exiles",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "The Message to Shemaiah",
+          "title": "The Message to Shemaiah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Restoration of Israel and Judah",
+          "title": "The Restoration of Israel and Judah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Mourning Turned to Joy",
+          "title": "Mourning Turned to Joy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "The New Covenant",
+          "title": "The New Covenant",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jeremiah Buys Hanamel’s Field",
+          "title": "Jeremiah Buys Hanamel’s Field",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Jeremiah Prays for Understanding",
+          "title": "Jeremiah Prays for Understanding",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "The LORD Answers Jeremiah",
+          "title": "The LORD Answers Jeremiah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "A Promise of Restoration",
+          "title": "A Promise of Restoration",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Excellence of the Restored Nation",
+          "title": "The Excellence of the Restored Nation",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Covenant with David",
+          "title": "The Covenant with David",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Prophecy against Zedekiah",
+          "title": "A Prophecy against Zedekiah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Freedom for Hebrew Slaves",
+          "title": "Freedom for Hebrew Slaves",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Obedience of the Rechabites",
+          "title": "The Obedience of the Rechabites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Judah Rebuked",
+          "title": "Judah Rebuked",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jeremiah’s Scroll Read in the Temple",
+          "title": "Jeremiah’s Scroll Read in the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Jeremiah’s Scroll Read in the Palace",
+          "title": "Jeremiah’s Scroll Read in the Palace",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Jehoiakim Burns the Scroll",
+          "title": "Jehoiakim Burns the Scroll",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "Jeremiah Rewrites the Scroll",
+          "title": "Jeremiah Rewrites the Scroll",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jeremiah Warns Zedekiah",
+          "title": "Jeremiah Warns Zedekiah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Jeremiah Imprisoned",
+          "title": "Jeremiah Imprisoned",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jeremiah Cast into the Cistern",
+          "title": "Jeremiah Cast into the Cistern",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Fall of Jerusalem",
+          "title": "The Fall of Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Jeremiah Delivered",
+          "title": "Jeremiah Delivered",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jeremiah Remains in Judah",
+          "title": "Jeremiah Remains in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Gedaliah Governs in Judah",
+          "title": "Gedaliah Governs in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Plot against Gedaliah",
+          "title": "The Plot against Gedaliah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Murder of Gedaliah",
+          "title": "The Murder of Gedaliah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Johanan Rescues the Captives",
+          "title": "Johanan Rescues the Captives",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Warning against Going to Egypt",
+          "title": "A Warning against Going to Egypt",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jeremiah Taken to Egypt",
+          "title": "Jeremiah Taken to Egypt",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment on the Jews in Egypt",
+          "title": "Judgment on the Jews in Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Stubbornness of the People",
+          "title": "The Stubbornness of the People",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Calamity for the Jews",
+          "title": "Calamity for the Jews",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jeremiah’s Message to Baruch",
+          "title": "Jeremiah’s Message to Baruch",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment on Egypt",
+          "title": "Judgment on Egypt",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment on the Philistines",
+          "title": "Judgment on the Philistines",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 48,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment on Moab",
+          "title": "Judgment on Moab",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment on the Ammonites",
+          "title": "Judgment on the Ammonites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Judgment on Edom",
+          "title": "Judgment on Edom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Judgment on Damascus",
+          "title": "Judgment on Damascus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "Judgment on Kedar and Hazor",
+          "title": "Judgment on Kedar and Hazor",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "Judgment on Elam",
+          "title": "Judgment on Elam",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Prophecy against Babylon",
+          "title": "A Prophecy against Babylon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Hope for Israel and Judah",
+          "title": "Hope for Israel and Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Babylon’s Fall Is Certain",
+          "title": "Babylon’s Fall Is Certain",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Redemption for God’s People",
+          "title": "Redemption for God’s People",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Destruction of Babylon",
+          "title": "The Destruction of Babylon",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 51,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment on Babylon",
+          "title": "Judgment on Babylon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Praise to the God of Jacob",
+          "title": "Praise to the God of Jacob",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Babylon’s Punishment",
+          "title": "Babylon’s Punishment",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 59,
+          "sourceTitle": "Jeremiah’s Message to Seraiah",
+          "title": "Jeremiah’s Message to Seraiah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 52,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Fall of Jerusalem Recounted",
+          "title": "The Fall of Jerusalem Recounted",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Temple Destroyed",
+          "title": "The Temple Destroyed",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Captives Carried to Babylon",
+          "title": "Captives Carried to Babylon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Jehoiachin Released from Prison",
+          "title": "Jehoiachin Released from Prison",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

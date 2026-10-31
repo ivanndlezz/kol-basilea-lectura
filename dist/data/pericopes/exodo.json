@@ -1,0 +1,949 @@
+{
+  "bookId": "exodo",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Israelites Multiply in Egypt",
+          "title": "The Israelites Multiply in Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Oppression by a New King",
+          "title": "Oppression by a New King",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Birth and Adoption of Moses",
+          "title": "The Birth and Adoption of Moses",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Rejection and Flight of Moses",
+          "title": "The Rejection and Flight of Moses",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "God Hears the Cry of the Israelites",
+          "title": "God Hears the Cry of the Israelites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Moses at the Burning Bush",
+          "title": "Moses at the Burning Bush",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Moses’ Staff",
+          "title": "Moses’ Staff",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Moses’ Hand",
+          "title": "Moses’ Hand",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Appointment of Aaron",
+          "title": "The Appointment of Aaron",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Moses Leaves for Egypt",
+          "title": "Moses Leaves for Egypt",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "The People Believe Moses and Aaron",
+          "title": "The People Believe Moses and Aaron",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Pharaoh’s First Refusal",
+          "title": "Pharaoh’s First Refusal",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Bricks and Straw",
+          "title": "Bricks and Straw",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Cry of the Israelites",
+          "title": "The Cry of the Israelites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God Promises Deliverance",
+          "title": "God Promises Deliverance",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Genealogies of Moses and Aaron",
+          "title": "Genealogies of Moses and Aaron",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God Commands Moses and Aaron",
+          "title": "God Commands Moses and Aaron",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Aaron’s Staff",
+          "title": "Aaron’s Staff",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The First Plague: Blood",
+          "title": "The First Plague: Blood",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Second Plague: Frogs",
+          "title": "The Second Plague: Frogs",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Third Plague: Gnats",
+          "title": "The Third Plague: Gnats",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Fourth Plague: Flies",
+          "title": "The Fourth Plague: Flies",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Fifth Plague: Livestock",
+          "title": "The Fifth Plague: Livestock",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Sixth Plague: Boils",
+          "title": "The Sixth Plague: Boils",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Seventh Plague: Hail",
+          "title": "The Seventh Plague: Hail",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Eighth Plague: Locusts",
+          "title": "The Eighth Plague: Locusts",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Ninth Plague: Darkness",
+          "title": "The Ninth Plague: Darkness",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Plague on the Firstborn Foretold",
+          "title": "The Plague on the Firstborn Foretold",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The First Passover",
+          "title": "The First Passover",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Feast of Unleavened Bread",
+          "title": "The Feast of Unleavened Bread",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "The Tenth Plague: Death of the Firstborn",
+          "title": "The Tenth Plague: Death of the Firstborn",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "The Exodus Begins",
+          "title": "The Exodus Begins",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 43,
+          "sourceTitle": "Instructions for the Passover",
+          "title": "Instructions for the Passover",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Dedication of the Firstborn",
+          "title": "The Dedication of the Firstborn",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Pillars of Cloud and Fire",
+          "title": "The Pillars of Cloud and Fire",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Pharaoh Pursues the Israelites",
+          "title": "Pharaoh Pursues the Israelites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Parting the Red Sea",
+          "title": "Parting the Red Sea",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Song at the Sea",
+          "title": "The Song at the Sea",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "The Waters of Marah",
+          "title": "The Waters of Marah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Manna and Quail from Heaven",
+          "title": "Manna and Quail from Heaven",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "The Sabbath Observed",
+          "title": "The Sabbath Observed",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "The Jar of Manna",
+          "title": "The Jar of Manna",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Water from the Rock",
+          "title": "Water from the Rock",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Defeat of the Amalekites",
+          "title": "The Defeat of the Amalekites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Visit of Jethro",
+          "title": "The Visit of Jethro",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Jethro Advises Moses",
+          "title": "Jethro Advises Moses",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Israel at Mount Sinai",
+          "title": "Israel at Mount Sinai",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The LORD Visits Sinai",
+          "title": "The LORD Visits Sinai",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Ten Commandments",
+          "title": "The Ten Commandments",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Moses Comforts the People",
+          "title": "Moses Comforts the People",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Idolatry Forbidden",
+          "title": "Idolatry Forbidden",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Hebrew Servants",
+          "title": "Hebrew Servants",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Personal Injury Laws",
+          "title": "Personal Injury Laws",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Property Laws",
+          "title": "Property Laws",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Laws of Social Responsibility",
+          "title": "Laws of Social Responsibility",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Justice and Mercy",
+          "title": "Justice and Mercy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Sabbath Laws",
+          "title": "Sabbath Laws",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Three Feasts of Pilgrimage",
+          "title": "The Three Feasts of Pilgrimage",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "God’s Angel to Lead",
+          "title": "God’s Angel to Lead",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Covenant Sealed",
+          "title": "The Covenant Sealed",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Moses on the Mountain",
+          "title": "Moses on the Mountain",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Offerings for the Tabernacle",
+          "title": "Offerings for the Tabernacle",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Ark of the Covenant",
+          "title": "The Ark of the Covenant",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Mercy Seat",
+          "title": "The Mercy Seat",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "The Table of Showbread",
+          "title": "The Table of Showbread",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "The Lampstand",
+          "title": "The Lampstand",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Ten Curtains for the Tabernacle",
+          "title": "The Ten Curtains for the Tabernacle",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Eleven Curtains of Goat Hair",
+          "title": "The Eleven Curtains of Goat Hair",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Frames and Bases",
+          "title": "The Frames and Bases",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "The Veil",
+          "title": "The Veil",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "The Curtain for the Entrance",
+          "title": "The Curtain for the Entrance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Bronze Altar",
+          "title": "The Bronze Altar",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Courtyard",
+          "title": "The Courtyard",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Oil for the Lamps",
+          "title": "The Oil for the Lamps",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Garments for the Priests",
+          "title": "Garments for the Priests",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Ephod",
+          "title": "The Ephod",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Breastpiece",
+          "title": "The Breastpiece",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Additional Priestly Garments",
+          "title": "Additional Priestly Garments",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Consecration of the Priests",
+          "title": "Consecration of the Priests",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Order of the Sacrifices",
+          "title": "The Order of the Sacrifices",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Food for the Priests",
+          "title": "Food for the Priests",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 38,
+          "sourceTitle": "The Daily Offerings",
+          "title": "The Daily Offerings",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 45,
+          "sourceTitle": "God Will Dwell among the People",
+          "title": "God Will Dwell among the People",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Altar of Incense",
+          "title": "The Altar of Incense",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Census Offering",
+          "title": "The Census Offering",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Bronze Basin",
+          "title": "The Bronze Basin",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "The Anointing Oil",
+          "title": "The Anointing Oil",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "The Incense",
+          "title": "The Incense",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Bezalel and Oholiab",
+          "title": "Bezalel and Oholiab",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Sign of the Sabbath",
+          "title": "The Sign of the Sabbath",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Moses Receives the Tablets",
+          "title": "Moses Receives the Tablets",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Golden Calf",
+          "title": "The Golden Calf",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Command to Leave Sinai",
+          "title": "The Command to Leave Sinai",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Tent of Meeting",
+          "title": "The Tent of Meeting",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Promise of God’s Presence",
+          "title": "The Promise of God’s Presence",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "New Stone Tablets",
+          "title": "New Stone Tablets",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The LORD Renews the Covenant",
+          "title": "The LORD Renews the Covenant",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Sabbath",
+          "title": "The Sabbath",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Offerings for the Tabernacle",
+          "title": "Offerings for the Tabernacle",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Skilled Craftsmen",
+          "title": "The Skilled Craftsmen",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The People Offer Gifts",
+          "title": "The People Offer Gifts",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "Bezalel and Oholiab",
+          "title": "Bezalel and Oholiab",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The People Bring More than Enough",
+          "title": "The People Bring More than Enough",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Ten Curtains for the Tabernacle",
+          "title": "The Ten Curtains for the Tabernacle",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Eleven Curtains of Goat Hair",
+          "title": "The Eleven Curtains of Goat Hair",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Frames and Bases",
+          "title": "The Frames and Bases",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "The Veil",
+          "title": "The Veil",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 37,
+          "sourceTitle": "The Curtain for the Entrance",
+          "title": "The Curtain for the Entrance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Constructing the Ark",
+          "title": "Constructing the Ark",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Mercy Seat",
+          "title": "The Mercy Seat",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Table of Showbread",
+          "title": "The Table of Showbread",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Lampstand",
+          "title": "The Lampstand",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "The Altar of Incense",
+          "title": "The Altar of Incense",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Bronze Altar",
+          "title": "The Bronze Altar",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Bronze Basin",
+          "title": "The Bronze Basin",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Courtyard",
+          "title": "The Courtyard",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "An Inventory of Materials",
+          "title": "An Inventory of Materials",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Ephod",
+          "title": "The Ephod",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Breastpiece",
+          "title": "The Breastpiece",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Additional Priestly Garments",
+          "title": "Additional Priestly Garments",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 32,
+          "sourceTitle": "Moses Approves the Work",
+          "title": "Moses Approves the Work",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Setting Up the Tabernacle",
+          "title": "Setting Up the Tabernacle",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "The Cloud and the Glory",
+          "title": "The Cloud and the Glory",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

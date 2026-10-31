@@ -1,0 +1,620 @@
+{
+  "bookId": "juan",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Beginning",
+          "title": "The Beginning",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Witness of John",
+          "title": "The Witness of John",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Word Became Flesh",
+          "title": "The Word Became Flesh",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The Mission of John the Baptist",
+          "title": "The Mission of John the Baptist",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Jesus the Lamb of God",
+          "title": "Jesus the Lamb of God",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "The First Disciples",
+          "title": "The First Disciples",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 43,
+          "sourceTitle": "Jesus Calls Philip and Nathanael",
+          "title": "Jesus Calls Philip and Nathanael",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Wedding at Cana",
+          "title": "The Wedding at Cana",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Jesus Cleanses the Temple",
+          "title": "Jesus Cleanses the Temple",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jesus and Nicodemus",
+          "title": "Jesus and Nicodemus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "John’s Testimony about Jesus",
+          "title": "John’s Testimony about Jesus",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jesus and the Samaritan Woman",
+          "title": "Jesus and the Samaritan Woman",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "The Disciples Return and Marvel",
+          "title": "The Disciples Return and Marvel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 39,
+          "sourceTitle": "Many Samaritans Believe",
+          "title": "Many Samaritans Believe",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 43,
+          "sourceTitle": "Jesus Heals the Official’s Son",
+          "title": "Jesus Heals the Official’s Son",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Pool of Bethesda",
+          "title": "The Pool of Bethesda",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Father and the Son",
+          "title": "The Father and the Son",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Testimonies about Jesus",
+          "title": "Testimonies about Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 39,
+          "sourceTitle": "The Witness of Scripture",
+          "title": "The Witness of Scripture",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Feeding of the Five Thousand",
+          "title": "The Feeding of the Five Thousand",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Jesus Walks on Water",
+          "title": "Jesus Walks on Water",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Jesus the Bread of Life",
+          "title": "Jesus the Bread of Life",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 59,
+          "sourceTitle": "Many Disciples Turn Back",
+          "title": "Many Disciples Turn Back",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 67,
+          "sourceTitle": "Peter’s Confession of Faith",
+          "title": "Peter’s Confession of Faith",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jesus Teaches at the Feast",
+          "title": "Jesus Teaches at the Feast",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Is Jesus the Christ?",
+          "title": "Is Jesus the Christ?",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 37,
+          "sourceTitle": "Living Water",
+          "title": "Living Water",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 40,
+          "sourceTitle": "Division over Jesus",
+          "title": "Division over Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 45,
+          "sourceTitle": "The Unbelief of the Jewish Leaders",
+          "title": "The Unbelief of the Jewish Leaders",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Woman Caught in Adultery",
+          "title": "The Woman Caught in Adultery",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Jesus the Light of the World",
+          "title": "Jesus the Light of the World",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "The Truth Will Set You Free",
+          "title": "The Truth Will Set You Free",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 48,
+          "sourceTitle": "Before Abraham Was Born, I Am",
+          "title": "Before Abraham Was Born, I Am",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jesus Heals the Man Born Blind",
+          "title": "Jesus Heals the Man Born Blind",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Pharisees Investigate the Healing",
+          "title": "The Pharisees Investigate the Healing",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "Spiritual Blindness",
+          "title": "Spiritual Blindness",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jesus the Good Shepherd",
+          "title": "Jesus the Good Shepherd",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Jesus at the Feast of Dedication",
+          "title": "Jesus at the Feast of Dedication",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 40,
+          "sourceTitle": "John’s Testimony Confirmed",
+          "title": "John’s Testimony Confirmed",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Death of Lazarus",
+          "title": "The Death of Lazarus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Jesus Comforts Martha and Mary",
+          "title": "Jesus Comforts Martha and Mary",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 38,
+          "sourceTitle": "Jesus Raises Lazarus",
+          "title": "Jesus Raises Lazarus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 45,
+          "sourceTitle": "The Plot to Kill Jesus",
+          "title": "The Plot to Kill Jesus",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Mary Anoints Jesus",
+          "title": "Mary Anoints Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Plot to Kill Lazarus",
+          "title": "The Plot to Kill Lazarus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Triumphal Entry",
+          "title": "The Triumphal Entry",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Jesus Predicts His Death",
+          "title": "Jesus Predicts His Death",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 37,
+          "sourceTitle": "Belief and Unbelief",
+          "title": "Belief and Unbelief",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jesus Washes His Disciples’ Feet",
+          "title": "Jesus Washes His Disciples’ Feet",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Jesus Predicts His Betrayal",
+          "title": "Jesus Predicts His Betrayal",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Love One Another",
+          "title": "Love One Another",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "Jesus Predicts Peter’s Denial",
+          "title": "Jesus Predicts Peter’s Denial",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "In My Father’s House Are Many Rooms",
+          "title": "In My Father’s House Are Many Rooms",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Way, the Truth, and the Life",
+          "title": "The Way, the Truth, and the Life",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Jesus Promises the Holy Spirit",
+          "title": "Jesus Promises the Holy Spirit",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "Peace I Leave with You",
+          "title": "Peace I Leave with You",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jesus the True Vine",
+          "title": "Jesus the True Vine",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "No Greater Love",
+          "title": "No Greater Love",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Hatred of the World",
+          "title": "The Hatred of the World",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Persecution Foretold",
+          "title": "Persecution Foretold",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Promise of the Holy Spirit",
+          "title": "The Promise of the Holy Spirit",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Grief Will Turn to Joy",
+          "title": "Grief Will Turn to Joy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Ask in My Name",
+          "title": "Ask in My Name",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Prayer for the Son",
+          "title": "Prayer for the Son",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Prayer for the Disciples",
+          "title": "Prayer for the Disciples",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Prayer for All Believers",
+          "title": "Prayer for All Believers",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Betrayal of Jesus",
+          "title": "The Betrayal of Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Peter’s First Denial",
+          "title": "Peter’s First Denial",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Jesus before the High Priest",
+          "title": "Jesus before the High Priest",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Peter’s Second and Third Denials",
+          "title": "Peter’s Second and Third Denials",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "Jesus before Pilate",
+          "title": "Jesus before Pilate",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Soldiers Mock Jesus",
+          "title": "The Soldiers Mock Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Crucifixion",
+          "title": "The Crucifixion",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Death of Jesus",
+          "title": "The Death of Jesus",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Jesus’ Side Is Pierced",
+          "title": "Jesus’ Side Is Pierced",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 38,
+          "sourceTitle": "The Burial of Jesus",
+          "title": "The Burial of Jesus",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Resurrection",
+          "title": "The Resurrection",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Jesus Appears to Mary Magdalene",
+          "title": "Jesus Appears to Mary Magdalene",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Jesus Appears to the Disciples",
+          "title": "Jesus Appears to the Disciples",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Jesus Appears to Thomas",
+          "title": "Jesus Appears to Thomas",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "The Purpose of John’s Book",
+          "title": "The Purpose of John’s Book",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jesus Appears by the Sea of Tiberias",
+          "title": "Jesus Appears by the Sea of Tiberias",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Jesus and Peter",
+          "title": "Jesus and Peter",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Jesus and the Beloved Disciple",
+          "title": "Jesus and the Beloved Disciple",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

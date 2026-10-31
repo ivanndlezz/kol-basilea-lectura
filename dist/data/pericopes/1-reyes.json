@@ -1,0 +1,685 @@
+{
+  "bookId": "1-reyes",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Abishag Cares for David",
+          "title": "Abishag Cares for David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Adonijah Usurps the Kingdom",
+          "title": "Adonijah Usurps the Kingdom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Nathan and Bathsheba before David",
+          "title": "Nathan and Bathsheba before David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "David Renews His Oath to Bathsheba",
+          "title": "David Renews His Oath to Bathsheba",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 32,
+          "sourceTitle": "Solomon Anointed King",
+          "title": "Solomon Anointed King",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 41,
+          "sourceTitle": "Adonijah Learns of Solomon’s Kingship",
+          "title": "Adonijah Learns of Solomon’s Kingship",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Instructs Solomon",
+          "title": "David Instructs Solomon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "David’s Reign and Death",
+          "title": "David’s Reign and Death",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Execution of Adonijah",
+          "title": "The Execution of Adonijah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Execution of Joab",
+          "title": "The Execution of Joab",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "The Execution of Shimei",
+          "title": "The Execution of Shimei",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Solomon’s Prayer for Wisdom",
+          "title": "Solomon’s Prayer for Wisdom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Solomon Judges Wisely",
+          "title": "Solomon Judges Wisely",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Solomon’s Princes",
+          "title": "Solomon’s Princes",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Solomon’s Twelve Officers",
+          "title": "Solomon’s Twelve Officers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Solomon’s Prosperity",
+          "title": "Solomon’s Prosperity",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Solomon’s Wisdom",
+          "title": "Solomon’s Wisdom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Preparations for the Temple",
+          "title": "Preparations for the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Hiram’s Reply to Solomon",
+          "title": "Hiram’s Reply to Solomon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Solomon’s Labor Force",
+          "title": "Solomon’s Labor Force",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Temple Construction Begins",
+          "title": "Temple Construction Begins",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Chambers",
+          "title": "The Chambers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "God’s Promise to Solomon",
+          "title": "God’s Promise to Solomon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Temple’s Interior",
+          "title": "The Temple’s Interior",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "The Cherubim",
+          "title": "The Cherubim",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "The Doors",
+          "title": "The Doors",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "The Courtyard",
+          "title": "The Courtyard",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Solomon’s Palace Complex",
+          "title": "Solomon’s Palace Complex",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Pillars and Capitals",
+          "title": "The Pillars and Capitals",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "The Molten Sea",
+          "title": "The Molten Sea",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "The Ten Bronze Stands",
+          "title": "The Ten Bronze Stands",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 38,
+          "sourceTitle": "The Ten Bronze Basins",
+          "title": "The Ten Bronze Basins",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 40,
+          "sourceTitle": "Completion of the Bronze Works",
+          "title": "Completion of the Bronze Works",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 48,
+          "sourceTitle": "Completion of the Gold Furnishings",
+          "title": "Completion of the Gold Furnishings",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Ark Enters the Temple",
+          "title": "The Ark Enters the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Solomon Blesses the LORD",
+          "title": "Solomon Blesses the LORD",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Solomon’s Prayer of Dedication",
+          "title": "Solomon’s Prayer of Dedication",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 54,
+          "sourceTitle": "Solomon’s Benediction",
+          "title": "Solomon’s Benediction",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 62,
+          "sourceTitle": "Sacrifices of Dedication",
+          "title": "Sacrifices of Dedication",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The LORD’s Response to Solomon",
+          "title": "The LORD’s Response to Solomon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Solomon’s Additional Achievements",
+          "title": "Solomon’s Additional Achievements",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Queen of Sheba",
+          "title": "The Queen of Sheba",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Solomon’s Wealth and Splendor",
+          "title": "Solomon’s Wealth and Splendor",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Solomon’s Foreign Wives",
+          "title": "Solomon’s Foreign Wives",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "God’s Anger against Solomon",
+          "title": "God’s Anger against Solomon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Hadad’s Return",
+          "title": "Hadad’s Return",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Rezon’s Hostility",
+          "title": "Rezon’s Hostility",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "Jeroboam’s Rebellion",
+          "title": "Jeroboam’s Rebellion",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 41,
+          "sourceTitle": "The Death of Solomon",
+          "title": "The Death of Solomon",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Rebellion against Rehoboam",
+          "title": "Rebellion against Rehoboam",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Kingdom Divided",
+          "title": "The Kingdom Divided",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Shemaiah’s Prophecy",
+          "title": "Shemaiah’s Prophecy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Jeroboam’s Idolatry",
+          "title": "Jeroboam’s Idolatry",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jeroboam’s Hand Withers",
+          "title": "Jeroboam’s Hand Withers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Old Prophet and the Man of God",
+          "title": "The Old Prophet and the Man of God",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Ahijah’s Prophecy against Jeroboam",
+          "title": "Ahijah’s Prophecy against Jeroboam",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Nadab Succeeds Jeroboam",
+          "title": "Nadab Succeeds Jeroboam",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Rehoboam Reigns in Judah",
+          "title": "Rehoboam Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Shishak Raids Jerusalem",
+          "title": "Shishak Raids Jerusalem",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Abijam Reigns in Judah",
+          "title": "Abijam Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Asa Reigns in Judah",
+          "title": "Asa Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "War between Asa and Baasha",
+          "title": "War between Asa and Baasha",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Jehoshaphat Succeeds Asa",
+          "title": "Jehoshaphat Succeeds Asa",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Nadab Reigns in Israel",
+          "title": "Nadab Reigns in Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "Baasha Reigns in Israel",
+          "title": "Baasha Reigns in Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jehu’s Prophecy against Baasha",
+          "title": "Jehu’s Prophecy against Baasha",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Elah Reigns in Israel",
+          "title": "Elah Reigns in Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Zimri Reigns in Israel",
+          "title": "Zimri Reigns in Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Omri Reigns in Israel",
+          "title": "Omri Reigns in Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Ahab Reigns in Israel, Marries Jezebel",
+          "title": "Ahab Reigns in Israel, Marries Jezebel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Ravens Feed Elijah",
+          "title": "The Ravens Feed Elijah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Widow of Zarephath",
+          "title": "The Widow of Zarephath",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Elijah Raises the Widow’s Son",
+          "title": "Elijah Raises the Widow’s Son",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Elijah’s Message to Ahab",
+          "title": "Elijah’s Message to Ahab",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Elijah on Mount Carmel",
+          "title": "Elijah on Mount Carmel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 36,
+          "sourceTitle": "Elijah’s Prayer",
+          "title": "Elijah’s Prayer",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 41,
+          "sourceTitle": "The LORD Sends Rain",
+          "title": "The LORD Sends Rain",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Elijah Flees from Jezebel",
+          "title": "Elijah Flees from Jezebel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The LORD Speaks to Elijah at Horeb",
+          "title": "The LORD Speaks to Elijah at Horeb",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "The Call of Elisha",
+          "title": "The Call of Elisha",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Ben-hadad Attacks Samaria",
+          "title": "Ben-hadad Attacks Samaria",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Ahab Defeats Ben-hadad",
+          "title": "Ahab Defeats Ben-hadad",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "Another War with Ben-hadad",
+          "title": "Another War with Ben-hadad",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "Ahab Spares Ben-hadad",
+          "title": "Ahab Spares Ben-hadad",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "A Prophet Reproves Ahab",
+          "title": "A Prophet Reproves Ahab",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Naboth’s Vineyard",
+          "title": "Naboth’s Vineyard",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Jezebel’s Plot",
+          "title": "Jezebel’s Plot",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Elijah Denounces Ahab and Jezebel",
+          "title": "Elijah Denounces Ahab and Jezebel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Ahab’s Repentance",
+          "title": "Ahab’s Repentance",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Ahab and the False Prophets",
+          "title": "Ahab and the False Prophets",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Micaiah Prophesies against Ahab",
+          "title": "Micaiah Prophesies against Ahab",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Ahab’s Defeat and Death",
+          "title": "Ahab’s Defeat and Death",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 41,
+          "sourceTitle": "Jehoshaphat Reigns in Judah",
+          "title": "Jehoshaphat Reigns in Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 51,
+          "sourceTitle": "Ahaziah Reigns in Israel",
+          "title": "Ahaziah Reigns in Israel",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

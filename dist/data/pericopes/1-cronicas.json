@@ -1,0 +1,660 @@
+{
+  "bookId": "1-cronicas",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "From Adam to Abraham",
+          "title": "From Adam to Abraham",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Descendants of Abraham",
+          "title": "The Descendants of Abraham",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "The Descendants of Esau",
+          "title": "The Descendants of Esau",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 38,
+          "sourceTitle": "The Descendants of Seir",
+          "title": "The Descendants of Seir",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 43,
+          "sourceTitle": "The Kings of Edom",
+          "title": "The Kings of Edom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Sons of Israel",
+          "title": "The Sons of Israel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Descendants of David",
+          "title": "The Descendants of David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Descendants of Solomon",
+          "title": "The Descendants of Solomon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "The Royal Line After the Exile",
+          "title": "The Royal Line After the Exile",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Descendants of Judah",
+          "title": "The Descendants of Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Prayer of Jabez",
+          "title": "The Prayer of Jabez",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "More Descendants of Judah",
+          "title": "More Descendants of Judah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "The Descendants of Simeon",
+          "title": "The Descendants of Simeon",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Descendants of Reuben",
+          "title": "The Descendants of Reuben",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Descendants of Gad",
+          "title": "The Descendants of Gad",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "The Half-Tribe of Manasseh",
+          "title": "The Half-Tribe of Manasseh",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Descendants of Levi",
+          "title": "The Descendants of Levi",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 31,
+          "sourceTitle": "The Temple Musicians",
+          "title": "The Temple Musicians",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 48,
+          "sourceTitle": "The Descendants of Aaron",
+          "title": "The Descendants of Aaron",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 54,
+          "sourceTitle": "Territories for the Levites",
+          "title": "Territories for the Levites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Descendants of Issachar",
+          "title": "The Descendants of Issachar",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "The Descendants of Benjamin",
+          "title": "The Descendants of Benjamin",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Descendants of Naphtali",
+          "title": "The Descendants of Naphtali",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Descendants of Manasseh",
+          "title": "The Descendants of Manasseh",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Descendants of Ephraim",
+          "title": "The Descendants of Ephraim",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "The Descendants of Asher",
+          "title": "The Descendants of Asher",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Genealogy from Benjamin to Saul",
+          "title": "Genealogy from Benjamin to Saul",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 33,
+          "sourceTitle": "The Family of Saul",
+          "title": "The Family of Saul",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The People of Jerusalem",
+          "title": "The People of Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 35,
+          "sourceTitle": "The Descendants of Saul",
+          "title": "The Descendants of Saul",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Saul’s Overthrow and Death",
+          "title": "Saul’s Overthrow and Death",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Philistines Possess the Towns",
+          "title": "The Philistines Possess the Towns",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Jabesh-gilead’s Tribute to Saul",
+          "title": "Jabesh-gilead’s Tribute to Saul",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Anointed King of All Israel",
+          "title": "David Anointed King of All Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "David Conquers Jerusalem",
+          "title": "David Conquers Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "David’s Mighty Men",
+          "title": "David’s Mighty Men",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Mighty Men Join David at Ziklag",
+          "title": "The Mighty Men Join David at Ziklag",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "David’s Army Grows at Hebron",
+          "title": "David’s Army Grows at Hebron",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Fetches the Ark",
+          "title": "David Fetches the Ark",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Uzzah Touches the Ark",
+          "title": "Uzzah Touches the Ark",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David’s Family Grows",
+          "title": "David’s Family Grows",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Two Victories over the Philistines",
+          "title": "Two Victories over the Philistines",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Preparing to Move the Ark",
+          "title": "Preparing to Move the Ark",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Priests and Levites Carry the Ark",
+          "title": "The Priests and Levites Carry the Ark",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "Moving the Ark to Jerusalem",
+          "title": "Moving the Ark to Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Michal’s Contempt for David",
+          "title": "Michal’s Contempt for David",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Tent for the Ark",
+          "title": "A Tent for the Ark",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "David’s Psalm of Thanksgiving",
+          "title": "David’s Psalm of Thanksgiving",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Sing to the LORD, All the Earth",
+          "title": "Sing to the LORD, All the Earth",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 37,
+          "sourceTitle": "Worship before the Ark",
+          "title": "Worship before the Ark",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God’s Covenant with David",
+          "title": "God’s Covenant with David",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "David’s Prayer of Thanksgiving",
+          "title": "David’s Prayer of Thanksgiving",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David’s Triumphs",
+          "title": "David’s Triumphs",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "David’s Officers",
+          "title": "David’s Officers",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David’s Messengers Disgraced",
+          "title": "David’s Messengers Disgraced",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "David Defeats Ammon and Aram",
+          "title": "David Defeats Ammon and Aram",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Capture of Rabbah",
+          "title": "The Capture of Rabbah",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Battles against the Philistines",
+          "title": "Battles against the Philistines",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David’s Military Census",
+          "title": "David’s Military Census",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Judgment for David’s Sin",
+          "title": "Judgment for David’s Sin",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "A Plague on Israel",
+          "title": "A Plague on Israel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "David Builds an Altar",
+          "title": "David Builds an Altar",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Preparations for the Temple",
+          "title": "Preparations for the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Solomon Anointed to Build the Temple",
+          "title": "Solomon Anointed to Build the Temple",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Divisions of the Levites",
+          "title": "The Divisions of the Levites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Gershonites",
+          "title": "The Gershonites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Kohathites",
+          "title": "The Kohathites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "The Merarites",
+          "title": "The Merarites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Levite Duties Revised",
+          "title": "Levite Duties Revised",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Twenty-Four Divisions of Priests",
+          "title": "Twenty-Four Divisions of Priests",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Rest of the Levites",
+          "title": "The Rest of the Levites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Twenty-Four Divisions of Musicians",
+          "title": "Twenty-Four Divisions of Musicians",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Divisions of the Gatekeepers",
+          "title": "The Divisions of the Gatekeepers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "The Treasurers, Officers, and Judges",
+          "title": "The Treasurers, Officers, and Judges",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Twelve Captains for Twelve Months",
+          "title": "Twelve Captains for Twelve Months",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "The Leaders of the Twelve Tribes",
+          "title": "The Leaders of the Twelve Tribes",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 25,
+          "sourceTitle": "David’s Various Overseers",
+          "title": "David’s Various Overseers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 32,
+          "sourceTitle": "The Counselors",
+          "title": "The Counselors",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "David Commissions Solomon",
+          "title": "David Commissions Solomon",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Plans for the Temple",
+          "title": "The Plans for the Temple",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Offerings for the Temple",
+          "title": "Offerings for the Temple",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "David’s Prayer of Blessing",
+          "title": "David’s Prayer of Blessing",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Solomon Anointed King",
+          "title": "Solomon Anointed King",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "David’s Reign and Death",
+          "title": "David’s Reign and Death",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "bookId": "filipenses",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Greetings from Paul and Timothy",
+          "title": "Greetings from Paul and Timothy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Thanksgiving and Prayer",
+          "title": "Thanksgiving and Prayer",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Paul’s Trials Advance the Gospel",
+          "title": "Paul’s Trials Advance the Gospel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "To Live Is Christ",
+          "title": "To Live Is Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "Worthy of the Gospel",
+          "title": "Worthy of the Gospel",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "One in Christ",
+          "title": "One in Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Mind of Christ",
+          "title": "The Mind of Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Lights in the World",
+          "title": "Lights in the World",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Timothy and Epaphroditus",
+          "title": "Timothy and Epaphroditus",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Righteousness through Faith in Christ",
+          "title": "Righteousness through Faith in Christ",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Pressing on toward the Goal",
+          "title": "Pressing on toward the Goal",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Citizenship in Heaven",
+          "title": "Citizenship in Heaven",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Rejoice in the Lord",
+          "title": "Rejoice in the Lord",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Generosity of the Philippians",
+          "title": "The Generosity of the Philippians",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Final Greetings",
+          "title": "Final Greetings",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

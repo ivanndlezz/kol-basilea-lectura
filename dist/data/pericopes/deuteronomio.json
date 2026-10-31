@@ -1,0 +1,727 @@
+{
+  "bookId": "deuteronomio",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Command to Leave Horeb",
+          "title": "The Command to Leave Horeb",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Moses Appoints Leaders",
+          "title": "Moses Appoints Leaders",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Twelve Spies Sent Out",
+          "title": "Twelve Spies Sent Out",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "Israel’s Rebellion",
+          "title": "Israel’s Rebellion",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 34,
+          "sourceTitle": "Israel’s Penalty",
+          "title": "Israel’s Penalty",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 41,
+          "sourceTitle": "The Defeat at Hormah",
+          "title": "The Defeat at Hormah",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Wanderings in the Wilderness",
+          "title": "Wanderings in the Wilderness",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "The Defeat of Sihon",
+          "title": "The Defeat of Sihon",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Defeat of Og",
+          "title": "The Defeat of Og",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Land Division East of the Jordan",
+          "title": "Land Division East of the Jordan",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Moses Forbidden to Cross the Jordan",
+          "title": "Moses Forbidden to Cross the Jordan",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "An Exhortation to Obedience",
+          "title": "An Exhortation to Obedience",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "A Warning against Idolatry",
+          "title": "A Warning against Idolatry",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 32,
+          "sourceTitle": "The LORD Alone Is God",
+          "title": "The LORD Alone Is God",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 41,
+          "sourceTitle": "Cities of Refuge",
+          "title": "Cities of Refuge",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 44,
+          "sourceTitle": "Introduction to the Law",
+          "title": "Introduction to the Law",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Covenant at Horeb",
+          "title": "The Covenant at Horeb",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "The Ten Commandments",
+          "title": "The Ten Commandments",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Moses Intercedes for the People",
+          "title": "Moses Intercedes for the People",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Greatest Commandment",
+          "title": "The Greatest Commandment",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Teach Your Children",
+          "title": "Teach Your Children",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Drive Out the Nations",
+          "title": "Drive Out the Nations",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Promises of God",
+          "title": "The Promises of God",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Remember the LORD Your God",
+          "title": "Remember the LORD Your God",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Assurance of Victory",
+          "title": "Assurance of Victory",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Golden Calf",
+          "title": "The Golden Calf",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "New Stone Tablets",
+          "title": "New Stone Tablets",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "A Call to Obedience",
+          "title": "A Call to Obedience",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Obedience and Discipline",
+          "title": "Obedience and Discipline",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "God’s Great Blessings",
+          "title": "God’s Great Blessings",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Remember God’s Words",
+          "title": "Remember God’s Words",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "A Blessing and a Curse",
+          "title": "A Blessing and a Curse",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "One Place for Worship",
+          "title": "One Place for Worship",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "A Warning against Idolatry",
+          "title": "A Warning against Idolatry",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Idolaters to Be Put to Death",
+          "title": "Idolaters to Be Put to Death",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Idolatrous Cities to Be Destroyed",
+          "title": "Idolatrous Cities to Be Destroyed",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Clean and Unclean Animals",
+          "title": "Clean and Unclean Animals",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Giving Tithes",
+          "title": "Giving Tithes",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Seventh Year",
+          "title": "The Seventh Year",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Generosity in Lending and Giving",
+          "title": "Generosity in Lending and Giving",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Hebrew Servants",
+          "title": "Hebrew Servants",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Firstborn Animals",
+          "title": "Firstborn Animals",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Passover and the Feast of Unleavened Bread",
+          "title": "Passover and the Feast of Unleavened Bread",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Feast of Weeks",
+          "title": "The Feast of Weeks",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Feast of Tabernacles",
+          "title": "The Feast of Tabernacles",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "Judges and Justice",
+          "title": "Judges and Justice",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Forbidden Forms of Worship",
+          "title": "Forbidden Forms of Worship",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Detestable Sacrifices",
+          "title": "Detestable Sacrifices",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 2,
+          "sourceTitle": "Purge the Idolater",
+          "title": "Purge the Idolater",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Courts of Law",
+          "title": "Courts of Law",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Guidelines for a King",
+          "title": "Guidelines for a King",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Provision for Priests and Levites",
+          "title": "Provision for Priests and Levites",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Sorcery Forbidden",
+          "title": "Sorcery Forbidden",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "A Prophet Like Moses",
+          "title": "A Prophet Like Moses",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Cities of Refuge",
+          "title": "Cities of Refuge",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Testimony of Two or Three Witnesses",
+          "title": "The Testimony of Two or Three Witnesses",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Laws of Warfare",
+          "title": "Laws of Warfare",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Atonement for an Unsolved Murder",
+          "title": "Atonement for an Unsolved Murder",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Marrying a Captive Woman",
+          "title": "Marrying a Captive Woman",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Inheritance Rights of the Firstborn",
+          "title": "Inheritance Rights of the Firstborn",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "A Rebellious Son",
+          "title": "A Rebellious Son",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Cursed Is Anyone Hung on a Tree",
+          "title": "Cursed Is Anyone Hung on a Tree",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Various Laws",
+          "title": "Various Laws",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Marriage Violations",
+          "title": "Marriage Violations",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Exclusion from the Congregation",
+          "title": "Exclusion from the Congregation",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Uncleanness in the Camp",
+          "title": "Uncleanness in the Camp",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Miscellaneous Laws",
+          "title": "Miscellaneous Laws",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Marriage and Divorce Laws",
+          "title": "Marriage and Divorce Laws",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Additional Laws",
+          "title": "Additional Laws",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Fairness and Mercy",
+          "title": "Fairness and Mercy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Widowhood and Marriage",
+          "title": "Widowhood and Marriage",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Standard Weights and Measures",
+          "title": "Standard Weights and Measures",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Revenge on the Amalekites",
+          "title": "Revenge on the Amalekites",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Offering Firstfruits and Tithes",
+          "title": "Offering Firstfruits and Tithes",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Obey the LORD’s Commands",
+          "title": "Obey the LORD’s Commands",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Altar on Mount Ebal",
+          "title": "The Altar on Mount Ebal",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Curses Pronounced from Ebal",
+          "title": "Curses Pronounced from Ebal",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Blessings of Obedience",
+          "title": "The Blessings of Obedience",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Curses of Disobedience",
+          "title": "The Curses of Disobedience",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Covenant in Moab",
+          "title": "The Covenant in Moab",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Promise of Restoration",
+          "title": "The Promise of Restoration",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "The Choice of Life or Death",
+          "title": "The Choice of Life or Death",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Joshua to Succeed Moses",
+          "title": "Joshua to Succeed Moses",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Reading of the Law",
+          "title": "The Reading of the Law",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "God Commissions Joshua",
+          "title": "God Commissions Joshua",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "The Law Placed in the Ark",
+          "title": "The Law Placed in the Ark",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 30,
+          "sourceTitle": "Moses Begins His Song",
+          "title": "Moses Begins His Song",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Song of Moses",
+          "title": "The Song of Moses",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 48,
+          "sourceTitle": "Moses’ Death Foretold",
+          "title": "Moses’ Death Foretold",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Moses Blesses the Twelve Tribes",
+          "title": "Moses Blesses the Twelve Tribes",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Death of Moses",
+          "title": "The Death of Moses",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

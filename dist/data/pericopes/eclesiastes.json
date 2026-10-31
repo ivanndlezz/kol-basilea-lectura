@@ -1,0 +1,227 @@
+{
+  "bookId": "eclesiastes",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Everything Is Futile",
+          "title": "Everything Is Futile",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "With Wisdom Comes Sorrow",
+          "title": "With Wisdom Comes Sorrow",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Futility of Pleasure",
+          "title": "The Futility of Pleasure",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "The Wise and the Foolish",
+          "title": "The Wise and the Foolish",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 18,
+          "sourceTitle": "The Futility of Work",
+          "title": "The Futility of Work",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "To Everything There Is a Season",
+          "title": "To Everything There Is a Season",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "God’s Works Remain Forever",
+          "title": "God’s Works Remain Forever",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "From Dust to Dust",
+          "title": "From Dust to Dust",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Evil of Oppression",
+          "title": "The Evil of Oppression",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Futility of Power",
+          "title": "The Futility of Power",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Approaching God with Fear",
+          "title": "Approaching God with Fear",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Futility of Wealth",
+          "title": "The Futility of Wealth",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Futility of Life",
+          "title": "The Futility of Life",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Value of Wisdom",
+          "title": "The Value of Wisdom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Limits of Human Wisdom",
+          "title": "The Limits of Human Wisdom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Obey the King",
+          "title": "Obey the King",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Fear God",
+          "title": "Fear God",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "God’s Ways Are Mysterious",
+          "title": "God’s Ways Are Mysterious",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Death Comes to Good and Bad",
+          "title": "Death Comes to Good and Bad",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Enjoy Your Portion in This Life",
+          "title": "Enjoy Your Portion in This Life",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Wisdom Is Better than Strength",
+          "title": "Wisdom Is Better than Strength",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Wisdom and Folly",
+          "title": "Wisdom and Folly",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Cast Your Bread upon the Waters",
+          "title": "Cast Your Bread upon the Waters",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Enjoy Your Years",
+          "title": "Enjoy Your Years",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Remember Your Creator",
+          "title": "Remember Your Creator",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "The Whole Duty of Man",
+          "title": "The Whole Duty of Man",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

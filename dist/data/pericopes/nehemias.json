@@ -1,0 +1,244 @@
+{
+  "bookId": "nehemias",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Nehemiah’s Prayer",
+          "title": "Nehemiah’s Prayer",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Nehemiah Sent to Jerusalem",
+          "title": "Nehemiah Sent to Jerusalem",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Nehemiah Inspects the Walls",
+          "title": "Nehemiah Inspects the Walls",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Builders of the Walls",
+          "title": "The Builders of the Walls",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Work Ridiculed",
+          "title": "The Work Ridiculed",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Discouragement Overcome",
+          "title": "Discouragement Overcome",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Nehemiah Defends the Oppressed",
+          "title": "Nehemiah Defends the Oppressed",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Nehemiah’s Generosity",
+          "title": "Nehemiah’s Generosity",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Sanballat’s Conspiracy",
+          "title": "Sanballat’s Conspiracy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Completion of the Wall",
+          "title": "Completion of the Wall",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Securing the City",
+          "title": "Securing the City",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "The List of Returning Exiles",
+          "title": "The List of Returning Exiles",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 70,
+          "sourceTitle": "Offerings by the Exiles",
+          "title": "Offerings by the Exiles",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Ezra Reads the Law",
+          "title": "Ezra Reads the Law",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Feast of Tabernacles",
+          "title": "The Feast of Tabernacles",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The People Confess Their Sins",
+          "title": "The People Confess Their Sins",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Signers of the Covenant",
+          "title": "Signers of the Covenant",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "The Vows of the Covenant",
+          "title": "The Vows of the Covenant",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Jerusalem’s New Settlers",
+          "title": "Jerusalem’s New Settlers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Residents Outside Jerusalem",
+          "title": "Residents Outside Jerusalem",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Priests and Levites Who Returned",
+          "title": "The Priests and Levites Who Returned",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 27,
+          "sourceTitle": "The Dedication of the Wall",
+          "title": "The Dedication of the Wall",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 44,
+          "sourceTitle": "Provisions for Temple Worship",
+          "title": "Provisions for Temple Worship",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Foreigners Excluded",
+          "title": "Foreigners Excluded",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "The Temple Cleansed",
+          "title": "The Temple Cleansed",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Tithes Restored",
+          "title": "Tithes Restored",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "The Sabbath Restored",
+          "title": "The Sabbath Restored",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Intermarriage Forbidden",
+          "title": "Intermarriage Forbidden",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

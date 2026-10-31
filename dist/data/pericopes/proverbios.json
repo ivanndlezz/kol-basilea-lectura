@@ -1,0 +1,580 @@
+{
+  "bookId": "proverbios",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Beginning of Knowledge",
+          "title": "The Beginning of Knowledge",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "The Enticement of Sin",
+          "title": "The Enticement of Sin",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Wisdom Calls Aloud",
+          "title": "Wisdom Calls Aloud",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Benefits of Wisdom",
+          "title": "The Benefits of Wisdom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Trust in the LORD with All Your Heart",
+          "title": "Trust in the LORD with All Your Heart",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Blessings of Wisdom",
+          "title": "The Blessings of Wisdom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Father’s Instruction",
+          "title": "A Father’s Instruction",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Avoiding Immorality",
+          "title": "Avoiding Immorality",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Warnings against Foolishness",
+          "title": "Warnings against Foolishness",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Warnings against Adultery",
+          "title": "Warnings against Adultery",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Warnings about the Adulteress",
+          "title": "Warnings about the Adulteress",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Excellence of Wisdom",
+          "title": "The Excellence of Wisdom",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Way of Wisdom",
+          "title": "The Way of Wisdom",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "The Way of Folly",
+          "title": "The Way of Folly",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Solomon’s Proverbs: The Wise Son",
+          "title": "Solomon’s Proverbs: The Wise Son",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Dishonest Scales",
+          "title": "Dishonest Scales",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Loving Discipline and Knowledge",
+          "title": "Loving Discipline and Knowledge",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Father’s Discipline",
+          "title": "A Father’s Discipline",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Wise Woman",
+          "title": "The Wise Woman",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Gentle Answer Turns Away Wrath",
+          "title": "A Gentle Answer Turns Away Wrath",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Reply of the Tongue Is from the LORD",
+          "title": "The Reply of the Tongue Is from the LORD",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Better a Dry Morsel in Quietness",
+          "title": "Better a Dry Morsel in Quietness",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Selfishness of the Unfriendly",
+          "title": "The Selfishness of the Unfriendly",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Man of Integrity",
+          "title": "The Man of Integrity",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Wine Is a Mocker",
+          "title": "Wine Is a Mocker",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The King’s Heart",
+          "title": "The King’s Heart",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Good Name",
+          "title": "A Good Name",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Thirty Sayings of the Wise",
+          "title": "Thirty Sayings of the Wise",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Saying 1",
+          "title": "Saying 1",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Saying 2",
+          "title": "Saying 2",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 24,
+          "sourceTitle": "Saying 3",
+          "title": "Saying 3",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "Saying 4",
+          "title": "Saying 4",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 28,
+          "sourceTitle": "Saying 5",
+          "title": "Saying 5",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Saying 6",
+          "title": "Saying 6",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "True Riches",
+          "title": "True Riches",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 1,
+          "sourceTitle": "Saying 7",
+          "title": "Saying 7",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 4,
+          "sourceTitle": "Saying 8",
+          "title": "Saying 8",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Saying 9",
+          "title": "Saying 9",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Saying 10",
+          "title": "Saying 10",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Saying 11",
+          "title": "Saying 11",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Saying 12",
+          "title": "Saying 12",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Saying 13",
+          "title": "Saying 13",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Saying 14",
+          "title": "Saying 14",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Saying 15",
+          "title": "Saying 15",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Saying 16",
+          "title": "Saying 16",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 22,
+          "sourceTitle": "Saying 17",
+          "title": "Saying 17",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 26,
+          "sourceTitle": "Saying 18",
+          "title": "Saying 18",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 29,
+          "sourceTitle": "Saying 19",
+          "title": "Saying 19",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Do Not Envy",
+          "title": "Do Not Envy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 1,
+          "sourceTitle": "Saying 20",
+          "title": "Saying 20",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Saying 21",
+          "title": "Saying 21",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Saying 22",
+          "title": "Saying 22",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Saying 23",
+          "title": "Saying 23",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Saying 24",
+          "title": "Saying 24",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "Saying 25",
+          "title": "Saying 25",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Saying 26",
+          "title": "Saying 26",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 15,
+          "sourceTitle": "Saying 27",
+          "title": "Saying 27",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Saying 28",
+          "title": "Saying 28",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 19,
+          "sourceTitle": "Saying 29",
+          "title": "Saying 29",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "Saying 30",
+          "title": "Saying 30",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 23,
+          "sourceTitle": "Further Sayings of the Wise",
+          "title": "Further Sayings of the Wise",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "More Proverbs of Solomon",
+          "title": "More Proverbs of Solomon",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Similitudes and Instructions",
+          "title": "Similitudes and Instructions",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Do Not Boast about Tomorrow",
+          "title": "Do Not Boast about Tomorrow",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Boldness of the Righteous",
+          "title": "The Boldness of the Righteous",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Flourishing of the Righteous",
+          "title": "The Flourishing of the Righteous",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Words of Agur",
+          "title": "The Words of Agur",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Sayings for King Lemuel",
+          "title": "The Sayings for King Lemuel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 10,
+          "sourceTitle": "The Virtues of a Noble Woman",
+          "title": "The Virtues of a Noble Woman",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

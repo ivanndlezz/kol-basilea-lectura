@@ -1,0 +1,226 @@
+{
+  "bookId": "2-corintios",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul Greets the Corinthians",
+          "title": "Paul Greets the Corinthians",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "The God of All Comfort",
+          "title": "The God of All Comfort",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Paul’s Change of Plans",
+          "title": "Paul’s Change of Plans",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Reaffirm Your Love",
+          "title": "Reaffirm Your Love",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "Triumph in Christ",
+          "title": "Triumph in Christ",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Ministers of a New Covenant",
+          "title": "Ministers of a New Covenant",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "The Glory of the New Covenant",
+          "title": "The Glory of the New Covenant",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Light of the Gospel",
+          "title": "The Light of the Gospel",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 7,
+          "sourceTitle": "Treasure in Jars of Clay",
+          "title": "Treasure in Jars of Clay",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Our Eternal Dwelling",
+          "title": "Our Eternal Dwelling",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Ambassadors for Christ",
+          "title": "Ambassadors for Christ",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul’s Hardships and God’s Grace",
+          "title": "Paul’s Hardships and God’s Grace",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "Do Not Be Unequally Yoked",
+          "title": "Do Not Be Unequally Yoked",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul’s Joy in the Corinthians",
+          "title": "Paul’s Joy in the Corinthians",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Generosity Commended",
+          "title": "Generosity Commended",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Titus Commended",
+          "title": "Titus Commended",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "God Loves a Cheerful Giver",
+          "title": "God Loves a Cheerful Giver",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul’s Apostolic Authority",
+          "title": "Paul’s Apostolic Authority",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul and the False Apostles",
+          "title": "Paul and the False Apostles",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Paul’s Suffering and Service",
+          "title": "Paul’s Suffering and Service",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul’s Revelation",
+          "title": "Paul’s Revelation",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Paul’s Thorn and God’s Grace",
+          "title": "Paul’s Thorn and God’s Grace",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Paul’s Concern for the Corinthians",
+          "title": "Paul’s Concern for the Corinthians",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Examine Yourselves",
+          "title": "Examine Yourselves",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Benediction and Farewell",
+          "title": "Benediction and Farewell",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

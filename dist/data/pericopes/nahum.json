@@ -1,0 +1,44 @@
+{
+  "bookId": "nahum",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Burden against Nineveh",
+          "title": "The Burden against Nineveh",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Overthrow of Nineveh",
+          "title": "The Overthrow of Nineveh",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Judgment on Nineveh",
+          "title": "Judgment on Nineveh",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "bookId": "2-tesalonicenses",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Greetings to the Thessalonians",
+          "title": "Greetings to the Thessalonians",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 5,
+          "sourceTitle": "Christ’s Coming",
+          "title": "Christ’s Coming",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "The Man of Lawlessness",
+          "title": "The Man of Lawlessness",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 13,
+          "sourceTitle": "Stand Firm",
+          "title": "Stand Firm",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Request for Prayer",
+          "title": "Request for Prayer",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "A Warning against Idleness",
+          "title": "A Warning against Idleness",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 16,
+          "sourceTitle": "Signature and Final Greetings",
+          "title": "Signature and Final Greetings",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}

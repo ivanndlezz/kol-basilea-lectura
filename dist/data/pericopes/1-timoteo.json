@@ -1,0 +1,161 @@
+{
+  "bookId": "1-timoteo",
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://berean.bible/downloads.htm",
+    "license": "Public domain",
+    "note": "Automatically extracted from USFM; Spanish editorial review required."
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Paul’s Greeting to Timothy",
+          "title": "Paul’s Greeting to Timothy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Correcting False Teachers",
+          "title": "Correcting False Teachers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 12,
+          "sourceTitle": "God’s Grace to Paul",
+          "title": "God’s Grace to Paul",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Call to Prayer",
+          "title": "A Call to Prayer",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 9,
+          "sourceTitle": "Instructions to Women",
+          "title": "Instructions to Women",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Qualifications for Overseers",
+          "title": "Qualifications for Overseers",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 8,
+          "sourceTitle": "Qualifications for Deacons",
+          "title": "Qualifications for Deacons",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 14,
+          "sourceTitle": "The Mystery of Godliness",
+          "title": "The Mystery of Godliness",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "A Warning against Apostasy",
+          "title": "A Warning against Apostasy",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "A Good Servant of Jesus Christ",
+          "title": "A Good Servant of Jesus Christ",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Reproof and Respect",
+          "title": "Reproof and Respect",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Honoring True Widows",
+          "title": "Honoring True Widows",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "Honoring Elders",
+          "title": "Honoring Elders",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 21,
+          "sourceTitle": "A Charge to Timothy",
+          "title": "A Charge to Timothy",
+          "status": "needs-translation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "sections": [
+        {
+          "startVerse": 1,
+          "sourceTitle": "Serving with Honor",
+          "title": "Serving with Honor",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 3,
+          "sourceTitle": "Reject False Doctrines",
+          "title": "Reject False Doctrines",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 6,
+          "sourceTitle": "Godliness with Contentment",
+          "title": "Godliness with Contentment",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 11,
+          "sourceTitle": "Fight the Good Fight",
+          "title": "Fight the Good Fight",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 17,
+          "sourceTitle": "A Charge to the Rich",
+          "title": "A Charge to the Rich",
+          "status": "needs-translation"
+        },
+        {
+          "startVerse": 20,
+          "sourceTitle": "Guard the Faith",
+          "title": "Guard the Faith",
+          "status": "needs-translation"
+        }
+      ]
+    }
+  ]
+}
