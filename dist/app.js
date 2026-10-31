@@ -54,6 +54,7 @@ const JUAN_VIDEO = {
 };
 
 const ICONS = {
+  checkCircle: '<circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/>',
   smartphone: '<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>',
   sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>',
   moon: '<path d="M20.985 12.486A9 9 0 0 1 11.514 3.015 9 9 0 1 0 20.985 12.486z"/>',
@@ -292,21 +293,37 @@ function renderView() {
   return renderHome();
 }
 
+function renderBookCover(book, completed = false) {
+  const title = escapeHtml(book.name).replace(/ /g, "<br>");
+  const palette = ["#195b45", "#71563e", "#345b72", "#71536b", "#775d38", "#3d6660"];
+  return `<div class="kb-cover" style="--cover-color:${palette[Math.floor(book.index / 11) % palette.length]}" aria-hidden="true"><div class="kb-cover-face"><span class="kb-cover-star">✦</span><span class="kb-cover-title">${title}</span><span class="kb-cover-number">LIBRO ${book.index + 1}</span></div>${completed ? `<span class="kb-cover-stamp">${icon("check", 18)}</span>` : ""}</div>`;
+}
+function renderBookShelf(rewardIndex = -1) {
+  return `<div class="kb-shelf" role="img" aria-label="Estantería: ${totalCompletedBooks()} de 66 libros terminados">${BOOKS.map((book, index) => `<span class="kb-spine ${isBookComplete(book) ? "is-done" : ""} ${!isBookComplete(book) && currentBook().id === book.id ? "is-next" : ""} ${index === rewardIndex ? "just-added" : ""}" style="height:${24 + (index * 7 % 4) * 3}px" aria-hidden="true"></span>`).join("")}</div>`;
+}
 function renderHome() {
   const book = currentBook();
   const chapter = currentChapter(book);
   const completed = getCompletedChapters(book).length;
   const total = totalCompletedChapters();
   const doneBooks = totalCompletedBooks();
-  const recentBooks = BOOKS.slice(Math.max(0, book.index - 2), Math.min(BOOKS.length, book.index + 5));
-  const intro = getBookInfo(book);
+  const nextBook = BOOKS[book.index + 1];
+  const rewardBook = state.justCompletedBookId ? getBook(state.justCompletedBookId) : null;
+  const rewardIndex = rewardBook && isBookComplete(rewardBook) ? rewardBook.index : -1;
   const discovery = `<section class="kol-discovery" aria-labelledby="kol-discovery-title"><img class="kol-discovery-image" src="https://ivanndlezz.github.io/kol-basilea/assets/historias-del-reino-portada-redisenada.jpg" alt="Ilustración editorial original de Historias del Reino, Kol Basilea" loading="lazy" decoding="async"><div class="kol-discovery-content"><p class="eyebrow">Descubre Kol Basilea</p><h2 id="kol-discovery-title">Cada historia tiene un mundo detrás.</h2><p>Leer es el comienzo. Descubre los personajes, acontecimientos y contextos que dieron forma a las Escrituras.</p><a class="kol-discovery-link" href="https://ivanndlezz.github.io/kol-basilea/historias-del-reino/un-choque-de-mundos-mentes-y-personas/" target="_blank" rel="noopener noreferrer">Leer en Kol Basilea <span aria-hidden="true">↗</span></a></div></section>`;
-  return `<main class="screen home-screen">
-    <header class="hero-copy home-intro"><p class="eyebrow">Tu camino por las Escrituras</p><h1>Descubre la Biblia, un libro a la vez.</h1><p>Una ruta de lectura diseñada para ayudarte a conocer las Escrituras, comprender su contexto y avanzar a tu propio ritmo.</p></header>
-    <section class="card current-card reading-next" aria-labelledby="reading-next-title"><div class="reading-next-heading"><span class="reading-next-symbol" aria-hidden="true">${icon("bookOpen", 18)}</span><span>Tu siguiente lectura</span></div><h2 id="reading-next-title">${escapeHtml(book.name)}</h2><p class="reading-next-description">${escapeHtml(intro.lead)}</p><div class="reading-next-meta"><span>Capítulo ${chapter} de ${book.chapters}</span><span>${book.index === 0 ? "Primero" : `Libro ${book.index + 1}`} de 66 libros</span></div>${completed ? progressBar(completed, book.chapters, `Tu recorrido por ${book.name}`) : ""}<div class="button-row reading-actions"><button class="button button-primary" data-action="open-reader">${completed ? "Continuar leyendo" : "Comenzar a leer"} <span aria-hidden="true">→</span></button></div></section>
-    <section class="reading-method" aria-labelledby="reading-method-title"><h2 id="reading-method-title">Así funciona tu recorrido</h2><div class="reading-method-grid"><div class="reading-method-step"><span class="method-icon" aria-hidden="true">${icon("bookOpen", 20)}</span><strong>Lee</strong><span>A tu ritmo</span></div><div class="reading-method-step"><span class="method-icon" aria-hidden="true">${icon("info", 20)}</span><strong>Comprende</strong><span>Con contexto</span></div><div class="reading-method-step"><span class="method-icon" aria-hidden="true">${icon("route", 20)}</span><strong>Avanza</strong><span>Libro a libro</span></div></div></section>
-    <div class="section-heading"><h2>Tu biblioteca</h2><a href="#" data-action="show-route">Explorar todos</a></div><p class="home-library-lead">Los libros que has recorrido y los que están por descubrir.</p><div class="book-strip" aria-label="Libros cercanos en la ruta">${recentBooks.map(bookChip).join("")}</div>
-    <div class="section-heading"><h2>Tu camino recorrido</h2><a href="#" data-action="show-progress">Ver todo</a></div><div class="soft-card milestone-card"><div class="milestone-icon" aria-hidden="true">${icon("sparkles", 20)}</div><div><h3>${doneBooks ? `${doneBooks} ${doneBooks === 1 ? "libro descubierto" : "libros descubiertos"}` : "Tu historia de lectura comienza aquí"}</h3><p>${doneBooks ? `Has recorrido ${doneBooks} de 66 libros y ${total} capítulos. Cada paso permanece contigo.` : "Cada capítulo que leas será parte de tu recorrido. No hay días perdidos ni prisa por terminar."}</p></div></div>
+  const context = doneBooks === 0 ? "Empiezas por un libro breve: un solo capítulo." : rewardBook ? `¡${escapeHtml(rewardBook.name)} ya está en tu estantería!` : completed > 0 ? `Ya llevas ${completed} de ${book.chapters} capítulos de este libro.` : `Has terminado ${doneBooks} ${doneBooks === 1 ? "libro" : "libros"}. Continúa cuando quieras.`;
+  return `<main class="screen home-screen kb-today">
+    <header class="kb-intro"><p class="eyebrow">Tu camino por las Escrituras</p><h1>Descubre la Biblia, un libro a la vez.</h1><p>Marca cada capítulo y llena tu estantería de 66 libros.</p></header>
+    <section class="kb-verbs" aria-label="Cómo funciona"><div class="kb-verb"><span>${icon("bookOpen", 18)}<strong>Lee</strong></span><small>Un capítulo a la vez</small></div><div class="kb-verb"><span>${icon("checkCircle", 18)}<strong>Marca</strong></span><small>Guarda tu avance</small></div><div class="kb-verb"><span>${icon("bookOpen", 18)}<strong>Colecciona</strong></span><small>66 libros, sin rachas</small></div></section>
+    <section class="kb-hero" aria-labelledby="kb-book-title">
+      <div class="kb-hero-top"><span>Tu siguiente lectura</span><strong class="kb-counter ${rewardIndex >= 0 ? "kb-counter-reward" : ""}">${doneBooks} / 66 libros</strong></div>
+      <div class="kb-hero-book">${renderBookCover(book)}<div><h2 id="kb-book-title">${escapeHtml(book.name)}</h2><p>${book.chapters === 1 ? "Carta · 1 capítulo" : `${book.chapters} capítulos`} · Libro ${book.index + 1} de 66</p><p class="kb-current-chapter">Capítulo ${chapter} de ${book.chapters}</p></div></div>
+      <div class="kb-context">${icon("sparkles", 17)}<span>${context}</span></div>
+      <button class="button button-primary kb-start" data-action="open-reader">${completed ? "Continuar leyendo" : "Comenzar a leer"} <span aria-hidden="true">→</span></button>
+      <div class="kb-shelf-wrap">${renderBookShelf(rewardIndex)}<div class="kb-shelf-caption"><strong>Tu estantería</strong><span>${total} de 1189 capítulos</span></div></div>
+    </section>
+    <div class="section-heading kb-library-heading"><h2>Tu biblioteca</h2><a href="#" data-action="show-route">Ver los 66 libros</a></div>
+    <div class="book-strip" aria-label="Libros cercanos en la ruta">${BOOKS.slice(Math.max(0,book.index-1),Math.min(66,book.index+5)).map(bookChip).join("")}</div>
     ${discovery}
   </main>`;
 }
@@ -433,6 +450,7 @@ function renderNav() {
 }
 
 function openReader(bookId = currentBook().id) {
+  state.justCompletedBookId = null;
   state.readerBookId = bookId;
   state.readerOrigin = state.view === "route" ? "route" : "home";
   state.readerChapter = currentChapter(getBook(bookId));
@@ -468,9 +486,11 @@ function completeChapter() {
   const book = getBook(state.readerBookId);
   const chapter = readerChapter(book);
   const chapters = new Set(getCompletedChapters(book));
+  const wasComplete = isBookComplete(book);
   chapters.add(chapter);
   state.completedChapters[book.id] = [...chapters].sort((a, b) => a - b);
   const finishedBook = isBookComplete(book);
+  state.justCompletedBookId = finishedBook && !wasComplete ? book.id : null;
   if (state.onboardingStep === 3 && book.index === 0) {
     state.onboardingComplete = true;
     state.view = "home";
