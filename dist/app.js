@@ -418,7 +418,7 @@ function renderReader() {
   const completed = getCompletedChapters(book).includes(chapter);
   const bookProgress = getCompletedChapters(book).length;
   const routeProgress = totalCompletedChapters();
-  const origin = state.readerOrigin === "route" ? "Ruta" : "Hoy";
+  const origin = state.readerOrigin === "route" ? "Ruta" : state.readerOrigin === "library" ? "Biblioteca" : "Hoy";
   const video = getBookVideo(book);
   const contextVideo = video ? renderVideoCard(video) : renderPendingVideoCard();
   const readerBody = `${renderReaderContext(book, contextVideo)}${renderChapterList(book, chapter)}${state.readerBookInfoOpen ? renderBookInfoPage(book) : renderReadingCopy(book, chapter)}`;
@@ -526,7 +526,7 @@ function bindEvents() {
       if (action === "toggle-reader-context") { state.readerContextOpen = !state.readerContextOpen; saveState(); render(); }
       if (action === "set-reader-font") { state.readerFont = element.dataset.font === "sans" ? "sans" : "serif"; state.readerDisplayOpen = false; saveState(); render(); }
       if (action === "set-reader-theme") { state.readerTheme = ["light", "sepia", "dark"].includes(element.dataset.theme) ? element.dataset.theme : "light"; state.readerDisplayOpen = false; saveState(); render(); }
-      if (action === "back-home" || action === "back-context") { state.view = state.readerOrigin === "route" ? "route" : "home"; saveState(); render(); }
+      if (action === "back-home" || action === "back-context") { state.view = ["route", "library"].includes(state.readerOrigin) ? state.readerOrigin : "home"; saveState(); render(); }
       if (action === "complete-chapter") { completeChapter(); }
       if (action === "set-appearance") { const value = element.dataset.appearance; if (["system", "light", "dark"].includes(value)) { state.appAppearance = value; state.appearancePopoverOpen = false; saveState(); render(); document.querySelector(".kb-appearance-toggle")?.focus({preventScroll:true}); } }
       if (action === "change-goal") {
