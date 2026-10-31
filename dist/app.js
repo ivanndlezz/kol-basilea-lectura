@@ -593,7 +593,8 @@ function setupReaderSectionNav() {
     });
     const tab = tabs[index];
     if (tab && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      tab.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      const strip = nav.querySelector(".kb-section-tabs");
+      if (strip) strip.scrollTo({ left: tab.offsetLeft - strip.offsetLeft - (strip.clientWidth - tab.offsetWidth) / 2, behavior: "smooth" });
     }
   };
   let frame = 0;
