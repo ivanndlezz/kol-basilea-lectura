@@ -134,6 +134,7 @@ Incluye:
 - área de texto bíblico con fuente, traducción y licencia visibles;
 - botón “Marcar capítulo X como leído”;
 - lista compacta de todos los capítulos del libro, con estados pendiente, en curso y leído;
+- botón de información del libro antes del primer capítulo, tratado como una entrada de navegación propia;
 - check visual en cada capítulo completado y contador “X de Y”;
 - selección directa de un capítulo desde la lista para revisar o continuar en otro punto;
 - en libros de más de 12 capítulos, vista resumida de capítulos cercanos y acción “Ver todos los capítulos”;
@@ -148,6 +149,8 @@ Incluye:
 El lector debe mantener el foco en una sola acción principal y evitar acciones competitivas o distracciones innecesarias. La lista de capítulos funciona como navegación secundaria: el capítulo actual se destaca, y al guardar un capítulo el check aparece de inmediato mientras el lector avanza al siguiente pendiente. El menú de formato se considera una preferencia persistente, no una acción de lectura.
 
 La referencia visual aportada para la Bible App inspira una navegación de lectura más directa: el libro y capítulo permanecen identificables arriba, la traducción se ve como una elección explícita y el texto ocupa la mayor parte de la pantalla. Kol Basilea adopta esa claridad mediante una barra de selección conectada al índice de capítulos, pero conserva su regreso explícito, el contexto en video y el progreso por capítulos.
+
+La ficha de información toma como referencia el patrón minimalista de Bible App: una sola `i` al inicio del índice, sin competir con los capítulos. No se comporta como un acordeón; al tocarla abre una pantalla de introducción del libro con la misma navegación del lector y una salida clara hacia “Ver capítulos”. En 1 Juan contiene una síntesis editorial propia sobre contexto, temas y propósito. La [introducción consultada en Bible App](https://www.bible.com/es/bible/149/1JN.INTRO1.RVR1960) funciona únicamente como referencia de estructura y contexto; la UI no reproduce su texto.
 
 ### Recurso implementado: 1–3 Juan
 

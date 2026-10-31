@@ -384,6 +384,10 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .chapter-panel-header h2 { margin: 0; font-size: 21px; }
 .chapter-panel-header > strong { color: var(--brand); font-size: 13px; white-space: nowrap; }
 .chapter-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.chapter-info-button { display: grid; place-items: center; min-height: 70px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface-soft); color: var(--ink-muted); transition: border-color .2s ease, background .2s ease, color .2s ease, transform .2s ease; }
+.chapter-info-button:hover { border-color: var(--brand); background: var(--brand-soft); color: var(--brand-dark); transform: translateY(-1px); }
+.chapter-info-button:focus-visible { outline: 3px solid rgba(44, 118, 90, .28); outline-offset: 2px; }
+.chapter-info-button.is-active { border-color: var(--brand); background: var(--brand-soft); color: var(--brand-dark); }
 .chapter-row { display: grid; grid-template-columns: 36px minmax(0, 1fr); grid-template-areas: "number label" "number status"; align-items: center; column-gap: 8px; min-height: 70px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--ink); text-align: left; transition: border-color .2s ease, background .2s ease, transform .2s ease; }
 .chapter-row:hover { border-color: #b8cfc4; transform: translateY(-1px); }
 .chapter-row:focus-visible { outline: 3px solid rgba(44, 118, 90, .28); outline-offset: 2px; }
@@ -395,6 +399,7 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .chapter-status { grid-area: status; min-height: 12px; margin: 0; color: var(--brand); font-size: 11px; font-weight: 800; line-height: 1; }
 .chapter-panel-compact { position: relative; }
 .chapter-nearby-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.chapter-info-button-mini { min-height: 62px; padding: 8px; border-radius: 13px; }
 .chapter-mini { display: grid; grid-template-columns: 30px minmax(0, 1fr); grid-template-areas: "number label" "number status"; align-items: center; column-gap: 7px; min-height: 62px; padding: 8px; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); color: var(--ink); text-align: left; }
 .chapter-mini.is-current { border-color: var(--gold); box-shadow: inset 0 0 0 1px var(--gold); }
 .chapter-mini.is-complete { border-color: #a7d1bc; background: var(--brand-soft); }
@@ -416,6 +421,15 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .chapter-sheet-button.is-current { border-color: var(--gold); box-shadow: inset 0 0 0 2px var(--gold); }
 .chapter-sheet-button.is-complete { border-color: #a7d1bc; background: var(--brand-soft); color: var(--brand); }
 .chapter-sheet-number { display: grid; place-items: center; min-width: 28px; min-height: 28px; }
+.book-info-page { max-width: 590px; margin: 0 auto; padding: 10px 0 22px; }
+.book-info-kicker { padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.book-info-lead { margin-top: 22px; color: var(--ink); font-size: 21px !important; font-weight: 750; line-height: 1.4 !important; }
+.book-info-body { margin-bottom: 18px; font-size: 17px !important; line-height: 1.65 !important; }
+.book-info-themes { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 15px; }
+.book-info-themes span { padding: 6px 9px; border-radius: 999px; background: var(--brand-soft); color: var(--brand-dark); font-size: 11px; font-weight: 800; }
+.book-info-context { margin-bottom: 14px; color: var(--ink-muted) !important; font-size: 12px !important; line-height: 1.5 !important; }
+.book-info-source { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding-top: 12px; border-top: 1px solid var(--line); color: var(--ink-muted); font-size: 11px; }
+.book-info-source a { color: var(--brand); font-weight: 800; text-decoration: none; }
 .reading-copy { max-width: 590px; margin: 0 auto; padding: 10px 0 20px; }
 .reading-copy p { color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: 19px; line-height: 1.72; }
 .reading-note { padding: 14px 16px; border-left: 3px solid var(--gold); border-radius: 0 12px 12px 0; background: var(--gold-soft); color: #704a1e; font-size: 13px; line-height: 1.5; }

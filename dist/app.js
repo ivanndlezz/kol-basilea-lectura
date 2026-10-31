@@ -64,6 +64,8 @@ const ICONS = {
   arrowLeft: '<path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>',
   chevronRight: '<path d="m9 18 6-6-6-6"/>',
   chevronDown: '<path d="m6 9 6 6 6-6"/>',
+  chevronUp: '<path d="m18 15-6-6-6 6"/>',
+  info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/>',
   play: '<polygon points="6 3 20 12 6 21 6 3"/>',
   check: '<path d="m5 12 4 4L19 6"/>'
 };
@@ -87,6 +89,7 @@ const defaultState = () => ({
   readerFont: "serif",
   readerTheme: "light",
   readerTranslation: "rvr1909",
+  readerBookInfoOpen: false,
   completedChapters: {},
   toast: ""
 });
@@ -136,6 +139,29 @@ function escapeHtml(value) { return String(value).replace(/[&<>'"]/g, (char) => 
 
 function getBookVideo(book) {
   return ["3-juan", "2-juan", "1-juan"].includes(book.id) ? JUAN_VIDEO : null;
+}
+
+const BOOK_INFO = {
+  "1-juan": {
+    lead: "Una carta pastoral sobre la vida, la verdad y el amor.",
+    body: "1 Juan anima a comunidades de creyentes a permanecer en la verdad y a reconocer el amor fraternal como una expresión concreta de la comunión con Dios.",
+    context: "Tradicionalmente se ha vinculado con Juan y con comunidades de Asia Menor hacia el final del siglo I. Presentamos este dato como contexto histórico editorial, no como una certeza absoluta.",
+    themes: ["Luz y tinieblas", "Verdad y error", "Vida y amor"],
+    sourceLabel: "Referencia de introducción consultada en Bible App",
+    sourceUrl: "https://www.bible.com/es/bible/149/1JN.INTRO1.RVR1960"
+  }
+};
+
+function getBookInfo(book) {
+  const category = CATEGORIES.find((item) => item.id === book.category)?.label || "Ruta editorial";
+  return BOOK_INFO[book.id] || {
+    lead: `Una introducción breve para ${book.name}.`,
+    body: "La información histórica, literaria y temática de este libro se integrará próximamente.",
+    context: "Por ahora puedes recorrer sus capítulos y construir tu avance sin salir del lector.",
+    themes: [category, `${book.chapters} ${book.chapters === 1 ? "capítulo" : "capítulos"}`],
+    sourceLabel: "Ficha editorial en preparación",
+    sourceUrl: null
+  };
 }
 
 function renderVideoCard(video) {
@@ -266,18 +292,27 @@ function renderChapterSheet(book, selectedChapter) {
   return `<div class="chapter-sheet-layer" ${open ? "" : "hidden"}><button class="chapter-sheet-backdrop" data-action="close-chapter-sheet" aria-label="Cerrar capítulos"></button><aside id="chapter-sheet" class="chapter-sheet" role="dialog" aria-modal="true" aria-labelledby="chapter-sheet-title"><header class="chapter-sheet-header"><div><p class="eyebrow">Navegar</p><h2 id="chapter-sheet-title">Capítulos</h2><p>${escapeHtml(book.name)} · ${getCompletedChapters(book).length} de ${book.chapters} leídos</p></div><button class="icon-button" data-action="close-chapter-sheet" aria-label="Cerrar capítulos">${icon("arrowLeft", 19)}</button></header><div class="chapter-sheet-grid">${rows}</div></aside></div>`;
 }
 
+function renderBookInfoTrigger(book, variant = "chapter-info-button") {
+  return `<button class="${variant}" data-action="open-book-info" aria-label="Información sobre ${escapeHtml(book.name)}">${icon("info", variant.includes("mini") ? 21 : 25)}<span class="sr-only">Información sobre ${escapeHtml(book.name)}</span></button>`;
+}
+
+function renderBookInfoPage(book) {
+  const info = getBookInfo(book);
+  return `<section class="book-info-page" aria-label="Introducción del libro"><p class="eyebrow book-info-kicker">Introducción del libro</p><p class="book-info-lead">${escapeHtml(info.lead)}</p><p class="book-info-body">${escapeHtml(info.body)}</p><div class="book-info-themes">${info.themes.map((theme) => `<span>${escapeHtml(theme)}</span>`).join("")}</div><p class="book-info-context">${escapeHtml(info.context)}</p><div class="book-info-source"><span>${escapeHtml(info.sourceLabel)}</span>${info.sourceUrl ? `<a href="${info.sourceUrl}" target="_blank" rel="noreferrer">Ver referencia</a>` : ""}</div></section>`;
+}
+
 function renderCompactChapterNavigator(book, selectedChapter) {
   const completed = new Set(getCompletedChapters(book));
   const start = Math.max(1, Math.min(selectedChapter - 2, book.chapters - 4));
   const nearby = Array.from({ length: Math.min(5, book.chapters) }, (_, index) => start + index);
-  return `<section class="chapter-panel chapter-panel-compact" aria-labelledby="chapter-list-title"><div class="chapter-panel-header"><div><p class="eyebrow">Tu avance</p><h2 id="chapter-list-title">Capítulos</h2></div><strong>${completed.size} de ${book.chapters}</strong></div><div class="chapter-nearby-grid">${nearby.map((chapter) => renderChapterButton(book, chapter, selectedChapter, "chapter-mini")).join("")}</div><button class="chapter-panel-action" data-action="toggle-chapter-sheet" aria-expanded="${state.chapterSheetOpen}" aria-controls="chapter-sheet"><span>${icon("menu", 16)} Ver todos los capítulos</span>${icon("chevronRight", 16)}</button></section>${renderChapterSheet(book, selectedChapter)}`;
+  return `<section class="chapter-panel chapter-panel-compact" aria-labelledby="chapter-list-title"><div class="chapter-panel-header"><div><p class="eyebrow">Tu avance</p><h2 id="chapter-list-title">Capítulos</h2></div><strong>${completed.size} de ${book.chapters}</strong></div><div class="chapter-nearby-grid">${renderBookInfoTrigger(book, "chapter-info-button chapter-info-button-mini")}${nearby.map((chapter) => renderChapterButton(book, chapter, selectedChapter, "chapter-mini")).join("")}</div><button class="chapter-panel-action" data-action="toggle-chapter-sheet" aria-expanded="${state.chapterSheetOpen}" aria-controls="chapter-sheet"><span>${icon("menu", 16)} Ver todos los capítulos</span>${icon("chevronRight", 16)}</button></section>${renderChapterSheet(book, selectedChapter)}`;
 }
 
 function renderChapterList(book, selectedChapter) {
   if (book.chapters > 12) return renderCompactChapterNavigator(book, selectedChapter);
   const completed = new Set(getCompletedChapters(book));
   const rows = Array.from({ length: book.chapters }, (_, index) => renderChapterButton(book, index + 1, selectedChapter)).join("");
-  return `<section class="chapter-panel" aria-labelledby="chapter-list-title"><div class="chapter-panel-header"><div><p class="eyebrow">Tu avance</p><h2 id="chapter-list-title">Capítulos</h2></div><strong>${completed.size} de ${book.chapters}</strong></div><div class="chapter-grid">${rows}</div></section>${renderChapterSheet(book, selectedChapter)}`;
+  return `<section class="chapter-panel" aria-labelledby="chapter-list-title"><div class="chapter-panel-header"><div><p class="eyebrow">Tu avance</p><h2 id="chapter-list-title">Capítulos</h2></div><strong>${completed.size} de ${book.chapters}</strong></div><div class="chapter-grid">${renderBookInfoTrigger(book)}${rows}</div></section>${renderChapterSheet(book, selectedChapter)}`;
 }
 
 function renderReaderDisplayMenu() {
@@ -295,7 +330,8 @@ function renderReaderContext(book, contextVideo) {
 
 function renderReaderSelection(book, chapter) {
   const translation = getBibleTranslation(state.readerTranslation);
-  return `<div class="reader-selection-bar"><button class="reader-selection-button" data-action="toggle-chapter-sheet" aria-expanded="${state.chapterSheetOpen}" aria-controls="chapter-sheet"><span>${escapeHtml(book.name.toUpperCase())} ${chapter}</span>${icon("chevronDown", 16)}</button><span class="reader-translation-pill" aria-label="Traducción ${escapeHtml(translation.name)}">${escapeHtml(translation.shortName)}</span></div>`;
+  const selectionLabel = state.readerBookInfoOpen ? `${book.name.toUpperCase()} · INFO` : `${book.name.toUpperCase()} ${chapter}`;
+  return `<div class="reader-selection-bar"><button class="reader-selection-button" data-action="toggle-chapter-sheet" aria-expanded="${state.chapterSheetOpen}" aria-controls="chapter-sheet"><span>${escapeHtml(selectionLabel)}</span>${icon("chevronDown", 16)}</button><span class="reader-translation-pill" aria-label="Traducción ${escapeHtml(translation.name)}">${escapeHtml(translation.shortName)}</span></div>`;
 }
 
 function renderReadingCopy(book, chapter) {
@@ -318,7 +354,10 @@ function renderReader() {
   const origin = state.readerOrigin === "route" ? "Ruta" : "Hoy";
   const video = getBookVideo(book);
   const contextVideo = video ? renderVideoCard(video) : renderPendingVideoCard();
-  return `<main class="reader-page"><header class="reader-topbar"><div class="reader-topbar-left"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><span class="reader-topbar-divider" aria-hidden="true"></span><nav class="reader-topbar-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="reader-topbar-link" data-action="back-context">${origin}</button><span aria-hidden="true">${icon("chevronRight", 13)}</span><strong>${escapeHtml(book.name)} ${chapter}</strong><span class="reader-book-index">${book.index + 1}/66</span></nav></div><div class="reader-topbar-actions"><button class="reader-format-button" data-action="toggle-reader-format" aria-expanded="${state.readerDisplayOpen}" aria-controls="reader-display-menu">${icon("sliders", 16)}<span>Formato</span></button><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></div><div class="reader-route-progress" role="progressbar" aria-label="Progreso total de la ruta" aria-valuemin="0" aria-valuemax="${TOTAL_CHAPTERS}" aria-valuenow="${routeProgress}"><div style="width:${percent(routeProgress, TOTAL_CHAPTERS)}%"></div></div></header>${renderReaderSelection(book, chapter)}${renderReaderDisplayMenu()}<div class="reader-progress"><div class="reader-progress-copy"><span>Libro ${book.index + 1} de 66</span><strong>${bookProgress} de ${book.chapters} capítulos</strong></div><div class="progress-track" role="progressbar" aria-label="Progreso del libro" aria-valuemin="0" aria-valuemax="${book.chapters}" aria-valuenow="${bookProgress}"><div class="progress-fill" style="width:${percent(bookProgress, book.chapters)}%"></div></div></div><article class="reader-content"><div class="reader-heading"><div class="reader-meta-pill"><span>Libro ${book.index + 1} de 66</span><span aria-hidden="true">•</span><span>Capítulo ${chapter} de ${book.chapters}</span></div><h1>${escapeHtml(book.name)}</h1></div>${renderReaderContext(book, contextVideo)}${renderChapterList(book, chapter)}${renderReadingCopy(book, chapter)}</article><footer class="reader-footer"><button class="button button-primary button-wide" data-action="complete-chapter">${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button></footer></main>`;
+  const currentLabel = state.readerBookInfoOpen ? "Introducción" : `Capítulo ${chapter} de ${book.chapters}`;
+  const readerBody = state.readerBookInfoOpen ? renderBookInfoPage(book) : `${renderReaderContext(book, contextVideo)}${renderChapterList(book, chapter)}${renderReadingCopy(book, chapter)}`;
+  const footerAction = state.readerBookInfoOpen ? `<button class="button button-secondary button-wide" data-action="close-book-info">Ver capítulos</button>` : `<button class="button button-primary button-wide" data-action="complete-chapter">${completed ? `Capítulo completado ${icon("check", 17)}` : `Marcar capítulo ${chapter} como leído`}</button>`;
+  return `<main class="reader-page"><header class="reader-topbar"><div class="reader-topbar-left"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><span class="reader-topbar-divider" aria-hidden="true"></span><nav class="reader-topbar-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="reader-topbar-link" data-action="back-context">${origin}</button><span aria-hidden="true">${icon("chevronRight", 13)}</span><strong>${escapeHtml(book.name)} ${state.readerBookInfoOpen ? "· Introducción" : chapter}</strong><span class="reader-book-index">${book.index + 1}/66</span></nav></div><div class="reader-topbar-actions"><button class="reader-format-button" data-action="toggle-reader-format" aria-expanded="${state.readerDisplayOpen}" aria-controls="reader-display-menu">${icon("sliders", 16)}<span>Formato</span></button><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></div><div class="reader-route-progress" role="progressbar" aria-label="Progreso total de la ruta" aria-valuemin="0" aria-valuemax="${TOTAL_CHAPTERS}" aria-valuenow="${routeProgress}"><div style="width:${percent(routeProgress, TOTAL_CHAPTERS)}%"></div></div></header>${renderReaderSelection(book, chapter)}${renderReaderDisplayMenu()}<div class="reader-progress"><div class="reader-progress-copy"><span>Libro ${book.index + 1} de 66</span><strong>${bookProgress} de ${book.chapters} capítulos</strong></div><div class="progress-track" role="progressbar" aria-label="Progreso del libro" aria-valuemin="0" aria-valuemax="${book.chapters}" aria-valuenow="${bookProgress}"><div class="progress-fill" style="width:${percent(bookProgress, book.chapters)}%"></div></div></div><article class="reader-content"><div class="reader-heading"><div class="reader-meta-pill"><span>Libro ${book.index + 1} de 66</span><span aria-hidden="true">•</span><span>${currentLabel}</span></div><h1>${escapeHtml(book.name)}</h1></div>${readerBody}</article><footer class="reader-footer">${footerAction}</footer></main>`;
 }
 
 function renderNav() {
@@ -331,6 +370,7 @@ function openReader(bookId = currentBook().id) {
   state.readerOrigin = state.view === "route" ? "route" : "home";
   state.readerChapter = currentChapter(getBook(bookId));
   state.chapterSheetOpen = false;
+  state.readerBookInfoOpen = false;
   if (state.onboardingStep === 3 && bookId === "3-juan") state.onboardingComplete = true;
   state.view = "reader";
   saveState();
@@ -402,6 +442,8 @@ function bindEvents() {
       if (action === "filter-route-category") { state.routeCategory = CATEGORIES.some((category) => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "open-book") { openReader(element.dataset.bookId); }
       if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); state.chapterSheetOpen = false; saveState(); render(); }
+      if (action === "open-book-info") { state.readerBookInfoOpen = true; state.chapterSheetOpen = false; saveState(); render(); }
+      if (action === "close-book-info") { state.readerBookInfoOpen = false; saveState(); render(); }
       if (action === "toggle-chapter-sheet") { state.chapterSheetOpen = !state.chapterSheetOpen; saveState(); render(); }
       if (action === "close-chapter-sheet") { state.chapterSheetOpen = false; saveState(); render(); }
       if (action === "toggle-reader-format") { state.readerDisplayOpen = !state.readerDisplayOpen; saveState(); render(); }
