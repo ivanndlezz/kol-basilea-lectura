@@ -1,6 +1,6 @@
 import { readFile, readdir, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { BOOKS } from "../dist/data/bible-catalog.js";
+const { books: BOOKS } = JSON.parse(await readFile(new URL("../dist/data/catalog/books.json", import.meta.url), "utf8"));
 
 const ROOT = process.argv[2] || "sources/rvr1909";
 const OUTPUT = process.argv[3] || "dist/data/rvr1909";
