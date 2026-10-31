@@ -108,13 +108,13 @@ El orden visible validado contiene 66 libros y 1,189 capítulos. Las inserciones
 
 Incluye:
 
-- porcentaje global;
+- porcentaje principal calculado por libros terminados de 66, redondeado al entero más cercano;
 - libros terminados de 66;
 - capítulos leídos de 1,189;
 - meta actual;
 - hitos de 1, 7 y 33 libros.
 
-El porcentaje debe acompañarse de cantidades absolutas para evitar que los primeros avances pequeños parezcan invisibles.
+El porcentaje debe acompañarse de cantidades absolutas para evitar que los primeros avances pequeños parezcan invisibles. Por ejemplo, 2 libros terminados muestran 3% (2/66 ≈ 3%), aunque el detalle de capítulos siga siendo independiente.
 
 ### Más
 
