@@ -380,8 +380,9 @@ function renderCompilation() {
 }
 function renderAuthorPortrait(person) {
   const seed = encodeURIComponent("kol-basilea-" + person.id);
-  const url = `https://api.dicebear.com/10.x/notionists/svg?seed=${seed}&backgroundColor=transparent`;
-  return `<img class="kb-author-portrait" src="${url}" alt="Avatar ilustrado de ${escapeHtml(person.name)}; representación artística, no retrato histórico" loading="lazy" decoding="async" referrerpolicy="no-referrer" />`;
+  const url = `https://api.dicebear.com/9.x/notionists/svg?seed=${seed}&backgroundColor=transparent`;
+  const initial = escapeHtml(person.name.slice(0,1));
+  return `<span class="kb-avatar-fallback" aria-label="Representación de ${escapeHtml(person.name)}"><span class="kb-avatar-initial">${initial}</span><img class="kb-author-portrait" src="${url}" alt="" loading="lazy" decoding="async" onload="this.parentElement.classList.add('is-loaded')" onerror="this.remove()" /></span>`;
 }
 
 function renderAuthors() {
