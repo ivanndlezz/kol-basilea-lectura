@@ -27,7 +27,7 @@ export function parseUsfm(input) {
   const flush = () => {
     if (verse === null) return;
     const normalized = clean(text);
-    if (!normalized) throw new Error("Empty verse "+book.id+" "+chapter+":"+verse);
+    if (!normalized) throw new Error("Empty verse "+book.id+" "+chapter+":"+verse+" raw="+JSON.stringify(text)+" source="+JSON.stringify(input.slice(input.indexOf("\\c "+chapter),input.indexOf("\\c "+chapter)+900)));
     const verses = chapters[chapter].verses;
     if (verses.some(v=>v.number===verse)) throw new Error("Duplicate verse "+book.id+" "+chapter+":"+verse);
     verses.push({number:verse,text:normalized,...(heading?{heading}: {})});
