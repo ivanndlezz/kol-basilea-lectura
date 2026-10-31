@@ -1,6 +1,6 @@
 import { getBibleChapter, getBibleTranslation } from "./data/bible-rvr1909.js";
 import { BOOKS, CATEGORIES, TOTAL_CHAPTERS, getCatalogBook } from "./data/bible-catalog.js";
-import { JUAN_VIDEO, getBookEditorial } from "./data/editorial-content.js";
+import { JUAN_VIDEO, BOOK_INFO, getBookEditorial } from "./data/editorial-content.js";
 import { completedChapters, isBookFinished, completedChapterCount, completedBookCount, nextReadingBook, nextReadingChapter, markChapterComplete } from "./data/reading-progress.js";
 
 const STORAGE_KEY = "kol-basilea-lectura-v1";
@@ -128,19 +128,8 @@ function percent(value, total) { return total ? Math.round((value / total) * 100
 function escapeHtml(value) { return String(value).replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char])); }
 
 function getBookVideo(book) {
-  return ["3-juan", "2-juan", "1-juan"].includes(book.id) ? JUAN_VIDEO : null;
+  return getBookEditorial(book.id)?.video || null;
 }
-
-const BOOK_INFO = {
-  "1-juan": {
-    lead: "Una carta pastoral sobre la vida, la verdad y el amor.",
-    body: "1 Juan anima a comunidades de creyentes a permanecer en la verdad y a reconocer el amor fraternal como una expresión concreta de la comunión con Dios.",
-    context: "Tradicionalmente se ha vinculado con Juan y con comunidades de Asia Menor hacia el final del siglo I. Presentamos este dato como contexto histórico editorial, no como una certeza absoluta.",
-    themes: ["Luz y tinieblas", "Verdad y error", "Vida y amor"],
-    sourceLabel: "Referencia de introducción consultada en Bible App",
-    sourceUrl: "https://www.bible.com/es/bible/149/1JN.INTRO1.RVR1960"
-  }
-};
 
 function getBookInfo(book) {
   const category = CATEGORIES.find((item) => item.id === book.category)?.label || "Ruta editorial";
