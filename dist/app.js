@@ -303,8 +303,6 @@ function bookChip(book) {
 
 function renderRoute() {
   const done = totalCompletedBooks();
-  const selectedCategory = CATEGORIES.find((category) => category.id === state.routeCategory) || CATEGORIES[0];
-  const visibleBooks = state.routeCategory === "all" ? BOOKS : BOOKS.filter((book) => book.category === state.routeCategory);
   return `<main class="screen"><div class="route-header"><p class="eyebrow">Tu ruta de lectura</p><h1>Libro por libro.</h1><p>Sigue la secuencia editorial de 66 libros, sin fechas ni atrasos.</p></div><div class="route-summary"><div class="stat-pill"><strong>${done}</strong> / 66 libros</div><div class="stat-pill"><strong>${totalCompletedChapters()}</strong> / ${TOTAL_CHAPTERS} capítulos</div></div><div class="route-list">${BOOKS.map(routeRow).join("")}</div></main>`;
 }
 
