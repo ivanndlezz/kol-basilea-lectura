@@ -100,6 +100,8 @@ Cada fila incluye:
 - estado “Siguiente” cuando corresponde;
 - estado “Listo” cuando se completó.
 
+La ruta conserva el orden editorial progresivo, pero ofrece filtros secundarios por categoría: Todos, La Ley, Históricos, Poéticos y sapienciales, Profetas mayores, Los 12 profetas menores, Evangelios, Historia de la iglesia, Cartas de Pablo, Cartas generales y Apocalipsis. Filtrar no reordena ni modifica el progreso; solo reduce las filas visibles.
+
 El orden visible validado contiene 66 libros y 1,189 capítulos. Las inserciones son: Miqueas después de Joel; Oseas después de Lamentaciones; Ester después de Nehemías; Job después de 1 Corintios; 1 y 2 Samuel después de 2 Reyes.
 
 ### Progreso
@@ -171,6 +173,7 @@ El mismo recurso se trata como panorama del conjunto, no como tres videos distin
 - contexto de video abierto y colapsado;
 - capítulo disponible y pendiente;
 - lista de capítulos con capítulo actual seleccionado;
+- ruta filtrada por categoría sin alterar el orden editorial;
 - navegador de capítulos abierto para libros largos;
 - lector en tema claro, sepia u oscuro;
 - capítulo completado;
@@ -188,6 +191,8 @@ El mismo recurso se trata como panorama del conjunto, no como tres videos distin
 - El onboarding llega a 3 Juan y tiene una finalización inequívoca.
 - Al completar el capítulo de 3 Juan, la pantalla muestra 1 de 66 libros y propone 2 Juan.
 - La ruta muestra exactamente 66 libros y 1,189 capítulos.
+- La ruta permite filtrar los 66 libros por categoría y muestra el número de resultados del filtro.
+- Las categorías son metadatos de exploración: no cambian la secuencia editorial ni el cálculo de progreso.
 - El progreso queda disponible después de recargar la página en el mismo dispositivo.
 - Cambiar de 365 a 180 o sin fecha no modifica capítulos ni libros completados.
 - Todos los botones principales son operables con toque, teclado y lector de pantalla básico.

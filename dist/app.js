@@ -10,6 +10,35 @@ const BOOKS = [
   ["2 Samuel", 24], ["Números", 36], ["Isaías", 66], ["Éxodo", 40], ["Lucas", 24], ["Génesis", 50], ["Jeremías", 52], ["Salmos", 150]
 ].map(([name, chapters], index) => ({ id: slugify(name), name, chapters, index }));
 
+const CATEGORIES = [
+  { id: "all", label: "Todos" },
+  { id: "law", label: "La Ley" },
+  { id: "history", label: "Históricos" },
+  { id: "wisdom", label: "Poéticos y sapienciales" },
+  { id: "major-prophets", label: "Profetas mayores" },
+  { id: "minor-prophets", label: "Los 12 profetas menores" },
+  { id: "gospels", label: "Evangelios" },
+  { id: "church-history", label: "Historia de la iglesia" },
+  { id: "paul-letters", label: "Cartas de Pablo" },
+  { id: "general-letters", label: "Cartas generales" },
+  { id: "apocalypse", label: "Apocalipsis" }
+];
+
+const CATEGORY_BY_BOOK = {
+  "Génesis": "law", "Éxodo": "law", "Levítico": "law", "Números": "law", "Deuteronomio": "law",
+  "Josué": "history", "Jueces": "history", "Rut": "history", "1 Samuel": "history", "2 Samuel": "history", "1 Reyes": "history", "2 Reyes": "history", "1 Crónicas": "history", "2 Crónicas": "history", "Esdras": "history", "Nehemías": "history", "Ester": "history",
+  "Job": "wisdom", "Salmos": "wisdom", "Proverbios": "wisdom", "Eclesiastés": "wisdom", "Cantares": "wisdom",
+  "Isaías": "major-prophets", "Jeremías": "major-prophets", "Lamentaciones": "major-prophets", "Ezequiel": "major-prophets", "Daniel": "major-prophets",
+  "Oseas": "minor-prophets", "Joel": "minor-prophets", "Amós": "minor-prophets", "Abdías": "minor-prophets", "Jonás": "minor-prophets", "Miqueas": "minor-prophets", "Nahúm": "minor-prophets", "Habacuc": "minor-prophets", "Sofonías": "minor-prophets", "Ageo": "minor-prophets", "Zacarías": "minor-prophets", "Malaquías": "minor-prophets",
+  "Mateo": "gospels", "Marcos": "gospels", "Lucas": "gospels", "Juan": "gospels",
+  "Hechos": "church-history",
+  "Romanos": "paul-letters", "1 Corintios": "paul-letters", "2 Corintios": "paul-letters", "Gálatas": "paul-letters", "Efesios": "paul-letters", "Filipenses": "paul-letters", "Colosenses": "paul-letters", "1 Tesalonicenses": "paul-letters", "2 Tesalonicenses": "paul-letters", "1 Timoteo": "paul-letters", "2 Timoteo": "paul-letters", "Tito": "paul-letters", "Filemón": "paul-letters",
+  "Hebreos": "general-letters", "Santiago": "general-letters", "1 Pedro": "general-letters", "2 Pedro": "general-letters", "1 Juan": "general-letters", "2 Juan": "general-letters", "3 Juan": "general-letters", "Judas": "general-letters",
+  "Apocalipsis": "apocalypse"
+};
+
+BOOKS.forEach((book) => { book.category = CATEGORY_BY_BOOK[book.name] || "general-letters"; });
+
 const TOTAL_CHAPTERS = BOOKS.reduce((sum, book) => sum + book.chapters, 0);
 const STORAGE_KEY = "kol-basilea-lectura-v1";
 const JUAN_VIDEO = {
@@ -48,6 +77,7 @@ const defaultState = () => ({
   readerBookId: "3-juan",
   readerOrigin: "home",
   readerChapter: null,
+  routeCategory: "all",
   readerContextOpen: true,
   readerDisplayOpen: false,
   chapterSheetOpen: false,
@@ -192,7 +222,9 @@ function bookChip(book) {
 
 function renderRoute() {
   const done = totalCompletedBooks();
-  return `<main class="screen"><div class="route-header"><p class="eyebrow">La ruta completa</p><h1>Libro por libro.</h1><p>Una secuencia editorial de 66 libros. El siguiente paso siempre está cerca.</p></div><div class="route-summary"><div class="stat-pill"><strong>${done}</strong> / 66 libros</div><div class="stat-pill"><strong>${totalCompletedChapters()}</strong> / ${TOTAL_CHAPTERS} capítulos</div></div><div class="route-list" style="margin-top:18px">${BOOKS.map(routeRow).join("")}</div></main>`;
+  const selectedCategory = CATEGORIES.find((category) => category.id === state.routeCategory) || CATEGORIES[0];
+  const visibleBooks = state.routeCategory === "all" ? BOOKS : BOOKS.filter((book) => book.category === state.routeCategory);
+  return `<main class="screen"><div class="route-header"><p class="eyebrow">La ruta completa</p><h1>Libro por libro.</h1><p>Una secuencia editorial de 66 libros. Puedes recorrerla completa o explorarla por categorías.</p></div><div class="route-summary"><div class="stat-pill"><strong>${done}</strong> / 66 libros</div><div class="stat-pill"><strong>${totalCompletedChapters()}</strong> / ${TOTAL_CHAPTERS} capítulos</div></div><div class="category-filter" role="tablist" aria-label="Filtrar la ruta por categoría">${CATEGORIES.map((category) => `<button class="category-filter-chip ${category.id === state.routeCategory ? "is-selected" : ""}" data-action="filter-route-category" data-category="${category.id}" role="tab" aria-selected="${category.id === state.routeCategory}">${escapeHtml(category.label)}</button>`).join("")}</div><div class="category-result-label"><span>${escapeHtml(selectedCategory.label)}</span><strong>${visibleBooks.length} ${visibleBooks.length === 1 ? "libro" : "libros"}</strong></div><div class="route-list">${visibleBooks.map(routeRow).join("")}</div></main>`;
 }
 
 function routeRow(book) {
@@ -347,6 +379,7 @@ function bindEvents() {
       if (action === "open-more") { state.view = "more"; saveState(); render(); }
       if (action === "show-route") { state.view = "route"; saveState(); render(); }
       if (action === "show-progress") { state.view = "progress"; saveState(); render(); }
+      if (action === "filter-route-category") { state.routeCategory = CATEGORIES.some((category) => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "open-book") { openReader(element.dataset.bookId); }
       if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); state.chapterSheetOpen = false; saveState(); render(); }
       if (action === "toggle-chapter-sheet") { state.chapterSheetOpen = !state.chapterSheetOpen; saveState(); render(); }
