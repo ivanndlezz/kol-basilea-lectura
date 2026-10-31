@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "check": "node --check dist/app.js && node --check dist/data/bible-catalog.js && node --check dist/data/reading-progress.js && node --check dist/data/editorial-content.js && npm test"
+    "check": "node --check dist/app.js && node --check dist/sw.js && node --check dist/data/bible-loader.js && node --check scripts/convert-usfm.mjs && node --check dist/data/bible-catalog.js && node --check dist/data/reading-progress.js && node --check dist/data/editorial-content.js && npm test",
+    "build:bible": "node scripts/convert-usfm.mjs sources/rvr1909 dist/data/rvr1909"
   }
 }
