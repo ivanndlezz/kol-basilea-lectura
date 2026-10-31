@@ -455,7 +455,7 @@ p { color: var(--ink-muted); line-height: 1.52; }
 /* Reader refinements inspired by the supplied reference: quieter chrome, editorial reading space, and explicit display controls. */
 .app-shell.is-reading { max-width: 920px; }
 .reader-page { position: relative; min-height: 100vh; }
-.reader-topbar { position: sticky; top: 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 62px; padding: calc(8px + env(safe-area-inset-top)) 20px 8px; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 91%, transparent); backdrop-filter: blur(16px); }
+.reader-topbar { position: sticky; top: 0; z-index: 40; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 62px; padding: calc(8px + env(safe-area-inset-top)) 20px 8px; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 91%, transparent); backdrop-filter: blur(16px); }
 .reader-topbar-left, .reader-topbar-actions { display: flex; align-items: center; gap: 10px; }
 .reader-topbar-left { min-width: 0; flex: 1; }
 .reader-topbar-actions { flex: 0 0 auto; }
@@ -530,6 +530,7 @@ p { color: var(--ink-muted); line-height: 1.52; }
 @media (min-width: 680px) {
   body { padding: 14px 0; }
   .app-shell { min-height: calc(100vh - 28px); border: 1px solid var(--line); border-radius: 34px; overflow: hidden; box-shadow: 0 20px 70px rgba(30, 43, 38, .08); }
+  .app-shell.is-reading { overflow: visible; }
   .onboarding-shell { min-height: calc(100vh - 28px); }
   .bottom-nav { bottom: 14px; border: 1px solid var(--line); border-radius: 22px; }
 }
@@ -1024,7 +1025,7 @@ a:not([class]):visited{color:var(--brand-dark)}
 .scripture-passage .kb-pericope-heading:first-child { margin-top: 0.65em; }
 
 /* Contextual chapter section navigation, anchored to editorial pericopes. */
-.kb-section-nav { position: sticky; top: 0; z-index: 29; background: color-mix(in srgb, var(--paper) 94%, transparent); backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
+.kb-section-nav { position: sticky; top: var(--kb-reader-sticky-top, 0px); z-index: 35; background: color-mix(in srgb, var(--paper) 94%, transparent); backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
 .kb-section-tabs { display: flex; align-items: stretch; gap: 2px; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; padding: 0 12px; }
 .kb-section-tabs::-webkit-scrollbar { display: none; }
 .kb-section-tab { display: inline-flex; align-items: center; flex: 0 0 auto; min-height: 46px; padding: 9px 14px; border-bottom: 2px solid transparent; color: var(--ink-muted); font: 500 13px/1.3 -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif; white-space: nowrap; text-decoration: none; }

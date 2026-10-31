@@ -74,6 +74,7 @@ let state = loadState();
 let toastTimer;
 let readerProgressBound = false;
 let readerProgressFrame = null;
+let pendingSectionVerse = null;
 
 function slugify(value) {
   return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -91,6 +92,60 @@ function loadState() {
 function saveState() {
   const { toast, navigationOpen, appearancePopoverOpen, readerMoreOpen, activeMilestone, ...persisted } = state;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(persisted));
+}
+
+function readReaderLocation() {
+  const params = new URLSearchParams(window.location.search);
+  const bookId = params.get("book");
+  const chapter = Number(params.get("chapter"));
+  const section = params.get("section");
+  const book = bookId ? getBook(bookId) : null;
+  if (book && Number.isInteger(chapter) && chapter >= 1 && chapter <= book.chapters) {
+    const sectionVerse = section && /^\d+$/.test(section) ? Number(section) : null;
+    return { bookId: book.id, chapter, sectionVerse };
+  }
+
+  const legacyMatch = window.location.hash.match(/^#kb-section-(.+)-(\d+)-(\d+)$/);
+  if (!legacyMatch) return null;
+  const legacyBook = getBook(legacyMatch[1]);
+  const legacyChapter = Number(legacyMatch[2]);
+  const legacySectionVerse = Number(legacyMatch[3]);
+  if (!legacyBook || legacyChapter < 1 || legacyChapter > legacyBook.chapters) return null;
+  return { bookId: legacyBook.id, chapter: legacyChapter, sectionVerse: legacySectionVerse, legacy: true };
+}
+
+function readerLocationUrl(bookId, chapter, sectionVerse = null) {
+  const url = new URL(window.location.href);
+  url.search = "";
+  url.hash = "";
+  const params = new URLSearchParams({ book: bookId, chapter: String(chapter) });
+  if (Number.isInteger(sectionVerse)) params.set("section", String(sectionVerse));
+  url.search = params.toString();
+  return `${url.pathname}${url.search}`;
+}
+
+function updateReaderLocation(bookId, chapter, sectionVerse = null, replace = false) {
+  const url = readerLocationUrl(bookId, chapter, sectionVerse);
+  window.history[replace ? "replaceState" : "pushState"]({ bookId, chapter, sectionVerse }, "", url);
+}
+
+function clearReaderLocation() {
+  const url = new URL(window.location.href);
+  url.search = "";
+  url.hash = "";
+  window.history.pushState({}, "", `${url.pathname}${url.search}`);
+}
+
+const initialReaderLocation = readReaderLocation();
+if (initialReaderLocation) {
+  state.onboardingComplete = true;
+  state.view = "reader";
+  state.readerOrigin = "home";
+  state.readerBookId = initialReaderLocation.bookId;
+  state.readerChapter = initialReaderLocation.chapter;
+  pendingSectionVerse = initialReaderLocation.sectionVerse;
+  if (initialReaderLocation.legacy) updateReaderLocation(initialReaderLocation.bookId, initialReaderLocation.chapter, initialReaderLocation.sectionVerse, true);
+  saveState();
 }
 
 function updateReaderReadingProgress() {
@@ -182,6 +237,7 @@ function render() {
   document.body.classList.toggle("kb-navigation-open", Boolean(state.navigationOpen));
   bindEvents();
   setupReaderSectionNav();
+  requestAnimationFrame(scrollToPendingSection);
   if (state.navigationOpen) document.querySelector(".kb-navigation-close")?.focus({preventScroll:true});
   bindImageSkeletons();
   if (state.view === "reader" && !state.readerBookInfoOpen) {
@@ -196,6 +252,17 @@ function render() {
       }).catch(error => console.warn("Bible book load failed", bookId, error));
     }
   }
+}
+
+function scrollToPendingSection() {
+  if (state.view !== "reader" || !Number.isInteger(pendingSectionVerse)) return;
+  const book = getBook(state.readerBookId);
+  const chapter = readerChapter(book);
+  const target = document.getElementById(`kb-section-${book.id}-${chapter}-${pendingSectionVerse}`);
+  if (!target) return;
+  const offset = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--kb-section-offset")) || 150;
+  window.scrollTo({ top: window.scrollY + target.getBoundingClientRect().top - offset, behavior: "instant" });
+  pendingSectionVerse = null;
 }
 
 function bindImageSkeletons() {
@@ -568,7 +635,7 @@ function readerSections(book, chapter) {
 function renderReaderSectionNav(book, chapter) {
   const sections = readerSections(book, chapter);
   if (sections.length < 2) return "";
-  return `<nav class="kb-section-nav" aria-label="Secciones de ${escapeHtml(book.name)} capítulo ${chapter}"><div class="kb-section-tabs">${sections.map((section, index) => `<a class="kb-section-tab" href="#kb-section-${book.id}-${chapter}-${section.startVerse}" data-section-verse="${section.startVerse}" ${index === 0 ? 'aria-current="location"' : ""}>${escapeHtml(section.title)}</a>`).join("")}</div></nav>`;
+  return `<nav class="kb-section-nav" data-book-id="${escapeHtml(book.id)}" data-chapter="${chapter}" aria-label="Secciones de ${escapeHtml(book.name)} capítulo ${chapter}"><div class="kb-section-tabs">${sections.map((section, index) => `<a class="kb-section-tab" href="${escapeHtml(readerLocationUrl(book.id, chapter, section.startVerse))}" data-section-verse="${section.startVerse}" data-section-target="kb-section-${book.id}-${chapter}-${section.startVerse}" ${index === 0 ? 'aria-current="location"' : ""}>${escapeHtml(section.title)}</a>`).join("")}</div></nav>`;
 }
 let sectionNavCleanup = null;
 function setupReaderSectionNav() {
@@ -577,12 +644,16 @@ function setupReaderSectionNav() {
   const nav = document.querySelector(".kb-section-nav");
   if (!nav) return;
   const tabs = [...nav.querySelectorAll(".kb-section-tab")];
-  const targets = tabs.map(tab => document.getElementById(tab.hash.slice(1)));
+  const targets = tabs.map(tab => document.getElementById(tab.dataset.sectionTarget));
   if (targets.some(target => !target)) return;
+  const readerPage = nav.closest(".reader-page");
+  const readerTopbar = readerPage?.querySelector(".reader-topbar");
   const controller = new AbortController();
   const updatePosition = () => {
+    const topbarHeight = readerTopbar?.getBoundingClientRect().height || 0;
     const height = nav.getBoundingClientRect().height;
-    document.documentElement.style.setProperty("--kb-section-offset", (height + 18) + "px");
+    readerPage?.style.setProperty("--kb-reader-sticky-top", `${topbarHeight}px`);
+    document.documentElement.style.setProperty("--kb-section-offset", (topbarHeight + height + 18) + "px");
   };
   let activeIndex = -1;
   const activate = index => {
@@ -615,14 +686,14 @@ function setupReaderSectionNav() {
     const target = targets[index];
     const offset = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--kb-section-offset")) || 150;
     window.scrollTo({ top: window.scrollY + target.getBoundingClientRect().top - offset, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
-    history.replaceState(null, "", tab.hash);
+    updateReaderLocation(nav.dataset.bookId, Number(nav.dataset.chapter), Number(tab.dataset.sectionVerse), true);
     activate(index);
   }, { signal: controller.signal }));
   window.addEventListener("scroll", track, { passive: true, signal: controller.signal });
   window.addEventListener("resize", () => { updatePosition(); track(); }, { passive: true, signal: controller.signal });
   updatePosition();
   track();
-  sectionNavCleanup = () => { controller.abort(); if (frame) cancelAnimationFrame(frame); document.documentElement.style.removeProperty("--kb-section-offset"); };
+  sectionNavCleanup = () => { controller.abort(); if (frame) cancelAnimationFrame(frame); readerPage?.style.removeProperty("--kb-reader-sticky-top"); document.documentElement.style.removeProperty("--kb-section-offset"); };
 }
 
 function renderReader() {
@@ -655,6 +726,7 @@ function openReader(bookId = currentBook().id) {
   state.readerReadingProgress = 0;
   if (state.onboardingStep === 3 && bookId === "3-juan") state.onboardingComplete = true;
   state.view = "reader";
+  updateReaderLocation(bookId, state.readerChapter, null);
   saveState();
   render();
 }
@@ -688,6 +760,7 @@ function continueChapter() {
   state.chapterSheetOpen = false;
   state.readerDisplayOpen = false;
   state.readerMoreOpen = false;
+  updateReaderLocation(book.id, state.readerChapter, null);
   saveState();
   render();
   window.scrollTo({ top: 0, behavior: "instant" });
@@ -763,7 +836,7 @@ function bindEvents() {
       if (action === "filter-library-category") { state.libraryCategory = CATEGORIES.some(category => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "filter-route-category") { state.routeCategory = CATEGORIES.some((category) => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "open-book") { openReader(element.dataset.bookId); }
-      if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); state.chapterSheetOpen = false; state.readerBookInfoOpen = false; state.readerReadingProgress = 0; saveState(); render(); }
+      if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); state.chapterSheetOpen = false; state.readerBookInfoOpen = false; state.readerReadingProgress = 0; updateReaderLocation(state.readerBookId, state.readerChapter, null); saveState(); render(); }
       if (action === "open-book-info") { state.readerBookInfoOpen = true; state.chapterSheetOpen = false; saveState(); render(); }
       if (action === "close-book-info") { state.readerBookInfoOpen = false; saveState(); render(); }
       if (action === "toggle-chapter-sheet") { state.chapterSheetOpen = !state.chapterSheetOpen; saveState(); render(); }
@@ -772,7 +845,7 @@ function bindEvents() {
       if (action === "toggle-reader-context") { state.readerContextOpen = !state.readerContextOpen; saveState(); render(); }
       if (action === "set-reader-font") { state.readerFont = element.dataset.font === "sans" ? "sans" : "serif"; state.readerDisplayOpen = false; saveState(); render(); }
       if (action === "set-reader-theme") { state.readerTheme = ["light", "sepia", "dark"].includes(element.dataset.theme) ? element.dataset.theme : "light"; state.readerDisplayOpen = false; saveState(); render(); }
-      if (action === "back-home" || action === "back-context") { state.view = ["route", "library", "authors"].includes(state.readerOrigin) ? state.readerOrigin : "home"; saveState(); render(); }
+      if (action === "back-home" || action === "back-context") { state.view = ["route", "library", "authors"].includes(state.readerOrigin) ? state.readerOrigin : "home"; clearReaderLocation(); saveState(); render(); }
       if (action === "toggle-reader-more") { state.readerMoreOpen = !state.readerMoreOpen; render(); document.querySelector(".reader-more-trigger")?.focus({preventScroll:true}); }
       if (action === "mark-chapter-unread") {
         const book = getBook(state.readerBookId);
@@ -812,6 +885,33 @@ document.addEventListener("keydown", event => {
   if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
   else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
 });
+
+function syncReaderFromLocation() {
+  const locationState = readReaderLocation();
+  if (!locationState) {
+    pendingSectionVerse = null;
+    if (state.view === "reader") {
+      state.view = ["route", "library", "authors"].includes(state.readerOrigin) ? state.readerOrigin : "home";
+      saveState();
+      render();
+    }
+    return;
+  }
+  state.onboardingComplete = true;
+  state.view = "reader";
+  state.readerOrigin = "home";
+  state.readerBookId = locationState.bookId;
+  state.readerChapter = locationState.chapter;
+  state.readerBookInfoOpen = false;
+  state.chapterSheetOpen = false;
+  pendingSectionVerse = locationState.sectionVerse;
+  if (locationState.legacy) updateReaderLocation(locationState.bookId, locationState.chapter, locationState.sectionVerse, true);
+  saveState();
+  render();
+}
+
+window.addEventListener("popstate", syncReaderFromLocation);
+window.addEventListener("hashchange", syncReaderFromLocation);
 bindReaderReadingProgress();
 render();
 updateReaderReadingProgress();
