@@ -947,3 +947,13 @@ a:not([class]):visited{color:var(--brand-dark)}
 .kb-author-classic-image.is-loaded .kb-author-portrait{opacity:1}
 .kb-author-classic-image.is-loaded .kb-author-editorial-initial{visibility:hidden}
 .kb-author-monogram .kb-author-editorial-initial{font-size:55px}
+
+/* Compact attributed-author portrait on the next-reading card */
+.kb-home-author{display:inline-flex;align-items:center;gap:9px;max-width:100%;margin-top:12px;padding:4px 9px 4px 4px;border:1px solid var(--border,#dce3dd);border-radius:999px;background:var(--surface,#fff);color:var(--ink,#20332c);font:inherit;text-align:left;cursor:pointer}
+.kb-home-author-avatar{display:flex;align-items:center;justify-content:center;flex:none;width:36px;height:36px;border-radius:50%;overflow:hidden;background:#e9e1d3}
+.kb-home-author-avatar .kb-author-classic-image,.kb-home-author-avatar .kb-author-editorial-initial{border-radius:50%}
+.kb-home-author-avatar .kb-author-editorial-initial{font-size:20px}
+.kb-home-author-label{display:flex;flex-direction:column;gap:1px;line-height:1.1;min-width:0}
+.kb-home-author-label small{font-size:10px;color:var(--ink-muted,#718078);font-weight:500}
+.kb-home-author-label strong{font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kb-home-author>svg{opacity:.55;flex:none}
