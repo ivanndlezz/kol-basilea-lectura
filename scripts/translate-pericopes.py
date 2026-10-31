@@ -26,6 +26,7 @@ for path in sorted(Path("dist/data/pericopes").glob("*.json")):
             if not title: raise SystemExit(f"Translation missing: {path}: {section['sourceTitle']}")
             if title == section["sourceTitle"]:
                 section["status"] = "needs-editorial-translation"
+                changed = True
                 continue
             section["title"] = title[:1].upper() + title[1:]
             section["status"] = "machine-translated"
