@@ -353,15 +353,9 @@ function renderCompilation() {
 }
 
 function renderAuthorPortrait(person) {
-  const name = person.name.toLowerCase();
-  const seed = [...person.id].reduce((acc, char) => acc + char.charCodeAt(0), 0);
-  const palettes = [["#D7B58A","#856247","#334D3D"],["#D7C3A0","#8D7252","#435C51"],["#E2C3A1","#9C6C4A","#5C6346"],["#C8B99D","#74664F","#385E54"]];
-  const [background,robe,cloak] = palettes[seed % palettes.length];
-  const group = /hijos|autores|editores/i.test(name);
-  const headwear = /moisés|aarón|esdras|nehemías|jeremías|baruc|isaías|ezequiel|daniel|salomón|david|asaf|coré/.test(name);
-  const beard = !/ester|rut|maría/.test(name) && seed % 5 !== 0;
-  const personFigure = (offset,scale) => `<g transform="translate(${offset} 0) scale(${scale})"><path d="M24 170Q28 119 82 115Q136 119 141 170Z" fill="${cloak}"/><path d="M53 124L81 146L111 123L123 170H40Z" fill="${robe}"/><path d="M65 105v22q17 19 34 0v-22" fill="#A97855"/><ellipse cx="82" cy="78" rx="37" ry="45" fill="#BD8C67"/><path d="M45 80Q42 27 80 26Q124 28 120 80L108 52Q85 37 57 58Z" fill="#4B3B2C"/>${headwear ? '<path d="M43 61Q48 25 82 24Q115 25 122 61Q83 48 43 61Z" fill="#E9D4AB"/><path d="M46 59Q85 46 120 59" fill="none" stroke="#90785D" stroke-width="4"/>' : ''}<path d="M64 81h9m19 0h9" stroke="#45382D" stroke-width="3" stroke-linecap="round"/><path d="M81 86l-3 12h8" stroke="#986C4D" stroke-width="2" fill="none"/>${beard ? '<path d="M54 95Q56 137 82 141Q108 137 111 95Q99 116 82 111Q65 116 54 95Z" fill="#5A4937"/><path d="M72 109q10 5 20 0" fill="none" stroke="#B58C6A" stroke-width="2"/>' : '<path d="M72 113q10 6 20 0" fill="none" stroke="#815B47" stroke-width="2"/>'}</g>`;
-  return `<svg class="kb-author-portrait" viewBox="0 0 164 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración artística de ${escapeHtml(person.name)}"><rect width="164" height="170" fill="${background}"/><circle cx="130" cy="35" r="62" fill="#FFF1D8" opacity=".28"/><path d="M0 145Q80 124 164 144V170H0Z" fill="#785B43" opacity=".2"/>${group ? personFigure(-25,.82)+personFigure(58,.82) : personFigure(0,1)}</svg>`;
+  const seed = encodeURIComponent("kol-basilea-" + person.id);
+  const url = `https://api.dicebear.com/10.x/notionists/svg?seed=${seed}&backgroundColor=transparent`;
+  return `<img class="kb-author-portrait" src="${url}" alt="Avatar ilustrado de ${escapeHtml(person.name)}; representación artística, no retrato histórico" loading="lazy" decoding="async" referrerpolicy="no-referrer" />`;
 }
 
 function renderAuthors() {
