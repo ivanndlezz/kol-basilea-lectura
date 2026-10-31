@@ -124,5 +124,5 @@ def main():
         print(("CHECK" if a.dry_run else "WROTE"),dest,"sections:",sum(len(c["sections"]) for c in data["chapters"]))
         count+=1
     print("Processed",count,"books")
-    if count == 0: sys.exit(1)
+    if count == 0 and not list(a.output.glob("*.json")): sys.exit(1)
 if __name__=="__main__":main()
