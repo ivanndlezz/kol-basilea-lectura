@@ -49,6 +49,7 @@ const defaultState = () => ({
   libraryCategory: "all",
   readerContextOpen: true,
   readerDisplayOpen: false,
+  readerMoreOpen: false,
   chapterSheetOpen: false,
   readerFont: "serif",
   readerTheme: "light",
@@ -71,14 +72,14 @@ function slugify(value) {
 function loadState() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    return { ...defaultState(), ...saved, toast: "", navigationOpen: false, appearancePopoverOpen: false };
+    return { ...defaultState(), ...saved, toast: "", navigationOpen: false, appearancePopoverOpen: false, readerMoreOpen: false };
   } catch {
     return defaultState();
   }
 }
 
 function saveState() {
-  const { toast, navigationOpen, appearancePopoverOpen, ...persisted } = state;
+  const { toast, navigationOpen, appearancePopoverOpen, readerMoreOpen, ...persisted } = state;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(persisted));
 }
 
@@ -434,7 +435,7 @@ function renderReader() {
   const readerBody = `${renderReaderContext(book, contextVideo)}${renderChapterList(book, chapter)}${state.readerBookInfoOpen ? renderBookInfoPage(book) : renderReadingCopy(book, chapter)}`;
   const readProgress = Number.isFinite(state.readerReadingProgress) ? state.readerReadingProgress : 0;
   const readerFooter = state.readerBookInfoOpen ? "" : `<footer class="reader-footer"><div class="reader-reading-meter" data-reading-meter><div class="reader-reading-meter-copy"><span data-reading-progress-label>${readProgress}% leído</span><span>Capítulo ${chapter}</span></div><div class="reader-reading-track" role="progressbar" aria-label="Progreso de lectura del capítulo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${readProgress}"><div class="reader-reading-fill" data-reading-progress-fill style="width:${readProgress}%"></div></div></div><button class="button button-primary button-wide" data-action="${completed && chapter < book.chapters ? "continue-chapter" : "complete-chapter"}" data-complete-chapter ${completed ? 'data-completed="true"' : ""} ${!completed && readProgress < 100 ? "disabled" : ""}>${completed && chapter < book.chapters ? `Continuar al capítulo ${chapter + 1} ${icon("chevronRight", 17)}` : chapter === book.chapters ? `Completar libro ${icon("check", 17)}` : "Marcar como leído"}</button></footer>`;
-  return `<main class="reader-page" style="${categoryStyle(book.category)}"><header class="reader-topbar"><div class="reader-topbar-left"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><span class="reader-topbar-divider" aria-hidden="true"></span><nav class="reader-topbar-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="reader-topbar-link" data-action="back-context">${origin}</button><span aria-hidden="true">${icon("chevronRight", 13)}</span><strong>${escapeHtml(book.name)} ${chapter}</strong><span class="reader-book-index">${book.index + 1}/66</span></nav></div><div class="reader-topbar-actions"><button class="reader-format-button" data-action="toggle-reader-format" aria-expanded="${state.readerDisplayOpen}" aria-controls="reader-display-menu">${icon("sliders", 16)}<span>Formato</span></button><button class="icon-button" data-action="show-progress" aria-label="Ver progreso">${icon("chart", 20)}</button></div><div class="reader-route-progress" role="progressbar" aria-label="Progreso total de la ruta" aria-valuemin="0" aria-valuemax="${TOTAL_CHAPTERS}" aria-valuenow="${routeProgress}"><div style="width:${percent(routeProgress, TOTAL_CHAPTERS)}%"></div></div></header>${renderReaderSelection(book, chapter)}${renderReaderDisplayMenu()}<div class="reader-progress"><div class="reader-progress-copy"><span>Progreso del libro</span><strong>${bookProgress} de ${book.chapters} capítulos</strong></div><div class="progress-track" role="progressbar" aria-label="Progreso del libro" aria-valuemin="0" aria-valuemax="${book.chapters}" aria-valuenow="${bookProgress}"><div class="progress-fill" style="width:${percent(bookProgress, book.chapters)}%"></div></div></div><article class="reader-content"><div class="reader-heading"><div class="reader-meta-pill"><span>Capítulo ${chapter} de ${book.chapters}</span></div><h1>${escapeHtml(book.name)}</h1></div>${readerBody}</article>${readerFooter}</main>`;
+  return `<main class="reader-page" style="${categoryStyle(book.category)}"><header class="reader-topbar"><div class="reader-topbar-left"><button class="reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 19)}<span>Volver a ${origin}</span></button><span class="reader-topbar-divider" aria-hidden="true"></span><nav class="reader-topbar-breadcrumbs" aria-label="Ruta de navegación del lector"><button class="reader-topbar-link" data-action="back-context">${origin}</button><span aria-hidden="true">${icon("chevronRight", 13)}</span><strong>${escapeHtml(book.name)} ${chapter}</strong><span class="reader-book-index">${book.index + 1}/66</span></nav></div><div class="reader-topbar-actions"><button class="reader-format-button" data-action="toggle-reader-format" aria-expanded="${state.readerDisplayOpen}" aria-controls="reader-display-menu">${icon("sliders", 16)}<span>Formato</span></button><div class="reader-more-anchor"><button class="icon-button reader-more-trigger" data-action="toggle-reader-more" aria-label="Más opciones del capítulo" aria-haspopup="menu" aria-expanded="${Boolean(state.readerMoreOpen)}" aria-controls="reader-more-menu">${icon("ellipsis", 20)}</button>${state.readerMoreOpen ? `<div class="reader-more-popover" id="reader-more-menu" role="menu">${completed ? `<button role="menuitem" data-action="mark-chapter-unread">${icon("bookOpen", 17)}<span>Marcar como no leído</span></button>` : `<p>Este capítulo aún no está marcado como leído.</p>`}</div>` : ""}</div></div><div class="reader-route-progress" role="progressbar" aria-label="Progreso total de la ruta" aria-valuemin="0" aria-valuemax="${TOTAL_CHAPTERS}" aria-valuenow="${routeProgress}"><div style="width:${percent(routeProgress, TOTAL_CHAPTERS)}%"></div></div></header>${renderReaderSelection(book, chapter)}${renderReaderDisplayMenu()}<div class="reader-progress"><div class="reader-progress-copy"><span>Progreso del libro</span><strong>${bookProgress} de ${book.chapters} capítulos</strong></div><div class="progress-track" role="progressbar" aria-label="Progreso del libro" aria-valuemin="0" aria-valuemax="${book.chapters}" aria-valuenow="${bookProgress}"><div class="progress-fill" style="width:${percent(bookProgress, book.chapters)}%"></div></div></div><article class="reader-content"><div class="reader-heading"><div class="reader-meta-pill"><span>Capítulo ${chapter} de ${book.chapters}</span></div><h1>${escapeHtml(book.name)}</h1></div>${readerBody}</article>${readerFooter}</main>`;
 }
 
 function renderNav() {
@@ -484,6 +485,7 @@ function continueChapter() {
   state.readerBookInfoOpen = false;
   state.chapterSheetOpen = false;
   state.readerDisplayOpen = false;
+  state.readerMoreOpen = false;
   saveState();
   render();
   window.scrollTo({ top: 0, behavior: "instant" });
@@ -559,6 +561,16 @@ function bindEvents() {
       if (action === "set-reader-font") { state.readerFont = element.dataset.font === "sans" ? "sans" : "serif"; state.readerDisplayOpen = false; saveState(); render(); }
       if (action === "set-reader-theme") { state.readerTheme = ["light", "sepia", "dark"].includes(element.dataset.theme) ? element.dataset.theme : "light"; state.readerDisplayOpen = false; saveState(); render(); }
       if (action === "back-home" || action === "back-context") { state.view = ["route", "library"].includes(state.readerOrigin) ? state.readerOrigin : "home"; saveState(); render(); }
+      if (action === "toggle-reader-more") { state.readerMoreOpen = !state.readerMoreOpen; render(); document.querySelector(".reader-more-trigger")?.focus({preventScroll:true}); }
+      if (action === "mark-chapter-unread") {
+        const book = getBook(state.readerBookId);
+        const chapter = readerChapter(book);
+        const remaining = getCompletedChapters(book).filter(number => number !== chapter);
+        state.completedChapters = { ...state.completedChapters, [book.id]: remaining };
+        state.readerMoreOpen = false;
+        state.readerReadingProgress = 0;
+        saveState(); render();
+      }
       if (action === "complete-chapter") { completeChapter(); }
       if (action === "continue-chapter") { continueChapter(); }
       if (action === "interlude-next") { const finished = getBook(state.interludeBookId); const next = finished && BOOKS[finished.index + 1]; if (next) { state.view = "home"; state.interludeBookId = null; openReader(next.id); window.scrollTo({ top: 0, behavior: "instant" }); } }
