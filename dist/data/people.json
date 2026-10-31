@@ -16,7 +16,15 @@
       ],
       "note": "La tradición atribuye la Torá a Moisés; la investigación histórica reconoce una composición y edición prolongadas.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Moses Rembrandt painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Moisés; no es un retrato histórico"
+      }
     },
     {
       "id": "david",
@@ -29,7 +37,15 @@
       ],
       "note": "Muchos salmos llevan encabezamientos relacionados con David; el Salterio es una colección de autores y épocas diversos.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "King David painting harp",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a David; no es un retrato histórico"
+      }
     },
     {
       "id": "salomon",
@@ -44,7 +60,15 @@
       ],
       "note": "La tradición lo relaciona con estos libros; sus colecciones y atribuciones requieren análisis por separado.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "King Solomon painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Salomón; no es un retrato histórico"
+      }
     },
     {
       "id": "asaf",
@@ -57,7 +81,15 @@
       ],
       "note": "Algunos encabezamientos del Salterio identifican salmos de Asaf; pueden indicar autoría o tradición musical.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Asaph psalmist engraving",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Asaf; no es un retrato histórico"
+      }
     },
     {
       "id": "hijos-de-core",
@@ -70,7 +102,15 @@
       ],
       "note": "Diversos salmos se atribuyen a los hijos de Coré en sus encabezamientos.",
       "kind": "collective",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "scene",
+        "query": "Korahites singers temple biblical engraving",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Hijos de Coré; no es un retrato histórico"
+      }
     },
     {
       "id": "isaias",
@@ -83,7 +123,15 @@
       ],
       "note": "El libro contiene tradiciones asociadas al profeta y materiales que muchos investigadores sitúan en períodos posteriores.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Isaiah painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Isaías; no es un retrato histórico"
+      }
     },
     {
       "id": "jeremias",
@@ -97,7 +145,15 @@
       ],
       "note": "Jeremías conserva tradiciones proféticas vinculadas con él; Lamentaciones es anónimo y su atribución a Jeremías es tradicional.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Jeremiah painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Jeremías; no es un retrato histórico"
+      }
     },
     {
       "id": "baruc",
@@ -110,7 +166,15 @@
       ],
       "note": "Jeremías 36 menciona a Baruc como escriba de palabras dictadas por Jeremías; no implica autoría exclusiva del libro.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Baruch scribe Jeremiah painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Baruc; no es un retrato histórico"
+      }
     },
     {
       "id": "ezequiel",
@@ -123,7 +187,15 @@
       ],
       "note": "El libro presenta discursos en su nombre; su transmisión y redacción pueden incluir trabajo editorial.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Ezekiel painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Ezequiel; no es un retrato histórico"
+      }
     },
     {
       "id": "daniel",
@@ -136,7 +208,15 @@
       ],
       "note": "La atribución tradicional es a Daniel; la datación académica dominante sitúa la forma final del libro en el siglo II a. C.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Daniel painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Daniel; no es un retrato histórico"
+      }
     },
     {
       "id": "oseas",
@@ -149,7 +229,15 @@
       ],
       "note": "El libro conserva oráculos asociados a Oseas y una historia de transmisión editorial.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Hosea painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Oseas; no es un retrato histórico"
+      }
     },
     {
       "id": "joel",
@@ -162,7 +250,15 @@
       ],
       "note": "El texto identifica a Joel; su fecha histórica sigue debatida.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Joel painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Joel; no es un retrato histórico"
+      }
     },
     {
       "id": "amos",
@@ -175,7 +271,15 @@
       ],
       "note": "El libro presenta palabras y visiones de Amós, con posible edición posterior.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Amos painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Amós; no es un retrato histórico"
+      }
     },
     {
       "id": "abdias",
@@ -188,7 +292,15 @@
       ],
       "note": "La obra se atribuye a Abdías en su encabezamiento; los datos biográficos son escasos.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Obadiah painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Abdías; no es un retrato histórico"
+      }
     },
     {
       "id": "jonas",
@@ -201,7 +313,15 @@
       ],
       "note": "Jonás es el personaje principal; el libro no identifica explícitamente a su autor.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Jonah painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Jonás; no es un retrato histórico"
+      }
     },
     {
       "id": "miqueas",
@@ -214,7 +334,15 @@
       ],
       "note": "La colección presenta oráculos de Miqueas y puede reflejar etapas de edición.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Micah painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Miqueas; no es un retrato histórico"
+      }
     },
     {
       "id": "nahum",
@@ -227,7 +355,15 @@
       ],
       "note": "El encabezamiento lo identifica como Nahúm de Elcos; se conoce poco de su vida.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Nahum painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Nahúm; no es un retrato histórico"
+      }
     },
     {
       "id": "habacuc",
@@ -240,7 +376,15 @@
       ],
       "note": "El texto nombra a Habacuc, aunque el proceso de composición no es plenamente conocido.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Habakkuk painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Habacuc; no es un retrato histórico"
+      }
     },
     {
       "id": "sofonias",
@@ -253,7 +397,15 @@
       ],
       "note": "El encabezamiento identifica al profeta; la obra presenta señales de transmisión editorial.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Zephaniah painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Sofonías; no es un retrato histórico"
+      }
     },
     {
       "id": "ageo",
@@ -266,7 +418,15 @@
       ],
       "note": "El libro fecha varios oráculos atribuidos a Ageo en época persa.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Haggai painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Ageo; no es un retrato histórico"
+      }
     },
     {
       "id": "zacarias",
@@ -279,7 +439,15 @@
       ],
       "note": "Zacarías 1–8 se vincula con el profeta; muchos estudios distinguen materiales posteriores en 9–14.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Zechariah painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Zacarías; no es un retrato histórico"
+      }
     },
     {
       "id": "malaquias",
@@ -292,7 +460,15 @@
       ],
       "note": "Malʾākî puede entenderse como «mi mensajero»; la identidad histórica del autor no es segura.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Prophet Malachi painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Malaquías; no es un retrato histórico"
+      }
     },
     {
       "id": "esdras",
@@ -306,7 +482,15 @@
       ],
       "note": "Las memorias de Esdras y Nehemías forman parte de obras compuestas y editadas; no se puede atribuirles todo el texto.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Ezra scribe painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Esdras; no es un retrato histórico"
+      }
     },
     {
       "id": "nehemias",
@@ -319,7 +503,15 @@
       ],
       "note": "Algunas secciones tienen forma de memorias en primera persona; el libro incluye otros materiales.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Nehemiah rebuilding Jerusalem painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Nehemías; no es un retrato histórico"
+      }
     },
     {
       "id": "pablo",
@@ -344,7 +536,15 @@
       ],
       "note": "Siete cartas son ampliamente aceptadas como auténticas; la autoría de las demás cartas atribuidas a Pablo es objeto de debate.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Saint Paul apostle painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Pablo de Tarso; no es un retrato histórico"
+      }
     },
     {
       "id": "juan",
@@ -361,7 +561,15 @@
       ],
       "note": "El Evangelio y las cartas presentan relaciones literarias; Apocalipsis identifica a su autor como Juan, sin demostrar que sea el mismo autor.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Saint John Evangelist painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Juan; no es un retrato histórico"
+      }
     },
     {
       "id": "pedro",
@@ -375,7 +583,15 @@
       ],
       "note": "Las cartas llevan su nombre; la autoría petrina, especialmente de 2 Pedro, es discutida en investigación histórica.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Saint Peter apostle painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Pedro; no es un retrato histórico"
+      }
     },
     {
       "id": "santiago",
@@ -388,7 +604,15 @@
       ],
       "note": "La carta se presenta como de Santiago; la identificación con el hermano de Jesús es tradicional y debatida.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Saint James apostle painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Santiago; no es un retrato histórico"
+      }
     },
     {
       "id": "judas",
@@ -401,7 +625,15 @@
       ],
       "note": "El autor se identifica como Judas, hermano de Santiago; su identificación histórica exacta es discutida.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Saint Jude apostle painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Judas; no es un retrato histórico"
+      }
     },
     {
       "id": "marcos",
@@ -414,7 +646,15 @@
       ],
       "note": "El evangelio no identifica a su autor; la atribución a Marcos procede de testimonios cristianos posteriores.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Saint Mark Evangelist painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Marcos; no es un retrato histórico"
+      }
     },
     {
       "id": "lucas",
@@ -428,7 +668,15 @@
       ],
       "note": "Ambas obras comparten autor literario anónimo; su identificación con Lucas es tradicional.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Saint Luke Evangelist painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Lucas; no es un retrato histórico"
+      }
     },
     {
       "id": "mateo",
@@ -441,7 +689,15 @@
       ],
       "note": "El evangelio es anónimo; la atribución a Mateo pertenece a la tradición cristiana antigua.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "historical-art",
+        "query": "Saint Matthew Evangelist painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Mateo; no es un retrato histórico"
+      }
     },
     {
       "id": "autor-hebreos",
@@ -454,7 +710,15 @@
       ],
       "note": "Hebreos no nombra a su autor; la atribución a Pablo no es generalmente aceptada en los estudios actuales.",
       "kind": "person",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "scene",
+        "query": "ancient biblical manuscript epistle Hebrews",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Autor de Hebreos; no es un retrato histórico"
+      }
     },
     {
       "id": "autores-anonimos",
@@ -485,7 +749,15 @@
       ],
       "note": "Numerosos libros no identifican a un autor individual; algunas obras muestran composición, recopilación y edición en distintas etapas.",
       "kind": "collective",
-      "showInAuthors": true
+      "showInAuthors": true,
+      "portrait": {
+        "kind": "scene",
+        "query": "ancient biblical scribes manuscript painting",
+        "provider": "Wikimedia Commons",
+        "rightsFilter": "public-domain",
+        "status": "discovery",
+        "alt": "Representación artística alusiva a Autores y editores anónimos; no es un retrato histórico"
+      }
     },
     {
       "id": "escribas-juda",
