@@ -44,6 +44,8 @@ jobs:
         run: node scripts/convert-usfm.mjs /tmp/rv1909-usfm dist/data/rvr1909
       - name: Validate generated text and verse counts
         run: node scripts/validate-generated.mjs
+      - name: Validate editorial data relationships
+        run: npm run validate:data
       - name: Validate application and Bible
         run: npm run check
       - name: Setup Pages

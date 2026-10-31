@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "people": [
     {
       "id": "moises",
@@ -7,13 +7,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradicional",
       "description": "Figura central del éxodo y de la entrega de la Ley.",
-      "books": [
-        "Génesis",
-        "Éxodo",
-        "Levítico",
-        "Números",
-        "Deuteronomio"
-      ],
       "note": "La tradición atribuye la Torá a Moisés; la investigación histórica reconoce una composición y edición prolongadas.",
       "kind": "person",
       "showInAuthors": true,
@@ -24,7 +17,14 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Moisés; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "genesis",
+        "exodo",
+        "levitico",
+        "numeros",
+        "deuteronomio"
+      ]
     },
     {
       "id": "david",
@@ -32,9 +32,6 @@
       "testament": "Antiguo Testamento",
       "status": "Atribución parcial",
       "description": "Rey de Israel vinculado a la tradición poética.",
-      "books": [
-        "Salmos"
-      ],
       "note": "Muchos salmos llevan encabezamientos relacionados con David; el Salterio es una colección de autores y épocas diversos.",
       "kind": "person",
       "showInAuthors": true,
@@ -45,7 +42,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a David; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "salmos"
+      ]
     },
     {
       "id": "salomon",
@@ -53,11 +53,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradicional",
       "description": "Rey asociado con la sabiduría israelita.",
-      "books": [
-        "Proverbios",
-        "Eclesiastés",
-        "Cantares"
-      ],
       "note": "La tradición lo relaciona con estos libros; sus colecciones y atribuciones requieren análisis por separado.",
       "kind": "person",
       "showInAuthors": true,
@@ -68,7 +63,12 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Salomón; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "proverbios",
+        "eclesiastes",
+        "cantares"
+      ]
     },
     {
       "id": "asaf",
@@ -76,9 +76,6 @@
       "testament": "Antiguo Testamento",
       "status": "Atribución textual",
       "description": "Nombre vinculado con una colección de salmos.",
-      "books": [
-        "Salmos"
-      ],
       "note": "Algunos encabezamientos del Salterio identifican salmos de Asaf; pueden indicar autoría o tradición musical.",
       "kind": "person",
       "showInAuthors": true,
@@ -89,7 +86,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Asaf; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "salmos"
+      ]
     },
     {
       "id": "hijos-de-core",
@@ -97,9 +97,6 @@
       "testament": "Antiguo Testamento",
       "status": "Atribución textual",
       "description": "Grupo levítico relacionado con la música del templo.",
-      "books": [
-        "Salmos"
-      ],
       "note": "Diversos salmos se atribuyen a los hijos de Coré en sus encabezamientos.",
       "kind": "collective",
       "showInAuthors": true,
@@ -110,7 +107,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Hijos de Coré; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "salmos"
+      ]
     },
     {
       "id": "isaias",
@@ -118,9 +118,6 @@
       "testament": "Antiguo Testamento",
       "status": "Composición compleja",
       "description": "Profeta de Judá en el siglo VIII a. C.",
-      "books": [
-        "Isaías"
-      ],
       "note": "El libro contiene tradiciones asociadas al profeta y materiales que muchos investigadores sitúan en períodos posteriores.",
       "kind": "person",
       "showInAuthors": true,
@@ -131,7 +128,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Isaías; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "isaias"
+      ]
     },
     {
       "id": "jeremias",
@@ -139,10 +139,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradicional",
       "description": "Profeta activo durante los últimos años del reino de Judá.",
-      "books": [
-        "Jeremías",
-        "Lamentaciones"
-      ],
       "note": "Jeremías conserva tradiciones proféticas vinculadas con él; Lamentaciones es anónimo y su atribución a Jeremías es tradicional.",
       "kind": "person",
       "showInAuthors": true,
@@ -153,7 +149,11 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Jeremías; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "jeremias",
+        "lamentaciones"
+      ]
     },
     {
       "id": "baruc",
@@ -161,9 +161,6 @@
       "testament": "Antiguo Testamento",
       "status": "Colaborador mencionado",
       "description": "Escriba asociado al profeta Jeremías.",
-      "books": [
-        "Jeremías"
-      ],
       "note": "Jeremías 36 menciona a Baruc como escriba de palabras dictadas por Jeremías; no implica autoría exclusiva del libro.",
       "kind": "person",
       "showInAuthors": true,
@@ -174,7 +171,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Baruc; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "jeremias"
+      ]
     },
     {
       "id": "ezequiel",
@@ -182,9 +182,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradición profética",
       "description": "Sacerdote y profeta entre los exiliados en Babilonia.",
-      "books": [
-        "Ezequiel"
-      ],
       "note": "El libro presenta discursos en su nombre; su transmisión y redacción pueden incluir trabajo editorial.",
       "kind": "person",
       "showInAuthors": true,
@@ -195,7 +192,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Ezequiel; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "ezequiel"
+      ]
     },
     {
       "id": "daniel",
@@ -203,9 +203,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradicional / discutida",
       "description": "Figura de relatos y visiones apocalípticas.",
-      "books": [
-        "Daniel"
-      ],
       "note": "La atribución tradicional es a Daniel; la datación académica dominante sitúa la forma final del libro en el siglo II a. C.",
       "kind": "person",
       "showInAuthors": true,
@@ -216,7 +213,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Daniel; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "daniel"
+      ]
     },
     {
       "id": "oseas",
@@ -224,9 +224,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradición profética",
       "description": "Profeta del reino del norte.",
-      "books": [
-        "Oseas"
-      ],
       "note": "El libro conserva oráculos asociados a Oseas y una historia de transmisión editorial.",
       "kind": "person",
       "showInAuthors": true,
@@ -237,7 +234,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Oseas; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "oseas"
+      ]
     },
     {
       "id": "joel",
@@ -245,9 +245,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradición profética",
       "description": "Profeta nombrado al inicio del libro.",
-      "books": [
-        "Joel"
-      ],
       "note": "El texto identifica a Joel; su fecha histórica sigue debatida.",
       "kind": "person",
       "showInAuthors": true,
@@ -258,7 +255,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Joel; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "joel"
+      ]
     },
     {
       "id": "amos",
@@ -266,9 +266,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradición profética",
       "description": "Profeta de Tecoa activo en Israel.",
-      "books": [
-        "Amós"
-      ],
       "note": "El libro presenta palabras y visiones de Amós, con posible edición posterior.",
       "kind": "person",
       "showInAuthors": true,
@@ -279,7 +276,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Amós; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "amos"
+      ]
     },
     {
       "id": "abdias",
@@ -287,9 +287,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradición profética",
       "description": "Profeta asociado con un oráculo contra Edom.",
-      "books": [
-        "Abdías"
-      ],
       "note": "La obra se atribuye a Abdías en su encabezamiento; los datos biográficos son escasos.",
       "kind": "person",
       "showInAuthors": true,
@@ -300,7 +297,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Abdías; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "abdias"
+      ]
     },
     {
       "id": "jonas",
@@ -308,9 +308,6 @@
       "testament": "Antiguo Testamento",
       "status": "Personaje / discutida",
       "description": "Profeta protagonista de una narración.",
-      "books": [
-        "Jonás"
-      ],
       "note": "Jonás es el personaje principal; el libro no identifica explícitamente a su autor.",
       "kind": "person",
       "showInAuthors": true,
@@ -321,7 +318,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Jonás; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "jonas"
+      ]
     },
     {
       "id": "miqueas",
@@ -329,9 +329,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradición profética",
       "description": "Profeta de Moreset en Judá.",
-      "books": [
-        "Miqueas"
-      ],
       "note": "La colección presenta oráculos de Miqueas y puede reflejar etapas de edición.",
       "kind": "person",
       "showInAuthors": true,
@@ -342,7 +339,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Miqueas; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "miqueas"
+      ]
     },
     {
       "id": "nahum",
@@ -350,9 +350,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradición profética",
       "description": "Profeta relacionado con un anuncio sobre Nínive.",
-      "books": [
-        "Nahúm"
-      ],
       "note": "El encabezamiento lo identifica como Nahúm de Elcos; se conoce poco de su vida.",
       "kind": "person",
       "showInAuthors": true,
@@ -363,7 +360,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Nahúm; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "nahum"
+      ]
     },
     {
       "id": "habacuc",
@@ -371,9 +371,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradición profética",
       "description": "Profeta cuyo libro incluye diálogo y oración.",
-      "books": [
-        "Habacuc"
-      ],
       "note": "El texto nombra a Habacuc, aunque el proceso de composición no es plenamente conocido.",
       "kind": "person",
       "showInAuthors": true,
@@ -384,7 +381,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Habacuc; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "habacuc"
+      ]
     },
     {
       "id": "sofonias",
@@ -392,9 +392,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradición profética",
       "description": "Profeta situado durante el reinado de Josías.",
-      "books": [
-        "Sofonías"
-      ],
       "note": "El encabezamiento identifica al profeta; la obra presenta señales de transmisión editorial.",
       "kind": "person",
       "showInAuthors": true,
@@ -405,7 +402,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Sofonías; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "sofonias"
+      ]
     },
     {
       "id": "ageo",
@@ -413,9 +413,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradición profética",
       "description": "Profeta del período de reconstrucción del templo.",
-      "books": [
-        "Ageo"
-      ],
       "note": "El libro fecha varios oráculos atribuidos a Ageo en época persa.",
       "kind": "person",
       "showInAuthors": true,
@@ -426,7 +423,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Ageo; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "ageo"
+      ]
     },
     {
       "id": "zacarias",
@@ -434,9 +434,6 @@
       "testament": "Antiguo Testamento",
       "status": "Composición compleja",
       "description": "Profeta del período posexílico.",
-      "books": [
-        "Zacarías"
-      ],
       "note": "Zacarías 1–8 se vincula con el profeta; muchos estudios distinguen materiales posteriores en 9–14.",
       "kind": "person",
       "showInAuthors": true,
@@ -447,7 +444,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Zacarías; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "zacarias"
+      ]
     },
     {
       "id": "malaquias",
@@ -455,9 +455,6 @@
       "testament": "Antiguo Testamento",
       "status": "Identidad discutida",
       "description": "Nombre o designación asociada con el último libro de los Doce.",
-      "books": [
-        "Malaquías"
-      ],
       "note": "Malʾākî puede entenderse como «mi mensajero»; la identidad histórica del autor no es segura.",
       "kind": "person",
       "showInAuthors": true,
@@ -468,7 +465,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Malaquías; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "malaquias"
+      ]
     },
     {
       "id": "esdras",
@@ -476,10 +476,6 @@
       "testament": "Antiguo Testamento",
       "status": "Tradicional",
       "description": "Escriba y sacerdote vinculado al retorno del exilio.",
-      "books": [
-        "Esdras",
-        "Nehemías"
-      ],
       "note": "Las memorias de Esdras y Nehemías forman parte de obras compuestas y editadas; no se puede atribuirles todo el texto.",
       "kind": "person",
       "showInAuthors": true,
@@ -490,7 +486,11 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Esdras; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "esdras",
+        "nehemias"
+      ]
     },
     {
       "id": "nehemias",
@@ -498,9 +498,6 @@
       "testament": "Antiguo Testamento",
       "status": "Memorias personales",
       "description": "Gobernador de Judá bajo dominio persa.",
-      "books": [
-        "Nehemías"
-      ],
       "note": "Algunas secciones tienen forma de memorias en primera persona; el libro incluye otros materiales.",
       "kind": "person",
       "showInAuthors": true,
@@ -511,7 +508,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Nehemías; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "nehemias"
+      ]
     },
     {
       "id": "pablo",
@@ -519,21 +519,6 @@
       "testament": "Nuevo Testamento",
       "status": "Autoría múltiple",
       "description": "Apóstol y autor de cartas dirigidas a comunidades cristianas.",
-      "books": [
-        "Romanos",
-        "1 Corintios",
-        "2 Corintios",
-        "Gálatas",
-        "Filipenses",
-        "1 Tesalonicenses",
-        "Filemón",
-        "Efesios",
-        "Colosenses",
-        "2 Tesalonicenses",
-        "1 Timoteo",
-        "2 Timoteo",
-        "Tito"
-      ],
       "note": "Siete cartas son ampliamente aceptadas como auténticas; la autoría de las demás cartas atribuidas a Pablo es objeto de debate.",
       "kind": "person",
       "showInAuthors": true,
@@ -544,7 +529,22 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Pablo de Tarso; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "romanos",
+        "1-corintios",
+        "2-corintios",
+        "galatas",
+        "filipenses",
+        "1-tesalonicenses",
+        "filemon",
+        "efesios",
+        "colosenses",
+        "2-tesalonicenses",
+        "1-timoteo",
+        "2-timoteo",
+        "tito"
+      ]
     },
     {
       "id": "juan",
@@ -552,13 +552,6 @@
       "testament": "Nuevo Testamento",
       "status": "Tradicional / discutida",
       "description": "Nombre vinculado a varias tradiciones joánicas.",
-      "books": [
-        "Juan",
-        "1 Juan",
-        "2 Juan",
-        "3 Juan",
-        "Apocalipsis"
-      ],
       "note": "El Evangelio y las cartas presentan relaciones literarias; Apocalipsis identifica a su autor como Juan, sin demostrar que sea el mismo autor.",
       "kind": "person",
       "showInAuthors": true,
@@ -569,7 +562,14 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Juan; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "juan",
+        "1-juan",
+        "2-juan",
+        "3-juan",
+        "apocalipsis"
+      ]
     },
     {
       "id": "pedro",
@@ -577,10 +577,6 @@
       "testament": "Nuevo Testamento",
       "status": "Tradicional / discutida",
       "description": "Apóstol de Jesús relacionado con dos cartas.",
-      "books": [
-        "1 Pedro",
-        "2 Pedro"
-      ],
       "note": "Las cartas llevan su nombre; la autoría petrina, especialmente de 2 Pedro, es discutida en investigación histórica.",
       "kind": "person",
       "showInAuthors": true,
@@ -591,7 +587,11 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Pedro; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "1-pedro",
+        "2-pedro"
+      ]
     },
     {
       "id": "santiago",
@@ -599,9 +599,6 @@
       "testament": "Nuevo Testamento",
       "status": "Tradicional / discutida",
       "description": "Nombre vinculado a una carta de exhortación.",
-      "books": [
-        "Santiago"
-      ],
       "note": "La carta se presenta como de Santiago; la identificación con el hermano de Jesús es tradicional y debatida.",
       "kind": "person",
       "showInAuthors": true,
@@ -612,7 +609,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Santiago; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "santiago"
+      ]
     },
     {
       "id": "judas",
@@ -620,9 +620,6 @@
       "testament": "Nuevo Testamento",
       "status": "Tradicional / discutida",
       "description": "Nombre asociado a una breve carta.",
-      "books": [
-        "Judas"
-      ],
       "note": "El autor se identifica como Judas, hermano de Santiago; su identificación histórica exacta es discutida.",
       "kind": "person",
       "showInAuthors": true,
@@ -633,7 +630,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Judas; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "judas"
+      ]
     },
     {
       "id": "marcos",
@@ -641,9 +641,6 @@
       "testament": "Nuevo Testamento",
       "status": "Atribución tradicional",
       "description": "Figura asociada por tradición al segundo evangelio.",
-      "books": [
-        "Marcos"
-      ],
       "note": "El evangelio no identifica a su autor; la atribución a Marcos procede de testimonios cristianos posteriores.",
       "kind": "person",
       "showInAuthors": true,
@@ -654,7 +651,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Marcos; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "marcos"
+      ]
     },
     {
       "id": "lucas",
@@ -662,10 +662,6 @@
       "testament": "Nuevo Testamento",
       "status": "Atribución tradicional",
       "description": "Nombre asociado con el tercer evangelio y Hechos.",
-      "books": [
-        "Lucas",
-        "Hechos"
-      ],
       "note": "Ambas obras comparten autor literario anónimo; su identificación con Lucas es tradicional.",
       "kind": "person",
       "showInAuthors": true,
@@ -676,7 +672,11 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Lucas; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "lucas",
+        "hechos"
+      ]
     },
     {
       "id": "mateo",
@@ -684,9 +684,6 @@
       "testament": "Nuevo Testamento",
       "status": "Atribución tradicional",
       "description": "Apóstol vinculado por tradición al primer evangelio.",
-      "books": [
-        "Mateo"
-      ],
       "note": "El evangelio es anónimo; la atribución a Mateo pertenece a la tradición cristiana antigua.",
       "kind": "person",
       "showInAuthors": true,
@@ -697,7 +694,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Mateo; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "mateo"
+      ]
     },
     {
       "id": "autor-hebreos",
@@ -705,9 +705,6 @@
       "testament": "Nuevo Testamento",
       "status": "Anónimo",
       "description": "Autor no identificado de una homilía o exhortación cristiana.",
-      "books": [
-        "Hebreos"
-      ],
       "note": "Hebreos no nombra a su autor; la atribución a Pablo no es generalmente aceptada en los estudios actuales.",
       "kind": "person",
       "showInAuthors": true,
@@ -718,7 +715,10 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Autor de Hebreos; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "hebreos"
+      ]
     },
     {
       "id": "autores-anonimos",
@@ -726,27 +726,6 @@
       "testament": "Ambos Testamentos",
       "status": "Anónimo / colectivo",
       "description": "Personas y comunidades que recopilaron, transmitieron y editaron tradiciones bíblicas.",
-      "books": [
-        "Josué",
-        "Jueces",
-        "Rut",
-        "1 Samuel",
-        "2 Samuel",
-        "1 Reyes",
-        "2 Reyes",
-        "1 Crónicas",
-        "2 Crónicas",
-        "Ester",
-        "Job",
-        "Proverbios",
-        "Eclesiastés",
-        "Cantares",
-        "Génesis",
-        "Éxodo",
-        "Levítico",
-        "Números",
-        "Deuteronomio"
-      ],
       "note": "Numerosos libros no identifican a un autor individual; algunas obras muestran composición, recopilación y edición en distintas etapas.",
       "kind": "collective",
       "showInAuthors": true,
@@ -757,7 +736,28 @@
         "rightsFilter": "public-domain",
         "status": "discovery",
         "alt": "Representación artística alusiva a Autores y editores anónimos; no es un retrato histórico"
-      }
+      },
+      "bookIds": [
+        "josue",
+        "jueces",
+        "rut",
+        "1-samuel",
+        "2-samuel",
+        "1-reyes",
+        "2-reyes",
+        "1-cronicas",
+        "2-cronicas",
+        "ester",
+        "job",
+        "proverbios",
+        "eclesiastes",
+        "cantares",
+        "genesis",
+        "exodo",
+        "levitico",
+        "numeros",
+        "deuteronomio"
+      ]
     },
     {
       "id": "escribas-juda",
@@ -765,16 +765,16 @@
       "testament": "Antiguo Testamento",
       "status": "Reconstrucción histórica",
       "description": "Recopilación y edición",
-      "books": [
-        "Génesis",
-        "Éxodo",
-        "Levítico",
-        "Números",
-        "Deuteronomio"
-      ],
       "note": "La formación del Pentateuco implicó distintas etapas y tradiciones. No se conocen los nombres de sus redactores finales.",
       "kind": "collective",
-      "showInAuthors": false
+      "showInAuthors": false,
+      "bookIds": [
+        "genesis",
+        "exodo",
+        "levitico",
+        "numeros",
+        "deuteronomio"
+      ]
     },
     {
       "id": "tercio",
@@ -782,12 +782,12 @@
       "testament": "Nuevo Testamento",
       "status": "Escriba identificado",
       "description": "Escriba de Pablo",
-      "books": [
-        "Romanos"
-      ],
       "note": "En Romanos 16:22 Tercio se presenta expresamente como quien escribió la carta.",
       "kind": "person",
-      "showInAuthors": false
+      "showInAuthors": false,
+      "bookIds": [
+        "romanos"
+      ]
     },
     {
       "id": "sostenes",
@@ -795,12 +795,12 @@
       "testament": "Nuevo Testamento",
       "status": "Colaborador mencionado",
       "description": "Colaborador nombrado en la carta",
-      "books": [
-        "1 Corintios"
-      ],
       "note": "1 Corintios 1:1 lo nombra junto a Pablo; no afirma que actuara como escriba material de la carta.",
       "kind": "person",
-      "showInAuthors": false
+      "showInAuthors": false,
+      "bookIds": [
+        "1-corintios"
+      ]
     },
     {
       "id": "timoteo",
@@ -808,17 +808,17 @@
       "testament": "Nuevo Testamento",
       "status": "Colaborador mencionado",
       "description": "Colaborador y cosignatario",
-      "books": [
-        "2 Corintios",
-        "Filipenses",
-        "Colosenses",
-        "1 Tesalonicenses",
-        "2 Tesalonicenses",
-        "Filemón"
-      ],
       "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada.",
       "kind": "person",
-      "showInAuthors": false
+      "showInAuthors": false,
+      "bookIds": [
+        "2-corintios",
+        "filipenses",
+        "colosenses",
+        "1-tesalonicenses",
+        "2-tesalonicenses",
+        "filemon"
+      ]
     },
     {
       "id": "silvano",
@@ -826,14 +826,14 @@
       "testament": "Nuevo Testamento",
       "status": "Función discutida",
       "description": "Colaborador y mediador epistolar",
-      "books": [
-        "1 Tesalonicenses",
-        "2 Tesalonicenses",
-        "1 Pedro"
-      ],
       "note": "Es nombrado junto a Pablo en Tesalonicenses. En 1 Pedro 5:12 aparece como mediador de la carta, pero es discutido si fue escriba o portador.",
       "kind": "person",
-      "showInAuthors": false
+      "showInAuthors": false,
+      "bookIds": [
+        "1-tesalonicenses",
+        "2-tesalonicenses",
+        "1-pedro"
+      ]
     },
     {
       "id": "compiladores-proverbios",
@@ -841,12 +841,12 @@
       "testament": "Antiguo Testamento",
       "status": "Recopilación textual explícita",
       "description": "Copistas y recopiladores",
-      "books": [
-        "Proverbios"
-      ],
       "note": "Proverbios 25:1 atribuye a los hombres de Ezequías la copia de una colección de proverbios salomónicos.",
       "kind": "collective",
-      "showInAuthors": false
+      "showInAuthors": false,
+      "bookIds": [
+        "proverbios"
+      ]
     },
     {
       "id": "colecciones-salmos",
@@ -854,12 +854,12 @@
       "testament": "Antiguo Testamento",
       "status": "Proceso editorial colectivo",
       "description": "Compilación de colecciones poéticas",
-      "books": [
-        "Salmos"
-      ],
       "note": "El Salterio reúne colecciones y atribuciones diversas; no se identifica un compilador único.",
       "kind": "collective",
-      "showInAuthors": false
+      "showInAuthors": false,
+      "bookIds": [
+        "salmos"
+      ]
     }
   ]
 }

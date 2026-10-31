@@ -1,5 +1,5 @@
 import { readFile } from "node:fs/promises";
-import { BOOKS } from "../dist/data/bible-catalog.js";
+const { books: BOOKS } = JSON.parse(await readFile(new URL("../dist/data/catalog/books.json", import.meta.url), "utf8"));
 let chapters=0, verses=0;
 for (const book of BOOKS) {
   const data=JSON.parse(await readFile(new URL("../dist/data/rvr1909/"+book.id+".json",import.meta.url),"utf8"));

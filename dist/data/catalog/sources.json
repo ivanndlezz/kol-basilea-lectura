@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "pentateuch-traditions",
+      "title": "Tradiciones israelitas; atribución mosaica",
+      "url": "https://www.bibleodyssey.org/articles/who-wrote-the-pentateuch/"
+    },
+    {
+      "id": "law-of-moses",
+      "title": "La Ley de Moisés",
+      "url": "https://www.sefaria.org/Nehemiah.8"
+    },
+    {
+      "id": "jeremiah-dictation",
+      "title": "Palabras dictadas por Jeremías",
+      "url": "https://www.sefaria.org/Jeremiah.36"
+    },
+    {
+      "id": "paul-scribe",
+      "title": "Pablo de Tarso",
+      "url": "https://www.biblegateway.com/passage/?search=Romans%2016%3A22"
+    },
+    {
+      "id": "paul-and-sosthenes",
+      "title": "Pablo y Sóstenes",
+      "url": "https://www.biblegateway.com/passage/?search=1%20Corinthians%201%3A1"
+    },
+    {
+      "id": "paul-collaborators",
+      "title": "Pablo y sus colaboradores",
+      "url": "https://www.biblegateway.com/passage/?search=2%20Corinthians%201%3A1"
+    },
+    {
+      "id": "paul-and-petrine-tradition",
+      "title": "Pablo; tradición petrina",
+      "url": "https://www.biblegateway.com/passage/?search=1%20Peter%205%3A12"
+    },
+    {
+      "id": "prior-testimonies-and-traditions",
+      "title": "Testimonios y tradiciones anteriores",
+      "url": "https://www.biblegateway.com/passage/?search=Luke%201%3A1-4"
+    },
+    {
+      "id": "solomons-proverbs",
+      "title": "Proverbios de Salomón",
+      "url": "https://www.biblegateway.com/passage/?search=Proverbs%2025%3A1"
+    },
+    {
+      "id": "psalms-traditions",
+      "title": "David, Asaf, hijos de Coré y otras tradiciones",
+      "url": "https://www.bibleodyssey.org/articles/psalms/"
+    }
+  ]
+}

@@ -5,6 +5,7 @@
 | Capa | Archivo | Responsabilidad |
 | --- | --- | --- |
 | Catálogo bíblico | `dist/data/bible-catalog.js` | 66 libros, 1,189 capítulos, clasificación, testamento, orden canónico y orden editorial independiente |
+| Personas y relaciones | `dist/data/catalog/people.json`, `sources.json`, `relationships.json` | Autores, escribas, compiladores y fuentes enlazados por identificadores estables |
 | Texto bíblico | `dist/data/bible-rvr1909.js` | Traducción RVR1909, versículos disponibles, fuente y licencia; el contenido faltante no se inventa |
 | Contenido editorial | `dist/data/editorial-content.js` | Introducciones y videos con atribución; notas históricas documentadas |
 | Progreso | `dist/data/reading-progress.js` | Selectores puros y actualización de capítulos; libros terminados derivados |
@@ -19,6 +20,8 @@
 - La clave de almacenamiento permanece `kol-basilea-lectura-v1` para no reiniciar sesiones ni capítulos marcados.
 - La traducción y los contenidos editoriales son capas separadas: no se presentan interpretaciones como texto bíblico.
 - El contenido editorial no disponible permanece ausente; no se rellenan metadatos históricos, licencias o videos con supuestos.
+- Las relaciones editoriales almacenan `personId`, `bookId` y `sourceId`; los nombres y etiquetas para la interfaz se resuelven al cargar los registros.
+- `npm run validate:data` comprueba IDs únicos, referencias existentes, órdenes del catálogo y los enlaces de videos antes de probar o publicar la PWA.
 
 ## Contratos actuales
 

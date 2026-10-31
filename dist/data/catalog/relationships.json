@@ -1,0 +1,189 @@
+{
+  "version": 2,
+  "relationships": [
+    {
+      "personId": "escribas-juda",
+      "role": "Recopilación y edición",
+      "evidence": "Reconstrucción histórica",
+      "note": "La formación del Pentateuco implicó distintas etapas y tradiciones. No se conocen los nombres de sus redactores finales.",
+      "bookId": "genesis",
+      "sourceId": "pentateuch-traditions"
+    },
+    {
+      "personId": "escribas-juda",
+      "role": "Recopilación y edición",
+      "evidence": "Reconstrucción histórica",
+      "note": "La formación del Pentateuco implicó distintas etapas y tradiciones. No se conocen los nombres de sus redactores finales.",
+      "bookId": "exodo",
+      "sourceId": "pentateuch-traditions"
+    },
+    {
+      "personId": "escribas-juda",
+      "role": "Recopilación y edición",
+      "evidence": "Reconstrucción histórica",
+      "note": "La formación del Pentateuco implicó distintas etapas y tradiciones. No se conocen los nombres de sus redactores finales.",
+      "bookId": "levitico",
+      "sourceId": "pentateuch-traditions"
+    },
+    {
+      "personId": "escribas-juda",
+      "role": "Recopilación y edición",
+      "evidence": "Reconstrucción histórica",
+      "note": "La formación del Pentateuco implicó distintas etapas y tradiciones. No se conocen los nombres de sus redactores finales.",
+      "bookId": "numeros",
+      "sourceId": "pentateuch-traditions"
+    },
+    {
+      "personId": "escribas-juda",
+      "role": "Recopilación y edición",
+      "evidence": "Reconstrucción histórica",
+      "note": "La formación del Pentateuco implicó distintas etapas y tradiciones. No se conocen los nombres de sus redactores finales.",
+      "bookId": "deuteronomio",
+      "sourceId": "pentateuch-traditions"
+    },
+    {
+      "personId": "esdras",
+      "role": "Escriba y transmisor de la Ley",
+      "evidence": "Testimonio bíblico",
+      "note": "Esdras 7:6 lo presenta como escriba versado en la Ley y Nehemías 8 lo muestra leyéndola públicamente. No se puede afirmar que recopiló por sí solo todo el Pentateuco.",
+      "bookId": "esdras",
+      "sourceId": "law-of-moses"
+    },
+    {
+      "personId": "esdras",
+      "role": "Escriba y transmisor de la Ley",
+      "evidence": "Testimonio bíblico",
+      "note": "Esdras 7:6 lo presenta como escriba versado en la Ley y Nehemías 8 lo muestra leyéndola públicamente. No se puede afirmar que recopiló por sí solo todo el Pentateuco.",
+      "bookId": "nehemias",
+      "sourceId": "law-of-moses"
+    },
+    {
+      "personId": "baruc",
+      "role": "Escriba de Jeremías",
+      "evidence": "Escriba identificado",
+      "note": "Jeremías 36:4 y 36:18 narran que Baruc escribió al dictado del profeta. Esto no demuestra que compilara él solo la versión final del libro.",
+      "bookId": "jeremias",
+      "sourceId": "jeremiah-dictation"
+    },
+    {
+      "personId": "tercio",
+      "role": "Escriba de Pablo",
+      "evidence": "Escriba identificado",
+      "note": "En Romanos 16:22 Tercio se presenta expresamente como quien escribió la carta.",
+      "bookId": "romanos",
+      "sourceId": "paul-scribe"
+    },
+    {
+      "personId": "sostenes",
+      "role": "Colaborador nombrado en la carta",
+      "evidence": "Colaborador mencionado",
+      "note": "1 Corintios 1:1 lo nombra junto a Pablo; no afirma que actuara como escriba material de la carta.",
+      "bookId": "1-corintios",
+      "sourceId": "paul-and-sosthenes"
+    },
+    {
+      "personId": "timoteo",
+      "role": "Colaborador y cosignatario",
+      "evidence": "Colaborador mencionado",
+      "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada.",
+      "bookId": "2-corintios",
+      "sourceId": "paul-collaborators"
+    },
+    {
+      "personId": "timoteo",
+      "role": "Colaborador y cosignatario",
+      "evidence": "Colaborador mencionado",
+      "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada.",
+      "bookId": "filipenses",
+      "sourceId": "paul-collaborators"
+    },
+    {
+      "personId": "timoteo",
+      "role": "Colaborador y cosignatario",
+      "evidence": "Colaborador mencionado",
+      "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada.",
+      "bookId": "colosenses",
+      "sourceId": "paul-collaborators"
+    },
+    {
+      "personId": "timoteo",
+      "role": "Colaborador y cosignatario",
+      "evidence": "Colaborador mencionado",
+      "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada.",
+      "bookId": "1-tesalonicenses",
+      "sourceId": "paul-collaborators"
+    },
+    {
+      "personId": "timoteo",
+      "role": "Colaborador y cosignatario",
+      "evidence": "Colaborador mencionado",
+      "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada.",
+      "bookId": "2-tesalonicenses",
+      "sourceId": "paul-collaborators"
+    },
+    {
+      "personId": "timoteo",
+      "role": "Colaborador y cosignatario",
+      "evidence": "Colaborador mencionado",
+      "note": "Aparece en los encabezamientos de estas cartas. Su participación como escriba o redactor material no está demostrada.",
+      "bookId": "filemon",
+      "sourceId": "paul-collaborators"
+    },
+    {
+      "personId": "silvano",
+      "role": "Colaborador y mediador epistolar",
+      "evidence": "Función discutida",
+      "note": "Es nombrado junto a Pablo en Tesalonicenses. En 1 Pedro 5:12 aparece como mediador de la carta, pero es discutido si fue escriba o portador.",
+      "bookId": "1-tesalonicenses",
+      "sourceId": "paul-and-petrine-tradition"
+    },
+    {
+      "personId": "silvano",
+      "role": "Colaborador y mediador epistolar",
+      "evidence": "Función discutida",
+      "note": "Es nombrado junto a Pablo en Tesalonicenses. En 1 Pedro 5:12 aparece como mediador de la carta, pero es discutido si fue escriba o portador.",
+      "bookId": "2-tesalonicenses",
+      "sourceId": "paul-and-petrine-tradition"
+    },
+    {
+      "personId": "silvano",
+      "role": "Colaborador y mediador epistolar",
+      "evidence": "Función discutida",
+      "note": "Es nombrado junto a Pablo en Tesalonicenses. En 1 Pedro 5:12 aparece como mediador de la carta, pero es discutido si fue escriba o portador.",
+      "bookId": "1-pedro",
+      "sourceId": "paul-and-petrine-tradition"
+    },
+    {
+      "personId": "lucas",
+      "role": "Investigación y ordenación narrativa",
+      "evidence": "Atribución tradicional",
+      "note": "Lucas 1:1-4 describe la consulta de relatos anteriores y una exposición ordenada. El texto no identifica por nombre a su autor; Lucas es la atribución tradicional.",
+      "bookId": "lucas",
+      "sourceId": "prior-testimonies-and-traditions"
+    },
+    {
+      "personId": "lucas",
+      "role": "Investigación y ordenación narrativa",
+      "evidence": "Atribución tradicional",
+      "note": "Lucas 1:1-4 describe la consulta de relatos anteriores y una exposición ordenada. El texto no identifica por nombre a su autor; Lucas es la atribución tradicional.",
+      "bookId": "hechos",
+      "sourceId": "prior-testimonies-and-traditions"
+    },
+    {
+      "personId": "compiladores-proverbios",
+      "role": "Copistas y recopiladores",
+      "evidence": "Recopilación textual explícita",
+      "note": "Proverbios 25:1 atribuye a los hombres de Ezequías la copia de una colección de proverbios salomónicos.",
+      "bookId": "proverbios",
+      "sourceId": "solomons-proverbs"
+    },
+    {
+      "personId": "colecciones-salmos",
+      "role": "Compilación de colecciones poéticas",
+      "evidence": "Proceso editorial colectivo",
+      "note": "El Salterio reúne colecciones y atribuciones diversas; no se identifica un compilador único.",
+      "bookId": "salmos",
+      "sourceId": "psalms-traditions"
+    }
+  ]
+}

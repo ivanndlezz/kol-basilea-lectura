@@ -305,7 +305,7 @@ function renderBookShelf(rewardIndex = -1) {
   return `<div class="kb-shelf" role="img" aria-label="Estantería: ${totalCompletedBooks()} de 66 libros terminados">${BOOKS.map((book, index) => `<span class="kb-spine ${isBookComplete(book) ? "is-done" : ""} ${!isBookComplete(book) && currentBook().id === book.id ? "is-next" : ""} ${index === rewardIndex ? "just-added" : ""}" style="height:${24 + (index * 7 % 4) * 3}px;${categoryStyle(book.category)}" aria-hidden="true"></span>`).join("")}</div>`;
 }
 function renderHomeAuthor(book) {
-  const candidates = authorsForBook(book.name).filter(person => person.kind !== "collective" && person.id !== "autores-anonimos");
+  const candidates = authorsForBook(book.id).filter(person => person.kind !== "collective" && person.id !== "autores-anonimos");
   const person = candidates[0];
   if (!person) return "";
   return `<button type="button" class="kb-home-author" data-action="open-author" data-author-id="${escapeHtml(person.id)}" aria-label="Ver ficha de ${escapeHtml(person.name)}"><span class="kb-home-author-avatar">${renderAuthorPortrait(person)}</span><span class="kb-home-author-label"><small>Autor atribuido</small><strong>${escapeHtml(person.name)}</strong></span>${icon("chevronRight",14)}</button>`;
@@ -552,12 +552,12 @@ function renderReadingCopy(book, chapter) {
 }
 
 function renderBookTextCredits(book) {
-  const authors = authorsForBook(book.name).filter(person => person.showInAuthors !== false && person.id !== "autores-anonimos" && person.kind !== "collective").slice(0,3);
-  const compilers = [...new Set(relationshipsForBook(book.name).map(link => link.personId))].map(id => AUTHOR_BY_ID.get(id)).filter(Boolean);
+  const authors = authorsForBook(book.id).filter(person => person.showInAuthors !== false && person.id !== "autores-anonimos" && person.kind !== "collective").slice(0,3);
+  const compilers = [...new Set(relationshipsForBook(book.id).map(link => link.personId))].map(id => AUTHOR_BY_ID.get(id)).filter(Boolean);
   const personRow = (person,detail) => `<div class="kb-reader-credit-person"><span class="kb-reader-credit-avatar">${renderAuthorPortrait(person)}</span><span class="kb-reader-credit-copy"><strong>${escapeHtml(person.name)}</strong><small>${escapeHtml(detail)}</small></span></div>`;
   const authorContent = authors.length ? authors.map(person => personRow(person,person.status)).join("") : '<p class="kb-reader-credit-empty">Autor no identificado en el texto.</p>';
   const compilerContent = compilers.length ? compilers.map(person => {
-    const link = relationshipsForBook(book.name).find(item => item.personId === person.id);
+    const link = relationshipsForBook(book.id).find(item => item.personId === person.id);
     return personRow(person,link?.role || "Transmisión textual");
   }).join("") : '<p class="kb-reader-credit-empty">No se han identificado recopiladores específicos para este libro en el registro.</p>';
   return `<aside class="kb-reader-credits" aria-label="Autor y recopiladores del libro"><p class="eyebrow">Personas detrás del texto</p><div class="kb-reader-credit-group"><h3>Autor</h3>${authorContent}</div><div class="kb-reader-credit-group"><h3>Recopiladores</h3>${compilerContent}</div><p class="kb-reader-credit-disclaimer">Las atribuciones tradicionales y las funciones documentadas no son equivalentes.</p></aside>`;

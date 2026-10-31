@@ -3,6 +3,7 @@ import { BOOKS, TOTAL_CHAPTERS, getCanonicalBooks, getReadingBooks } from "../di
 import { completedChapterCount, completedBookCount, nextReadingBook, nextReadingChapter, markChapterComplete, isBookFinished } from "../dist/data/reading-progress.js";
 import { getBibleTranslation, getBibleChapter } from "../dist/data/bible-rvr1909.js";
 import { getBookEditorial } from "../dist/data/editorial-content.js";
+import { AUTHORS, SOURCES, TEXTUAL_RELATIONSHIPS, authorsForBook, relationshipsForBook } from "../dist/data/biblical-authors.js";
 assert.equal(BOOKS.length, 66);
 assert.equal(TOTAL_CHAPTERS, 1189);
 assert.equal(new Set(BOOKS.map(book=>book.id)).size, 66);
@@ -27,4 +28,10 @@ assert.deepEqual(markChapterComplete(progressed,BOOKS[0],1).completedChapters["3
 assert.equal(markChapterComplete(empty,BOOKS[0],2),empty);
 assert.ok(getBibleTranslation("rvr1909"));
 assert.ok(getBookEditorial("3-juan")?.video);
+assert.ok(AUTHORS.find(person => person.id === "moises")?.bookIds.includes("genesis"));
+assert.equal(SOURCES.length, 10);
+assert.equal(TEXTUAL_RELATIONSHIPS.length, 23);
+assert.equal(authorsForBook("genesis").find(person => person.id === "moises")?.name, "Moisés");
+assert.equal(relationshipsForBook("genesis")[0].bookId, "genesis");
+assert.equal(relationshipsForBook("genesis")[0].sourceId, "pentateuch-traditions");
 console.log("PASS: catalog, canonical/editorial routes, progress, translation and editorial data");
