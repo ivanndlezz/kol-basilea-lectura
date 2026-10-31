@@ -50,6 +50,7 @@ const defaultState = () => ({
   readerChapter: null,
   readerContextOpen: true,
   readerDisplayOpen: false,
+  chapterSheetOpen: false,
   readerFont: "serif",
   readerTheme: "light",
   completedChapters: {},
@@ -212,15 +213,34 @@ function renderMore() {
   return `<main class="screen"><div class="hero-copy"><p class="eyebrow">Más</p><h1>Tu experiencia.</h1><p>Preferencias sencillas para mantener la ruta a tu ritmo.</p></div><div class="more-list" style="margin-top:24px"><div class="more-row"><span><strong>Meta de lectura</strong><span>${state.goal === "none" ? "Sin fecha" : `${state.goal} días`}</span></span><button class="button button-secondary" data-action="change-goal">Cambiar</button></div><div class="more-row"><span><strong>Progreso local</strong><span>Guardado en este dispositivo</span></span><span aria-label="Activado">${icon("check", 17)}</span></div><div class="more-row"><span><strong>Contenido</strong><span>Texto y videos con fuente por definir</span></span><span aria-hidden="true">${icon("chevronRight", 18)}</span></div></div><div class="context-card" style="margin-top:24px"><h3>Una nota sobre este prototipo</h3><p style="margin-bottom:0">La lectura que ves aquí es una maqueta de interacción. El contenido bíblico y los videos reales se integrarán después de resolver las licencias.</p></div></main>`;
 }
 
-function renderChapterList(book, selectedChapter) {
+function renderChapterButton(book, chapter, selectedChapter, variant = "chapter-row") {
   const completed = new Set(getCompletedChapters(book));
-  const rows = Array.from({ length: book.chapters }, (_, index) => {
-    const chapter = index + 1;
-    const done = completed.has(chapter);
-    const selected = chapter === selectedChapter;
-    const status = done ? "Leído" : selected ? "En curso" : "";
-    return `<button class="chapter-row ${done ? "is-complete" : ""} ${selected ? "is-current" : ""}" data-action="select-chapter" data-chapter="${chapter}" aria-label="Capítulo ${chapter}${done ? ", leído" : ", pendiente"}" ${selected ? 'aria-current="step"' : ""}><span class="chapter-number">${done ? icon("check", 15) : chapter}</span><span class="chapter-label">Capítulo ${chapter}</span><span class="chapter-status">${status}</span></button>`;
-  }).join("");
+  const done = completed.has(chapter);
+  const selected = chapter === selectedChapter;
+  const status = done ? "Leído" : selected ? "En curso" : "";
+  if (variant === "chapter-sheet-button") {
+    return `<button class="${variant} ${done ? "is-complete" : ""} ${selected ? "is-current" : ""}" data-action="select-chapter" data-chapter="${chapter}" aria-label="Capítulo ${chapter}${done ? ", leído" : selected ? ", en curso" : ", pendiente"}" ${selected ? 'aria-current="step" data-current-chapter="true"' : ""}><span class="chapter-sheet-number">${done ? icon("check", 16) : chapter}</span></button>`;
+  }
+  return `<button class="${variant} ${done ? "is-complete" : ""} ${selected ? "is-current" : ""}" data-action="select-chapter" data-chapter="${chapter}" aria-label="Capítulo ${chapter}${done ? ", leído" : ", pendiente"}" ${selected ? 'aria-current="step"' : ""}><span class="chapter-number">${done ? icon("check", 15) : chapter}</span><span class="chapter-label">Capítulo ${chapter}</span><span class="chapter-status">${status}</span></button>`;
+}
+
+function renderChapterSheet(book, selectedChapter) {
+  const rows = Array.from({ length: book.chapters }, (_, index) => renderChapterButton(book, index + 1, selectedChapter, "chapter-sheet-button")).join("");
+  const open = state.chapterSheetOpen;
+  return `<div class="chapter-sheet-layer" ${open ? "" : "hidden"}><button class="chapter-sheet-backdrop" data-action="close-chapter-sheet" aria-label="Cerrar capítulos"></button><aside id="chapter-sheet" class="chapter-sheet" role="dialog" aria-modal="true" aria-labelledby="chapter-sheet-title"><header class="chapter-sheet-header"><div><p class="eyebrow">Navegar</p><h2 id="chapter-sheet-title">Capítulos</h2><p>${escapeHtml(book.name)} · ${getCompletedChapters(book).length} de ${book.chapters} leídos</p></div><button class="icon-button" data-action="close-chapter-sheet" aria-label="Cerrar capítulos">${icon("arrowLeft", 19)}</button></header><div class="chapter-sheet-grid">${rows}</div></aside></div>`;
+}
+
+function renderCompactChapterNavigator(book, selectedChapter) {
+  const completed = new Set(getCompletedChapters(book));
+  const start = Math.max(1, Math.min(selectedChapter - 2, book.chapters - 4));
+  const nearby = Array.from({ length: Math.min(5, book.chapters) }, (_, index) => start + index);
+  return `<section class="chapter-panel chapter-panel-compact" aria-labelledby="chapter-list-title"><div class="chapter-panel-header"><div><p class="eyebrow">Tu avance</p><h2 id="chapter-list-title">Capítulos</h2></div><strong>${completed.size} de ${book.chapters}</strong></div><div class="chapter-nearby-grid">${nearby.map((chapter) => renderChapterButton(book, chapter, selectedChapter, "chapter-mini")).join("")}</div><button class="chapter-panel-action" data-action="toggle-chapter-sheet" aria-expanded="${state.chapterSheetOpen}" aria-controls="chapter-sheet"><span>${icon("menu", 16)} Ver todos los capítulos</span>${icon("chevronRight", 16)}</button></section>${renderChapterSheet(book, selectedChapter)}`;
+}
+
+function renderChapterList(book, selectedChapter) {
+  if (book.chapters > 12) return renderCompactChapterNavigator(book, selectedChapter);
+  const completed = new Set(getCompletedChapters(book));
+  const rows = Array.from({ length: book.chapters }, (_, index) => renderChapterButton(book, index + 1, selectedChapter)).join("");
   return `<section class="chapter-panel" aria-labelledby="chapter-list-title"><div class="chapter-panel-header"><div><p class="eyebrow">Tu avance</p><h2 id="chapter-list-title">Capítulos</h2></div><strong>${completed.size} de ${book.chapters}</strong></div><div class="chapter-grid">${rows}</div></section>`;
 }
 
@@ -258,6 +278,7 @@ function openReader(bookId = currentBook().id) {
   state.readerBookId = bookId;
   state.readerOrigin = state.view === "route" ? "route" : "home";
   state.readerChapter = currentChapter(getBook(bookId));
+  state.chapterSheetOpen = false;
   if (state.onboardingStep === 3 && bookId === "3-juan") state.onboardingComplete = true;
   state.view = "reader";
   saveState();
@@ -327,7 +348,9 @@ function bindEvents() {
       if (action === "show-route") { state.view = "route"; saveState(); render(); }
       if (action === "show-progress") { state.view = "progress"; saveState(); render(); }
       if (action === "open-book") { openReader(element.dataset.bookId); }
-      if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); saveState(); render(); }
+      if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); state.chapterSheetOpen = false; saveState(); render(); }
+      if (action === "toggle-chapter-sheet") { state.chapterSheetOpen = !state.chapterSheetOpen; saveState(); render(); }
+      if (action === "close-chapter-sheet") { state.chapterSheetOpen = false; saveState(); render(); }
       if (action === "toggle-reader-format") { state.readerDisplayOpen = !state.readerDisplayOpen; saveState(); render(); }
       if (action === "toggle-reader-context") { state.readerContextOpen = !state.readerContextOpen; saveState(); render(); }
       if (action === "set-reader-font") { state.readerFont = element.dataset.font === "sans" ? "sans" : "serif"; state.readerDisplayOpen = false; saveState(); render(); }

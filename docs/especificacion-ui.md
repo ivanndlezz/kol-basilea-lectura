@@ -134,6 +134,8 @@ Incluye:
 - lista compacta de todos los capítulos del libro, con estados pendiente, en curso y leído;
 - check visual en cada capítulo completado y contador “X de Y”;
 - selección directa de un capítulo desde la lista para revisar o continuar en otro punto;
+- en libros de más de 12 capítulos, vista resumida de capítulos cercanos y acción “Ver todos los capítulos”;
+- navegador completo de capítulos en side-sheet para escritorio y bottom sheet para móvil;
 - barra de progreso total en el encabezado y progreso independiente del libro;
 - sección de contexto en video colapsable, que no carga la miniatura hasta que la sección está abierta;
 - menú “Formato” para cambiar entre tipografía serif/sans y temas claro, sepia u oscuro;
@@ -169,6 +171,7 @@ El mismo recurso se trata como panorama del conjunto, no como tres videos distin
 - contexto de video abierto y colapsado;
 - capítulo disponible y pendiente;
 - lista de capítulos con capítulo actual seleccionado;
+- navegador de capítulos abierto para libros largos;
 - lector en tema claro, sepia u oscuro;
 - capítulo completado;
 - libro completado;
@@ -195,6 +198,8 @@ El mismo recurso se trata como panorama del conjunto, no como tres videos distin
 - Después de marcar un capítulo pendiente, el lector conserva la vista, muestra el check y propone el siguiente capítulo pendiente, salvo al terminar el libro.
 - El video de contexto se puede contraer y el contenido multimedia permanece diferido mientras está cerrado.
 - El menú de formato permite cambiar tipografía y tema sin perder el capítulo ni el progreso.
+- Los libros largos no generan una lista extensa dentro del lector: muestran capítulos cercanos y abren el índice completo bajo demanda.
+- El índice completo permite saltar a cualquier capítulo, muestra el capítulo actual y se cierra al seleccionar uno o tocar fuera del panel.
 - Desde cualquier vista secundaria se puede volver a Hoy mediante breadcrumb; desde el lector se puede volver a la vista que lo abrió.
 - El prototipo comunica claramente qué textos y videos son demostrativos mientras se resuelven licencias.
 

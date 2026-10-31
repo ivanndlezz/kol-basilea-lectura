@@ -385,6 +385,29 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .chapter-row.is-complete .chapter-number { background: var(--brand); color: #fff; }
 .chapter-label { grid-area: label; min-width: 0; font-size: 13px; font-weight: 800; line-height: 1.15; }
 .chapter-status { grid-area: status; min-height: 12px; margin: 0; color: var(--brand); font-size: 11px; font-weight: 800; line-height: 1; }
+.chapter-panel-compact { position: relative; }
+.chapter-nearby-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.chapter-mini { display: grid; grid-template-columns: 30px minmax(0, 1fr); grid-template-areas: "number label" "number status"; align-items: center; column-gap: 7px; min-height: 62px; padding: 8px; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); color: var(--ink); text-align: left; }
+.chapter-mini.is-current { border-color: var(--gold); box-shadow: inset 0 0 0 1px var(--gold); }
+.chapter-mini.is-complete { border-color: #a7d1bc; background: var(--brand-soft); }
+.chapter-mini .chapter-number { width: 28px; height: 28px; font-size: 11px; }
+.chapter-mini .chapter-label { font-size: 11px; }
+.chapter-mini .chapter-status { font-size: 10px; }
+.chapter-panel-action { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 44px; margin-top: 10px; padding: 0 2px; border: 0; background: transparent; color: var(--brand); font-size: 13px; font-weight: 800; }
+.chapter-panel-action span { display: inline-flex; align-items: center; gap: 7px; }
+.chapter-sheet-layer { position: fixed; z-index: 80; inset: 0; display: flex; justify-content: flex-end; }
+.chapter-sheet-layer[hidden] { display: none; }
+.chapter-sheet-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: rgba(12, 20, 17, .42); }
+.chapter-sheet { position: relative; z-index: 1; display: flex; flex-direction: column; width: min(420px, calc(100% - 18px)); height: 100%; padding: calc(24px + env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom)); border-left: 1px solid var(--line); background: var(--paper); box-shadow: -18px 0 50px rgba(30, 43, 38, .18); }
+.chapter-sheet-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.chapter-sheet-header h2 { margin-bottom: 4px; }
+.chapter-sheet-header p:not(.eyebrow) { margin-bottom: 0; color: var(--ink-muted); font-size: 13px; }
+.chapter-sheet-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; overflow-y: auto; padding: 20px 2px 8px; overscroll-behavior: contain; }
+.chapter-sheet-button { display: grid; place-items: center; min-height: 52px; padding: 0; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); font-size: 13px; font-weight: 800; }
+.chapter-sheet-button:hover { border-color: var(--brand); }
+.chapter-sheet-button.is-current { border-color: var(--gold); box-shadow: inset 0 0 0 2px var(--gold); }
+.chapter-sheet-button.is-complete { border-color: #a7d1bc; background: var(--brand-soft); color: var(--brand); }
+.chapter-sheet-number { display: grid; place-items: center; min-width: 28px; min-height: 28px; }
 .reading-copy { max-width: 590px; margin: 0 auto; padding: 10px 0 20px; }
 .reading-copy p { color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: 19px; line-height: 1.72; }
 .reading-note { padding: 14px 16px; border-left: 3px solid var(--gold); border-radius: 0 12px 12px 0; background: var(--gold-soft); color: #704a1e; font-size: 13px; line-height: 1.5; }
@@ -472,6 +495,9 @@ p { color: var(--ink-muted); line-height: 1.52; }
   .reader-context-toggle { padding-right: 13px; padding-left: 13px; }
   .reader-context-content { padding-right: 13px; padding-left: 13px; }
   .chapter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .chapter-nearby-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .chapter-sheet-layer { align-items: flex-end; justify-content: stretch; }
+  .chapter-sheet { width: 100%; height: min(82vh, 760px); border-top: 1px solid var(--line); border-left: 0; border-radius: 24px 24px 0 0; }
 }
 
 @media (max-width: 420px) {
