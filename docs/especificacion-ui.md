@@ -140,7 +140,7 @@ El lector debe mantener el foco en una sola acción y evitar acciones competitiv
 
 Para 3 Juan, 2 Juan y 1 Juan se reutiliza como contexto compartido el video oficial [Resumen de los libros de 1–3 Juan](https://www.youtube.com/watch?v=wQtMnuBzb4c), publicado por Proyecto Biblia. La fuente editorial es su [guía oficial](https://bibleproject.com/es/guides/libro-de-1-3-juan/).
 
-La UI no carga el iframe al entrar a la pantalla: muestra una tarjeta ligera y crea el reproductor `youtube-nocookie` solamente después de una acción explícita de reproducir. El video se reproduce sin descargarlo ni almacenarlo localmente. La tarjeta identifica a Proyecto Biblia, enlaza la fuente y comunica que el reproductor se carga bajo demanda.
+La UI no carga el iframe al entrar a la pantalla: muestra la miniatura oficial de YouTube con `loading="lazy"` y crea el reproductor `youtube-nocookie` solamente después de una acción explícita de reproducir. El video se reproduce sin descargarlo ni almacenarlo localmente. La tarjeta identifica a Proyecto Biblia, enlaza la fuente y comunica que el reproductor se carga bajo demanda.
 
 El mismo recurso se trata como panorama del conjunto, no como tres videos distintos. En la ruta actual se presenta con especial relevancia al entrar a 3 Juan y queda disponible desde 2 Juan y 1 Juan.
 

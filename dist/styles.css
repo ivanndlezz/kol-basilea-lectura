@@ -316,9 +316,11 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .reader-content h1 { margin-bottom: 18px; font-size: 32px; }
 .context-card { margin-bottom: 22px; padding: 17px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface-soft); }
 .video-card { overflow: hidden; border-radius: 18px; background: var(--surface); }
-.video-placeholder { display: grid; place-items: center; min-height: 150px; border-radius: 18px; background: linear-gradient(145deg, #183e34, #2c765a); color: white; text-align: center; }
+.video-placeholder { position: relative; display: grid; place-items: center; min-height: 150px; overflow: hidden; border-radius: 18px; background: linear-gradient(145deg, #183e34, #2c765a); color: white; text-align: center; }
 .video-poster { aspect-ratio: 16 / 9; min-height: 180px; padding: 20px; }
-.video-poster-content { display: grid; justify-items: center; gap: 9px; }
+.video-placeholder::after { position: absolute; inset: 0; z-index: 1; content: ""; background: linear-gradient(180deg, rgba(11, 40, 31, .28), rgba(11, 40, 31, .68)); pointer-events: none; }
+.video-thumbnail { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; object-fit: cover; }
+.video-poster-content { position: relative; z-index: 2; display: grid; justify-items: center; gap: 9px; }
 .video-poster-content strong { font-size: 24px; letter-spacing: -.03em; }
 .video-overline, .video-kicker { color: var(--brand); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .video-overline { color: rgba(255,255,255,.78); }
@@ -334,6 +336,7 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .video-card-pending .video-poster-content { color: rgba(255,255,255,.8); }
 .video-placeholder iframe { display: block; width: 100%; min-height: 180px; aspect-ratio: 16 / 9; border: 0; border-radius: 18px; background: #101715; }
 .video-card.is-playing .video-placeholder { padding: 0; background: #101715; }
+.video-card.is-playing .video-placeholder::after { display: none; }
 .video-card.is-playing .video-placeholder iframe { border-radius: 18px 18px 0 0; }
 .reading-copy { max-width: 590px; margin: 0 auto; padding: 10px 0 20px; }
 .reading-copy p { color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: 19px; line-height: 1.72; }
