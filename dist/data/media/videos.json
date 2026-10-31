@@ -1387,6 +1387,16 @@
       "order": 1
     },
     "bp-juan123": {
+      "title": "1–3 Juan",
+      "description": "1–3 Juan. Video oficial de Proyecto Biblia.",
+      "duration": "Video",
+      "mediaProvider": "mux",
+      "playbackId": "WBNzrDJLaAV01X6ss4HIVPuOW1CTdrszjt00qBQ4573UY",
+      "videoUrl": "https://stream.mux.com/WBNzrDJLaAV01X6ss4HIVPuOW1CTdrszjt00qBQ4573UY/high.mp4?download=1-3-juan.mp4",
+      "embedUrl": "https://player.mux.com/WBNzrDJLaAV01X6ss4HIVPuOW1CTdrszjt00qBQ4573UY",
+      "thumbnailUrl": "https://image.mux.com/WBNzrDJLaAV01X6ss4HIVPuOW1CTdrszjt00qBQ4573UY/thumbnail.jpg",
+      "thumbnail": "https://image.mux.com/WBNzrDJLaAV01X6ss4HIVPuOW1CTdrszjt00qBQ4573UY/thumbnail.jpg",
+      "pageUrl": "https://bibleproject.com/es/downloads/",
       "provider": "bibleproject",
       "language": "es",
       "kind": "book-overview",
@@ -1396,16 +1406,7 @@
         "2-juan",
         "3-juan"
       ],
-      "order": 1,
-      "youtubeId": "wQtMnuBzb4c",
-      "title": "Resumen de 1–3 Juan",
-      "description": "Un panorama animado sobre las tres cartas y sus temas de vida, verdad y amor.",
-      "duration": "10:58",
-      "thumbnail": "https://ik.imagekit.io/bpweb1/web/media/video-images/new-testament-overview/123-john/tr:q-65,w-800/123-john_16.9.jpg",
-      "thumbnailUrl": "https://ik.imagekit.io/bpweb1/web/media/video-images/new-testament-overview/123-john/tr:q-65,w-800/123-john_16.9.jpg",
-      "pageUrl": "https://bibleproject.com/es/guides/libro-de-1-3-juan/",
-      "youtubeUrl": "https://www.youtube.com/watch?v=wQtMnuBzb4c",
-      "embedUrl": "https://www.youtube-nocookie.com/embed/wQtMnuBzb4c?rel=0&modestbranding=1&playsinline=1"
+      "order": 1
     },
     "bp-judas": {
       "title": "Judas",

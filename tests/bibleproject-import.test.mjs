@@ -42,3 +42,15 @@ test("BibleProject importer creates ID mappings for shared and split books", asy
   assert.equal(registry.videos["bp-juan123"].bookIds.length, 3);
 });
 
+test("BibleProject importer keeps the internal Juan ID while replacing legacy YouTube media", async () => {
+  const map = { version: 1, catalogUrl: "https://bibleproject.com/es/downloads/", videos: [
+    { key: "1-3-juan", sourcePath: "1-3-juan", id: "bp-juan123", bookIds: ["1-juan", "2-juan", "3-juan"], order: 1 }
+  ] };
+  const existing = { videos: { "bp-juan123": { youtubeId: "wQtMnuBzb4c", youtubeUrl: "https://www.youtube.com/watch?v=wQtMnuBzb4c" } } };
+  const html = "https://stream.mux.com/WBNzrDJLaAV01X6ss4HIVPuOW1CTdrszjt00qBQ4573UY/high.mp4?download=1-3-juan.mp4";
+  const registry = await importRegistry({ map, existing, strict: true, fetchImpl: async () => new Response(html, { status: 200 }), onProgress: () => {} });
+  assert.equal(registry.videos["bp-juan123"].mediaProvider, "mux");
+  assert.equal(registry.videos["bp-juan123"].playbackId, "WBNzrDJLaAV01X6ss4HIVPuOW1CTdrszjt00qBQ4573UY");
+  assert.equal(registry.videos["bp-juan123"].youtubeId, undefined);
+});
+

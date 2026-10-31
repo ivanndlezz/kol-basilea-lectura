@@ -88,6 +88,8 @@ for (const [bookId, resourceIds] of Object.entries(videoRegistry.videoByBook)) {
 for (const [resourceId, video] of Object.entries(videoRegistry.videos)) {
   assert(video.provider === "bibleproject", `Video ${resourceId} has an unexpected provider`);
   assert(video.language === "es", `Video ${resourceId} has an unexpected language`);
+  assert(video.mediaProvider === "mux", `Video ${resourceId} is not using the canonical Mux provider`);
+  assert(!video.youtubeId && !video.youtubeUrl, `Video ${resourceId} still contains legacy YouTube fields`);
   const mediaId = video.youtubeId || video.playbackId;
   assert(typeof mediaId === "string" && mediaId, `Video ${resourceId} is missing a media ID`);
   if (video.youtubeId) assert(/^[A-Za-z0-9_-]{11}$/.test(video.youtubeId), `Video ${resourceId} has an invalid YouTube ID`);

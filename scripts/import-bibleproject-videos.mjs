@@ -202,6 +202,10 @@ function normalizedRecord(entry, parsed, existing) {
   if (!record.embedUrl && record.youtubeId) record.embedUrl = `https://www.youtube-nocookie.com/embed/${record.youtubeId}?rel=0&modestbranding=1&playsinline=1`;
   if (!record.thumbnailUrl && record.thumbnail) record.thumbnailUrl = record.thumbnail;
   if (!record.thumbnail && record.thumbnailUrl) record.thumbnail = record.thumbnailUrl;
+  if (parsed?.mediaProvider === "mux") {
+    delete record.youtubeId;
+    delete record.youtubeUrl;
+  }
   return record;
 }
 
@@ -223,27 +227,25 @@ export async function importRegistry({ map, existing, strict = false, fetchImpl 
     let resolvedUrl = null;
     let lastError = null;
     const sourceKeys = [entry.sourcePath, ...(entry.sourcePaths || [])];
-    if (!previous?.youtubeId) {
-      const muxMedia = sourceKeys.map(key => catalogMedia.get(key)).find(Boolean);
-      if (muxMedia) {
-        parsed = parseMuxVideo(entry, muxMedia, map.catalogUrl);
-        resolvedUrl = map.catalogUrl;
-      } else {
-        lastError = catalogError || new Error("No se encontró el video en el catálogo oficial");
-        for (const url of candidateUrls(entry)) {
-          try {
-            const response = await fetchImpl(url, { headers: REQUEST_HEADERS, signal: AbortSignal.timeout(20000) });
-            if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-            parsed = parseVideoPage(await response.text(), url);
-            if (parsed) { resolvedUrl = url; break; }
-            lastError = new Error("No se encontró un video de YouTube en la página");
-          } catch (error) {
-            lastError = error;
-          }
+    const muxMedia = sourceKeys.map(key => catalogMedia.get(key)).find(Boolean);
+    if (muxMedia) {
+      parsed = parseMuxVideo(entry, muxMedia, map.catalogUrl);
+      resolvedUrl = map.catalogUrl;
+    } else {
+      lastError = catalogError || new Error("No se encontró el video en el catálogo oficial");
+      for (const url of candidateUrls(entry)) {
+        try {
+          const response = await fetchImpl(url, { headers: REQUEST_HEADERS, signal: AbortSignal.timeout(20000) });
+          if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+          parsed = parseVideoPage(await response.text(), url);
+          if (parsed) { resolvedUrl = url; break; }
+          lastError = new Error("No se encontró un video de YouTube en la página");
+        } catch (error) {
+          lastError = error;
         }
       }
     }
-    if (!parsed && !previous?.youtubeId) {
+    if (!parsed && !previous) {
       unresolved.push({ key: entry.key, urls: candidateUrls(entry), error: lastError?.message || "Sin metadatos" });
       onProgress({ entry, status: "unresolved" });
       continue;
