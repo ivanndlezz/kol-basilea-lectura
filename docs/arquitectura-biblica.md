@@ -37,3 +37,26 @@ La capa de progreso es pura: recibe un estado y devuelve valores calculados o un
 - Agregar traducciones mediante adaptadores que preserven atribución, derechos y licencias.
 - Añadir pruebas automatizadas de integridad del catálogo y compatibilidad del almacenamiento.
 - Preparar sincronización opcional en el futuro, sin registro obligatorio.
+
+## Pipeline USFM → JSON en GitHub Actions
+
+Fuente: [Reina-Valera 1909, eBible.org](https://ebible.org/spaRV1909/) — dominio público.
+Archivo USFM confirmado: `https://ebible.org/Scriptures/spaRV1909_usfm.zip`.
+
+En cada despliegue, `.github/workflows/static.yml` descarga el archivo oficial en un directorio temporal, ejecuta `scripts/convert-usfm.mjs`, valida con `scripts/validate-generated.mjs` y publica los JSON en `dist/data/rvr1909/<bookId>.json`. Los archivos generados se empaquetan en el artefacto de Pages; no se versionan en el repositorio.
+
+La PWA utiliza `dist/data/bible-loader.js` para descargar un libro cuando se necesita. `dist/sw.js` conserva en caché el shell de la app y los libros que el usuario ya consultó para permitir volver a leerlos sin conexión, después de una primera descarga exitosa. La descarga de toda la Biblia de una sola vez no está implementada.
+
+Los marcadores USFM de versículo vacíos se registran como advertencias, sin inventar texto. El pipeline valida los 66 libros, 1,189 capítulos y más de 30,000 versículos no vacíos; también detecta marcadores USFM residuales en el texto visible.
+
+Para ejecutar el conversor en una computadora local:
+
+```bash
+mkdir -p sources/rvr1909
+curl -fL https://ebible.org/Scriptures/spaRV1909_usfm.zip -o /tmp/spaRV1909_usfm.zip
+unzip -q /tmp/spaRV1909_usfm.zip -d sources/rvr1909
+npm run build:bible
+node scripts/validate-generated.mjs
+```
+
+La app mantiene la clave de almacenamiento `kol-basilea-lectura-v1`, los identificadores de libros y el avance guardado. Los JSON son contenido estático generado; no se requiere Oracle ni servidor Node permanente.
