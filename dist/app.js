@@ -583,8 +583,8 @@ function setupReaderSectionNav() {
   const controller = new AbortController();
   const updatePosition = () => {
     const height = header?.getBoundingClientRect().height || 0;
-    nav.style.top = height + "px";
-    document.documentElement.style.setProperty("--kb-section-offset", (height + nav.getBoundingClientRect().height + 18) + "px");
+    nav.style.top = "0px";
+    document.documentElement.style.setProperty("--kb-section-offset", (nav.getBoundingClientRect().height + 18) + "px");
   };
   const activate = index => {
     tabs.forEach((tab, i) => {
