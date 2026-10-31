@@ -184,7 +184,7 @@ function render() {
   bindImageSkeletons();
   if (state.view === "reader" && !state.readerBookInfoOpen) {
     const bookId = state.readerBookId;
-    if (bookId === "2-juan" && !getPericopes(bookId, 1).length) {
+    if (["1-juan", "2-juan", "3-juan"].includes(bookId) && !getPericopes(bookId, 1).length) {
       loadPericopes(bookId).then(data => { if (data && state.view === "reader" && state.readerBookId === bookId) render(); });
     }
     if (getBookLoadState(bookId) === "idle") {
