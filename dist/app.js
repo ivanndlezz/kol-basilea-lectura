@@ -652,7 +652,6 @@ function setupReaderSectionNav() {
   const updatePosition = () => {
     const topbarHeight = readerTopbar?.getBoundingClientRect().height || 0;
     const height = nav.getBoundingClientRect().height;
-    readerPage?.style.setProperty("--kb-reader-sticky-top", `${topbarHeight}px`);
     document.documentElement.style.setProperty("--kb-section-offset", (topbarHeight + height + 18) + "px");
   };
   let activeIndex = -1;
@@ -693,7 +692,7 @@ function setupReaderSectionNav() {
   window.addEventListener("resize", () => { updatePosition(); track(); }, { passive: true, signal: controller.signal });
   updatePosition();
   track();
-  sectionNavCleanup = () => { controller.abort(); if (frame) cancelAnimationFrame(frame); readerPage?.style.removeProperty("--kb-reader-sticky-top"); document.documentElement.style.removeProperty("--kb-section-offset"); };
+  sectionNavCleanup = () => { controller.abort(); if (frame) cancelAnimationFrame(frame); document.documentElement.style.removeProperty("--kb-section-offset"); };
 }
 
 function renderReader() {
