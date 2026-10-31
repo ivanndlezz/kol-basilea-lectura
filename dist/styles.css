@@ -1032,3 +1032,7 @@ a:not([class]):visited{color:var(--brand-dark)}
 .kb-section-tab:focus-visible { outline: 2px solid currentColor; outline-offset: -4px; border-radius: 4px; }
 .kb-pericope-heading[id] { scroll-margin-top: var(--kb-section-offset, 160px); }
 @media (prefers-reduced-motion: reduce) { .kb-section-tabs { scroll-behavior: auto; } }
+
+/* Keep section tabs within the scripture document, directly after its source metadata. */
+.scripture-passage > .kb-section-nav { margin: 14px 0 24px; }
+.scripture-passage > .kb-section-nav .kb-section-tabs { padding-inline: 0; }
