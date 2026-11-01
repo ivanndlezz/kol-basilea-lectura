@@ -254,6 +254,7 @@ function render() {
   bindEvents();
   setupReaderSectionNav();
   requestAnimationFrame(scrollToPendingSection);
+  if (state.readerTranslationOpen) requestAnimationFrame(positionReaderTranslationPopover);
   if (state.navigationOpen) document.querySelector(".kb-navigation-close")?.focus({preventScroll:true});
   bindImageSkeletons();
   if (state.view === "reader" && !state.readerBookInfoOpen) {
@@ -279,6 +280,24 @@ function scrollToPendingSection() {
   const offset = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--kb-section-offset")) || 150;
   window.scrollTo({ top: window.scrollY + target.getBoundingClientRect().top - offset, behavior: "instant" });
   pendingSectionVerse = null;
+}
+
+function positionReaderTranslationPopover() {
+  const popover = document.querySelector(".reader-translation-popover");
+  const anchor = document.querySelector(".reader-translation-control");
+  if (!popover || !anchor) return;
+  const margin = 12;
+  const viewportWidth = document.documentElement.clientWidth;
+  const anchorRect = anchor.getBoundingClientRect();
+  const width = Math.min(popover.offsetWidth, viewportWidth - margin * 2);
+  let left = anchorRect.right - width;
+  if (left < margin) left = anchorRect.left;
+  left = Math.max(margin, Math.min(left, viewportWidth - width - margin));
+  popover.style.position = "fixed";
+  popover.style.left = `${left}px`;
+  popover.style.right = "auto";
+  popover.style.top = `${anchorRect.bottom + 9}px`;
+  popover.style.width = `${width}px`;
 }
 
 function bindImageSkeletons() {
@@ -952,6 +971,8 @@ function syncReaderFromLocation() {
 
 window.addEventListener("popstate", syncReaderFromLocation);
 window.addEventListener("hashchange", syncReaderFromLocation);
+window.addEventListener("resize", () => { if (state.readerTranslationOpen) positionReaderTranslationPopover(); });
+window.addEventListener("scroll", () => { if (state.readerTranslationOpen) positionReaderTranslationPopover(); }, { passive: true });
 bindReaderReadingProgress();
 render();
 updateReaderReadingProgress();
