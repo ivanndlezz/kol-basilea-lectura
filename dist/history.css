@@ -151,3 +151,12 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 .kb-history-app .kb-genesis-chevron .kb-lucide{width:16px;height:16px;transition:transform .18s ease}
 .kb-history-app .kb-genesis-unit[open] .kb-genesis-chevron .kb-lucide{transform:rotate(180deg)}
 .kb-history-app .kb-genesis-links .kb-lucide,.kb-history-app .kb-genesis-related .kb-lucide,.kb-history-app .kb-genesis-read .kb-lucide{width:15px;height:15px}
+
+/* Semantic story section: one heading, contextual description, existing filters. */
+.kb-history-app .kb-story-section{margin-top:28px}
+.kb-history-app .kb-story-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:6px}
+.kb-history-app .kb-story-heading h3{margin:0;font:700 23px/1.2 -apple-system,BlinkMacSystemFont,system-ui,sans-serif;letter-spacing:-.025em;color:var(--ink)}
+.kb-history-app .kb-story-heading>span{flex:none;color:#738078;font:400 13px/1.4 system-ui,sans-serif}
+.kb-history-app .kb-story-context{margin:0 0 18px;color:#657369;font:400 14px/1.5 system-ui,sans-serif}
+.kb-history-app .kb-story-section .kb-periods{margin:0 0 22px}
+@media(prefers-color-scheme:dark){.kb-history-app .kb-story-context,.kb-history-app .kb-story-heading>span{color:#b1c1b4}}
