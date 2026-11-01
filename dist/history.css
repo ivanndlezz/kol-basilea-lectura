@@ -334,3 +334,33 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 }
 .kb-history-app #scale-numbers>button{min-height:0;height:100%;box-sizing:border-box}
 .kb-history-app #selector{contain:layout}
+
+/* Compact chip geometry: same dimensions before and after hydration. */
+.kb-history-app #selector{
+  height:148px!important;
+  min-height:148px!important;
+  max-height:148px!important;
+  flex:0 0 148px!important;
+}
+.kb-history-app #selector #era-strip{
+  height:148px;
+  min-height:148px;
+  max-height:148px;
+  align-items:flex-start;
+}
+.kb-history-app #selector #era-strip>.era{
+  height:128px;
+  min-height:128px;
+  max-height:128px;
+  justify-content:flex-start;
+  gap:5px;
+}
+.kb-history-app #selector #era-strip>.era .era-date{
+  margin-top:2px;
+}
+@media(max-width:360px){
+  .kb-history-app #selector #era-strip>.era{
+    padding-top:12px;
+    padding-bottom:12px;
+  }
+}
