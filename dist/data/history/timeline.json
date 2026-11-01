@@ -1020,6 +1020,171 @@
         "src": "assets/images/history/babel.webp",
         "alt": "Ilustración editorial de Babel"
       }
+    },
+    {
+      "id": "llamado-de-abram",
+      "eraId": "patriarchs",
+      "order": 1,
+      "title": "El llamado de Abram",
+      "reference": "Génesis 12:1–9",
+      "chapter": 12,
+      "summary": "Abram deja su tierra ante la promesa de una nueva nación.",
+      "subEraId": "patriarchs--abraham",
+      "status": "outline"
+    },
+    {
+      "id": "abram-en-egipto",
+      "eraId": "patriarchs",
+      "order": 2,
+      "title": "Abram en Egipto",
+      "reference": "Génesis 12:10–20",
+      "chapter": 12,
+      "summary": "El hambre conduce a Abram a Egipto y pone en peligro a Sarai.",
+      "subEraId": "patriarchs--abraham",
+      "status": "outline"
+    },
+    {
+      "id": "abram-y-lot",
+      "eraId": "patriarchs",
+      "order": 3,
+      "title": "Abram y Lot",
+      "reference": "Génesis 13–14",
+      "chapter": 13,
+      "summary": "La separación de Lot y el rescate tras la guerra de los reyes.",
+      "subEraId": "patriarchs--abraham",
+      "status": "outline"
+    },
+    {
+      "id": "pacto-con-abraham",
+      "eraId": "patriarchs",
+      "order": 4,
+      "title": "El pacto y la promesa",
+      "reference": "Génesis 15–17",
+      "chapter": 15,
+      "summary": "La promesa de descendencia y tierra, y la señal del pacto.",
+      "subEraId": "patriarchs--abraham",
+      "status": "outline"
+    },
+    {
+      "id": "sodoma-y-gomorra",
+      "eraId": "patriarchs",
+      "order": 5,
+      "title": "Sodoma y Gomorra",
+      "reference": "Génesis 18–19",
+      "chapter": 18,
+      "summary": "La intercesión de Abraham y el juicio sobre las ciudades.",
+      "subEraId": "patriarchs--abraham",
+      "status": "outline"
+    },
+    {
+      "id": "nacimiento-de-isaac",
+      "eraId": "patriarchs",
+      "order": 6,
+      "title": "El nacimiento de Isaac",
+      "reference": "Génesis 20–21",
+      "chapter": 20,
+      "summary": "El nacimiento del hijo prometido y las tensiones de la familia.",
+      "subEraId": "patriarchs--abraham",
+      "status": "outline"
+    },
+    {
+      "id": "sacrificio-de-isaac",
+      "eraId": "patriarchs",
+      "order": 7,
+      "title": "La prueba de Abraham",
+      "reference": "Génesis 22",
+      "chapter": 22,
+      "summary": "Abraham es puesto a prueba en el monte Moria.",
+      "subEraId": "patriarchs--abraham",
+      "status": "outline"
+    },
+    {
+      "id": "rebeca-e-isaac",
+      "eraId": "patriarchs",
+      "order": 8,
+      "title": "Isaac y Rebeca",
+      "reference": "Génesis 23–26",
+      "chapter": 23,
+      "summary": "La muerte de Sara, el matrimonio de Isaac y la continuidad de la promesa.",
+      "subEraId": "patriarchs--isaac-jacob",
+      "status": "outline"
+    },
+    {
+      "id": "esau-y-jacob",
+      "eraId": "patriarchs",
+      "order": 9,
+      "title": "Esaú y Jacob",
+      "reference": "Génesis 25:19–34; 27",
+      "chapter": 25,
+      "summary": "Dos hermanos enfrentados por la primogenitura y la bendición.",
+      "subEraId": "patriarchs--isaac-jacob",
+      "status": "outline"
+    },
+    {
+      "id": "sueno-de-jacob",
+      "eraId": "patriarchs",
+      "order": 10,
+      "title": "El sueño de Jacob",
+      "reference": "Génesis 28–31",
+      "chapter": 28,
+      "summary": "Betel, el encuentro con Dios y los años de Jacob en casa de Labán.",
+      "subEraId": "patriarchs--isaac-jacob",
+      "status": "outline"
+    },
+    {
+      "id": "jacob-israel",
+      "eraId": "patriarchs",
+      "order": 11,
+      "title": "Jacob recibe el nombre Israel",
+      "reference": "Génesis 32–35",
+      "chapter": 32,
+      "summary": "La lucha junto al río, el reencuentro con Esaú y el regreso a Betel.",
+      "subEraId": "patriarchs--isaac-jacob",
+      "status": "outline"
+    },
+    {
+      "id": "jose-vendido",
+      "eraId": "patriarchs",
+      "order": 12,
+      "title": "José vendido por sus hermanos",
+      "reference": "Génesis 37–38",
+      "chapter": 37,
+      "summary": "La rivalidad entre hermanos lleva a José lejos de su hogar.",
+      "subEraId": "patriarchs--jose-egipto",
+      "status": "outline"
+    },
+    {
+      "id": "jose-en-egipto",
+      "eraId": "patriarchs",
+      "order": 13,
+      "title": "José en Egipto",
+      "reference": "Génesis 39–41",
+      "chapter": 39,
+      "summary": "De la esclavitud y la prisión al gobierno de Egipto.",
+      "subEraId": "patriarchs--jose-egipto",
+      "status": "outline"
+    },
+    {
+      "id": "jose-y-sus-hermanos",
+      "eraId": "patriarchs",
+      "order": 14,
+      "title": "José y sus hermanos",
+      "reference": "Génesis 42–45",
+      "chapter": 42,
+      "summary": "El hambre provoca el reencuentro y abre camino al perdón.",
+      "subEraId": "patriarchs--jose-egipto",
+      "status": "outline"
+    },
+    {
+      "id": "israel-en-egipto",
+      "eraId": "patriarchs",
+      "order": 15,
+      "title": "La familia de Israel en Egipto",
+      "reference": "Génesis 46–50",
+      "chapter": 46,
+      "summary": "Jacob desciende a Egipto; bendiciones, muerte y esperanza de retorno.",
+      "subEraId": "patriarchs--jose-egipto",
+      "status": "outline"
     }
   ],
   "schemaVersion": 2,
@@ -1109,34 +1274,52 @@
       "eraId": "patriarchs",
       "order": 1,
       "title": "Abraham",
-      "storyIds": [],
+      "storyIds": [
+        "llamado-de-abram",
+        "abram-en-egipto",
+        "abram-y-lot",
+        "pacto-con-abraham",
+        "sodoma-y-gomorra",
+        "nacimiento-de-isaac",
+        "sacrificio-de-isaac"
+      ],
       "eventIds": [
         "abraham"
       ],
-      "status": "outline"
+      "status": "curated"
     },
     {
       "id": "patriarchs--isaac-jacob",
       "eraId": "patriarchs",
       "order": 2,
       "title": "Isaac y Jacob",
-      "storyIds": [],
+      "storyIds": [
+        "rebeca-e-isaac",
+        "esau-y-jacob",
+        "sueno-de-jacob",
+        "jacob-israel"
+      ],
       "eventIds": [
         "jacob",
         "editorial-patriarchs-29"
       ],
-      "status": "outline"
+      "status": "curated"
     },
     {
       "id": "patriarchs--jose-egipto",
       "eraId": "patriarchs",
       "order": 3,
       "title": "José y Egipto",
-      "storyIds": [],
+      "storyIds": [
+        "jose-vendido",
+        "jose-en-egipto",
+        "jose-y-sus-hermanos",
+        "israel-en-egipto"
+      ],
       "eventIds": [
         "joseph"
       ],
-      "status": "outline"
+      "status": "curated"
     },
     {
       "id": "exodus-judges--liberation",
