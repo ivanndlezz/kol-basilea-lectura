@@ -1,0 +1,33 @@
+name: Audit historical section boundaries against RV1909
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/audit-history-headings.mjs'
+      - '.github/workflows/audit-history-headings.yml'
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch source RV1909 and candidate BSB boundaries
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/history-audit/rvr1909
+          curl --fail --location --retry 3 --silent --show-error 'https://ebible.org/Scriptures/spaRV1909_usfm.zip' -o /tmp/history-audit/rvr1909.zip
+          unzip -q /tmp/history-audit/rvr1909.zip -d /tmp/history-audit/rvr1909
+          curl --fail --location --retry 3 --silent --show-error 'https://raw.githubusercontent.com/BSB-publishing/bsb-data-output/main/base/headings.jsonl' -o /tmp/history-audit/headings.jsonl
+      - name: Convert official RV1909 source
+        run: node scripts/convert-usfm.mjs /tmp/history-audit/rvr1909 dist/data/rvr1909 rvr1909 eBible.org
+      - name: Compare four pilot books and produce reference-only report
+        run: node scripts/audit-history-headings.mjs /tmp/history-audit/headings.jsonl dist/data/rvr1909 reports/history-heading-compatibility.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: history-heading-compatibility
+          path: reports/history-heading-compatibility.json
+          if-no-files-found: warn
+          retention-days: 30
