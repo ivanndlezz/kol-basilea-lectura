@@ -1058,3 +1058,9 @@ a:not([class]):visited{color:var(--brand-dark)}
 .scripture-passage > .kb-section-nav { margin: 14px 0 24px; }
 .scripture-passage > .kb-section-nav .kb-section-tabs { padding-inline: 0; }
 
+
+/* Reader CTA colors follow the reading state, independent of book category. */
+.reader-page .reader-action-complete:not(:disabled) { background: #278452; color: #fff; box-shadow: 0 8px 18px rgba(39,132,82,.22); }
+.reader-page .reader-action-complete:not(:disabled):hover { background: #1d6940; }
+.reader-page .reader-action-continue:not(:disabled) { background: #2563eb; color: #fff; box-shadow: 0 8px 18px rgba(37,99,235,.22); }
+.reader-page .reader-action-continue:not(:disabled):hover { background: #1d4ed8; }
