@@ -270,3 +270,13 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
  .kb-history-app #selector #era-strip>.era{transition:none}
  .kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{animation:none}
 }
+
+/* Opacity only: initial chips occupy their final geometry from the first paint. */
+@keyframes kb-chip-fade{from{opacity:0}to{opacity:1}}
+.kb-history-app #selector #era-strip>.era{
+  animation:kb-chip-fade 260ms ease-out both;
+  animation-delay:140ms;
+}
+@media(prefers-reduced-motion:reduce){
+ .kb-history-app #selector #era-strip>.era{animation:none}
+}
