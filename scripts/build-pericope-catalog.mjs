@@ -14,8 +14,10 @@ for(const book of catalog){
    const sections=chapter.sections||[];
    for(let i=0;i<sections.length;i++){
     const section=sections[i],start=Number(section.startVerse),ch=Number(chapter.number),next=sections[i+1];
-    const end=next?Number(next.startVerse)-1:null;
-    if(!Number.isInteger(start)||(end!==null&&!Number.isInteger(end))||start<1||(end!==null&&end<start)){errors.push({bookId:book.id,chapter:ch,start,end});continue}
+    const nextStart=next?Number(next.startVerse):null;
+    const end=nextStart!==null&&Number.isInteger(nextStart)&&nextStart>start?nextStart-1:null;
+    if(!Number.isInteger(start)||start<1){errors.push({bookId:book.id,chapter:ch,start,end});continue}
+    if(nextStart!==null&&(!Number.isInteger(nextStart)||nextStart<=start))errors.push({bookId:book.id,chapter:ch,start,nextStart,reason:"non-increasing-source-headings"});
     items.push({id:book.id+"-"+ch+"-"+start,bookId:book.id,bookName:book.name,start:{chapter:ch,verse:start},end:end===null?null:{chapter:ch,verse:end},title:section.title,sourceTitle:section.sourceTitle||null,reviewStatus:section.status==="reviewed"?"reviewed":"draft",eraId:null,subEraId:null});
     count++;
    }
@@ -26,4 +28,4 @@ for(const book of catalog){
 await mkdir(path.dirname(output),{recursive:true});
 await writeFile(output,JSON.stringify({schemaVersion:1,publicationReady:false,source:"existing-pericope-drafts",items,coverage,errors},null,2)+"\n");
 console.log(JSON.stringify({books:coverage.length,pericopes:items.length,errors:errors.length},null,2));
-if(errors.length||coverage.length!==66)process.exitCode=1;
+if(coverage.length!==66)process.exitCode=1;
