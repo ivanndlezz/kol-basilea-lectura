@@ -935,7 +935,11 @@
       "summary": "El mundo, la vida y el ser humano: un relato de comienzos y propósito.",
       "visual": "cosmos",
       "subEraId": "primeval--creation-eden",
-      "status": "published"
+      "status": "published",
+      "cover": {
+        "src": "assets/images/history/creacion.webp",
+        "alt": "Ilustración editorial de La creación"
+      }
     },
     {
       "id": "caida",
@@ -947,7 +951,11 @@
       "summary": "Una decisión, una ruptura y la pérdida del jardín.",
       "visual": "garden",
       "subEraId": "primeval--creation-eden",
-      "status": "published"
+      "status": "published",
+      "cover": {
+        "src": "assets/images/history/caida.webp",
+        "alt": "Ilustración editorial de La caída"
+      }
     },
     {
       "id": "cain-y-abel",
@@ -959,7 +967,11 @@
       "summary": "Dos hermanos, dos ofrendas y la violencia que irrumpe en la familia.",
       "visual": "brothers",
       "subEraId": "primeval--first-generations",
-      "status": "published"
+      "status": "published",
+      "cover": {
+        "src": "assets/images/history/cain-y-abel.webp",
+        "alt": "Ilustración editorial de Caín y Abel"
+      }
     },
     {
       "id": "primeras-ciudades-y-reinos",
@@ -971,7 +983,11 @@
       "summary": "Ciudades, genealogías y el primer reino mencionado en el relato de Génesis.",
       "visual": "city",
       "subEraId": "primeval--first-generations",
-      "status": "published"
+      "status": "published",
+      "cover": {
+        "src": "assets/images/history/primeras-ciudades.webp",
+        "alt": "Ilustración editorial de Las primeras ciudades y reinos"
+      }
     },
     {
       "id": "diluvio",
@@ -983,7 +999,11 @@
       "summary": "El juicio de las aguas y una alianza para comenzar de nuevo.",
       "visual": "flood",
       "subEraId": "primeval--flood-renewal",
-      "status": "published"
+      "status": "published",
+      "cover": {
+        "src": "assets/images/history/diluvio.webp",
+        "alt": "Ilustración editorial de El diluvio"
+      }
     },
     {
       "id": "babel",
@@ -995,7 +1015,11 @@
       "summary": "Una ciudad, una torre y la dispersión de los pueblos.",
       "visual": "tower",
       "subEraId": "primeval--nations-babel",
-      "status": "published"
+      "status": "published",
+      "cover": {
+        "src": "assets/images/history/babel.webp",
+        "alt": "Ilustración editorial de Babel"
+      }
     }
   ],
   "schemaVersion": 2,
