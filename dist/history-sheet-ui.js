@@ -29,7 +29,7 @@ export function renderEraOverview({era,books,navigation,events=[],periods=[],rea
     const bookId=event.bookIds?.[0],meta=bookMeta[bookId],name=meta?.name||bookId||"";
     const href=bookId?readerPath+'?book='+encodeURIComponent(bookId)+'&chapter=1':"";
     const status=event.date?.precision==="debated"?"Cronología debatida":event.dateLabel||"Contexto histórico";
-    return '<article class="kb-event-card"><div class="kb-event-card-copy"><small>'+esc(status)+'</small><h4>'+esc(event.title)+'</h4><p>'+esc(name?("Relacionado con "+name):"Acontecimiento de la era")+'</p></div>'+(href?'<a href="'+esc(href)+'" aria-label="Explorar '+esc(name)+' en la Biblia">Explorar libro <span aria-hidden="true">↗</span></a>':"")+'</article>';
+    return '<article class="kb-event-card"><div class="kb-event-card-copy"><small>'+esc(status)+'</small><h4>'+esc(event.title)+'</h4><p>'+esc(name?("Relacionado con "+name):"Acontecimiento de la era")+'</p><small>Ficha narrativa pendiente de revisión editorial</small></div>'+(href?'<a href="'+esc(href)+'" aria-label="Explorar '+esc(name)+' en la Biblia">Explorar libro <span aria-hidden="true">↗</span></a>':"")+'</article>';
   }).join("")+'</div></section>').join("");
   const intro=era.summary?'<p class="kb-story-context">'+esc(era.summary)+'</p>':"";
   const body=intro+(events.length?'<section class="kb-history-explorer"><div class="kb-history-explorer-head"><span>ATLAS HISTÓRICO</span><strong>'+events.length+' acontecimientos</strong></div><p class="kb-history-explorer-note">Explora los acontecimientos vinculados con esta época. Las referencias y narraciones detalladas se incorporarán conforme se revisen.</p>'+cards+'</section>':"");
