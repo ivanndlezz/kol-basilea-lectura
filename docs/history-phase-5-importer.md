@@ -22,3 +22,26 @@ Salidas: `sections[]` con referencias de inicio/fin, procedencia y `reviewStatus
 
 ## Próxima puerta
 Ejecutar con los archivos reales del workflow, revisar los 439 intervalos y los informes; después agregar pruebas de rangos y un mapeo editorial de clasificación, antes de ampliar a los 66 libros.
+
+## Clasificación editorial (segunda etapa)
+
+`scripts/classify-history-sections.mjs` lee el catálogo generado y el árbol de eras de `dist/data/history/timeline.json`. Añade `eraCandidates` según `bookIds`, pero conserva `eraId: null` mientras no haya una decisión editorial explícita.
+
+```sh
+node scripts/classify-history-sections.mjs reports/history-sections-pilot.json dist/data/history/timeline.json reports/history-sections-classified.json reports/history-classification-report.json
+```
+
+Se puede pasar un quinto argumento con un archivo JSON de revisiones manuales, indexado por identificador de sección:
+
+```json
+{
+  "exodo-001": {
+    "eraId": "exodus-judges",
+    "kind": "literary-unit",
+    "title": "Título editorial revisado",
+    "icon": "book-open"
+  }
+}
+```
+
+No se proporcionan revisiones por defecto: una coincidencia por libro no acredita cronología ni género. Las revisiones deben comprobarse con el texto bíblico antes de publicarse. El reporte informa cuántas secciones están sugeridas, revisadas o sin clasificar. El workflow de auditoría ahora genera ambos reportes y mantiene `publicationReady: false`.
