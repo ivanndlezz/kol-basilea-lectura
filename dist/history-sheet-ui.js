@@ -21,17 +21,24 @@ export function renderEraSheet({era,books="",body="",navigation=""}){
   return '<header class="kb-sheet-heading"><h2>'+esc(era.title)+'</h2><p class="kb-history-context">'+esc(era.subtitle)+'</p></header>'+books+'<div class="kb-sheet-content">'+body+'</div>'+navigation;
 }
 // All eras share the same narrative-card surface. Unreviewed events are clearly labelled.
-export function renderEraOverview({era,books,navigation,events=[],periods=[],readerPath=""}){
+export function renderEraOverview({era,books,navigation,events=[],periods=[],readerPath="",basePath="",selectedEvent=null}){
+  if(selectedEvent){
+    const period=periods.find(p=>p.id===selectedEvent.subEraId);
+    const sourceBooks=(selectedEvent.bookIds||[]).filter(Boolean);
+    const sources=sourceBooks.length?'<p class="kb-story-context">Libros relacionados: '+sourceBooks.map(esc).join(", ")+'</p>':'<p class="kb-story-context">Contexto histórico extrabíblico; no hay un pasaje directo asignado.</p>';
+    const body='<a class="kb-story-back" href="'+esc(basePath)+'">← Todos los acontecimientos</a><p class="plate-kicker">'+esc(era.title)+(period?' · '+esc(period.title):'')+'</p><h2>'+esc(selectedEvent.title)+'</h2><p class="summary">'+esc(era.summary||era.subtitle)+'</p>'+sources+'<p class="kb-history-explorer-note">Ficha contextual en preparación. Todavía no hay un relato revisado ni una referencia precisa para este acontecimiento.</p>';
+    return renderEraSheet({era,books,body,navigation});
+  }
   const groups=periods.length?periods.map(p=>({id:p.id,title:p.title,items:events.filter(e=>e.subEraId===p.id)})).filter(g=>g.items.length):[{id:"all",title:"Acontecimientos",items:events}];
   const covered=new Set(groups.flatMap(g=>g.items.map(e=>e.id)));
   const rest=events.filter(e=>!covered.has(e.id));
   if(rest.length)groups.push({id:"other",title:"Otros acontecimientos",items:rest});
   const cards=groups.map(group=>'<section class="kb-story-section" aria-label="'+esc(group.title)+'"><div class="kb-story-heading"><h3>'+esc(group.title)+'</h3><span>'+group.items.length+' acontecimientos</span></div><div class="kb-story-grid">'+group.items.map(event=>{
     const bookId=event.bookIds?.[0],meta=bookMeta[bookId],name=meta?.name||bookId||"";
-    const href=bookId?readerPath+'?book='+encodeURIComponent(bookId)+'&chapter=1':"";
+    const href=basePath+encodeURIComponent(event.id)+"/";
     const status=event.date?.precision==="debated"?"Cronología debatida":event.dateLabel||"Contexto histórico";
     const content='<div class="kb-story-art" aria-hidden="true"><b>✦</b></div><div class="kb-story-copy"><small>'+esc(status)+'</small><h3>'+esc(event.title)+'</h3><small>Acontecimiento · Ficha pendiente de revisión</small>'+(name?'<small>Relacionado con '+esc(name)+'</small>':"")+'</div>';
-    return href?'<a class="kb-story" href="'+esc(href)+'" aria-label="'+esc(event.title)+': explorar '+esc(name)+'">'+content+'</a>':'<article class="kb-story">'+content+'</article>';
+    return '<a class="kb-story" href="'+esc(href)+'" aria-label="Abrir ficha de '+esc(event.title)+'">'+content+'</a>';
   }).join("")+'</div></section>').join("");
   const intro=era.summary?'<p class="kb-story-context">'+esc(era.summary)+'</p>':"";
   const body=intro+'<p class="kb-history-explorer-note">Estos acontecimientos todavía no son relatos editoriales revisados. Las fichas se incorporarán tras su validación.</p>'+cards;
