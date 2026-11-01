@@ -51,3 +51,13 @@ No se proporcionan revisiones por defecto: una coincidencia por libro no acredit
 `scripts/build-history-editorial-review.mjs` selecciona tres intervalos por libro piloto (primero, medio, último) desde el catálogo clasificado. Genera `reports/history-editorial-review.json` y `reports/history-editorial-review-report.json`, incluidos en el artefacto de Actions.
 
 El registro de revisión exige contrastar el texto de RV1909 antes de decidir `kind`, `eraId`, `subEraId`, título, resumen e icono; `chronologyStatus` comienza como `unassessed`. No se aprueban relatos ni se cambian datos de producción automáticamente. La muestra mide la capacidad de revisión, **no** la representatividad estadística del conjunto.
+
+## Cola editorial completa
+
+El generador ahora usa el modo `all` por defecto: produce una entrada de revisión por **cada sección importada** de los cuatro libros piloto (439 según la última auditoría). El modo `sample` conserva la selección de tres por libro para diagnósticos rápidos. El JSON usa `items[]` y el reporte indica `total` y `pending`. La ejecución no convierte entradas pendientes en historias publicadas.
+
+```sh
+node scripts/build-history-editorial-review.mjs reports/history-sections-classified.json reports/history-editorial-review.json reports/history-editorial-review-report.json all
+```
+
+**Para llegar a los 66 libros:** ampliar el mapeo OSIS→RV1909, reemplazar el listado fijo de libros en los importadores y validar la cobertura de cada libro. Esta expansión no está realizada todavía.
