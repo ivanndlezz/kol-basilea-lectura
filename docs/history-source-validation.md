@@ -87,3 +87,19 @@ Se inspeccionó el repositorio Kol Basilea: `dist/data/bible-translations.js` de
 3. Registrar diferencias de versificación y decidir su tratamiento editorial.
 
 No se debe dar por aprobado el paso 4 ni avanzar a publicación automática de relatos mientras persistan estos bloqueos.
+
+
+## Corrección de diagnóstico — corpus RV1909 generado en despliegue (2026-11-01)
+
+La ausencia de `dist/data/rvr1909/` en el **árbol fuente** de GitHub **no implica** ausencia de la traducción en el sitio publicado. Se verificaron los siguientes archivos reales del repositorio:
+
+- `.github/workflows/static.yml`: el despliegue descarga `https://ebible.org/Scriptures/spaRV1909_usfm.zip`, descomprime la fuente, ejecuta `node scripts/convert-usfm.mjs` para RV1909 y otras tres traducciones, valida resultados y publica `dist/`.
+- `.github/workflows/build-bible.yml`: genera los JSON de las cuatro traducciones como artefacto descargable (retención 7 días).
+- `scripts/convert-usfm.mjs`: convierte USFM por libro a JSON y valida número de capítulos y presencia de versículos iniciales.
+- `scripts/validate-generated.mjs`: verifica 66 libros, 1,189 capítulos y al menos 28,000 versículos por traducción.
+
+**Consecuencia:** la ruta RV1909 está **identificada y reproducible por diseño**, no hay que reconstruir un corpus nuevo. No se ha inspeccionado aún el resultado efectivo del último workflow ni contrastado sus versículos contra los encabezados BSB; por tanto, la compatibilidad de versificación sigue **pendiente de medición**.
+
+**Próxima prueba auditable:** ejecutar una comparación no distributiva de los registros `s1` de BSB (EXO, JDG, LUK, ACT) contra `dist/data/rvr1909/{exodo,jueces,lucas,hechos}.json` generados por el workflow. Validar existencia de capítulo/versículo, orden, encabezados duplicados, diferencias de versificación y porcentajes de aceptación; publicar solo métricas y referencias, no títulos BSB. Mantener pendiente la licencia específica de `base/headings.jsonl`.
+
+La afirmación anterior de que no se encontró el directorio fue correcta respecto del **repositorio fuente**, pero insuficiente como diagnóstico del **producto desplegado**.
