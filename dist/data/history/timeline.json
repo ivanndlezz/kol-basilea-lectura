@@ -830,5 +830,67 @@
     "minYear": -1000,
     "maxYear": 2026,
     "yearConvention": "Los años negativos indican a. C.; las eras sin fechas verificables no se representan a escala."
-  }
+  },
+  "stories": [
+    {
+      "id": "creacion",
+      "eraId": "primeval",
+      "order": 1,
+      "title": "La creación",
+      "reference": "Génesis 1–2",
+      "chapter": 1,
+      "summary": "El mundo, la vida y el ser humano: un relato de comienzos y propósito.",
+      "visual": "cosmos"
+    },
+    {
+      "id": "caida",
+      "eraId": "primeval",
+      "order": 2,
+      "title": "La caída",
+      "reference": "Génesis 3",
+      "chapter": 3,
+      "summary": "Una decisión, una ruptura y la pérdida del jardín.",
+      "visual": "garden"
+    },
+    {
+      "id": "cain-y-abel",
+      "eraId": "primeval",
+      "order": 3,
+      "title": "Caín y Abel",
+      "reference": "Génesis 4:1–16",
+      "chapter": 4,
+      "summary": "Dos hermanos, dos ofrendas y la violencia que irrumpe en la familia.",
+      "visual": "brothers"
+    },
+    {
+      "id": "primeras-ciudades-y-reinos",
+      "eraId": "primeval",
+      "order": 4,
+      "title": "Las primeras ciudades y reinos",
+      "reference": "Génesis 4:17–24; 10:8–12",
+      "chapter": 4,
+      "summary": "Ciudades, genealogías y el primer reino mencionado en el relato de Génesis.",
+      "visual": "city"
+    },
+    {
+      "id": "diluvio",
+      "eraId": "primeval",
+      "order": 5,
+      "title": "El diluvio",
+      "reference": "Génesis 6–9",
+      "chapter": 6,
+      "summary": "El juicio de las aguas y una alianza para comenzar de nuevo.",
+      "visual": "flood"
+    },
+    {
+      "id": "babel",
+      "eraId": "primeval",
+      "order": 6,
+      "title": "Babel",
+      "reference": "Génesis 11:1–9",
+      "chapter": 11,
+      "summary": "Una ciudad, una torre y la dispersión de los pueblos.",
+      "visual": "tower"
+    }
+  ]
 }
