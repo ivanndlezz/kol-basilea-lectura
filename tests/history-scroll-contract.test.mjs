@@ -7,7 +7,7 @@ const css=await load('history.css');
 const js=await load('history.js');
 const timeline=JSON.parse(await load('data/history/timeline.json'));
 const rule=selector=>{
-  const start=css.lastIndexOf(selector+'{');
+  const start=css.indexOf(selector+'{');
   assert.ok(start>=0,'Missing CSS selector: '+selector);
   return css.slice(start,css.indexOf('}',start)+1);
 };
