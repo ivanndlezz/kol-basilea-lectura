@@ -124,3 +124,23 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 .kb-history-app .kb-genesis-heading h3{letter-spacing:-.025em}
 .kb-history-app .kb-genesis-intro{margin-top:8px}
 @media(prefers-color-scheme:dark){.kb-history-app .kb-genesis-symbol{background:rgba(113,182,151,.14)}}
+
+/* Approved semantic composition: no redundant eyebrow headings. */
+.kb-history-app .era-detail{padding-top:24px}
+.kb-history-app .era-detail>h2{margin:0 0 8px}
+.kb-history-app .kb-history-context{margin:0 0 18px;color:#657369;font:400 15px/1.45 -apple-system,BlinkMacSystemFont,system-ui,sans-serif}
+.kb-history-app .kb-history-books{margin:0 0 24px}
+.kb-history-app .kb-history-book-row{margin:0}
+.kb-history-app .kb-history-book{gap:12px}
+.kb-history-app .kb-history-book-icon{display:flex;flex:0 0 24px;align-items:center;justify-content:center;color:var(--ink)}
+.kb-history-app .kb-history-book-icon svg{width:22px;height:22px}
+.kb-history-app .kb-history-book-info strong{color:var(--ink)}
+.kb-history-app .kb-genesis{margin-top:8px}
+.kb-history-app .kb-genesis-heading{margin-bottom:4px;align-items:baseline}
+.kb-history-app .kb-genesis-heading h3{font-size:22px;letter-spacing:-.025em}
+.kb-history-app .kb-genesis-intro{margin:8px 0 16px}
+.kb-history-app .kb-genesis-unit summary{min-height:76px;gap:12px}
+.kb-history-app .kb-genesis-symbol{font-size:21px;color:#5b655f;background:#f1f2ef}
+.kb-history-app .kb-genesis-unit-title strong{font-size:17px}
+.kb-history-app .kb-genesis-unit-title small{font-size:13px}
+@media(prefers-color-scheme:dark){.kb-history-app .kb-history-context{color:#b1c1b4}.kb-history-app .kb-genesis-symbol{background:#2a3a30;color:#c5d4c7}}
