@@ -39,3 +39,17 @@
 - https://freely-given.org/OBD/
 
 **Estado del hito 4:** investigación y evaluación preliminar realizadas; aprobación final BLOQUEADA por acceso y verificación de archivos. No ejecutar el paso 5 sobre datos no aprobados.
+
+
+## Actualización: alternativa pública prioritaria — BSB (2026-11-01)
+
+**Candidato principal para el piloto: BSB-publishing/bsb-data-output.** El repositorio publica `base/headings.jsonl` (índice de encabezados) y `base/paragraphs.jsonl`. El proyecto BSB-publishing/bsb2usfm documenta la columna `Hdg` como encabezados de sección y declara cobertura de los 66 libros. En Berean Blue se documenta la extracción de paratexto de la BSB desde USFM como dominio público, con límites de perícopas por libro. Esto ofrece una ruta abierta más viable que NuBerea, pero aún hay que inspeccionar el archivo real y verificar condiciones concretas de redistribución del índice.
+
+Fuentes:
+- https://github.com/BSB-publishing/bsb-data-output
+- https://github.com/BSB-publishing/bsb2usfm/blob/main/README_developer.md
+- https://berean.blue/sources
+
+**Decisión revisada:** priorizar BSB como fuente candidata de encabezados/límites para el piloto Éxodo–Jueces–Lucas–Hechos; NuBerea queda como fuente complementaria condicionada a acceso autorizado. No copiar el texto inglés ni sustituir RV1909. Los encabezados son divisiones editoriales, no relatos automáticamente. Su agrupación y los títulos españoles requieren revisión.
+
+**Aprobación:** candidata, **no aprobada aún para importación productiva**. Quedan por ejecutar: descarga/inspección de `headings.jsonl`, mapeo de versificación y libros, medición de cobertura real 66/66, verificación de derechos del archivo concreto y comparación piloto. La selección de fuentes historiográficas para eras 8–10 sigue pendiente.
