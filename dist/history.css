@@ -79,7 +79,7 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 .kb-history-app .top{height:auto;min-height:62px;flex:none;display:grid;grid-template-columns:44px 1fr 44px;align-items:center;gap:8px;padding:calc(8px + env(safe-area-inset-top)) 16px 8px;background:var(--bg);border:0}
 .kb-history-app .back,.kb-history-app .kb-info-button{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--ink);border:1px solid #e3e5dd;text-decoration:none}
 .kb-history-app .top-label{margin:0;text-align:center;font:650 17px/1.2 -apple-system,BlinkMacSystemFont,system-ui,sans-serif;font-style:normal;color:var(--ink)}
-.kb-history-app .page{flex:1;min-height:0;max-width:none;width:100%;padding:0;display:flex;flex-direction:column;overflow:hidden}
+.kb-history-app .page{flex:1;min-height:0;max-width:none;width:100%;padding:0 0 env(safe-area-inset-bottom);display:block;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-y:contain}
 .kb-history-app .atlas{flex:none;margin:4px 18px 0;padding:0;border:0;border-radius:0;background:transparent}
 .kb-history-app .block-head{display:grid;grid-template-columns:6fr 4fr;text-align:left;font:650 13px/1.3 system-ui,sans-serif;margin:0 0 9px}
 .kb-history-app .block-head span:first-child{color:var(--green)}
@@ -105,7 +105,7 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 .kb-history-app .era-title{display:block;min-height:0;margin:0;font:750 clamp(20px,5.6vw,26px)/1.14 system-ui,sans-serif;letter-spacing:-.03em;color:var(--ink)}
 .kb-history-app .era-date{display:flex;align-items:center;gap:7px;margin:0;font:400 13px/1.3 system-ui,sans-serif;color:#65736a}
 .kb-history-app .kb-hatch{width:12px;height:12px;display:inline-block;flex:none;background:repeating-linear-gradient(135deg,var(--green) 0 2px,transparent 2px 5px);border-radius:2px}
-.kb-history-app .era-detail{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;border:0;padding:18px 20px calc(32px + env(safe-area-inset-bottom));scrollbar-width:thin}
+.kb-history-app .era-detail{min-height:45vh;overflow:visible;border:0;padding:18px 20px 32px}
 .kb-history-app .era-detail .plate-kicker{font:650 12px/1.4 system-ui,sans-serif;color:var(--green);letter-spacing:.025em;margin:0 0 8px}
 .kb-history-app .era-detail h2{font:750 clamp(29px,7vw,42px)/1.1 system-ui,sans-serif;letter-spacing:-.035em;margin:0 0 17px}
 .kb-history-app .era-detail .summary{font:400 17px/1.5 system-ui,sans-serif}
