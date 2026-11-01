@@ -1,0 +1,530 @@
+{
+  "version": 1,
+  "editorialNote": "Las eras son convenciones historiográficas que pueden solaparse. Los relatos primigenios y patriarcales no reciben fechas históricas inventadas.",
+  "eras": [
+    {
+      "id": "primeval",
+      "title": "Historia primigenia",
+      "subtitle": "Génesis 1–11",
+      "order": 1,
+      "date": {
+        "startYear": null,
+        "endYear": null,
+        "precision": "undated"
+      },
+      "summary": "Los relatos de los orígenes: creación, humanidad, diluvio y Babel.",
+      "bookIds": [
+        "genesis"
+      ],
+      "color": "#78966d"
+    },
+    {
+      "id": "patriarchs",
+      "title": "Patriarcas",
+      "subtitle": "Tradiciones ancestrales de Israel",
+      "order": 2,
+      "date": {
+        "startYear": null,
+        "endYear": null,
+        "precision": "debated"
+      },
+      "summary": "Abraham, Isaac, Jacob y José; los relatos no permiten fijar una cronología histórica segura.",
+      "bookIds": [
+        "genesis"
+      ],
+      "color": "#8aab9d"
+    },
+    {
+      "id": "exodus-judges",
+      "title": "Éxodo y jueces",
+      "subtitle": "Formación de Israel",
+      "order": 3,
+      "date": {
+        "startYear": null,
+        "endYear": null,
+        "precision": "debated"
+      },
+      "summary": "Tradiciones del éxodo, Sinaí, establecimiento en Canaán y liderazgos de los jueces.",
+      "bookIds": [
+        "exodo",
+        "josue",
+        "jueces",
+        "rut"
+      ],
+      "color": "#83a9bd"
+    },
+    {
+      "id": "monarchy",
+      "title": "Monarquía",
+      "subtitle": "Israel y Judá",
+      "order": 4,
+      "date": {
+        "startYear": -1000,
+        "endYear": -586,
+        "precision": "approximate"
+      },
+      "summary": "Monarquía, división de los reinos, profetas y conquistas asiria y babilónica.",
+      "bookIds": [
+        "1-samuel",
+        "2-samuel",
+        "1-reyes",
+        "2-reyes",
+        "1-cronicas",
+        "2-cronicas"
+      ],
+      "color": "#7799b5"
+    },
+    {
+      "id": "exile-restoration",
+      "title": "Exilio y restauración",
+      "subtitle": "Babilonia y Persia",
+      "order": 5,
+      "date": {
+        "startYear": -586,
+        "endYear": -400,
+        "precision": "approximate"
+      },
+      "summary": "Exilio babilónico, retorno bajo dominio persa y reconstrucción del templo.",
+      "bookIds": [
+        "esdras",
+        "nehemias",
+        "ageo",
+        "zacarias"
+      ],
+      "color": "#a494c2"
+    },
+    {
+      "id": "second-temple",
+      "title": "Segundo Templo tardío",
+      "subtitle": "Helenismo y Roma",
+      "order": 6,
+      "date": {
+        "startYear": -400,
+        "endYear": -4,
+        "precision": "approximate"
+      },
+      "summary": "Judea bajo imperios helenísticos y Roma, movimientos judíos y contexto del siglo I.",
+      "bookIds": [
+        "daniel"
+      ],
+      "color": "#c4948b"
+    },
+    {
+      "id": "apostolic",
+      "title": "Jesús y los apóstoles",
+      "subtitle": "Cristianismo del siglo I",
+      "order": 7,
+      "date": {
+        "startYear": -4,
+        "endYear": 100,
+        "precision": "approximate"
+      },
+      "summary": "Ministerio de Jesús y formación de las primeras comunidades cristianas.",
+      "bookIds": [
+        "mateo",
+        "marcos",
+        "lucas",
+        "juan",
+        "hechos",
+        "romanos"
+      ],
+      "color": "#d38d72"
+    },
+    {
+      "id": "patristic",
+      "title": "Cristianismo antiguo",
+      "subtitle": "Padres y concilios",
+      "order": 8,
+      "date": {
+        "startYear": 100,
+        "endYear": 750,
+        "precision": "approximate"
+      },
+      "summary": "Escritores cristianos griegos y latinos, controversias, concilios y tradiciones regionales.",
+      "bookIds": [],
+      "color": "#c9a46d"
+    },
+    {
+      "id": "medieval",
+      "title": "Cristianismo medieval",
+      "subtitle": "Tradiciones y escolástica",
+      "order": 9,
+      "date": {
+        "startYear": 750,
+        "endYear": 1500,
+        "precision": "approximate"
+      },
+      "summary": "Monacato, cristianismos oriental y occidental y teología escolástica.",
+      "bookIds": [],
+      "color": "#b5a178"
+    },
+    {
+      "id": "modern",
+      "title": "Reformas y modernidad",
+      "subtitle": "Del siglo XVI al presente",
+      "order": 10,
+      "date": {
+        "startYear": 1500,
+        "endYear": null,
+        "precision": "open-ended"
+      },
+      "summary": "Reformas, traducciones, misiones y desarrollo de la investigación bíblica.",
+      "bookIds": [],
+      "color": "#87998a"
+    }
+  ],
+  "events": [
+    {
+      "id": "creation",
+      "eraId": "primeval",
+      "title": "Creación y Edén",
+      "order": 1,
+      "date": {
+        "year": null,
+        "precision": "narrative"
+      },
+      "bookIds": [
+        "genesis"
+      ]
+    },
+    {
+      "id": "flood",
+      "eraId": "primeval",
+      "title": "El diluvio",
+      "order": 2,
+      "date": {
+        "year": null,
+        "precision": "narrative"
+      },
+      "bookIds": [
+        "genesis"
+      ]
+    },
+    {
+      "id": "babel",
+      "eraId": "primeval",
+      "title": "Babel",
+      "order": 3,
+      "date": {
+        "year": null,
+        "precision": "narrative"
+      },
+      "bookIds": [
+        "genesis"
+      ]
+    },
+    {
+      "id": "abraham",
+      "eraId": "patriarchs",
+      "title": "Abraham",
+      "order": 4,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "genesis"
+      ]
+    },
+    {
+      "id": "jacob",
+      "eraId": "patriarchs",
+      "title": "Jacob e Israel",
+      "order": 5,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "genesis"
+      ]
+    },
+    {
+      "id": "joseph",
+      "eraId": "patriarchs",
+      "title": "José en Egipto",
+      "order": 6,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "genesis"
+      ]
+    },
+    {
+      "id": "exodus",
+      "eraId": "exodus-judges",
+      "title": "Tradición del éxodo",
+      "order": 7,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "exodo"
+      ]
+    },
+    {
+      "id": "sinai",
+      "eraId": "exodus-judges",
+      "title": "Tradición del Sinaí",
+      "order": 8,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "exodo"
+      ]
+    },
+    {
+      "id": "judges",
+      "eraId": "exodus-judges",
+      "title": "Débora, Gedeón y Sansón",
+      "order": 9,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "jueces"
+      ]
+    },
+    {
+      "id": "united-kingdom",
+      "eraId": "monarchy",
+      "title": "Saúl, David y Salomón",
+      "order": 10,
+      "date": {
+        "year": -1000,
+        "precision": "approximate"
+      },
+      "bookIds": [
+        "1-samuel",
+        "2-samuel",
+        "1-reyes"
+      ]
+    },
+    {
+      "id": "samaria-fall",
+      "eraId": "monarchy",
+      "title": "Caída de Samaria",
+      "order": 11,
+      "date": {
+        "year": -722,
+        "precision": "approximate"
+      },
+      "bookIds": [
+        "2-reyes"
+      ]
+    },
+    {
+      "id": "jerusalem-fall",
+      "eraId": "monarchy",
+      "title": "Destrucción de Jerusalén",
+      "order": 12,
+      "date": {
+        "year": -586,
+        "precision": "approximate"
+      },
+      "bookIds": [
+        "2-reyes",
+        "jeremias"
+      ]
+    },
+    {
+      "id": "babylon-conquest",
+      "eraId": "exile-restoration",
+      "title": "Conquista persa de Babilonia",
+      "order": 13,
+      "date": {
+        "year": -539,
+        "precision": "year"
+      },
+      "bookIds": [
+        "esdras"
+      ]
+    },
+    {
+      "id": "second-temple",
+      "eraId": "exile-restoration",
+      "title": "Segundo Templo reconstruido",
+      "order": 14,
+      "date": {
+        "year": -515,
+        "precision": "approximate"
+      },
+      "bookIds": [
+        "esdras"
+      ]
+    },
+    {
+      "id": "alexander",
+      "eraId": "second-temple",
+      "title": "Conquistas de Alejandro Magno",
+      "order": 15,
+      "date": {
+        "year": -334,
+        "precision": "approximate"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "maccabean",
+      "eraId": "second-temple",
+      "title": "Revuelta macabea",
+      "order": 16,
+      "date": {
+        "year": -167,
+        "precision": "approximate"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "roman-judea",
+      "eraId": "second-temple",
+      "title": "Intervención romana en Judea",
+      "order": 17,
+      "date": {
+        "year": -63,
+        "precision": "year"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "jesus",
+      "eraId": "apostolic",
+      "title": "Jesús de Nazaret",
+      "order": 18,
+      "date": {
+        "year": null,
+        "precision": "approximate"
+      },
+      "bookIds": [
+        "mateo",
+        "marcos",
+        "lucas",
+        "juan"
+      ]
+    },
+    {
+      "id": "pentecost",
+      "eraId": "apostolic",
+      "title": "Pentecostés",
+      "order": 19,
+      "date": {
+        "year": null,
+        "precision": "narrative"
+      },
+      "bookIds": [
+        "hechos"
+      ]
+    },
+    {
+      "id": "paul",
+      "eraId": "apostolic",
+      "title": "Viajes de Pablo",
+      "order": 20,
+      "date": {
+        "year": null,
+        "precision": "approximate"
+      },
+      "bookIds": [
+        "hechos"
+      ]
+    },
+    {
+      "id": "temple-70",
+      "eraId": "apostolic",
+      "title": "Destrucción del Segundo Templo",
+      "order": 21,
+      "date": {
+        "year": 70,
+        "precision": "year"
+      },
+      "bookIds": [
+        "mateo",
+        "marcos",
+        "lucas"
+      ]
+    },
+    {
+      "id": "ignatius",
+      "eraId": "patristic",
+      "title": "Ignacio de Antioquía",
+      "order": 22,
+      "date": {
+        "year": null,
+        "precision": "approximate"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "nicea",
+      "eraId": "patristic",
+      "title": "Concilio de Nicea",
+      "order": 23,
+      "date": {
+        "year": 325,
+        "precision": "year"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "chalcedon",
+      "eraId": "patristic",
+      "title": "Concilio de Calcedonia",
+      "order": 24,
+      "date": {
+        "year": 451,
+        "precision": "year"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "schism",
+      "eraId": "medieval",
+      "title": "Separación entre Roma y Constantinopla",
+      "order": 25,
+      "date": {
+        "year": 1054,
+        "precision": "conventional"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "aquinas",
+      "eraId": "medieval",
+      "title": "Tomás de Aquino",
+      "order": 26,
+      "date": {
+        "year": null,
+        "precision": "approximate"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "reformation",
+      "eraId": "modern",
+      "title": "Reforma protestante",
+      "order": 27,
+      "date": {
+        "year": 1517,
+        "precision": "conventional"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "biblical-studies",
+      "eraId": "modern",
+      "title": "Estudios bíblicos modernos",
+      "order": 28,
+      "date": {
+        "year": null,
+        "precision": "broad"
+      },
+      "bookIds": []
+    }
+  ]
+}
