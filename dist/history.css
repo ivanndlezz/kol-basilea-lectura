@@ -321,3 +321,16 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 .kb-history-app .kb-era-placeholder .kb-chip-meta{width:38%}
 .kb-history-app .kb-era-placeholder .kb-chip-title{width:70%;height:24px}
 .kb-history-app .kb-era-placeholder .kb-chip-date{width:55%}
+
+/* Initial HTML already includes every era card; reserve atlas rows as well.
+   Empty timeline number rows previously gained intrinsic height when JS inserted buttons. */
+.kb-history-app #scale{height:26px;min-height:26px}
+.kb-history-app #scale-numbers{
+  box-sizing:border-box;
+  height:28px;
+  min-height:28px;
+  max-height:28px;
+  align-items:stretch;
+}
+.kb-history-app #scale-numbers>button{min-height:0;height:100%;box-sizing:border-box}
+.kb-history-app #selector{contain:layout}
