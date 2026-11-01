@@ -211,3 +211,36 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
   .kb-history-app #scale.kb-scale-enter>button,
   .kb-history-app #era-detail>*{animation:none!important;transition:none!important}
 }
+
+/* Motion tokens for era selection and asynchronous editorial hydration. */
+@keyframes kb-era-chip-enter{from{opacity:0;transform:translateY(7px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes kb-skeleton-shimmer{from{background-position:180% 0}to{background-position:-180% 0}}
+.kb-history-app .era-strip.kb-era-animated>.era{
+  animation:kb-era-chip-enter 260ms cubic-bezier(.2,.7,.2,1) both;
+}
+.kb-history-app .era-strip.kb-era-animated>.era:nth-child(2){animation-delay:25ms}
+.kb-history-app .era-strip.kb-era-animated>.era:nth-child(3){animation-delay:50ms}
+.kb-history-app .era-strip.kb-era-animated>.era:nth-child(4){animation-delay:75ms}
+.kb-history-app .era-strip.kb-era-animated>.era:nth-child(n+5){animation-delay:100ms}
+.kb-history-app .era-strip .era{transition:border-color 180ms ease,box-shadow 180ms ease,background-color 180ms ease}
+.kb-history-app .kb-history-skeleton{display:grid;gap:16px;min-height:290px}
+.kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{
+  display:block;border-radius:12px;
+  background:linear-gradient(100deg,#edf0eb 25%,#f7f8f5 42%,#edf0eb 60%);
+  background-size:220% 100%;
+  animation:kb-skeleton-shimmer 1.3s ease-in-out infinite;
+}
+.kb-history-app .kb-skeleton-line{height:16px;width:65%}
+.kb-history-app .kb-skeleton-title{height:34px;width:74%;border-radius:9px}
+.kb-history-app .kb-skeleton-short{width:46%}
+.kb-history-app .kb-skeleton-card{height:88px;border-radius:18px}
+.kb-history-app .kb-skeleton-card:last-child{height:160px}
+@media(prefers-color-scheme:dark){
+ .kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{
+ background:linear-gradient(100deg,#2a3830 25%,#37473c 42%,#2a3830 60%);background-size:220% 100%}
+}
+@media(prefers-reduced-motion:reduce){
+ .kb-history-app .era-strip.kb-era-animated>.era,
+ .kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{animation:none!important}
+ .kb-history-app .era-strip .era{transition:none!important}
+}
