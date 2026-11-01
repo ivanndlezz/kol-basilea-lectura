@@ -1015,7 +1015,7 @@ a:not([class]):visited{color:var(--brand-dark)}
 .reader-page .kb-reader-selector-row .reader-translation-trigger{width:100%;justify-content:space-between;min-height:36px;padding:8px 12px;border-left:1px solid var(--line);border-radius:0 999px 999px 0;background:transparent;color:var(--ink);font-size:13px;white-space:nowrap}
 .reader-page .kb-reader-selector-row .reader-translation-popover{right:0}
 .reader-page .reader-progress{padding-top:9px;padding-bottom:9px}
-@media(max-width:699px){.reader-page .kb-reader-selector-row .reader-selection-bar{width:100%}.reader-page .kb-reader-selector-row .reader-selection-button{flex:0 1 42%;justify-content:space-between}.reader-page .kb-reader-selector-row .reader-translation-control{flex:1 1 58%}.reader-page .kb-reader-selector-row .reader-translation-trigger{padding-right:10px;padding-left:10px}}
+@media(max-width:699px){.reader-page .kb-reader-selector-row .reader-selection-bar{width:max-content;max-width:100%}.reader-page .kb-reader-selector-row .reader-selection-button{flex:0 1 auto;justify-content:space-between}.reader-page .kb-reader-selector-row .reader-translation-control{flex:0 1 auto}.reader-page .kb-reader-selector-row .reader-translation-trigger{width:auto;padding-right:10px;padding-left:10px}}
 @media(min-width:700px){.reader-page .kb-reader-toolbar,.reader-page .kb-reader-selector-row{padding-left:24px;padding-right:24px}}
 
 /* One-time reading milestones: compact editorial bottom sheet */
