@@ -32,10 +32,4 @@ export function genesisPanel(data,eraId,basePath,slug){
   }).join("");
   return '<section class="kb-genesis" aria-label="Estructura literaria de Génesis"><div class="kb-genesis-heading"><div><h3>Estructura literaria</h3></div><span>'+units.length+' unidades</span></div><p class="kb-genesis-intro">'+(eraId==="primeval"?"El prólogo y las cinco primeras fórmulas toledot.":"Las cinco fórmulas toledot que organizan el relato patriarcal.")+'</p><div class="kb-genesis-units">'+unitHtml+'</div>';
 }
-export function initGenesisPanel(root){
-  root.querySelectorAll("[data-genesis-cycle]").forEach(button=>button.addEventListener("click",()=>{
-    const id=button.dataset.genesisCycle;
-    root.querySelectorAll("[data-genesis-cycle]").forEach(b=>{const active=b===button;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});
-    root.querySelectorAll("[data-genesis-results]").forEach(panel=>{panel.hidden=panel.dataset.genesisResults!==id;});
-  }));
-}
+export function initGenesisPanel(){ /* Literary units use native details elements. */ }
