@@ -251,9 +251,9 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 
 /* Era chips: single source of truth. The HTML includes every chip before JS loads. */
 .kb-history-app #selector{display:block;flex:none;margin:10px 0 0;padding:0;border:0;overflow:visible;contain:none}
-.kb-history-app #era-strip{display:flex;align-items:stretch;gap:12px;margin:0;padding:3px 20px 13px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;scroll-padding-inline:20px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.kb-history-app #era-strip{display:flex;align-items:flex-start;gap:12px;margin:0;padding:3px 20px 13px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;scroll-padding-inline:20px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
 .kb-history-app #era-strip::-webkit-scrollbar{display:none}
-.kb-history-app #era-strip>.era{position:relative;display:flex;flex:0 0 calc(100% - 48px);flex-direction:column;justify-content:flex-start;gap:5px;box-sizing:border-box;width:auto;max-width:460px;padding:14px 18px 14px 25px;border:1px solid #e3e5dd;border-radius:20px;background:#fff;color:var(--ink);text-align:left;scroll-snap-align:start;box-shadow:none;transition:opacity 240ms ease-out,border-color 180ms ease,box-shadow 180ms ease,background-color 180ms ease;animation:kb-chip-fade 260ms ease-out 140ms both}
+.kb-history-app #era-strip>.era{position:relative;display:flex;flex:0 0 calc(100% - 48px);flex-direction:column;align-self:flex-start;justify-content:flex-start;gap:5px;box-sizing:border-box;height:max-content;min-height:0;max-height:none;width:auto;max-width:460px;padding:14px 18px 14px 25px;border:1px solid #e3e5dd;border-radius:20px;background:#fff;color:var(--ink);text-align:left;scroll-snap-align:start;box-shadow:none;transition:opacity 240ms ease-out,border-color 180ms ease,box-shadow 180ms ease,background-color 180ms ease;animation:kb-chip-fade 260ms ease-out 140ms both}
 .kb-history-app #era-strip>.era[aria-pressed=true]{border-color:var(--green)}
 .kb-history-app #era-strip .era-top{display:flex;justify-content:space-between;align-items:center;gap:8px;font:650 12px/1.2 system-ui,sans-serif}
 .kb-history-app #era-strip .era-title{display:block;margin:0;font:750 clamp(20px,5.6vw,26px)/1.14 system-ui,sans-serif;letter-spacing:-.03em;color:var(--ink)}
