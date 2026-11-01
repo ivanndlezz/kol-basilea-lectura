@@ -15,7 +15,7 @@ for(const book of catalog){
    for(let i=0;i<sections.length;i++){
     const section=sections[i],start=Number(section.startVerse),ch=Number(chapter.number),next=sections[i+1];
     const end=next?Number(next.startVerse)-1:null;
-    if(!Number.isInteger(start)||!Number.isInteger(end)||start<1||(end!==null&&end<start)){errors.push({bookId:book.id,chapter:ch,start,end});continue}
+    if(!Number.isInteger(start)||(end!==null&&!Number.isInteger(end))||start<1||(end!==null&&end<start)){errors.push({bookId:book.id,chapter:ch,start,end});continue}
     items.push({id:book.id+"-"+ch+"-"+start,bookId:book.id,bookName:book.name,start:{chapter:ch,verse:start},end:end===null?null:{chapter:ch,verse:end},title:section.title,sourceTitle:section.sourceTitle||null,reviewStatus:section.status==="reviewed"?"reviewed":"draft",eraId:null,subEraId:null});
     count++;
    }
