@@ -8,17 +8,15 @@ const items=[],coverage=[],errors=[]; // Source-derived draft catalog; never tre
 for(const book of catalog){
  try{
   const data=JSON.parse(await readFile(path.join("dist/data/pericopes",book.id+".json"),"utf8"));
-  const bible=JSON.parse(await readFile(path.join("dist/data/rvr1909",book.id+".json"),"utf8"));
   const chapters=data.chapters||[{number:data.chapter,sections:data.sections}];
-  const verseCounts=new Map(bible.chapters.map(c=>[Number(c.number),c.verses.length]));
   let count=0;
   for(const chapter of chapters){
    const sections=chapter.sections||[];
    for(let i=0;i<sections.length;i++){
     const section=sections[i],start=Number(section.startVerse),ch=Number(chapter.number),next=sections[i+1];
-    const end=next?Number(next.startVerse)-1:verseCounts.get(ch);
-    if(!Number.isInteger(start)||!Number.isInteger(end)||start<1||end<start||end>verseCounts.get(ch)){errors.push({bookId:book.id,chapter:ch,start,end});continue}
-    items.push({id:book.id+"-"+ch+"-"+start,bookId:book.id,bookName:book.name,start:{chapter:ch,verse:start},end:{chapter:ch,verse:end},title:section.title,sourceTitle:section.sourceTitle||null,reviewStatus:section.status==="reviewed"?"reviewed":"draft",eraId:null,subEraId:null});
+    const end=next?Number(next.startVerse)-1:null;
+    if(!Number.isInteger(start)||!Number.isInteger(end)||start<1||(end!==null&&end<start)){errors.push({bookId:book.id,chapter:ch,start,end});continue}
+    items.push({id:book.id+"-"+ch+"-"+start,bookId:book.id,bookName:book.name,start:{chapter:ch,verse:start},end:end===null?null:{chapter:ch,verse:end},title:section.title,sourceTitle:section.sourceTitle||null,reviewStatus:section.status==="reviewed"?"reviewed":"draft",eraId:null,subEraId:null});
     count++;
    }
   }
