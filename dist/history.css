@@ -244,3 +244,13 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
  .kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{animation:none!important}
  .kb-history-app .era-strip .era{transition:none!important}
 }
+
+/* Layout-stable staged entrance: allocate space before animating. */
+.kb-history-app .era-strip{min-height:158px;box-sizing:border-box;align-items:stretch}
+.kb-history-app .era-strip.kb-era-animated>.era{animation-delay:140ms}
+.kb-history-app .era-strip.kb-era-animated>.era:nth-child(2){animation-delay:165ms}
+.kb-history-app .era-strip.kb-era-animated>.era:nth-child(3){animation-delay:190ms}
+.kb-history-app .era-strip.kb-era-animated>.era:nth-child(4){animation-delay:215ms}
+.kb-history-app .era-strip.kb-era-animated>.era:nth-child(n+5){animation-delay:240ms}
+.kb-history-app .era-detail{min-height:100vh}
+.kb-history-app .kb-history-skeleton{min-height:290px}
