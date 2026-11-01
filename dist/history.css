@@ -294,3 +294,5 @@ html[data-kb-history-theme="light"]{color-scheme:light}
 .kb-history-app .kb-story-book-tab.active{background:var(--green);color:white;border-color:var(--green)}
 .kb-history-app .kb-story-book-item[hidden]{display:none}
 .kb-history-app .kb-story-book-item>.kb-story{height:100%}
+
+.kb-history-app .kb-filtered-pericopes .kb-pericope-group[hidden],.kb-history-app .kb-filtered-pericopes .kb-story[hidden]{display:none}
