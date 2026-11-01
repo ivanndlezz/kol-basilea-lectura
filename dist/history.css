@@ -262,24 +262,8 @@ html[data-kb-history-theme="dark"] .kb-history-app .kb-period{border-color:#5672
 html[data-kb-history-theme="dark"] .kb-history-app .kb-period.active{background:#6caa85;color:#12251b}
 html[data-kb-history-theme="light"]{color-scheme:light}
 
-/* Three understated navigation ticks: previous / focused / next. */
-.kb-history-app .kb-era-tickmarks{display:flex;align-items:center;justify-content:center;gap:7px;height:17px;margin:0 auto 6px;pointer-events:none}
-.kb-history-app .kb-era-tick{display:block;width:15px;height:3px;border-radius:99px;background:var(--green);opacity:.22;transform:scaleX(.75);transition:transform .24s ease,opacity .24s ease,background .24s ease}
-.kb-history-app .kb-era-tick-current{width:23px;opacity:1;transform:scaleX(1)}
-.kb-history-app .kb-era-tickmarks[data-direction="next"] .kb-era-tick-prev,.kb-history-app .kb-era-tickmarks[data-direction="prev"] .kb-era-tick-next{opacity:.08}
-.kb-history-app .kb-era-tickmarks[data-active] .kb-era-tick-current{animation:kb-era-tick-arrive .28s ease-out}
-@keyframes kb-era-tick-arrive{from{transform:scaleX(.45);opacity:.45}to{transform:scaleX(1);opacity:1}}
-@media(prefers-reduced-motion:reduce){.kb-history-app .kb-era-tick{transition:none}.kb-history-app .kb-era-tick-current{animation:none!important}}
-
-/* Live swipe feedback: the active amber/green tick travels as the finger moves. */
-.kb-history-app .kb-era-tickmarks{position:relative;width:74px;gap:8px;justify-content:space-between}
-.kb-history-app .kb-era-tick{width:18px;height:4px;opacity:.25;transform:none;background:var(--green);animation:none!important}
-.kb-history-app .kb-era-tick-current{width:18px;opacity:.25}
-.kb-history-app .kb-era-tickmarks::after{content:"";position:absolute;top:6.5px;left:0;width:18px;height:4px;border-radius:99px;background:var(--gold);transform:translateX(calc(var(--kb-swipe-progress,0) * 56px));will-change:transform}
-.kb-history-app .kb-era-tickmarks[data-direction="next"] .kb-era-tick-prev,.kb-history-app .kb-era-tickmarks[data-direction="prev"] .kb-era-tick-next{opacity:.25}
-@media(prefers-reduced-motion:reduce){.kb-history-app .kb-era-tickmarks::after{will-change:auto}}
-
-/* Era pager v2: per-slide interpolation, not a progress bar stretched over ten eras. */
-.kb-history-app .kb-era-tickmarks{width:74px;height:20px;gap:10px;margin:0 auto 6px;align-items:center}
-.kb-history-app .kb-era-tick{width:18px;min-width:18px;height:4px;flex:none;background:var(--green);border-radius:999px;transition:none;animation:none!important}
-.kb-history-app .kb-era-tickmarks::after{top:8px;left:0;width:18px;height:4px;background:var(--gold);transform:translate3d(var(--kb-tick-x,0px),0,0);transition:none;will-change:transform}
+/* Sliding page-control: ten real indicators in a three-item viewport. */
+.kb-history-app .kb-era-tickmarks{position:relative;width:74px;height:20px;overflow:hidden;margin:0 auto 6px;pointer-events:none}
+.kb-history-app .kb-era-tick-track{display:flex;align-items:center;gap:10px;height:20px;width:max-content;transform:translate3d(0,0,0);will-change:transform}
+.kb-history-app .kb-era-tick{display:block;flex:0 0 18px;width:18px;height:4px;border-radius:99px;background:var(--green);opacity:.23;transform:scaleX(.78);transition:none;animation:none}
+@media(prefers-reduced-motion:reduce){.kb-history-app .kb-era-tick-track{will-change:auto}}
