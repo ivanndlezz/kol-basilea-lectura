@@ -18,3 +18,9 @@ build/
 coverage/
 .cache/
 
+# Bible JSON is generated in CI from the verified official USFM archives.
+dist/data/rvr1909/
+dist/data/pdt/
+dist/data/onbv/
+dist/data/bes/
+

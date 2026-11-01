@@ -35,14 +35,23 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Download RVR1909 official USFM
+      - name: Download official open Spanish USFM
         run: |
-          curl --fail --location --retry 3 --silent --show-error 'https://ebible.org/Scriptures/spaRV1909_usfm.zip' -o /tmp/spaRV1909_usfm.zip
-          mkdir -p /tmp/rv1909-usfm
-          unzip -q /tmp/spaRV1909_usfm.zip -d /tmp/rv1909-usfm
-      - name: Generate 66 Bible JSON files
-        run: node scripts/convert-usfm.mjs /tmp/rv1909-usfm dist/data/rvr1909
-      - name: Validate generated text and verse counts
+          set -euo pipefail
+          mkdir -p /tmp/kol-basilea-bibles
+          curl --fail --location --retry 3 --silent --show-error 'https://ebible.org/Scriptures/spaRV1909_usfm.zip' -o /tmp/kol-basilea-bibles/rvr1909.zip
+          curl --fail --location --retry 3 --silent --show-error 'https://ebible.org/Scriptures/spapddpt_usfm.zip' -o /tmp/kol-basilea-bibles/pdt.zip
+          curl --fail --location --retry 3 --silent --show-error 'https://ebible.org/Scriptures/spaonbv_usfm.zip' -o /tmp/kol-basilea-bibles/onbv.zip
+          curl --fail --location --retry 3 --silent --show-error 'https://ebible.org/Scriptures/spabes_usfm.zip' -o /tmp/kol-basilea-bibles/bes.zip
+      - name: Generate 66 Bible JSON files per open translation
+        run: |
+          set -euo pipefail
+          for id in rvr1909 pdt onbv bes; do
+            mkdir -p "/tmp/kol-basilea-bibles/$id"
+            unzip -q "/tmp/kol-basilea-bibles/$id.zip" -d "/tmp/kol-basilea-bibles/$id"
+            node scripts/convert-usfm.mjs "/tmp/kol-basilea-bibles/$id" "dist/data/$id" "$id" "eBible.org"
+          done
+      - name: Validate generated text and verse counts for every translation
         run: node scripts/validate-generated.mjs
       - name: Validate editorial data relationships
         run: npm run validate:data

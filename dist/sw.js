@@ -1,5 +1,5 @@
-const CACHE = "kol-basilea-lectura-data-v4";
-const CORE = ["./", "./index.html", "./styles.css", "./app.js", "./data/bible-catalog.js", "./data/catalog/books.json", "./data/catalog/people.json", "./data/catalog/sources.json", "./data/catalog/relationships.json", "./data/media/videos.json", "./data/bible-rvr1909.js", "./data/bible-loader.js", "./data/pericopes.js", "./data/pericopes/2-juan.json", "./data/pericopes/1-juan.json", "./data/pericopes/3-juan.json", "./data/editorial-content.js", "./data/reading-progress.js", "./data/biblical-authors.js"];
+const CACHE = "kol-basilea-lectura-data-v5";
+const CORE = ["./", "./index.html", "./styles.css", "./app.js", "./data/bible-catalog.js", "./data/catalog/books.json", "./data/catalog/people.json", "./data/catalog/sources.json", "./data/catalog/relationships.json", "./data/media/videos.json", "./data/bible-rvr1909.js", "./data/bible-translations.js", "./data/bible-loader.js", "./data/pericopes.js", "./data/pericopes/2-juan.json", "./data/pericopes/1-juan.json", "./data/pericopes/3-juan.json", "./data/editorial-content.js", "./data/reading-progress.js", "./data/biblical-authors.js"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
 });
@@ -14,7 +14,7 @@ self.addEventListener("fetch", event => {
   if (request.method !== "GET") return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin || !url.pathname.includes("/kol-basilea-lectura/")) return;
-  if (url.pathname.includes("/data/rvr1909/") && url.pathname.endsWith(".json")) {
+  if (url.pathname.match(/\/data\/(rvr1909|pdt|onbv|bes)\/[^/]+\.json$/)) {
     event.respondWith(caches.open(CACHE).then(async cache => {
       const cached = await cache.match(request);
       if (cached) return cached;

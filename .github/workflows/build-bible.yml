@@ -1,8 +1,9 @@
-name: Build full RVR1909 Bible
+name: Build full open Spanish Bible catalog
 on:
   push:
     paths:
       - 'scripts/convert-usfm.mjs'
+      - 'dist/data/bible-translations.js'
       - '.github/workflows/build-bible.yml'
   workflow_dispatch:
 jobs:
@@ -13,16 +14,23 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Download verified official USFM
+      - name: Download verified official open USFM
         run: |
-          curl --fail --location --retry 3 --silent --show-error 'https://ebible.org/Scriptures/spaRV1909_usfm.zip' -o /tmp/spaRV1909_usfm.zip
-          mkdir -p /tmp/rv1909-usfm
-          unzip -q /tmp/spaRV1909_usfm.zip -d /tmp/rv1909-usfm
-      - name: Inspect tricky verse markers
+          set -euo pipefail
+          mkdir -p /tmp/kol-basilea-bibles
+          for spec in 'rvr1909|spaRV1909' 'pdt|spapddpt' 'onbv|spaonbv' 'bes|spabes'; do
+            id="${spec%%|*}"
+            archive="${spec##*|}"
+            curl --fail --location --retry 3 --silent --show-error "https://ebible.org/Scriptures/${archive}_usfm.zip" -o "/tmp/kol-basilea-bibles/$id.zip"
+            mkdir -p "/tmp/kol-basilea-bibles/$id"
+            unzip -q "/tmp/kol-basilea-bibles/$id.zip" -d "/tmp/kol-basilea-bibles/$id"
+          done
+      - name: Convert and validate 66 books per translation
         run: |
-          grep -n -A 7 -B 5 '\\\\v 16' /tmp/rv1909-usfm/05-NUMspaRV1909.usfm | head -80 || true
-      - name: Convert and validate 66 books
-        run: node scripts/convert-usfm.mjs /tmp/rv1909-usfm dist/data/rvr1909
+          set -euo pipefail
+          for id in rvr1909 pdt onbv bes; do
+            node scripts/convert-usfm.mjs "/tmp/kol-basilea-bibles/$id" "dist/data/$id" "$id" "eBible.org"
+          done
       - name: Validate generated text and verse counts
         run: node scripts/validate-generated.mjs
       - name: Validate editorial data relationships
@@ -31,6 +39,10 @@ jobs:
         run: npm run check
       - uses: actions/upload-artifact@v4
         with:
-          name: rvr1909-json
-          path: dist/data/rvr1909/
+          name: open-spanish-bible-json
+          path: |
+            dist/data/rvr1909/
+            dist/data/pdt/
+            dist/data/onbv/
+            dist/data/bes/
           retention-days: 7

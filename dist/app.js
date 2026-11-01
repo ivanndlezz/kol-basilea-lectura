@@ -1,5 +1,6 @@
 import { AUTHORS, AUTHOR_BY_ID, authorsForBook, COMPILATION_PEOPLE, relationshipsForBook } from "./data/biblical-authors.js";
-import { getBibleChapter, getBibleTranslation } from "./data/bible-rvr1909.js";
+import { getBibleChapter } from "./data/bible-rvr1909.js";
+import { DEFAULT_TRANSLATION_ID, getBibleTranslation, getBibleTranslations, isBibleTranslationId } from "./data/bible-translations.js";
 import { getLoadedBibleChapter, getBookLoadState, loadBibleBook } from "./data/bible-loader.js";
 import { getPericopes, loadPericopes } from "./data/pericopes.js";
 const pericopeLoadRequested = new Set();
@@ -61,7 +62,7 @@ const defaultState = () => ({
   chapterSheetOpen: false,
   readerFont: "serif",
   readerTheme: "light",
-  readerTranslation: "rvr1909",
+  readerTranslation: DEFAULT_TRANSLATION_ID,
   readerBookInfoOpen: false,
   readerReadingProgress: 0,
   completedChapters: {},
@@ -99,10 +100,11 @@ function readReaderLocation() {
   const bookId = params.get("book");
   const chapter = Number(params.get("chapter"));
   const section = params.get("section");
+  const translationId = isBibleTranslationId(params.get("version")) ? params.get("version") : DEFAULT_TRANSLATION_ID;
   const book = bookId ? getBook(bookId) : null;
   if (book && Number.isInteger(chapter) && chapter >= 1 && chapter <= book.chapters) {
     const sectionVerse = section && /^\d+$/.test(section) ? Number(section) : null;
-    return { bookId: book.id, chapter, sectionVerse };
+    return { bookId: book.id, chapter, sectionVerse, translationId };
   }
 
   const legacyMatch = window.location.hash.match(/^#kb-section-(.+)-(\d+)-(\d+)$/);
@@ -111,22 +113,22 @@ function readReaderLocation() {
   const legacyChapter = Number(legacyMatch[2]);
   const legacySectionVerse = Number(legacyMatch[3]);
   if (!legacyBook || legacyChapter < 1 || legacyChapter > legacyBook.chapters) return null;
-  return { bookId: legacyBook.id, chapter: legacyChapter, sectionVerse: legacySectionVerse, legacy: true };
+  return { bookId: legacyBook.id, chapter: legacyChapter, sectionVerse: legacySectionVerse, translationId: DEFAULT_TRANSLATION_ID, legacy: true };
 }
 
-function readerLocationUrl(bookId, chapter, sectionVerse = null) {
+function readerLocationUrl(bookId, chapter, sectionVerse = null, translationId = state.readerTranslation) {
   const url = new URL(window.location.href);
   url.search = "";
   url.hash = "";
-  const params = new URLSearchParams({ book: bookId, chapter: String(chapter) });
+  const params = new URLSearchParams({ book: bookId, chapter: String(chapter), version: translationId });
   if (Number.isInteger(sectionVerse)) params.set("section", String(sectionVerse));
   url.search = params.toString();
   return `${url.pathname}${url.search}`;
 }
 
-function updateReaderLocation(bookId, chapter, sectionVerse = null, replace = false) {
-  const url = readerLocationUrl(bookId, chapter, sectionVerse);
-  window.history[replace ? "replaceState" : "pushState"]({ bookId, chapter, sectionVerse }, "", url);
+function updateReaderLocation(bookId, chapter, sectionVerse = null, replace = false, translationId = state.readerTranslation) {
+  const url = readerLocationUrl(bookId, chapter, sectionVerse, translationId);
+  window.history[replace ? "replaceState" : "pushState"]({ bookId, chapter, sectionVerse, translationId }, "", url);
 }
 
 function clearReaderLocation() {
@@ -143,6 +145,7 @@ if (initialReaderLocation) {
   state.readerOrigin = "home";
   state.readerBookId = initialReaderLocation.bookId;
   state.readerChapter = initialReaderLocation.chapter;
+  state.readerTranslation = initialReaderLocation.translationId;
   pendingSectionVerse = initialReaderLocation.sectionVerse;
   if (initialReaderLocation.legacy) updateReaderLocation(initialReaderLocation.bookId, initialReaderLocation.chapter, initialReaderLocation.sectionVerse, true);
   saveState();
@@ -258,8 +261,8 @@ function render() {
       pericopeLoadRequested.add(bookId);
       loadPericopes(bookId).then(data => { if (data && state.view === "reader" && state.readerBookId === bookId) render(); });
     }
-    if (getBookLoadState(bookId) === "idle") {
-      loadBibleBook(bookId).then(() => {
+    if (getBookLoadState(bookId, state.readerTranslation) === "idle") {
+      loadBibleBook(bookId, state.readerTranslation).then(() => {
         if (state.view === "reader" && state.readerBookId === bookId) render();
       }).catch(error => console.warn("Bible book load failed", bookId, error));
     }
@@ -618,7 +621,8 @@ function renderReaderContext(book, contextVideos) {
 
 function renderReaderSelection(book, chapter) {
   const translation = getBibleTranslation(state.readerTranslation);
-  return `<div class="reader-selection-bar"><button class="reader-selection-button" data-action="toggle-chapter-sheet" aria-expanded="${state.chapterSheetOpen}" aria-controls="chapter-sheet"><span>${escapeHtml(book.name.toUpperCase())} ${chapter}</span>${icon("chevronDown", 16)}</button><span class="reader-translation-pill" aria-label="Traducción ${escapeHtml(translation.name)}">${escapeHtml(translation.shortName)}</span></div>`;
+  const options = getBibleTranslations().map(version => `<option value="${version.id}" ${version.id === translation.id ? "selected" : ""}>${escapeHtml(version.shortName)} · ${escapeHtml(version.name)}</option>`).join("");
+  return `<div class="reader-selection-bar"><button class="reader-selection-button" data-action="toggle-chapter-sheet" aria-expanded="${state.chapterSheetOpen}" aria-controls="chapter-sheet"><span>${escapeHtml(book.name.toUpperCase())} ${chapter}</span>${icon("chevronDown", 16)}</button><label class="reader-translation-control"><span class="sr-only">Versión bíblica</span><select data-action="change-reader-translation" aria-label="Elegir versión bíblica">${options}</select></label></div>`;
 }
 
 function renderReadingCopy(book, chapter) {
@@ -626,7 +630,7 @@ function renderReadingCopy(book, chapter) {
   const translation = getBibleTranslation(state.readerTranslation);
 
   if (!passage) {
-    const loadState = getBookLoadState(book.id);
+    const loadState = getBookLoadState(book.id, state.readerTranslation);
     const message = loadState === "error" ? "No pudimos descargar este libro. Comprueba tu conexión y vuelve a abrirlo." : "Descargando el texto bíblico de este libro…";
     return `<div class="reading-copy reading-copy-pending ${state.readerFont === "sans" ? "reader-font-sans" : "reader-font-serif"}" data-reading-content><p class="reading-note">${icon("sparkles", 17)}<span><strong>${loadState === "error" ? "Sin conexión:" : "Cargando Biblia:"}</strong> ${message}</span></p><p>Mientras tanto, puedes explorar el contexto del libro, navegar sus capítulos y guardar tu avance cuando el texto esté listo.</p></div>`;
   }
@@ -721,7 +725,7 @@ function renderReader() {
   const contextVideos = getBookVideosForChapter(book, chapter);
   const readerBody = `${renderReaderContext(book, contextVideos)}${renderChapterList(book, chapter)}${state.readerBookInfoOpen ? renderBookInfoPage(book) : renderReadingCopy(book, chapter) + (chapter === book.chapters ? renderBookTextCredits(book) : "")}`;
   const readProgress = Number.isFinite(state.readerReadingProgress) ? state.readerReadingProgress : 0;
-  const readerFooter = state.readerBookInfoOpen ? "" : `<footer class="reader-footer"><div class="reader-reading-meter" data-reading-meter><div class="reader-reading-meter-copy"><span data-reading-progress-label>${readProgress}% leído</span><span>Capítulo ${chapter}</span></div><div class="reader-reading-track" role="progressbar" aria-label="Progreso de lectura del capítulo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${readProgress}"><div class="reader-reading-fill" data-reading-progress-fill style="width:${readProgress}%"></div></div></div><button class="button button-primary button-wide" data-action="${completed && chapter < book.chapters ? "continue-chapter" : "complete-chapter"}" data-complete-chapter ${completed ? 'data-completed="true"' : ""} ${!completed && readProgress < 100 ? "disabled" : ""}>${completed && chapter < book.chapters ? `Continuar al capítulo ${chapter + 1} ${icon("chevronRight", 17)}` : chapter === book.chapters ? `Completar libro ${icon("check", 17)}` : "Marcar como leído"}</button></footer>`;
+  const readerFooter = state.readerBookInfoOpen ? "" : `<footer class="reader-footer"><div class="reader-reading-meter" data-reading-meter><div class="reader-reading-meter-copy"><span data-reading-progress-label>${readProgress}% leído</span><span>Capítulo ${chapter}</span></div><div class="reader-reading-track" role="progressbar" aria-label="Progreso de lectura del capítulo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${readProgress}"><div class="reader-reading-fill" data-reading-progress-fill style="width:${readProgress}%"></div></div></div><button class="button button-primary button-wide" data-action="${completed && chapter < book.chapters ? "continue-chapter" : "complete-chapter"}" data-complete-chapter ${completed ? 'data-completed="true"' : ""} ${!completed && readProgress < 100 ? "disabled" : ""}>${completed && chapter < book.chapters ? `Continuar al capítulo ${chapter + 1} ${icon("chevronRight", 17)}` : chapter === book.chapters ? `Completar libro ${icon("check", 17)}` : "Marcar como leído"}</button><p class="reader-open-versions-notice">En Kol Basilea usamos versiones bíblicas de uso libre. Para leer otras versiones comerciales, recomendamos utilizar tu aplicación de la Biblia o consultar tu Biblia en casa.</p></footer>`;
   return `<main class="reader-page" style="${categoryStyle(book.category)}"><header class="reader-topbar kb-reader-compact-header"><div class="kb-reader-toolbar"><button class="reader-back kb-reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 21)}</button><div class="kb-reader-toolbar-right"><button class="reader-format-button kb-reader-format" data-action="toggle-reader-format" aria-label="Formato de lectura" aria-expanded="${state.readerDisplayOpen}" aria-controls="reader-display-menu">${icon("sliders", 19)}</button><div class="reader-more-anchor"><button class="icon-button reader-more-trigger" data-action="toggle-reader-more" aria-label="Más opciones del capítulo" aria-haspopup="menu" aria-expanded="${Boolean(state.readerMoreOpen)}" aria-controls="reader-more-menu">${icon("ellipsis", 20)}</button>${state.readerMoreOpen ? `<div class="reader-more-popover" id="reader-more-menu" role="menu">${completed ? `<button role="menuitem" data-action="mark-chapter-unread">${icon("bookOpen", 17)}<span>Marcar como no leído</span></button>` : `<p>Este capítulo aún no está marcado como leído.</p>`}</div>` : ""}</div></div></div><div class="kb-reader-selector-row">${renderReaderSelection(book, chapter)}</div></header>${renderReaderDisplayMenu()}<div class="reader-progress"><div class="reader-progress-copy"><span>Progreso del libro</span><strong>${bookProgress} de ${book.chapters} capítulos</strong></div><div class="progress-track" role="progressbar" aria-label="Progreso del libro" aria-valuemin="0" aria-valuemax="${book.chapters}" aria-valuenow="${bookProgress}"><div class="progress-fill" style="width:${percent(bookProgress, book.chapters)}%"></div></div></div><article class="reader-content"><div class="reader-heading"><div class="reader-meta-pill"><span>Capítulo ${chapter} de ${book.chapters}</span></div><h1>${escapeHtml(book.name)}</h1></div>${readerBody}</article>${readerFooter}</main>`;
 }
 
@@ -830,11 +834,20 @@ function showToast(message) {
   toastTimer = setTimeout(() => { state.toast = ""; render(); }, 3500);
 }
 
+function changeReaderTranslation(value) {
+  state.readerTranslation = isBibleTranslationId(value) ? value : DEFAULT_TRANSLATION_ID;
+  state.readerReadingProgress = 0;
+  updateReaderLocation(state.readerBookId, readerChapter(getBook(state.readerBookId)), null, false, state.readerTranslation);
+  saveState();
+  render();
+}
+
 function bindEvents() {
   document.querySelectorAll("[data-action]").forEach((element) => {
     element.addEventListener("click", (event) => {
       event.preventDefault();
       const action = element.dataset.action;
+      if (action === "change-reader-translation") return;
       if (action === "onboarding-next") { state.onboardingStep = Math.min(state.onboardingStep + 1, 3); saveState(); render(); }
       if (action === "choose-goal") { state.goal = element.dataset.goal; saveState(); render(); }
       if (action === "open-reader") { openReader(state.onboardingStep === 3 ? "3-juan" : currentBook().id); }
@@ -856,7 +869,7 @@ function bindEvents() {
       if (action === "filter-library-category") { state.libraryCategory = CATEGORIES.some(category => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "filter-route-category") { state.routeCategory = CATEGORIES.some((category) => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "open-book") { openReader(element.dataset.bookId); }
-      if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); state.chapterSheetOpen = false; state.readerBookInfoOpen = false; state.readerReadingProgress = 0; updateReaderLocation(state.readerBookId, state.readerChapter, null); saveState(); render(); }
+      if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); state.chapterSheetOpen = false; state.readerBookInfoOpen = false; state.readerReadingProgress = 0; updateReaderLocation(state.readerBookId, state.readerChapter, null, false, state.readerTranslation); saveState(); render(); }
       if (action === "open-book-info") { state.readerBookInfoOpen = true; state.chapterSheetOpen = false; saveState(); render(); }
       if (action === "close-book-info") { state.readerBookInfoOpen = false; saveState(); render(); }
       if (action === "toggle-chapter-sheet") { state.chapterSheetOpen = !state.chapterSheetOpen; saveState(); render(); }
@@ -892,6 +905,9 @@ function bindEvents() {
       }
     });
   });
+  document.querySelectorAll("select[data-action=change-reader-translation]").forEach(select => {
+    select.addEventListener("change", () => changeReaderTranslation(select.value));
+  });
 }
 
 document.addEventListener("keydown", event => {
@@ -922,6 +938,7 @@ function syncReaderFromLocation() {
   state.readerOrigin = "home";
   state.readerBookId = locationState.bookId;
   state.readerChapter = locationState.chapter;
+  state.readerTranslation = locationState.translationId;
   state.readerBookInfoOpen = false;
   state.chapterSheetOpen = false;
   pendingSectionVerse = locationState.sectionVerse;
@@ -940,7 +957,7 @@ if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js", { updateViaCache: "none" }).catch(error => console.warn("Offline cache unavailable", error)));
 }
 window.addEventListener("online", () => {
-  if (state.view !== "reader" || getBookLoadState(state.readerBookId) !== "error") return;
+  if (state.view !== "reader" || getBookLoadState(state.readerBookId, state.readerTranslation) !== "error") return;
   const bookId = state.readerBookId;
-  loadBibleBook(bookId).then(() => { if (state.view === "reader" && state.readerBookId === bookId) render(); }).catch(() => {});
+  loadBibleBook(bookId, state.readerTranslation).then(() => { if (state.view === "reader" && state.readerBookId === bookId) render(); }).catch(() => {});
 });

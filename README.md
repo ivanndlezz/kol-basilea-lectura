@@ -21,6 +21,8 @@ La propuesta ya cuenta con:
 
 La primera vertical funcional incluye onboarding de tres pasos, lector de 3 Juan y 1 Juan con Reina-Valera 1909, guardado local del check de capítulo, ruta completa, progreso y preferencias de meta.
 
+El lector ahora está preparado para cuatro versiones bíblicas de uso libre: RVR1909, PDT, ONBV y BES. La versión elegida se conserva en la URL (`?book=juan&chapter=3&version=pdt`) y no modifica el progreso de lectura.
+
 ## Preview local
 
 Con Python instalado, ejecuta desde la raíz del repositorio:
@@ -54,6 +56,12 @@ La UI aplica criterios relevantes de Apple HIG: tipografía del sistema, áreas 
 - experiencia móvil, cálida y no denominacional;
 - sin registro obligatorio para comenzar.
 - iconografía Lucide inline, consistente y sin dependencia de red.
+
+## Texto y licencias
+
+En Kol Basilea usamos versiones bíblicas de uso libre. Para leer otras versiones comerciales, recomendamos utilizar tu aplicación de la Biblia o consultar tu Biblia en casa.
+
+Las versiones abiertas se generan durante el despliegue desde los archivos USFM oficiales de [eBible.org](https://ebible.org/Scriptures/dir.php), conservando la atribución y la licencia de cada traducción. Los archivos JSON generados no se versionan en Git.
 
 ## Próximo paso
 

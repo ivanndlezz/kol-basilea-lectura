@@ -1,17 +1,6 @@
+import { BIBLE_TRANSLATIONS, getBibleTranslation } from "./bible-translations.js";
+export { BIBLE_TRANSLATIONS, getBibleTranslation };
 const RVR1909_SOURCE = "https://ebible.org/spaRV1909/3JN01.htm";
-
-export const BIBLE_TRANSLATIONS = {
-  rvr1909: {
-    id: "rvr1909",
-    name: "Reina-Valera 1909",
-    shortName: "RVR09",
-    language: "Español",
-    license: "Dominio público",
-    publisher: "Reina y Valera",
-    sourceName: "eBible.org",
-    sourceUrl: "https://ebible.org/spaRV1909/copyright.htm"
-  }
-};
 
 const CHAPTERS = {
   "rvr1909/1-juan/1": {
@@ -176,10 +165,6 @@ const CHAPTERS = {
     ].map(([number, text]) => ({ number, text }))
   }
 };
-
-export function getBibleTranslation(id = "rvr1909") {
-  return BIBLE_TRANSLATIONS[id] || BIBLE_TRANSLATIONS.rvr1909;
-}
 
 export function getBibleChapter(bookId, chapter, translationId = "rvr1909") {
   return CHAPTERS[`${translationId}/${bookId}/${chapter}`] || null;

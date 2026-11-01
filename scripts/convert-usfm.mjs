@@ -4,6 +4,8 @@ const { books: BOOKS } = JSON.parse(await readFile(new URL("../dist/data/catalog
 
 const ROOT = process.argv[2] || "sources/rvr1909";
 const OUTPUT = process.argv[3] || "dist/data/rvr1909";
+const TRANSLATION_ID = process.argv[4] || path.basename(OUTPUT);
+const SOURCE = process.argv[5] || "eBible.org";
 const CODE_TO_NAME = Object.fromEntries([
   ["GEN","Génesis"],["EXO","Éxodo"],["LEV","Levítico"],["NUM","Números"],["DEU","Deuteronomio"],["JOS","Josué"],["JDG","Jueces"],["RUT","Rut"],
   ["1SA","1 Samuel"],["2SA","2 Samuel"],["1KI","1 Reyes"],["2KI","2 Reyes"],["1CH","1 Crónicas"],["2CH","2 Crónicas"],["EZR","Esdras"],["NEH","Nehemías"],["EST","Ester"],["JOB","Job"],["PSA","Salmos"],["PRO","Proverbios"],["ECC","Eclesiastés"],["SNG","Cantares"],
@@ -59,7 +61,7 @@ export function parseUsfm(input) {
     if(verse!==null) text+=" "+following;
   }
   flush();
-  const result={bookId:book.id,translationId:"rvr1909",source:"eBible.org",chapters:Object.values(chapters)};
+  const result={bookId:book.id,translationId:TRANSLATION_ID,source:SOURCE,chapters:Object.values(chapters)};
   if(result.chapters.length!==book.chapters) throw new Error(book.name+": expected "+book.chapters+" chapters; found "+result.chapters.length);
   for(const ch of result.chapters) {
     if(!ch.verses.length) throw new Error("Empty chapter "+book.id+" "+ch.number);
@@ -82,6 +84,8 @@ async function main(){
   for(const file of files){
     const content=await readFile(file,"utf8");
     if(!/(?:^|\n)\s*\\id\s+/i.test(content)) continue;
+    const code = content.match(/(?:^|\n)\s*\\id\s+([1-3A-Z]{3})\b/i)?.[1]?.toUpperCase();
+    if (!CODE_TO_NAME[code]) continue;
     const book=parseUsfm(content);
     if(parsed.has(book.bookId)) throw new Error("Duplicate book "+book.bookId);
     parsed.set(book.bookId,book);

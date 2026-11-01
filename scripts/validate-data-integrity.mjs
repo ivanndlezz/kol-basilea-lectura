@@ -1,4 +1,5 @@
 import { readFile } from "node:fs/promises";
+import { getBibleTranslations } from "../dist/data/bible-translations.js";
 
 const root = new URL("../dist/data/", import.meta.url);
 const readJson = async path => JSON.parse(await readFile(new URL(path, root), "utf8"));
@@ -16,6 +17,7 @@ const booksRegistry = await readJson("catalog/books.json");
 const peopleRegistry = await readJson("catalog/people.json");
 const sourceRegistry = await readJson("catalog/sources.json");
 const relationshipRegistry = await readJson("catalog/relationships.json");
+const translations = getBibleTranslations();
 const videoRegistry = await readJson("media/videos.json");
 const videoMap = JSON.parse(await readFile(new URL("./data/bibleproject-video-map.json", import.meta.url), "utf8"));
 
@@ -26,6 +28,15 @@ const relationships = relationshipRegistry.relationships;
 const bookIds = uniqueIds(books, "Books");
 const personIds = uniqueIds(people, "People");
 const sourceIds = uniqueIds(sources, "Sources");
+
+assert(translations.length === 4, `Expected 4 open Bible translations, found ${translations.length}`);
+for (const translation of translations) {
+  assert(typeof translation.id === "string" && translation.id, "Translation is missing an ID");
+  assert(typeof translation.dataDir === "string" && translation.dataDir, `Translation ${translation.id} is missing dataDir`);
+  assert(typeof translation.license === "string" && translation.license, `Translation ${translation.id} is missing license`);
+  assert(typeof translation.sourceUrl === "string" && translation.sourceUrl, `Translation ${translation.id} is missing source URL`);
+  new URL(translation.sourceUrl);
+}
 
 assert(books.length === 66, `Expected 66 books, found ${books.length}`);
 assert(new Set(books.map(book => book.readingOrder)).size === books.length, "Reading order must be unique");

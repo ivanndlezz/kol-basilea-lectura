@@ -6,7 +6,7 @@
     "test": "node --import ./tests/register-fetch.mjs --test tests/*.test.mjs",
     "validate:data": "node scripts/validate-data-integrity.mjs",
     "import:bibleproject": "node scripts/import-bibleproject-videos.mjs --strict",
-    "check": "node --check dist/app.js && node --check dist/sw.js && node --check dist/data/bible-loader.js && node --check scripts/convert-usfm.mjs && node --check scripts/import-bibleproject-videos.mjs && node --check dist/data/bible-catalog.js && node --check dist/data/reading-progress.js && node --check dist/data/editorial-content.js && npm run validate:data && npm test",
+    "check": "node --check dist/app.js && node --check dist/sw.js && node --check dist/data/bible-loader.js && node --check dist/data/bible-translations.js && node --check scripts/convert-usfm.mjs && node --check scripts/import-bibleproject-videos.mjs && node --check dist/data/bible-catalog.js && node --check dist/data/reading-progress.js && node --check dist/data/editorial-content.js && npm run validate:data && npm test",
     "build:bible": "node scripts/convert-usfm.mjs sources/rvr1909 dist/data/rvr1909"
   }
 }

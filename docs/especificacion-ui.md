@@ -161,9 +161,11 @@ La UI no carga el iframe al entrar a la pantalla: muestra la miniatura oficial d
 
 El mismo recurso se trata como panorama del conjunto, no como tres videos distintos. En la ruta actual se presenta con especial relevancia al entrar a 3 Juan y queda disponible desde 2 Juan y 1 Juan.
 
-### Fuente bíblica inicial integrada
+### Versiones bíblicas de uso libre
 
-El lector ya puede mostrar el capítulo 1 de 3 Juan y los cinco capítulos de 1 Juan con Reina-Valera 1909, identificada como dominio público y con enlace a la fuente eBible.org. El contenido vive en `dist/data/bible-rvr1909.js` mediante un adaptador que separa la traducción, el capítulo y los metadatos de licencia. Los capítulos aún no integrados muestran un estado de preparación en lugar de texto demostrativo.
+El lector ofrece RVR1909, PDT, ONBV y BES mediante un selector explícito. El contenido se genera desde USFM oficial y vive en `dist/data/<translationId>/<bookId>.json`; `dist/data/bible-translations.js` separa nombre, licencia, fuente y directorio de cada versión. La URL conserva la selección (`?book=juan&chapter=3&version=pdt`) para navegar y compartir. El progreso sigue vinculado al libro y capítulo, no a la traducción.
+
+Debajo de la acción de lectura se muestra la leyenda: “En Kol Basilea usamos versiones bíblicas de uso libre. Para leer otras versiones comerciales, recomendamos utilizar tu aplicación de la Biblia o consultar tu Biblia en casa.”
 
 ## Componentes visuales
 

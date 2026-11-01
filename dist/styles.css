@@ -473,7 +473,9 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .reader-selection-button { display: inline-flex; align-items: center; gap: 12px; min-height: 40px; padding: 0 15px; border: 0; border-radius: 999px 0 0 999px; background: var(--surface-soft); color: var(--ink); font-size: 13px; font-weight: 800; letter-spacing: .01em; }
 .reader-selection-button:hover { background: var(--brand-soft); color: var(--brand-dark); }
 .reader-selection-button .lucide-icon { color: var(--ink-muted); }
-.reader-translation-pill { display: inline-flex; align-items: center; min-height: 40px; margin-left: -6px; padding: 0 15px; border-left: 1px solid var(--paper); border-radius: 0 999px 999px 0; background: var(--surface-soft); color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 800; }
+.reader-translation-control { display: inline-flex; min-width: 0; margin-left: -6px; }
+.reader-translation-control select { min-height: 40px; max-width: 220px; padding: 0 32px 0 14px; border: 0; border-left: 1px solid var(--paper); border-radius: 0 999px 999px 0; background: var(--surface-soft); color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 800; }
+.reader-translation-control select:focus { outline: 2px solid var(--brand); outline-offset: 2px; }
 .reader-display-menu { position: absolute; z-index: 40; top: 72px; right: 20px; width: min(286px, calc(100% - 40px)); padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); box-shadow: 0 18px 44px rgba(30, 43, 38, .16); }
 .display-menu-section + .display-menu-section { margin-top: 16px; }
 .display-menu-label { display: block; margin-bottom: 8px; color: var(--ink-muted); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
@@ -521,6 +523,7 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .reader-reading-meter-copy span:first-child { color: var(--ink); }
 .reader-reading-track { height: 3px; overflow: hidden; border-radius: 999px; background: var(--line); }
 .reader-reading-fill { height: 100%; border-radius: inherit; background: var(--brand); transition: width .2s ease; }
+.reader-open-versions-notice { margin: 14px 0 0; color: var(--ink-muted); font-size: 11px; line-height: 1.45; text-align: center; }
 
 .toast { position: fixed; z-index: 50; right: 18px; bottom: calc(92px + env(safe-area-inset-bottom)); left: 18px; max-width: 500px; margin: 0 auto; padding: 14px 16px; border-radius: 16px; background: var(--ink); color: white; box-shadow: var(--shadow); font-size: 14px; font-weight: 700; animation: toast-in .25s ease both; }
 @keyframes toast-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -548,7 +551,8 @@ p { color: var(--ink-muted); line-height: 1.52; }
   .reader-selection-bar { padding-right: 12px; padding-left: 12px; }
   .reader-selection-button { flex: 1; justify-content: space-between; min-width: 0; padding-right: 13px; padding-left: 13px; }
   .reader-selection-button span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .reader-translation-pill { flex: 0 0 auto; padding-right: 12px; padding-left: 12px; }
+  .reader-translation-control { flex: 0 0 auto; }
+  .reader-translation-control select { max-width: 116px; padding-right: 22px; padding-left: 10px; }
   .reader-format-button { padding: 0 9px; }
   .reader-format-button span { display: none; }
   .reader-display-menu { top: 68px; right: 12px; width: min(286px, calc(100% - 24px)); }
@@ -815,7 +819,7 @@ body.kb-navigation-open{overflow:hidden;touch-action:none}
 .kb-hero .kb-current-chapter{border-color:var(--category-color,var(--brand))}
 .kb-spine.is-done{background:var(--category-color,var(--brand))}
 .kb-spine.is-next{background:color-mix(in srgb,var(--category-color,var(--brand)) 55%,var(--surface))}
-.reader-page .reader-translation-pill{border-color:color-mix(in srgb,var(--category-color,var(--brand)) 35%,var(--line))}
+.reader-page .reader-translation-control select{border-color:color-mix(in srgb,var(--category-color,var(--brand)) 35%,var(--line))}
 .reader-page .reader-selection-button,.reader-page .reader-topbar-link{color:var(--category-color,var(--brand))}
 .reader-page .chapter-panel-header strong,.reader-page .book-info-kicker{color:var(--category-color,var(--brand))}
 .reader-page .reader-reading-fill{background:var(--category-color,var(--brand))}
@@ -994,7 +998,7 @@ a:not([class]):visited{color:var(--brand-dark)}
 .reader-page .kb-reader-selector-row .reader-selection-bar{display:flex;align-items:stretch;width:max-content;max-width:100%;min-height:40px;margin:0;padding:0;border:0;border-radius:999px;overflow:hidden;background:#eceeeb}
 .reader-page .kb-reader-selector-row .reader-selection-button{display:flex;align-items:center;gap:8px;min-width:0;max-width:100%;padding:8px 13px;border:0;border-radius:0;background:transparent;font-size:13px;white-space:nowrap}
 .reader-page .kb-reader-selector-row .reader-selection-button span{overflow:hidden;text-overflow:ellipsis}
-.reader-page .kb-reader-selector-row .reader-translation-pill{display:flex;align-items:center;padding:8px 12px;border-left:1px solid #fff;border-radius:0;background:transparent;font-size:13px;white-space:nowrap}
+.reader-page .kb-reader-selector-row .reader-translation-control select{display:flex;align-items:center;min-height:36px;padding:8px 12px;border-left:1px solid #fff;border-radius:0;background:transparent;font-size:13px;white-space:nowrap}
 .reader-page .reader-progress{padding-top:9px;padding-bottom:9px}
 @media(min-width:700px){.reader-page .kb-reader-toolbar,.reader-page .kb-reader-selector-row{padding-left:24px;padding-right:24px}}
 
