@@ -6,6 +6,7 @@ on:
       - 'scripts/audit-history-headings.mjs'
       - 'scripts/import-history-sections.mjs'
       - 'scripts/classify-history-sections.mjs'
+      - 'scripts/build-history-editorial-review.mjs'
       - 'dist/data/history/timeline.json'
       - '.github/workflows/audit-history-headings.yml'
 jobs:
@@ -31,6 +32,8 @@ jobs:
         run: node scripts/import-history-sections.mjs /tmp/history-audit/headings.jsonl dist/data/rvr1909 reports/history-sections-pilot.json reports/history-sections-pilot-report.json
       - name: Classify pilot sections as editorial candidates
         run: node scripts/classify-history-sections.mjs reports/history-sections-pilot.json dist/data/history/timeline.json reports/history-sections-classified.json reports/history-classification-report.json
+      - name: Prepare source-grounded editorial review sample
+        run: node scripts/build-history-editorial-review.mjs reports/history-sections-classified.json reports/history-editorial-review.json reports/history-editorial-review-report.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -40,6 +43,8 @@ jobs:
             reports/history-sections-pilot-report.json
             reports/history-sections-classified.json
             reports/history-classification-report.json
+            reports/history-editorial-review.json
+            reports/history-editorial-review-report.json
           if-no-files-found: warn
           retention-days: 30
       - uses: actions/upload-artifact@v4
