@@ -1,0 +1,24 @@
+name: Build pericope catalog
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/build-pericope-catalog.mjs'
+      - 'dist/data/pericopes/**'
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/build-pericope-catalog.mjs
+      - name: Commit generated catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/data/history/pericopes-generated.json
+          git diff --cached --quiet || (git commit -m "build(history): regenerate 66-book pericope catalog" && git push)
