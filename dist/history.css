@@ -116,3 +116,11 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 .kb-history-app .era-detail .kb-genesis{font-family:system-ui,sans-serif}
 @media(max-width:360px){.kb-history-app .atlas{margin-inline:12px}.kb-history-app .era-strip{padding-inline:14px}.kb-history-app .era-strip .era{flex-basis:calc(100% - 30px)}.kb-history-app .era-detail{padding-inline:16px}.kb-history-app .axis{font-size:10px}}
 @media(prefers-color-scheme:dark){.kb-history-app{--bg:#101d16;--ink:#e8f0e9;--green:#71b697;--gold:#d6a548}.kb-history-app .back,.kb-history-app .kb-info-button,.kb-history-app .era-strip .era,.kb-history-app .kb-history-note{background:#1b2b22;border-color:#34463a;color:var(--ink)}.kb-history-app .era-title,.kb-history-app .top-label{color:var(--ink)}.kb-history-app .era-date,.kb-history-app .era-count,.kb-history-app .axis{color:#b6c4b9}}
+
+/* Semantic editorial hierarchy; preserves existing History layout and scroll. */
+.kb-history-app .kb-history-section-heading{margin:20px 0 12px;font:650 16px/1.35 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif;letter-spacing:0;text-transform:none;color:var(--ink)}
+.kb-history-app .kb-genesis-symbol{width:40px;height:40px;flex:0 0 40px;display:inline-flex;align-items:center;justify-content:center;border-radius:12px;background:rgba(44,118,88,.09);color:var(--green);font:600 21px/1 system-ui,sans-serif}
+.kb-history-app .kb-genesis-unit-title small{font-size:13px;line-height:1.45}
+.kb-history-app .kb-genesis-heading h3{letter-spacing:-.025em}
+.kb-history-app .kb-genesis-intro{margin-top:8px}
+@media(prefers-color-scheme:dark){.kb-history-app .kb-genesis-symbol{background:rgba(113,182,151,.14)}}
