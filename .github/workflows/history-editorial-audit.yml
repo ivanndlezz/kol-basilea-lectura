@@ -1,0 +1,35 @@
+name: Audit historical editorial coverage
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dist/data/history/**'
+      - 'dist/data/catalog/books.json'
+      - 'scripts/*history*.mjs'
+      - '.github/workflows/history-editorial-audit.yml'
+  workflow_dispatch:
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit all 66 books and 10 eras
+        run: node scripts/report-history-coverage.mjs
+      - name: Build editorial queue when classified source is available
+        run: |
+          if [ -f reports/history-sections-classified.json ]; then
+            node scripts/build-history-editorial-review.mjs
+          else
+            echo "No classified source committed; review queue not generated."
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: history-editorial-coverage
+          path: |
+            reports/history-coverage.json
+            reports/history-editorial-review.json
+            reports/history-editorial-review-report.json
+          if-no-files-found: error
