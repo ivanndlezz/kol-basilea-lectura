@@ -261,3 +261,12 @@ html[data-kb-history-theme="dark"] .kb-history-app .kb-skeleton-card{background:
 html[data-kb-history-theme="dark"] .kb-history-app .kb-period{border-color:#567261;color:#e3eae3}
 html[data-kb-history-theme="dark"] .kb-history-app .kb-period.active{background:#6caa85;color:#12251b}
 html[data-kb-history-theme="light"]{color-scheme:light}
+
+/* Three understated navigation ticks: previous / focused / next. */
+.kb-history-app .kb-era-tickmarks{display:flex;align-items:center;justify-content:center;gap:7px;height:17px;margin:0 auto 6px;pointer-events:none}
+.kb-history-app .kb-era-tick{display:block;width:15px;height:3px;border-radius:99px;background:var(--green);opacity:.22;transform:scaleX(.75);transition:transform .24s ease,opacity .24s ease,background .24s ease}
+.kb-history-app .kb-era-tick-current{width:23px;opacity:1;transform:scaleX(1)}
+.kb-history-app .kb-era-tickmarks[data-direction="next"] .kb-era-tick-prev,.kb-history-app .kb-era-tickmarks[data-direction="prev"] .kb-era-tick-next{opacity:.08}
+.kb-history-app .kb-era-tickmarks[data-active] .kb-era-tick-current{animation:kb-era-tick-arrive .28s ease-out}
+@keyframes kb-era-tick-arrive{from{transform:scaleX(.45);opacity:.45}to{transform:scaleX(1);opacity:1}}
+@media(prefers-reduced-motion:reduce){.kb-history-app .kb-era-tick{transition:none}.kb-history-app .kb-era-tick-current{animation:none!important}}
