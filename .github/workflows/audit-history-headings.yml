@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'scripts/audit-history-headings.mjs'
+      - 'scripts/import-history-sections.mjs'
       - '.github/workflows/audit-history-headings.yml'
 jobs:
   compare:
@@ -24,6 +25,17 @@ jobs:
         run: node scripts/convert-usfm.mjs /tmp/history-audit/rvr1909 dist/data/rvr1909 rvr1909 eBible.org
       - name: Compare four pilot books and produce reference-only report
         run: node scripts/audit-history-headings.mjs /tmp/history-audit/headings.jsonl dist/data/rvr1909 reports/history-heading-compatibility.json
+      - name: Import and validate four-book section ranges (not published)
+        run: node scripts/import-history-sections.mjs /tmp/history-audit/headings.jsonl dist/data/rvr1909 reports/history-sections-pilot.json reports/history-sections-pilot-report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: history-sections-pilot
+          path: |
+            reports/history-sections-pilot.json
+            reports/history-sections-pilot-report.json
+          if-no-files-found: warn
+          retention-days: 30
       - uses: actions/upload-artifact@v4
         if: always()
         with:
