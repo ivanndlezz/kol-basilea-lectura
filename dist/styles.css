@@ -1064,3 +1064,8 @@ a:not([class]):visited{color:var(--brand-dark)}
 .reader-page .reader-action-complete:not(:disabled):hover { background: #1d6940; }
 .reader-page .reader-action-continue:not(:disabled) { background: #2563eb; color: #fff; box-shadow: 0 8px 18px rgba(37,99,235,.22); }
 .reader-page .reader-action-continue:not(:disabled):hover { background: #1d4ed8; }
+
+/* Completing a book is a distinct amber milestone, separate from marking a chapter read. */
+.reader-page .reader-action-book-finish:not(:disabled) { background: #bd681d; color: #fff; box-shadow: 0 8px 18px rgba(189,104,29,.24); }
+.reader-page .reader-action-book-finish:not(:disabled):hover { background: #9c5114; }
+.reader-page .reader-action-book-finish:focus-visible { outline: 3px solid #e6a44b; outline-offset: 3px; }
