@@ -262,8 +262,9 @@ html[data-kb-history-theme="dark"] .kb-history-app .kb-period{border-color:#5672
 html[data-kb-history-theme="dark"] .kb-history-app .kb-period.active{background:#6caa85;color:#12251b}
 html[data-kb-history-theme="light"]{color-scheme:light}
 
-/* Sliding page-control: ten real indicators in a three-item viewport. */
-.kb-history-app .kb-era-tickmarks{position:relative;width:74px;height:20px;overflow:hidden;margin:0 auto 6px;pointer-events:none}
-.kb-history-app .kb-era-tick-track{display:flex;align-items:center;gap:10px;height:20px;width:max-content;transform:translate3d(0,0,0);will-change:transform}
-.kb-history-app .kb-era-tick{display:block;flex:0 0 18px;width:18px;height:4px;border-radius:99px;background:var(--green);opacity:.23;transform:scaleX(.78);transition:none;animation:none}
-@media(prefers-reduced-motion:reduce){.kb-history-app .kb-era-tick-track{will-change:auto}}
+/* Three-position cyclic pager: 1 → 2 → 3 → 1. */
+.kb-history-app .kb-era-tickmarks{display:flex;align-items:center;justify-content:center;gap:10px;width:74px;height:20px;margin:0 auto 6px;pointer-events:none}
+.kb-history-app .kb-era-tick{display:block;flex:0 0 18px;width:18px;height:4px;border-radius:99px;background:var(--green);opacity:.23;transform:scaleX(.8);transition:opacity 180ms ease,transform 180ms ease,background-color 180ms ease}
+.kb-history-app .kb-era-tick.is-active{background:var(--gold);opacity:1;transform:scaleX(1)}
+.kb-history-app .kb-era-tickmarks.kb-tick-reset .kb-era-tick{transition:none}
+@media(prefers-reduced-motion:reduce){.kb-history-app .kb-era-tick{transition:none}}
