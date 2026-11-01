@@ -24,6 +24,12 @@
       "groupId": "biblical",
       "events": [
         "Caín y Abel"
+      ],
+      "subEraIds": [
+        "primeval--creation-eden",
+        "primeval--first-generations",
+        "primeval--flood-renewal",
+        "primeval--nations-babel"
       ]
     },
     {
@@ -48,6 +54,11 @@
       "groupId": "biblical",
       "events": [
         "Isaac"
+      ],
+      "subEraIds": [
+        "patriarchs--abraham",
+        "patriarchs--isaac-jacob",
+        "patriarchs--jose-egipto"
       ]
     },
     {
@@ -78,6 +89,11 @@
       "groupId": "biblical",
       "events": [
         "Josué"
+      ],
+      "subEraIds": [
+        "exodus-judges--liberation",
+        "exodus-judges--wilderness-covenant",
+        "exodus-judges--settlement-judges"
       ]
     },
     {
@@ -109,6 +125,11 @@
       "groupId": "biblical",
       "events": [
         "División del reino"
+      ],
+      "subEraIds": [
+        "monarchy--united-kingdom",
+        "monarchy--divided-kingdom",
+        "monarchy--kingdoms-fall"
       ]
     },
     {
@@ -139,6 +160,11 @@
       "events": [
         "Exilio en Babilonia",
         "Esdras y Nehemías"
+      ],
+      "subEraIds": [
+        "exile-restoration--babylonian-exile",
+        "exile-restoration--persian-return",
+        "exile-restoration--temple-rebuilding"
       ]
     },
     {
@@ -165,6 +191,11 @@
       "events": [
         "Dinastía asmonea",
         "Herodes el Grande"
+      ],
+      "subEraIds": [
+        "second-temple--hellenistic",
+        "second-temple--hasmonean",
+        "second-temple--roman-judea"
       ]
     },
     {
@@ -194,7 +225,12 @@
         "Cartas apostólicas"
       ],
       "groupId": "christianity",
-      "events": []
+      "events": [],
+      "subEraIds": [
+        "apostolic--jesus-ministry",
+        "apostolic--jerusalem-church",
+        "apostolic--mission-expansion"
+      ]
     },
     {
       "id": "patristic",
@@ -219,6 +255,11 @@
       "events": [
         "Justino Mártir",
         "Orígenes"
+      ],
+      "subEraIds": [
+        "patristic--apostolic-fathers",
+        "patristic--apologists",
+        "patristic--councils"
       ]
     },
     {
@@ -242,6 +283,11 @@
       "events": [
         "Anselmo",
         "Movimientos prerreformadores"
+      ],
+      "subEraIds": [
+        "medieval--early-medieval",
+        "medieval--scholasticism",
+        "medieval--late-medieval"
       ]
     },
     {
@@ -265,6 +311,11 @@
       "events": [
         "Calvino",
         "Traducciones bíblicas"
+      ],
+      "subEraIds": [
+        "modern--reformations",
+        "modern--confessional",
+        "modern--modern-global"
       ]
     }
   ],
@@ -280,7 +331,8 @@
       },
       "bookIds": [
         "genesis"
-      ]
+      ],
+      "subEraId": "primeval--creation-eden"
     },
     {
       "id": "flood",
@@ -293,7 +345,8 @@
       },
       "bookIds": [
         "genesis"
-      ]
+      ],
+      "subEraId": "primeval--flood-renewal"
     },
     {
       "id": "babel",
@@ -306,7 +359,8 @@
       },
       "bookIds": [
         "genesis"
-      ]
+      ],
+      "subEraId": "primeval--nations-babel"
     },
     {
       "id": "abraham",
@@ -319,7 +373,8 @@
       },
       "bookIds": [
         "genesis"
-      ]
+      ],
+      "subEraId": "patriarchs--abraham"
     },
     {
       "id": "jacob",
@@ -332,7 +387,8 @@
       },
       "bookIds": [
         "genesis"
-      ]
+      ],
+      "subEraId": "patriarchs--isaac-jacob"
     },
     {
       "id": "joseph",
@@ -345,7 +401,8 @@
       },
       "bookIds": [
         "genesis"
-      ]
+      ],
+      "subEraId": "patriarchs--jose-egipto"
     },
     {
       "id": "exodus",
@@ -358,7 +415,8 @@
       },
       "bookIds": [
         "exodo"
-      ]
+      ],
+      "subEraId": "exodus-judges--liberation"
     },
     {
       "id": "sinai",
@@ -371,7 +429,8 @@
       },
       "bookIds": [
         "exodo"
-      ]
+      ],
+      "subEraId": "exodus-judges--wilderness-covenant"
     },
     {
       "id": "judges",
@@ -384,7 +443,8 @@
       },
       "bookIds": [
         "jueces"
-      ]
+      ],
+      "subEraId": "exodus-judges--settlement-judges"
     },
     {
       "id": "united-kingdom",
@@ -399,7 +459,8 @@
         "1-samuel",
         "2-samuel",
         "1-reyes"
-      ]
+      ],
+      "subEraId": "monarchy--united-kingdom"
     },
     {
       "id": "samaria-fall",
@@ -413,7 +474,8 @@
       "bookIds": [
         "2-reyes"
       ],
-      "dateLabel": "722/721 a. C."
+      "dateLabel": "722/721 a. C.",
+      "subEraId": "monarchy--kingdoms-fall"
     },
     {
       "id": "jerusalem-fall",
@@ -428,7 +490,8 @@
         "2-reyes",
         "jeremias"
       ],
-      "dateLabel": "587/586 a. C."
+      "dateLabel": "587/586 a. C.",
+      "subEraId": "monarchy--kingdoms-fall"
     },
     {
       "id": "babylon-conquest",
@@ -442,7 +505,8 @@
       "bookIds": [
         "esdras"
       ],
-      "dateLabel": "539 a. C."
+      "dateLabel": "539 a. C.",
+      "subEraId": "exile-restoration--persian-return"
     },
     {
       "id": "second-temple",
@@ -456,7 +520,8 @@
       "bookIds": [
         "esdras"
       ],
-      "dateLabel": "516/515 a. C."
+      "dateLabel": "516/515 a. C.",
+      "subEraId": "exile-restoration--temple-rebuilding"
     },
     {
       "id": "alexander",
@@ -467,7 +532,8 @@
         "year": -334,
         "precision": "approximate"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "second-temple--hellenistic"
     },
     {
       "id": "maccabean",
@@ -478,7 +544,8 @@
         "year": -167,
         "precision": "approximate"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "second-temple--hasmonean"
     },
     {
       "id": "roman-judea",
@@ -489,7 +556,8 @@
         "year": -63,
         "precision": "year"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "second-temple--roman-judea"
     },
     {
       "id": "jesus",
@@ -505,7 +573,8 @@
         "marcos",
         "lucas",
         "juan"
-      ]
+      ],
+      "subEraId": "apostolic--jesus-ministry"
     },
     {
       "id": "pentecost",
@@ -518,7 +587,8 @@
       },
       "bookIds": [
         "hechos"
-      ]
+      ],
+      "subEraId": "apostolic--jerusalem-church"
     },
     {
       "id": "paul",
@@ -531,7 +601,8 @@
       },
       "bookIds": [
         "hechos"
-      ]
+      ],
+      "subEraId": "apostolic--mission-expansion"
     },
     {
       "id": "temple-70",
@@ -547,7 +618,8 @@
         "marcos",
         "lucas"
       ],
-      "dateLabel": "70 d. C."
+      "dateLabel": "70 d. C.",
+      "subEraId": "apostolic--mission-expansion"
     },
     {
       "id": "ignatius",
@@ -558,7 +630,8 @@
         "year": null,
         "precision": "approximate"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "patristic--apostolic-fathers"
     },
     {
       "id": "nicea",
@@ -570,7 +643,8 @@
         "precision": "year"
       },
       "bookIds": [],
-      "dateLabel": "325 d. C."
+      "dateLabel": "325 d. C.",
+      "subEraId": "patristic--councils"
     },
     {
       "id": "chalcedon",
@@ -582,7 +656,8 @@
         "precision": "year"
       },
       "bookIds": [],
-      "dateLabel": "451 d. C."
+      "dateLabel": "451 d. C.",
+      "subEraId": "patristic--councils"
     },
     {
       "id": "schism",
@@ -593,7 +668,8 @@
         "year": 1054,
         "precision": "conventional"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "medieval--late-medieval"
     },
     {
       "id": "aquinas",
@@ -604,7 +680,8 @@
         "year": null,
         "precision": "approximate"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "medieval--scholasticism"
     },
     {
       "id": "reformation",
@@ -616,7 +693,8 @@
         "precision": "conventional"
       },
       "bookIds": [],
-      "dateLabel": "1517 d. C."
+      "dateLabel": "1517 d. C.",
+      "subEraId": "modern--reformations"
     },
     {
       "id": "biblical-studies",
@@ -627,7 +705,8 @@
         "year": null,
         "precision": "broad"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "modern--modern-global"
     },
     {
       "id": "editorial-primeval-28",
@@ -640,7 +719,8 @@
       },
       "bookIds": [
         "genesis"
-      ]
+      ],
+      "subEraId": "primeval--first-generations"
     },
     {
       "id": "editorial-patriarchs-29",
@@ -653,7 +733,8 @@
       },
       "bookIds": [
         "genesis"
-      ]
+      ],
+      "subEraId": "patriarchs--isaac-jacob"
     },
     {
       "id": "editorial-exodus-judges-30",
@@ -669,7 +750,8 @@
         "josue",
         "jueces",
         "rut"
-      ]
+      ],
+      "subEraId": "exodus-judges--settlement-judges"
     },
     {
       "id": "editorial-monarchy-31",
@@ -687,7 +769,8 @@
         "2-reyes",
         "1-cronicas",
         "2-cronicas"
-      ]
+      ],
+      "subEraId": "monarchy--divided-kingdom"
     },
     {
       "id": "editorial-exile-restoration-32",
@@ -703,7 +786,8 @@
         "nehemias",
         "ageo",
         "zacarias"
-      ]
+      ],
+      "subEraId": "exile-restoration--babylonian-exile"
     },
     {
       "id": "editorial-exile-restoration-33",
@@ -719,7 +803,8 @@
         "nehemias",
         "ageo",
         "zacarias"
-      ]
+      ],
+      "subEraId": "exile-restoration--temple-rebuilding"
     },
     {
       "id": "editorial-second-temple-34",
@@ -732,7 +817,8 @@
       },
       "bookIds": [
         "daniel"
-      ]
+      ],
+      "subEraId": "second-temple--hasmonean"
     },
     {
       "id": "editorial-second-temple-35",
@@ -745,7 +831,8 @@
       },
       "bookIds": [
         "daniel"
-      ]
+      ],
+      "subEraId": "second-temple--roman-judea"
     },
     {
       "id": "editorial-patristic-36",
@@ -756,7 +843,8 @@
         "year": null,
         "precision": "debated"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "patristic--apologists"
     },
     {
       "id": "editorial-patristic-37",
@@ -767,7 +855,8 @@
         "year": null,
         "precision": "debated"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "patristic--apologists"
     },
     {
       "id": "editorial-medieval-38",
@@ -778,7 +867,8 @@
         "year": null,
         "precision": "debated"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "medieval--scholasticism"
     },
     {
       "id": "editorial-medieval-39",
@@ -789,7 +879,8 @@
         "year": null,
         "precision": "debated"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "medieval--late-medieval"
     },
     {
       "id": "editorial-modern-40",
@@ -800,7 +891,8 @@
         "year": null,
         "precision": "debated"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "modern--reformations"
     },
     {
       "id": "editorial-modern-41",
@@ -811,7 +903,8 @@
         "year": null,
         "precision": "debated"
       },
-      "bookIds": []
+      "bookIds": [],
+      "subEraId": "modern--modern-global"
     }
   ],
   "groups": [
@@ -840,7 +933,9 @@
       "reference": "Génesis 1–2",
       "chapter": 1,
       "summary": "El mundo, la vida y el ser humano: un relato de comienzos y propósito.",
-      "visual": "cosmos"
+      "visual": "cosmos",
+      "subEraId": "primeval--creation-eden",
+      "status": "published"
     },
     {
       "id": "caida",
@@ -850,7 +945,9 @@
       "reference": "Génesis 3",
       "chapter": 3,
       "summary": "Una decisión, una ruptura y la pérdida del jardín.",
-      "visual": "garden"
+      "visual": "garden",
+      "subEraId": "primeval--creation-eden",
+      "status": "published"
     },
     {
       "id": "cain-y-abel",
@@ -860,7 +957,9 @@
       "reference": "Génesis 4:1–16",
       "chapter": 4,
       "summary": "Dos hermanos, dos ofrendas y la violencia que irrumpe en la familia.",
-      "visual": "brothers"
+      "visual": "brothers",
+      "subEraId": "primeval--first-generations",
+      "status": "published"
     },
     {
       "id": "primeras-ciudades-y-reinos",
@@ -870,7 +969,9 @@
       "reference": "Génesis 4:17–24; 10:8–12",
       "chapter": 4,
       "summary": "Ciudades, genealogías y el primer reino mencionado en el relato de Génesis.",
-      "visual": "city"
+      "visual": "city",
+      "subEraId": "primeval--first-generations",
+      "status": "published"
     },
     {
       "id": "diluvio",
@@ -880,7 +981,9 @@
       "reference": "Génesis 6–9",
       "chapter": 6,
       "summary": "El juicio de las aguas y una alianza para comenzar de nuevo.",
-      "visual": "flood"
+      "visual": "flood",
+      "subEraId": "primeval--flood-renewal",
+      "status": "published"
     },
     {
       "id": "babel",
@@ -890,7 +993,413 @@
       "reference": "Génesis 11:1–9",
       "chapter": 11,
       "summary": "Una ciudad, una torre y la dispersión de los pueblos.",
-      "visual": "tower"
+      "visual": "tower",
+      "subEraId": "primeval--nations-babel",
+      "status": "published"
     }
-  ]
+  ],
+  "schemaVersion": 2,
+  "blocks": [
+    {
+      "id": "biblical",
+      "title": "Historia bíblica",
+      "order": 1,
+      "eraIds": [
+        "primeval",
+        "patriarchs",
+        "exodus-judges",
+        "monarchy",
+        "exile-restoration",
+        "second-temple"
+      ]
+    },
+    {
+      "id": "christianity",
+      "title": "Cristianismo",
+      "order": 2,
+      "eraIds": [
+        "apostolic",
+        "patristic",
+        "medieval",
+        "modern"
+      ]
+    }
+  ],
+  "subEras": [
+    {
+      "id": "primeval--creation-eden",
+      "eraId": "primeval",
+      "order": 1,
+      "title": "Creación y Edén",
+      "storyIds": [
+        "creacion",
+        "caida"
+      ],
+      "eventIds": [
+        "creation"
+      ],
+      "status": "curated"
+    },
+    {
+      "id": "primeval--first-generations",
+      "eraId": "primeval",
+      "order": 2,
+      "title": "Primeras generaciones",
+      "storyIds": [
+        "cain-y-abel",
+        "primeras-ciudades-y-reinos"
+      ],
+      "eventIds": [
+        "editorial-primeval-28"
+      ],
+      "status": "curated"
+    },
+    {
+      "id": "primeval--flood-renewal",
+      "eraId": "primeval",
+      "order": 3,
+      "title": "Diluvio y nuevo comienzo",
+      "storyIds": [
+        "diluvio"
+      ],
+      "eventIds": [
+        "flood"
+      ],
+      "status": "curated"
+    },
+    {
+      "id": "primeval--nations-babel",
+      "eraId": "primeval",
+      "order": 4,
+      "title": "Los pueblos y Babel",
+      "storyIds": [
+        "babel"
+      ],
+      "eventIds": [
+        "babel"
+      ],
+      "status": "curated"
+    },
+    {
+      "id": "patriarchs--abraham",
+      "eraId": "patriarchs",
+      "order": 1,
+      "title": "Abraham",
+      "storyIds": [],
+      "eventIds": [
+        "abraham"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "patriarchs--isaac-jacob",
+      "eraId": "patriarchs",
+      "order": 2,
+      "title": "Isaac y Jacob",
+      "storyIds": [],
+      "eventIds": [
+        "jacob",
+        "editorial-patriarchs-29"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "patriarchs--jose-egipto",
+      "eraId": "patriarchs",
+      "order": 3,
+      "title": "José y Egipto",
+      "storyIds": [],
+      "eventIds": [
+        "joseph"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "exodus-judges--liberation",
+      "eraId": "exodus-judges",
+      "order": 1,
+      "title": "Esclavitud y liberación",
+      "storyIds": [],
+      "eventIds": [
+        "exodus"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "exodus-judges--wilderness-covenant",
+      "eraId": "exodus-judges",
+      "order": 2,
+      "title": "Desierto y alianza",
+      "storyIds": [],
+      "eventIds": [
+        "sinai"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "exodus-judges--settlement-judges",
+      "eraId": "exodus-judges",
+      "order": 3,
+      "title": "Asentamiento y jueces",
+      "storyIds": [],
+      "eventIds": [
+        "judges",
+        "editorial-exodus-judges-30"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "monarchy--united-kingdom",
+      "eraId": "monarchy",
+      "order": 1,
+      "title": "Reino unido",
+      "storyIds": [],
+      "eventIds": [
+        "united-kingdom"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "monarchy--divided-kingdom",
+      "eraId": "monarchy",
+      "order": 2,
+      "title": "Reinos divididos",
+      "storyIds": [],
+      "eventIds": [
+        "editorial-monarchy-31"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "monarchy--kingdoms-fall",
+      "eraId": "monarchy",
+      "order": 3,
+      "title": "Caída de los reinos",
+      "storyIds": [],
+      "eventIds": [
+        "samaria-fall",
+        "jerusalem-fall"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "exile-restoration--babylonian-exile",
+      "eraId": "exile-restoration",
+      "order": 1,
+      "title": "Exilio en Babilonia",
+      "storyIds": [],
+      "eventIds": [
+        "editorial-exile-restoration-32"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "exile-restoration--persian-return",
+      "eraId": "exile-restoration",
+      "order": 2,
+      "title": "Retorno bajo Persia",
+      "storyIds": [],
+      "eventIds": [
+        "babylon-conquest"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "exile-restoration--temple-rebuilding",
+      "eraId": "exile-restoration",
+      "order": 3,
+      "title": "Reconstrucción y comunidad",
+      "storyIds": [],
+      "eventIds": [
+        "second-temple",
+        "editorial-exile-restoration-33"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "second-temple--hellenistic",
+      "eraId": "second-temple",
+      "order": 1,
+      "title": "Mundo helenístico",
+      "storyIds": [],
+      "eventIds": [
+        "alexander"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "second-temple--hasmonean",
+      "eraId": "second-temple",
+      "order": 2,
+      "title": "Macabeos y asmoneos",
+      "storyIds": [],
+      "eventIds": [
+        "maccabean",
+        "editorial-second-temple-34"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "second-temple--roman-judea",
+      "eraId": "second-temple",
+      "order": 3,
+      "title": "Judea bajo Roma",
+      "storyIds": [],
+      "eventIds": [
+        "roman-judea",
+        "editorial-second-temple-35"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "apostolic--jesus-ministry",
+      "eraId": "apostolic",
+      "order": 1,
+      "title": "Vida y ministerio de Jesús",
+      "storyIds": [],
+      "eventIds": [
+        "jesus"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "apostolic--jerusalem-church",
+      "eraId": "apostolic",
+      "order": 2,
+      "title": "Iglesia de Jerusalén",
+      "storyIds": [],
+      "eventIds": [
+        "pentecost"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "apostolic--mission-expansion",
+      "eraId": "apostolic",
+      "order": 3,
+      "title": "Expansión apostólica",
+      "storyIds": [],
+      "eventIds": [
+        "paul",
+        "temple-70"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "patristic--apostolic-fathers",
+      "eraId": "patristic",
+      "order": 1,
+      "title": "Padres apostólicos",
+      "storyIds": [],
+      "eventIds": [
+        "ignatius"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "patristic--apologists",
+      "eraId": "patristic",
+      "order": 2,
+      "title": "Apologistas y maestros",
+      "storyIds": [],
+      "eventIds": [
+        "editorial-patristic-36",
+        "editorial-patristic-37"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "patristic--councils",
+      "eraId": "patristic",
+      "order": 3,
+      "title": "Concilios y debates",
+      "storyIds": [],
+      "eventIds": [
+        "nicea",
+        "chalcedon"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "medieval--early-medieval",
+      "eraId": "medieval",
+      "order": 1,
+      "title": "Alta Edad Media",
+      "storyIds": [],
+      "eventIds": [],
+      "status": "outline"
+    },
+    {
+      "id": "medieval--scholasticism",
+      "eraId": "medieval",
+      "order": 2,
+      "title": "Escolástica",
+      "storyIds": [],
+      "eventIds": [
+        "aquinas",
+        "editorial-medieval-38"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "medieval--late-medieval",
+      "eraId": "medieval",
+      "order": 3,
+      "title": "Baja Edad Media",
+      "storyIds": [],
+      "eventIds": [
+        "schism",
+        "editorial-medieval-39"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "modern--reformations",
+      "eraId": "modern",
+      "order": 1,
+      "title": "Reformas del siglo XVI",
+      "storyIds": [],
+      "eventIds": [
+        "reformation",
+        "editorial-modern-40"
+      ],
+      "status": "outline"
+    },
+    {
+      "id": "modern--confessional",
+      "eraId": "modern",
+      "order": 2,
+      "title": "Tradiciones confesionales",
+      "storyIds": [],
+      "eventIds": [],
+      "status": "outline"
+    },
+    {
+      "id": "modern--modern-global",
+      "eraId": "modern",
+      "order": 3,
+      "title": "Cristianismo moderno y global",
+      "storyIds": [],
+      "eventIds": [
+        "biblical-studies",
+        "editorial-modern-41"
+      ],
+      "status": "outline"
+    }
+  ],
+  "schema": {
+    "hierarchy": [
+      "blocks",
+      "eras",
+      "subEras",
+      "stories"
+    ],
+    "links": "Stable IDs; events and stories are separate entities",
+    "datePolicy": "Retain original date and precision; sub-era classification does not imply a new date",
+    "statusValues": [
+      "outline",
+      "curated",
+      "published"
+    ]
+  }
 }
