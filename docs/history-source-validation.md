@@ -103,3 +103,18 @@ La ausencia de `dist/data/rvr1909/` en el **árbol fuente** de GitHub **no impli
 **Próxima prueba auditable:** ejecutar una comparación no distributiva de los registros `s1` de BSB (EXO, JDG, LUK, ACT) contra `dist/data/rvr1909/{exodo,jueces,lucas,hechos}.json` generados por el workflow. Validar existencia de capítulo/versículo, orden, encabezados duplicados, diferencias de versificación y porcentajes de aceptación; publicar solo métricas y referencias, no títulos BSB. Mantener pendiente la licencia específica de `base/headings.jsonl`.
 
 La afirmación anterior de que no se encontró el directorio fue correcta respecto del **repositorio fuente**, pero insuficiente como diagnóstico del **producto desplegado**.
+
+
+## Resultado ejecutado — auditoría piloto de referencias (2026-11-01)
+
+**GitHub Actions:** https://github.com/ivanndlezz/kol-basilea-lectura/actions/runs/41353465424 (conclusión: `success`; trabajo `compare`, ID 124988429114). Se verificaron los registros del trabajo y el artefacto `history-heading-compatibility` está disponible (no expirado).
+
+| Libro | Referencias `s1` válidas | Duplicados | Fuera de orden |
+|---|---:|---:|---:|
+| Éxodo | 123/123 | 0 | 0 |
+| Jueces | 52/52 | 0 | 0 |
+| Lucas | 154/154 | 0 | 0 |
+| Hechos | 110/110 | 0 | 0 |
+| **Total** | **439/439** | **0** | **0** |
+
+**Alcance:** validación automatizada de existencia y orden de referencias iniciales `c:before_v` frente a los JSON RV1909 generados desde eBible.org. **No** valida equivalencia de títulos, final de perícopas, interpretación editorial ni permiso de reproducción de BSB. El script de auditoría y el workflow están en `scripts/audit-history-headings.mjs` y `.github/workflows/audit-history-headings.yml`. La revisión de licencia continúa abierta; el paso 5 debe consumir solo coordenadas verificadas y títulos originales propios, sin redistribuir texto BSB hasta autorización.
