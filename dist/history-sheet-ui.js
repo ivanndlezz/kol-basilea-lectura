@@ -21,7 +21,7 @@ export function renderEraSheet({era,books="",body="",navigation=""}){
   return '<header class="kb-sheet-heading"><h2>'+esc(era.title)+'</h2><p class="kb-history-context">'+esc(era.subtitle)+'</p></header>'+books+'<div class="kb-sheet-content">'+body+'</div>'+navigation;
 }
 // All eras share the same narrative-card surface. Unreviewed events are clearly labelled.
-export function renderEraOverview({era,books,navigation,events=[],periods=[],readerPath="",basePath="",selectedEvent=null}){
+export function renderEraOverview({era,books,navigation,events=[],periods=[],readerPath="",basePath="",selectedEvent=null,pericopeSection=""}){
   if(selectedEvent){
     const period=periods.find(p=>p.id===selectedEvent.subEraId);
     const sourceBooks=(selectedEvent.bookIds||[]).filter(Boolean);
@@ -41,6 +41,6 @@ export function renderEraOverview({era,books,navigation,events=[],periods=[],rea
     return '<a class="kb-story" href="'+esc(href)+'" aria-label="Abrir ficha de '+esc(event.title)+'">'+content+'</a>';
   }).join("")+'</div></section>').join("");
   const intro=era.summary?'<p class="kb-story-context">'+esc(era.summary)+'</p>':"";
-  const body=intro+'<p class="kb-history-explorer-note">Estos acontecimientos todavía no son relatos editoriales revisados. Las fichas se incorporarán tras su validación.</p>'+cards;
+  const body=intro+pericopeSection+'<p class="kb-history-explorer-note">Estos acontecimientos todavía no son relatos editoriales revisados. Las fichas se incorporarán tras su validación.</p>'+cards;
   return renderEraSheet({era,books,body,navigation});
 }
