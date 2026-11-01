@@ -571,7 +571,8 @@ function renderChapterButton(book, chapter, selectedChapter, variant = "chapter-
   if (variant === "chapter-sheet-button") {
     return `<button class="${variant} ${done ? "is-complete" : ""} ${selected ? "is-current" : ""}" data-action="select-chapter" data-chapter="${chapter}" aria-label="Capítulo ${chapter}${done ? ", leído" : selected ? ", en curso" : ", pendiente"}" ${selected ? 'aria-current="step" data-current-chapter="true"' : ""}><span class="chapter-sheet-number">${done ? icon("check", 16) : chapter}</span></button>`;
   }
-  return `<button class="${variant} ${done ? "is-complete" : ""} ${selected ? "is-current" : ""}" data-action="select-chapter" data-chapter="${chapter}" aria-label="Capítulo ${chapter}${done ? ", leído" : ", pendiente"}" ${selected ? 'aria-current="step"' : ""}><span class="chapter-number">${done ? icon("check", 15) : chapter}</span><span class="chapter-label">Capítulo ${chapter}</span><span class="chapter-status">${status}</span></button>`;
+  const label = variant === "chapter-mini" ? `Cap. ${chapter}` : `Capítulo ${chapter}`;
+  return `<button class="${variant} ${done ? "is-complete" : ""} ${selected ? "is-current" : ""}" data-action="select-chapter" data-chapter="${chapter}" aria-label="Capítulo ${chapter}${done ? ", leído" : ", pendiente"}" ${selected ? 'aria-current="step"' : ""}><span class="chapter-number">${done ? icon("check", 15) : chapter}</span><span class="chapter-label">${label}</span><span class="chapter-status">${status}</span></button>`;
 }
 
 function renderChapterSheet(book, selectedChapter) {
