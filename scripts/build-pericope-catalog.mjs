@@ -4,7 +4,7 @@ import {readFile,writeFile,mkdir} from "node:fs/promises";
 import path from "node:path";
 const catalog=JSON.parse(await readFile("dist/data/catalog/books.json","utf8")).books;
 const output="dist/data/history/pericopes-generated.json";
-const items=[],coverage=[],errors=[];
+const items=[],coverage=[],errors=[]; // Source-derived draft catalog; never treat as editorially reviewed.
 for(const book of catalog){
  try{
   const data=JSON.parse(await readFile(path.join("dist/data/pericopes",book.id+".json"),"utf8"));
