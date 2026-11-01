@@ -1,5 +1,5 @@
-const CACHE = "kol-basilea-lectura-data-v5";
-const CORE = ["./", "./index.html", "./styles.css", "./app.js", "./data/bible-catalog.js", "./data/catalog/books.json", "./data/catalog/people.json", "./data/catalog/sources.json", "./data/catalog/relationships.json", "./data/media/videos.json", "./data/bible-rvr1909.js", "./data/bible-translations.js", "./data/bible-loader.js", "./data/pericopes.js", "./data/pericopes/2-juan.json", "./data/pericopes/1-juan.json", "./data/pericopes/3-juan.json", "./data/editorial-content.js", "./data/reading-progress.js", "./data/biblical-authors.js"];
+const CACHE = "kol-basilea-lectura-data-v6";
+const CORE = ["./history/", "./history.js", "./history.css", "./data/history/timeline.json", "./", "./index.html", "./styles.css", "./app.js", "./data/bible-catalog.js", "./data/catalog/books.json", "./data/catalog/people.json", "./data/catalog/sources.json", "./data/catalog/relationships.json", "./data/media/videos.json", "./data/bible-rvr1909.js", "./data/bible-translations.js", "./data/bible-loader.js", "./data/pericopes.js", "./data/pericopes/2-juan.json", "./data/pericopes/1-juan.json", "./data/pericopes/3-juan.json", "./data/editorial-content.js", "./data/reading-progress.js", "./data/biblical-authors.js"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
 });
