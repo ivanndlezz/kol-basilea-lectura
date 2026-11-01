@@ -20,8 +20,18 @@ export function eraPager(eras,index){
 export function renderEraSheet({era,books="",body="",navigation=""}){
   return '<header class="kb-sheet-heading"><h2>'+esc(era.title)+'</h2><p class="kb-history-context">'+esc(era.subtitle)+'</p></header>'+books+'<div class="kb-sheet-content">'+body+'</div>'+navigation;
 }
-export function renderEraOverview({era,books,navigation}){
-  // Hasta disponer de relatos estructurados, solo se hidrata el contexto existente.
-  // No resucitar diagramas, acordeones o listas heredadas.
-  return renderEraSheet({era,books,body:era.summary?'<p class="kb-story-context">'+esc(era.summary)+'</p>':"",navigation});
+export function renderEraOverview({era,books,navigation,events=[],periods=[],readerPath=""}){
+  const groups=periods.length?periods.map(p=>({id:p.id,title:p.title,items:events.filter(e=>e.subEraId===p.id)})).filter(g=>g.items.length):[{id:"all",title:"Acontecimientos",items:events}];
+  const covered=new Set(groups.flatMap(g=>g.items.map(e=>e.id)));
+  const rest=events.filter(e=>!covered.has(e.id));
+  if(rest.length)groups.push({id:"other",title:"Otros acontecimientos",items:rest});
+  const cards=groups.map(group=>'<section class="kb-event-group"><h3>'+esc(group.title)+'</h3><div class="kb-event-list">'+group.items.map(event=>{
+    const bookId=event.bookIds?.[0],meta=bookMeta[bookId],name=meta?.name||bookId||"";
+    const href=bookId?readerPath+'?book='+encodeURIComponent(bookId)+'&chapter=1':"";
+    const status=event.date?.precision==="debated"?"Cronología debatida":event.dateLabel||"Contexto histórico";
+    return '<article class="kb-event-card"><div class="kb-event-card-copy"><small>'+esc(status)+'</small><h4>'+esc(event.title)+'</h4><p>'+esc(name?("Relacionado con "+name):"Acontecimiento de la era")+'</p></div>'+(href?'<a href="'+esc(href)+'" aria-label="Explorar '+esc(name)+' en la Biblia">Explorar libro <span aria-hidden="true">↗</span></a>':"")+'</article>';
+  }).join("")+'</div></section>').join("");
+  const intro=era.summary?'<p class="kb-story-context">'+esc(era.summary)+'</p>':"";
+  const body=intro+(events.length?'<section class="kb-history-explorer"><div class="kb-history-explorer-head"><span>ATLAS HISTÓRICO</span><strong>'+events.length+' acontecimientos</strong></div><p class="kb-history-explorer-note">Explora los acontecimientos vinculados con esta época. Las referencias y narraciones detalladas se incorporarán conforme se revisen.</p>'+cards+'</section>':"");
+  return renderEraSheet({era,books,body,navigation});
 }
