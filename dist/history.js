@@ -1,3 +1,15 @@
+/* Respect the appearance chosen in the main Kol Basilea app. */
+const KB_APPEARANCE_KEY="kol-basilea-lectura-v1";
+function syncHistoryAppearance(){
+  let choice="system";
+  try{const saved=JSON.parse(localStorage.getItem(KB_APPEARANCE_KEY)||"{}");if(["light","dark","system"].includes(saved.appAppearance))choice=saved.appAppearance}catch{}
+  const dark=choice==="dark"||(choice==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.kbHistoryTheme=dark?"dark":"light";
+  const themeMeta=document.querySelector('meta[name="theme-color"]');if(themeMeta)themeMeta.content=dark?"#101d16":"#f6f5f0";
+}
+syncHistoryAppearance();
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",syncHistoryAppearance);
+window.addEventListener("pageshow",syncHistoryAppearance);
 import {genesisPanel,initGenesisPanel} from "./genesis-structure.js";
 import {bookLinks,storyCard,eraPager,renderEraSheet,renderEraOverview} from "./history-sheet-ui.js";
 import {loadHistoryData} from "./history-data.js";
