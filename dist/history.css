@@ -212,24 +212,51 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
   .kb-history-app #era-detail>*{animation:none!important;transition:none!important}
 }
 
-/* Motion tokens for era selection and asynchronous editorial hydration. */
-@keyframes kb-era-chip-enter{from{opacity:0;transform:translateY(7px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
-@keyframes kb-skeleton-shimmer{from{background-position:180% 0}to{background-position:-180% 0}}
-.kb-history-app .era-strip.kb-era-animated>.era{
-  animation:kb-era-chip-enter 260ms cubic-bezier(.2,.7,.2,1) both;
+
+/* Stable era rail: all cards are present in HTML and remain in document flow.
+   Natural content height, no fixed heights, no display toggles or entrance transforms. */
+.kb-history-app #selector{
+  display:block;
+  height:auto;
+  min-height:0;
+  max-height:none;
+  flex:none;
+  overflow:visible;
+  contain:none;
 }
-.kb-history-app .era-strip.kb-era-animated>.era:nth-child(2){animation-delay:25ms}
-.kb-history-app .era-strip.kb-era-animated>.era:nth-child(3){animation-delay:50ms}
-.kb-history-app .era-strip.kb-era-animated>.era:nth-child(4){animation-delay:75ms}
-.kb-history-app .era-strip.kb-era-animated>.era:nth-child(n+5){animation-delay:100ms}
-.kb-history-app .era-strip .era{transition:border-color 180ms ease,box-shadow 180ms ease,background-color 180ms ease}
+.kb-history-app #selector #era-strip{
+  display:flex;
+  height:auto;
+  min-height:0;
+  max-height:none;
+  align-items:stretch;
+  overflow-x:auto;
+  overflow-y:hidden;
+}
+.kb-history-app #selector #era-strip>.era{
+  box-sizing:border-box;
+  height:auto;
+  min-height:0;
+  max-height:none;
+  overflow:visible;
+  flex-shrink:0;
+  justify-content:flex-start;
+  gap:5px;
+  animation:none;
+  transform:none;
+  opacity:1;
+  transition:opacity 240ms ease-out,border-color 180ms ease,box-shadow 180ms ease,background-color 180ms ease;
+}
+.kb-history-app #selector #era-strip>.era .era-date{margin-top:2px}
+.kb-history-app .era-detail{min-height:55vh}
 .kb-history-app .kb-history-skeleton{display:grid;gap:16px;min-height:290px}
 .kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{
-  display:block;border-radius:12px;
-  background:linear-gradient(100deg,#edf0eb 25%,#f7f8f5 42%,#edf0eb 60%);
-  background-size:220% 100%;
-  animation:kb-skeleton-shimmer 1.3s ease-in-out infinite;
+ display:block;border-radius:12px;
+ background:linear-gradient(100deg,#edf0eb 25%,#f7f8f5 42%,#edf0eb 60%);
+ background-size:220% 100%;
+ animation:kb-skeleton-shimmer 1.3s ease-in-out infinite;
 }
+@keyframes kb-skeleton-shimmer{from{background-position:180% 0}to{background-position:-180% 0}}
 .kb-history-app .kb-skeleton-line{height:16px;width:65%}
 .kb-history-app .kb-skeleton-title{height:34px;width:74%;border-radius:9px}
 .kb-history-app .kb-skeleton-short{width:46%}
@@ -240,127 +267,6 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
  background:linear-gradient(100deg,#2a3830 25%,#37473c 42%,#2a3830 60%);background-size:220% 100%}
 }
 @media(prefers-reduced-motion:reduce){
- .kb-history-app .era-strip.kb-era-animated>.era,
- .kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{animation:none!important}
- .kb-history-app .era-strip .era{transition:none!important}
-}
-
-/* Layout-stable staged entrance: allocate space before animating. */
-.kb-history-app .era-strip{min-height:158px;box-sizing:border-box;align-items:stretch}
-.kb-history-app .era-strip.kb-era-animated>.era{animation-delay:140ms}
-.kb-history-app .era-strip.kb-era-animated>.era:nth-child(2){animation-delay:165ms}
-.kb-history-app .era-strip.kb-era-animated>.era:nth-child(3){animation-delay:190ms}
-.kb-history-app .era-strip.kb-era-animated>.era:nth-child(4){animation-delay:215ms}
-.kb-history-app .era-strip.kb-era-animated>.era:nth-child(n+5){animation-delay:240ms}
-.kb-history-app .era-detail{min-height:100vh}
-.kb-history-app .kb-history-skeleton{min-height:290px}
-
-/* Chip layout contract: stable geometry before and after hydration. */
-.kb-history-app .era-strip{
-  height:176px;
-  min-height:176px;
-  max-height:176px;
-  box-sizing:border-box;
-  align-items:flex-start;
-  overflow-y:hidden;
-}
-.kb-history-app .era-strip .era{
-  box-sizing:border-box;
-  height:156px;
-  min-height:156px;
-  max-height:156px;
-  overflow:hidden;
-}
-@keyframes kb-era-chip-opacity{from{opacity:0}to{opacity:1}}
-.kb-history-app .era-strip.kb-era-animated>.era{
-  animation-name:kb-era-chip-opacity;
-  animation-duration:260ms;
-  animation-timing-function:ease-out;
-}
-@media(prefers-reduced-motion:reduce){
-  .kb-history-app .era-strip.kb-era-animated>.era{animation:none!important}
-}
-
-/* Reserve the complete chip section in normal document flow before JS hydration.
-   The editorial sheet starts at the same coordinate with zero or ten chips. */
-.kb-history-app #selector{
-  display:block;
-  box-sizing:border-box;
-  height:176px;
-  min-height:176px;
-  max-height:176px;
-  flex:none;
-  overflow:hidden;
-}
-.kb-history-app #selector #era-strip{
-  box-sizing:border-box;
-  height:100%;
-  min-height:0;
-  max-height:100%;
-  margin:0;
-  overflow-x:auto;
-  overflow-y:hidden;
-}
-.kb-history-app #selector #era-strip>.era{
-  flex-shrink:0;
-}
-
-/* The server-rendered chip placeholder occupies the exact chip box before JS. */
-.kb-history-app #selector{height:176px!important;min-height:176px!important;max-height:176px!important;flex:0 0 176px!important}
-.kb-history-app #era-strip>.kb-era-placeholder{
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  box-sizing:border-box;
-  height:156px;
-  min-height:156px;
-  max-height:156px;
-  pointer-events:none;
-}
-.kb-history-app .kb-era-placeholder .kb-skeleton-line{flex:none;height:13px}
-.kb-history-app .kb-era-placeholder .kb-chip-meta{width:38%}
-.kb-history-app .kb-era-placeholder .kb-chip-title{width:70%;height:24px}
-.kb-history-app .kb-era-placeholder .kb-chip-date{width:55%}
-
-/* Initial HTML already includes every era card; reserve atlas rows as well.
-   Empty timeline number rows previously gained intrinsic height when JS inserted buttons. */
-.kb-history-app #scale{height:26px;min-height:26px}
-.kb-history-app #scale-numbers{
-  box-sizing:border-box;
-  height:28px;
-  min-height:28px;
-  max-height:28px;
-  align-items:stretch;
-}
-.kb-history-app #scale-numbers>button{min-height:0;height:100%;box-sizing:border-box}
-.kb-history-app #selector{contain:layout}
-
-/* Compact chip geometry: same dimensions before and after hydration. */
-.kb-history-app #selector{
-  height:148px!important;
-  min-height:148px!important;
-  max-height:148px!important;
-  flex:0 0 148px!important;
-}
-.kb-history-app #selector #era-strip{
-  height:148px;
-  min-height:148px;
-  max-height:148px;
-  align-items:flex-start;
-}
-.kb-history-app #selector #era-strip>.era{
-  height:128px;
-  min-height:128px;
-  max-height:128px;
-  justify-content:flex-start;
-  gap:5px;
-}
-.kb-history-app #selector #era-strip>.era .era-date{
-  margin-top:2px;
-}
-@media(max-width:360px){
-  .kb-history-app #selector #era-strip>.era{
-    padding-top:12px;
-    padding-bottom:12px;
-  }
+ .kb-history-app #selector #era-strip>.era{transition:none}
+ .kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{animation:none}
 }
