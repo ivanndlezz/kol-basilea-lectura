@@ -22,3 +22,53 @@
 
 /* Génesis · estructura literaria y ciclos narrativos */
 .kb-genesis{margin:28px 0 30px;min-width:0}.kb-genesis-heading{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:10px}.kb-genesis-heading h3{font-size:clamp(1.2rem,4.8vw,1.5rem);line-height:1.2;margin:5px 0 0}.kb-genesis-heading>span{font-size:.85rem;color:#737a73;white-space:nowrap}.kb-genesis-intro{color:#68736b;font-size:.94rem;line-height:1.55;margin:0 0 15px}.kb-genesis-units{border:1px solid #dfe3dc;border-radius:17px;overflow:hidden;background:#fff}.kb-genesis-unit+ .kb-genesis-unit{border-top:1px solid #e8eae6}.kb-genesis-unit summary{display:flex;align-items:center;gap:13px;min-height:76px;padding:14px 16px;cursor:pointer;list-style:none}.kb-genesis-unit summary::-webkit-details-marker{display:none}.kb-genesis-unit summary:focus-visible,.kb-genesis-cycle:focus-visible,.kb-genesis-read:focus-visible{outline:3px solid #a1bb9e;outline-offset:-3px}.kb-genesis-number{font-size:1rem;color:#8b958d;width:30px;flex:none;font-variant-numeric:tabular-nums}.kb-genesis-unit-title{display:flex;flex:1;flex-direction:column;gap:4px;min-width:0}.kb-genesis-unit-title strong{font-size:1rem;color:#24372a}.kb-genesis-unit-title small{color:#69766d;font-size:.83rem}.kb-genesis-chevron{color:#819084;transition:transform .2s}.kb-genesis-unit[open] .kb-genesis-chevron{transform:rotate(180deg)}.kb-genesis-unit-body{padding:0 16px 18px 59px;color:#596b5d;font-size:.9rem;line-height:1.55}.kb-genesis-unit-body p{margin:0 0 12px}.kb-genesis-related{display:flex;flex-direction:column;align-items:flex-start;gap:7px;margin:12px 0}.kb-genesis-related span{font-size:.77rem;color:#7b877e;text-transform:uppercase;letter-spacing:.05em}.kb-genesis-related a{color:#345d41;text-decoration:underline;text-underline-offset:3px}.kb-genesis-read{display:inline-flex;align-items:center;min-height:44px;padding:10px 14px;border-radius:10px;background:#e8eee7;color:#244d32;text-decoration:none;font-weight:650}.kb-genesis-cycles-heading{margin-top:28px}.kb-genesis-cycle-nav{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.kb-genesis-cycle{border:1px solid #d8dfd7;border-radius:999px;padding:10px 15px;min-height:44px;background:#fff;color:#4c5c50;font:inherit;font-size:.9rem;cursor:pointer}.kb-genesis-cycle.active{background:#284734;color:#fff;border-color:#284734}.kb-genesis-cycle-results>p{font-size:.85rem;color:#748076;margin:12px 0}.kb-genesis-cycle-results[hidden]{display:none!important}.kb-genesis-links{display:flex;flex-direction:column;border:1px solid #e2e6df;border-radius:14px;overflow:hidden}.kb-genesis-links a{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:13px 15px;min-height:48px;text-decoration:none;color:#2c4735;background:#fff}.kb-genesis-links a+a{border-top:1px solid #ebeeea}.kb-genesis-links span{color:#87998a}@media(max-width:390px){.kb-genesis-unit summary{padding:12px;gap:9px}.kb-genesis-unit-body{padding-left:51px}.kb-genesis-heading{align-items:start}}
+
+/* Atlas editorial · mobile-first · noviembre 2026 */
+:root{--atlas-bg:#f6f5f0;--atlas-line:#e3e6df;--atlas-ink:#1b2a24}
+body{background:var(--atlas-bg);color:var(--atlas-ink)}
+.page{max-width:860px;padding-inline:clamp(16px,4vw,28px)}
+.top{background:var(--atlas-bg);height:62px;border-bottom:1px solid var(--atlas-line)}
+.hero{padding:26px 0 20px}
+.hero-eyebrow{font:700 11px/1.4 system-ui,sans-serif;letter-spacing:.12em;color:#6d8172}
+.hero h1{font:700 clamp(32px,7vw,48px)/1.08 system-ui,sans-serif;letter-spacing:-.045em;margin:8px 0 9px}
+.hero p{max-width:560px;font:400 15px/1.55 system-ui,sans-serif;color:#66736a}
+.atlas{padding:16px 16px 14px;border:1px solid var(--atlas-line);border-radius:19px;background:#fff}
+.atlas-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px;font:600 13px/1.4 system-ui,sans-serif}
+.atlas-heading span:last-child{font-weight:400;color:#738078;font-size:12px}
+.block-head{margin:0 0 8px;font:600 12px/1.3 system-ui,sans-serif;text-align:left}
+.scale{height:22px;gap:3px;border-radius:5px;overflow:hidden}
+.scale button{min-height:22px}
+.scale button:focus-visible,.scale-numbers button:focus-visible{outline:3px solid #183b2c;outline-offset:2px;z-index:2}
+.scale-numbers{margin-top:4px}
+.axis{font-family:system-ui,sans-serif;font-size:10px}
+.selector{margin-top:24px;padding-top:0;border-top:0}
+.group-title{border-top:0!important}
+.group-title h2{font:700 17px/1.3 system-ui,sans-serif;color:#315f48}
+.group-title span{font:500 12px/1.3 system-ui,sans-serif;color:#768279}
+.era-strip{scroll-snap-type:x mandatory;scroll-padding-inline:2px;-webkit-overflow-scrolling:touch;gap:12px;padding-bottom:8px}
+.era-strip .era{scroll-snap-align:start;flex:0 0 min(76vw,300px);min-height:125px;border:1px solid var(--atlas-line);border-radius:18px;background:#fff;padding:17px;display:flex;flex-direction:column;gap:5px;text-align:left}
+.era-strip .era[aria-pressed="true"]{border-color:#82a08c;box-shadow:0 0 0 1px #82a08c}
+.era-n{font:700 12px/1.3 system-ui,sans-serif;color:#708779}
+.era-title{font:700 22px/1.13 system-ui,sans-serif;letter-spacing:-.025em;color:#20372b}
+.era-date{font:400 12px/1.35 system-ui,sans-serif;color:#6e7a72;margin-top:auto}
+.hint{font:400 12px/1.4 system-ui,sans-serif;color:#78847b;margin:6px 0 14px}
+.era-detail{border-top:1px solid var(--atlas-line);padding-top:22px}
+.plate-kicker{font:700 11px/1.4 system-ui,sans-serif;letter-spacing:.1em;color:#538267}
+.era-detail h2{font:750 clamp(29px,7vw,43px)/1.1 system-ui,sans-serif;letter-spacing:-.04em;margin:8px 0 18px}
+.kb-history-books{margin:14px 0 26px}
+.kb-history-book{border-radius:17px}
+.kb-genesis{margin:26px 0 32px}
+.kb-genesis-heading{align-items:baseline}
+.kb-genesis-heading h3{font:750 clamp(21px,5vw,27px)/1.15 system-ui,sans-serif;letter-spacing:-.035em}
+.kb-genesis-heading>span{font:500 12px system-ui,sans-serif}
+.kb-genesis-intro{font:400 14px/1.6 system-ui,sans-serif;color:#657369}
+.kb-genesis-units{border-color:var(--atlas-line);box-shadow:0 2px 12px rgba(27,42,36,.025)}
+.kb-genesis-unit summary{min-height:68px}
+.kb-genesis-unit-title strong{font:650 16px/1.3 system-ui,sans-serif}
+.kb-genesis-unit-title small{font:400 12px/1.3 system-ui,sans-serif}
+.kb-genesis-unit-body{font-family:system-ui,sans-serif}
+.kb-genesis-unit[open]{background:#fbfcfa}
+.kb-genesis-cycle{font-family:system-ui,sans-serif}
+.kb-stories-heading{font-family:system-ui,sans-serif;letter-spacing:-.025em}
+@media(max-width:420px){.atlas{padding:14px 12px}.atlas-heading{font-size:12px}.hero{padding-top:20px}.era-strip .era{flex-basis:78vw}.kb-history-book{padding:14px}.kb-genesis-heading{gap:8px}}
+@media(prefers-color-scheme:dark){body{background:#121e17;color:#e7efe7}.top,.atlas{background:#1b2a21;border-color:#35483a}.hero p,.atlas-heading span:last-child,.hint,.kb-genesis-intro{color:#b1c1b4}.era-strip .era,.kb-genesis-units{background:#1b2a21;border-color:#35483a}.era-title,.kb-genesis-unit-title strong,.era-detail h2,.hero h1{color:#e7efe7}.era-date,.kb-genesis-unit-title small{color:#b1c1b4}.kb-genesis-unit[open]{background:#233429}.kb-genesis-unit+ .kb-genesis-unit{border-color:#35483a}}
