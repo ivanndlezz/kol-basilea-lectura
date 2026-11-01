@@ -92,18 +92,18 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 .kb-history-app .scale-numbers button.active{height:26px;width:26px;color:#fff;background:var(--ink)}
 .kb-history-app .axis{margin-top:5px;padding-top:9px;gap:4px;font:11px/1.3 system-ui,sans-serif;color:#67736c}
 .kb-history-app .axis span:first-child{font-style:normal}
-.kb-history-app 
+.kb-history-app .selector{flex:none;margin:10px 0 0;padding:0;border:0}
 .kb-history-app .group-title{display:none}
-.kb-history-app 
+.kb-history-app .era-strip{display:flex;align-items:flex-start;gap:12px;margin:0;padding:3px 20px 10px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;scroll-padding-inline:20px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
 .kb-history-app .era-strip::-webkit-scrollbar{display:none}
-.kb-history-app .era-strip 
+.kb-history-app .era-strip .era{position:relative;flex:0 0 calc(100% - 48px);max-width:460px;width:auto;height:auto;min-height:0;padding:12px 18px 12px 25px;display:flex;flex-direction:column;align-self:flex-start;gap:4px;border:1px solid #e3e5dd;border-radius:20px;background:#fff;color:var(--ink);scroll-snap-align:start;box-shadow:none}
 .kb-history-app .era-strip .era::before{content:"";position:absolute;left:11px;top:15px;bottom:15px;width:5px;border-radius:5px;background:var(--era-color,var(--green))}
 .kb-history-app .era-strip .era[aria-pressed="true"]{border-color:#d5dcd3;box-shadow:0 0 0 1px #d5dcd3}
-.kb-history-app 
+.kb-history-app .era-top{display:flex;justify-content:space-between;align-items:center;gap:8px;font:650 12px/1.2 system-ui,sans-serif}
 .kb-history-app .era-group{color:var(--green)}
 .kb-history-app .era-count{font-weight:400;color:#6d7970}
-.kb-history-app 
-.kb-history-app 
+.kb-history-app .era-title{display:block;min-height:0;margin:0;font:750 clamp(20px,5.6vw,26px)/1.14 system-ui,sans-serif;letter-spacing:-.03em;color:var(--ink)}
+.kb-history-app .era-date{display:flex;align-items:center;gap:7px;margin:0;font:400 13px/1.3 system-ui,sans-serif;color:#65736a}
 .kb-history-app .kb-hatch{width:12px;height:12px;display:inline-block;flex:none;background:repeating-linear-gradient(135deg,var(--green) 0 2px,transparent 2px 5px);border-radius:2px}
 .kb-history-app .era-detail{min-height:45vh;overflow:visible;border:0;padding:18px 20px 32px}
 .kb-history-app .era-detail .plate-kicker{font:650 12px/1.4 system-ui,sans-serif;color:var(--green);letter-spacing:.025em;margin:0 0 8px}
@@ -114,7 +114,7 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 .kb-history-app .kb-history-note strong{display:block;margin-bottom:7px;color:var(--ink)}
 .kb-history-app .kb-history-note p{margin:0}
 .kb-history-app .era-detail .kb-genesis{font-family:system-ui,sans-serif}
-@media(max-width:360px){.kb-history-app .atlas{margin-inline:12px}.kb-history-app .kb-history-app .era-strip .kb-history-app .era-detail{padding-inline:16px}.kb-history-app .axis{font-size:10px}}
+@media(max-width:360px){.kb-history-app .atlas{margin-inline:12px}.kb-history-app .era-strip{padding-inline:14px}.kb-history-app .era-strip .era{flex-basis:calc(100% - 30px)}.kb-history-app .era-detail{padding-inline:16px}.kb-history-app .axis{font-size:10px}}
 @media(prefers-color-scheme:dark){.kb-history-app{--bg:#101d16;--ink:#e8f0e9;--green:#71b697;--gold:#d6a548}.kb-history-app .back,.kb-history-app .kb-info-button,.kb-history-app .era-strip .era,.kb-history-app .kb-history-note{background:#1b2b22;border-color:#34463a;color:var(--ink)}.kb-history-app .era-title,.kb-history-app .top-label{color:var(--ink)}.kb-history-app .era-date,.kb-history-app .era-count,.kb-history-app .axis{color:#b6c4b9}}
 
 /* Semantic editorial hierarchy; preserves existing History layout and scroll. */
@@ -213,78 +213,22 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 }
 
 
-/* Stable era rail: all cards are present in HTML and remain in document flow.
-   Natural content height, no fixed heights, no display toggles or entrance transforms. */
 
+/* Chip rail: the cards are present in the initial HTML; fade only their opacity. */
+.kb-history-app .era-strip .era-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.kb-history-app .era-strip .era-date{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@keyframes kb-chip-fade{from{opacity:0}to{opacity:1}}
+.kb-history-app .era-strip .era{animation:kb-chip-fade 260ms ease-out 140ms both}
+@media(prefers-reduced-motion:reduce){.kb-history-app .era-strip .era{animation:none}}
 
-
-.kb-history-app #selector #era-strip>.era 
-.kb-history-app .era-detail{min-height:55vh}
+/* Editorial loading indicator, independent from chip geometry. */
 .kb-history-app .kb-history-skeleton{display:grid;gap:16px;min-height:290px}
-.kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{
- display:block;border-radius:12px;
- background:linear-gradient(100deg,#edf0eb 25%,#f7f8f5 42%,#edf0eb 60%);
- background-size:220% 100%;
- animation:kb-skeleton-shimmer 1.3s ease-in-out infinite;
-}
+.kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{display:block;border-radius:12px;background:linear-gradient(100deg,#edf0eb 25%,#f7f8f5 42%,#edf0eb 60%);background-size:220% 100%;animation:kb-skeleton-shimmer 1.3s ease-in-out infinite}
 @keyframes kb-skeleton-shimmer{from{background-position:180% 0}to{background-position:-180% 0}}
 .kb-history-app .kb-skeleton-line{height:16px;width:65%}
 .kb-history-app .kb-skeleton-title{height:34px;width:74%;border-radius:9px}
 .kb-history-app .kb-skeleton-short{width:46%}
 .kb-history-app .kb-skeleton-card{height:88px;border-radius:18px}
 .kb-history-app .kb-skeleton-card:last-child{height:160px}
-@media(prefers-color-scheme:dark){
- .kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{
- background:linear-gradient(100deg,#2a3830 25%,#37473c 42%,#2a3830 60%);background-size:220% 100%}
-}
-@media(prefers-reduced-motion:reduce){
- 
- .kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{animation:none}
-}
-
-/* Opacity only: initial chips occupy their final geometry from the first paint. */
-
-
-@media(prefers-reduced-motion:reduce){
- 
-}
-
-/* Era chips: single source of truth. The HTML includes every chip before JS loads. */
-.kb-history-app #selector{display:block;flex:none;margin:10px 0 0;padding:0;border:0;overflow:visible;contain:none}
-.kb-history-app #era-strip{display:flex;align-items:flex-start;gap:12px;margin:0;padding:3px 20px 13px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;scroll-padding-inline:20px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
-.kb-history-app #era-strip::-webkit-scrollbar{display:none}
-.kb-history-app #era-strip>.era{position:relative;display:flex;flex:0 0 calc(100% - 48px);flex-direction:column;align-self:flex-start;justify-content:flex-start;gap:5px;box-sizing:border-box;height:max-content;min-height:0;max-height:none;width:auto;max-width:460px;padding:14px 18px 14px 25px;border:1px solid #e3e5dd;border-radius:20px;background:#fff;color:var(--ink);text-align:left;scroll-snap-align:start;box-shadow:none;transition:opacity 240ms ease-out,border-color 180ms ease,box-shadow 180ms ease,background-color 180ms ease;animation:kb-chip-fade 260ms ease-out 140ms both}
-.kb-history-app #era-strip>.era[aria-pressed=true]{border-color:var(--green)}
-.kb-history-app #era-strip .era-top{display:flex;justify-content:space-between;align-items:center;gap:8px;font:650 12px/1.2 system-ui,sans-serif}
-.kb-history-app #era-strip .era-title{display:block;margin:0;font:750 clamp(20px,5.6vw,26px)/1.14 system-ui,sans-serif;letter-spacing:-.03em;color:var(--ink)}
-.kb-history-app #era-strip .era-date{display:flex;align-items:center;gap:7px;margin:2px 0 0;font:400 13px/1.3 system-ui,sans-serif;color:#65736a}
-@keyframes kb-chip-fade{from{opacity:0}to{opacity:1}}
-@media(max-width:360px){.kb-history-app #era-strip{padding-inline:14px}.kb-history-app #era-strip>.era{flex-basis:calc(100% - 30px);padding:12px 16px 12px 20px}}
-@media(prefers-reduced-motion:reduce){.kb-history-app #era-strip>.era{animation:none;transition:none}}
-
-/* Reference-matched compact era cards. No reserved or stretched height.
-   Keep the rail's tallest card from being driven by wrapped long titles. */
-.kb-history-app #era-strip{align-items:flex-start;padding-block:3px 10px}
-.kb-history-app #era-strip>.era{
-  align-self:flex-start;
-  height:auto;
-  min-height:0;
-  max-height:none;
-  padding-block:12px;
-  gap:5px;
-}
-.kb-history-app #era-strip .era-title{
-  min-width:0;
-  max-width:100%;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-}
-.kb-history-app #era-strip .era-date{
-  min-width:0;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-}
-.kb-history-app #era-strip .era-top{min-width:0}
-.kb-history-app #era-strip>.era::before{top:12px;bottom:12px}
+@media(prefers-color-scheme:dark){.kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{background:linear-gradient(100deg,#2a3830 25%,#37473c 42%,#2a3830 60%);background-size:220% 100%}}
+@media(prefers-reduced-motion:reduce){.kb-history-app .kb-skeleton-line,.kb-history-app .kb-skeleton-card{animation:none}}
