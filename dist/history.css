@@ -144,3 +144,10 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 .kb-history-app .kb-genesis-unit-title strong{font-size:17px}
 .kb-history-app .kb-genesis-unit-title small{font-size:13px}
 @media(prefers-color-scheme:dark){.kb-history-app .kb-history-context{color:#b1c1b4}.kb-history-app .kb-genesis-symbol{background:#2a3a30;color:#c5d4c7}}
+
+/* Lucide icons in the editorial navigation. */
+.kb-history-app .kb-lucide{display:inline-block;width:20px;height:20px;flex:none;vertical-align:middle}
+.kb-history-app .kb-genesis-symbol .kb-lucide{width:20px;height:20px}
+.kb-history-app .kb-genesis-chevron .kb-lucide{width:16px;height:16px;transition:transform .18s ease}
+.kb-history-app .kb-genesis-unit[open] .kb-genesis-chevron .kb-lucide{transform:rotate(180deg)}
+.kb-history-app .kb-genesis-links .kb-lucide,.kb-history-app .kb-genesis-related .kb-lucide,.kb-history-app .kb-genesis-read .kb-lucide{width:15px;height:15px}
