@@ -73,3 +73,17 @@ Archivos revisados:
 - https://github.com/BSB-publishing/bsb-data-output/blob/main/VERSION.json
 - https://github.com/BSB-publishing/bsb-data-output/blob/main/ATTRIBUTION.md
 - https://github.com/BSB-publishing/bsb-data-output/blob/main/README.md
+
+
+## Verificación adicional de la licencia y del corpus local (2026-11-01)
+
+Se volvió a leer el README de `BSB-publishing/bsb-data-output`: la tabla de licencias **no menciona** `base/headings.jsonl` (aunque sí `base/display/`, `base/index-cc-by/`, `base/concordance/` y `schema/`). `ATTRIBUTION.md` identifica el texto fuente BSB-USJ como CC0, pero **esto no equivale a una declaración explícita de licencia del archivo de encabezados generado**. Estado legal: pendiente de confirmación con los responsables del repositorio. Hasta entonces, no incorporar ni redistribuir títulos de BSB en Kol Basilea.
+
+Se inspeccionó el repositorio Kol Basilea: `dist/data/bible-translations.js` declara RV1909 con `dataDir: "rvr1909"`; `dist/data/bible-loader.js` solicita libros desde `./rvr1909/{bookId}.json`. No obstante, la ruta `dist/data/rvr1909/` no está disponible en el árbol GitHub consultado (404). Por ello **no se realizó aún el contraste versículo por versículo**. La app también cuenta con `dist/data/pericopes.js`, que ya maneja secciones editoriales separadas por libro y capítulo, pero esto no acredita que los límites de BSB sean válidos para RV1909.
+
+**Bloqueos pendientes para completar el paso 4:**
+1. Obtener declaración inequívoca de licencia para `base/headings.jsonl` (o elegir otra fuente expresamente licenciada).
+2. Obtener un corpus RV1909 accesible y verificable para contrastar 439 límites candidatos del piloto, incluyendo versículos de inicio y fin.
+3. Registrar diferencias de versificación y decidir su tratamiento editorial.
+
+No se debe dar por aprobado el paso 4 ni avanzar a publicación automática de relatos mientras persistan estos bloqueos.
