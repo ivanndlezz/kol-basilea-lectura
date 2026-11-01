@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "editorialNote": "Las eras son convenciones historiográficas que pueden solaparse. Los relatos primigenios y patriarcales no reciben fechas históricas inventadas.",
+  "editorialNote": "Las eras son convenciones de estudio, no límites absolutos, y algunas se superponen. Los relatos primigenios y varias tradiciones antiguas no admiten datación histórica verificable. Los textos relacionados no implican fechas de composición.",
   "eras": [
     {
       "id": "primeval",
@@ -10,13 +10,21 @@
       "date": {
         "startYear": null,
         "endYear": null,
-        "precision": "undated"
+        "precision": "undated",
+        "label": "Sin datación verificable"
       },
       "summary": "Los relatos de los orígenes: creación, humanidad, diluvio y Babel.",
       "bookIds": [
         "genesis"
       ],
-      "color": "#78966d"
+      "color": "#78966d",
+      "relatedTexts": [
+        "Génesis 1–11"
+      ],
+      "groupId": "biblical",
+      "events": [
+        "Caín y Abel"
+      ]
     },
     {
       "id": "patriarchs",
@@ -26,13 +34,21 @@
       "date": {
         "startYear": null,
         "endYear": null,
-        "precision": "debated"
+        "precision": "debated",
+        "label": "Cronología debatida"
       },
       "summary": "Abraham, Isaac, Jacob y José; los relatos no permiten fijar una cronología histórica segura.",
       "bookIds": [
         "genesis"
       ],
-      "color": "#8aab9d"
+      "color": "#8aab9d",
+      "relatedTexts": [
+        "Génesis 12–50"
+      ],
+      "groupId": "biblical",
+      "events": [
+        "Isaac"
+      ]
     },
     {
       "id": "exodus-judges",
@@ -42,7 +58,8 @@
       "date": {
         "startYear": null,
         "endYear": null,
-        "precision": "debated"
+        "precision": "debated",
+        "label": "Cronología debatida"
       },
       "summary": "Tradiciones del éxodo, Sinaí, establecimiento en Canaán y liderazgos de los jueces.",
       "bookIds": [
@@ -51,7 +68,17 @@
         "jueces",
         "rut"
       ],
-      "color": "#83a9bd"
+      "color": "#83a9bd",
+      "relatedTexts": [
+        "Éxodo",
+        "Josué",
+        "Jueces",
+        "Rut"
+      ],
+      "groupId": "biblical",
+      "events": [
+        "Josué"
+      ]
     },
     {
       "id": "monarchy",
@@ -61,7 +88,8 @@
       "date": {
         "startYear": -1000,
         "endYear": -586,
-        "precision": "approximate"
+        "precision": "approximate",
+        "label": null
       },
       "summary": "Monarquía, división de los reinos, profetas y conquistas asiria y babilónica.",
       "bookIds": [
@@ -72,7 +100,16 @@
         "1-cronicas",
         "2-cronicas"
       ],
-      "color": "#7799b5"
+      "color": "#7799b5",
+      "relatedTexts": [
+        "Samuel",
+        "Reyes",
+        "Crónicas"
+      ],
+      "groupId": "biblical",
+      "events": [
+        "División del reino"
+      ]
     },
     {
       "id": "exile-restoration",
@@ -82,7 +119,8 @@
       "date": {
         "startYear": -586,
         "endYear": -400,
-        "precision": "approximate"
+        "precision": "approximate",
+        "label": null
       },
       "summary": "Exilio babilónico, retorno bajo dominio persa y reconstrucción del templo.",
       "bookIds": [
@@ -91,7 +129,17 @@
         "ageo",
         "zacarias"
       ],
-      "color": "#a494c2"
+      "color": "#a494c2",
+      "relatedTexts": [
+        "Esdras",
+        "Nehemías",
+        "Profetas"
+      ],
+      "groupId": "biblical",
+      "events": [
+        "Exilio en Babilonia",
+        "Esdras y Nehemías"
+      ]
     },
     {
       "id": "second-temple",
@@ -101,13 +149,23 @@
       "date": {
         "startYear": -400,
         "endYear": -4,
-        "precision": "approximate"
+        "precision": "approximate",
+        "label": null
       },
       "summary": "Judea bajo imperios helenísticos y Roma, movimientos judíos y contexto del siglo I.",
       "bookIds": [
         "daniel"
       ],
-      "color": "#c4948b"
+      "color": "#c4948b",
+      "relatedTexts": [
+        "Daniel",
+        "Literatura intertestamentaria"
+      ],
+      "groupId": "biblical",
+      "events": [
+        "Dinastía asmonea",
+        "Herodes el Grande"
+      ]
     },
     {
       "id": "apostolic",
@@ -117,7 +175,8 @@
       "date": {
         "startYear": -4,
         "endYear": 100,
-        "precision": "approximate"
+        "precision": "approximate",
+        "label": null
       },
       "summary": "Ministerio de Jesús y formación de las primeras comunidades cristianas.",
       "bookIds": [
@@ -128,7 +187,14 @@
         "hechos",
         "romanos"
       ],
-      "color": "#d38d72"
+      "color": "#d38d72",
+      "relatedTexts": [
+        "Evangelios",
+        "Hechos",
+        "Cartas apostólicas"
+      ],
+      "groupId": "christianity",
+      "events": []
     },
     {
       "id": "patristic",
@@ -138,11 +204,22 @@
       "date": {
         "startYear": 100,
         "endYear": 750,
-        "precision": "approximate"
+        "precision": "approximate",
+        "label": null
       },
       "summary": "Escritores cristianos griegos y latinos, controversias, concilios y tradiciones regionales.",
       "bookIds": [],
-      "color": "#c9a46d"
+      "color": "#c9a46d",
+      "relatedTexts": [
+        "Didaché",
+        "Textos patrísticos",
+        "Actas conciliares"
+      ],
+      "groupId": "christianity",
+      "events": [
+        "Justino Mártir",
+        "Orígenes"
+      ]
     },
     {
       "id": "medieval",
@@ -152,11 +229,20 @@
       "date": {
         "startYear": 750,
         "endYear": 1500,
-        "precision": "approximate"
+        "precision": "approximate",
+        "label": null
       },
       "summary": "Monacato, cristianismos oriental y occidental y teología escolástica.",
       "bookIds": [],
-      "color": "#b5a178"
+      "color": "#b5a178",
+      "relatedTexts": [
+        "Textos medievales"
+      ],
+      "groupId": "christianity",
+      "events": [
+        "Anselmo",
+        "Movimientos prerreformadores"
+      ]
     },
     {
       "id": "modern",
@@ -166,11 +252,20 @@
       "date": {
         "startYear": 1500,
         "endYear": null,
-        "precision": "open-ended"
+        "precision": "open-ended",
+        "label": null
       },
       "summary": "Reformas, traducciones, misiones y desarrollo de la investigación bíblica.",
       "bookIds": [],
-      "color": "#87998a"
+      "color": "#87998a",
+      "relatedTexts": [
+        "Textos de la Reforma"
+      ],
+      "groupId": "christianity",
+      "events": [
+        "Calvino",
+        "Traducciones bíblicas"
+      ]
     }
   ],
   "events": [
@@ -317,7 +412,8 @@
       },
       "bookIds": [
         "2-reyes"
-      ]
+      ],
+      "dateLabel": "722/721 a. C."
     },
     {
       "id": "jerusalem-fall",
@@ -331,7 +427,8 @@
       "bookIds": [
         "2-reyes",
         "jeremias"
-      ]
+      ],
+      "dateLabel": "587/586 a. C."
     },
     {
       "id": "babylon-conquest",
@@ -344,7 +441,8 @@
       },
       "bookIds": [
         "esdras"
-      ]
+      ],
+      "dateLabel": "539 a. C."
     },
     {
       "id": "second-temple",
@@ -357,7 +455,8 @@
       },
       "bookIds": [
         "esdras"
-      ]
+      ],
+      "dateLabel": "516/515 a. C."
     },
     {
       "id": "alexander",
@@ -447,7 +546,8 @@
         "mateo",
         "marcos",
         "lucas"
-      ]
+      ],
+      "dateLabel": "70 d. C."
     },
     {
       "id": "ignatius",
@@ -469,7 +569,8 @@
         "year": 325,
         "precision": "year"
       },
-      "bookIds": []
+      "bookIds": [],
+      "dateLabel": "325 d. C."
     },
     {
       "id": "chalcedon",
@@ -480,7 +581,8 @@
         "year": 451,
         "precision": "year"
       },
-      "bookIds": []
+      "bookIds": [],
+      "dateLabel": "451 d. C."
     },
     {
       "id": "schism",
@@ -513,7 +615,8 @@
         "year": 1517,
         "precision": "conventional"
       },
-      "bookIds": []
+      "bookIds": [],
+      "dateLabel": "1517 d. C."
     },
     {
       "id": "biblical-studies",
@@ -525,6 +628,207 @@
         "precision": "broad"
       },
       "bookIds": []
+    },
+    {
+      "id": "editorial-primeval-28",
+      "eraId": "primeval",
+      "title": "Caín y Abel",
+      "order": 32,
+      "date": {
+        "year": null,
+        "precision": "narrative"
+      },
+      "bookIds": [
+        "genesis"
+      ]
+    },
+    {
+      "id": "editorial-patriarchs-29",
+      "eraId": "patriarchs",
+      "title": "Isaac",
+      "order": 33,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "genesis"
+      ]
+    },
+    {
+      "id": "editorial-exodus-judges-30",
+      "eraId": "exodus-judges",
+      "title": "Josué",
+      "order": 34,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "exodo",
+        "josue",
+        "jueces",
+        "rut"
+      ]
+    },
+    {
+      "id": "editorial-monarchy-31",
+      "eraId": "monarchy",
+      "title": "División del reino",
+      "order": 35,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "1-samuel",
+        "2-samuel",
+        "1-reyes",
+        "2-reyes",
+        "1-cronicas",
+        "2-cronicas"
+      ]
+    },
+    {
+      "id": "editorial-exile-restoration-32",
+      "eraId": "exile-restoration",
+      "title": "Exilio en Babilonia",
+      "order": 35,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "esdras",
+        "nehemias",
+        "ageo",
+        "zacarias"
+      ]
+    },
+    {
+      "id": "editorial-exile-restoration-33",
+      "eraId": "exile-restoration",
+      "title": "Esdras y Nehemías",
+      "order": 37,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "esdras",
+        "nehemias",
+        "ageo",
+        "zacarias"
+      ]
+    },
+    {
+      "id": "editorial-second-temple-34",
+      "eraId": "second-temple",
+      "title": "Dinastía asmonea",
+      "order": 38,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "daniel"
+      ]
+    },
+    {
+      "id": "editorial-second-temple-35",
+      "eraId": "second-temple",
+      "title": "Herodes el Grande",
+      "order": 40,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": [
+        "daniel"
+      ]
+    },
+    {
+      "id": "editorial-patristic-36",
+      "eraId": "patristic",
+      "title": "Justino Mártir",
+      "order": 40,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "editorial-patristic-37",
+      "eraId": "patristic",
+      "title": "Orígenes",
+      "order": 42,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "editorial-medieval-38",
+      "eraId": "medieval",
+      "title": "Anselmo",
+      "order": 41,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "editorial-medieval-39",
+      "eraId": "medieval",
+      "title": "Movimientos prerreformadores",
+      "order": 43,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "editorial-modern-40",
+      "eraId": "modern",
+      "title": "Calvino",
+      "order": 43,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": []
+    },
+    {
+      "id": "editorial-modern-41",
+      "eraId": "modern",
+      "title": "Traducciones bíblicas",
+      "order": 45,
+      "date": {
+        "year": null,
+        "precision": "debated"
+      },
+      "bookIds": []
     }
-  ]
+  ],
+  "groups": [
+    {
+      "id": "biblical",
+      "label": "Historia bíblica",
+      "order": 1
+    },
+    {
+      "id": "christianity",
+      "label": "Cristianismo",
+      "order": 2
+    }
+  ],
+  "timeline": {
+    "minYear": -1000,
+    "maxYear": 2026,
+    "yearConvention": "Los años negativos indican a. C.; las eras sin fechas verificables no se representan a escala."
+  }
 }
