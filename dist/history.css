@@ -254,3 +254,29 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 .kb-history-app .era-strip.kb-era-animated>.era:nth-child(n+5){animation-delay:240ms}
 .kb-history-app .era-detail{min-height:100vh}
 .kb-history-app .kb-history-skeleton{min-height:290px}
+
+/* Chip layout contract: stable geometry before and after hydration. */
+.kb-history-app .era-strip{
+  height:176px;
+  min-height:176px;
+  max-height:176px;
+  box-sizing:border-box;
+  align-items:flex-start;
+  overflow-y:hidden;
+}
+.kb-history-app .era-strip .era{
+  box-sizing:border-box;
+  height:156px;
+  min-height:156px;
+  max-height:156px;
+  overflow:hidden;
+}
+@keyframes kb-era-chip-opacity{from{opacity:0}to{opacity:1}}
+.kb-history-app .era-strip.kb-era-animated>.era{
+  animation-name:kb-era-chip-opacity;
+  animation-duration:260ms;
+  animation-timing-function:ease-out;
+}
+@media(prefers-reduced-motion:reduce){
+  .kb-history-app .era-strip.kb-era-animated>.era{animation:none!important}
+}
