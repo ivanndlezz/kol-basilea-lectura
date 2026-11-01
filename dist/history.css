@@ -162,7 +162,6 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 @media(prefers-color-scheme:dark){.kb-history-app .kb-story-context,.kb-history-app .kb-story-heading>span{color:#b1c1b4}}
 
 /* History editorial sheet: one continuous scroll, clearly separated surfaces. */
-.kb-history-app 
 .kb-history-app .era-detail{
   position:relative;
   box-sizing:border-box;
@@ -175,7 +174,6 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
   border-radius:28px 28px 0 0;
   box-shadow:0 -5px 24px rgba(28,47,37,.035);
   overflow:visible;
-  min-height:55vh;
 }
 .kb-history-app .era-detail>h2{margin-top:0}
 .kb-history-app .era-detail .kb-history-books{margin-top:18px}
