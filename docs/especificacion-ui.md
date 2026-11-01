@@ -25,7 +25,7 @@ La unidad principal de avance es el capítulo; la unidad emocional y editorial e
 La implementación adopta principios de Apple Human Interface Guidelines, adaptados a una PWA y no a una aplicación nativa:
 
 - **Simplicidad y jerarquía:** una estructura de pantalla enfocada, textos breves y una acción primaria dominante.
-- **Familiaridad y consistencia:** navegación inferior persistente, botón de regreso en el lector y controles con estados previsibles.
+- **Familiaridad y consistencia:** navegación inferior persistente, botón de regreso en el lector y controles con estados previsibles. La barra inferior conserva Hoy, Ruta y Progreso; su cuarto control es Menú (hamburguesa) y abre el side sheet, donde se encuentra Biblioteca bíblica junto con las demás secciones.
 - **Feedback claro:** barras de progreso, estado de libro actual, confirmación de capítulo guardado y toast de finalización.
 - **Accesibilidad:** semántica HTML, nombres accesibles para iconos, foco visible, contraste, `role="progressbar"` y soporte para `prefers-reduced-motion`.
 - **Interacción táctil:** controles con área mínima aproximada de 44 × 44 px, separación suficiente y acciones directas.

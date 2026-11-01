@@ -730,8 +730,9 @@ function renderReader() {
 }
 
 function renderNav() {
-  const items = [["home", "house", "Hoy"], ["route", "route", "Ruta"], ["progress", "chart", "Progreso"], ["library", "bookOpen", "Biblioteca"]];
-  return `<nav class="bottom-nav" aria-label="Navegación principal">${items.map(([view, iconName, label]) => `<button class="nav-item ${state.view === view ? "is-active" : ""}" data-action="navigate" data-view="${view}" ${state.view === view ? 'aria-current="page"' : ""}><span class="nav-icon" aria-hidden="true">${icon(iconName, 19)}</span><span>${label}</span></button>`).join("")}</nav>`;
+  const items = [["home", "house", "Hoy"], ["route", "route", "Ruta"], ["progress", "chart", "Progreso"]];
+  const menuActive = state.navigationOpen;
+  return `<nav class="bottom-nav" aria-label="Navegación principal">${items.map(([view, iconName, label]) => `<button class="nav-item ${state.view === view ? "is-active" : ""}" data-action="navigate" data-view="${view}" ${state.view === view ? 'aria-current="page"' : ""}><span class="nav-icon" aria-hidden="true">${icon(iconName, 19)}</span><span>${label}</span></button>`).join("")}<button class="nav-item ${menuActive ? "is-active" : ""}" data-action="toggle-navigation" aria-haspopup="dialog" aria-controls="kb-navigation-sheet" aria-expanded="${menuActive}"><span class="nav-icon" aria-hidden="true">${icon("menu", 19)}</span><span>Menú</span></button></nav>`;
 }
 
 function openReader(bookId = currentBook().id) {
