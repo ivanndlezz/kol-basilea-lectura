@@ -239,3 +239,25 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 
 /* History uses its approved light editorial palette regardless of the OS appearance. */
 :root{color-scheme:light}
+
+/* Shared appearance preference: explicit choice takes precedence over device theme. */
+html[data-kb-history-theme="dark"]{color-scheme:dark;--bg:#101a15;--ink:#eef6f2;--green:#78c99c;--gold:#e6a56b;background:var(--bg)}
+html[data-kb-history-theme="dark"] .kb-history-app{--bg:#101d16;--ink:#e8f0e9;--green:#71b697;--gold:#d6a548;color-scheme:dark}
+html[data-kb-history-theme="dark"] .kb-history-app .back,
+html[data-kb-history-theme="dark"] .kb-history-app .kb-info-button,
+html[data-kb-history-theme="dark"] .kb-history-app .era-strip .era,
+html[data-kb-history-theme="dark"] .kb-history-app .kb-history-note{background:#1b2b22;border-color:#34463a;color:var(--ink)}
+html[data-kb-history-theme="dark"] .kb-history-app .era-detail{background:#1c2620;border-color:#36443a;box-shadow:0 -5px 24px rgba(0,0,0,.12)}
+html[data-kb-history-theme="dark"] .kb-history-app .kb-story,
+html[data-kb-history-theme="dark"] .kb-history-app .kb-history-book{background:#223229;border-color:#405749;color:var(--ink)}
+html[data-kb-history-theme="dark"] .kb-history-app .era-title,
+html[data-kb-history-theme="dark"] .kb-history-app .top-label{color:var(--ink)}
+html[data-kb-history-theme="dark"] .kb-history-app .era-date,
+html[data-kb-history-theme="dark"] .kb-history-app .axis,
+html[data-kb-history-theme="dark"] .kb-history-app .plate-sub,
+html[data-kb-history-theme="dark"] .kb-history-app .kb-story-context{color:#b1c4b3}
+html[data-kb-history-theme="dark"] .kb-history-app .kb-skeleton-line,
+html[data-kb-history-theme="dark"] .kb-history-app .kb-skeleton-card{background:linear-gradient(100deg,#2a3830 25%,#37473c 42%,#2a3830 60%);background-size:220% 100%}
+html[data-kb-history-theme="dark"] .kb-history-app .kb-period{border-color:#567261;color:#e3eae3}
+html[data-kb-history-theme="dark"] .kb-history-app .kb-period.active{background:#6caa85;color:#12251b}
+html[data-kb-history-theme="light"]{color-scheme:light}
