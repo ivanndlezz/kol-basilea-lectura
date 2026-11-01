@@ -45,3 +45,9 @@ Se puede pasar un quinto argumento con un archivo JSON de revisiones manuales, i
 ```
 
 No se proporcionan revisiones por defecto: una coincidencia por libro no acredita cronología ni género. Las revisiones deben comprobarse con el texto bíblico antes de publicarse. El reporte informa cuántas secciones están sugeridas, revisadas o sin clasificar. El workflow de auditoría ahora genera ambos reportes y mantiene `publicationReady: false`.
+
+## Cola de revisión editorial (tercera etapa)
+
+`scripts/build-history-editorial-review.mjs` selecciona tres intervalos por libro piloto (primero, medio, último) desde el catálogo clasificado. Genera `reports/history-editorial-review.json` y `reports/history-editorial-review-report.json`, incluidos en el artefacto de Actions.
+
+El registro de revisión exige contrastar el texto de RV1909 antes de decidir `kind`, `eraId`, `subEraId`, título, resumen e icono; `chronologyStatus` comienza como `unassessed`. No se aprueban relatos ni se cambian datos de producción automáticamente. La muestra mide la capacidad de revisión, **no** la representatividad estadística del conjunto.
