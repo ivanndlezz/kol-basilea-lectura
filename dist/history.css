@@ -304,3 +304,20 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 .kb-history-app #selector #era-strip>.era{
   flex-shrink:0;
 }
+
+/* The server-rendered chip placeholder occupies the exact chip box before JS. */
+.kb-history-app #selector{height:176px!important;min-height:176px!important;max-height:176px!important;flex:0 0 176px!important}
+.kb-history-app #era-strip>.kb-era-placeholder{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  box-sizing:border-box;
+  height:156px;
+  min-height:156px;
+  max-height:156px;
+  pointer-events:none;
+}
+.kb-history-app .kb-era-placeholder .kb-skeleton-line{flex:none;height:13px}
+.kb-history-app .kb-era-placeholder .kb-chip-meta{width:38%}
+.kb-history-app .kb-era-placeholder .kb-chip-title{width:70%;height:24px}
+.kb-history-app .kb-era-placeholder .kb-chip-date{width:55%}
