@@ -261,3 +261,30 @@ html:has(.kb-history-app),body:has(.kb-history-app){height:100%;overflow:hidden}
 @keyframes kb-chip-fade{from{opacity:0}to{opacity:1}}
 @media(max-width:360px){.kb-history-app #era-strip{padding-inline:14px}.kb-history-app #era-strip>.era{flex-basis:calc(100% - 30px);padding:12px 16px 12px 20px}}
 @media(prefers-reduced-motion:reduce){.kb-history-app #era-strip>.era{animation:none;transition:none}}
+
+/* Reference-matched compact era cards. No reserved or stretched height.
+   Keep the rail's tallest card from being driven by wrapped long titles. */
+.kb-history-app #era-strip{align-items:flex-start;padding-block:3px 10px}
+.kb-history-app #era-strip>.era{
+  align-self:flex-start;
+  height:auto;
+  min-height:0;
+  max-height:none;
+  padding-block:12px;
+  gap:5px;
+}
+.kb-history-app #era-strip .era-title{
+  min-width:0;
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.kb-history-app #era-strip .era-date{
+  min-width:0;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.kb-history-app #era-strip .era-top{min-width:0}
+.kb-history-app #era-strip>.era::before{top:12px;bottom:12px}
