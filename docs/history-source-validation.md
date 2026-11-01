@@ -53,3 +53,23 @@ Fuentes:
 **Decisión revisada:** priorizar BSB como fuente candidata de encabezados/límites para el piloto Éxodo–Jueces–Lucas–Hechos; NuBerea queda como fuente complementaria condicionada a acceso autorizado. No copiar el texto inglés ni sustituir RV1909. Los encabezados son divisiones editoriales, no relatos automáticamente. Su agrupación y los títulos españoles requieren revisión.
 
 **Aprobación:** candidata, **no aprobada aún para importación productiva**. Quedan por ejecutar: descarga/inspección de `headings.jsonl`, mapeo de versificación y libros, medición de cobertura real 66/66, verificación de derechos del archivo concreto y comparación piloto. La selección de fuentes historiográficas para eras 8–10 sigue pendiente.
+
+
+## Auditoría ejecutada sobre archivos reales — 2026-11-01
+
+Se leyó el archivo completo `base/headings.jsonl` directamente del repositorio de BSB a través de GitHub: **4,543 registros JSONL, 66 libros con al menos un encabezado `s1`**. El archivo tiene niveles `s1`, `s2`, `r`, `d`; `r` son referencias cruzadas y **no** límites de sección. Conteo de encabezados `s1` en el piloto: **Éxodo 123, Jueces 52, Lucas 154, Hechos 110**. Son recuentos de encabezados editoriales, no de relatos.
+
+El esquema `schema/headings.schema.json` requiere `id`, `b`, `c`, `before_v`, `level`, `text`; `before_v` indica el versículo siguiente al encabezado. Los límites finales deben derivarse del siguiente encabezado del mismo nivel y del último versículo real del libro; **todavía no se verificaron contra RV1909**.
+
+`VERSION.json` indica build `2026-09-20T02:23:43Z`, fuente BSB-USJ `3c13b1892e9f37c53ca7d75b531bd1336a874a13`. La procedencia está identificada, pero falta fijar el commit exacto de `bsb-data-output` para reproducibilidad.
+
+**Licencia:** `ATTRIBUTION.md` identifica BSB-USJ como CC0; `LICENSE-CC0.md` describe reutilización comercial. El README clasifica `base/display/` como CC0 y `base/index-cc-by/` como CC BY 4.0, **pero no clasifica expresamente `base/headings.jsonl` en su tabla**. Antes de distribuir ese archivo o títulos derivados, confirmar su alcance legal específico (o utilizar solo referencias de límites verificadas con atribución voluntaria).
+
+**Resultado del piloto de accesibilidad y estructura: APROBADO.** Resultado de reutilización y versificación: **PENDIENTE**. El hito 4 no está cerrado. No se modificó la UI ni se publicaron relatos nuevos.
+
+Archivos revisados:
+- https://github.com/BSB-publishing/bsb-data-output/blob/main/base/headings.jsonl
+- https://github.com/BSB-publishing/bsb-data-output/blob/main/schema/headings.schema.json
+- https://github.com/BSB-publishing/bsb-data-output/blob/main/VERSION.json
+- https://github.com/BSB-publishing/bsb-data-output/blob/main/ATTRIBUTION.md
+- https://github.com/BSB-publishing/bsb-data-output/blob/main/README.md
