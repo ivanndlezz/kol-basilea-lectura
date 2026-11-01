@@ -1157,7 +1157,14 @@
       "summary": "El nacimiento del hijo prometido y las tensiones de la familia.",
       "subEraId": "patriarchs--abraham",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/nacimiento-de-isaac.webp",
+        "alt": "Obra de arte: Nativity",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "nacimiento-de-isaac"
+      }
     },
     {
       "id": "sacrificio-de-isaac",
@@ -1229,7 +1236,14 @@
       "summary": "La rivalidad entre hermanos lleva a José lejos de su hogar.",
       "subEraId": "patriarchs--jose",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-vendido.webp",
+        "alt": "Obra de arte: Joseph Dugan",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-vendido"
+      }
     },
     {
       "id": "jose-en-egipto",
@@ -1241,7 +1255,14 @@
       "summary": "De la esclavitud y la prisión al gobierno de Egipto.",
       "subEraId": "patriarchs--jose",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-en-egipto.webp",
+        "alt": "Obra de arte: Joseph Dugan",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-en-egipto"
+      }
     },
     {
       "id": "jose-y-sus-hermanos",
@@ -1253,7 +1274,14 @@
       "summary": "El hambre provoca el reencuentro y abre camino al perdón.",
       "subEraId": "patriarchs--jose",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-y-sus-hermanos.webp",
+        "alt": "Obra de arte: Joseph Dugan",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-y-sus-hermanos"
+      }
     },
     {
       "id": "israel-en-egipto",
@@ -1280,7 +1308,14 @@
       "status": "draft",
       "sourcePericopeId": "pc-001",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Obra de arte: Nativity",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001"
+      }
     },
     {
       "id": "relato-pc-002",
@@ -1520,7 +1555,14 @@
       "status": "draft",
       "sourcePericopeId": "pc-021",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Obra de arte: The Fall of Jericho",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021"
+      }
     },
     {
       "id": "relato-pc-022",
@@ -1655,7 +1697,14 @@
       "status": "draft",
       "sourcePericopeId": "pc-031",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Obra de arte: Nativity",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031"
+      }
     },
     {
       "id": "relato-pc-032",
@@ -2234,7 +2283,14 @@
       "summary": "Mateo presenta el origen de Jesús y el anuncio de su nacimiento.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Obra de arte: Nativity",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-mateo-2-1",
@@ -2472,7 +2528,14 @@
       "summary": "Jesús nace en Belén y unos pastores reciben el anuncio.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Obra de arte: Nativity",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-lucas-2-41",
@@ -2598,7 +2661,14 @@
       "summary": "Jesús sana a un hombre ciego desde su nacimiento.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Obra de arte: Nativity",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-juan-11-1",

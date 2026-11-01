@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "storyId": "jose-en-egipto",
+      "source": "The Metropolitan Museum of Art",
+      "artist": "Joseph Wood",
+      "title": "Joseph Dugan",
+      "date": "ca. 1815",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/13340",
+      "objectId": 13340,
+      "note": "Interpretación artística; no reconstrucción histórica"
+    },
+    {
+      "storyId": "jose-vendido",
+      "source": "The Metropolitan Museum of Art",
+      "artist": "Joseph Wood",
+      "title": "Joseph Dugan",
+      "date": "ca. 1815",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/13340",
+      "objectId": 13340,
+      "note": "Interpretación artística; no reconstrucción histórica"
+    },
+    {
+      "storyId": "jose-y-sus-hermanos",
+      "source": "The Metropolitan Museum of Art",
+      "artist": "Joseph Wood",
+      "title": "Joseph Dugan",
+      "date": "ca. 1815",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/13340",
+      "objectId": 13340,
+      "note": "Interpretación artística; no reconstrucción histórica"
+    },
+    {
+      "storyId": "nacimiento-de-isaac",
+      "source": "The Metropolitan Museum of Art",
+      "artist": "Anonymous, Italian, 16th century",
+      "title": "Nativity",
+      "date": "16th century",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/391582",
+      "objectId": 391582,
+      "note": "Interpretación artística; no reconstrucción histórica"
+    },
+    {
+      "storyId": "relato-juan-9-1",
+      "source": "The Metropolitan Museum of Art",
+      "artist": "Anonymous, Italian, 16th century",
+      "title": "Nativity",
+      "date": "16th century",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/391582",
+      "objectId": 391582,
+      "note": "Interpretación artística; no reconstrucción histórica"
+    },
+    {
+      "storyId": "relato-lucas-2-1",
+      "source": "The Metropolitan Museum of Art",
+      "artist": "Anonymous, Italian, 16th century",
+      "title": "Nativity",
+      "date": "16th century",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/391582",
+      "objectId": 391582,
+      "note": "Interpretación artística; no reconstrucción histórica"
+    },
+    {
+      "storyId": "relato-mateo-1-1",
+      "source": "The Metropolitan Museum of Art",
+      "artist": "Anonymous, Italian, 16th century",
+      "title": "Nativity",
+      "date": "16th century",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/391582",
+      "objectId": 391582,
+      "note": "Interpretación artística; no reconstrucción histórica"
+    },
+    {
+      "storyId": "relato-pc-001",
+      "source": "The Metropolitan Museum of Art",
+      "artist": "Anonymous, Italian, 16th century",
+      "title": "Nativity",
+      "date": "16th century",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/391582",
+      "objectId": 391582,
+      "note": "Interpretación artística; no reconstrucción histórica"
+    },
+    {
+      "storyId": "relato-pc-021",
+      "source": "The Metropolitan Museum of Art",
+      "artist": "Gerard van Groeningen",
+      "title": "The Fall of Jericho",
+      "date": "1563–73",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/368445",
+      "objectId": 368445,
+      "note": "Interpretación artística; no reconstrucción histórica"
+    },
+    {
+      "storyId": "relato-pc-031",
+      "source": "The Metropolitan Museum of Art",
+      "artist": "Anonymous, Italian, 16th century",
+      "title": "Nativity",
+      "date": "16th century",
+      "license": "CC0",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/391582",
+      "objectId": 391582,
+      "note": "Interpretación artística; no reconstrucción histórica"
+    }
+  ]
+}
