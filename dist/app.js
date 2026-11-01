@@ -59,6 +59,7 @@ const defaultState = () => ({
   readerContextOpen: true,
   readerDisplayOpen: false,
   readerMoreOpen: false,
+  readerTranslationOpen: false,
   chapterSheetOpen: false,
   readerFont: "serif",
   readerTheme: "light",
@@ -84,14 +85,14 @@ function slugify(value) {
 function loadState() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    return { ...defaultState(), ...saved, toast: "", navigationOpen: false, appearancePopoverOpen: false, readerMoreOpen: false };
+    return { ...defaultState(), ...saved, toast: "", navigationOpen: false, appearancePopoverOpen: false, readerMoreOpen: false, readerTranslationOpen: false };
   } catch {
     return defaultState();
   }
 }
 
 function saveState() {
-  const { toast, navigationOpen, appearancePopoverOpen, readerMoreOpen, activeMilestone, ...persisted } = state;
+  const { toast, navigationOpen, appearancePopoverOpen, readerMoreOpen, readerTranslationOpen, activeMilestone, ...persisted } = state;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(persisted));
 }
 
@@ -621,8 +622,8 @@ function renderReaderContext(book, contextVideos) {
 
 function renderReaderSelection(book, chapter) {
   const translation = getBibleTranslation(state.readerTranslation);
-  const options = getBibleTranslations().map(version => `<option value="${version.id}" ${version.id === translation.id ? "selected" : ""}>${escapeHtml(version.shortName)} · ${escapeHtml(version.name)}</option>`).join("");
-  return `<div class="reader-selection-bar"><button class="reader-selection-button" data-action="toggle-chapter-sheet" aria-expanded="${state.chapterSheetOpen}" aria-controls="chapter-sheet"><span>${escapeHtml(book.name.toUpperCase())} ${chapter}</span>${icon("chevronDown", 16)}</button><label class="reader-translation-control"><span class="sr-only">Versión bíblica</span><select data-action="change-reader-translation" aria-label="Elegir versión bíblica">${options}</select></label></div>`;
+  const options = getBibleTranslations().map(version => `<button type="button" class="reader-translation-option ${version.id === translation.id ? "is-selected" : ""}" data-action="select-reader-translation" data-translation-id="${version.id}" role="option" aria-selected="${version.id === translation.id}"><span class="reader-translation-option-copy"><span class="reader-translation-option-line"><strong>${escapeHtml(version.shortName)}</strong><span aria-hidden="true">|</span><span>${escapeHtml(version.name)}</span></span></span><span class="reader-translation-tag">${escapeHtml(version.styleLabel)}</span>${version.id === translation.id ? icon("check", 17) : ""}</button>`).join("");
+  return `<div class="reader-selection-bar"><button class="reader-selection-button" data-action="toggle-chapter-sheet" aria-expanded="${state.chapterSheetOpen}" aria-controls="chapter-sheet"><span>${escapeHtml(book.name.toUpperCase())} ${chapter}</span>${icon("chevronDown", 16)}</button><div class="reader-translation-control"><button type="button" class="reader-translation-trigger" data-action="toggle-reader-translation" aria-label="Elegir versión bíblica: ${escapeHtml(translation.shortName)} · ${escapeHtml(translation.name)}" aria-haspopup="listbox" aria-expanded="${state.readerTranslationOpen}" aria-controls="reader-translation-menu"><span>${escapeHtml(translation.shortName)}</span>${icon("chevronDown", 16)}</button>${state.readerTranslationOpen ? `<div class="reader-translation-popover" id="reader-translation-menu" role="listbox" aria-label="Versiones bíblicas">${options}</div>` : ""}</div></div>`;
 }
 
 function renderReadingCopy(book, chapter) {
@@ -837,6 +838,7 @@ function showToast(message) {
 
 function changeReaderTranslation(value) {
   state.readerTranslation = isBibleTranslationId(value) ? value : DEFAULT_TRANSLATION_ID;
+  state.readerTranslationOpen = false;
   state.readerReadingProgress = 0;
   updateReaderLocation(state.readerBookId, readerChapter(getBook(state.readerBookId)), null, false, state.readerTranslation);
   saveState();
@@ -848,7 +850,8 @@ function bindEvents() {
     element.addEventListener("click", (event) => {
       event.preventDefault();
       const action = element.dataset.action;
-      if (action === "change-reader-translation") return;
+      if (action === "toggle-reader-translation") { state.readerTranslationOpen = !state.readerTranslationOpen; render(); document.querySelector(".reader-translation-trigger")?.focus({preventScroll:true}); }
+      if (action === "select-reader-translation") { changeReaderTranslation(element.dataset.translationId); }
       if (action === "onboarding-next") { state.onboardingStep = Math.min(state.onboardingStep + 1, 3); saveState(); render(); }
       if (action === "choose-goal") { state.goal = element.dataset.goal; saveState(); render(); }
       if (action === "open-reader") { openReader(state.onboardingStep === 3 ? "3-juan" : currentBook().id); }
@@ -906,12 +909,10 @@ function bindEvents() {
       }
     });
   });
-  document.querySelectorAll("select[data-action=change-reader-translation]").forEach(select => {
-    select.addEventListener("change", () => changeReaderTranslation(select.value));
-  });
 }
 
 document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && state.readerTranslationOpen) { event.preventDefault(); state.readerTranslationOpen = false; render(); document.querySelector(".reader-translation-trigger")?.focus({preventScroll:true}); return; }
   if (!state.navigationOpen) return;
   if (event.key === "Escape") { event.preventDefault(); state.navigationOpen = false; state.appearancePopoverOpen = false; render(); document.querySelector(".kb-menu-trigger")?.focus({preventScroll:true}); return; }
   if (event.key !== "Tab") return;

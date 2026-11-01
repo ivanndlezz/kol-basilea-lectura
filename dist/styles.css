@@ -475,9 +475,20 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .reader-selection-button { display: inline-flex; align-items: center; gap: 12px; min-height: 40px; padding: 0 15px; border: 0; border-radius: 999px 0 0 999px; background: var(--surface-soft); color: var(--ink); font-size: 13px; font-weight: 800; letter-spacing: .01em; }
 .reader-selection-button:hover { background: var(--brand-soft); color: var(--brand-dark); }
 .reader-selection-button .lucide-icon { color: var(--ink-muted); }
-.reader-translation-control { display: inline-flex; min-width: 0; margin-left: -6px; }
-.reader-translation-control select { min-height: 40px; max-width: 220px; padding: 0 32px 0 14px; border: 0; border-left: 1px solid var(--paper); border-radius: 0 999px 999px 0; background: var(--surface-soft); color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 800; }
-.reader-translation-control select:focus { outline: 2px solid var(--brand); outline-offset: 2px; }
+.reader-translation-control { position: relative; display: inline-flex; min-width: 0; margin-left: -6px; }
+.reader-translation-trigger { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 14px; border: 0; border-left: 1px solid var(--paper); border-radius: 0 999px 999px 0; background: var(--surface-soft); color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 800; }
+.reader-translation-trigger:hover { background: var(--brand-soft); color: var(--brand-dark); }
+.reader-translation-trigger:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+.reader-translation-popover { position: absolute; top: calc(100% + 9px); right: 0; z-index: 90; width: min(340px, calc(100vw - 32px)); padding: 7px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); box-shadow: 0 18px 44px rgba(30, 43, 38, .2); }
+.reader-translation-option { display: flex; align-items: center; gap: 9px; width: 100%; min-height: 58px; padding: 9px 10px; border: 0; border-radius: 11px; background: transparent; color: var(--ink); text-align: left; }
+.reader-translation-option:hover, .reader-translation-option:focus-visible { background: var(--brand-soft); outline: none; }
+.reader-translation-option.is-selected { background: color-mix(in srgb, var(--brand-soft) 70%, var(--surface)); }
+.reader-translation-option-copy { min-width: 0; flex: 1; }
+.reader-translation-option-line { display: flex; align-items: baseline; gap: 6px; min-width: 0; font-size: 13px; line-height: 1.25; }
+.reader-translation-option-line strong { flex: 0 0 auto; color: var(--brand); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+.reader-translation-option-line > span:last-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.reader-translation-tag { flex: 0 0 auto; padding: 4px 7px; border: 1px solid color-mix(in srgb, var(--brand) 30%, var(--line)); border-radius: 999px; color: var(--brand); font-size: 10px; font-weight: 800; line-height: 1; }
+.reader-translation-option > .lucide-icon { flex: 0 0 auto; color: var(--brand); }
 .reader-display-menu { position: absolute; z-index: 40; top: 72px; right: 20px; width: min(286px, calc(100% - 40px)); padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); box-shadow: 0 18px 44px rgba(30, 43, 38, .16); }
 .display-menu-section + .display-menu-section { margin-top: 16px; }
 .display-menu-label { display: block; margin-bottom: 8px; color: var(--ink-muted); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
@@ -554,7 +565,7 @@ p { color: var(--ink-muted); line-height: 1.52; }
   .reader-selection-button { flex: 1; justify-content: space-between; min-width: 0; padding-right: 13px; padding-left: 13px; }
   .reader-selection-button span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .reader-translation-control { flex: 0 0 auto; }
-  .reader-translation-control select { max-width: 116px; padding-right: 22px; padding-left: 10px; }
+  .reader-translation-trigger { padding-right: 10px; padding-left: 10px; }
   .reader-format-button { padding: 0 9px; }
   .reader-format-button span { display: none; }
   .reader-display-menu { top: 68px; right: 12px; width: min(286px, calc(100% - 24px)); }
@@ -821,7 +832,7 @@ body.kb-navigation-open{overflow:hidden;touch-action:none}
 .kb-hero .kb-current-chapter{border-color:var(--category-color,var(--brand))}
 .kb-spine.is-done{background:var(--category-color,var(--brand))}
 .kb-spine.is-next{background:color-mix(in srgb,var(--category-color,var(--brand)) 55%,var(--surface))}
-.reader-page .reader-translation-control select{border-color:color-mix(in srgb,var(--category-color,var(--brand)) 35%,var(--line))}
+.reader-page .reader-translation-trigger{border-color:color-mix(in srgb,var(--category-color,var(--brand)) 35%,var(--line))}
 .reader-page .reader-selection-button,.reader-page .reader-topbar-link{color:var(--category-color,var(--brand))}
 .reader-page .chapter-panel-header strong,.reader-page .book-info-kicker{color:var(--category-color,var(--brand))}
 .reader-page .reader-reading-fill{background:var(--category-color,var(--brand))}
@@ -997,13 +1008,14 @@ a:not([class]):visited{color:var(--brand-dark)}
 .reader-page .kb-reader-format{display:flex;align-items:center;justify-content:center;width:40px;height:40px;padding:0;border:1px solid #e0e4df;border-radius:12px;background:transparent}
 .reader-page .kb-reader-format span{display:none}
 .reader-page .kb-reader-selector-row{padding:4px 16px 10px}
-.reader-page .kb-reader-selector-row .reader-selection-bar{display:flex;align-items:stretch;width:max-content;max-width:100%;min-height:40px;margin:0;padding:0;border:0;border-radius:999px;overflow:hidden;background:var(--surface-soft)}
+.reader-page .kb-reader-selector-row .reader-selection-bar{display:flex;align-items:stretch;width:max-content;max-width:100%;min-height:40px;margin:0;padding:0;border:0;border-radius:999px;overflow:visible;background:var(--surface-soft)}
 .reader-page .kb-reader-selector-row .reader-selection-button{display:flex;align-items:center;gap:8px;min-width:0;max-width:100%;padding:8px 13px;border:0;border-radius:0;background:transparent;font-size:13px;white-space:nowrap}
 .reader-page .kb-reader-selector-row .reader-selection-button span{overflow:hidden;text-overflow:ellipsis}
 .reader-page .kb-reader-selector-row .reader-translation-control{display:flex;min-width:0;flex:1 1 auto}
-.reader-page .kb-reader-selector-row .reader-translation-control select{display:flex;align-items:center;width:100%;min-width:0;max-width:none;min-height:36px;padding:8px 12px;border-left:1px solid var(--line);border-radius:0;background:transparent;color:var(--ink);font-size:13px;white-space:nowrap;text-overflow:ellipsis}
+.reader-page .kb-reader-selector-row .reader-translation-trigger{width:100%;justify-content:space-between;min-height:36px;padding:8px 12px;border-left:1px solid var(--line);border-radius:0 999px 999px 0;background:transparent;color:var(--ink);font-size:13px;white-space:nowrap}
+.reader-page .kb-reader-selector-row .reader-translation-popover{right:0}
 .reader-page .reader-progress{padding-top:9px;padding-bottom:9px}
-@media(max-width:699px){.reader-page .kb-reader-selector-row .reader-selection-bar{width:100%}.reader-page .kb-reader-selector-row .reader-selection-button{flex:0 1 42%;justify-content:space-between}.reader-page .kb-reader-selector-row .reader-translation-control{flex:1 1 58%}}
+@media(max-width:699px){.reader-page .kb-reader-selector-row .reader-selection-bar{width:100%}.reader-page .kb-reader-selector-row .reader-selection-button{flex:0 1 42%;justify-content:space-between}.reader-page .kb-reader-selector-row .reader-translation-control{flex:1 1 58%}.reader-page .kb-reader-selector-row .reader-translation-trigger{padding-right:10px;padding-left:10px}}
 @media(min-width:700px){.reader-page .kb-reader-toolbar,.reader-page .kb-reader-selector-row{padding-left:24px;padding-right:24px}}
 
 /* One-time reading milestones: compact editorial bottom sheet */
