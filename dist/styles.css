@@ -452,7 +452,7 @@ p { color: var(--ink-muted); line-height: 1.52; }
 .scripture-verse sup { padding-top: 5px; color: var(--brand); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; font-size: 11px; font-weight: 800; line-height: 1; }
 .scripture-verse span { min-width: 0; }
 .scripture-attribution { margin-top: 30px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--ink-muted) !important; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif !important; font-size: 11px !important; line-height: 1.45 !important; }
-.reader-footer { position: sticky; bottom: 0; padding: 15px 20px calc(15px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); background: rgba(246, 247, 244, .94); backdrop-filter: blur(16px); }
+.reader-footer { position: sticky; bottom: 0; padding: 15px 20px calc(15px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); background: var(--reader-footer-bg); backdrop-filter: blur(16px); }
 
 /* Reader refinements inspired by the supplied reference: quieter chrome, editorial reading space, and explicit display controls. */
 .app-shell.is-reading { max-width: 920px; }
@@ -666,7 +666,7 @@ p { color: var(--ink-muted); line-height: 1.52; }
 /* App appearance is independent from the Bible reader's own theme. */
 body[data-app-appearance="dark"]:not([data-reader-theme="dark"]),
 body[data-app-appearance="dark"][data-reader-theme="light"],
-body[data-app-appearance="dark"][data-reader-theme="sepia"]{color-scheme:dark;--paper:#090a09;--surface:#252525;--surface-soft:#242624;--ink:#f7f8f7;--ink-muted:#a7aaa7;--line:#343735;--brand:#26b46c;--brand-dark:#62d99c;--brand-soft:#183b2a;--gold:#d99459;--gold-soft:#332b1d;--shadow:none}
+body[data-app-appearance="dark"][data-reader-theme="sepia"]{color-scheme:dark;--paper:#090a09;--surface:#252525;--surface-soft:#242624;--ink:#f7f8f7;--ink-muted:#a7aaa7;--line:#343735;--brand:#26b46c;--brand-dark:#62d99c;--brand-soft:#183b2a;--gold:#d99459;--gold-soft:#332b1d;--reader-footer-bg:rgba(9,10,9,.94);--shadow:none}
 body[data-app-appearance="dark"] .bottom-nav{background:rgba(16,17,16,.94);border-top-color:#323532}
 body[data-app-appearance="dark"] .brand-mark{color:#fff;background:#21694e}
 body[data-app-appearance="dark"] .profile-button{background:#242424;color:#d7ded9}
@@ -681,7 +681,7 @@ body[data-app-appearance="dark"] .kol-discovery-content h2{color:#f4ece2}
 body[data-app-appearance="dark"] .kol-discovery-content>p:not(.eyebrow){color:#c3b8ae}
 body[data-app-appearance="dark"] .kol-discovery-link{background:#c87535}
 @media(prefers-color-scheme:dark){
- body[data-app-appearance="system"][data-reader-theme="light"]{color-scheme:dark;--paper:#090a09;--surface:#252525;--surface-soft:#242624;--ink:#f7f8f7;--ink-muted:#a7aaa7;--line:#343735;--brand:#26b46c;--brand-dark:#62d99c;--brand-soft:#183b2a;--gold:#d99459;--gold-soft:#332b1d;--shadow:none}
+ body[data-app-appearance="system"][data-reader-theme="light"]{color-scheme:dark;--paper:#090a09;--surface:#252525;--surface-soft:#242624;--ink:#f7f8f7;--ink-muted:#a7aaa7;--line:#343735;--brand:#26b46c;--brand-dark:#62d99c;--brand-soft:#183b2a;--gold:#d99459;--gold-soft:#332b1d;--reader-footer-bg:rgba(9,10,9,.94);--shadow:none}
  body[data-app-appearance="system"] .bottom-nav{background:rgba(16,17,16,.94);border-top-color:#323532}
  body[data-app-appearance="system"] .brand-mark{color:#fff;background:#21694e}
  body[data-app-appearance="system"] .profile-button{background:#242424;color:#d7ded9}
