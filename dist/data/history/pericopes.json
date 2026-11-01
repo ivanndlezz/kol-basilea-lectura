@@ -1,0 +1,673 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "note": "Delimitaciones editoriales propuestas para navegación; requieren cotejo RV1909 y revisión antes de considerarse verificadas.",
+  "items": [
+    {
+      "id": "pc-001",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--liberation",
+      "title": "Nacimiento de Moisés",
+      "start": {
+        "chapter": 2,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 2,
+        "verse": 10
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-002",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--liberation",
+      "title": "Huida de Moisés a Madián",
+      "start": {
+        "chapter": 2,
+        "verse": 11
+      },
+      "end": {
+        "chapter": 2,
+        "verse": 25
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-003",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--liberation",
+      "title": "La zarza ardiente",
+      "start": {
+        "chapter": 3,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 3,
+        "verse": 22
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-004",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--liberation",
+      "title": "La misión de Moisés",
+      "start": {
+        "chapter": 4,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 4,
+        "verse": 17
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-005",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--liberation",
+      "title": "Moisés ante el faraón",
+      "start": {
+        "chapter": 5,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 5,
+        "verse": 23
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-006",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--liberation",
+      "title": "Las plagas de Egipto",
+      "start": {
+        "chapter": 7,
+        "verse": 14
+      },
+      "end": {
+        "chapter": 11,
+        "verse": 10
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-007",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--liberation",
+      "title": "La institución de la Pascua",
+      "start": {
+        "chapter": 12,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 12,
+        "verse": 28
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-008",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--liberation",
+      "title": "La salida de Egipto",
+      "start": {
+        "chapter": 12,
+        "verse": 29
+      },
+      "end": {
+        "chapter": 12,
+        "verse": 51
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-009",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--liberation",
+      "title": "El paso del mar",
+      "start": {
+        "chapter": 14,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 14,
+        "verse": 31
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-010",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--liberation",
+      "title": "El cántico de Moisés",
+      "start": {
+        "chapter": 15,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 15,
+        "verse": 21
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-011",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--wilderness-covenant",
+      "title": "El maná y las codornices",
+      "start": {
+        "chapter": 16,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 16,
+        "verse": 36
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-012",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--wilderness-covenant",
+      "title": "Agua de la roca",
+      "start": {
+        "chapter": 17,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 17,
+        "verse": 7
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-013",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--wilderness-covenant",
+      "title": "La llegada al Sinaí",
+      "start": {
+        "chapter": 19,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 19,
+        "verse": 25
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-014",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--wilderness-covenant",
+      "title": "Los diez mandamientos",
+      "start": {
+        "chapter": 20,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 20,
+        "verse": 17
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-015",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--wilderness-covenant",
+      "title": "El pacto confirmado",
+      "start": {
+        "chapter": 24,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 24,
+        "verse": 18
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-016",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--wilderness-covenant",
+      "title": "El becerro de oro",
+      "start": {
+        "chapter": 32,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 32,
+        "verse": 35
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-017",
+      "bookId": "exodo",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--wilderness-covenant",
+      "title": "La gloria llena el tabernáculo",
+      "start": {
+        "chapter": 40,
+        "verse": 34
+      },
+      "end": {
+        "chapter": 40,
+        "verse": 38
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-018",
+      "bookId": "josue",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Josué recibe el encargo",
+      "start": {
+        "chapter": 1,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 1,
+        "verse": 18
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-019",
+      "bookId": "josue",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Rahab y los espías",
+      "start": {
+        "chapter": 2,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 2,
+        "verse": 24
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-020",
+      "bookId": "josue",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "El cruce del Jordán",
+      "start": {
+        "chapter": 3,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 4,
+        "verse": 24
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-021",
+      "bookId": "josue",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "La caída de Jericó",
+      "start": {
+        "chapter": 6,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 6,
+        "verse": 27
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-022",
+      "bookId": "josue",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "La renovación del pacto",
+      "start": {
+        "chapter": 24,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 24,
+        "verse": 33
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-023",
+      "bookId": "jueces",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "La muerte de Josué",
+      "start": {
+        "chapter": 2,
+        "verse": 6
+      },
+      "end": {
+        "chapter": 2,
+        "verse": 10
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-024",
+      "bookId": "jueces",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Otoniel",
+      "start": {
+        "chapter": 3,
+        "verse": 7
+      },
+      "end": {
+        "chapter": 3,
+        "verse": 11
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-025",
+      "bookId": "jueces",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Aod",
+      "start": {
+        "chapter": 3,
+        "verse": 12
+      },
+      "end": {
+        "chapter": 3,
+        "verse": 30
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-026",
+      "bookId": "jueces",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Débora y Barac",
+      "start": {
+        "chapter": 4,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 4,
+        "verse": 24
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-027",
+      "bookId": "jueces",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "El cántico de Débora",
+      "start": {
+        "chapter": 5,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 5,
+        "verse": 31
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-028",
+      "bookId": "jueces",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "El llamamiento de Gedeón",
+      "start": {
+        "chapter": 6,
+        "verse": 11
+      },
+      "end": {
+        "chapter": 6,
+        "verse": 40
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-029",
+      "bookId": "jueces",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Los trescientos de Gedeón",
+      "start": {
+        "chapter": 7,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 7,
+        "verse": 25
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-030",
+      "bookId": "jueces",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Jefté",
+      "start": {
+        "chapter": 11,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 11,
+        "verse": 40
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-031",
+      "bookId": "jueces",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Nacimiento de Sansón",
+      "start": {
+        "chapter": 13,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 13,
+        "verse": 25
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-032",
+      "bookId": "jueces",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Sansón y Dalila",
+      "start": {
+        "chapter": 16,
+        "verse": 4
+      },
+      "end": {
+        "chapter": 16,
+        "verse": 22
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-033",
+      "bookId": "jueces",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Muerte de Sansón",
+      "start": {
+        "chapter": 16,
+        "verse": 23
+      },
+      "end": {
+        "chapter": 16,
+        "verse": 31
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-034",
+      "bookId": "rut",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Rut acompaña a Noemí",
+      "start": {
+        "chapter": 1,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 1,
+        "verse": 22
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-035",
+      "bookId": "rut",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Rut conoce a Booz",
+      "start": {
+        "chapter": 2,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 2,
+        "verse": 23
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-036",
+      "bookId": "rut",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Rut y Booz",
+      "start": {
+        "chapter": 3,
+        "verse": 1
+      },
+      "end": {
+        "chapter": 4,
+        "verse": 12
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    },
+    {
+      "id": "pc-037",
+      "bookId": "rut",
+      "eraId": "exodus-judges",
+      "subEraId": "exodus-judges--settlement-judges",
+      "title": "Genealogía de David",
+      "start": {
+        "chapter": 4,
+        "verse": 13
+      },
+      "end": {
+        "chapter": 4,
+        "verse": 22
+      },
+      "status": "candidate",
+      "source": "editorial-seed",
+      "literaryType": "unclassified"
+    }
+  ]
+}
