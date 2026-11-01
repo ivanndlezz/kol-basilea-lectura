@@ -42,6 +42,7 @@ def main():
     OUTPUT.mkdir(parents=True,exist_ok=True)
     cache={}
     done=0
+    used_objects={item.get('objectId') for item in existing.values()}
     for story in timeline["stories"]:
         if story.get("cover",{}).get("src"):continue
         term=query_for(story)
@@ -49,7 +50,8 @@ def main():
         try:
             if term not in cache:cache[term]=find_art(term)
             art=cache[term]
-            if not art:continue
+            if not art or art.get('objectID') in used_objects:continue
+            used_objects.add(art['objectID'])
             raw=get(art["primaryImageSmall"])
             with Image.open(io.BytesIO(raw)) as image:
                 image=ImageOps.exif_transpose(image).convert("RGB")
