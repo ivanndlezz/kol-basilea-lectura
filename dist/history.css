@@ -264,7 +264,7 @@ html[data-kb-history-theme="light"]{color-scheme:light}
 
 /* Three-position cyclic pager: 1 → 2 → 3 → 1. */
 .kb-history-app .kb-era-tickmarks{display:flex;align-items:center;justify-content:center;gap:10px;width:74px;height:20px;margin:0 auto 6px;pointer-events:none}
-.kb-history-app .kb-era-tick{display:block;flex:0 0 18px;width:18px;height:4px;border-radius:99px;background:var(--green);opacity:.23;transform:scaleX(.8);transition:opacity 180ms ease,transform 180ms ease,background-color 180ms ease}
+.kb-history-app .kb-era-tick{display:block;flex:0 0 18px;width:18px;height:4px;border-radius:99px;background:var(--green);opacity:.23;transform:scaleX(.8);transition:opacity 340ms cubic-bezier(.22,1,.36,1),transform 340ms cubic-bezier(.22,1,.36,1),background-color 340ms ease}
 .kb-history-app .kb-era-tick.is-active{background:var(--gold);opacity:1;transform:scaleX(1)}
 .kb-history-app .kb-era-tickmarks.kb-tick-reset .kb-era-tick{transition:none}
 @media(prefers-reduced-motion:reduce){.kb-history-app .kb-era-tick{transition:none}}
