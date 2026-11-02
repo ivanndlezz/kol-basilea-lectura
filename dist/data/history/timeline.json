@@ -1000,7 +1000,8 @@
         "src": "assets/images/history/creacion.webp",
         "alt": "Ilustración editorial de La creación"
       },
-      "icon": "sun"
+      "icon": "sun",
+      "synopsis": "El relato abre con un mundo sin forma ni orden. A través de una secuencia de actos creados por la palabra divina, aparecen la luz, los cielos, la tierra y los seres vivos. El texto culmina con la humanidad y el descanso del séptimo día, y presenta el universo como una realidad ordenada y buena."
     },
     {
       "id": "caida",
@@ -1017,7 +1018,8 @@
         "src": "assets/images/history/caida.webp",
         "alt": "Ilustración editorial de La caída"
       },
-      "icon": "book-open"
+      "icon": "book-open",
+      "synopsis": "En el jardín de Edén, una conversación sobre el árbol prohibido lleva a la primera pareja a cruzar el límite establecido por Dios. La vergüenza, el temor y la ruptura de sus relaciones cambian el rumbo de la historia humana."
     },
     {
       "id": "cain-y-abel",
@@ -1085,7 +1087,8 @@
         "src": "assets/images/history/babel.webp",
         "alt": "Ilustración editorial de Babel"
       },
-      "icon": "building-2"
+      "icon": "building-2",
+      "synopsis": "Después del diluvio, la humanidad aparece reunida en una llanura de Sinar. Sus habitantes deciden construir una ciudad y una torre para hacerse un nombre y evitar dispersarse. El relato plantea una pregunta que atraviesa Génesis: ¿qué sucede cuando los seres humanos buscan asegurar su grandeza por sus propios medios? La intervención divina transforma el proyecto y da origen a la dispersión de los pueblos."
     },
     {
       "id": "llamado-de-abram",
