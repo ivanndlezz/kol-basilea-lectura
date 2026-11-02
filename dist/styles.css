@@ -1148,3 +1148,12 @@ a:not([class]):visited{color:var(--brand-dark)}
 [data-theme="dark"] .kb-navigation-sheet .kb-atlas-menu-trigger{color:#e3f1e6}
 [data-theme="dark"] .kb-navigation-sheet .kb-atlas-menu-trigger .kb-atlas-menu-symbol{background:#2b5140;color:#e2f3e6}
 [data-theme="dark"] .kb-navigation-sheet .kb-atlas-menu-trigger .kb-atlas-menu-title small{color:#b0c5b5}
+
+/* Atlas accordion: align child rows with the card header's text column. */
+.kb-navigation-sheet .kb-atlas-menu-body{padding:2px 16px 18px 16px!important}
+.kb-navigation-sheet .kb-atlas-menu-label{margin:16px 0 7px!important;padding-left:0!important}
+.kb-navigation-sheet .kb-atlas-menu-body>a,
+.kb-navigation-sheet .kb-atlas-menu-body>button,
+.kb-navigation-sheet .kb-atlas-menu-body>.kb-atlas-menu-disabled{box-sizing:border-box;width:100%;padding:11px 0!important;margin:0!important;min-height:44px}
+.kb-navigation-sheet .kb-atlas-menu-body>a,
+.kb-navigation-sheet .kb-atlas-menu-body>button{display:flex;justify-content:space-between;align-items:center;gap:12px}
