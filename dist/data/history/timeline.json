@@ -998,7 +998,8 @@
       "status": "published",
       "cover": {
         "src": "assets/images/history/creacion.webp",
-        "alt": "Ilustración editorial de La creación"
+        "alt": "Ilustración editorial de La creación",
+        "match": "unverified"
       },
       "icon": "sun",
       "synopsis": "El relato abre con un mundo sin forma ni orden. A través de una secuencia de actos creados por la palabra divina, aparecen la luz, los cielos, la tierra y los seres vivos. El texto culmina con la humanidad y el descanso del séptimo día, y presenta el universo como una realidad ordenada y buena."
@@ -1016,7 +1017,8 @@
       "status": "published",
       "cover": {
         "src": "assets/images/history/caida.webp",
-        "alt": "Ilustración editorial de La caída"
+        "alt": "Ilustración editorial de La caída",
+        "match": "unverified"
       },
       "icon": "book-open",
       "synopsis": "En el jardín de Edén, una conversación sobre el árbol prohibido lleva a la primera pareja a cruzar el límite establecido por Dios. La vergüenza, el temor y la ruptura de sus relaciones cambian el rumbo de la historia humana."
@@ -1034,7 +1036,8 @@
       "status": "published",
       "cover": {
         "src": "assets/images/history/cain-y-abel.webp",
-        "alt": "Ilustración editorial de Caín y Abel"
+        "alt": "Ilustración editorial de Caín y Abel",
+        "match": "unverified"
       },
       "icon": "book-open"
     },
@@ -1051,7 +1054,8 @@
       "status": "published",
       "cover": {
         "src": "assets/images/history/primeras-ciudades.webp",
-        "alt": "Ilustración editorial de Las primeras ciudades y reinos"
+        "alt": "Ilustración editorial de Las primeras ciudades y reinos",
+        "match": "unverified"
       },
       "icon": "crown"
     },
@@ -1068,7 +1072,8 @@
       "status": "published",
       "cover": {
         "src": "assets/images/history/diluvio.webp",
-        "alt": "Ilustración editorial de El diluvio"
+        "alt": "Ilustración editorial de El diluvio",
+        "match": "unverified"
       },
       "icon": "waves"
     },
@@ -1085,7 +1090,8 @@
       "status": "published",
       "cover": {
         "src": "assets/images/history/babel.webp",
-        "alt": "Ilustración editorial de Babel"
+        "alt": "Ilustración editorial de Babel",
+        "match": "unverified"
       },
       "icon": "building-2",
       "synopsis": "Después del diluvio, la humanidad aparece reunida en una llanura de Sinar. Sus habitantes deciden construir una ciudad y una torre para hacerse un nombre y evitar dispersarse. El relato plantea una pregunta que atraviesa Génesis: ¿qué sucede cuando los seres humanos buscan asegurar su grandeza por sus propios medios? La intervención divina transforma el proyecto y da origen a la dispersión de los pueblos."
@@ -1111,7 +1117,8 @@
         "alternatives": [
           "https://commons.wikimedia.org/wiki/Special:Redirect/file/Abraham_vertrekt_uit_Haran%2C_SK-A-3377.jpg",
           "https://commons.wikimedia.org/wiki/Special:FilePath/Abraham_vertrekt_uit_Haran%2C_SK-A-3377.jpg"
-        ]
+        ],
+        "match": "unverified"
       }
     },
     {
@@ -1135,7 +1142,8 @@
         "alternatives": [
           "https://commons.wikimedia.org/wiki/Special:Redirect/file/Farao_geeft_Sara_aan_Abraham_terug_Rijksmuseum_SK-A-1191.jpeg",
           "https://commons.wikimedia.org/wiki/Special:FilePath/Farao_geeft_Sara_aan_Abraham_terug_Rijksmuseum_SK-A-1191.jpeg"
-        ]
+        ],
+        "match": "unverified"
       }
     },
     {
@@ -1149,14 +1157,10 @@
       "subEraId": "patriarchs--abraham",
       "status": "outline",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/nacimiento-de-isaac.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Abram y Lot",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "nacimiento-de-isaac",
-        "match": "period-context",
-        "fallbackFrom": "nacimiento-de-isaac"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/nacimiento-de-isaac.webp"
       }
     },
     {
@@ -1170,14 +1174,10 @@
       "subEraId": "patriarchs--abraham",
       "status": "outline",
       "icon": "tent",
-      "cover": {
-        "src": "assets/images/history/nacimiento-de-isaac.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El pacto y la promesa",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "nacimiento-de-isaac",
-        "match": "period-context",
-        "fallbackFrom": "nacimiento-de-isaac"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/nacimiento-de-isaac.webp"
       }
     },
     {
@@ -1197,7 +1197,8 @@
         "source": "File:Sodom and Gomorrah afire, by Jacob Jacobsz. de Wet d. J., probably Köln, c. 1680, oil on canvas - Hessisches Landesmuseum Darmstadt - Darmstadt, Germany - DSC01149.jpg",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sodom_and_Gomorrah_afire,_by_Jacob_Jacobsz._de_Wet_d._J.,_probably_K%C3%B6ln,_c._1680,_oil_on_canvas_-_Hessisches_Landesmuseum_Darmstadt_-_Darmstadt,_Germany_-_DSC01149.jpg",
         "license": "Public domain",
-        "artist": "Daderot"
+        "artist": "Daderot",
+        "match": "unverified"
       }
     },
     {
@@ -1211,12 +1212,10 @@
       "subEraId": "patriarchs--abraham",
       "status": "outline",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/nacimiento-de-isaac.webp",
-        "alt": "Obra de arte: Nativity",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "nacimiento-de-isaac"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Previously identified mismatched artwork",
+        "previousSrc": "assets/images/history/nacimiento-de-isaac.webp"
       }
     },
     {
@@ -1230,14 +1229,10 @@
       "subEraId": "patriarchs--abraham",
       "status": "outline",
       "icon": "tent",
-      "cover": {
-        "src": "assets/images/history/nacimiento-de-isaac.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La prueba de Abraham",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "nacimiento-de-isaac",
-        "match": "period-context",
-        "fallbackFrom": "nacimiento-de-isaac"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/nacimiento-de-isaac.webp"
       }
     },
     {
@@ -1251,14 +1246,10 @@
       "subEraId": "patriarchs--isaac",
       "status": "outline",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-y-sus-hermanos.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Isaac y Rebeca",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-y-sus-hermanos",
-        "match": "period-context",
-        "fallbackFrom": "jose-y-sus-hermanos"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-y-sus-hermanos.webp"
       }
     },
     {
@@ -1272,14 +1263,10 @@
       "subEraId": "patriarchs--jacob",
       "status": "outline",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-vendido.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Esaú y Jacob",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-vendido",
-        "match": "period-context",
-        "fallbackFrom": "jose-vendido"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-vendido.webp"
       }
     },
     {
@@ -1293,14 +1280,10 @@
       "subEraId": "patriarchs--jacob",
       "status": "outline",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/nacimiento-de-isaac.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El sueño de Jacob",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "nacimiento-de-isaac",
-        "match": "period-context",
-        "fallbackFrom": "nacimiento-de-isaac"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/nacimiento-de-isaac.webp"
       }
     },
     {
@@ -1314,14 +1297,10 @@
       "subEraId": "patriarchs--jacob",
       "status": "outline",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/nacimiento-de-isaac.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Jacob recibe el nombre Israel",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "nacimiento-de-isaac",
-        "match": "period-context",
-        "fallbackFrom": "nacimiento-de-isaac"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/nacimiento-de-isaac.webp"
       }
     },
     {
@@ -1335,12 +1314,10 @@
       "subEraId": "patriarchs--jose",
       "status": "outline",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-vendido.webp",
-        "alt": "Obra de arte: Joseph Dugan",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-vendido"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Previously identified mismatched artwork",
+        "previousSrc": "assets/images/history/jose-vendido.webp"
       }
     },
     {
@@ -1354,12 +1331,10 @@
       "subEraId": "patriarchs--jose",
       "status": "outline",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-en-egipto.webp",
-        "alt": "Obra de arte: Joseph Dugan",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-en-egipto"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Previously identified mismatched artwork",
+        "previousSrc": "assets/images/history/jose-en-egipto.webp"
       }
     },
     {
@@ -1373,12 +1348,10 @@
       "subEraId": "patriarchs--jose",
       "status": "outline",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-y-sus-hermanos.webp",
-        "alt": "Obra de arte: Joseph Dugan",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-y-sus-hermanos"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Previously identified mismatched artwork",
+        "previousSrc": "assets/images/history/jose-y-sus-hermanos.webp"
       }
     },
     {
@@ -1392,14 +1365,10 @@
       "subEraId": "patriarchs--jose",
       "status": "outline",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-y-sus-hermanos.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La familia de Israel en Egipto",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-y-sus-hermanos",
-        "match": "period-context",
-        "fallbackFrom": "jose-y-sus-hermanos"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-y-sus-hermanos.webp"
       }
     },
     {
@@ -1416,12 +1385,10 @@
       "sourcePericopeId": "pc-001",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Obra de arte: Nativity",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Previously identified mismatched artwork",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -1438,14 +1405,10 @@
       "sourcePericopeId": "pc-002",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Huida de Moisés a Madián",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -1462,14 +1425,10 @@
       "sourcePericopeId": "pc-003",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La zarza ardiente",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -1486,14 +1445,10 @@
       "sourcePericopeId": "pc-004",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La misión de Moisés",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -1510,14 +1465,10 @@
       "sourcePericopeId": "pc-005",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Moisés ante el faraón",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -1534,14 +1485,10 @@
       "sourcePericopeId": "pc-006",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Las plagas de Egipto",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -1558,14 +1505,10 @@
       "sourcePericopeId": "pc-007",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La institución de la Pascua",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -1582,14 +1525,10 @@
       "sourcePericopeId": "pc-008",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La salida de Egipto",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -1606,14 +1545,10 @@
       "sourcePericopeId": "pc-009",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El paso del mar",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -1630,14 +1565,10 @@
       "sourcePericopeId": "pc-011",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El maná y las codornices",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -1654,14 +1585,10 @@
       "sourcePericopeId": "pc-012",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Agua de la roca",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -1678,14 +1605,10 @@
       "sourcePericopeId": "pc-013",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La llegada al Sinaí",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -1702,14 +1625,10 @@
       "sourcePericopeId": "pc-016",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El becerro de oro",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -1726,14 +1645,10 @@
       "sourcePericopeId": "pc-018",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Josué recibe el encargo",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -1750,14 +1665,10 @@
       "sourcePericopeId": "pc-019",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Rahab y los espías",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -1774,14 +1685,10 @@
       "sourcePericopeId": "pc-020",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El cruce del Jordán",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -1803,7 +1710,8 @@
         "alt": "Obra de arte: The Fall of Jericho",
         "source": "The Metropolitan Museum of Art",
         "license": "CC0",
-        "attributionId": "relato-pc-021"
+        "attributionId": "relato-pc-021",
+        "match": "unverified"
       }
     },
     {
@@ -1820,14 +1728,10 @@
       "sourcePericopeId": "pc-022",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La renovación del pacto",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -1844,14 +1748,10 @@
       "sourcePericopeId": "pc-023",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La muerte de Josué",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -1868,14 +1768,10 @@
       "sourcePericopeId": "pc-024",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Otoniel",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -1892,14 +1788,10 @@
       "sourcePericopeId": "pc-025",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Aod",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -1916,14 +1808,10 @@
       "sourcePericopeId": "pc-026",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Débora y Barac",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -1940,14 +1828,10 @@
       "sourcePericopeId": "pc-028",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El llamamiento de Gedeón",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -1964,14 +1848,10 @@
       "sourcePericopeId": "pc-029",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Los trescientos de Gedeón",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -1988,14 +1868,10 @@
       "sourcePericopeId": "pc-030",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Jefté",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -2012,12 +1888,10 @@
       "sourcePericopeId": "pc-031",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Obra de arte: Nativity",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Previously identified mismatched artwork",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -2034,14 +1908,10 @@
       "sourcePericopeId": "pc-032",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Sansón y Dalila",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -2058,14 +1928,10 @@
       "sourcePericopeId": "pc-033",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Muerte de Sansón",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -2082,14 +1948,10 @@
       "sourcePericopeId": "pc-034",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Rut acompaña a Noemí",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -2106,14 +1968,10 @@
       "sourcePericopeId": "pc-035",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Rut conoce a Booz",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -2130,14 +1988,10 @@
       "sourcePericopeId": "pc-036",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Rut y Booz",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -2153,14 +2007,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-vendido.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El llamado de Samuel",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-vendido",
-        "match": "period-context",
-        "fallbackFrom": "jose-vendido"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-vendido.webp"
       }
     },
     {
@@ -2176,14 +2026,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Israel pide un rey",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -2199,11 +2045,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/primeras-ciudades.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Saúl es ungido rey",
-        "match": "period-context",
-        "fallbackFrom": "primeras-ciudades-y-reinos"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/primeras-ciudades.webp"
       }
     },
     {
@@ -2219,14 +2064,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-y-sus-hermanos.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente David y Goliat",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-y-sus-hermanos",
-        "match": "period-context",
-        "fallbackFrom": "jose-y-sus-hermanos"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-y-sus-hermanos.webp"
       }
     },
     {
@@ -2242,14 +2083,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La amistad de David y Jonatán",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -2265,15 +2102,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/stories/sodoma-y-gomorra.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La muerte de Saúl",
-        "source": "File:Sodom and Gomorrah afire, by Jacob Jacobsz. de Wet d. J., probably Köln, c. 1680, oil on canvas - Hessisches Landesmuseum Darmstadt - Darmstadt, Germany - DSC01149.jpg",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sodom_and_Gomorrah_afire,_by_Jacob_Jacobsz._de_Wet_d._J.,_probably_K%C3%B6ln,_c._1680,_oil_on_canvas_-_Hessisches_Landesmuseum_Darmstadt_-_Darmstadt,_Germany_-_DSC01149.jpg",
-        "license": "Public domain",
-        "artist": "Daderot",
-        "match": "period-context",
-        "fallbackFrom": "sodoma-y-gomorra"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/stories/sodoma-y-gomorra.webp"
       }
     },
     {
@@ -2289,14 +2121,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente David es proclamado rey",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -2312,14 +2140,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El arca llega a Jerusalén",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -2335,11 +2159,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/babel.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente David y Betsabé",
-        "match": "period-context",
-        "fallbackFrom": "babel"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/babel.webp"
       }
     },
     {
@@ -2355,14 +2178,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-en-egipto.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La rebelión de Absalón",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-en-egipto",
-        "match": "period-context",
-        "fallbackFrom": "jose-en-egipto"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-en-egipto.webp"
       }
     },
     {
@@ -2378,14 +2197,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Salomón pide sabiduría",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -2401,11 +2216,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/primeras-ciudades.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La dedicación del templo",
-        "match": "period-context",
-        "fallbackFrom": "primeras-ciudades-y-reinos"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/primeras-ciudades.webp"
       }
     },
     {
@@ -2421,14 +2235,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La división del reino",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -2444,11 +2254,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/caida.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Elías en el monte Carmelo",
-        "match": "period-context",
-        "fallbackFrom": "caida"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/caida.webp"
       }
     },
     {
@@ -2464,14 +2273,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La viña de Nabot",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -2487,14 +2292,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Elías es llevado al cielo",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -2510,11 +2311,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/caida.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Naamán es sanado",
-        "match": "period-context",
-        "fallbackFrom": "caida"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/caida.webp"
       }
     },
     {
@@ -2530,11 +2330,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/caida.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La caída de Samaria",
-        "match": "period-context",
-        "fallbackFrom": "caida"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/caida.webp"
       }
     },
     {
@@ -2550,11 +2349,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/primeras-ciudades.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Ezequías ante Senaquerib",
-        "match": "period-context",
-        "fallbackFrom": "primeras-ciudades-y-reinos"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/primeras-ciudades.webp"
       }
     },
     {
@@ -2570,14 +2368,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El libro de la ley es hallado",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -2593,11 +2387,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/creacion.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La caída de Jerusalén",
-        "match": "period-context",
-        "fallbackFrom": "creacion"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/creacion.webp"
       }
     },
     {
@@ -2613,11 +2406,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/babel.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente David prepara la construcción del templo",
-        "match": "period-context",
-        "fallbackFrom": "babel"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/babel.webp"
       }
     },
     {
@@ -2633,14 +2425,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-vendido.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La construcción del templo",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-vendido",
-        "match": "period-context",
-        "fallbackFrom": "jose-vendido"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-vendido.webp"
       }
     },
     {
@@ -2656,14 +2444,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-en-egipto.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La reforma de Josías",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-en-egipto",
-        "match": "period-context",
-        "fallbackFrom": "jose-en-egipto"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-en-egipto.webp"
       }
     },
     {
@@ -2679,14 +2463,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-en-egipto.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El decreto de Ciro",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-en-egipto",
-        "match": "period-context",
-        "fallbackFrom": "jose-en-egipto"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-en-egipto.webp"
       }
     },
     {
@@ -2702,14 +2482,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Se colocan los cimientos del templo",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -2725,14 +2501,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Se termina el segundo templo",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -2748,14 +2520,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Esdras llega a Jerusalén",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -2771,11 +2539,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/babel.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Nehemías recibe noticias de Jerusalén",
-        "match": "period-context",
-        "fallbackFrom": "babel"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/babel.webp"
       }
     },
     {
@@ -2791,14 +2558,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-vendido.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La reconstrucción de la muralla",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-vendido",
-        "match": "period-context",
-        "fallbackFrom": "jose-vendido"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-vendido.webp"
       }
     },
     {
@@ -2814,14 +2577,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La lectura pública de la ley",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -2837,11 +2596,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/babel.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Daniel y sus compañeros en Babilonia",
-        "match": "period-context",
-        "fallbackFrom": "babel"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/babel.webp"
       }
     },
     {
@@ -2857,14 +2615,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/nacimiento-de-isaac.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El horno de fuego",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "nacimiento-de-isaac",
-        "match": "period-context",
-        "fallbackFrom": "nacimiento-de-isaac"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/nacimiento-de-isaac.webp"
       }
     },
     {
@@ -2880,14 +2634,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-en-egipto.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La escritura en la pared",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-en-egipto",
-        "match": "period-context",
-        "fallbackFrom": "jose-en-egipto"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-en-egipto.webp"
       }
     },
     {
@@ -2903,14 +2653,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-y-sus-hermanos.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Daniel en el foso de los leones",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-y-sus-hermanos",
-        "match": "period-context",
-        "fallbackFrom": "jose-y-sus-hermanos"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-y-sus-hermanos.webp"
       }
     },
     {
@@ -2926,12 +2672,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Obra de arte: Nativity",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Previously identified mismatched artwork",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -2947,14 +2691,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Los sabios de Oriente",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -2970,14 +2710,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El bautismo de Jesús",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -2993,14 +2729,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Las tentaciones en el desierto",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -3016,14 +2748,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El sermón del monte",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3039,14 +2767,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Jesús calma la tormenta",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -3062,14 +2786,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La multiplicación de los panes",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3085,14 +2805,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La transfiguración",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3108,14 +2824,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La entrada en Jerusalén",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -3131,14 +2843,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La última cena",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -3154,14 +2862,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La crucifixión de Jesús",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -3177,14 +2881,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La resurrección y la gran comisión",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -3200,14 +2900,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El comienzo del ministerio en Galilea",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3223,14 +2919,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El paralítico y sus amigos",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3246,14 +2938,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La hija de Jairo",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -3269,14 +2957,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Bartimeo recupera la vista",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -3292,14 +2976,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El anuncio a María",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -3320,7 +3000,8 @@
         "alt": "Obra de arte: Nativity",
         "source": "The Metropolitan Museum of Art",
         "license": "CC0",
-        "attributionId": "relato-lucas-2-1"
+        "attributionId": "relato-lucas-2-1",
+        "match": "unverified"
       }
     },
     {
@@ -3336,14 +3017,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Jesús en el templo a los doce años",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3359,14 +3036,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El buen samaritano",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -3382,14 +3055,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El hijo perdido",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -3405,14 +3074,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Zaqueo recibe a Jesús",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -3428,14 +3093,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El camino a Emaús",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3451,14 +3112,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Las bodas de Caná",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -3474,14 +3131,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Jesús y Nicodemo",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -3497,14 +3150,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La mujer samaritana",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3520,12 +3169,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Obra de arte: Nativity",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Previously identified mismatched artwork",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3541,14 +3188,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La resurrección de Lázaro",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -3564,14 +3207,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Jesús lava los pies de sus discípulos",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3587,14 +3226,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Jesús se aparece a Tomás",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3610,14 +3245,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La ascensión de Jesús",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3633,14 +3264,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Pentecostés",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -3656,14 +3283,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La curación del cojo",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -3679,14 +3302,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Ananías y Safira",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -3702,14 +3321,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El testimonio y muerte de Esteban",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3725,14 +3340,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Felipe y el funcionario etíope",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -3748,14 +3359,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La conversión de Saulo",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -3771,14 +3378,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Pedro y Cornelio",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3794,14 +3397,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El concilio de Jerusalén",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -3817,14 +3416,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-juan-9-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Pablo y Silas en Filipos",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-juan-9-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-juan-9-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-juan-9-1.webp"
       }
     },
     {
@@ -3840,14 +3435,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Pablo en el Areópago",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -3863,14 +3454,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-lucas-2-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El naufragio de Pablo",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-lucas-2-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-lucas-2-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-lucas-2-1.webp"
       }
     },
     {
@@ -3886,14 +3473,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-mateo-1-1.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Pablo en Roma",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-mateo-1-1",
-        "match": "period-context",
-        "fallbackFrom": "relato-mateo-1-1"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-mateo-1-1.webp"
       }
     },
     {
@@ -3909,14 +3492,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El campamento se pone en marcha",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -3932,14 +3511,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La protesta de María y Aarón",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -3955,14 +3530,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Los doce exploradores",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -3978,14 +3549,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La rebelión del pueblo",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -4001,14 +3568,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-021.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La rebelión de Coré",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-021",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-021"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-021.webp"
       }
     },
     {
@@ -4024,14 +3587,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La serpiente de bronce",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -4047,14 +3606,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Balaam y su asna",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -4070,14 +3625,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Las hijas de Zelofehad",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -4093,14 +3644,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Moisés contempla la tierra prometida",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     },
     {
@@ -4116,11 +3663,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/creacion.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Ester llega a ser reina",
-        "match": "period-context",
-        "fallbackFrom": "creacion"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/creacion.webp"
       }
     },
     {
@@ -4136,11 +3682,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/caida.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente El decreto contra los judíos",
-        "match": "period-context",
-        "fallbackFrom": "caida"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/caida.webp"
       }
     },
     {
@@ -4156,11 +3701,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/cain-y-abel.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Ester decide interceder",
-        "match": "period-context",
-        "fallbackFrom": "cain-y-abel"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/cain-y-abel.webp"
       }
     },
     {
@@ -4176,11 +3720,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/babel.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Ester denuncia a Amán",
-        "match": "period-context",
-        "fallbackFrom": "babel"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/babel.webp"
       }
     },
     {
@@ -4196,14 +3739,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/nacimiento-de-isaac.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La liberación y Purim",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "nacimiento-de-isaac",
-        "match": "period-context",
-        "fallbackFrom": "nacimiento-de-isaac"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/nacimiento-de-isaac.webp"
       }
     },
     {
@@ -4219,14 +3758,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-vendido.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Jonás huye de su misión",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-vendido",
-        "match": "period-context",
-        "fallbackFrom": "jose-vendido"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-vendido.webp"
       }
     },
     {
@@ -4242,14 +3777,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-en-egipto.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La oración de Jonás",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-en-egipto",
-        "match": "period-context",
-        "fallbackFrom": "jose-en-egipto"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-en-egipto.webp"
       }
     },
     {
@@ -4265,14 +3796,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/jose-y-sus-hermanos.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Nínive responde al anuncio",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "jose-y-sus-hermanos",
-        "match": "period-context",
-        "fallbackFrom": "jose-y-sus-hermanos"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/jose-y-sus-hermanos.webp"
       }
     },
     {
@@ -4288,14 +3815,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-001.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente Jonás y la planta",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-001",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-001"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-001.webp"
       }
     },
     {
@@ -4311,11 +3834,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/babel.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente David reúne a Israel para traer el arca",
-        "match": "period-context",
-        "fallbackFrom": "babel"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/babel.webp"
       }
     },
     {
@@ -4331,14 +3853,10 @@
       "status": "draft",
       "visual": "editorial",
       "icon": "book-open",
-      "cover": {
-        "src": "assets/images/history/relato-pc-031.webp",
-        "alt": "Imagen contextual del periodo; no representa literalmente La reforma de Ezequías",
-        "source": "The Metropolitan Museum of Art",
-        "license": "CC0",
-        "attributionId": "relato-pc-031",
-        "match": "period-context",
-        "fallbackFrom": "relato-pc-031"
+      "coverAudit": {
+        "status": "rejected",
+        "reason": "Arbitrary image copied from another story without semantic validation",
+        "previousSrc": "assets/images/history/relato-pc-031.webp"
       }
     }
   ],
