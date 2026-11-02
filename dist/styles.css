@@ -1165,3 +1165,19 @@ a:not([class]):visited{color:var(--brand-dark)}
 .kb-world-learn-card strong{margin:0 18px 9px}
 .kb-world-learn-card small{margin:0 18px;padding-right:0}
 .kb-world-learn-card .kb-world-learn-arrow{top:12px;right:12px;display:grid;place-items:center;width:31px;height:31px;border-radius:50%;background:rgba(255,255,255,.92);color:#264635;box-shadow:0 2px 9px rgba(0,0,0,.08)}
+
+
+/* Bible-wide book/chapter accordion navigator */
+.chapter-sheet { width:min(560px,100%); }
+.chapter-sheet-header { align-items:center; flex-shrink:0; }
+.chapter-sheet-header h2 { margin:0; font-size:1.3rem; }
+.chapter-sheet-book-list { overflow-y:auto; min-height:0; flex:1; overscroll-behavior:contain; padding:12px 0 30px; }
+.chapter-sheet-book { border-bottom:1px solid var(--line); }
+.chapter-sheet-book-trigger { display:flex; align-items:center; gap:12px; width:100%; min-height:64px; padding:12px 4px; border:0; background:transparent; color:var(--ink); text-align:left; font-size:1.15rem; font-weight:650; cursor:pointer; }
+.chapter-sheet-book.is-expanded .chapter-sheet-book-trigger { color:var(--brand); }
+.chapter-sheet-book-count { margin-left:auto; color:var(--ink-muted); font-size:.75rem; font-weight:500; }
+.chapter-sheet-book-content { padding:0 0 20px; }
+.chapter-sheet-book-content .chapter-sheet-grid { overflow:visible; padding:8px 0; gap:8px; }
+.chapter-sheet-book-content .chapter-sheet-button { min-height:56px; font-size:1rem; }
+.chapter-sheet-book-content .chapter-sheet-info { color:var(--brand); }
+@media(max-width:600px) { .chapter-sheet-layer { align-items:flex-end; } .chapter-sheet { width:100%; height:calc(100dvh - 56px); max-height:calc(100dvh - 56px); border-radius:28px 28px 0 0; border-left:0; padding:24px 20px calc(16px + env(safe-area-inset-bottom)); } }
