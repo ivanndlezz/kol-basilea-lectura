@@ -438,6 +438,15 @@ function renderHome() {
     <div class="section-heading kb-library-heading"><h2>Tu biblioteca</h2><a href="#" data-action="show-route">Ver los 66 libros</a></div>
     <div class="book-strip" aria-label="Libros cercanos en la ruta">${BOOKS.slice(Math.max(0,book.index-1),Math.min(66,book.index+5)).map(bookChip).join("")}</div>
     ${discovery}
+    <section class="kb-world-learn" aria-labelledby="kb-world-learn-title">
+      <div class="kb-world-learn-heading"><div><p class="eyebrow">Atlas bíblico</p><h2 id="kb-world-learn-title">Aprende más del mundo de la Biblia</h2></div><span class="kb-world-learn-count">Desliza para explorar →</span></div>
+      <div class="kb-world-learn-track" role="region" aria-label="Temas del Atlas bíblico" tabindex="0">
+        <a class="kb-world-learn-card" href="./history/"><span class="kb-world-learn-icon">${icon("map",24)}</span><span class="kb-world-learn-topic">Historia</span><strong>Eras y épocas</strong><small>Recorre los grandes períodos de la historia bíblica.</small><span class="kb-world-learn-arrow" aria-hidden="true">↗</span></a>
+        <button type="button" class="kb-world-learn-card" data-action="navigation-go" data-view="authors"><span class="kb-world-learn-icon">${icon("users",24)}</span><span class="kb-world-learn-topic">La Escritura</span><strong>Autores bíblicos</strong><small>Conoce las personas y tradiciones detrás de los libros.</small><span class="kb-world-learn-arrow" aria-hidden="true">↗</span></button>
+        <button type="button" class="kb-world-learn-card" data-action="navigation-go" data-view="compilation"><span class="kb-world-learn-icon">${icon("scrollText",24)}</span><span class="kb-world-learn-topic">La Escritura</span><strong>Recopilación de textos</strong><small>Explora cómo se transmitieron y reunieron las Escrituras.</small><span class="kb-world-learn-arrow" aria-hidden="true">↗</span></button>
+        <a class="kb-world-learn-card" href="./history/world/"><span class="kb-world-learn-icon">${icon("bookOpen",24)}</span><span class="kb-world-learn-topic">Historia</span><strong>Pueblos y culturas</strong><small>Descubre las comunidades del mundo bíblico.</small><span class="kb-world-learn-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
   </main>`;
 }
 
