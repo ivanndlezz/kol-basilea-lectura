@@ -38,7 +38,7 @@ jobs:
           root=pathlib.Path("dist")
           data=json.loads((root/"data/history/timeline.json").read_text())
           entries=data["stories"]+data["subEras"]
-          missing=[e["id"] for e in entries if e.get("cover",{}).get("src") and not (root/e["cover"]["src"]).is_file()]
+          missing=[e["id"] for e in entries if e.get("cover",{}).get("src") and not e["cover"]["src"].startswith(("https://","http://")) and not (root/e["cover"]["src"]).is_file()]
           if missing:raise SystemExit("Missing cover files: "+", ".join(missing))
           covered=sum(bool(e.get("cover",{}).get("src")) for e in entries)
           print(f"Verified {covered}/{len(entries)} covers with existing files")
