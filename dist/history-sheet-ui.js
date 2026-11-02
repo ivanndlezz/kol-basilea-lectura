@@ -10,8 +10,10 @@ export function bookLinks(era,readerPath){
     return '<a class="kb-history-book" href="'+readerPath+'?book='+encodeURIComponent(id)+'&chapter=1"><span class="kb-history-book-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-3-2-6-2-9-1v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1Z"/><path d="M12 6v14"/></svg></span><span class="kb-history-book-info"><strong>'+esc(meta.name)+'</strong><small>'+esc(meta.chapters?meta.chapters+' capítulos · '+(range||meta.category):range||meta.category)+'</small></span><span class="kb-history-book-arrow" aria-hidden="true">›</span></a>';
   }).join("")+'</div></div>';
 }
-export function storyCard(story,href,coverUrl){
-  return '<a class="kb-story" href="'+href+'"><div class="kb-story-art kb-art-'+esc(story.visual)+'">'+(story.cover?.src?'<img class="kb-story-image" src="'+esc(coverUrl)+'" alt="'+esc(story.cover.alt||story.title)+'" loading="lazy" decoding="async">':'<b aria-hidden="true">'+({cosmos:"✺",garden:"❧",brothers:"◈",city:"▥",flood:"≋",tower:"▤"}[story.visual]||"✦")+'</b>')+'</div><div class="kb-story-copy"><small>'+esc(story.reference)+'</small><h3>'+esc(story.title)+'</h3></div></a>';
+export function storyCard(story,href,coverUrl,alternatives=[]){
+  const sources=[coverUrl,...alternatives].filter(Boolean);
+  const image=sources.length?'<img class="kb-story-image" src="'+esc(sources[0])+'" data-cover-sources="'+esc(JSON.stringify(sources))+'" data-cover-index="0" alt="'+esc(story.cover?.alt||story.title)+'" loading="lazy" decoding="async">':'<b aria-hidden="true">✦</b>';
+  return '<a class="kb-story" href="'+esc(href)+'"><div class="kb-story-art kb-art-'+esc(story.visual)+'">'+image+'</div><div class="kb-story-copy"><small>'+esc(story.reference)+'</small><h3>'+esc(story.title)+'</h3></div></a>';
 }
 export function eraPager(eras,index){
   const link=(era,direction)=>era?'<button type="button" class="kb-era-nav-link kb-era-nav-'+direction+'" data-id="'+esc(era.id)+'"><span class="kb-era-nav-direction">'+(direction==="prev"?"← Era anterior":"Siguiente era →")+'</span><strong>'+esc(era.title)+'</strong></button>':"";
