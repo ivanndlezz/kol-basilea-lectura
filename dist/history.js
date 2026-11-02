@@ -25,8 +25,6 @@ if(typeof document!=="undefined"&&!window.__kbStoryImageFallback){
     try{urls=JSON.parse(img.dataset.coverSources||"[]")}catch{}
     const next=Number(img.dataset.coverIndex||0)+1;
     if(next<urls.length){img.dataset.coverIndex=String(next);img.src=urls[next];return;}
-    const parent=img.parentElement;img.remove();
-    const placeholder=document.createElement("b");placeholder.setAttribute("aria-hidden","true");placeholder.textContent="✦";
-    parent?.append(placeholder);
+    img.remove(); // The editorial fallback is already present underneath.
   },true);
 }
