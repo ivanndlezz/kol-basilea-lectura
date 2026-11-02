@@ -64,6 +64,7 @@ const defaultState = () => ({
   readerMoreOpen: false,
   readerTranslationOpen: false,
   chapterSheetOpen: false,
+  chapterSheetBookId: null,
   readerFont: "serif",
   readerTheme: "light",
   readerTranslation: DEFAULT_TRANSLATION_ID,
@@ -607,9 +608,23 @@ function renderChapterButton(book, chapter, selectedChapter, variant = "chapter-
 }
 
 function renderChapterSheet(book, selectedChapter) {
-  const rows = Array.from({ length: book.chapters }, (_, index) => renderChapterButton(book, index + 1, selectedChapter, "chapter-sheet-button")).join("");
   const open = state.chapterSheetOpen;
-  return `<div class="chapter-sheet-layer" ${open ? "" : "hidden"}><button class="chapter-sheet-backdrop" data-action="close-chapter-sheet" aria-label="Cerrar capítulos"></button><aside id="chapter-sheet" class="chapter-sheet" role="dialog" aria-modal="true" aria-labelledby="chapter-sheet-title"><header class="chapter-sheet-header"><div><p class="eyebrow">Navegar</p><h2 id="chapter-sheet-title">Capítulos</h2><p>${escapeHtml(book.name)} · ${getCompletedChapters(book).length} de ${book.chapters} leídos</p></div><button class="icon-button" data-action="close-chapter-sheet" aria-label="Cerrar capítulos">${icon("arrowLeft", 19)}</button></header><div class="chapter-sheet-grid">${rows}</div></aside></div>`;
+  const activeId = state.chapterSheetBookId || book.id;
+  const groups = BOOKS.map(item => {
+    const expanded = item.id === activeId;
+    const count = getCompletedChapters(item).length;
+    const buttons = expanded ? Array.from({length:item.chapters}, (_,i) => {
+      const n=i+1;
+      const current = item.id === book.id && n === selectedChapter;
+      const done = getCompletedChapters(item).includes(n);
+      return `<button class="chapter-sheet-button ${current ? "is-current" : ""} ${done ? "is-complete" : ""}" data-action="select-chapter" data-book-id="${escapeHtml(item.id)}" data-chapter="${n}" aria-label="${escapeHtml(item.name)}, capítulo ${n}${done ? ", leído" : ""}" ${current ? 'aria-current="step"' : ""}>${done ? icon("check",16) : n}</button>`;
+    }).join("") : "";
+    return `<section class="chapter-sheet-book ${expanded ? "is-expanded" : ""}" data-book-section="${escapeHtml(item.id)}">
+      <button class="chapter-sheet-book-trigger" data-action="expand-chapter-book" data-book-id="${escapeHtml(item.id)}" aria-expanded="${expanded}" aria-controls="chapter-book-${escapeHtml(item.id)}"><span>${escapeHtml(item.name)}</span><span class="chapter-sheet-book-count">${count ? count + "/" + item.chapters : ""}</span></button>
+      ${expanded ? `<div class="chapter-sheet-book-content" id="chapter-book-${escapeHtml(item.id)}"><div class="chapter-sheet-grid"><button class="chapter-sheet-button chapter-sheet-info" data-action="open-chapter-book-info" data-book-id="${escapeHtml(item.id)}" aria-label="Información sobre ${escapeHtml(item.name)}">${icon("info",21)}</button>${buttons}</div></div>` : ""}
+    </section>`;
+  }).join("");
+  return `<div class="chapter-sheet-layer" ${open ? "" : "hidden"}><button class="chapter-sheet-backdrop" data-action="close-chapter-sheet" aria-label="Cerrar libros"></button><aside id="chapter-sheet" class="chapter-sheet" role="dialog" aria-modal="true" aria-labelledby="chapter-sheet-title"><header class="chapter-sheet-header"><h2 id="chapter-sheet-title">Libros</h2><button class="icon-button" data-action="close-chapter-sheet" aria-label="Cerrar libros">${icon("x",21)}</button></header><div class="chapter-sheet-book-list">${groups}</div></aside></div>`;
 }
 
 function renderBookInfoTrigger(book, variant = "chapter-info-button") {
@@ -908,10 +923,12 @@ function bindEvents() {
       if (action === "filter-library-category") { state.libraryCategory = CATEGORIES.some(category => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "filter-route-category") { state.routeCategory = CATEGORIES.some((category) => category.id === element.dataset.category) ? element.dataset.category : "all"; saveState(); render(); }
       if (action === "open-book") { openReader(element.dataset.bookId); }
-      if (action === "select-chapter") { state.readerChapter = Number(element.dataset.chapter); state.chapterSheetOpen = false; state.readerBookInfoOpen = false; state.readerReadingProgress = 0; updateReaderLocation(state.readerBookId, state.readerChapter, null, false, state.readerTranslation); saveState(); render(); }
+      if (action === "select-chapter") { if (element.dataset.bookId && element.dataset.bookId !== state.readerBookId) state.readerBookId = element.dataset.bookId; state.readerChapter = Number(element.dataset.chapter); state.chapterSheetOpen = false; state.readerBookInfoOpen = false; state.readerReadingProgress = 0; updateReaderLocation(state.readerBookId, state.readerChapter, null, false, state.readerTranslation); saveState(); render(); }
       if (action === "open-book-info") { state.readerBookInfoOpen = true; state.chapterSheetOpen = false; saveState(); render(); }
       if (action === "close-book-info") { state.readerBookInfoOpen = false; saveState(); render(); }
-      if (action === "toggle-chapter-sheet") { state.chapterSheetOpen = !state.chapterSheetOpen; saveState(); render(); }
+      if (action === "toggle-chapter-sheet") { state.chapterSheetOpen = !state.chapterSheetOpen; state.chapterSheetBookId = state.readerBookId; saveState(); render(); if (state.chapterSheetOpen) document.querySelector(".chapter-sheet-book.is-expanded")?.scrollIntoView({block:"center"}); }
+      if (action === "expand-chapter-book") { state.chapterSheetBookId = element.dataset.bookId; render(); document.querySelector(".chapter-sheet-book.is-expanded")?.scrollIntoView({block:"nearest"}); }
+      if (action === "open-chapter-book-info") { state.readerBookId = element.dataset.bookId; state.readerChapter = 1; state.readerBookInfoOpen = true; state.chapterSheetOpen = false; saveState(); render(); }
       if (action === "close-chapter-sheet") { state.chapterSheetOpen = false; saveState(); render(); }
       if (action === "toggle-reader-format") { state.readerDisplayOpen = !state.readerDisplayOpen; saveState(); render(); }
       if (action === "toggle-reader-context") { state.readerContextOpen = !state.readerContextOpen; saveState(); render(); }
