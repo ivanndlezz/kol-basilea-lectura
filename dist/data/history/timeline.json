@@ -1100,7 +1100,15 @@
       "summary": "Abram deja su tierra ante la promesa de una nueva nación.",
       "subEraId": "patriarchs--abraham",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Leonard_Bramer_-_Abraham_and_His_Family_Departing_for_Canaan%2C_circa_1635.jpg",
+        "alt": "Abraham y su familia parten hacia Canaán, pintura atribuida al círculo de Leonaert Bramer",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonard_Bramer_-_Abraham_and_His_Family_Departing_for_Canaan%2C_circa_1635.jpg",
+        "license": "Public domain",
+        "artist": "Círculo de Leonaert Bramer"
+      }
     },
     {
       "id": "abram-en-egipto",
@@ -1112,7 +1120,15 @@
       "summary": "El hambre conduce a Abram a Egipto y pone en peligro a Sarai.",
       "subEraId": "patriarchs--abraham",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Farao_geeft_Sara_aan_Abraham_terug_Rijksmuseum_SK-A-1191.jpeg",
+        "alt": "El faraón devuelve a Sara a Abraham, pintura de Isaac Isaacsz",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Farao_geeft_Sara_aan_Abraham_terug_Rijksmuseum_SK-A-1191.jpeg",
+        "license": "Public domain",
+        "artist": "Isaac Isaacsz"
+      }
     },
     {
       "id": "abram-y-lot",
