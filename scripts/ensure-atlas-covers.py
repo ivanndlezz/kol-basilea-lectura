@@ -1,17 +1,28 @@
 #!/usr/bin/env python3
-"""Audit Atlas covers without assigning unrelated imagery."""
-import json,pathlib
-root=pathlib.Path(__file__).resolve().parents[1]
-path=root/"dist/data/history/timeline.json"
-data=json.loads(path.read_text())
-allowed={"exact","related","period-context"}
-counts={"approved":0,"unverified":0,"missing":0,"reused":0}
+"""Validate Atlas artwork; missing images use unique in-browser SVG illustrations."""
+import json
+from pathlib import Path
+root=Path(__file__).resolve().parents[1]
+data=json.loads((root/"dist/data/history/timeline.json").read_text())
+approved={"exact","related","period-context"}
 seen={}
+counts={"total":0,"approved":0,"editorial_fallback":0,"unverified":0}
 for story in data["stories"]:
-    cover=story.get("cover")
-    if not cover or not cover.get("src"):counts["missing"]+=1;continue
-    if cover.get("fallbackFrom"):\n        counts["reused"]+=1\n        raise SystemExit("Rejected copied artwork on "+story["id"])\n    if cover["src"] in seen and cover.get("match")!="related":\n        raise SystemExit("Duplicate artwork: "+seen[cover["src"]]+" and "+story["id"])\n    seen[cover["src"]]=story["id"]\n    if cover.get("match") not in allowed:counts["unverified"]+=1;continue
+    counts["total"]+=1
+    cover=story.get("cover") or {}
+    src=cover.get("src")
+    if not src or cover.get("match") not in approved:
+        counts["editorial_fallback"]+=1
+        if src:counts["unverified"]+=1
+        continue
+    if cover.get("fallbackFrom"):
+        raise SystemExit("Borrowed artwork is not allowed: "+story["id"])
+    if src in seen:
+        raise SystemExit("Duplicate artwork: "+seen[src]+" / "+story["id"])
+    seen[src]=story["id"]
     if cover.get("match")=="period-context" and not cover.get("sourceUrl"):
-        counts["unverified"]+=1;continue
+        raise SystemExit("Unverified contextual source: "+story["id"])
+    if src.startswith("assets/") and not (root/"dist"/src).is_file():
+        raise SystemExit("Missing image file: "+src)
     counts["approved"]+=1
-print(json.dumps(counts))
+print(json.dumps(counts,ensure_ascii=False))
