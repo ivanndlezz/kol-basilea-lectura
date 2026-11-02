@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Autonomous, conservative Wikimedia Commons cover importer for Atlas cards."""
+"""Autonomous, conservative Wikimedia Commons cover importer for Atlas cards.
+
+Runs from GitHub Actions on source changes and a weekly schedule.
+"""
 import argparse, json, pathlib, re, io, time, urllib.parse, urllib.request
 from PIL import Image, ImageOps
 ROOT=pathlib.Path(__file__).resolve().parents[1]
