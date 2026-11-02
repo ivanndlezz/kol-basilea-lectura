@@ -11,7 +11,7 @@ export function bookLinks(era,readerPath){
   }).join("")+'</div></div>';
 }
 export function storyCard(story,href,coverUrl,alternatives=[]){
-  const sources=[coverUrl,...alternatives].filter(Boolean);
+  const sources=story.cover?.match==='unverified'||story.cover?.match==='rejected'?[]:[coverUrl,...alternatives].filter(Boolean);
   const image=sources.length?'<img class="kb-story-image" src="'+esc(sources[0])+'" data-cover-sources="'+esc(JSON.stringify(sources))+'" data-cover-index="0" alt="'+esc(story.cover?.alt||story.title)+'" loading="lazy" decoding="async">':'<b aria-hidden="true">✦</b>';
   return '<a class="kb-story" href="'+esc(href)+'"><div class="kb-story-art kb-art-'+esc(story.visual)+'">'+image+'</div><div class="kb-story-copy"><small>'+esc(story.reference)+'</small><h3>'+esc(story.title)+'</h3></div></a>';
 }
