@@ -11,9 +11,11 @@ export function bookLinks(era,readerPath){
   }).join("")+'</div></div>';
 }
 export function storyCard(story,href,coverUrl,alternatives=[]){
-  const sources=story.cover?.match==='unverified'||story.cover?.match==='rejected'?[]:[coverUrl,...alternatives].filter(Boolean);
-  const image=sources.length?'<img class="kb-story-image" src="'+esc(sources[0])+'" data-cover-sources="'+esc(JSON.stringify(sources))+'" data-cover-index="0" alt="'+esc(story.cover?.alt||story.title)+'" loading="lazy" decoding="async">':'<b aria-hidden="true">✦</b>';
-  return '<a class="kb-story" href="'+esc(href)+'"><div class="kb-story-art kb-art-'+esc(story.visual)+'">'+image+'</div><div class="kb-story-copy"><small>'+esc(story.reference)+'</small><h3>'+esc(story.title)+'</h3></div></a>';
+  const allowed=new Set(["exact","related","period-context"]);
+  const sources=story.cover?.match&&!allowed.has(story.cover.match)?[]:[coverUrl,...alternatives].filter(Boolean);
+  const fallback='<span class="kb-story-cover-fallback" aria-hidden="true"><span class="kb-story-cover-symbol">✦</span><span class="kb-story-cover-rule"></span><span class="kb-story-cover-name">'+esc(story.title)+'</span><span class="kb-story-cover-ref">'+esc(story.reference)+'</span></span>';
+  const image=sources.length?'<img class="kb-story-image" src="'+esc(sources[0])+'" data-cover-sources="'+esc(JSON.stringify(sources))+'" data-cover-index="0" alt="'+esc(story.cover?.alt||story.title)+'" loading="lazy" decoding="async">':'';
+  return '<a class="kb-story" href="'+esc(href)+'"><div class="kb-story-art kb-art-'+esc(story.visual)+'">'+fallback+image+'</div><div class="kb-story-copy"><small>'+esc(story.reference)+'</small><h3>'+esc(story.title)+'</h3></div></a>';
 }
 export function eraPager(eras,index){
   const link=(era,direction)=>era?'<button type="button" class="kb-era-nav-link kb-era-nav-'+direction+'" data-id="'+esc(era.id)+'"><span class="kb-era-nav-direction">'+(direction==="prev"?"← Era anterior":"Siguiente era →")+'</span><strong>'+esc(era.title)+'</strong></button>':"";
