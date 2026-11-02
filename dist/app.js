@@ -22,6 +22,7 @@ const ICONS = {
   chart: '<path d="M3 3v18h18"/><path d="M8 16v-5"/><path d="M13 16V7"/><path d="M18 16V4"/>',
   users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
   menu: '<line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/>',
+  settings: '<path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-1.8 1.8-.06-.06A1.7 1.7 0 0 0 16.06 18a1.7 1.7 0 0 0-1.06 1.56V20h-6v-.44A1.7 1.7 0 0 0 7.94 18a1.7 1.7 0 0 0-1.88.34l-.06.06-1.8-1.8.06-.06A1.7 1.7 0 0 0 4.6 15 1.7 1.7 0 0 0 3 13.94H2v-3h1A1.7 1.7 0 0 0 4.6 9.88a1.7 1.7 0 0 0-.34-1.88L4.2 7.94l1.8-1.8.06.06A1.7 1.7 0 0 0 7.94 6.54 1.7 1.7 0 0 0 9 4.98V4h6v.98a1.7 1.7 0 0 0 1.06 1.56 1.7 1.7 0 0 0 1.88-.34l.06-.06 1.8 1.8-.06.06a1.7 1.7 0 0 0-.34 1.88A1.7 1.7 0 0 0 21 10.94h1v3h-1A1.7 1.7 0 0 0 19.4 15Z"/>',
   sliders: '<line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="1" x2="7" y1="14" y2="14"/><line x1="9" x2="15" y1="8" y2="8"/><line x1="17" x2="23" y1="16" y2="16"/>',
   x: '<path d="M18 6 6 18M6 6l12 12"/>',
   externalLink: '<path d="M15 3h6v6M10 14 21 3"/><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/>',
@@ -45,6 +46,7 @@ const defaultState = () => ({
   goal: "365",
   appAppearance: "system",
   navigationOpen: false,
+  menuOptionsOpen: false,
   appearancePopoverOpen: false,
   view: "home",
   readerBookId: "3-juan",
@@ -85,14 +87,14 @@ function slugify(value) {
 function loadState() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    return { ...defaultState(), ...saved, toast: "", navigationOpen: false, appearancePopoverOpen: false, readerMoreOpen: false, readerTranslationOpen: false };
+    return { ...defaultState(), ...saved, toast: "", navigationOpen: false, menuOptionsOpen: false, appearancePopoverOpen: false, readerMoreOpen: false, readerTranslationOpen: false };
   } catch {
     return defaultState();
   }
 }
 
 function saveState() {
-  const { toast, navigationOpen, appearancePopoverOpen, readerMoreOpen, readerTranslationOpen, activeMilestone, ...persisted } = state;
+  const { toast, navigationOpen, menuOptionsOpen, appearancePopoverOpen, readerMoreOpen, readerTranslationOpen, activeMilestone, ...persisted } = state;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(persisted));
 }
 
@@ -377,7 +379,7 @@ function renderNavigationSheet() {
     <aside class="kb-navigation-sheet" id="kb-navigation-sheet" role="dialog" aria-modal="true" aria-labelledby="kb-navigation-title">
       <div class="kb-navigation-head"><div><p class="eyebrow">Kol Basilea</p><h2 id="kb-navigation-title">Explorar</h2></div><button class="kb-navigation-close" data-action="close-navigation" aria-label="Cerrar menú">${icon("x",22)}</button></div>
       <nav class="kb-navigation-links" aria-label="Secciones del proyecto">${items.map(([view,symbol,label,detail]) => `<button class="kb-navigation-link ${state.view === view ? "is-current" : ""}" data-action="navigation-go" data-view="${view}" ${state.view === view ? 'aria-current="page"' : ""}><span class="kb-navigation-link-icon">${icon(symbol,20)}</span><span class="kb-navigation-link-copy"><strong>${label}</strong><small>${detail}</small></span>${icon("chevronRight",17)}</button>`).join("")}</nav><a class="kb-navigation-project" href="./history/" style="margin-bottom:10px">${icon("scrollText",19)}<span>Historia · Eras y épocas</span>${icon("chevronRight",16)}</a><a class="kb-navigation-project" href="https://ivanndlezz.github.io/kol-basilea/" target="_blank" rel="noopener noreferrer">${icon("info",19)}<span>Conoce Kol Basilea</span>${icon("externalLink",16)}</a>
-      <div class="kb-navigation-footer"><button type="button" class="kb-navigation-restart" data-action="restart-onboarding">${icon("bookOpen",18)}<span><strong>Volver a ver la introducción</strong><small>Reiniciar el recorrido de bienvenida</small></span>${icon("chevronRight",16)}</button><div class="kb-navigation-appearance"><span class="kb-navigation-appearance-label">Apariencia</span><div class="kb-navigation-popover-anchor"><button class="kb-appearance-toggle" data-action="toggle-appearance-popover" aria-expanded="${state.appearancePopoverOpen}" aria-controls="kb-appearance-popover" aria-label="Elegir apariencia: ${appearance.find(([value]) => value === state.appAppearance)?.[1] || "Automático"}">${icon(selectedIcon,19)}<span>${appearance.find(([value]) => value === state.appAppearance)?.[1] || "Automático"}</span>${icon("chevronDown",15)}</button>
+      <div class="kb-navigation-footer"><div class="kb-navigation-utilities"><span>Opciones</span><div class="kb-navigation-options-anchor"><button type="button" class="kb-navigation-options-trigger" data-action="toggle-menu-options" aria-label="Opciones del menú" aria-expanded="${state.menuOptionsOpen}" aria-controls="kb-navigation-options-popover">${icon("settings",19)}</button><div id="kb-navigation-options-popover" class="kb-navigation-options-popover" ${state.menuOptionsOpen ? "" : "hidden"}><button type="button" data-action="restart-onboarding">${icon("bookOpen",17)}<span>Volver a ver la introducción</span></button></div></div></div><div class="kb-navigation-appearance"><span class="kb-navigation-appearance-label">Apariencia</span><div class="kb-navigation-popover-anchor"><button class="kb-appearance-toggle" data-action="toggle-appearance-popover" aria-expanded="${state.appearancePopoverOpen}" aria-controls="kb-appearance-popover" aria-label="Elegir apariencia: ${appearance.find(([value]) => value === state.appAppearance)?.[1] || "Automático"}">${icon(selectedIcon,19)}<span>${appearance.find(([value]) => value === state.appAppearance)?.[1] || "Automático"}</span>${icon("chevronDown",15)}</button>
       <div id="kb-appearance-popover" class="kb-appearance-popover" role="group" aria-label="Opciones de apariencia" ${state.appearancePopoverOpen ? "" : "hidden"}>${appearance.map(([value,label,symbol]) => `<button class="kb-appearance-choice ${state.appAppearance === value ? "is-selected" : ""}" data-action="set-appearance" data-appearance="${value}" aria-pressed="${state.appAppearance === value}">${icon(symbol,19)}<span>${label}</span>${state.appAppearance === value ? icon("check",17) : ""}</button>`).join("")}</div></div></div><a class="kb-navigation-external" href="https://klef.agency/" target="_blank" rel="noopener noreferrer" style="display:none">Más</a><p class="kb-navigation-note">Tu recorrido por las Escrituras, a tu ritmo.</p></div>
     </aside>
   </div>`;
@@ -875,11 +877,12 @@ function bindEvents() {
       if (action === "onboarding-next") { state.onboardingStep = Math.min(state.onboardingStep + 1, 3); saveState(); render(); }
       if (action === "choose-goal") { state.goal = element.dataset.goal; saveState(); render(); }
       if (action === "open-reader") { openReader(state.onboardingStep === 3 ? "3-juan" : currentBook().id); }
-      if (action === "restart-onboarding") { state.onboardingComplete = false; state.onboardingStep = 1; state.navigationOpen = false; state.appearancePopoverOpen = false; state.view = "home"; clearReaderLocation(); saveState(); window.scrollTo(0,0); render(); }
+      if (action === "toggle-menu-options") { state.menuOptionsOpen = !state.menuOptionsOpen; state.appearancePopoverOpen = false; render(); }
+      if (action === "restart-onboarding") { state.onboardingComplete = false; state.onboardingStep = 1; state.navigationOpen = false; state.menuOptionsOpen = false; state.appearancePopoverOpen = false; state.view = "home"; clearReaderLocation(); saveState(); window.scrollTo(0,0); render(); }
       if (action === "skip-onboarding") { state.onboardingComplete = true; saveState(); render(); showToast("Puedes comenzar cuando quieras."); }
       if (action === "play-video") { activateVideo(element); }
       if (action === "navigate") { state.view = element.dataset.view; state.navigationOpen = false; saveState(); render(); }
-      if (action === "toggle-navigation") { state.navigationOpen = !state.navigationOpen; state.appearancePopoverOpen = false; render(); }
+      if (action === "toggle-navigation") { state.navigationOpen = !state.navigationOpen; state.menuOptionsOpen = false; state.appearancePopoverOpen = false; render(); }
       if (action === "close-navigation") { state.navigationOpen = false; state.appearancePopoverOpen = false; render(); document.querySelector(".kb-menu-trigger")?.focus({preventScroll:true}); }
       if (action === "navigation-go") { state.view = element.dataset.view; if (state.view === "authors") state.selectedAuthorId = null; if (state.view === "compilation") state.selectedCompilerId = null; state.navigationOpen = false; state.appearancePopoverOpen = false; saveState(); render(); window.scrollTo({ top: 0, behavior: "instant" }); }
       if (action === "toggle-appearance-popover") { state.appearancePopoverOpen = !state.appearancePopoverOpen; render(); document.querySelector(".kb-appearance-toggle")?.focus({preventScroll:true}); }
