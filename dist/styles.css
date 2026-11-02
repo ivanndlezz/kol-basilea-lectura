@@ -1114,3 +1114,21 @@ a:not([class]):visited{color:var(--brand-dark)}
 .kb-atlas-menu[open] summary .kb-atlas-menu-arrow .lucide-icon{transform:rotate(180deg)}
 @media(max-width:380px){.kb-atlas-menu summary{gap:11px;padding:14px 12px}.kb-atlas-menu-body{padding-left:65px}.kb-atlas-menu-title strong{font-size:17px}}
 @media(prefers-color-scheme:dark){[data-theme="dark"] .kb-atlas-menu{background:linear-gradient(135deg,#1d3b2e,#20372d);border-color:#3d634c}[data-theme="dark"] .kb-atlas-menu summary{color:#e3f1e6}[data-theme="dark"] .kb-atlas-menu-title small{color:#b0c5b5}[data-theme="dark"] .kb-atlas-menu summary .kb-atlas-menu-symbol{background:#2b5140;color:#e2f3e6}[data-theme="dark"] .kb-atlas-menu-body>a,[data-theme="dark"] .kb-atlas-menu-body>button{color:#e3f1e6}}
+
+/* Home: contextual Atlas learning carousel */
+.kb-world-learn{margin:30px 0 28px;min-width:0}
+.kb-world-learn-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:16px}
+.kb-world-learn-heading .eyebrow{margin:0 0 6px}
+.kb-world-learn-heading h2{font-size:clamp(22px,5vw,29px);line-height:1.18;letter-spacing:-.035em;margin:0;max-width:360px}
+.kb-world-learn-count{flex:0 0 auto;font-size:11px;color:var(--ink-muted);padding-bottom:3px}
+.kb-world-learn-track{display:flex;gap:13px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;scroll-padding-inline:2px;padding:2px 2px 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.kb-world-learn-track::-webkit-scrollbar{display:none}
+.kb-world-learn-card{position:relative;display:flex;flex-direction:column;align-items:flex-start;flex:0 0 clamp(218px,68vw,270px);min-height:230px;padding:20px;border:1px solid var(--line);border-radius:20px;background:var(--paper);color:var(--ink);text-align:left;text-decoration:none;font:inherit;cursor:pointer;scroll-snap-align:start;box-shadow:0 5px 18px rgba(25,48,35,.035)}
+.kb-world-learn-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:#e3f0e7;color:#2a7451;margin-bottom:20px}
+.kb-world-learn-topic{font-size:10px;font-weight:750;letter-spacing:.09em;text-transform:uppercase;color:#a56c36;margin-bottom:7px}
+.kb-world-learn-card strong{font-size:19px;line-height:1.2;letter-spacing:-.025em;margin-bottom:9px}
+.kb-world-learn-card small{font-size:12px;line-height:1.5;color:var(--ink-muted);padding-right:10px}
+.kb-world-learn-arrow{position:absolute;right:18px;top:22px;color:var(--ink-muted);font-size:19px}
+.kb-world-learn-card:focus-visible{outline:2px solid #287452;outline-offset:3px}
+@media(max-width:390px){.kb-world-learn-heading{align-items:start;flex-direction:column}.kb-world-learn-count{padding:0}}
+[data-theme="dark"] .kb-world-learn-icon{background:#234b37;color:#b8e1c8}
