@@ -25,8 +25,8 @@ if(typeof document!=="undefined"&&!window.__kbStoryImageFallback){
     try{urls=JSON.parse(img.dataset.coverSources||"[]")}catch{}
     const next=Number(img.dataset.coverIndex||0)+1;
     if(next<urls.length){img.dataset.coverIndex=String(next);img.src=urls[next];return;}
-    img.remove();
+    const parent=img.parentElement;img.remove();
     const placeholder=document.createElement("b");placeholder.setAttribute("aria-hidden","true");placeholder.textContent="✦";
-    img.parentElement?.append(placeholder);
+    parent?.append(placeholder);
   },true);
 }
