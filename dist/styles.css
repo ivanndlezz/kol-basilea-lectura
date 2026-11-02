@@ -1157,3 +1157,11 @@ a:not([class]):visited{color:var(--brand-dark)}
 .kb-navigation-sheet .kb-atlas-menu-body>.kb-atlas-menu-disabled{box-sizing:border-box;width:100%;padding:11px 0!important;margin:0!important;min-height:44px}
 .kb-navigation-sheet .kb-atlas-menu-body>a,
 .kb-navigation-sheet .kb-atlas-menu-body>button{display:flex;justify-content:space-between;align-items:center;gap:12px}
+
+/* Atlas carousel: photographic covers with a stable image box before load. */
+.kb-world-learn-card{padding:0 0 19px;overflow:hidden;min-height:0;justify-content:flex-start}
+.kb-world-learn-image{display:block;flex:0 0 auto;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 44%;background:#e9e1d4}
+.kb-world-learn-card .kb-world-learn-topic{margin:17px 18px 7px}
+.kb-world-learn-card strong{margin:0 18px 9px}
+.kb-world-learn-card small{margin:0 18px;padding-right:0}
+.kb-world-learn-card .kb-world-learn-arrow{top:12px;right:12px;display:grid;place-items:center;width:31px;height:31px;border-radius:50%;background:rgba(255,255,255,.92);color:#264635;box-shadow:0 2px 9px rgba(0,0,0,.08)}
