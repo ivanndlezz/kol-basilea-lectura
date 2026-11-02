@@ -10,7 +10,7 @@ DATA=ROOT/"dist/data/history/timeline.json"
 OUT=ROOT/"dist/assets/images/history"
 API="https://commons.wikimedia.org/w/api.php"
 UA="KolBasileaAtlas/1.0 (open-license educational image importer)"
-LICENSES={"cc0","public domain","cc by","cc by-sa"}
+LICENSES={"cc0","public domain","cc by","cc by-sa","pd-old","pd-art"}
 # Restrict vague names to an explicit biblical/historical context; never match on a name alone.
 CONTEXT={"primeval":"Book of Genesis Bible","patriarchs":"Genesis Bible","exodus-judges":"Exodus Bible","monarchy":"ancient Israel Bible","exile-restoration":"Babylonian exile Bible","second-temple":"Second Temple Jerusalem","apostolic":"early Christianity apostles","patristic":"early Christian church","medieval":"medieval Christianity","modern":"Protestant Reformation"}
 def api(params):
@@ -29,7 +29,7 @@ def choose(items,terms):
         if not any(x==license_name or usage.startswith(x) for x in LICENSES):continue
         if "noncommercial" in usage or "nc"==license_name:continue
         title=page.get("title","").lower()
-        if not any(term in title for term in terms):continue
+        if terms and not any(term in title for term in terms):continue
         if info.get("width",0)<500 or info.get("height",0)<350:continue
         url=info.get("thumburl") or info.get("url")
         if not url:continue
@@ -55,9 +55,31 @@ def main():
         words=[w.lower() for w in re.findall(r"[^\W\d_]{4,}",title) if w.lower() not in {"historia","periodo","primeras","relato","tiempo","sobre","desde"}]
         if not words:
             skipped.append(item["id"]);continue
-        query=title+" "+CONTEXT.get(item.get("eraId",""),"Bible Christianity")
+        aliases={
+            "llamado-de-abram":["Abraham leaves Haran","Abraham journey Canaan"],
+            "abram-en-egipto":["Abraham Sarah Pharaoh","Abraham Egypt"],
+            "abram-y-lot":["Abraham and Lot","Abraham rescues Lot"],
+            "pacto-con-abraham":["Covenant Abraham","Abraham stars"],
+            "sacrificio-de-isaac":["Sacrifice of Isaac","Binding of Isaac"],
+            "rebeca-e-isaac":["Isaac Rebecca","Rebecca at the well"],
+            "esau-y-jacob":["Esau Jacob","Jacob birthright"],
+            "sueno-de-jacob":["Jacob ladder","Jacob dream"],
+            "jacob-israel":["Jacob wrestling angel"],
+            "israel-en-egipto":["Jacob Joseph Egypt"],
+            "sodoma-y-gomorra":["Sodom Gomorrah"],
+            "nacimiento-de-isaac":["Birth Isaac Sarah"],
+            "jose-vendido":["Joseph sold brothers"],
+            "jose-en-egipto":["Joseph Pharaoh dreams"],
+            "jose-y-sus-hermanos":["Joseph brothers reunion"]
+        }
+        queries=aliases.get(item["id"],[title+" "+CONTEXT.get(item.get("eraId",""),"Bible Christianity")])
+        english_terms=["abraham","isaac","jacob","joseph","lot","sodom","gomorrah","esau","rebecca","sarah"]
+        match_terms=[w for w in english_terms if any(w in q.lower() for q in queries)] or words
         try:
-            match=choose(candidates(query),words)
+            match=None
+            for query in queries:
+                match=choose(candidates(query),match_terms)
+                if match:break
             if not match:skipped.append(item["id"]);continue
             page,info,meta,url=match
             req=urllib.request.Request(url,headers={"User-Agent":UA})
@@ -78,5 +100,5 @@ def main():
             print("SKIP",item["id"],str(e)[:120]);skipped.append(item["id"])
         time.sleep(0.3)
     if imported:DATA.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n")
-    print(json.dumps({"attempted":attempted,"imported":imported,"unresolved":skipped},ensure_ascii=False))
+    print(json.dumps({"attempted":attempted,"imported":imported,"unresolved":skipped},ensure_ascii=False))\n    if attempted and not imported:raise SystemExit("Zero images imported; search or license filters need correction")
 if __name__=="__main__":main()
