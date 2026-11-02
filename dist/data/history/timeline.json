@@ -1107,7 +1107,11 @@
         "source": "Wikimedia Commons / Rijksmuseum",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abraham_vertrekt_uit_Haran%2C_SK-A-3377.jpg",
         "license": "CC0 1.0",
-        "artist": "Francesco Bassano el Joven"
+        "artist": "Francesco Bassano el Joven",
+        "alternatives": [
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Abraham_vertrekt_uit_Haran%2C_SK-A-3377.jpg",
+          "https://commons.wikimedia.org/wiki/Special:FilePath/Abraham_vertrekt_uit_Haran%2C_SK-A-3377.jpg"
+        ]
       }
     },
     {
@@ -1127,7 +1131,11 @@
         "source": "Wikimedia Commons / Rijksmuseum",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Farao_geeft_Sara_aan_Abraham_terug_Rijksmuseum_SK-A-1191.jpeg",
         "license": "CC0 1.0",
-        "artist": "Isaac Isaacsz"
+        "artist": "Isaac Isaacsz",
+        "alternatives": [
+          "https://commons.wikimedia.org/wiki/Special:Redirect/file/Farao_geeft_Sara_aan_Abraham_terug_Rijksmuseum_SK-A-1191.jpeg",
+          "https://commons.wikimedia.org/wiki/Special:FilePath/Farao_geeft_Sara_aan_Abraham_terug_Rijksmuseum_SK-A-1191.jpeg"
+        ]
       }
     },
     {
