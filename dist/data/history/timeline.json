@@ -1148,7 +1148,15 @@
       "summary": "La intercesión de Abraham y el juicio sobre las ciudades.",
       "subEraId": "patriarchs--abraham",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/stories/sodoma-y-gomorra.webp",
+        "alt": "Obra histórica asociada a Sodoma y Gomorra",
+        "source": "File:Sodom and Gomorrah afire, by Jacob Jacobsz. de Wet d. J., probably Köln, c. 1680, oil on canvas - Hessisches Landesmuseum Darmstadt - Darmstadt, Germany - DSC01149.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sodom_and_Gomorrah_afire,_by_Jacob_Jacobsz._de_Wet_d._J.,_probably_K%C3%B6ln,_c._1680,_oil_on_canvas_-_Hessisches_Landesmuseum_Darmstadt_-_Darmstadt,_Germany_-_DSC01149.jpg",
+        "license": "Public domain",
+        "artist": "Daderot"
+      }
     },
     {
       "id": "nacimiento-de-isaac",
