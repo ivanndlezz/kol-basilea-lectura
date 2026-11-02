@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "title": "El mundo bíblico",
+  "editorialNote": "Las categorías étnicas, lingüísticas y religiosas no son equivalentes. Las reconstrucciones históricas se distinguen de las tradiciones bíblicas.",
+  "items": [
+    {
+      "id": "hebreos",
+      "title": "Hebreos",
+      "category": "Identidades",
+      "eraId": "patriarchs",
+      "summary": "Término bíblico empleado en distintos contextos para personas asociadas con los antepasados de Israel. Su relación etimológica con Éber es tradicional, pero no está demostrada.",
+      "references": "Génesis 14:13; Éxodo 1:15"
+    },
+    {
+      "id": "semitas",
+      "title": "Semitas",
+      "category": "Términos históricos",
+      "eraId": "primeval",
+      "summary": "Categoría lingüística moderna para hablantes de lenguas semíticas, como hebreo, arameo, árabe y acadio. No equivale a una genealogía biológica comprobable de Sem.",
+      "references": "Génesis 10–11 (tradición genealógica)"
+    },
+    {
+      "id": "israelitas",
+      "title": "Israelitas",
+      "category": "Identidades",
+      "eraId": "patriarchs",
+      "summary": "Nombre asociado a Israel/Jacob y al pueblo de Israel. Su uso histórico abarca las tribus y, según el período, también al reino del norte.",
+      "references": "Génesis 32:28; Éxodo 1:7"
+    },
+    {
+      "id": "judios",
+      "title": "Judíos",
+      "category": "Identidades",
+      "eraId": "exile-restoration",
+      "summary": "Designación vinculada originalmente con Judá y, en períodos posteriores, con una identidad étnica, religiosa y comunitaria más amplia.",
+      "references": "Ester 2:5; Esdras 4:12"
+    },
+    {
+      "id": "cananeos",
+      "title": "Cananeos",
+      "category": "Pueblos",
+      "eraId": "exodus-judges",
+      "summary": "Poblaciones y ciudades de Canaán durante la Edad del Bronce y comienzos de la Edad del Hierro. No constituían necesariamente un único estado o grupo homogéneo.",
+      "references": "Génesis 10:15–19; Josué 3:10"
+    },
+    {
+      "id": "jebuseos",
+      "title": "Jebuseos",
+      "category": "Pueblos",
+      "eraId": "monarchy",
+      "summary": "Grupo identificado en la tradición bíblica con Jerusalén antes de su incorporación al reino de David. Su caracterización extrabíblica sigue siendo discutida.",
+      "references": "Josué 15:63; 2 Samuel 5:6–9"
+    },
+    {
+      "id": "edomitas",
+      "title": "Edomitas",
+      "category": "Pueblos",
+      "eraId": "monarchy",
+      "summary": "Población y reino de Edom, al sur y sureste del mar Muerto. La Biblia relaciona su origen con Esaú.",
+      "references": "Génesis 36; 2 Reyes 8:20"
+    },
+    {
+      "id": "moabitas",
+      "title": "Moabitas",
+      "category": "Pueblos",
+      "eraId": "exodus-judges",
+      "summary": "Población del territorio de Moab, al este del mar Muerto; aparece en los relatos de Rut y en conflictos con Israel.",
+      "references": "Rut 1:1–4; Números 22"
+    },
+    {
+      "id": "amonitas",
+      "title": "Amonitas",
+      "category": "Pueblos",
+      "eraId": "exodus-judges",
+      "summary": "Población del territorio de Amón, al este del Jordán, presente en relatos de jueces y reyes.",
+      "references": "Jueces 11; 1 Samuel 11"
+    },
+    {
+      "id": "filisteos",
+      "title": "Filisteos",
+      "category": "Pueblos",
+      "eraId": "monarchy",
+      "summary": "Población de ciudades de la costa meridional de Canaán, destacada en los relatos de Sansón, Saúl y David.",
+      "references": "Jueces 13–16; 1 Samuel 17"
+    },
+    {
+      "id": "doce-tribus",
+      "title": "Las doce tribus",
+      "category": "Organización",
+      "eraId": "exodus-judges",
+      "summary": "Tradición que organiza a Israel alrededor de los descendientes de Jacob. Las listas bíblicas varían según el propósito: Leví puede omitirse del reparto territorial y José representarse por Efraín y Manasés.",
+      "references": "Génesis 49; Números 1; Josué 13–21"
+    },
+    {
+      "id": "levitas",
+      "title": "Levitas",
+      "category": "Organización",
+      "eraId": "exodus-judges",
+      "summary": "Miembros de la tribu de Leví, vinculados al servicio religioso. En la legislación bíblica no todos los levitas son sacerdotes: el sacerdocio se atribuye a la línea de Aarón.",
+      "references": "Números 3; Deuteronomio 18:1–8"
+    },
+    {
+      "id": "sacerdotes",
+      "title": "Sacerdotes",
+      "category": "Organización",
+      "eraId": "exodus-judges",
+      "summary": "Oficiantes del culto de Israel. La tradición sacerdotal del Pentateuco distingue a los descendientes de Aarón de otros levitas.",
+      "references": "Éxodo 28; Números 18"
+    },
+    {
+      "id": "samaritanos",
+      "title": "Samaritanos",
+      "category": "Comunidades",
+      "eraId": "second-temple",
+      "summary": "Comunidad israelita con tradiciones propias y un centro de culto en el monte Gerizim. Su historia no se reduce a una simple mezcla de poblaciones.",
+      "references": "2 Reyes 17; Juan 4:1–42"
+    },
+    {
+      "id": "fariseos",
+      "title": "Fariseos",
+      "category": "Movimientos",
+      "eraId": "second-temple",
+      "summary": "Movimiento judío del período del Segundo Templo, asociado con la interpretación de la Torá y tradiciones de observancia. Las fuentes son parciales y a menudo polémicas.",
+      "references": "Mateo 23; Hechos 23:6–9"
+    },
+    {
+      "id": "saduceos",
+      "title": "Saduceos",
+      "category": "Movimientos",
+      "eraId": "second-temple",
+      "summary": "Grupo judío del Segundo Templo relacionado en las fuentes con sectores sacerdotales y posiciones diferentes sobre la resurrección.",
+      "references": "Marcos 12:18–27; Hechos 23:8"
+    },
+    {
+      "id": "escribas",
+      "title": "Escribas",
+      "category": "Funciones",
+      "eraId": "second-temple",
+      "summary": "Especialistas en escritura, documentos e interpretación de textos. No constituyeron necesariamente un partido religioso único.",
+      "references": "Marcos 12:28–34; Lucas 20:46"
+    },
+    {
+      "id": "zelotes",
+      "title": "Zelotes",
+      "category": "Movimientos",
+      "eraId": "second-temple",
+      "summary": "Término que puede aludir al celo religioso y, en ciertos contextos del siglo I, a corrientes de resistencia frente al dominio romano. No debe aplicarse indiscriminadamente a toda oposición a Roma.",
+      "references": "Lucas 6:15; Josefo, Guerra judía"
+    },
+    {
+      "id": "esenios",
+      "title": "Esenios",
+      "category": "Movimientos",
+      "eraId": "second-temple",
+      "summary": "Grupo judío descrito por autores antiguos como Josefo, Filón y Plinio. La identificación de la comunidad de Qumrán con los esenios es una hipótesis influyente, no una certeza absoluta.",
+      "references": "Josefo, Guerra judía 2; manuscritos del mar Muerto"
+    },
+    {
+      "id": "qumran",
+      "title": "Comunidad de Qumrán",
+      "category": "Comunidades",
+      "eraId": "second-temple",
+      "summary": "Población o movimiento relacionado con los manuscritos hallados cerca de Qumrán. Su identidad precisa y relación con los esenios continúan siendo objeto de debate.",
+      "references": "Regla de la Comunidad (1QS); manuscritos del mar Muerto"
+    },
+    {
+      "id": "herodianos",
+      "title": "Herodianos",
+      "category": "Movimientos",
+      "eraId": "second-temple",
+      "summary": "Grupo mencionado en los evangelios en relación con el entorno político de la dinastía herodiana; su organización exacta es incierta.",
+      "references": "Marcos 3:6; 12:13"
+    },
+    {
+      "id": "publicanos",
+      "title": "Publicanos",
+      "category": "Funciones",
+      "eraId": "apostolic",
+      "summary": "Recaudadores de impuestos y agentes de cobro en el contexto romano y sus administraciones locales; aparecen frecuentemente en los evangelios.",
+      "references": "Lucas 19:1–10; Mateo 9:9–13"
+    }
+  ]
+}
