@@ -1132,3 +1132,19 @@ a:not([class]):visited{color:var(--brand-dark)}
 .kb-world-learn-card:focus-visible{outline:2px solid #287452;outline-offset:3px}
 @media(max-width:390px){.kb-world-learn-heading{align-items:start;flex-direction:column}.kb-world-learn-count{padding:0}}
 [data-theme="dark"] .kb-world-learn-icon{background:#234b37;color:#b8e1c8}
+
+/* Safari-safe Atlas card: real button controls a stable accordion panel. */
+.kb-navigation-sheet .kb-atlas-menu{display:block;min-height:90px}
+.kb-navigation-sheet .kb-atlas-menu-trigger{display:flex;align-items:center;gap:14px;width:100%;min-height:90px;padding:17px 16px;border:0;border-radius:19px;background:transparent;color:#214c37;font:inherit;text-align:left;cursor:pointer;-webkit-appearance:none;appearance:none}
+.kb-navigation-sheet .kb-atlas-menu-trigger .kb-atlas-menu-symbol{display:grid;place-items:center;flex:0 0 54px;width:54px;height:54px;border-radius:16px;background:white;color:#287452}
+.kb-navigation-sheet .kb-atlas-menu-trigger .kb-atlas-menu-title{display:flex;flex:1;flex-direction:column;align-items:flex-start;gap:4px;min-width:0}
+.kb-navigation-sheet .kb-atlas-menu-trigger .kb-atlas-menu-title strong{display:block;font-size:18px;line-height:1.2;font-weight:800}
+.kb-navigation-sheet .kb-atlas-menu-trigger .kb-atlas-menu-title small{display:block;font-size:12px;line-height:1.4;font-weight:450;color:#61796a}
+.kb-navigation-sheet .kb-atlas-menu-trigger .kb-atlas-menu-arrow{display:grid;place-items:center;flex:0 0 22px;color:#547563}
+.kb-navigation-sheet .kb-atlas-menu-trigger[aria-expanded="true"]{border-radius:19px 19px 0 0;border-bottom:1px solid rgba(40,109,78,.13)}
+.kb-navigation-sheet .kb-atlas-menu-trigger[aria-expanded="true"] .kb-atlas-menu-arrow svg{transform:rotate(180deg)}
+.kb-navigation-sheet .kb-atlas-menu-body[hidden]{display:none!important}
+.kb-navigation-sheet .kb-atlas-menu-trigger:focus-visible{outline:2px solid #287452;outline-offset:2px}
+[data-theme="dark"] .kb-navigation-sheet .kb-atlas-menu-trigger{color:#e3f1e6}
+[data-theme="dark"] .kb-navigation-sheet .kb-atlas-menu-trigger .kb-atlas-menu-symbol{background:#2b5140;color:#e2f3e6}
+[data-theme="dark"] .kb-navigation-sheet .kb-atlas-menu-trigger .kb-atlas-menu-title small{color:#b0c5b5}
