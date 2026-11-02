@@ -1096,3 +1096,21 @@ a:not([class]):visited{color:var(--brand-dark)}
 .kb-atlas-menu-disabled small{font-size:10px;font-weight:500;white-space:nowrap}
 .kb-atlas-menu summary:focus-visible,.kb-atlas-menu-body>a:focus-visible,.kb-atlas-menu-body>button:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 @media(prefers-reduced-motion:reduce){.kb-atlas-menu summary .lucide-icon:last-child{transition:none}}
+
+/* Atlas card: visually distinct from ordinary navigation, with compact expanded content. */
+.kb-atlas-menu{margin:16px 0 18px;padding:0;border:1px solid rgba(40,109,78,.2);border-radius:20px;background:linear-gradient(135deg,#e4f1e8 0%,#edf5ed 100%);overflow:hidden}
+.kb-atlas-menu summary{display:flex;align-items:center;gap:14px;padding:17px 16px;min-height:90px;color:#214c37}
+.kb-atlas-menu summary .kb-atlas-menu-symbol{display:grid;place-items:center;flex:0 0 54px;width:54px;height:54px;border-radius:16px;background:#fff;color:#287452;box-shadow:0 2px 8px rgba(28,72,45,.05)}
+.kb-atlas-menu summary .kb-atlas-menu-title{display:flex;flex:1;flex-direction:column;align-items:flex-start;gap:4px;min-width:0}
+.kb-atlas-menu-title strong{font-size:18px;line-height:1.2;font-weight:800;letter-spacing:-.02em}
+.kb-atlas-menu-title small{font-size:12px;line-height:1.4;font-weight:450;color:#61796a}
+.kb-atlas-menu summary .kb-atlas-menu-arrow{display:grid;place-items:center;flex:0 0 22px;color:#547563}
+.kb-atlas-menu[open]{background:#e9f3eb}
+.kb-atlas-menu[open] summary{border-bottom:1px solid rgba(40,109,78,.13)}
+.kb-atlas-menu-body{padding:2px 14px 18px 82px}
+.kb-atlas-menu-body>a,.kb-atlas-menu-body>button{color:#244b38}
+.kb-atlas-menu-body>a:hover,.kb-atlas-menu-body>button:hover{background:rgba(255,255,255,.65)}
+.kb-atlas-menu summary .kb-atlas-menu-arrow .lucide-icon{transition:transform .18s ease}
+.kb-atlas-menu[open] summary .kb-atlas-menu-arrow .lucide-icon{transform:rotate(180deg)}
+@media(max-width:380px){.kb-atlas-menu summary{gap:11px;padding:14px 12px}.kb-atlas-menu-body{padding-left:65px}.kb-atlas-menu-title strong{font-size:17px}}
+@media(prefers-color-scheme:dark){[data-theme="dark"] .kb-atlas-menu{background:linear-gradient(135deg,#1d3b2e,#20372d);border-color:#3d634c}[data-theme="dark"] .kb-atlas-menu summary{color:#e3f1e6}[data-theme="dark"] .kb-atlas-menu-title small{color:#b0c5b5}[data-theme="dark"] .kb-atlas-menu summary .kb-atlas-menu-symbol{background:#2b5140;color:#e2f3e6}[data-theme="dark"] .kb-atlas-menu-body>a,[data-theme="dark"] .kb-atlas-menu-body>button{color:#e3f1e6}}
