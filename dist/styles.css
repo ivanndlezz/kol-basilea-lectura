@@ -1069,3 +1069,13 @@ a:not([class]):visited{color:var(--brand-dark)}
 .reader-page .reader-action-book-finish:not(:disabled) { background: #bd681d; color: #fff; box-shadow: 0 8px 18px rgba(189,104,29,.24); }
 .reader-page .reader-action-book-finish:not(:disabled):hover { background: #9c5114; }
 .reader-page .reader-action-book-finish:focus-visible { outline: 3px solid #e6a44b; outline-offset: 3px; }
+
+/* Compact menu utility: onboarding restart is available without dominating the sheet. */
+.kb-navigation-utilities{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 12px;color:var(--ink-muted);font-size:13px;font-weight:600}
+.kb-navigation-options-anchor{position:relative}
+.kb-navigation-options-trigger{display:grid;place-items:center;width:38px;height:38px;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);cursor:pointer}
+.kb-navigation-options-popover{position:absolute;right:0;bottom:calc(100% + 8px);z-index:90;width:max-content;max-width:min(270px,calc(100vw - 56px));padding:5px;border:1px solid var(--line);border-radius:13px;background:var(--paper);box-shadow:0 10px 30px rgba(0,0,0,.14)}
+.kb-navigation-options-popover[hidden]{display:none}
+.kb-navigation-options-popover button{display:flex;align-items:center;gap:10px;width:100%;padding:11px 12px;border:0;border-radius:9px;background:transparent;color:var(--ink);font:inherit;font-size:13px;font-weight:600;text-align:left;white-space:normal;cursor:pointer}
+.kb-navigation-options-popover button:hover{background:var(--line)}
+.kb-navigation-options-trigger:focus-visible,.kb-navigation-options-popover button:focus-visible{outline:2px solid currentColor;outline-offset:2px}
