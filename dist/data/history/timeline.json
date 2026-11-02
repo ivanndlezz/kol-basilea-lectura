@@ -1148,7 +1148,16 @@
       "summary": "La separación de Lot y el rescate tras la guerra de los reyes.",
       "subEraId": "patriarchs--abraham",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/nacimiento-de-isaac.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Abram y Lot",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "nacimiento-de-isaac",
+        "match": "period-context",
+        "fallbackFrom": "nacimiento-de-isaac"
+      }
     },
     {
       "id": "pacto-con-abraham",
@@ -1160,7 +1169,16 @@
       "summary": "La promesa de descendencia y tierra, y la señal del pacto.",
       "subEraId": "patriarchs--abraham",
       "status": "outline",
-      "icon": "tent"
+      "icon": "tent",
+      "cover": {
+        "src": "assets/images/history/nacimiento-de-isaac.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El pacto y la promesa",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "nacimiento-de-isaac",
+        "match": "period-context",
+        "fallbackFrom": "nacimiento-de-isaac"
+      }
     },
     {
       "id": "sodoma-y-gomorra",
@@ -1211,7 +1229,16 @@
       "summary": "Abraham es puesto a prueba en el monte Moria.",
       "subEraId": "patriarchs--abraham",
       "status": "outline",
-      "icon": "tent"
+      "icon": "tent",
+      "cover": {
+        "src": "assets/images/history/nacimiento-de-isaac.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La prueba de Abraham",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "nacimiento-de-isaac",
+        "match": "period-context",
+        "fallbackFrom": "nacimiento-de-isaac"
+      }
     },
     {
       "id": "rebeca-e-isaac",
@@ -1223,7 +1250,16 @@
       "summary": "La muerte de Sara, el matrimonio de Isaac y la continuidad de la promesa.",
       "subEraId": "patriarchs--isaac",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-y-sus-hermanos.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Isaac y Rebeca",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-y-sus-hermanos",
+        "match": "period-context",
+        "fallbackFrom": "jose-y-sus-hermanos"
+      }
     },
     {
       "id": "esau-y-jacob",
@@ -1235,7 +1271,16 @@
       "summary": "Dos hermanos enfrentados por la primogenitura y la bendición.",
       "subEraId": "patriarchs--jacob",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-vendido.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Esaú y Jacob",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-vendido",
+        "match": "period-context",
+        "fallbackFrom": "jose-vendido"
+      }
     },
     {
       "id": "sueno-de-jacob",
@@ -1247,7 +1292,16 @@
       "summary": "Betel, el encuentro con Dios y los años de Jacob en casa de Labán.",
       "subEraId": "patriarchs--jacob",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/nacimiento-de-isaac.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El sueño de Jacob",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "nacimiento-de-isaac",
+        "match": "period-context",
+        "fallbackFrom": "nacimiento-de-isaac"
+      }
     },
     {
       "id": "jacob-israel",
@@ -1259,7 +1313,16 @@
       "summary": "La lucha junto al río, el reencuentro con Esaú y el regreso a Betel.",
       "subEraId": "patriarchs--jacob",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/nacimiento-de-isaac.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Jacob recibe el nombre Israel",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "nacimiento-de-isaac",
+        "match": "period-context",
+        "fallbackFrom": "nacimiento-de-isaac"
+      }
     },
     {
       "id": "jose-vendido",
@@ -1328,7 +1391,16 @@
       "summary": "Jacob desciende a Egipto; bendiciones, muerte y esperanza de retorno.",
       "subEraId": "patriarchs--jose",
       "status": "outline",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-y-sus-hermanos.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La familia de Israel en Egipto",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-y-sus-hermanos",
+        "match": "period-context",
+        "fallbackFrom": "jose-y-sus-hermanos"
+      }
     },
     {
       "id": "relato-pc-001",
@@ -1365,7 +1437,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-002",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Huida de Moisés a Madián",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-pc-003",
@@ -1380,7 +1461,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-003",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La zarza ardiente",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-pc-004",
@@ -1395,7 +1485,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-004",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La misión de Moisés",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-pc-005",
@@ -1410,7 +1509,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-005",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Moisés ante el faraón",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-pc-006",
@@ -1425,7 +1533,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-006",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Las plagas de Egipto",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-pc-007",
@@ -1440,7 +1557,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-007",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La institución de la Pascua",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-pc-008",
@@ -1455,7 +1581,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-008",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La salida de Egipto",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-pc-009",
@@ -1470,7 +1605,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-009",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El paso del mar",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-pc-011",
@@ -1485,7 +1629,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-011",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El maná y las codornices",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-pc-012",
@@ -1500,7 +1653,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-012",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Agua de la roca",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-pc-013",
@@ -1515,7 +1677,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-013",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La llegada al Sinaí",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-pc-016",
@@ -1530,7 +1701,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-016",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El becerro de oro",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-pc-018",
@@ -1545,7 +1725,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-018",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Josué recibe el encargo",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-pc-019",
@@ -1560,7 +1749,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-019",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Rahab y los espías",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-pc-020",
@@ -1575,7 +1773,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-020",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El cruce del Jordán",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-pc-021",
@@ -1612,7 +1819,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-022",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La renovación del pacto",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-pc-023",
@@ -1627,7 +1843,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-023",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La muerte de Josué",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-pc-024",
@@ -1642,7 +1867,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-024",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Otoniel",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-pc-025",
@@ -1657,7 +1891,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-025",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Aod",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-pc-026",
@@ -1672,7 +1915,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-026",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Débora y Barac",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-pc-028",
@@ -1687,7 +1939,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-028",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El llamamiento de Gedeón",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-pc-029",
@@ -1702,7 +1963,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-029",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Los trescientos de Gedeón",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-pc-030",
@@ -1717,7 +1987,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-030",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Jefté",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-pc-031",
@@ -1754,7 +2033,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-032",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Sansón y Dalila",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-pc-033",
@@ -1769,7 +2057,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-033",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Muerte de Sansón",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-pc-034",
@@ -1784,7 +2081,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-034",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Rut acompaña a Noemí",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-pc-035",
@@ -1799,7 +2105,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-035",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Rut conoce a Booz",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-pc-036",
@@ -1814,7 +2129,16 @@
       "status": "draft",
       "sourcePericopeId": "pc-036",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Rut y Booz",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-1-samuel-3-1",
@@ -1828,7 +2152,16 @@
       "summary": "Samuel escucha una voz durante la noche y responde al llamado de Dios.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-vendido.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El llamado de Samuel",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-vendido",
+        "match": "period-context",
+        "fallbackFrom": "jose-vendido"
+      }
     },
     {
       "id": "relato-1-samuel-8-1",
@@ -1842,7 +2175,16 @@
       "summary": "Los ancianos de Israel piden un rey y Samuel advierte sobre las consecuencias.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Israel pide un rey",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-1-samuel-10-1",
@@ -1856,7 +2198,13 @@
       "summary": "Saúl es presentado como rey de Israel.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/primeras-ciudades.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Saúl es ungido rey",
+        "match": "period-context",
+        "fallbackFrom": "primeras-ciudades-y-reinos"
+      }
     },
     {
       "id": "relato-1-samuel-17-1",
@@ -1870,7 +2218,16 @@
       "summary": "David se enfrenta al guerrero filisteo Goliat.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-y-sus-hermanos.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente David y Goliat",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-y-sus-hermanos",
+        "match": "period-context",
+        "fallbackFrom": "jose-y-sus-hermanos"
+      }
     },
     {
       "id": "relato-1-samuel-18-1",
@@ -1884,7 +2241,16 @@
       "summary": "La relación de David y Jonatán se fortalece en medio de tensiones políticas.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La amistad de David y Jonatán",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-1-samuel-31-1",
@@ -1898,7 +2264,17 @@
       "summary": "Saúl muere en la batalla contra los filisteos.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/stories/sodoma-y-gomorra.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La muerte de Saúl",
+        "source": "File:Sodom and Gomorrah afire, by Jacob Jacobsz. de Wet d. J., probably Köln, c. 1680, oil on canvas - Hessisches Landesmuseum Darmstadt - Darmstadt, Germany - DSC01149.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sodom_and_Gomorrah_afire,_by_Jacob_Jacobsz._de_Wet_d._J.,_probably_K%C3%B6ln,_c._1680,_oil_on_canvas_-_Hessisches_Landesmuseum_Darmstadt_-_Darmstadt,_Germany_-_DSC01149.jpg",
+        "license": "Public domain",
+        "artist": "Daderot",
+        "match": "period-context",
+        "fallbackFrom": "sodoma-y-gomorra"
+      }
     },
     {
       "id": "relato-2-samuel-5-1",
@@ -1912,7 +2288,16 @@
       "summary": "Las tribus de Israel reconocen a David como rey.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente David es proclamado rey",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-2-samuel-6-1",
@@ -1926,7 +2311,16 @@
       "summary": "David traslada el arca del pacto a Jerusalén.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El arca llega a Jerusalén",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-2-samuel-11-1",
@@ -1940,7 +2334,13 @@
       "summary": "David abusa de su poder y provoca la muerte de Urías.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/babel.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente David y Betsabé",
+        "match": "period-context",
+        "fallbackFrom": "babel"
+      }
     },
     {
       "id": "relato-2-samuel-15-1",
@@ -1954,7 +2354,16 @@
       "summary": "Absalón conspira para arrebatar el reino a David.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-en-egipto.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La rebelión de Absalón",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-en-egipto",
+        "match": "period-context",
+        "fallbackFrom": "jose-en-egipto"
+      }
     },
     {
       "id": "relato-1-reyes-3-1",
@@ -1968,7 +2377,16 @@
       "summary": "Salomón pide sabiduría para gobernar y resuelve una disputa difícil.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Salomón pide sabiduría",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-1-reyes-8-1",
@@ -1982,7 +2400,13 @@
       "summary": "Salomón reúne a Israel para dedicar el templo en Jerusalén.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/primeras-ciudades.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La dedicación del templo",
+        "match": "period-context",
+        "fallbackFrom": "primeras-ciudades-y-reinos"
+      }
     },
     {
       "id": "relato-1-reyes-12-1",
@@ -1996,7 +2420,16 @@
       "summary": "Las tribus se dividen tras el gobierno de Salomón.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La división del reino",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-1-reyes-18-1",
@@ -2010,7 +2443,13 @@
       "summary": "Elías confronta a los profetas de Baal en el monte Carmelo.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/caida.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Elías en el monte Carmelo",
+        "match": "period-context",
+        "fallbackFrom": "caida"
+      }
     },
     {
       "id": "relato-1-reyes-21-1",
@@ -2024,7 +2463,16 @@
       "summary": "Acab y Jezabel se apoderan de la viña de Nabot mediante una injusticia.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La viña de Nabot",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-2-reyes-2-1",
@@ -2038,7 +2486,16 @@
       "summary": "Elías parte y Eliseo recibe su manto.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Elías es llevado al cielo",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-2-reyes-5-1",
@@ -2052,7 +2509,13 @@
       "summary": "Naamán busca la curación de su lepra por medio de Eliseo.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/caida.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Naamán es sanado",
+        "match": "period-context",
+        "fallbackFrom": "caida"
+      }
     },
     {
       "id": "relato-2-reyes-17-1",
@@ -2066,7 +2529,13 @@
       "summary": "El reino del norte cae ante Asiria.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/caida.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La caída de Samaria",
+        "match": "period-context",
+        "fallbackFrom": "caida"
+      }
     },
     {
       "id": "relato-2-reyes-19-1",
@@ -2080,7 +2549,13 @@
       "summary": "Jerusalén enfrenta la amenaza del ejército asirio.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/primeras-ciudades.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Ezequías ante Senaquerib",
+        "match": "period-context",
+        "fallbackFrom": "primeras-ciudades-y-reinos"
+      }
     },
     {
       "id": "relato-2-reyes-22-1",
@@ -2094,7 +2569,16 @@
       "summary": "Durante las reparaciones del templo se encuentra el libro de la ley.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El libro de la ley es hallado",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-2-reyes-25-1",
@@ -2108,7 +2592,13 @@
       "summary": "Babilonia conquista Jerusalén y deporta a sus habitantes.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/creacion.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La caída de Jerusalén",
+        "match": "period-context",
+        "fallbackFrom": "creacion"
+      }
     },
     {
       "id": "relato-1-cronicas-22-1",
@@ -2122,7 +2612,13 @@
       "summary": "David organiza materiales y encargos para el futuro templo.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/babel.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente David prepara la construcción del templo",
+        "match": "period-context",
+        "fallbackFrom": "babel"
+      }
     },
     {
       "id": "relato-2-cronicas-3-1",
@@ -2136,7 +2632,16 @@
       "summary": "Salomón comienza la construcción del templo en Jerusalén.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-vendido.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La construcción del templo",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-vendido",
+        "match": "period-context",
+        "fallbackFrom": "jose-vendido"
+      }
     },
     {
       "id": "relato-2-cronicas-34-1",
@@ -2150,7 +2655,16 @@
       "summary": "Josías impulsa la restauración del templo y la renovación del pacto.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-en-egipto.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La reforma de Josías",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-en-egipto",
+        "match": "period-context",
+        "fallbackFrom": "jose-en-egipto"
+      }
     },
     {
       "id": "relato-esdras-1-1",
@@ -2164,7 +2678,16 @@
       "summary": "Ciro autoriza el regreso de los desterrados y la reconstrucción del templo.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-en-egipto.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El decreto de Ciro",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-en-egipto",
+        "match": "period-context",
+        "fallbackFrom": "jose-en-egipto"
+      }
     },
     {
       "id": "relato-esdras-3-1",
@@ -2178,7 +2701,16 @@
       "summary": "La comunidad restablece el culto y celebra los cimientos del templo.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Se colocan los cimientos del templo",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-esdras-6-1",
@@ -2192,7 +2724,16 @@
       "summary": "El templo es terminado y dedicado tras años de oposición.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Se termina el segundo templo",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-esdras-7-1",
@@ -2206,7 +2747,16 @@
       "summary": "Esdras recibe autorización para viajar y enseñar la ley.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Esdras llega a Jerusalén",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-nehemias-1-1",
@@ -2220,7 +2770,13 @@
       "summary": "Nehemías escucha sobre la condición de Jerusalén y ora.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/babel.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Nehemías recibe noticias de Jerusalén",
+        "match": "period-context",
+        "fallbackFrom": "babel"
+      }
     },
     {
       "id": "relato-nehemias-4-1",
@@ -2234,7 +2790,16 @@
       "summary": "Los habitantes de Jerusalén trabajan mientras enfrentan oposición.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-vendido.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La reconstrucción de la muralla",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-vendido",
+        "match": "period-context",
+        "fallbackFrom": "jose-vendido"
+      }
     },
     {
       "id": "relato-nehemias-8-1",
@@ -2248,7 +2813,16 @@
       "summary": "Esdras lee la ley ante el pueblo reunido.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La lectura pública de la ley",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-daniel-1-1",
@@ -2262,7 +2836,13 @@
       "summary": "Daniel y sus compañeros son formados en la corte de Babilonia.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/babel.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Daniel y sus compañeros en Babilonia",
+        "match": "period-context",
+        "fallbackFrom": "babel"
+      }
     },
     {
       "id": "relato-daniel-3-1",
@@ -2276,7 +2856,16 @@
       "summary": "Tres jóvenes se niegan a adorar una estatua y son arrojados al horno.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/nacimiento-de-isaac.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El horno de fuego",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "nacimiento-de-isaac",
+        "match": "period-context",
+        "fallbackFrom": "nacimiento-de-isaac"
+      }
     },
     {
       "id": "relato-daniel-5-1",
@@ -2290,7 +2879,16 @@
       "summary": "Un mensaje aparece durante el banquete del rey Belsasar.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-en-egipto.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La escritura en la pared",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-en-egipto",
+        "match": "period-context",
+        "fallbackFrom": "jose-en-egipto"
+      }
     },
     {
       "id": "relato-daniel-6-1",
@@ -2304,7 +2902,16 @@
       "summary": "Daniel continúa orando pese a una prohibición real.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-y-sus-hermanos.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Daniel en el foso de los leones",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-y-sus-hermanos",
+        "match": "period-context",
+        "fallbackFrom": "jose-y-sus-hermanos"
+      }
     },
     {
       "id": "relato-mateo-1-1",
@@ -2339,7 +2946,16 @@
       "summary": "Unos sabios buscan al niño Jesús mientras Herodes intenta encontrarlo.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Los sabios de Oriente",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-mateo-3-13",
@@ -2353,7 +2969,16 @@
       "summary": "Jesús es bautizado por Juan en el Jordán.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El bautismo de Jesús",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-mateo-4-1",
@@ -2367,7 +2992,16 @@
       "summary": "Jesús enfrenta las tentaciones durante su ayuno en el desierto.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Las tentaciones en el desierto",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-mateo-5-1",
@@ -2381,7 +3015,16 @@
       "summary": "Jesús enseña a sus discípulos sobre la vida del Reino.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El sermón del monte",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-mateo-8-23",
@@ -2395,7 +3038,16 @@
       "summary": "Jesús calma el viento y el mar ante sus discípulos.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Jesús calma la tormenta",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-mateo-14-13",
@@ -2409,7 +3061,16 @@
       "summary": "Jesús alimenta a una multitud con pocos panes y peces.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La multiplicación de los panes",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-mateo-17-1",
@@ -2423,7 +3084,16 @@
       "summary": "Tres discípulos contemplan la transfiguración de Jesús.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La transfiguración",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-mateo-21-1",
@@ -2437,7 +3107,16 @@
       "summary": "Jesús entra en Jerusalén montado en un asno.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La entrada en Jerusalén",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-mateo-26-17",
@@ -2451,7 +3130,16 @@
       "summary": "Jesús celebra la Pascua con sus discípulos antes de su arresto.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La última cena",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-mateo-27-32",
@@ -2465,7 +3153,16 @@
       "summary": "Jesús es crucificado en el Gólgota.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La crucifixión de Jesús",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-mateo-28-1",
@@ -2479,7 +3176,16 @@
       "summary": "Las mujeres encuentran la tumba vacía y Jesús envía a sus discípulos.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La resurrección y la gran comisión",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-marcos-1-14",
@@ -2493,7 +3199,16 @@
       "summary": "Marcos relata las primeras proclamaciones y sanidades de Jesús.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El comienzo del ministerio en Galilea",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-marcos-2-1",
@@ -2507,7 +3222,16 @@
       "summary": "Unos hombres bajan a un paralítico por el techo para acercarlo a Jesús.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El paralítico y sus amigos",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-marcos-5-21",
@@ -2521,7 +3245,16 @@
       "summary": "Jesús atiende a una mujer enferma y devuelve la vida a la hija de Jairo.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La hija de Jairo",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-marcos-10-46",
@@ -2535,7 +3268,16 @@
       "summary": "Un mendigo ciego llama a Jesús y recupera la vista.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Bartimeo recupera la vista",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-lucas-1-26",
@@ -2549,7 +3291,16 @@
       "summary": "Gabriel anuncia a María el nacimiento de Jesús.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El anuncio a María",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-lucas-2-1",
@@ -2584,7 +3335,16 @@
       "summary": "Jesús conversa con maestros en el templo de Jerusalén.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Jesús en el templo a los doce años",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-lucas-10-25",
@@ -2598,7 +3358,16 @@
       "summary": "Jesús narra una parábola sobre el amor al prójimo.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El buen samaritano",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-lucas-15-11",
@@ -2612,7 +3381,16 @@
       "summary": "Jesús narra la historia de un padre y sus dos hijos.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El hijo perdido",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-lucas-19-1",
@@ -2626,7 +3404,16 @@
       "summary": "Un recaudador de impuestos acoge a Jesús en su casa.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Zaqueo recibe a Jesús",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-lucas-24-13",
@@ -2640,7 +3427,16 @@
       "summary": "Dos discípulos encuentran al resucitado camino a Emaús.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El camino a Emaús",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-juan-2-1",
@@ -2654,7 +3450,16 @@
       "summary": "Jesús transforma agua en vino durante una boda.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Las bodas de Caná",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-juan-3-1",
@@ -2668,7 +3473,16 @@
       "summary": "Jesús conversa con Nicodemo sobre nacer de nuevo.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Jesús y Nicodemo",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-juan-4-1",
@@ -2682,7 +3496,16 @@
       "summary": "Jesús conversa con una mujer junto al pozo de Jacob.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La mujer samaritana",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-juan-9-1",
@@ -2717,7 +3540,16 @@
       "summary": "Jesús llama a Lázaro fuera del sepulcro.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La resurrección de Lázaro",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-juan-13-1",
@@ -2731,7 +3563,16 @@
       "summary": "Jesús enseña el servicio mediante el lavado de pies.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Jesús lava los pies de sus discípulos",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-juan-20-24",
@@ -2745,7 +3586,16 @@
       "summary": "Tomás encuentra a Jesús resucitado.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Jesús se aparece a Tomás",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-hechos-1-1",
@@ -2759,7 +3609,16 @@
       "summary": "Jesús se despide de sus discípulos antes de ascender.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La ascensión de Jesús",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-hechos-2-1",
@@ -2773,7 +3632,16 @@
       "summary": "El Espíritu Santo desciende y Pedro predica en Jerusalén.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Pentecostés",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-hechos-3-1",
@@ -2787,7 +3655,16 @@
       "summary": "Pedro y Juan sanan a un hombre a la entrada del templo.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La curación del cojo",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-hechos-5-1",
@@ -2801,7 +3678,16 @@
       "summary": "Una pareja engaña a la comunidad sobre el precio de una propiedad.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Ananías y Safira",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-hechos-7-1",
@@ -2815,7 +3701,16 @@
       "summary": "Esteban defiende su fe ante el consejo y es apedreado.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El testimonio y muerte de Esteban",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-hechos-8-26",
@@ -2829,7 +3724,16 @@
       "summary": "Felipe explica las Escrituras a un viajero etíope.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Felipe y el funcionario etíope",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-hechos-9-1",
@@ -2843,7 +3747,16 @@
       "summary": "Saulo encuentra a Jesús camino a Damasco.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La conversión de Saulo",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-hechos-10-1",
@@ -2857,7 +3770,16 @@
       "summary": "Pedro visita la casa de Cornelio y anuncia el evangelio.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Pedro y Cornelio",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-hechos-15-1",
@@ -2871,7 +3793,16 @@
       "summary": "Los apóstoles deliberan sobre la incorporación de los gentiles.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El concilio de Jerusalén",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-hechos-16-16",
@@ -2885,7 +3816,16 @@
       "summary": "Pablo y Silas son encarcelados y un carcelero recibe su mensaje.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-juan-9-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Pablo y Silas en Filipos",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-juan-9-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-juan-9-1"
+      }
     },
     {
       "id": "relato-hechos-17-16",
@@ -2899,7 +3839,16 @@
       "summary": "Pablo habla ante los atenienses acerca del Dios desconocido.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Pablo en el Areópago",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-hechos-27-1",
@@ -2913,7 +3862,16 @@
       "summary": "Pablo sobrevive a una tormenta y al naufragio rumbo a Roma.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-lucas-2-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El naufragio de Pablo",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-lucas-2-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-lucas-2-1"
+      }
     },
     {
       "id": "relato-hechos-28-11",
@@ -2927,7 +3885,16 @@
       "summary": "Pablo llega a Roma y continúa anunciando el Reino de Dios.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-mateo-1-1.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Pablo en Roma",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-mateo-1-1",
+        "match": "period-context",
+        "fallbackFrom": "relato-mateo-1-1"
+      }
     },
     {
       "id": "relato-numeros-10-11",
@@ -2941,7 +3908,16 @@
       "summary": "Israel abandona el Sinaí y comienza su marcha por el desierto.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El campamento se pone en marcha",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-numeros-12-1",
@@ -2955,7 +3931,16 @@
       "summary": "María y Aarón cuestionan la autoridad de Moisés.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La protesta de María y Aarón",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-numeros-13-1",
@@ -2969,7 +3954,16 @@
       "summary": "Doce hombres reconocen Canaán y presentan informes contrapuestos.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Los doce exploradores",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-numeros-14-1",
@@ -2983,7 +3977,16 @@
       "summary": "El pueblo teme entrar en Canaán y enfrenta las consecuencias de su rebelión.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La rebelión del pueblo",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-numeros-16-1",
@@ -2997,7 +4000,16 @@
       "summary": "Coré y otros dirigentes desafían la autoridad de Moisés y Aarón.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-021.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La rebelión de Coré",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-021",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-021"
+      }
     },
     {
       "id": "relato-numeros-21-4",
@@ -3011,7 +4023,16 @@
       "summary": "Moisés levanta una serpiente de bronce durante una crisis en el desierto.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La serpiente de bronce",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-numeros-22-21",
@@ -3025,7 +4046,16 @@
       "summary": "Un ángel detiene el camino de Balaam y su asna.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Balaam y su asna",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-numeros-27-1",
@@ -3039,7 +4069,16 @@
       "summary": "Cinco hermanas presentan una petición sobre la herencia de su padre.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Las hijas de Zelofehad",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-deuteronomio-34-1",
@@ -3053,7 +4092,16 @@
       "summary": "Moisés contempla Canaán desde el monte Nebo y muere allí.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Moisés contempla la tierra prometida",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     },
     {
       "id": "relato-ester-2-1",
@@ -3067,7 +4115,13 @@
       "summary": "Ester es elegida reina en la corte persa.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/creacion.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Ester llega a ser reina",
+        "match": "period-context",
+        "fallbackFrom": "creacion"
+      }
     },
     {
       "id": "relato-ester-3-1",
@@ -3081,7 +4135,13 @@
       "summary": "Amán consigue una orden que amenaza a los judíos del imperio.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/caida.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente El decreto contra los judíos",
+        "match": "period-context",
+        "fallbackFrom": "caida"
+      }
     },
     {
       "id": "relato-ester-4-1",
@@ -3095,7 +4155,13 @@
       "summary": "Mardoqueo pide a Ester que actúe y ella acepta el riesgo.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/cain-y-abel.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Ester decide interceder",
+        "match": "period-context",
+        "fallbackFrom": "cain-y-abel"
+      }
     },
     {
       "id": "relato-ester-7-1",
@@ -3109,7 +4175,13 @@
       "summary": "Ester revela ante el rey la conspiración de Amán.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/babel.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Ester denuncia a Amán",
+        "match": "period-context",
+        "fallbackFrom": "babel"
+      }
     },
     {
       "id": "relato-ester-9-1",
@@ -3123,7 +4195,16 @@
       "summary": "Los judíos celebran su liberación y se instituye la fiesta de Purim.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/nacimiento-de-isaac.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La liberación y Purim",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "nacimiento-de-isaac",
+        "match": "period-context",
+        "fallbackFrom": "nacimiento-de-isaac"
+      }
     },
     {
       "id": "relato-jonas-1-1",
@@ -3137,7 +4218,16 @@
       "summary": "Jonás se embarca para huir del encargo de ir a Nínive.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-vendido.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Jonás huye de su misión",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-vendido",
+        "match": "period-context",
+        "fallbackFrom": "jose-vendido"
+      }
     },
     {
       "id": "relato-jonas-2-1",
@@ -3151,7 +4241,16 @@
       "summary": "Jonás ora desde el interior del gran pez.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-en-egipto.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La oración de Jonás",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-en-egipto",
+        "match": "period-context",
+        "fallbackFrom": "jose-en-egipto"
+      }
     },
     {
       "id": "relato-jonas-3-1",
@@ -3165,7 +4264,16 @@
       "summary": "Los habitantes de Nínive responden a la predicación de Jonás.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/jose-y-sus-hermanos.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Nínive responde al anuncio",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "jose-y-sus-hermanos",
+        "match": "period-context",
+        "fallbackFrom": "jose-y-sus-hermanos"
+      }
     },
     {
       "id": "relato-jonas-4-1",
@@ -3179,7 +4287,16 @@
       "summary": "Dios enseña a Jonás una lección sobre compasión.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-001.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente Jonás y la planta",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-001",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-001"
+      }
     },
     {
       "id": "relato-1-cronicas-13-1",
@@ -3193,7 +4310,13 @@
       "summary": "David intenta trasladar el arca a Jerusalén.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/babel.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente David reúne a Israel para traer el arca",
+        "match": "period-context",
+        "fallbackFrom": "babel"
+      }
     },
     {
       "id": "relato-2-cronicas-29-1",
@@ -3207,7 +4330,16 @@
       "summary": "Ezequías restaura el servicio del templo en Jerusalén.",
       "status": "draft",
       "visual": "editorial",
-      "icon": "book-open"
+      "icon": "book-open",
+      "cover": {
+        "src": "assets/images/history/relato-pc-031.webp",
+        "alt": "Imagen contextual del periodo; no representa literalmente La reforma de Ezequías",
+        "source": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "attributionId": "relato-pc-031",
+        "match": "period-context",
+        "fallbackFrom": "relato-pc-031"
+      }
     }
   ],
   "schemaVersion": 2,
