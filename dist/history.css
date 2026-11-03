@@ -313,6 +313,21 @@ html[data-kb-history-theme="light"]{color-scheme:light}
 .kb-history-app .kb-pericope-row-copy em{font:400 11px/1.3 system-ui,sans-serif;color:#89958d;font-style:normal}
 .kb-history-app .kb-pericope-row-arrow{font:400 25px/1 system-ui,sans-serif;color:var(--green)}
 .kb-history-app .kb-pericope-group>h3{margin:18px 0 8px;font:650 15px/1.3 system-ui,sans-serif;color:#5d6d63}
+.kb-history-app .kb-pericope-sample{border:1px solid #dfe6df;border-radius:14px;background:#fff;overflow:hidden}
+.kb-history-app .kb-pericope-sample-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:13px 15px;border-bottom:1px solid #edf0ec;font:650 14px/1.3 system-ui,sans-serif}
+.kb-history-app .kb-pericope-sample-heading span{color:#738078;font:500 12px/1.3 system-ui,sans-serif}
+.kb-history-app .kb-pericope-sample .kb-pericope-rows{border:0}
+.kb-history-app .kb-pericope-open{display:flex;align-items:center;justify-content:space-between;width:100%;margin:10px 0 4px;padding:13px 15px;border:1px solid #bfd2c3;border-radius:12px;background:#f5faf5;color:var(--green);font:650 14px/1.3 system-ui,sans-serif;text-align:left}
+.kb-history-app .kb-pericope-sheet[hidden]{display:none}
+.kb-history-app .kb-pericope-sheet{position:fixed;z-index:30;inset:0;display:flex;justify-content:flex-end}
+.kb-history-app .kb-pericope-sheet-backdrop{position:absolute;inset:0;background:rgba(18,31,24,.28)}
+.kb-history-app .kb-pericope-sheet-panel{position:relative;z-index:1;width:min(100%,520px);height:100%;overflow-y:auto;padding:calc(18px + env(safe-area-inset-top)) 18px calc(28px + env(safe-area-inset-bottom));background:#fff;box-shadow:-12px 0 32px rgba(20,38,28,.18);animation:kb-pericope-sheet-in .22s ease-out both}
+.kb-history-app .kb-pericope-sheet-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:8px}
+.kb-history-app .kb-pericope-sheet-header small{font:700 11px/1.3 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#5d8069}
+.kb-history-app .kb-pericope-sheet-header h4{margin:5px 0 0;font:750 27px/1.1 system-ui,sans-serif;letter-spacing:-.03em;color:var(--ink)}
+.kb-history-app .kb-pericope-sheet-close{width:38px;height:38px;border:1px solid #d9e3da;border-radius:50%;background:#fff;color:var(--ink);font:300 27px/1 system-ui,sans-serif}
+.kb-history-app.kb-pericope-sheet-open .page{overflow:hidden}
+@keyframes kb-pericope-sheet-in{from{transform:translateX(18px);opacity:.7}to{transform:translateX(0);opacity:1}}
 
 /* Story details: editorial cover, readable synopsis and clear reading invitation. */
 .kb-story-detail-hero{display:grid;grid-template-columns:minmax(112px,35%) 1fr;align-items:center;gap:clamp(16px,4vw,32px);margin:22px 0 30px}

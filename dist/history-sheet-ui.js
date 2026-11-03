@@ -69,7 +69,7 @@ export function renderEraOverview({era,books,navigation,events=[],periods=[],rea
   return renderEraSheet({era,books,body,navigation});
 }
 
-export function pericopeList(items,{readerPath="",bookNames={},statusLabel="Perícopa propuesta"}={}){
+export function pericopeList(items,{readerPath="",bookNames={},statusLabel="Perícopa propuesta",id="all"}={}){
   const groups=new Map();
   for(const item of items){
     const bookId=item.bookId||"unknown";
@@ -88,5 +88,23 @@ export function pericopeList(items,{readerPath="",bookNames={},statusLabel="Per�
     const title=item.title||("Perícopa · "+range(item));
     return '<a class="kb-pericope-row" data-book-id="'+esc(item.bookId||"")+'" href="'+esc(href)+'"><span class="kb-pericope-row-copy"><small>'+esc(range(item))+'</small><strong>'+esc(title)+'</strong><em>'+esc(statusLabel)+'</em></span><span class="kb-pericope-row-arrow" aria-hidden="true">›</span></a>';
   }).join("")+'</div>';
-  return '<div class="kb-pericope-books">'+[...groups.entries()].map(([bookId,group],index)=>'<details class="kb-pericope-book"'+(index===0?' open':'')+'><summary><span>'+esc(bookNames[bookId]||group[0].bookName||bookId)+'</span><small>'+group.length+' '+(group.length===1?'perícopa':'perícopas')+'</small></summary>'+rows(group)+'</details>').join("")+'</div>';
+  const sheetId="kb-pericope-sheet-"+String(id).replace(/[^a-z0-9_-]+/gi,"-");
+  const books='<div class="kb-pericope-books">'+[...groups.entries()].map(([bookId,group],index)=>'<details class="kb-pericope-book"'+(index===0?' open':'')+'><summary><span>'+esc(bookNames[bookId]||group[0].bookName||bookId)+'</span><small>'+group.length+' '+(group.length===1?'perícopa':'perícopas')+'</small></summary>'+rows(group)+'</details>').join("")+'</div>';
+  const sample=items.slice(0,5);
+  const more=items.length>sample.length;
+  const sheet=more?'<div class="kb-pericope-sheet" id="'+esc(sheetId)+'" hidden role="dialog" aria-modal="true" aria-labelledby="'+esc(sheetId+'-title')+'"><div class="kb-pericope-sheet-backdrop" data-kb-pericope-close></div><aside class="kb-pericope-sheet-panel"><header class="kb-pericope-sheet-header"><div><small>Índice de lectura</small><h4 id="'+esc(sheetId+'-title')+'">Todas las perícopas</h4></div><button type="button" class="kb-pericope-sheet-close" data-kb-pericope-close aria-label="Cerrar índice">×</button></header><p class="kb-story-context">'+items.length+' unidades de lectura disponibles en esta sección.</p>'+books+'</aside></div>':"";
+  return '<div class="kb-pericope-browser"><div class="kb-pericope-sample"><div class="kb-pericope-sample-heading"><strong>Muestra de '+sample.length+'</strong><span>'+items.length+' en total</span></div>'+rows(sample)+'</div>'+(more?'<button type="button" class="kb-pericope-open" data-kb-pericope-open aria-controls="'+esc(sheetId)+'">Ver todas las '+items.length+' perícopas <span aria-hidden="true">→</span></button>':"")+sheet+'</div>';
+}
+
+export function initPericopeSheets(root=document.body){
+  if(!root||root.dataset.kbPericopeSheets)return;
+  root.dataset.kbPericopeSheets="ready";
+  const close=sheet=>{if(!sheet)return;sheet.hidden=true;root.classList.remove("kb-pericope-sheet-open");sheet.__opener?.focus()};
+  root.addEventListener("click",event=>{
+    const open=event.target.closest("[data-kb-pericope-open]");
+    if(open){const sheet=document.getElementById(open.getAttribute("aria-controls"));if(sheet){sheet.__opener=open;sheet.hidden=false;root.classList.add("kb-pericope-sheet-open");sheet.querySelector("[data-kb-pericope-close]")?.focus()}return}
+    const closeButton=event.target.closest("[data-kb-pericope-close]");
+    if(closeButton)close(closeButton.closest(".kb-pericope-sheet"));
+  });
+  root.addEventListener("keydown",event=>{if(event.key!=="Escape")return;const sheet=root.querySelector(".kb-pericope-sheet:not([hidden])");close(sheet)});
 }

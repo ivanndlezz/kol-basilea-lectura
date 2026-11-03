@@ -47,9 +47,13 @@ test('history uses one normalized public snapshot',()=>{
 });
 
 test('pericopes use a compact reading index without editorial artwork',()=>{
-  const html=pericopeList([{bookId:'genesis',start:{chapter:1,verse:1},end:{chapter:1,verse:2},title:'La creación'}],{readerPath:'/index.html',bookNames:{genesis:'Génesis'},statusLabel:'Borrador'});
+  const items=Array.from({length:6},(_,index)=>({bookId:'genesis',start:{chapter:1,verse:index+1},end:{chapter:1,verse:index+2},title:index===0?'La creación':undefined}));
+  const html=pericopeList(items,{readerPath:'/index.html',bookNames:{genesis:'Génesis'},statusLabel:'Borrador',id:'genesis'});
   assert.match(sheetSource,/export function pericopeList/);
-  assert.match(html,/kb-pericope-book/);
+  assert.match(sheetSource,/export function initPericopeSheets/);
+  assert.match(html,/Muestra de 5/);
+  assert.match(html,/Ver todas las 6 perícopas/);
+  assert.match(html,/kb-pericope-sheet/);
   assert.match(html,/Génesis 1:1–2/);
   assert.doesNotMatch(html,/kb-story-art|kb-story-image/);
 });
