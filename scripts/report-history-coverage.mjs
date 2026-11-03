@@ -1,4 +1,4 @@
-// Deterministic, non-publishing audit across all 66 canonical books and ten eras.
+// Deterministic, non-publishing audit across all 66 canonical books and eleven eras.
 import {readFile,writeFile,mkdir} from "node:fs/promises";
 const read=async p=>JSON.parse(await readFile(p,"utf8"));
 const catalog=await read("dist/data/catalog/books.json");
@@ -6,7 +6,7 @@ const timeline=await read("dist/data/history/timeline.json");
 const classified=await read("reports/history-sections-classified.json").catch(()=>({sections:[]}));
 const books=catalog.books.sort((a,b)=>a.canonicalOrder-b.canonicalOrder);
 if(books.length!==66||new Set(books.map(b=>b.id)).size!==66)throw Error("Canonical catalog must contain 66 unique books");
-if(timeline.eras.length!==10)throw Error("Expected ten historical eras");
+if(timeline.eras.length!==11)throw Error("Expected eleven historical eras");
 const bookIds=new Set(books.map(b=>b.id));
 const errors=[];
 for(const s of classified.sections){if(!bookIds.has(s.bookId))errors.push({id:s.id,reason:"unknown_book",bookId:s.bookId});}

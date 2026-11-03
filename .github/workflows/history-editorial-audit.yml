@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Audit all 66 books and 10 eras
+      - name: Audit all 66 books and 11 eras
         run: node scripts/report-history-coverage.mjs
       - name: Build editorial queue when classified source is available
         run: |
