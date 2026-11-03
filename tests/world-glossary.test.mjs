@@ -41,3 +41,12 @@ test('world atlas reuses the main app appearance preference',()=>{
   assert.match(page,/prefers-color-scheme/);
   assert.match(page,/color-scheme:light/);
 });
+
+test('world atlas renders each scope as a distinct catalog group',()=>{
+  assert.match(page,/scopePresentation/);
+  assert.match(page,/renderScopeGroup/);
+  assert.match(page,/scope-group-items--tribes-lineages/);
+  assert.match(page,/scope-group-items--language-genealogy/);
+  assert.match(page,/scope-group-items--places-regions/);
+  for(const scope of data.scopes)assert.match(page,new RegExp('"'+scope.id+'"'));
+});
