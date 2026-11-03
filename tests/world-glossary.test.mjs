@@ -54,7 +54,7 @@ test('world atlas renders each scope as a distinct catalog group',()=>{
 test('world atlas uses semantic structures per scope instead of one card template',()=>{
   assert.match(page,/<dl class="atlas-definitions">/);
   assert.match(page,/<ol class="atlas-lineage">/);
-  assert.match(page,/<div class="atlas-communities">/);
+  assert.match(page,/renderCarousel\(scope\.id,items,renderCommunity,scope\)/);
   assert.match(page,/<ul class="atlas-movements">/);
   assert.match(page,/<dl class="atlas-roles">/);
   assert.match(page,/<ul class="atlas-languages">/);
@@ -62,4 +62,13 @@ test('world atlas uses semantic structures per scope instead of one card templat
   assert.match(page,/layout:"definitions"/);
   assert.match(page,/layout:"lineage"/);
   assert.match(page,/layout:"movements"/);
+});
+
+test('world atlas cards use an accessible carousel with optional imagery',()=>{
+  assert.match(page,/renderCarousel/);
+  assert.match(page,/atlas-carousel-viewport/);
+  assert.match(page,/data-carousel-prev/);
+  assert.match(page,/data-carousel-next/);
+  assert.match(page,/renderCardMedia/);
+  assert.match(page,/item\.image/);
 });
