@@ -32,7 +32,7 @@
   </section>
 </main>
 <script type="module">
-const data=await fetch("../../data/history/world-glossary.json").then(response=>{if(!response.ok)throw new Error("HTTP "+response.status);return response.json()}).catch(error=>{document.querySelector("#cards").innerHTML='<p class="empty">No pudimos cargar las fichas. Intenta actualizar esta página.</p>';document.querySelector("#count").textContent="Error al cargar el atlas";throw error});
+const data=await fetch("../../data/history/world-glossary.json?v=20261103-scopes-v1").then(response=>{if(!response.ok)throw new Error("HTTP "+response.status);return response.json()}).catch(error=>{document.querySelector("#cards").innerHTML='<p class="empty">No pudimos cargar las fichas. Intenta actualizar esta página.</p>';document.querySelector("#count").textContent="Error al cargar el atlas";throw error});
 const mapTabs=document.querySelector("#map-tabs"),mapView=document.querySelector("#map-view"),filters=document.querySelector("#scope-filters"),cards=document.querySelector("#cards"),search=document.querySelector("#search"),count=document.querySelector("#count");
 const scopes=[...data.scopes].sort((a,b)=>a.order-b.order),scopeById=new Map(scopes.map(scope=>[scope.id,scope])),itemById=new Map(data.items.map(item=>[item.id,item]));
 let activeMap=data.maps[0].id,selectedScope="Todos";
