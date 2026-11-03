@@ -330,7 +330,7 @@ html[data-kb-history-theme="light"]{color-scheme:light}
 .kb-pericope-sheet .kb-pericope-books{min-height:0;margin:8px 0 0;overflow-y:auto;padding:0 2px 8px 0}
 .kb-pericope-sheet .kb-pericope-book{background:var(--bg,#f6f7f4);border-color:var(--line,#dfe6df)}
 .kb-pericope-sheet .kb-pericope-row:hover{background:color-mix(in srgb,var(--surface,#fff) 78%,var(--green) 8%)}
-.kb-pericope-sheet-open{overflow:hidden;touch-action:none}
+.kb-pericope-sheet-open{overflow:hidden}
 @media(prefers-reduced-motion:reduce){.kb-pericope-sheet .kb-navigation-sheet{animation:none}}
 @media(max-width:380px){.kb-pericope-sheet .kb-navigation-sheet{padding-left:16px;padding-right:16px;width:min(92vw,370px)}}
 @media(max-width:640px){
@@ -343,6 +343,35 @@ html[data-kb-history-theme="dark"] .kb-pericope-sheet .kb-pericope-rows,
 html[data-kb-history-theme="dark"] .kb-pericope-sheet .kb-pericope-row+.kb-pericope-row{border-color:#34463a}
 html[data-kb-history-theme="dark"] .kb-pericope-sheet .kb-pericope-row-copy small{color:#a9c5af}
 html[data-kb-history-theme="dark"] .kb-pericope-sheet .kb-pericope-row-copy em{color:#b1c4b3}
+
+/* Mobile sheet: the book index owns the scroll, and every opened book keeps its rows visible. */
+.kb-pericope-sheet .kb-navigation-sheet{
+  overflow:hidden;
+  touch-action:pan-y;
+}
+.kb-pericope-sheet .kb-navigation-head{
+  flex:0 0 auto;
+}
+.kb-pericope-sheet .kb-pericope-books{
+  display:flex;
+  flex:1 1 auto;
+  flex-direction:column;
+  align-items:stretch;
+  gap:8px;
+  min-height:0;
+  margin:8px 0 0;
+  overflow-x:hidden;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  touch-action:pan-y;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-gutter:stable;
+}
+.kb-pericope-sheet .kb-pericope-book{
+  flex:0 0 auto;
+  overflow:hidden;
+}
+.kb-pericope-sheet-open{overflow:hidden}
 
 /* Story details: editorial cover, readable synopsis and clear reading invitation. */
 .kb-story-detail-hero{display:grid;grid-template-columns:minmax(112px,35%) 1fr;align-items:center;gap:clamp(16px,4vw,32px);margin:22px 0 30px}

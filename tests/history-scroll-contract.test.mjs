@@ -22,6 +22,12 @@ test('one vertical scrolling surface; cards and timeline are not sticky',()=>{
   assert.match(css,/\.scale-numbers\{[^}]*grid-template-columns:repeat\(11,minmax\(0,1fr\)\)/);
 });
 
+test('pericope sheet keeps mobile navigation scrollable',()=>{
+  assert.match(css,/\.kb-pericope-sheet \.kb-navigation-sheet\{[^}]*overflow:hidden[^}]*touch-action:pan-y/);
+  assert.match(css,/\.kb-pericope-sheet \.kb-pericope-books\{[^}]*display:flex[^}]*flex:1 1 auto[^}]*overflow-x:hidden[^}]*overflow-y:auto[^}]*touch-action:pan-y/);
+  assert.match(css,/\.kb-pericope-sheet-open\{overflow:hidden\}/);
+});
+
 test('historical eras have a single data source',async()=>{
   assert.equal(timeline.eras.length,11);
   assert.equal(new Set(timeline.eras.map(e=>e.id)).size,11);

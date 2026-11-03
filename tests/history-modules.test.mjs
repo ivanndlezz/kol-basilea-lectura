@@ -66,7 +66,7 @@ test('generated history routes use the same app shell and controls',()=>{
   for(const html of [generatedStoryRoute,generatedEraRoute]){
     assert.match(html,/<div class="kb-history-app">/);
     assert.match(html,/class="kb-info-button"/);
-    assert.match(html,/history\.css\?v=20261103-pericope-dark-v1/);
+    assert.match(html,/history\.css\?v=20261103-pericope-mobile-v1/);
     assert.doesNotMatch(html,/href="[^"]*index\.html/);
     assert.doesNotMatch(html,/<body><header class="top"/);
   }
