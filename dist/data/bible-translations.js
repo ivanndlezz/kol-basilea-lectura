@@ -50,7 +50,7 @@ export const BIBLE_TRANSLATIONS = Object.freeze({
   })
 });
 
-export const DEFAULT_TRANSLATION_ID = "rvr1909";
+export const DEFAULT_TRANSLATION_ID = "pdt";
 export const getBibleTranslation = (id = DEFAULT_TRANSLATION_ID) => BIBLE_TRANSLATIONS[id] || BIBLE_TRANSLATIONS[DEFAULT_TRANSLATION_ID];
 export const getBibleTranslations = () => Object.values(BIBLE_TRANSLATIONS);
 export const isBibleTranslationId = id => Boolean(id && BIBLE_TRANSLATIONS[id]);
