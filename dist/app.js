@@ -7,6 +7,9 @@ const pericopeLoadRequested = new Set();
 import { BOOKS, CATEGORIES, TOTAL_CHAPTERS, getCatalogBook, getCategoryColor, narrativeBookTitle } from "./data/bible-catalog.js";
 import { JUAN_VIDEO, BOOK_INFO, getBookEditorial, getBookEditorialVideos } from "./data/editorial-content.js";
 import { completedChapters, isBookFinished, completedChapterCount, completedBookCount, nextReadingBook, nextReadingChapter, markChapterComplete } from "./data/reading-progress.js";
+import { normalizeDirectoryUrl } from "./url-routing.js?v=url-routing-v1";
+
+normalizeDirectoryUrl();
 
 const STORAGE_KEY = "kol-basilea-lectura-v1";
 const ICONS = {

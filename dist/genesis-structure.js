@@ -7,7 +7,7 @@ const passage = reference => {
 };
 const readUrl = reference => {
   const {chapter,verse}=passage(reference);
-  return new URL("./index.html",import.meta.url).pathname+"?book=genesis&chapter="+chapter+"&verse="+verse;
+  return new URL("./",import.meta.url).pathname+"?book=genesis&chapter="+chapter+"&verse="+verse;
 };
 const ranges = reference => {
   const match=reference.match(/(?:Génesis\s+)?(\d+)(?::(\d+))?[–-](\d+)(?::(\d+))?/);

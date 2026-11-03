@@ -1,9 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {access,readFile} from 'node:fs/promises';
+import {access,readdir,readFile} from 'node:fs/promises';
 import {loadHistoryData} from '../dist/history-data.js';
 import {ERA_SLUGS,eraFromLocation,pathForEra,resolveHistoryAssetUrl,storyFromLocation} from '../dist/history-routing.js';
 import {pericopeList,renderEraStrip} from '../dist/history-sheet-ui.js';
+import {normalizeDirectoryUrl} from '../dist/url-routing.js';
 
 const snapshot=JSON.parse(await readFile(new URL('../dist/data/history/history-snapshot.json',import.meta.url),'utf8'));
 const historySource=await readFile(new URL('../dist/history.js',import.meta.url),'utf8');
@@ -66,7 +67,29 @@ test('generated history routes use the same app shell and controls',()=>{
     assert.match(html,/<div class="kb-history-app">/);
     assert.match(html,/class="kb-info-button"/);
     assert.match(html,/history\.css\?v=history-route-fix-v4/);
+    assert.doesNotMatch(html,/href="[^"]*index\.html/);
     assert.doesNotMatch(html,/<body><header class="top"/);
+  }
+});
+
+test('public routes stay extensionless and old index URLs normalize',()=>{
+  const state={pathname:'/kol-basilea-lectura/history/exodo-y-jueces/index.html',search:'?verify=1',hash:'#relato'};
+  const calls=[];
+  const historyObject={state:{from:'legacy'},replaceState(...args){calls.push(args)}};
+  assert.equal(normalizeDirectoryUrl(state,historyObject),true);
+  assert.deepEqual(calls,[[{from:'legacy'},'', '/kol-basilea-lectura/history/exodo-y-jueces/?verify=1#relato']]);
+  assert.equal(normalizeDirectoryUrl({pathname:'/kol-basilea-lectura/history/exodo-y-jueces/'},historyObject),false);
+  assert.match(historySource,/new URL\("\.\/",import\.meta\.url\)\.pathname/);
+});
+
+test('published HTML contains no extensionful internal document links',async()=>{
+  const files=await readdir(new URL('../dist/',import.meta.url),{recursive:true});
+  const htmlFiles=files.filter(file=>file.endsWith('.html'));
+  assert.ok(htmlFiles.length>=160);
+  for(const file of htmlFiles){
+    const html=await readFile(new URL('../dist/'+file,import.meta.url),'utf8');
+    assert.doesNotMatch(html,/href=["'][^"']*index\.html/i,file);
+    assert.doesNotMatch(html,/src=["'][^"']*index\.html/i,file);
   }
 });
 
@@ -80,13 +103,15 @@ test('era strip is rendered from the normalized era catalog',()=>{
 
 test('pericopes use a compact reading index without editorial artwork',()=>{
   const items=Array.from({length:6},(_,index)=>({bookId:'genesis',start:{chapter:1,verse:index+1},end:{chapter:1,verse:index+2},title:index===0?'La creación':undefined}));
-  const html=pericopeList(items,{readerPath:'/index.html',bookNames:{genesis:'Génesis'},statusLabel:'Borrador',id:'genesis'});
+  const html=pericopeList(items,{readerPath:'/',bookNames:{genesis:'Génesis'},statusLabel:'Borrador',id:'genesis'});
   assert.match(sheetSource,/export function pericopeList/);
   assert.match(sheetSource,/export function initPericopeSheets/);
   assert.match(html,/Muestra de 5/);
   assert.match(html,/Ver todas las 6 perícopas/);
   assert.match(html,/kb-pericope-sheet/);
   assert.match(html,/Génesis 1:1–2/);
+  assert.match(html,/href="\/\?book=genesis/);
+  assert.doesNotMatch(html,/index\.html/);
   assert.doesNotMatch(html,/kb-story-art|kb-story-image/);
 });
 
