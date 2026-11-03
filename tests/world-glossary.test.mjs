@@ -50,3 +50,16 @@ test('world atlas renders each scope as a distinct catalog group',()=>{
   assert.match(page,/scope-group-items--places-regions/);
   for(const scope of data.scopes)assert.match(page,new RegExp('"'+scope.id+'"'));
 });
+
+test('world atlas uses semantic structures per scope instead of one card template',()=>{
+  assert.match(page,/<dl class="atlas-definitions">/);
+  assert.match(page,/<ol class="atlas-lineage">/);
+  assert.match(page,/<div class="atlas-communities">/);
+  assert.match(page,/<ul class="atlas-movements">/);
+  assert.match(page,/<dl class="atlas-roles">/);
+  assert.match(page,/<ul class="atlas-languages">/);
+  assert.match(page,/<ul class="atlas-places">/);
+  assert.match(page,/layout:"definitions"/);
+  assert.match(page,/layout:"lineage"/);
+  assert.match(page,/layout:"movements"/);
+});
