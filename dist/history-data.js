@@ -1,5 +1,5 @@
 // Data access and integrity for the History screen. No DOM or routing dependencies.
-const TIMELINE_URL = new URL("./data/history/timeline.json", import.meta.url);
+const TIMELINE_URL = new URL("./data/history/timeline.json?v=20261102-cover-verified-v3", import.meta.url);
 export async function loadHistoryData() {
   const response = await fetch(TIMELINE_URL, {cache:"no-store"});
   if (!response.ok) throw new Error("No se pudo cargar la cronología");
