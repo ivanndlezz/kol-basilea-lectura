@@ -47,5 +47,6 @@ syncTheme();matchMedia("(prefers-color-scheme: dark)").addEventListener("change"
 const sectionsRoot=document.querySelector("#bible-history-sections"),indexRoot=document.querySelector("#bible-history-index");
 fetch("../../data/history/bible-history.json?v=20261103-bible-history-v1").then(response=>{if(!response.ok)throw new Error("HTTP "+response.status);return response.json()}).then(data=>{document.title=data.title+" · Kol Basilea";document.querySelector("#bible-history-intro").textContent=data.intro;document.querySelector("#bible-history-note").textContent=data.note;indexRoot.innerHTML=data.sections.map(section=>'<a href="#'+esc(section.id)+'">'+esc(sectionLabel(section))+'</a>').join("");sectionsRoot.innerHTML=data.sections.map(renderSection).join("")}).catch(()=>{sectionsRoot.innerHTML='<p class="bible-history-error">No pudimos cargar esta sección. Intenta actualizar la página.</p>'});
 </script>
+<script type="module">import {mountDocumentNavigation} from "../../navigation/document-navigation.js";mountDocumentNavigation({header:document.querySelector("header")});</script>
 </body>
 </html>
