@@ -31,7 +31,8 @@ export function storyCard(story,href,coverUrl,alternatives=[]){
   const sources=isApprovedStoryCover(story)?[coverUrl,...alternatives].filter(Boolean):[];
   const variant=Number.isInteger(story.order)?((story.order-1)%6+6)%6:[...String(story.id||story.title)].reduce((n,c)=>n+c.charCodeAt(0),0)%6;
   const fallback='<span class="kb-story-cover-fallback" aria-hidden="true">'+editorialArt(story)+'</span>';
-  const image=sources.length?'<img class="kb-story-image" src="'+esc(sources[0])+'" data-cover-sources="'+esc(JSON.stringify(sources))+'" data-cover-index="0" alt="'+esc(story.cover?.alt||story.title)+'" loading="lazy" decoding="async">':'';
+  const priorityCover=story.eraId==="primeval" && Number(story.order)<=6;
+  const image=sources.length?'<img class="kb-story-image" src="'+esc(sources[0])+'" data-cover-sources="'+esc(JSON.stringify(sources))+'" data-cover-index="0" alt="'+esc(story.cover?.alt||story.title)+'" loading="'+(priorityCover?"eager":"lazy")+'" decoding="async">':'';
   return '<a class="kb-story" href="'+esc(href)+'"><div class="kb-story-art kb-art-'+esc(story.visual)+' kb-cover-variant-'+variant+'">'+fallback+image+'</div><div class="kb-story-copy"><small>'+esc(story.reference)+'</small><h3>'+esc(story.title)+'</h3></div></a>';
 }
 export function eraPager(eras,index){
