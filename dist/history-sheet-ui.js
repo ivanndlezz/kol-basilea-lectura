@@ -88,42 +88,59 @@ export function renderEraOverview({era,books,navigation,events=[],periods=[],rea
   return renderEraSheet({era,books,body,navigation});
 }
 
-export function pericopeList(items,{readerPath="",bookNames={},statusLabel="Perícopa propuesta",id="all"}={}){
+const pericopeSheetStore=new Map();
+const pericopeRows=(items,{readerPath="",bookNames={},statusLabel="Perícopa propuesta"}={})=>{
+  const range=item=>{
+    const start=item.start||{},end=item.end||start;
+    const book=bookNames[item.bookId]||item.bookName||item.bookId||"Texto bíblico";
+    const first=book+" "+start.chapter+":"+start.verse;
+    const last=(end.chapter&&end.chapter!==start.chapter?end.chapter+":" : "")+(end.verse||start.verse);
+    return first+(last&&last!==String(start.verse)?"–"+last:"");
+  };
+  return '<div class="kb-pericope-rows">'+items.map(item=>{
+    const href=readerPath+'?book='+encodeURIComponent(item.bookId||"")+'&chapter='+encodeURIComponent(item.start?.chapter||1)+'&verse='+encodeURIComponent(item.start?.verse||1);
+    const title=item.title||("Perícopa · "+range(item));
+    return '<a class="kb-pericope-row" data-book-id="'+esc(item.bookId||"")+'" href="'+esc(href)+'"><span class="kb-pericope-row-copy"><small>'+esc(range(item))+'</small><strong>'+esc(title)+'</strong><em>'+esc(statusLabel)+'</em></span><span class="kb-pericope-row-arrow" aria-hidden="true">›</span></a>';
+  }).join("")+'</div>';
+};
+const pericopeBooks=(items,{bookNames={},readerPath="",statusLabel="Perícopa propuesta"}={})=>{
   const groups=new Map();
   for(const item of items){
     const bookId=item.bookId||"unknown";
     if(!groups.has(bookId))groups.set(bookId,[]);
     groups.get(bookId).push(item);
   }
-  const range=item=>{
-    const start=item.start||{},end=item.end||start;
-    const book=bookNames[item.bookId]||item.bookName||item.bookId||"Texto bíblico";
-    const first=book+" "+start.chapter+":"+start.verse;
-    const last=(end.chapter&&end.chapter!==start.chapter?end.chapter+":"+"":"")+(end.verse||start.verse);
-    return first+(last&&last!==String(start.verse)?"–"+last:"");
-  };
-  const rows=items=>'<div class="kb-pericope-rows">'+items.map(item=>{
-    const href=readerPath+'?book='+encodeURIComponent(item.bookId||"")+'&chapter='+encodeURIComponent(item.start?.chapter||1)+'&verse='+encodeURIComponent(item.start?.verse||1);
-    const title=item.title||("Perícopa · "+range(item));
-    return '<a class="kb-pericope-row" data-book-id="'+esc(item.bookId||"")+'" href="'+esc(href)+'"><span class="kb-pericope-row-copy"><small>'+esc(range(item))+'</small><strong>'+esc(title)+'</strong><em>'+esc(statusLabel)+'</em></span><span class="kb-pericope-row-arrow" aria-hidden="true">›</span></a>';
-  }).join("")+'</div>';
+  return '<div class="kb-pericope-books">'+[...groups.entries()].map(([bookId,group],index)=>'<details class="kb-pericope-book"'+(index===0?' open':'')+'><summary><span>'+esc(bookNames[bookId]||group[0].bookName||bookId)+'</span><small>'+group.length+' '+(group.length===1?'perícopa':'perícopas')+'</small></summary>'+pericopeRows(group,{readerPath,bookNames,statusLabel})+'</details>').join("")+'</div>';
+};
+export function pericopeList(items,{readerPath="",bookNames={},statusLabel="Perícopa propuesta",id="all"}={}){
   const sheetId="kb-pericope-sheet-"+String(id).replace(/[^a-z0-9_-]+/gi,"-");
-  const books='<div class="kb-pericope-books">'+[...groups.entries()].map(([bookId,group],index)=>'<details class="kb-pericope-book"'+(index===0?' open':'')+'><summary><span>'+esc(bookNames[bookId]||group[0].bookName||bookId)+'</span><small>'+group.length+' '+(group.length===1?'perícopa':'perícopas')+'</small></summary>'+rows(group)+'</details>').join("")+'</div>';
-  const sample=items.slice(0,5);
-  const more=items.length>sample.length;
-  const sheet=more?'<div class="kb-pericope-sheet" id="'+esc(sheetId)+'" hidden role="dialog" aria-modal="true" aria-labelledby="'+esc(sheetId+'-title')+'"><div class="kb-pericope-sheet-backdrop" data-kb-pericope-close></div><aside class="kb-pericope-sheet-panel"><header class="kb-pericope-sheet-header"><div><small>Índice de lectura</small><h4 id="'+esc(sheetId+'-title')+'">Todas las perícopas</h4></div><button type="button" class="kb-pericope-sheet-close" data-kb-pericope-close aria-label="Cerrar índice">×</button></header><p class="kb-story-context">'+items.length+' unidades de lectura disponibles en esta sección.</p>'+books+'</aside></div>':"";
-  return '<div class="kb-pericope-browser"><div class="kb-pericope-sample"><div class="kb-pericope-sample-heading"><strong>Muestra de '+sample.length+'</strong><span>'+items.length+' en total</span></div>'+rows(sample)+'</div>'+(more?'<button type="button" class="kb-pericope-open" data-kb-pericope-open aria-controls="'+esc(sheetId)+'">Ver todas las '+items.length+' perícopas <span aria-hidden="true">→</span></button>':"")+sheet+'</div>';
+  const sample=items.slice(0,5),more=items.length>sample.length;
+  if(more)pericopeSheetStore.set(sheetId,{items,readerPath,bookNames,statusLabel});
+  return '<div class="kb-pericope-browser"><div class="kb-pericope-sample"><div class="kb-pericope-sample-heading"><strong>Muestra de '+sample.length+'</strong><span>'+items.length+' en total</span></div>'+pericopeRows(sample,{readerPath,bookNames,statusLabel})+'</div>'+(more?'<button type="button" class="kb-pericope-open" data-kb-pericope-open data-kb-pericope-sheet="'+esc(sheetId)+'" aria-controls="'+esc(sheetId)+'">Ver todas las '+items.length+' perícopas <span aria-hidden="true">→</span></button>':"")+'</div>';
+}
+
+function renderPericopeSheet(sheetId){
+  const data=pericopeSheetStore.get(sheetId);
+  if(!data)return null;
+  const sheet=document.createElement("div");
+  sheet.className="kb-navigation-layer kb-pericope-sheet";
+  sheet.id=sheetId;
+  sheet.innerHTML='<button class="kb-navigation-backdrop" data-kb-pericope-close aria-label="Cerrar índice"></button><aside class="kb-navigation-sheet kb-pericope-sheet-panel" id="'+esc(sheetId+'-panel')+'" role="dialog" aria-modal="true" aria-labelledby="'+esc(sheetId+'-title')+'"><div class="kb-navigation-head"><div><p class="eyebrow">Índice de lectura</p><h2 id="'+esc(sheetId+'-title')+'">Perícopas</h2><p class="kb-pericope-sheet-count">'+data.items.length+' unidades disponibles en esta sección.</p></div><button type="button" class="kb-navigation-close kb-pericope-sheet-close" data-kb-pericope-close aria-label="Cerrar índice">×</button></div>'+pericopeBooks(data.items,data)+'</aside>';
+  return sheet;
 }
 
 export function initPericopeSheets(root=document.body){
   if(!root||root.dataset.kbPericopeSheets)return;
   root.dataset.kbPericopeSheets="ready";
-  const close=sheet=>{if(!sheet)return;sheet.hidden=true;root.classList.remove("kb-pericope-sheet-open");sheet.__opener?.focus()};
+  const host=document.createElement("div");
+  host.className="kb-pericope-sheet-root";
+  document.body.append(host);
+  const close=sheet=>{if(!sheet)return;const opener=sheet.__opener;sheet.remove();document.body.classList.remove("kb-navigation-open","kb-pericope-sheet-open");opener?.focus({preventScroll:true})};
   root.addEventListener("click",event=>{
     const open=event.target.closest("[data-kb-pericope-open]");
-    if(open){const sheet=document.getElementById(open.getAttribute("aria-controls"));if(sheet){sheet.__opener=open;sheet.hidden=false;root.classList.add("kb-pericope-sheet-open");sheet.querySelector("[data-kb-pericope-close]")?.focus()}return}
+    if(open){const sheet=renderPericopeSheet(open.dataset.kbPericopeSheet||open.getAttribute("aria-controls"));if(sheet){sheet.__opener=open;host.replaceChildren(sheet);document.body.classList.add("kb-navigation-open","kb-pericope-sheet-open");sheet.querySelector(".kb-pericope-sheet-close")?.focus({preventScroll:true})}return}
     const closeButton=event.target.closest("[data-kb-pericope-close]");
     if(closeButton)close(closeButton.closest(".kb-pericope-sheet"));
   });
-  root.addEventListener("keydown",event=>{if(event.key!=="Escape")return;const sheet=root.querySelector(".kb-pericope-sheet:not([hidden])");close(sheet)});
+  document.addEventListener("keydown",event=>{const sheet=host.querySelector(".kb-pericope-sheet");if(!sheet)return;if(event.key==="Escape"){event.preventDefault();close(sheet);return}if(event.key!=="Tab")return;const focusable=[...sheet.querySelectorAll("button:not([disabled]),a[href],summary")].filter(el=>el.getClientRects().length);if(!focusable.length)return;const first=focusable[0],last=focusable.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus()}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus()}});
 }

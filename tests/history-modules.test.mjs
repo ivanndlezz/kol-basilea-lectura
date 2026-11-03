@@ -66,7 +66,7 @@ test('generated history routes use the same app shell and controls',()=>{
   for(const html of [generatedStoryRoute,generatedEraRoute]){
     assert.match(html,/<div class="kb-history-app">/);
     assert.match(html,/class="kb-info-button"/);
-    assert.match(html,/history\.css\?v=20261102-story-hero-v2/);
+    assert.match(html,/history\.css\?v=20261103-pericope-sheet-v3/);
     assert.doesNotMatch(html,/href="[^"]*index\.html/);
     assert.doesNotMatch(html,/<body><header class="top"/);
   }
@@ -106,9 +106,10 @@ test('pericopes use a compact reading index without editorial artwork',()=>{
   const html=pericopeList(items,{readerPath:'/',bookNames:{genesis:'Génesis'},statusLabel:'Borrador',id:'genesis'});
   assert.match(sheetSource,/export function pericopeList/);
   assert.match(sheetSource,/export function initPericopeSheets/);
+  assert.match(sheetSource,/kb-pericope-sheet-root/);
   assert.match(html,/Muestra de 5/);
   assert.match(html,/Ver todas las 6 perícopas/);
-  assert.match(html,/kb-pericope-sheet/);
+  assert.doesNotMatch(html,/kb-pericope-sheet-panel/);
   assert.match(html,/Génesis 1:1–2/);
   assert.match(html,/href="\/\?book=genesis/);
   assert.doesNotMatch(html,/index\.html/);
