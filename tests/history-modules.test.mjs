@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
+import {access,readFile} from 'node:fs/promises';
 import {loadHistoryData} from '../dist/history-data.js';
 import {ERA_SLUGS,eraFromLocation,pathForEra} from '../dist/history-routing.js';
 
@@ -41,4 +41,15 @@ test('history uses one normalized public snapshot',()=>{
   assert.doesNotMatch(historySource,/pericopes-generated\.json/);
   assert.doesNotMatch(historySource,/data\/history\/pericopes\.json/);
   assert.match(historySource,/pericopesByEra/);
+});
+
+test('every historical story has a direct route',async()=>{
+  assert.equal(snapshot.stories.length,151);
+  for(const story of snapshot.stories){
+    const slug=ERA_SLUGS[story.eraId];
+    await access(new URL(`../dist/history/${slug}/${story.id}/index.html`,import.meta.url));
+  }
+  const interlude=snapshot.stories.find(story=>story.id==='cuatrocientos-anos-de-silencio');
+  assert.equal(interlude?.type,'historical-interlude');
+  assert.ok(snapshot.subEras.find(subEra=>subEra.id==='second-temple--hellenistic')?.storyIds.includes(interlude.id));
 });

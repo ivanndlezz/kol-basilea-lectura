@@ -33,7 +33,9 @@ export function storyCard(story,href,coverUrl,alternatives=[]){
   const fallback='<span class="kb-story-cover-fallback" aria-hidden="true">'+editorialArt(story)+'</span>';
   const priorityCover=story.eraId==="primeval" && Number(story.order)<=6;
   const image=sources.length?'<img class="kb-story-image" src="'+esc(sources[0])+'" data-cover-sources="'+esc(JSON.stringify(sources))+'" data-cover-index="0" alt="'+esc(story.cover?.alt||story.title)+'" loading="'+(priorityCover?"eager":"lazy")+'" decoding="async">':'';
-  return '<a class="kb-story" href="'+esc(href)+'"><div class="kb-story-art kb-art-'+esc(story.visual)+' kb-cover-variant-'+variant+'">'+fallback+image+'</div><div class="kb-story-copy"><small>'+esc(story.reference)+'</small><h3>'+esc(story.title)+'</h3></div></a>';
+  const label=story.type==="historical-interlude"?"Interludio histórico":story.reference;
+  const subtitle=story.type==="historical-interlude"&&story.subtitle?'<small>'+esc(story.subtitle)+'</small>':"";
+  return '<a class="kb-story" href="'+esc(href)+'"><div class="kb-story-art kb-art-'+esc(story.visual)+' kb-cover-variant-'+variant+'">'+fallback+image+'</div><div class="kb-story-copy"><small>'+esc(label)+'</small>'+subtitle+'<h3>'+esc(story.title)+'</h3></div></a>';
 }
 export function eraPager(eras,index){
   const link=(era,direction)=>era?'<button type="button" class="kb-era-nav-link kb-era-nav-'+direction+'" data-id="'+esc(era.id)+'"><span class="kb-era-nav-direction">'+(direction==="prev"?"← Era anterior":"Siguiente era →")+'</span><strong>'+esc(era.title)+'</strong></button>':"";
