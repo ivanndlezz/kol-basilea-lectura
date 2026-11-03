@@ -18,6 +18,8 @@ test('one vertical scrolling surface; cards and timeline are not sticky',()=>{
   assert.doesNotMatch(css,/\.kb-history-app\.is-reading/);
   assert.doesNotMatch(js,/is-reading/);
   assert.match(rule('.kb-history-app .era-strip'),/overflow-x:auto/);
+  assert.match(css,/\.scale\{[^}]*grid-template-columns:repeat\(11,minmax\(0,1fr\)\)/);
+  assert.match(css,/\.scale-numbers\{[^}]*grid-template-columns:repeat\(11,minmax\(0,1fr\)\)/);
 });
 
 test('historical eras have a single data source',async()=>{
