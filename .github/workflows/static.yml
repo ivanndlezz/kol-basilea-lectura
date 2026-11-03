@@ -57,7 +57,9 @@ jobs:
         run: npm run validate:data
       - name: Validate application and Bible
         run: npm run check
-      - name: Generate SEO metadata and sitemap\n        run: node scripts/generate-seo.mjs\n      - name: Setup Pages
+      - name: Generate SEO metadata and sitemap
+        run: node scripts/generate-seo.mjs
+      - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
