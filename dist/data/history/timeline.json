@@ -3858,6 +3858,70 @@
         "reason": "Unverified contextual image reused from another story",
         "previousSrc": "assets/images/history/cain-y-abel.webp"
       }
+    },
+    {
+      "id": "cuatrocientos-anos-de-silencio",
+      "eraId": "second-temple",
+      "order": 1,
+      "title": "400 años de silencio",
+      "subtitle": "Entre Malaquías y los Evangelios",
+      "reference": "Malaquías 4:5–6 · Lucas 1:5–17",
+      "summary": "El mundo cambió mientras Israel esperaba: persas, griegos, macabeos y romanos prepararon el escenario histórico de los Evangelios.",
+      "synopsis": "Entre los últimos profetas del Antiguo Testamento y Juan el Bautista transcurrieron aproximadamente cuatro siglos. No fueron cuatrocientos años sin historia: cambiaron los imperios, las lenguas y las instituciones de Judea.",
+      "subEraId": "second-temple--hellenistic",
+      "type": "historical-interlude",
+      "sections": [
+        {
+          "heading": "La promesa que quedó abierta",
+          "paragraphs": [
+            "En el orden cristiano del Antiguo Testamento, Malaquías concluye con una promesa: Dios enviaría a Elías antes del día del Señor (Malaquías 4:5–6). La expresión «cuatrocientos años de silencio» resume la ausencia de profetas reconocidos en una tradición posterior; no establece una duración exacta ni significa que no existiera vida religiosa o literatura judía."
+          ]
+        },
+        {
+          "heading": "Persia: el regreso y la reconstrucción",
+          "paragraphs": [
+            "En 539 a. C., Ciro de Persia conquistó Babilonia. Bajo dominio persa, grupos de exiliados judíos regresaron a su tierra y el Segundo Templo fue terminado hacia 516 a. C. Este proceso comenzó mucho antes de la fecha habitualmente atribuida a Malaquías, en el siglo V a. C."
+          ]
+        },
+        {
+          "heading": "Alejandro y el mundo griego",
+          "paragraphs": [
+            "En 332 a. C., Alejandro Magno incorporó la región a su imperio. Después de su muerte, Judea quedó entre dinastías helenísticas rivales. El griego se extendió por el Mediterráneo oriental y las Escrituras hebreas comenzaron a traducirse al griego, proceso asociado con la Septuaginta."
+          ]
+        },
+        {
+          "heading": "Antíoco IV y la resistencia macabea",
+          "paragraphs": [
+            "En 167 a. C., las medidas de Antíoco IV Epífanes contra prácticas judías y la profanación del Templo desencadenaron la revuelta macabea. El santuario fue purificado en 164 a. C.; este acontecimiento está detrás de la celebración de Janucá. Más adelante, los asmoneos gobernaron Judea."
+          ]
+        },
+        {
+          "heading": "Roma entra en Jerusalén",
+          "paragraphs": [
+            "En 63 a. C., Pompeyo tomó Jerusalén. Judea pasó a la esfera de poder romano. Herodes el Grande gobernó como rey cliente de Roma desde 37 hasta 4 a. C. Este es el trasfondo político de los relatos sobre el nacimiento de Jesús."
+          ]
+        },
+        {
+          "heading": "¿Realmente no hubo profetas?",
+          "paragraphs": [
+            "1 Macabeos 9:27 recuerda una aflicción como no se había visto desde que dejaron de aparecer profetas en Israel; 1 Macabeos 4:46 y 14:41 también expresan la espera de un profeta. Estos libros son testimonios históricos de la época, aunque las tradiciones cristianas difieren respecto de su lugar en el canon.",
+            "La tradición rabínica posterior habla de la bat kol, literalmente «hija de la voz», como una voz celestial. No es el nombre histórico de este período. La tradición recogida en Yoma 9b distingue esa voz de la profecía de los antiguos profetas."
+          ]
+        },
+        {
+          "heading": "Una voz en el desierto",
+          "paragraphs": [
+            "Lucas abre su narración con Zacarías, sacerdote del Templo, y el anuncio de un hijo que caminaría «con el espíritu y el poder de Elías» (Lucas 1:17). Zacarías queda temporalmente sin habla (Lucas 1:20–22). Su hijo, Juan el Bautista, aparece como la voz que prepara el camino, enlazando literariamente la promesa de Malaquías con la llegada de Jesús.",
+            "El silencio no cabe realmente en una sola página: entre Malaquías y los Evangelios hubo siglos de transformaciones que ayudan a entender el mundo del Nuevo Testamento."
+          ]
+        }
+      ],
+      "sources": [
+        "Malaquías 4:5–6; Lucas 1:5–22; Lucas 3:1–6",
+        "1 Macabeos 4:46; 9:27; 14:41",
+        "Flavio Josefo, Antigüedades judías, libros XII–XIV",
+        "Talmud de Babilonia, Yoma 9b (tradición rabínica posterior)"
+      ]
     }
   ],
   "schemaVersion": 2,
