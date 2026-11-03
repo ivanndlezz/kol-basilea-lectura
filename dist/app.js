@@ -69,6 +69,7 @@ const defaultState = () => ({
   readerFont: "serif",
   readerTheme: "light",
   readerTranslation: DEFAULT_TRANSLATION_ID,
+  defaultPdtMigrationV1: true,
   readerBookInfoOpen: false,
   readerReadingProgress: 0,
   completedChapters: {},
@@ -90,7 +91,7 @@ function slugify(value) {
 function loadState() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    return { ...defaultState(), ...saved, atlasMenuOpen: saved?.atlasMenuDefaultExpandedV1 ? (saved.atlasMenuOpen ?? true) : true, atlasMenuDefaultExpandedV1: true, toast: "", navigationOpen: false, menuOptionsOpen: false, appearancePopoverOpen: false, readerMoreOpen: false, readerTranslationOpen: false };
+    return { ...defaultState(), ...saved, readerTranslation: saved?.defaultPdtMigrationV1 ? (isBibleTranslationId(saved.readerTranslation) ? saved.readerTranslation : DEFAULT_TRANSLATION_ID) : (saved?.readerTranslation === "rvr1909" || !isBibleTranslationId(saved?.readerTranslation) ? DEFAULT_TRANSLATION_ID : saved.readerTranslation), defaultPdtMigrationV1: true, atlasMenuOpen: saved?.atlasMenuDefaultExpandedV1 ? (saved.atlasMenuOpen ?? true) : true, atlasMenuDefaultExpandedV1: true, toast: "", navigationOpen: false, menuOptionsOpen: false, appearancePopoverOpen: false, readerMoreOpen: false, readerTranslationOpen: false };
   } catch {
     return defaultState();
   }
