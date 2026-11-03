@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-03T04:06:20.312Z",
+  "mode": "write",
+  "totals": {
+    "stories": 151,
+    "attempted": 143,
+    "assigned": 1,
+    "unresolved": 0,
+    "checkedExisting": 0
+  },
+  "coverage": {
+    "stories": 151,
+    "withCoverSrc": 151,
+    "local": 8,
+    "remote": 143,
+    "remoteVerifiedHttp200": 143,
+    "unresolved": 0
+  },
+  "assignments": [
+    {
+      "storyId": "relato-2-cronicas-29-1",
+      "title": "File:Hizkia sluit de bronnen buiten Jeruzalem af Geschiedenis van Hizkia en Sanherib (serietitel) Thesaurus sacrarum historiarum veteris testamenti (..) (serietitel), RP-P-1904-3552.jpg",
+      "provider": "Wikimedia Commons",
+      "sourceId": "commons:84680337",
+      "description": "Hezekiah closes the springs outside Jerusalem; scene from the history of Hezekiah and Sennacherib.",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Hizkia_sluit_de_bronnen_buiten_Jeruzalem_af_Geschiedenis_van_Hizkia_en_Sanherib_%28serietitel%29_Thesaurus_sacrarum_historiarum_veteris_testamenti_%28..%29_%28serietitel%29%2C_RP-P-1904-3552.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hizkia_sluit_de_bronnen_buiten_Jeruzalem_af_Geschiedenis_van_Hizkia_en_Sanherib_(serietitel)_Thesaurus_sacrarum_historiarum_veteris_testamenti_(..)_(serietitel),_RP-P-1904-3552.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "Rijksmuseum",
+      "width": 6520,
+      "height": 5260,
+      "query": "Hezekiah temple reform",
+      "confidence": 0.73,
+      "match": "related",
+      "verification": {
+        "ok": true,
+        "status": 200,
+        "finalUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Hizkia_sluit_de_bronnen_buiten_Jeruzalem_af_Geschiedenis_van_Hizkia_en_Sanherib_%28serietitel%29_Thesaurus_sacrarum_historiarum_veteris_testamenti_%28..%29_%28serietitel%29%2C_RP-P-1904-3552.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "contentType": "image/jpeg",
+        "verifiedAt": "2026-11-03T04:12:00.000Z"
+      }
+    }
+  ],
+  "checkedExisting": [],
+  "unresolved": []
+}
