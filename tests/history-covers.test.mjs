@@ -18,8 +18,9 @@ test("previously valid covers remain visible after image audits",()=>{
 });
 
 test("an unverified cover never renders, including when it has a src",()=>{
-  const item=story("sodoma-y-gomorra");
-  assert.ok(item);
+  const approved=story("sodoma-y-gomorra");
+  assert.ok(approved);
+  const item={...approved,cover:{...approved.cover,match:"unverified"}};
   assert.equal(isApprovedStoryCover(item),false);
   assert.doesNotMatch(storyCard(item,"/story/",item.cover.src),/class="kb-story-image"/);
   const missing={id:"example",title:"Example",reference:"Example 1",cover:{src:"wrong.jpg"}};
