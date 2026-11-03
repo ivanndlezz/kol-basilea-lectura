@@ -999,7 +999,7 @@
       "cover": {
         "src": "assets/images/history/creacion.webp",
         "alt": "Ilustración editorial de La creación",
-        "match": "unverified"
+        "match": "related"
       },
       "icon": "sun",
       "synopsis": "El relato abre con un mundo sin forma ni orden. A través de una secuencia de actos creados por la palabra divina, aparecen la luz, los cielos, la tierra y los seres vivos. El texto culmina con la humanidad y el descanso del séptimo día, y presenta el universo como una realidad ordenada y buena."
@@ -1018,7 +1018,7 @@
       "cover": {
         "src": "assets/images/history/caida.webp",
         "alt": "Ilustración editorial de La caída",
-        "match": "unverified"
+        "match": "related"
       },
       "icon": "book-open",
       "synopsis": "En el jardín de Edén, una conversación sobre el árbol prohibido lleva a la primera pareja a cruzar el límite establecido por Dios. La vergüenza, el temor y la ruptura de sus relaciones cambian el rumbo de la historia humana."
@@ -1037,7 +1037,7 @@
       "cover": {
         "src": "assets/images/history/cain-y-abel.webp",
         "alt": "Ilustración editorial de Caín y Abel",
-        "match": "unverified"
+        "match": "related"
       },
       "icon": "book-open"
     },
@@ -1055,7 +1055,7 @@
       "cover": {
         "src": "assets/images/history/primeras-ciudades.webp",
         "alt": "Ilustración editorial de Las primeras ciudades y reinos",
-        "match": "unverified"
+        "match": "related"
       },
       "icon": "crown"
     },
@@ -1073,7 +1073,7 @@
       "cover": {
         "src": "assets/images/history/diluvio.webp",
         "alt": "Ilustración editorial de El diluvio",
-        "match": "unverified"
+        "match": "related"
       },
       "icon": "waves"
     },
@@ -1091,7 +1091,7 @@
       "cover": {
         "src": "assets/images/history/babel.webp",
         "alt": "Ilustración editorial de Babel",
-        "match": "unverified"
+        "match": "related"
       },
       "icon": "building-2",
       "synopsis": "Después del diluvio, la humanidad aparece reunida en una llanura de Sinar. Sus habitantes deciden construir una ciudad y una torre para hacerse un nombre y evitar dispersarse. El relato plantea una pregunta que atraviesa Génesis: ¿qué sucede cuando los seres humanos buscan asegurar su grandeza por sus propios medios? La intervención divina transforma el proyecto y da origen a la dispersión de los pueblos."
