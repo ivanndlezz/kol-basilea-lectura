@@ -46,6 +46,7 @@ test('world atlas exposes era ranges and approximate durations across its views'
   assert.match(page,/function renderEraMeta/);
   assert.match(page,/Era y rango temporal/);
   assert.match(page,/años aprox\./);
+  assert.match(page,/date\.label==="Sin datación verificable"\?null/);
   assert.ok(data.items.filter(item=>item.eraIds?.length).length>0);
   for(const map of data.maps)assert.ok(map.eraIds?.length,map.id);
 });
