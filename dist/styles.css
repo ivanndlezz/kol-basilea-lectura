@@ -1188,3 +1188,10 @@ a:not([class]):visited{color:var(--brand-dark)}
 .chapter-sheet-search:focus{border-color:var(--brand);outline:2px solid color-mix(in srgb,var(--brand) 22%,transparent)}
 .chapter-sheet-testament{font-size:.78rem;letter-spacing:.075em;text-transform:uppercase;color:var(--ink-muted);font-weight:750;margin:18px 0 8px}
 .chapter-sheet-book[hidden],.chapter-sheet-testament[hidden]{display:none!important}
+
+/* Keep the root useful while the module graph is loading or recovering. */
+.kb-boot-screen{min-height:100dvh;display:grid;place-content:center;justify-items:center;gap:12px;padding:32px 24px;background:var(--paper,#f6f7f4);color:var(--ink,#20332c);text-align:center;font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif}
+.kb-boot-screen p{margin:0;color:var(--ink-muted,#65766b);font-size:16px}
+.kb-boot-mark{display:grid;place-items:center;width:52px;height:52px;border-radius:18px;background:var(--brand-soft,#e6f0e7);color:var(--brand,#245a44);font-size:25px;font-weight:700}
+.kb-boot-error h1{margin:0;font-size:clamp(24px,6vw,34px);letter-spacing:-.03em}
+.kb-boot-error button{min-height:48px;margin-top:8px;padding:0 18px;border:0;border-radius:12px;background:var(--brand,#245a44);color:#fff;font:700 16px system-ui,sans-serif;cursor:pointer}

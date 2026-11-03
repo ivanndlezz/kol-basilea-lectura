@@ -7,10 +7,10 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="description" content="Kol Basilea: una ruta progresiva para leer la Biblia." />
     <title>Kol Basilea · Lectura</title>
-    <link rel="stylesheet" href="./styles.css?v=20261102-reader-recovery-v2" />
+    <link rel="stylesheet" href="./styles.css?v=20261103-boot-recovery-v1" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app"><main class="kb-boot-screen" role="status" aria-live="polite"><span class="kb-boot-mark" aria-hidden="true">✦</span><p>Abriendo Kol Basilea…</p></main></div>
     <script>
       async function recoverReaderCache() {
         const key = "kb-reader-cache-repair-v2";
@@ -38,6 +38,11 @@
       window.addEventListener("unhandledrejection", function(event) {
         if (!document.querySelector("#app")?.children.length) window.dispatchEvent(new Event("error"));
       });
+      window.setTimeout(function() {
+        const app = document.querySelector("#app");
+        if (!app?.querySelector(".kb-boot-screen")) return;
+        app.innerHTML = '<main class="kb-boot-screen kb-boot-error" role="alert"><span class="kb-boot-mark" aria-hidden="true">!</span><h1>No pudimos abrir la lectura</h1><p>La aplicación está tardando más de lo esperado.</p><button type="button" onclick="location.reload()">Intentar de nuevo</button></main>';
+      }, 15000);
     </script>
     <script type="module" src="./app.js?v=20261103-clean-urls-v1"></script>
   </body>
