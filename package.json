@@ -5,6 +5,7 @@
   "scripts": {
     "test": "node --import ./tests/register-fetch.mjs --test tests/*.test.mjs",
     "validate:data": "node scripts/validate-data-integrity.mjs",
+    "build:history": "node scripts/build-history-snapshot.mjs",
     "assign:covers": "node scripts/assign-history-cover-urls.mjs --write",
     "audit:covers": "node scripts/assign-history-cover-urls.mjs",
     "import:bibleproject": "node scripts/import-bibleproject-videos.mjs --strict",

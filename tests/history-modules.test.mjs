@@ -1,7 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
 import {loadHistoryData} from '../dist/history-data.js';
 import {ERA_SLUGS,eraFromLocation,pathForEra} from '../dist/history-routing.js';
+
+const snapshot=JSON.parse(await readFile(new URL('../dist/data/history/history-snapshot.json',import.meta.url),'utf8'));
+const historySource=await readFile(new URL('../dist/history.js',import.meta.url),'utf8');
 
 test('era routes are unique and derived from one mapping',()=>{
   assert.equal(Object.keys(ERA_SLUGS).length,10);
@@ -28,4 +32,13 @@ test('data loader rejects invalid payloads without DOM dependencies',async()=>{
     globalThis.fetch=async()=>({ok:false});
     await assert.rejects(loadHistoryData(),/No se pudo cargar/);
   }finally{globalThis.fetch=original;}
+});
+
+test('history uses one normalized public snapshot',()=>{
+  assert.equal(snapshot.schemaVersion,2);
+  assert.ok(snapshot.historyCatalog?.editorialByEra);
+  assert.ok(snapshot.historyCatalog?.automaticByEra);
+  assert.doesNotMatch(historySource,/pericopes-generated\.json/);
+  assert.doesNotMatch(historySource,/data\/history\/pericopes\.json/);
+  assert.match(historySource,/pericopesByEra/);
 });

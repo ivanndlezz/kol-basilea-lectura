@@ -4,7 +4,9 @@ on:
   push:
     paths:
       - 'scripts/build-pericope-catalog.mjs'
+      - 'scripts/build-history-snapshot.mjs'
       - 'dist/data/pericopes/**'
+      - 'dist/data/history/timeline.json'
 permissions:
   contents: write
 jobs:
@@ -16,9 +18,10 @@ jobs:
         with:
           node-version: '22'
       - run: node scripts/build-pericope-catalog.mjs
+      - run: node scripts/build-history-snapshot.mjs
       - name: Commit generated catalog
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/data/history/pericopes-generated.json
+          git add dist/data/history/pericopes-generated.json dist/data/history/history-snapshot.json
           git diff --cached --quiet || (git commit -m "build(history): regenerate 66-book pericope catalog" && git pull --rebase origin main && git push origin HEAD:main)
