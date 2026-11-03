@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {access,readFile} from 'node:fs/promises';
 import {loadHistoryData} from '../dist/history-data.js';
-import {ERA_SLUGS,eraFromLocation,pathForEra} from '../dist/history-routing.js';
+import {ERA_SLUGS,eraFromLocation,pathForEra,resolveHistoryAssetUrl,storyFromLocation} from '../dist/history-routing.js';
 import {pericopeList} from '../dist/history-sheet-ui.js';
 
 const snapshot=JSON.parse(await readFile(new URL('../dist/data/history/history-snapshot.json',import.meta.url),'utf8'));
@@ -25,6 +25,19 @@ test('query route fallback and root preservation',()=>{
   const base='/kol-basilea-lectura/history/';
   assert.equal(eraFromLocation(base,{pathname:base,href:'https://example.org'+base+'?era=patriarchs'}),'patriarchs');
   assert.equal(pathForEra(base,'primeval',true),base);
+});
+
+test('story routes do not collide with an era route sharing the same slug',()=>{
+  const base='/kol-basilea-lectura/history/';
+  const stories=[{id:'cuatrocientos-anos-de-silencio'}];
+  assert.equal(storyFromLocation(base,stories,{pathname:base+'cuatrocientos-anos-de-silencio/',href:'https://example.org'+base}),null);
+  assert.deepEqual(storyFromLocation(base,stories,{pathname:base+'cuatrocientos-anos-de-silencio/cuatrocientos-anos-de-silencio/',href:'https://example.org'}),stories[0]);
+});
+
+test('history asset resolver preserves absolute URLs',()=>{
+  const remote='https://thumb.wikimedia.org/example.jpg';
+  assert.equal(resolveHistoryAssetUrl(remote),remote);
+  assert.equal(resolveHistoryAssetUrl('assets/example.webp','https://example.org/kol-basilea-lectura/history.js'),'/kol-basilea-lectura/assets/example.webp');
 });
 
 test('data loader rejects invalid payloads without DOM dependencies',async()=>{
