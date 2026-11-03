@@ -28,7 +28,7 @@ export function storyCard(story,href,coverUrl,alternatives=[]){
   const allowed=new Set(["exact","related","period-context"]);
   const sources=story.cover?.match&&!allowed.has(story.cover.match)?[]:[coverUrl,...alternatives].filter(Boolean);
   const variant=Number.isInteger(story.order)?((story.order-1)%6+6)%6:[...String(story.id||story.title)].reduce((n,c)=>n+c.charCodeAt(0),0)%6;
-  const fallback='<span class="kb-story-cover-fallback" aria-hidden="true">'+editorialArt(story)+'<span class="kb-story-cover-symbol">✦</span><span class="kb-story-cover-rule"></span><span class="kb-story-cover-name">'+esc(story.title)+'</span><span class="kb-story-cover-ref">'+esc(story.reference)+'</span></span>';
+  const fallback='<span class="kb-story-cover-fallback" aria-hidden="true">'+editorialArt(story)+'</span>';
   const image=sources.length?'<img class="kb-story-image" src="'+esc(sources[0])+'" data-cover-sources="'+esc(JSON.stringify(sources))+'" data-cover-index="0" alt="'+esc(story.cover?.alt||story.title)+'" loading="lazy" decoding="async">':'';
   return '<a class="kb-story" href="'+esc(href)+'"><div class="kb-story-art kb-art-'+esc(story.visual)+' kb-cover-variant-'+variant+'">'+fallback+image+'</div><div class="kb-story-copy"><small>'+esc(story.reference)+'</small><h3>'+esc(story.title)+'</h3></div></a>';
 }
