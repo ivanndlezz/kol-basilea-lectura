@@ -24,9 +24,11 @@ function editorialArt(story){
   const motif=pattern===0?marks:pattern===1?waves:pattern===2?arches:marks+waves;
   return '<svg class="kb-story-editorial-svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="kb-gradient-'+seed+'" x1="0" y1="0" x2="1" y2="1"><stop stop-color="'+dark+'"/><stop offset="1" stop-color="'+mid+'"/></linearGradient></defs><rect width="800" height="1000" fill="url(#kb-gradient-'+seed+')"/><circle cx="'+x+'" cy="'+y+'" r="'+(75+seed%65)+'" fill="'+light+'" opacity=".72"/><path d="M0 '+ridge+'Q200 '+(ridge-150)+' 410 '+(ridge+30)+'T800 '+(ridge-55)+'V1000H0Z" fill="'+dark+'" opacity=".56"/><path d="M0 810Q320 650 800 780V1000H0Z" fill="'+mid+'" opacity=".64"/>'+motif+'<rect x="30" y="30" width="740" height="940" rx="3" fill="none" stroke="'+light+'" opacity=".28" stroke-width="2"/></svg>';
 }
+export function isApprovedStoryCover(story){
+  return Boolean(story?.cover?.src && ["exact", "related", "period-context"].includes(story.cover.match));
+}
 export function storyCard(story,href,coverUrl,alternatives=[]){
-  const allowed=new Set(["exact","related","period-context"]);
-  const sources=story.cover?.match&&!allowed.has(story.cover.match)?[]:[coverUrl,...alternatives].filter(Boolean);
+  const sources=isApprovedStoryCover(story)?[coverUrl,...alternatives].filter(Boolean):[];
   const variant=Number.isInteger(story.order)?((story.order-1)%6+6)%6:[...String(story.id||story.title)].reduce((n,c)=>n+c.charCodeAt(0),0)%6;
   const fallback='<span class="kb-story-cover-fallback" aria-hidden="true">'+editorialArt(story)+'</span>';
   const image=sources.length?'<img class="kb-story-image" src="'+esc(sources[0])+'" data-cover-sources="'+esc(JSON.stringify(sources))+'" data-cover-index="0" alt="'+esc(story.cover?.alt||story.title)+'" loading="lazy" decoding="async">':'';
