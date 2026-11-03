@@ -1711,7 +1711,8 @@
         "source": "The Metropolitan Museum of Art",
         "license": "CC0",
         "attributionId": "relato-pc-021",
-        "match": "unverified"
+        "match": "exact",
+        "review": "attribution-verified"
       }
     },
     {
@@ -3001,7 +3002,8 @@
         "source": "The Metropolitan Museum of Art",
         "license": "CC0",
         "attributionId": "relato-lucas-2-1",
-        "match": "unverified"
+        "match": "exact",
+        "review": "attribution-verified"
       }
     },
     {
