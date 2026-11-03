@@ -47,7 +47,8 @@ const defaultState = () => ({
   appAppearance: "system",
   navigationOpen: false,
   menuOptionsOpen: false,
-  atlasMenuOpen: false,
+  atlasMenuOpen: true,
+  atlasMenuDefaultExpandedV1: true,
   appearancePopoverOpen: false,
   view: "home",
   readerBookId: "3-juan",
@@ -89,7 +90,7 @@ function slugify(value) {
 function loadState() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    return { ...defaultState(), ...saved, toast: "", navigationOpen: false, menuOptionsOpen: false, appearancePopoverOpen: false, readerMoreOpen: false, readerTranslationOpen: false };
+    return { ...defaultState(), ...saved, atlasMenuOpen: saved?.atlasMenuDefaultExpandedV1 ? (saved.atlasMenuOpen ?? true) : true, atlasMenuDefaultExpandedV1: true, toast: "", navigationOpen: false, menuOptionsOpen: false, appearancePopoverOpen: false, readerMoreOpen: false, readerTranslationOpen: false };
   } catch {
     return defaultState();
   }
