@@ -52,6 +52,10 @@ function eraDate(era){
   const prefix=date.precision==="approximate"?"c. ":"";
   return {uncertain:false,label:prefix+eraYear(date.startYear)+" – "+eraYear(date.endYear)};
 }
+function eraDateSticky(era){
+  const date=eraDate(era);
+  return '<div class="kb-era-date-sentinel" data-kb-era-date-sentinel aria-hidden="true"></div><div class="kb-era-date-sticky" data-kb-era-date-sticky aria-label="Rango temporal"><span class="kb-era-date-label">'+(date.uncertain?'<span class="kb-hatch" aria-hidden="true"></span>':"")+esc(date.label)+'</span></div>';
+}
 export function renderEraStrip(eras,activeId){
   const total=eras.length;
   return eras.map((era,index)=>{
@@ -61,7 +65,7 @@ export function renderEraStrip(eras,activeId){
   }).join("");
 }
 export function renderEraSheet({era,books="",body="",navigation=""}){
-  return '<header class="kb-sheet-heading"><h2>'+esc(era.title)+'</h2><p class="kb-history-context">'+esc(era.subtitle)+'</p></header><div class="kb-sheet-content">'+body+'</div>'+books+navigation;
+  return eraDateSticky(era)+'<header class="kb-sheet-heading"><h2>'+esc(era.title)+'</h2><p class="kb-history-context">'+esc(era.subtitle)+'</p></header><div class="kb-sheet-content">'+body+'</div>'+books+navigation;
 }
 // All eras share the same narrative-card surface. Unreviewed events are clearly labelled.
 export function renderEraOverview({era,books,navigation,events=[],periods=[],readerPath="",basePath="",selectedEvent=null,pericopeSection=""}){
@@ -145,4 +149,41 @@ export function initPericopeSheets(root=document.body){
     if(closeButton)close(closeButton.closest(".kb-pericope-sheet"));
   });
   document.addEventListener("keydown",event=>{const sheet=host.querySelector(".kb-pericope-sheet");if(!sheet)return;if(event.key==="Escape"){event.preventDefault();close(sheet);return}if(event.key!=="Tab")return;const focusable=[...sheet.querySelectorAll("button:not([disabled]),a[href],summary")].filter(el=>el.getClientRects().length);if(!focusable.length)return;const first=focusable[0],last=focusable.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus()}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus()}});
+}
+
+// El rango temporal vive dentro del sheet, pero su estado sticky se deriva del
+// scroll real del contenedor de Historia. Así el render no necesita conocer el
+// ciclo de vida del DOM y el comportamiento funciona en todas las eras.
+export function initEraDateSticky(root){
+  if(!root)return()=>{};
+  const date=root.querySelector("[data-kb-era-date-sticky]"),sentinel=root.querySelector("[data-kb-era-date-sentinel]");
+  if(!date||!sentinel)return()=>{};
+  const scrollRoot=root.closest?.(".page")||null;
+  const setStuck=value=>date.classList.toggle("is-stuck",Boolean(value));
+  if(typeof IntersectionObserver!=="undefined"){
+    const observer=new IntersectionObserver(entries=>setStuck(!entries[0]?.isIntersecting),{root:scrollRoot,threshold:0,rootMargin:"-1px 0px 0px 0px"});
+    observer.observe(sentinel);
+    return()=>observer.disconnect();
+  }
+  const target=scrollRoot||window;
+  let frame=0;
+  const update=()=>{
+    frame=0;
+    const boundary=scrollRoot?.getBoundingClientRect?.().top||0;
+    setStuck(sentinel.getBoundingClientRect().bottom<=boundary+1);
+  };
+  const onScroll=()=>{if(!frame)frame=requestAnimationFrame(update)};
+  target.addEventListener("scroll",onScroll,{passive:true});
+  update();
+  return()=>{target.removeEventListener("scroll",onScroll);if(frame)cancelAnimationFrame(frame)};
+}
+
+if(typeof document!=="undefined"&&typeof MutationObserver!=="undefined"){
+  const detail=document.querySelector("#era-detail");
+  if(detail){
+    let cleanup=()=>{};
+    const bind=()=>{cleanup();cleanup=initEraDateSticky(detail)};
+    new MutationObserver(bind).observe(detail,{childList:true});
+    bind();
+  }
 }

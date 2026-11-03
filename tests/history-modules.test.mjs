@@ -66,7 +66,7 @@ test('generated history routes use the same app shell and controls',()=>{
   for(const html of [generatedStoryRoute,generatedEraRoute]){
     assert.match(html,/<div class="kb-history-app">/);
     assert.match(html,/class="kb-info-button"/);
-    assert.match(html,/history\.css\?v=20261103-pericope-mobile-v1/);
+    assert.match(html,/history\.css\?v=20261103-pericope-mobile-v2/);
     assert.doesNotMatch(html,/href="[^"]*index\.html/);
     assert.doesNotMatch(html,/<body><header class="top"/);
   }
@@ -103,11 +103,15 @@ test('era strip is rendered from the normalized era catalog',()=>{
 
 test('era sheet places related books after content and before era navigation',()=>{
   const html=renderEraSheet({
-    era:{title:'Monarquía',subtitle:'Israel y Judá'},
+    era:{title:'Monarquía',subtitle:'Israel y Judá',date:{startYear:-1000,endYear:-586,precision:'approximate'}},
     books:'<div class="kb-history-books"></div>',
     body:'<div class="kb-sheet-content-marker"></div>',
     navigation:'<nav class="kb-era-nav"></nav>'
   });
+  assert.match(html,/data-kb-era-date-sticky/);
+  assert.match(html,/data-kb-era-date-sentinel/);
+  assert.match(html,/c\. 1000 a\. C\. – 586 a\. C\./);
+  assert.ok(html.indexOf('kb-era-date-sticky')<html.indexOf('kb-sheet-content-marker'));
   assert.ok(html.indexOf('kb-sheet-content-marker')<html.indexOf('kb-history-books'));
   assert.ok(html.indexOf('kb-history-books')<html.indexOf('kb-era-nav'));
 });
