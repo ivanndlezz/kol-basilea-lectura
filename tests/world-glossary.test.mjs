@@ -32,3 +32,12 @@ test('world atlas page renders maps, scopes and accessible search',()=>{
   assert.match(page,/data.scopes/);
   assert.doesNotMatch(page,/data.items.map\(x=>x\.category\)/);
 });
+
+test('world atlas reuses the main app appearance preference',()=>{
+  assert.match(page,/kol-basilea-lectura-v1/);
+  assert.match(page,/appAppearance/);
+  assert.match(page,/data-kb-world-theme/);
+  assert.match(page,/storage/);
+  assert.match(page,/prefers-color-scheme/);
+  assert.match(page,/color-scheme:light/);
+});
