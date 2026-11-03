@@ -7,14 +7,15 @@ import {ERA_SLUGS,eraFromLocation,pathForEra} from '../dist/history-routing.js';
 const snapshot=JSON.parse(await readFile(new URL('../dist/data/history/history-snapshot.json',import.meta.url),'utf8'));
 const historySource=await readFile(new URL('../dist/history.js',import.meta.url),'utf8');
 
-test('era routes are unique and derived from one mapping',()=>{
-  assert.equal(Object.keys(ERA_SLUGS).length,10);
-  assert.equal(new Set(Object.values(ERA_SLUGS)).size,10);
+test('era routes are unique and derived from one mapping',async()=>{
+  assert.equal(Object.keys(ERA_SLUGS).length,11);
+  assert.equal(new Set(Object.values(ERA_SLUGS)).size,11);
   const base='/kol-basilea-lectura/history/';
   for(const [id,slug] of Object.entries(ERA_SLUGS)){
     const url='https://example.org'+base+slug+'/';
     assert.equal(eraFromLocation(base,{pathname:base+slug+'/',href:url}),id);
     assert.equal(pathForEra(base,id),base+slug+'/');
+    await access(new URL(`../dist/history/${slug}/index.html`,import.meta.url));
   }
 });
 
@@ -51,5 +52,8 @@ test('every historical story has a direct route',async()=>{
   }
   const interlude=snapshot.stories.find(story=>story.id==='cuatrocientos-anos-de-silencio');
   assert.equal(interlude?.type,'historical-interlude');
-  assert.ok(snapshot.subEras.find(subEra=>subEra.id==='second-temple--hellenistic')?.storyIds.includes(interlude.id));
+  assert.equal(interlude?.eraId,'intertestamental');
+  assert.equal(interlude?.subEraId,'intertestamental--silence');
+  assert.ok(snapshot.subEras.find(subEra=>subEra.id==='intertestamental--silence')?.storyIds.includes(interlude.id));
+  assert.ok(!snapshot.subEras.find(subEra=>subEra.id==='second-temple--hellenistic')?.storyIds.includes(interlude.id));
 });

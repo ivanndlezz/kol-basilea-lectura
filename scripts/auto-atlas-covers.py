@@ -12,7 +12,7 @@ API="https://commons.wikimedia.org/w/api.php"
 UA="KolBasileaAtlas/1.0 (open-license educational image importer)"
 LICENSES={"cc0","public domain","cc by","cc by-sa","pd-old","pd-art"}
 # Restrict vague names to an explicit biblical/historical context; never match on a name alone.
-CONTEXT={"primeval":"Book of Genesis Bible","patriarchs":"Genesis Bible","exodus-judges":"Exodus Bible","monarchy":"ancient Israel Bible","exile-restoration":"Babylonian exile Bible","second-temple":"Second Temple Jerusalem","apostolic":"early Christianity apostles","patristic":"early Christian church","medieval":"medieval Christianity","modern":"Protestant Reformation"}
+CONTEXT={"primeval":"Book of Genesis Bible","patriarchs":"Genesis Bible","exodus-judges":"Exodus Bible","monarchy":"ancient Israel Bible","exile-restoration":"Babylonian exile Bible","intertestamental":"intertestamental period Second Temple Judaism","second-temple":"Second Temple Jerusalem","apostolic":"early Christianity apostles","patristic":"early Christian church","medieval":"medieval Christianity","modern":"Protestant Reformation"}
 def api(params):
     url=API+"?"+urllib.parse.urlencode(dict(action="query",format="json",**params))
     req=urllib.request.Request(url,headers={"User-Agent":UA})

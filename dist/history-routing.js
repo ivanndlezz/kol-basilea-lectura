@@ -5,6 +5,7 @@ export const ERA_SLUGS = Object.freeze({
   "exodus-judges":"exodo-y-jueces",
   monarchy:"monarquia",
   "exile-restoration":"exilio-y-restauracion",
+  intertestamental:"cuatrocientos-anos-de-silencio",
   "second-temple":"segundo-templo",
   apostolic:"era-apostolica",
   patristic:"cristianismo-antiguo",

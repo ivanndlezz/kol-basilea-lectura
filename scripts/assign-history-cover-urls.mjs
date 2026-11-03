@@ -29,6 +29,7 @@ const CONTEXT = {
   "exodus-judges": "Exodus Joshua Judges Bible art",
   monarchy: "ancient Israel Judah Bible art",
   "exile-restoration": "Babylonian exile Jerusalem Bible art",
+  intertestamental: "intertestamental period Second Temple Jerusalem art",
   "second-temple": "Second Temple Judaism Jerusalem art",
   apostolic: "Jesus apostles early Christianity art",
   patristic: "early Christian church art",

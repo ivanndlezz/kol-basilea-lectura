@@ -47,10 +47,10 @@ Mateo · Marcos · Lucas · Juan
 ```
 
 - **Ruta de lectura:** invitación opcional al completar Malaquías; continuar al siguiente libro según el orden editorial actual, sin imponer el interludio.
-- **Ruta en Eras:** `/history/segundo-templo/cuatrocientos-anos-de-silencio/` (conservar o adaptar a las reglas reales del router).
+- **Ruta en Eras:** `/history/cuatrocientos-anos-de-silencio/`. Debe ser una era diferenciada, independiente de `Segundo Templo tardío`, aunque pueda compartir parte de su contexto histórico.
 - **Tarjeta:** título, subtítulo, categoría «Interludio histórico», sin referencia falsa a un capítulo bíblico.
 - **Artículo:** cabecera, introducción, secciones narrativas, cronología, personajes, fuentes y enlace para seguir con los Evangelios.
-- **Regreso:** enlace claro a Segundo Templo tardío y navegación entre eras.
+- **Regreso:** enlace claro a la cronología y navegación entre eras; no presentar el interludio como una sub-era de Segundo Templo tardío.
 
 ## 4. Arquitectura del artículo
 

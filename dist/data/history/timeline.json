@@ -179,10 +179,36 @@
       "icon": "landmark"
     },
     {
+      "id": "intertestamental",
+      "title": "400 años de silencio",
+      "subtitle": "Entre Malaquías y los Evangelios",
+      "order": 6,
+      "date": {
+        "startYear": -400,
+        "endYear": -4,
+        "precision": "approximate",
+        "label": null
+      },
+      "summary": "Un interludio histórico entre los profetas del Antiguo Testamento y el mundo del Nuevo Testamento: Persia, Grecia, los macabeos y Roma.",
+      "bookIds": [],
+      "color": "#b58a69",
+      "relatedTexts": [
+        "Malaquías",
+        "1 Macabeos",
+        "Lucas 1"
+      ],
+      "groupId": "biblical",
+      "events": [],
+      "subEraIds": [
+        "intertestamental--silence"
+      ],
+      "icon": "hourglass"
+    },
+    {
       "id": "second-temple",
       "title": "Segundo Templo tardío",
       "subtitle": "Helenismo y Roma",
-      "order": 6,
+      "order": 7,
       "date": {
         "startYear": -400,
         "endYear": -4,
@@ -214,7 +240,7 @@
       "id": "apostolic",
       "title": "Jesús y los apóstoles",
       "subtitle": "Cristianismo del siglo I",
-      "order": 7,
+      "order": 8,
       "date": {
         "startYear": -4,
         "endYear": 100,
@@ -249,7 +275,7 @@
       "id": "patristic",
       "title": "Cristianismo antiguo",
       "subtitle": "Padres y concilios",
-      "order": 8,
+      "order": 9,
       "date": {
         "startYear": 100,
         "endYear": 750,
@@ -280,7 +306,7 @@
       "id": "medieval",
       "title": "Cristianismo medieval",
       "subtitle": "Tradiciones y escolástica",
-      "order": 9,
+      "order": 10,
       "date": {
         "startYear": 750,
         "endYear": 1500,
@@ -309,7 +335,7 @@
       "id": "modern",
       "title": "Reformas y modernidad",
       "subtitle": "Del siglo XVI al presente",
-      "order": 10,
+      "order": 11,
       "date": {
         "startYear": 1500,
         "endYear": null,
@@ -6528,14 +6554,14 @@
     },
     {
       "id": "cuatrocientos-anos-de-silencio",
-      "eraId": "second-temple",
+      "eraId": "intertestamental",
       "order": 1,
       "title": "400 años de silencio",
       "subtitle": "Entre Malaquías y los Evangelios",
       "reference": "Malaquías 4:5–6 · Lucas 1:5–17",
       "summary": "El mundo cambió mientras Israel esperaba: persas, griegos, macabeos y romanos prepararon el escenario histórico de los Evangelios.",
       "synopsis": "Entre los últimos profetas del Antiguo Testamento y Juan el Bautista transcurrieron aproximadamente cuatro siglos. No fueron cuatrocientos años sin historia: cambiaron los imperios, las lenguas y las instituciones de Judea.",
-      "subEraId": "second-temple--hellenistic",
+      "subEraId": "intertestamental--silence",
       "type": "historical-interlude",
       "sections": [
         {
@@ -6871,13 +6897,23 @@
       "icon": "landmark"
     },
     {
+      "id": "intertestamental--silence",
+      "eraId": "intertestamental",
+      "order": 1,
+      "title": "Entre Malaquías y los Evangelios",
+      "storyIds": [
+        "cuatrocientos-anos-de-silencio"
+      ],
+      "eventIds": [],
+      "status": "outline",
+      "icon": "hourglass"
+    },
+    {
       "id": "second-temple--hellenistic",
       "eraId": "second-temple",
       "order": 1,
       "title": "Mundo helenístico",
-      "storyIds": [
-        "cuatrocientos-anos-de-silencio"
-      ],
+      "storyIds": [],
       "eventIds": [
         "alexander"
       ],

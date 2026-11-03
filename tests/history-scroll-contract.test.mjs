@@ -21,8 +21,8 @@ test('one vertical scrolling surface; cards and timeline are not sticky',()=>{
 });
 
 test('historical eras have a single data source',async()=>{
-  assert.equal(timeline.eras.length,10);
-  assert.equal(new Set(timeline.eras.map(e=>e.id)).size,10);
+  assert.equal(timeline.eras.length,11);
+  assert.equal(new Set(timeline.eras.map(e=>e.id)).size,11);
   assert.match(js,/data\.eras/);
   for(const path of ['history/index.html','history/historia-primigenia/index.html','history/patriarcas/index.html']){
     const html=await load(path);
