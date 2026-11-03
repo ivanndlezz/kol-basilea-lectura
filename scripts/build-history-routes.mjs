@@ -1,4 +1,4 @@
-import {access,mkdir,readFile,writeFile} from "node:fs/promises";
+import {mkdir,readFile,writeFile} from "node:fs/promises";
 import path from "node:path";
 
 const timeline=JSON.parse(await readFile("dist/data/history/timeline.json","utf8"));
@@ -26,7 +26,8 @@ for(const era of timeline.eras||[]){
   const slug=slugs[era.id];
   if(!slug)throw new Error(`No route slug for era ${era.id}`);
   const output=path.join("dist/history",slug,"index.html");
-  try{await access(output)}catch{await mkdir(path.dirname(output),{recursive:true});await writeFile(output,eraTemplate)}
+  await mkdir(path.dirname(output),{recursive:true});
+  await writeFile(output,eraTemplate);
 }
 for(const story of timeline.stories||[]){
   const slug=slugs[story.eraId];

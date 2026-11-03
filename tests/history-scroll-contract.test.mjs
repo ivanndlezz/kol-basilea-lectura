@@ -28,7 +28,9 @@ test('historical eras have a single data source',async()=>{
   assert.match(js,/data\.eras/);
   for(const path of ['history/index.html','history/historia-primigenia/index.html','history/patriarcas/index.html']){
     const html=await load(path);
-    assert.match(html,/id="era-strip"[^>]*><button class="era"/);
+    assert.match(html,/<div class="kb-history-app">/);
+    assert.match(html,/id="era-strip"/);
+    assert.match(html,/class="kb-info-button"/);
     assert.match(html,/history\.js\?v=[a-z0-9-]+/);
   }
 });

@@ -9,6 +9,7 @@ const snapshot=JSON.parse(await readFile(new URL('../dist/data/history/history-s
 const historySource=await readFile(new URL('../dist/history.js',import.meta.url),'utf8');
 const sheetSource=await readFile(new URL('../dist/history-sheet-ui.js',import.meta.url),'utf8');
 const generatedStoryRoute=await readFile(new URL('../dist/history/cuatrocientos-anos-de-silencio/cuatrocientos-anos-de-silencio/index.html',import.meta.url),'utf8');
+const generatedEraRoute=await readFile(new URL('../dist/history/exodo-y-jueces/index.html',import.meta.url),'utf8');
 
 test('era routes are unique and derived from one mapping',async()=>{
   assert.equal(Object.keys(ERA_SLUGS).length,11);
@@ -60,11 +61,13 @@ test('history uses one normalized public snapshot',()=>{
   assert.match(historySource,/pericopesByEra/);
 });
 
-test('generated story routes use the same history app shell and controls',()=>{
-  assert.match(generatedStoryRoute,/<div class="kb-history-app">/);
-  assert.match(generatedStoryRoute,/class="kb-info-button"/);
-  assert.match(generatedStoryRoute,/history\.css\?v=history-route-fix-v3/);
-  assert.doesNotMatch(generatedStoryRoute,/<body><header class="top"/);
+test('generated history routes use the same app shell and controls',()=>{
+  for(const html of [generatedStoryRoute,generatedEraRoute]){
+    assert.match(html,/<div class="kb-history-app">/);
+    assert.match(html,/class="kb-info-button"/);
+    assert.match(html,/history\.css\?v=history-route-fix-v3/);
+    assert.doesNotMatch(html,/<body><header class="top"/);
+  }
 });
 
 test('pericopes use a compact reading index without editorial artwork',()=>{
