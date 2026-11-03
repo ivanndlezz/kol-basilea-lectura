@@ -98,6 +98,13 @@ test('world atlas cards use an accessible carousel with optional imagery',()=>{
   assert.match(page,/item\.image/);
 });
 
+test('world atlas confines horizontal overflow to intentional controls',()=>{
+  assert.match(page,/html,body\{max-width:100%;overflow-x:hidden\}/);
+  assert.match(page,/\.atlas-carousel-viewport\{width:100%;max-width:100%;min-width:0/);
+  assert.match(page,/\.atlas-carousel-track\{width:max-content;min-width:100%\}/);
+  assert.match(page,/\.map-level\{grid-template-columns:clamp\(50px,18vw,62px\) minmax\(0,1fr\)/);
+});
+
 test('world atlas card items have local image assets',async()=>{
   const cardItems=data.items.filter(item=>['peoples-nations','communities'].includes(item.scopeId));
   assert.equal(cardItems.length,17);
