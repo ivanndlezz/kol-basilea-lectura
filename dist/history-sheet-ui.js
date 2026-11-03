@@ -61,7 +61,7 @@ export function renderEraStrip(eras,activeId){
   }).join("");
 }
 export function renderEraSheet({era,books="",body="",navigation=""}){
-  return '<header class="kb-sheet-heading"><h2>'+esc(era.title)+'</h2><p class="kb-history-context">'+esc(era.subtitle)+'</p></header>'+books+'<div class="kb-sheet-content">'+body+'</div>'+navigation;
+  return '<header class="kb-sheet-heading"><h2>'+esc(era.title)+'</h2><p class="kb-history-context">'+esc(era.subtitle)+'</p></header><div class="kb-sheet-content">'+body+'</div>'+books+navigation;
 }
 // All eras share the same narrative-card surface. Unreviewed events are clearly labelled.
 export function renderEraOverview({era,books,navigation,events=[],periods=[],readerPath="",basePath="",selectedEvent=null,pericopeSection=""}){

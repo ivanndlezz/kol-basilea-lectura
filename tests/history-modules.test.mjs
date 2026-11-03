@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {access,readdir,readFile} from 'node:fs/promises';
 import {loadHistoryData} from '../dist/history-data.js';
 import {ERA_SLUGS,eraFromLocation,pathForEra,resolveHistoryAssetUrl,storyFromLocation} from '../dist/history-routing.js';
-import {pericopeList,renderEraStrip} from '../dist/history-sheet-ui.js';
+import {pericopeList,renderEraSheet,renderEraStrip} from '../dist/history-sheet-ui.js';
 import {normalizeDirectoryUrl} from '../dist/url-routing.js';
 
 const snapshot=JSON.parse(await readFile(new URL('../dist/data/history/history-snapshot.json',import.meta.url),'utf8'));
@@ -99,6 +99,17 @@ test('era strip is rendered from the normalized era catalog',()=>{
   assert.match(html,/data-id="exodus-judges" aria-pressed="true"/);
   assert.match(html,/400 años de silencio/);
   assert.match(historySource,/stripEl\.innerHTML=renderEraStrip\(eras,active\)/);
+});
+
+test('era sheet places related books after content and before era navigation',()=>{
+  const html=renderEraSheet({
+    era:{title:'Monarquía',subtitle:'Israel y Judá'},
+    books:'<div class="kb-history-books"></div>',
+    body:'<div class="kb-sheet-content-marker"></div>',
+    navigation:'<nav class="kb-era-nav"></nav>'
+  });
+  assert.ok(html.indexOf('kb-sheet-content-marker')<html.indexOf('kb-history-books'));
+  assert.ok(html.indexOf('kb-history-books')<html.indexOf('kb-era-nav'));
 });
 
 test('pericopes use a compact reading index without editorial artwork',()=>{
