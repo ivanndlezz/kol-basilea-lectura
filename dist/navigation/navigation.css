@@ -1,0 +1,20 @@
+.kb-global-menu-trigger{margin-left:auto;display:grid;place-items:center;width:44px;height:44px;flex:0 0 44px;border:0;border-radius:14px;background:transparent;color:inherit;cursor:pointer}
+#kb-global-navigation[hidden]{display:none!important}
+#kb-global-navigation{position:fixed;inset:0;z-index:2000;display:flex;justify-content:flex-end}
+.kb-global-nav-backdrop{position:absolute;inset:0;background:rgba(12,25,20,.43)}
+.kb-global-nav-sheet{position:relative;width:min(88vw,390px);height:100dvh;overflow:auto;overscroll-behavior:contain;background:var(--paper,#f6f7f4);color:var(--ink,#20332c);padding:calc(env(safe-area-inset-top) + 24px) 22px calc(env(safe-area-inset-bottom) + 22px);box-shadow:-20px 0 60px rgba(0,0,0,.12)}
+.kb-global-nav-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.kb-global-nav-head small{font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.65}
+.kb-global-nav-head h2{font-size:32px;letter-spacing:-.05em;margin:4px 0 0}
+.kb-global-nav-head button{width:42px;height:42px;border:0;border-radius:50%;background:rgba(128,128,128,.1);color:inherit;font-size:26px;cursor:pointer}
+.kb-global-nav-sheet nav{display:grid;gap:5px}
+.kb-global-nav-link{display:flex;align-items:center;gap:12px;min-height:66px;padding:10px 12px;border-radius:17px;color:inherit;text-decoration:none}
+.kb-global-nav-link:hover,.kb-global-nav-link[aria-current="page"]{background:rgba(120,150,120,.13)}
+.kb-global-nav-link span{display:grid;gap:4px}
+.kb-global-nav-link strong{font-size:15px}
+.kb-global-nav-link small{font-size:12px;opacity:.68}
+.kb-global-nav-open{overflow:hidden}
+@media(prefers-color-scheme:dark){#kb-global-navigation[data-appearance="system"] .kb-global-nav-sheet{background:#101a15;color:#f2f4ee}}
+#kb-global-navigation[data-appearance="dark"] .kb-global-nav-sheet{background:#101a15;color:#f2f4ee}
+#kb-global-navigation[data-appearance="light"] .kb-global-nav-sheet{background:#f6f7f4;color:#20332c}
+@media(prefers-reduced-motion:no-preference){.kb-global-nav-sheet{animation:kb-global-slide .22s ease-out}@keyframes kb-global-slide{from{transform:translateX(18px);opacity:.8}to{transform:translateX(0);opacity:1}}}
