@@ -30,3 +30,16 @@ if(typeof document!=="undefined"&&!window.__kbStoryImageFallback){
     img.remove(); // The editorial fallback is already present underneath.
   },true);
 }
+
+// The Bible-history hub is a sibling of the era selector, not another era.
+if(typeof document!=="undefined"&&!window.__kbBibleHistoryEntry){
+  window.__kbBibleHistoryEntry=true;
+  const selector=document.querySelector("#selector");
+  if(selector){
+    const entry=document.createElement("section");
+    entry.className="kb-history-bible-entry";
+    entry.setAttribute("aria-labelledby","kb-history-bible-entry-title");
+    entry.innerHTML='<div><span class="kb-history-bible-entry-kicker">Nueva sección</span><h2 id="kb-history-bible-entry-title">Historia de la Biblia</h2><p>Formación, transmisión, colecciones y traducciones.</p></div><a href="./biblia/">Explorar <span aria-hidden="true">›</span></a>';
+    selector.before(entry);
+  }
+}

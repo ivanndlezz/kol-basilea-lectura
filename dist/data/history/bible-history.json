@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "bible-history",
+  "eyebrow": "Historia de la Escritura",
+  "title": "Historia de la Biblia",
+  "intro": "Una guía para seguir la Biblia como una colección de textos: sus tradiciones, su composición, sus comunidades y sus traducciones.",
+  "note": "No hubo un único momento en que “se escribió la Biblia”. Se trata de procesos largos, con distintas colecciones, lenguas y comunidades. Las etiquetas aquí son orientativas y no sustituyen una historia especializada de cada texto.",
+  "sections": [
+    {
+      "id": "formation",
+      "layout": "timeline",
+      "eyebrow": "Formación",
+      "title": "De la memoria al texto",
+      "intro": "Antes de ser una colección encuadernada, las tradiciones bíblicas circularon en comunidades, fueron puestas por escrito y recibieron distintas formas literarias.",
+      "items": [
+        {"title":"Memoria y tradición","period":"Antes de los manuscritos conservados","text":"Relatos, genealogías, leyes, poemas y oraciones se transmitieron en contextos familiares, comunitarios y de culto.","reference":"Tradición oral y memoria comunitaria"},
+        {"title":"Composición y edición","period":"Procesos prolongados","text":"Los textos fueron redactados, reunidos, reorganizados y editados en diferentes momentos. Un libro puede conservar capas y voces diversas.","reference":"Composición literaria"},
+        {"title":"Colecciones de libros","period":"La Biblia como biblioteca","text":"Las comunidades recibieron conjuntos de escritos, no todos con el mismo orden, extensión o estatus en cada tradición.","reference":"Torá, Profetas, Escritos y escritos apostólicos"}
+      ]
+    },
+    {
+      "id": "languages",
+      "layout": "definitions",
+      "eyebrow": "Lenguas",
+      "title": "Tres lenguas, muchos contextos",
+      "intro": "La historia bíblica también es una historia lingüística. La lengua de un pasaje aporta contexto, pero no reduce el texto a una sola cultura moderna.",
+      "items": [
+        {"term":"Hebreo","label":"Lengua principal de las Escrituras de Israel","text":"La mayor parte de la Biblia hebrea está escrita en hebreo, con variedades y épocas distintas.","meta":"Poesía, narrativa, ley y profecía"},
+        {"term":"Arameo","label":"Lengua presente en secciones concretas","text":"Algunos pasajes bíblicos conservan arameo, una lengua ampliamente usada en el antiguo Cercano Oriente.","meta":"Pasajes de Daniel y Esdras, entre otros"},
+        {"term":"Griego","label":"Lengua del Nuevo Testamento y de traducciones antiguas","text":"El Nuevo Testamento fue transmitido en griego koiné; también existen antiguas traducciones griegas de las Escrituras de Israel.","meta":"Traducción, circulación y comunidades mediterráneas"}
+      ]
+    },
+    {
+      "id": "transmission",
+      "layout": "list",
+      "eyebrow": "Transmisión",
+      "title": "Cómo llegó hasta nosotros",
+      "intro": "Conservar un texto implicó copiarlo, leerlo, compararlo y volverlo accesible. La transmisión tiene tanto una dimensión material como comunitaria.",
+      "items": [
+        {"title":"Manuscritos","text":"Los textos circularon en rollos y códices. Cada copia pertenece a una cadena de transmisión y puede presentar variantes.","tag":"Soporte material"},
+        {"title":"Lectura pública","text":"La lectura en asambleas, sinagogas e iglesias mantuvo los textos vinculados a prácticas concretas y a comunidades vivas.","tag":"Uso comunitario"},
+        {"title":"Comparación de testigos","text":"Los estudios textuales comparan manuscritos, citas antiguas y traducciones para reconstruir la historia de cada pasaje con transparencia.","tag":"Crítica textual"}
+      ]
+    },
+    {
+      "id": "collections",
+      "layout": "communities",
+      "eyebrow": "Colecciones y comunidades",
+      "title": "No todas las Biblias tienen el mismo índice",
+      "intro": "La palabra “Biblia” reúne tradiciones relacionadas, pero sus comunidades pueden diferir en el orden, el número y la recepción de los libros.",
+      "items": [
+        {"title":"Tradición judía","text":"La colección de la Biblia hebrea se organiza como Torá, Profetas y Escritos. Su orden y su marco de lectura son propios.","mark":"ת"},
+        {"title":"Tradiciones cristianas","text":"Las iglesias reciben las Escrituras de Israel junto con los escritos apostólicos, con diferencias de canon entre comunidades.","mark":"✝"},
+        {"title":"Comunidades y traducciones antiguas","text":"La circulación por distintas regiones produjo traducciones, colecciones y formas de lectura que dejaron huella en la historia bíblica.","mark":"文"}
+      ]
+    },
+    {
+      "id": "translations",
+      "layout": "cards",
+      "eyebrow": "Traducciones",
+      "title": "La Biblia cruza fronteras",
+      "intro": "Traducir no es solamente cambiar palabras: también implica decidir cómo comunicar nombres, imágenes, géneros literarios y conceptos en otra lengua.",
+      "items": [
+        {"title":"Traducciones antiguas","text":"Las traducciones griegas, arameas, latinas y de otras lenguas hicieron posible que nuevas comunidades leyeran los textos.","tag":"Circulación"},
+        {"title":"Versiones y revisiones","text":"Una traducción puede revisarse cuando aparecen nuevos manuscritos, cambia el uso de la lengua o se busca mayor claridad para sus lectores.","tag":"Historia editorial"},
+        {"title":"Lecturas contemporáneas","text":"Las versiones actuales declaran sus criterios de traducción. Compararlas permite observar decisiones, énfasis y límites.","tag":"Herramienta de lectura"}
+      ]
+    }
+  ]
+}
