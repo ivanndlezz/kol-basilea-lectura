@@ -295,7 +295,24 @@ html[data-kb-history-theme="light"]{color-scheme:light}
 .kb-history-app .kb-story-book-item[hidden]{display:none}
 .kb-history-app .kb-story-book-item>.kb-story{height:100%}
 
-.kb-history-app .kb-filtered-pericopes .kb-pericope-group[hidden],.kb-history-app .kb-filtered-pericopes .kb-story[hidden]{display:none}
+.kb-history-app .kb-filtered-pericopes .kb-pericope-group[hidden],.kb-history-app .kb-filtered-pericopes .kb-story[hidden],.kb-history-app .kb-filtered-pericopes .kb-pericope-row[hidden]{display:none}
+.kb-history-app .kb-pericope-books{display:grid;gap:8px;margin:12px 0 24px}
+.kb-history-app .kb-pericope-book{border:1px solid #dfe6df;border-radius:14px;background:#fff;overflow:hidden}
+.kb-history-app .kb-pericope-book>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;cursor:pointer;list-style:none;font:650 15px/1.3 system-ui,sans-serif;color:var(--ink)}
+.kb-history-app .kb-pericope-book>summary::-webkit-details-marker{display:none}
+.kb-history-app .kb-pericope-book>summary:after{content:"+";color:var(--green);font-size:20px;font-weight:400}
+.kb-history-app .kb-pericope-book[open]>summary:after{content:"−"}
+.kb-history-app .kb-pericope-book>summary small{margin-left:auto;color:#738078;font:500 12px/1.3 system-ui,sans-serif}
+.kb-history-app .kb-pericope-rows{border-top:1px solid #edf0ec}
+.kb-history-app .kb-pericope-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;padding:12px 15px;color:var(--ink);text-decoration:none}
+.kb-history-app .kb-pericope-row+.kb-pericope-row{border-top:1px solid #edf0ec}
+.kb-history-app .kb-pericope-row:hover{background:#fafcf9}
+.kb-history-app .kb-pericope-row-copy{display:grid;gap:3px;min-width:0}
+.kb-history-app .kb-pericope-row-copy small{font:600 11px/1.3 system-ui,sans-serif;color:#547361}
+.kb-history-app .kb-pericope-row-copy strong{font:600 14px/1.35 system-ui,sans-serif;overflow-wrap:anywhere}
+.kb-history-app .kb-pericope-row-copy em{font:400 11px/1.3 system-ui,sans-serif;color:#89958d;font-style:normal}
+.kb-history-app .kb-pericope-row-arrow{font:400 25px/1 system-ui,sans-serif;color:var(--green)}
+.kb-history-app .kb-pericope-group>h3{margin:18px 0 8px;font:650 15px/1.3 system-ui,sans-serif;color:#5d6d63}
 
 /* Story details: editorial cover, readable synopsis and clear reading invitation. */
 .kb-story-detail-hero{display:grid;grid-template-columns:minmax(112px,35%) 1fr;align-items:center;gap:clamp(16px,4vw,32px);margin:22px 0 30px}

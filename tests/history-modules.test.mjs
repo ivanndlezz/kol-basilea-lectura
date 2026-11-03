@@ -3,9 +3,11 @@ import assert from 'node:assert/strict';
 import {access,readFile} from 'node:fs/promises';
 import {loadHistoryData} from '../dist/history-data.js';
 import {ERA_SLUGS,eraFromLocation,pathForEra} from '../dist/history-routing.js';
+import {pericopeList} from '../dist/history-sheet-ui.js';
 
 const snapshot=JSON.parse(await readFile(new URL('../dist/data/history/history-snapshot.json',import.meta.url),'utf8'));
 const historySource=await readFile(new URL('../dist/history.js',import.meta.url),'utf8');
+const sheetSource=await readFile(new URL('../dist/history-sheet-ui.js',import.meta.url),'utf8');
 
 test('era routes are unique and derived from one mapping',async()=>{
   assert.equal(Object.keys(ERA_SLUGS).length,11);
@@ -42,6 +44,14 @@ test('history uses one normalized public snapshot',()=>{
   assert.doesNotMatch(historySource,/pericopes-generated\.json/);
   assert.doesNotMatch(historySource,/data\/history\/pericopes\.json/);
   assert.match(historySource,/pericopesByEra/);
+});
+
+test('pericopes use a compact reading index without editorial artwork',()=>{
+  const html=pericopeList([{bookId:'genesis',start:{chapter:1,verse:1},end:{chapter:1,verse:2},title:'La creación'}],{readerPath:'/index.html',bookNames:{genesis:'Génesis'},statusLabel:'Borrador'});
+  assert.match(sheetSource,/export function pericopeList/);
+  assert.match(html,/kb-pericope-book/);
+  assert.match(html,/Génesis 1:1–2/);
+  assert.doesNotMatch(html,/kb-story-art|kb-story-image/);
 });
 
 test('every historical story has a direct route',async()=>{

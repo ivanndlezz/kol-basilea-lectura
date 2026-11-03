@@ -68,3 +68,25 @@ export function renderEraOverview({era,books,navigation,events=[],periods=[],rea
   const body=intro+pericopeSection+'<p class="kb-history-explorer-note">Estos acontecimientos todavía no son relatos editoriales revisados. Las fichas se incorporarán tras su validación.</p>'+cards;
   return renderEraSheet({era,books,body,navigation});
 }
+
+export function pericopeList(items,{readerPath="",bookNames={},statusLabel="Perícopa propuesta"}={}){
+  const groups=new Map();
+  for(const item of items){
+    const bookId=item.bookId||"unknown";
+    if(!groups.has(bookId))groups.set(bookId,[]);
+    groups.get(bookId).push(item);
+  }
+  const range=item=>{
+    const start=item.start||{},end=item.end||start;
+    const book=bookNames[item.bookId]||item.bookName||item.bookId||"Texto bíblico";
+    const first=book+" "+start.chapter+":"+start.verse;
+    const last=(end.chapter&&end.chapter!==start.chapter?end.chapter+":"+"":"")+(end.verse||start.verse);
+    return first+(last&&last!==String(start.verse)?"–"+last:"");
+  };
+  const rows=items=>'<div class="kb-pericope-rows">'+items.map(item=>{
+    const href=readerPath+'?book='+encodeURIComponent(item.bookId||"")+'&chapter='+encodeURIComponent(item.start?.chapter||1)+'&verse='+encodeURIComponent(item.start?.verse||1);
+    const title=item.title||("Perícopa · "+range(item));
+    return '<a class="kb-pericope-row" data-book-id="'+esc(item.bookId||"")+'" href="'+esc(href)+'"><span class="kb-pericope-row-copy"><small>'+esc(range(item))+'</small><strong>'+esc(title)+'</strong><em>'+esc(statusLabel)+'</em></span><span class="kb-pericope-row-arrow" aria-hidden="true">›</span></a>';
+  }).join("")+'</div>';
+  return '<div class="kb-pericope-books">'+[...groups.entries()].map(([bookId,group],index)=>'<details class="kb-pericope-book"'+(index===0?' open':'')+'><summary><span>'+esc(bookNames[bookId]||group[0].bookName||bookId)+'</span><small>'+group.length+' '+(group.length===1?'perícopa':'perícopas')+'</small></summary>'+rows(group)+'</details>').join("")+'</div>';
+}
