@@ -9,5 +9,6 @@ test('hamburger menu exposes Bible cross references in a new tab',()=>{
   assert.match(app,/target = "_blank"/);
   assert.match(app,/rel = "noopener noreferrer"/);
   assert.match(app,/kb-bible-cross-references-link/);
-  assert.match(app,/kb-atlas-menu-disabled/) ;
+  assert.match(app,/const sheet = document\.querySelector\("#kb-navigation-sheet"\)/);
+  assert.match(app,/sheet\.querySelector\("\.kb-atlas-menu"\)\?\.before\(link\)/);
 });

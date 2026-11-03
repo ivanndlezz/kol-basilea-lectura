@@ -1047,15 +1047,15 @@ window.addEventListener("online", () => {
 // External Bible cross-reference explorer: keep it in the hamburger menu without coupling it to an internal view.
 const BIBLE_CROSS_REFERENCES_URL = "https://trekhleb.dev/bible-cross-references/es/?ref=Ps.119&t=vbl";
 function ensureBibleCrossReferencesLink() {
-  const panel = document.querySelector("#kb-atlas-menu-panel");
-  if (!panel || panel.querySelector(".kb-bible-cross-references-link")) return;
+  const sheet = document.querySelector("#kb-navigation-sheet");
+  if (!sheet || sheet.querySelector(".kb-bible-cross-references-link")) return;
   const link = document.createElement("a");
-  link.className = "kb-bible-cross-references-link";
+  link.className = "kb-navigation-project kb-bible-cross-references-link";
   link.href = BIBLE_CROSS_REFERENCES_URL;
   link.target = "_blank";
   link.rel = "noopener noreferrer";
   link.innerHTML = `Referencias cruzadas de la Biblia ${icon("externalLink", 15)}`;
-  panel.querySelector(".kb-atlas-menu-disabled")?.before(link);
+  sheet.querySelector(".kb-atlas-menu")?.before(link);
 }
 new MutationObserver(ensureBibleCrossReferencesLink).observe(document.body, {childList:true, subtree:true});
 ensureBibleCrossReferencesLink();
