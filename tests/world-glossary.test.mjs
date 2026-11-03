@@ -25,12 +25,22 @@ test('world atlas keeps historical entities distinct from linguistic labels',()=
 });
 
 test('world atlas page renders maps, scopes and accessible search',()=>{
+  assert.match(page,/class="map-switcher"/);
   assert.match(page,/id="map-tabs"/);
+  assert.match(page,/id="map-tickmarks"/);
   assert.match(page,/id="scope-filters"/);
   assert.match(page,/aria-label="Buscar fichas del atlas"/);
   assert.match(page,/data.maps/);
   assert.match(page,/data.scopes/);
   assert.doesNotMatch(page,/data.items.map\(x=>x\.category\)/);
+});
+
+test('world atlas map selector behaves like the era strip',()=>{
+  assert.match(page,/const focusMapChip=/);
+  assert.match(page,/mapTabs\.addEventListener\("touchstart"/);
+  assert.match(page,/mapTabs\.addEventListener\("scroll"/);
+  assert.match(page,/aria-controls="map-view"/);
+  assert.match(page,/map-tab-count/);
 });
 
 test('world atlas reuses the main app appearance preference',()=>{
