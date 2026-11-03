@@ -4,6 +4,7 @@ import {readFile} from "node:fs/promises";
 import {isApprovedStoryCover,storyCard} from "../dist/history-sheet-ui.js";
 
 const data=JSON.parse(await readFile(new URL("../dist/data/history/timeline.json", import.meta.url), "utf8"));
+const generated=JSON.parse(await readFile(new URL("../dist/data/history/pericopes-generated.json", import.meta.url), "utf8"));
 const story=id=>data.stories.find(item=>item.id===id);
 const protectedIds=["creacion","caida","cain-y-abel","primeras-ciudades-y-reinos","diluvio","babel","llamado-de-abram","abram-en-egipto","relato-pc-021","relato-lucas-2-1"];
 
@@ -38,4 +39,9 @@ test("approved local covers exist as files in the deployed directory",async()=>{
     assert.equal(bytes.toString("ascii",0,4),"RIFF","Invalid WebP for "+item.id);
     assert.equal(bytes.toString("ascii",8,12),"WEBP","Invalid WebP for "+item.id);
   }
+});
+
+test("generated pericopes always have a safe end range",()=>{
+  assert.ok(generated.items.length>0);
+  assert.equal(generated.items.filter(item=>!item.end).length,0);
 });

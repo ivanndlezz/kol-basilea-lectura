@@ -11,11 +11,15 @@ for(const book of catalog){
   const chapters=data.chapters||[{number:data.chapter,sections:data.sections}];
   let count=0;
   for(const chapter of chapters){
-   const sections=chapter.sections||[];
+    const sections=chapter.sections||[];
+    const ch=Number(chapter.number);
    for(let i=0;i<sections.length;i++){
-    const section=sections[i],start=Number(section.startVerse),ch=Number(chapter.number),next=sections[i+1];
+    const section=sections[i],start=Number(section.startVerse),next=sections[i+1];
     const nextStart=next?Number(next.startVerse):null;
-    const end=nextStart!==null&&Number.isInteger(nextStart)&&nextStart>start?nextStart-1:null;
+    let end=nextStart!==null&&Number.isInteger(nextStart)&&nextStart>start?nextStart-1:null;
+    // The UI requires a closed range. Do not publish an open-ended draft
+    // section until its final verse has been editorially resolved.
+    if(end===null)continue;
     if(!Number.isInteger(start)||start<1){errors.push({bookId:book.id,chapter:ch,start,end});continue}
     if(nextStart!==null&&(!Number.isInteger(nextStart)||nextStart<=start))errors.push({bookId:book.id,chapter:ch,start,nextStart,reason:"non-increasing-source-headings"});
     items.push({id:book.id+"-"+ch+"-"+start,bookId:book.id,bookName:book.name,start:{chapter:ch,verse:start},end:end===null?null:{chapter:ch,verse:end},title:section.title,sourceTitle:section.sourceTitle||null,reviewStatus:section.status==="reviewed"?"reviewed":"draft",eraId:null,subEraId:null});
