@@ -83,6 +83,8 @@ const defaultState = () => ({
 });
 
 let state = loadState();
+const requestedView = new URL(location.href).searchParams.get("view");
+if (readerNavigationItems().some(item=>item.view===requestedView)) { state.view=requestedView; state.onboardingComplete=true; }
 let toastTimer;
 let readerProgressBound = false;
 let readerProgressFrame = null;
