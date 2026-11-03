@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
+import {access,readFile} from 'node:fs/promises';
 
 const data=JSON.parse(await readFile(new URL('../dist/data/history/world-glossary.json',import.meta.url),'utf8'));
 const page=await readFile(new URL('../dist/history/world/index.html',import.meta.url),'utf8');
@@ -81,4 +81,13 @@ test('world atlas cards use an accessible carousel with optional imagery',()=>{
   assert.match(page,/data-carousel-next/);
   assert.match(page,/renderCardMedia/);
   assert.match(page,/item\.image/);
+});
+
+test('world atlas card items have local image assets',async()=>{
+  const cardItems=data.items.filter(item=>['peoples-nations','communities'].includes(item.scopeId));
+  assert.equal(cardItems.length,17);
+  for(const item of cardItems){
+    assert.equal(item.image,`/kol-basilea-lectura/assets/images/atlas/world/${item.id}.webp`);
+    await access(new URL(`../dist/assets/images/atlas/world/${item.id}.webp`,import.meta.url));
+  }
 });

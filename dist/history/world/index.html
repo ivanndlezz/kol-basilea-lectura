@@ -77,6 +77,7 @@ let activeMap=data.maps[0].id,selectedScope="Todos",mapScrollSelectionTimer=null
 const mapMarkers=document.querySelector("#map-tickmarks"),mapTicks=Array.from(mapMarkers.children);
 const esc=value=>String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const normalize=value=>String(value??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const resolveWorldAssetUrl=src=>{const value=String(src??"");if(value.startsWith("/kol-basilea-lectura/")&&location.pathname.startsWith("/history/"))return value.replace("/kol-basilea-lectura/","/");return value};
 const statusLabel={tradition:"Tradición textual",textual:"Uso textual",historical:"Contexto histórico",geographic:"Geografía",debated:"Debatido",contextual:"Contexto histórico","modern-classification":"Clasificación moderna","partial-sources":"Fuentes parciales",uncertain:"Identificación incierta"};
 const scopePresentation={
   "peoples-nations":{eyebrow:"Poblaciones y poderes",layout:"cards",itemLabel:"Pueblo o nación"},
@@ -95,7 +96,7 @@ function itemMeta(item){
   return {status,regions,statusClass,context:regions.length?regions.join(" · "):""};
 }
 function renderCardMedia(item,scope){
-  if(item.image)return '<div class="atlas-card-media"><img src="'+esc(item.image)+'" alt="" loading="lazy" decoding="async"></div>';
+  if(item.image)return '<div class="atlas-card-media"><img src="'+esc(resolveWorldAssetUrl(item.image))+'" alt="" loading="lazy" decoding="async"></div>';
   const initial=String(item.title||scope.label||"·").trim().charAt(0).toUpperCase();
   return '<div class="atlas-card-media atlas-card-media--fallback" aria-hidden="true"><span>'+esc(initial)+'</span></div>';
 }
