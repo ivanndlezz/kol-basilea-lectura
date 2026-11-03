@@ -8,6 +8,7 @@ import {pericopeList} from '../dist/history-sheet-ui.js';
 const snapshot=JSON.parse(await readFile(new URL('../dist/data/history/history-snapshot.json',import.meta.url),'utf8'));
 const historySource=await readFile(new URL('../dist/history.js',import.meta.url),'utf8');
 const sheetSource=await readFile(new URL('../dist/history-sheet-ui.js',import.meta.url),'utf8');
+const generatedStoryRoute=await readFile(new URL('../dist/history/cuatrocientos-anos-de-silencio/cuatrocientos-anos-de-silencio/index.html',import.meta.url),'utf8');
 
 test('era routes are unique and derived from one mapping',async()=>{
   assert.equal(Object.keys(ERA_SLUGS).length,11);
@@ -57,6 +58,13 @@ test('history uses one normalized public snapshot',()=>{
   assert.doesNotMatch(historySource,/pericopes-generated\.json/);
   assert.doesNotMatch(historySource,/data\/history\/pericopes\.json/);
   assert.match(historySource,/pericopesByEra/);
+});
+
+test('generated story routes use the same history app shell and controls',()=>{
+  assert.match(generatedStoryRoute,/<div class="kb-history-app">/);
+  assert.match(generatedStoryRoute,/class="kb-info-button"/);
+  assert.match(generatedStoryRoute,/history\.css\?v=history-route-fix-v3/);
+  assert.doesNotMatch(generatedStoryRoute,/<body><header class="top"/);
 });
 
 test('pericopes use a compact reading index without editorial artwork',()=>{
