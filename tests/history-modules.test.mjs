@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {access,readFile} from 'node:fs/promises';
 import {loadHistoryData} from '../dist/history-data.js';
 import {ERA_SLUGS,eraFromLocation,pathForEra,resolveHistoryAssetUrl,storyFromLocation} from '../dist/history-routing.js';
-import {pericopeList} from '../dist/history-sheet-ui.js';
+import {pericopeList,renderEraStrip} from '../dist/history-sheet-ui.js';
 
 const snapshot=JSON.parse(await readFile(new URL('../dist/data/history/history-snapshot.json',import.meta.url),'utf8'));
 const historySource=await readFile(new URL('../dist/history.js',import.meta.url),'utf8');
@@ -65,9 +65,17 @@ test('generated history routes use the same app shell and controls',()=>{
   for(const html of [generatedStoryRoute,generatedEraRoute]){
     assert.match(html,/<div class="kb-history-app">/);
     assert.match(html,/class="kb-info-button"/);
-    assert.match(html,/history\.css\?v=history-route-fix-v3/);
+    assert.match(html,/history\.css\?v=history-route-fix-v4/);
     assert.doesNotMatch(html,/<body><header class="top"/);
   }
+});
+
+test('era strip is rendered from the normalized era catalog',()=>{
+  const html=renderEraStrip(snapshot.eras,'exodus-judges');
+  assert.equal((html.match(/class="era"/g)||[]).length,11);
+  assert.match(html,/data-id="exodus-judges" aria-pressed="true"/);
+  assert.match(html,/400 años de silencio/);
+  assert.match(historySource,/stripEl\.innerHTML=renderEraStrip\(eras,active\)/);
 });
 
 test('pericopes use a compact reading index without editorial artwork',()=>{

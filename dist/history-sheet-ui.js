@@ -41,6 +41,25 @@ export function eraPager(eras,index){
   const link=(era,direction)=>era?'<button type="button" class="kb-era-nav-link kb-era-nav-'+direction+'" data-id="'+esc(era.id)+'"><span class="kb-era-nav-direction">'+(direction==="prev"?"← Era anterior":"Siguiente era →")+'</span><strong>'+esc(era.title)+'</strong></button>':"";
   return '<nav class="kb-era-nav" aria-label="Continuar por las eras"><p class="kb-era-nav-eyebrow">Continúa explorando la historia</p><div class="kb-era-nav-actions">'+link(eras[index-1],"prev")+link(eras[index+1],"next")+'</div></nav>';
 }
+function eraYear(year){
+  if(year===null||year===undefined)return "actualidad";
+  return Math.abs(year)+(year<0?" a. C.":" d. C.");
+}
+function eraDate(era){
+  const date=era.date||{};
+  if(date.label)return {uncertain:true,label:date.label};
+  if(date.startYear===null||date.startYear===undefined)return {uncertain:true,label:"Sin datación verificable"};
+  const prefix=date.precision==="approximate"?"c. ":"";
+  return {uncertain:false,label:prefix+eraYear(date.startYear)+" – "+eraYear(date.endYear)};
+}
+export function renderEraStrip(eras,activeId){
+  const total=eras.length;
+  return eras.map((era,index)=>{
+    const date=eraDate(era);
+    const group=era.groupId==="christianity"?"Cristianismo":"Historia bíblica";
+    return '<button class="era" data-id="'+esc(era.id)+'" aria-pressed="'+String(era.id===activeId)+'" style="--era-color:'+esc(era.color)+'"><span class="era-top"><span class="era-group">'+group+'</span><span class="era-count">'+(index+1)+' de '+total+'</span></span><span class="era-title">'+esc(era.title)+'</span><span class="era-date">'+(date.uncertain?'<span class="kb-hatch" aria-hidden="true"></span>':"")+esc(date.label)+'</span></button>';
+  }).join("");
+}
 export function renderEraSheet({era,books="",body="",navigation=""}){
   return '<header class="kb-sheet-heading"><h2>'+esc(era.title)+'</h2><p class="kb-history-context">'+esc(era.subtitle)+'</p></header>'+books+'<div class="kb-sheet-content">'+body+'</div>'+navigation;
 }
