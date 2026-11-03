@@ -29,6 +29,7 @@
       "eyebrow":"Genealogía bíblica",
       "title":"Descendencia tradicional de Sem",
       "description":"El mapa sigue la estructura de la Tabla de las Naciones y la línea genealógica que conduce hasta Abram.",
+      "eraIds":["primeval","patriarchs"],
       "source":"Génesis 10:21–31; 11:10–32",
       "caution":"Este mapa representa la tradición textual de Génesis. No debe leerse como una clasificación étnica moderna.",
       "nodes":[
@@ -72,6 +73,7 @@
       "eyebrow":"Geografía e historia",
       "title":"Pueblos y lugares de Mesopotamia",
       "description":"Mesopotamia es una región; dentro de ella se sucedieron y convivieron pueblos, reinos y ciudades diferentes.",
+      "eraIds":["primeval","patriarchs","monarchy","exile-restoration"],
       "source":"Historia del antiguo Oriente Próximo",
       "caution":"“Mesopotámicos” es un término geográfico-cultural, no el nombre de una etnia única.",
       "nodes":[
@@ -99,6 +101,7 @@
       "eyebrow":"Lenguas e identidades",
       "title":"Familias lingüísticas semíticas",
       "description":"“Semita” se presenta aquí como categoría lingüística, no como una genealogía biológica.",
+      "eraIds":["primeval","patriarchs","monarchy","exile-restoration","second-temple","apostolic"],
       "source":"Clasificación histórica de las lenguas semíticas",
       "caution":"La semejanza lingüística no demuestra que todos los pueblos relacionados desciendan de una misma persona histórica.",
       "nodes":[

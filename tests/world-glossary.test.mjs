@@ -13,6 +13,11 @@ test('world atlas separates scopes and relational maps',()=>{
   assert.ok(data.maps[0].relations.some(relation=>relation.from==='sem'&&relation.to==='aram'&&relation.type==='parent'));
   assert.ok(data.maps[1].relations.some(relation=>relation.from==='mesopotamia'&&relation.to==='ur'&&relation.type==='place'));
   assert.ok(data.maps[2].relations.some(relation=>relation.from==='northwest-semitic'&&relation.to==='aramaic'));
+  assert.deepEqual(data.maps.map(map=>map.eraIds),[
+    ['primeval','patriarchs'],
+    ['primeval','patriarchs','monarchy','exile-restoration'],
+    ['primeval','patriarchs','monarchy','exile-restoration','second-temple','apostolic']
+  ]);
 });
 
 test('world atlas keeps historical entities distinct from linguistic labels',()=>{
@@ -32,7 +37,17 @@ test('world atlas page renders maps, scopes and accessible search',()=>{
   assert.match(page,/aria-label="Buscar fichas del atlas"/);
   assert.match(page,/data.maps/);
   assert.match(page,/data.scopes/);
+  assert.match(page,/data\/history\/timeline\.json\?v=20261103-era-ranges-v1/);
   assert.doesNotMatch(page,/data.items.map\(x=>x\.category\)/);
+});
+
+test('world atlas exposes era ranges and approximate durations across its views',()=>{
+  assert.match(page,/const eraById=new Map\(timeline\.eras/);
+  assert.match(page,/function renderEraMeta/);
+  assert.match(page,/Era y rango temporal/);
+  assert.match(page,/años aprox\./);
+  assert.ok(data.items.filter(item=>item.eraIds?.length).length>0);
+  for(const map of data.maps)assert.ok(map.eraIds?.length,map.id);
 });
 
 test('world atlas map selector behaves like the era strip',()=>{
