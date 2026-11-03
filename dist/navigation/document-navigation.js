@@ -12,6 +12,7 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 const icon=name=>'<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(iconPaths[name]||iconPaths.bookOpen)+'</svg>';
 export function mountDocumentNavigation({header=document.querySelector("header"),activeId=currentNavigationId()}={}){
  if(!header||document.querySelector("#kb-global-navigation"))return;
+ if(!document.querySelector('link[data-kb-global-navigation]')){const css=document.createElement("link");css.rel="stylesheet";css.dataset.kbGlobalNavigation="";css.href=new URL("./navigation.css",import.meta.url).href;document.head.append(css)}
  const trigger=document.createElement("button");
  trigger.type="button";trigger.className="kb-global-menu-trigger";trigger.setAttribute("aria-label","Abrir menú de navegación");trigger.setAttribute("aria-controls","kb-global-navigation-sheet");trigger.setAttribute("aria-expanded","false");
  trigger.innerHTML='<svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
