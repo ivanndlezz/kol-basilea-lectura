@@ -43,7 +43,7 @@ function icon(name, size = 18) {
 const defaultState = () => ({
   onboardingComplete: false,
   onboardingStep: 1,
-  goal: "365",
+  goal: "none",
   appAppearance: "system",
   navigationOpen: false,
   menuOptionsOpen: false,
@@ -330,7 +330,7 @@ function renderOnboarding() {
   }
 
   if (step === 2) {
-    body = `<div class="hero-copy"><p class="eyebrow">Elige tu ritmo</p><h1>¿Cómo quieres recorrer la ruta?</h1><p>Puedes cambiar esta preferencia en cualquier momento. Tu progreso no se pierde.</p></div><div class="goal-grid">${goalOption("365", "365 días", "Un ritmo constante y flexible")}${goalOption("180", "180 días", "Una ruta más intensa")}${goalOption("none", "Sin fecha", "Avanza sin calendario")}</div>`;
+    body = `<div class="hero-copy"><p class="eyebrow">Elige tu ritmo</p><h1>¿Cómo quieres recorrer la ruta?</h1><p>Puedes cambiar esta preferencia en cualquier momento. Tu progreso no se pierde.</p></div><div class="goal-grid">${goalOption("none", "Sin fecha", "Avanza a tu ritmo")}${goalOption("365", "365 días", "La Biblia en un año")}${goalOption("180", "180 días", "Completa en medio año")}</div>`;
   }
 
   if (step === 3) {
