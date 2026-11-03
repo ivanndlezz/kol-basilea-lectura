@@ -139,6 +139,8 @@ export function initPericopeSheets(root=document.body){
   root.addEventListener("click",event=>{
     const open=event.target.closest("[data-kb-pericope-open]");
     if(open){const sheet=renderPericopeSheet(open.dataset.kbPericopeSheet||open.getAttribute("aria-controls"));if(sheet){sheet.__opener=open;host.replaceChildren(sheet);document.body.classList.add("kb-navigation-open","kb-pericope-sheet-open");sheet.querySelector(".kb-pericope-sheet-close")?.focus({preventScroll:true})}return}
+  });
+  host.addEventListener("click",event=>{
     const closeButton=event.target.closest("[data-kb-pericope-close]");
     if(closeButton)close(closeButton.closest(".kb-pericope-sheet"));
   });

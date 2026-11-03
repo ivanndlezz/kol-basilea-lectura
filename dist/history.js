@@ -11,7 +11,7 @@ syncHistoryAppearance();
 window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",syncHistoryAppearance);
 window.addEventListener("pageshow",syncHistoryAppearance);
 import {genesisPanel,initGenesisPanel} from "./genesis-structure.js";
-import {bookLinks,storyCard,eraPager,renderEraStrip,renderEraSheet,renderEraOverview,isApprovedStoryCover,pericopeList,initPericopeSheets} from "./history-sheet-ui.js?v=20261103-pericope-mobile-v1";
+import {bookLinks,storyCard,eraPager,renderEraStrip,renderEraSheet,renderEraOverview,isApprovedStoryCover,pericopeList,initPericopeSheets} from "./history-sheet-ui.js?v=20261103-pericope-close-v1";
 import {loadHistoryData} from "./history-data.js?v=20261102-cover-fix";
 import {ERA_SLUGS,eraFromLocation,navigateToEra,resolveHistoryAssetUrl,storyFromLocation} from "./history-routing.js?v=history-route-fix-v4";
 import {normalizeDirectoryUrl} from "./url-routing.js?v=url-routing-v1";

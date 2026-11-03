@@ -107,6 +107,8 @@ test('pericopes use a compact reading index without editorial artwork',()=>{
   assert.match(sheetSource,/export function pericopeList/);
   assert.match(sheetSource,/export function initPericopeSheets/);
   assert.match(sheetSource,/kb-pericope-sheet-root/);
+  assert.match(sheetSource,/host\.addEventListener\("click"/);
+  assert.match(sheetSource,/data-kb-pericope-close/);
   assert.match(html,/Muestra de 5/);
   assert.match(html,/Ver todas las 6 perícopas/);
   assert.doesNotMatch(html,/kb-pericope-sheet-panel/);
