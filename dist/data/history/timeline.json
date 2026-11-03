@@ -1109,16 +1109,16 @@
       "icon": "book-open",
       "cover": {
         "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Abraham_vertrekt_uit_Haran%2C_SK-A-3377.jpg?width=960",
-        "alt": "Abraham sale de Harán con su familia",
-        "source": "Wikimedia Commons / Rijksmuseum",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abraham_vertrekt_uit_Haran%2C_SK-A-3377.jpg",
-        "license": "CC0 1.0",
+        "alt": "Abraham sale de Harán — Francesco II Bassano (atr.)",
+        "source": "Rijksmuseum SK-A-3377",
+        "sourceUrl": "https://www.rijksmuseum.nl/nl/collectie/object/Abraham-vertrekt-uit-Haran--e62b839f9e303324469aba2d91fac1d1",
+        "license": "Dominio público",
         "artist": "Francesco Bassano el Joven",
         "alternatives": [
           "https://commons.wikimedia.org/wiki/Special:Redirect/file/Abraham_vertrekt_uit_Haran%2C_SK-A-3377.jpg",
           "https://commons.wikimedia.org/wiki/Special:FilePath/Abraham_vertrekt_uit_Haran%2C_SK-A-3377.jpg"
         ],
-        "match": "unverified"
+        "match": "exact"
       }
     },
     {
@@ -1134,16 +1134,16 @@
       "icon": "book-open",
       "cover": {
         "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Farao_geeft_Sara_aan_Abraham_terug_Rijksmuseum_SK-A-1191.jpeg?width=960",
-        "alt": "El faraón devuelve a Sara a Abraham",
-        "source": "Wikimedia Commons / Rijksmuseum",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Farao_geeft_Sara_aan_Abraham_terug_Rijksmuseum_SK-A-1191.jpeg",
-        "license": "CC0 1.0",
+        "alt": "El faraón devuelve a Sara a Abraham — Isaac Isaacsz.",
+        "source": "Rijksmuseum SK-A-1191",
+        "sourceUrl": "https://www.rijksmuseum.nl/nl/collectie/object/Farao-geeft-Sara-aan-Abraham-terug--3bf9f57f71cdb050829b2d736580f3ff",
+        "license": "Dominio público",
         "artist": "Isaac Isaacsz",
         "alternatives": [
           "https://commons.wikimedia.org/wiki/Special:Redirect/file/Farao_geeft_Sara_aan_Abraham_terug_Rijksmuseum_SK-A-1191.jpeg",
           "https://commons.wikimedia.org/wiki/Special:FilePath/Farao_geeft_Sara_aan_Abraham_terug_Rijksmuseum_SK-A-1191.jpeg"
         ],
-        "match": "unverified"
+        "match": "exact"
       }
     },
     {
