@@ -1,183 +1,178 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "title": "El mundo bíblico",
-  "editorialNote": "Las categorías étnicas, lingüísticas y religiosas no son equivalentes. Las reconstrucciones históricas se distinguen de las tradiciones bíblicas.",
-  "items": [
+  "editorialNote": "La genealogía de Génesis, los pueblos históricos y las familias lingüísticas son mapas distintos. Una relación en un mapa no demuestra por sí sola una descendencia biológica.",
+  "scopes": [
+    {"id":"peoples-nations","label":"Pueblos y naciones","description":"Poblaciones, ciudades-estado y reinos del mundo bíblico.","order":10},
+    {"id":"identities-ethnonyms","label":"Identidades y nombres","description":"Nombres colectivos y designaciones de identidad.","order":20},
+    {"id":"tribes-lineages","label":"Tribus y linajes","description":"Tribus, genealogías y estructuras de parentesco.","order":30},
+    {"id":"communities","label":"Comunidades","description":"Comunidades religiosas o culturales con identidad propia.","order":40},
+    {"id":"religious-movements","label":"Movimientos religiosos","description":"Corrientes religiosas de períodos concretos.","order":50},
+    {"id":"roles-functions","label":"Oficios y funciones","description":"Roles sociales, administrativos y religiosos.","order":60},
+    {"id":"language-genealogy","label":"Lenguas y marcos genealógicos","description":"Clasificaciones lingüísticas y genealogías tradicionales.","order":70},
+    {"id":"places-regions","label":"Lugares y regiones","description":"Ciudades y regiones que sirven de contexto histórico.","order":80}
+  ],
+  "regions": [
+    {"id":"mesopotamia","label":"Mesopotamia"},
+    {"id":"canaan","label":"Canaán"},
+    {"id":"transjordan","label":"Transjordania"},
+    {"id":"judea","label":"Judea"},
+    {"id":"galilee","label":"Galilea"},
+    {"id":"samaria","label":"Samaria"},
+    {"id":"syria","label":"Siria"},
+    {"id":"elam","label":"Elam"},
+    {"id":"arabia","label":"Arabia"}
+  ],
+  "maps": [
     {
-      "id": "hebreos",
-      "title": "Hebreos",
-      "category": "Identidades",
-      "eraId": "patriarchs",
-      "summary": "Término bíblico empleado en distintos contextos para personas asociadas con los antepasados de Israel. Su relación etimológica con Éber es tradicional, pero no está demostrada.",
-      "references": "Génesis 14:13; Éxodo 1:15"
+      "id":"shem-genealogy",
+      "eyebrow":"Genealogía bíblica",
+      "title":"Descendencia tradicional de Sem",
+      "description":"El mapa sigue la estructura de la Tabla de las Naciones y la línea genealógica que conduce hasta Abram.",
+      "source":"Génesis 10:21–31; 11:10–32",
+      "caution":"Este mapa representa la tradición textual de Génesis. No debe leerse como una clasificación étnica moderna.",
+      "nodes":[
+        {"id":"noe","label":"Noé","level":0},
+        {"id":"sem","label":"Sem","level":1,"itemId":"sem"},
+        {"id":"elam","label":"Elam","level":2,"itemId":"elam"},
+        {"id":"asshur","label":"Asur","level":2,"itemId":"asshur"},
+        {"id":"aram","label":"Aram","level":2,"itemId":"aram"},
+        {"id":"arpachshad","label":"Arpaxad","level":2,"itemId":"arpachshad"},
+        {"id":"lud","label":"Lud","level":2,"itemId":"lud"},
+        {"id":"aram-descendants","label":"Uz · Hul · Guéter · Mash","level":3,"itemId":"aram-descendants"},
+        {"id":"shelah","label":"Sélaj","level":3},
+        {"id":"eber","label":"Éber","level":4,"itemId":"eber"},
+        {"id":"peleg","label":"Péleg","level":5},
+        {"id":"reu","label":"Reu","level":6},
+        {"id":"serug","label":"Serug","level":7},
+        {"id":"nahor","label":"Nacor","level":8},
+        {"id":"terah","label":"Taré","level":9},
+        {"id":"abram","label":"Abram","level":10,"itemId":"abram"}
+      ],
+      "relations":[
+        {"from":"noe","to":"sem","type":"parent","label":"padre de"},
+        {"from":"sem","to":"elam","type":"parent","label":"hijo de"},
+        {"from":"sem","to":"asshur","type":"parent","label":"hijo de"},
+        {"from":"sem","to":"aram","type":"parent","label":"hijo de"},
+        {"from":"sem","to":"arpachshad","type":"parent","label":"hijo de"},
+        {"from":"sem","to":"lud","type":"parent","label":"hijo de"},
+        {"from":"aram","to":"aram-descendants","type":"descendant-line","label":"descendencia atribuida"},
+        {"from":"arpachshad","to":"shelah","type":"parent","label":"línea genealógica"},
+        {"from":"shelah","to":"eber","type":"parent","label":"línea genealógica"},
+        {"from":"eber","to":"peleg","type":"parent","label":"línea genealógica"},
+        {"from":"peleg","to":"reu","type":"parent","label":"línea genealógica"},
+        {"from":"reu","to":"serug","type":"parent","label":"línea genealógica"},
+        {"from":"serug","to":"nahor","type":"parent","label":"línea genealógica"},
+        {"from":"nahor","to":"terah","type":"parent","label":"línea genealógica"},
+        {"from":"terah","to":"abram","type":"parent","label":"línea genealógica"}
+      ]
     },
     {
-      "id": "semitas",
-      "title": "Semitas",
-      "category": "Términos históricos",
-      "eraId": "primeval",
-      "summary": "Categoría lingüística moderna para hablantes de lenguas semíticas, como hebreo, arameo, árabe y acadio. No equivale a una genealogía biológica comprobable de Sem.",
-      "references": "Génesis 10–11 (tradición genealógica)"
+      "id":"mesopotamia-peoples",
+      "eyebrow":"Geografía e historia",
+      "title":"Pueblos y lugares de Mesopotamia",
+      "description":"Mesopotamia es una región; dentro de ella se sucedieron y convivieron pueblos, reinos y ciudades diferentes.",
+      "source":"Historia del antiguo Oriente Próximo",
+      "caution":"“Mesopotámicos” es un término geográfico-cultural, no el nombre de una etnia única.",
+      "nodes":[
+        {"id":"mesopotamia","label":"Mesopotamia","level":0,"itemId":"mesopotamia"},
+        {"id":"ur","label":"Ur","level":1,"itemId":"ur"},
+        {"id":"sumerians","label":"Sumerios","level":1,"itemId":"sumerians"},
+        {"id":"akkadians","label":"Akkadios","level":1,"itemId":"akkadians"},
+        {"id":"babylonians","label":"Babilonios","level":1,"itemId":"babylonians"},
+        {"id":"assyrians","label":"Asirios","level":1,"itemId":"assyrians"},
+        {"id":"aramaeans","label":"Arameos","level":1,"itemId":"aramaeans"},
+        {"id":"chaldeans","label":"Caldeos","level":1,"itemId":"chaldeans"}
+      ],
+      "relations":[
+        {"from":"mesopotamia","to":"ur","type":"place","label":"ciudad en la región"},
+        {"from":"mesopotamia","to":"sumerians","type":"region","label":"pueblo de la región"},
+        {"from":"mesopotamia","to":"akkadians","type":"region","label":"pueblo de la región"},
+        {"from":"mesopotamia","to":"babylonians","type":"region","label":"reino y población"},
+        {"from":"mesopotamia","to":"assyrians","type":"region","label":"reino y población"},
+        {"from":"mesopotamia","to":"aramaeans","type":"region","label":"pueblos de la región"},
+        {"from":"mesopotamia","to":"chaldeans","type":"region","label":"tribus del sur de Babilonia"}
+      ]
     },
     {
-      "id": "israelitas",
-      "title": "Israelitas",
-      "category": "Identidades",
-      "eraId": "patriarchs",
-      "summary": "Nombre asociado a Israel/Jacob y al pueblo de Israel. Su uso histórico abarca las tribus y, según el período, también al reino del norte.",
-      "references": "Génesis 32:28; Éxodo 1:7"
-    },
-    {
-      "id": "judios",
-      "title": "Judíos",
-      "category": "Identidades",
-      "eraId": "exile-restoration",
-      "summary": "Designación vinculada originalmente con Judá y, en períodos posteriores, con una identidad étnica, religiosa y comunitaria más amplia.",
-      "references": "Ester 2:5; Esdras 4:12"
-    },
-    {
-      "id": "cananeos",
-      "title": "Cananeos",
-      "category": "Pueblos",
-      "eraId": "exodus-judges",
-      "summary": "Poblaciones y ciudades de Canaán durante la Edad del Bronce y comienzos de la Edad del Hierro. No constituían necesariamente un único estado o grupo homogéneo.",
-      "references": "Génesis 10:15–19; Josué 3:10"
-    },
-    {
-      "id": "jebuseos",
-      "title": "Jebuseos",
-      "category": "Pueblos",
-      "eraId": "monarchy",
-      "summary": "Grupo identificado en la tradición bíblica con Jerusalén antes de su incorporación al reino de David. Su caracterización extrabíblica sigue siendo discutida.",
-      "references": "Josué 15:63; 2 Samuel 5:6–9"
-    },
-    {
-      "id": "edomitas",
-      "title": "Edomitas",
-      "category": "Pueblos",
-      "eraId": "monarchy",
-      "summary": "Población y reino de Edom, al sur y sureste del mar Muerto. La Biblia relaciona su origen con Esaú.",
-      "references": "Génesis 36; 2 Reyes 8:20"
-    },
-    {
-      "id": "moabitas",
-      "title": "Moabitas",
-      "category": "Pueblos",
-      "eraId": "exodus-judges",
-      "summary": "Población del territorio de Moab, al este del mar Muerto; aparece en los relatos de Rut y en conflictos con Israel.",
-      "references": "Rut 1:1–4; Números 22"
-    },
-    {
-      "id": "amonitas",
-      "title": "Amonitas",
-      "category": "Pueblos",
-      "eraId": "exodus-judges",
-      "summary": "Población del territorio de Amón, al este del Jordán, presente en relatos de jueces y reyes.",
-      "references": "Jueces 11; 1 Samuel 11"
-    },
-    {
-      "id": "filisteos",
-      "title": "Filisteos",
-      "category": "Pueblos",
-      "eraId": "monarchy",
-      "summary": "Población de ciudades de la costa meridional de Canaán, destacada en los relatos de Sansón, Saúl y David.",
-      "references": "Jueces 13–16; 1 Samuel 17"
-    },
-    {
-      "id": "doce-tribus",
-      "title": "Las doce tribus",
-      "category": "Organización",
-      "eraId": "exodus-judges",
-      "summary": "Tradición que organiza a Israel alrededor de los descendientes de Jacob. Las listas bíblicas varían según el propósito: Leví puede omitirse del reparto territorial y José representarse por Efraín y Manasés.",
-      "references": "Génesis 49; Números 1; Josué 13–21"
-    },
-    {
-      "id": "levitas",
-      "title": "Levitas",
-      "category": "Organización",
-      "eraId": "exodus-judges",
-      "summary": "Miembros de la tribu de Leví, vinculados al servicio religioso. En la legislación bíblica no todos los levitas son sacerdotes: el sacerdocio se atribuye a la línea de Aarón.",
-      "references": "Números 3; Deuteronomio 18:1–8"
-    },
-    {
-      "id": "sacerdotes",
-      "title": "Sacerdotes",
-      "category": "Organización",
-      "eraId": "exodus-judges",
-      "summary": "Oficiantes del culto de Israel. La tradición sacerdotal del Pentateuco distingue a los descendientes de Aarón de otros levitas.",
-      "references": "Éxodo 28; Números 18"
-    },
-    {
-      "id": "samaritanos",
-      "title": "Samaritanos",
-      "category": "Comunidades",
-      "eraId": "second-temple",
-      "summary": "Comunidad israelita con tradiciones propias y un centro de culto en el monte Gerizim. Su historia no se reduce a una simple mezcla de poblaciones.",
-      "references": "2 Reyes 17; Juan 4:1–42"
-    },
-    {
-      "id": "fariseos",
-      "title": "Fariseos",
-      "category": "Movimientos",
-      "eraId": "second-temple",
-      "summary": "Movimiento judío del período del Segundo Templo, asociado con la interpretación de la Torá y tradiciones de observancia. Las fuentes son parciales y a menudo polémicas.",
-      "references": "Mateo 23; Hechos 23:6–9"
-    },
-    {
-      "id": "saduceos",
-      "title": "Saduceos",
-      "category": "Movimientos",
-      "eraId": "second-temple",
-      "summary": "Grupo judío del Segundo Templo relacionado en las fuentes con sectores sacerdotales y posiciones diferentes sobre la resurrección.",
-      "references": "Marcos 12:18–27; Hechos 23:8"
-    },
-    {
-      "id": "escribas",
-      "title": "Escribas",
-      "category": "Funciones",
-      "eraId": "second-temple",
-      "summary": "Especialistas en escritura, documentos e interpretación de textos. No constituyeron necesariamente un partido religioso único.",
-      "references": "Marcos 12:28–34; Lucas 20:46"
-    },
-    {
-      "id": "zelotes",
-      "title": "Zelotes",
-      "category": "Movimientos",
-      "eraId": "second-temple",
-      "summary": "Término que puede aludir al celo religioso y, en ciertos contextos del siglo I, a corrientes de resistencia frente al dominio romano. No debe aplicarse indiscriminadamente a toda oposición a Roma.",
-      "references": "Lucas 6:15; Josefo, Guerra judía"
-    },
-    {
-      "id": "esenios",
-      "title": "Esenios",
-      "category": "Movimientos",
-      "eraId": "second-temple",
-      "summary": "Grupo judío descrito por autores antiguos como Josefo, Filón y Plinio. La identificación de la comunidad de Qumrán con los esenios es una hipótesis influyente, no una certeza absoluta.",
-      "references": "Josefo, Guerra judía 2; manuscritos del mar Muerto"
-    },
-    {
-      "id": "qumran",
-      "title": "Comunidad de Qumrán",
-      "category": "Comunidades",
-      "eraId": "second-temple",
-      "summary": "Población o movimiento relacionado con los manuscritos hallados cerca de Qumrán. Su identidad precisa y relación con los esenios continúan siendo objeto de debate.",
-      "references": "Regla de la Comunidad (1QS); manuscritos del mar Muerto"
-    },
-    {
-      "id": "herodianos",
-      "title": "Herodianos",
-      "category": "Movimientos",
-      "eraId": "second-temple",
-      "summary": "Grupo mencionado en los evangelios en relación con el entorno político de la dinastía herodiana; su organización exacta es incierta.",
-      "references": "Marcos 3:6; 12:13"
-    },
-    {
-      "id": "publicanos",
-      "title": "Publicanos",
-      "category": "Funciones",
-      "eraId": "apostolic",
-      "summary": "Recaudadores de impuestos y agentes de cobro en el contexto romano y sus administraciones locales; aparecen frecuentemente en los evangelios.",
-      "references": "Lucas 19:1–10; Mateo 9:9–13"
+      "id":"semitic-languages",
+      "eyebrow":"Lenguas e identidades",
+      "title":"Familias lingüísticas semíticas",
+      "description":"“Semita” se presenta aquí como categoría lingüística, no como una genealogía biológica.",
+      "source":"Clasificación histórica de las lenguas semíticas",
+      "caution":"La semejanza lingüística no demuestra que todos los pueblos relacionados desciendan de una misma persona histórica.",
+      "nodes":[
+        {"id":"semitic-languages","label":"Lenguas semíticas","level":0,"itemId":"semitic-languages"},
+        {"id":"east-semitic","label":"Semítico oriental","level":1},
+        {"id":"akkadian-language","label":"Akkadio","level":2,"itemId":"akkadian-language"},
+        {"id":"babylonian-language","label":"Babilonio","level":3,"itemId":"babylonian-language"},
+        {"id":"assyrian-language","label":"Asirio","level":3,"itemId":"assyrian-language"},
+        {"id":"northwest-semitic","label":"Semítico noroccidental","level":1},
+        {"id":"aramaic","label":"Arameo","level":2,"itemId":"aramaic"},
+        {"id":"hebrew-language","label":"Hebreo","level":2,"itemId":"hebrew-language"},
+        {"id":"canaanite-language","label":"Cananeo","level":2,"itemId":"canaanite-language"},
+        {"id":"arabic-language","label":"Árabe","level":1,"itemId":"arabic-language"}
+      ],
+      "relations":[
+        {"from":"semitic-languages","to":"east-semitic","type":"branch","label":"rama lingüística"},
+        {"from":"east-semitic","to":"akkadian-language","type":"branch","label":"lengua"},
+        {"from":"akkadian-language","to":"babylonian-language","type":"variety","label":"variedad"},
+        {"from":"akkadian-language","to":"assyrian-language","type":"variety","label":"variedad"},
+        {"from":"semitic-languages","to":"northwest-semitic","type":"branch","label":"rama lingüística"},
+        {"from":"northwest-semitic","to":"aramaic","type":"branch","label":"lengua"},
+        {"from":"northwest-semitic","to":"hebrew-language","type":"branch","label":"lengua"},
+        {"from":"northwest-semitic","to":"canaanite-language","type":"branch","label":"lengua"},
+        {"from":"semitic-languages","to":"arabic-language","type":"branch","label":"lengua"}
+      ]
     }
+  ],
+  "items": [
+    {"id":"noe","title":"Noé","scopeId":"tribes-lineages","kind":"genealogical-ancestor","eraIds":["primeval"],"summary":"Figura de origen dentro de la genealogía de Génesis.","references":["Génesis 5–10"],"historicalStatus":"tradition"},
+    {"id":"sem","title":"Sem","scopeId":"tribes-lineages","kind":"genealogical-ancestor","eraIds":["primeval"],"summary":"Hijo de Noé y antepasado presentado como origen de varias líneas en la Tabla de las Naciones.","references":["Génesis 10:21–31; 11:10–32"],"historicalStatus":"tradition"},
+    {"id":"elam","title":"Elam","scopeId":"peoples-nations","kind":"people-or-region","eraIds":["primeval"],"regionIds":["elam"],"summary":"Nombre que aparece como hijo de Sem en la genealogía de Génesis y que también se relaciona con una región histórica al este de Mesopotamia.","references":["Génesis 10:22"],"historicalStatus":"tradition"},
+    {"id":"asshur","title":"Asur","scopeId":"peoples-nations","kind":"people-or-region","eraIds":["primeval","monarchy"],"regionIds":["mesopotamia"],"summary":"Nombre que aparece como hijo de Sem y que se relaciona con Asiria en la geografía bíblica.","references":["Génesis 10:22; 10:11–12"],"historicalStatus":"tradition"},
+    {"id":"aram","title":"Aram","scopeId":"tribes-lineages","kind":"genealogical-ancestor","eraIds":["primeval"],"regionIds":["syria"],"summary":"Hijo de Sem en la genealogía de Génesis. La tradición bíblica lo vincula con una línea que posteriormente se relaciona con Aram y los arameos.","references":["Génesis 10:22–23"],"historicalStatus":"tradition"},
+    {"id":"arpachshad","title":"Arpaxad","scopeId":"tribes-lineages","kind":"genealogical-ancestor","eraIds":["primeval"],"summary":"Hijo de Sem y antepasado de la línea que pasa por Éber y conduce hasta Abram según Génesis.","references":["Génesis 10:22–24; 11:10–26"],"historicalStatus":"tradition"},
+    {"id":"lud","title":"Lud","scopeId":"peoples-nations","kind":"genealogical-ancestor","eraIds":["primeval"],"summary":"Nombre incluido entre los hijos de Sem; su identificación histórica permanece discutida.","references":["Génesis 10:22"],"historicalStatus":"debated"},
+    {"id":"aram-descendants","title":"Descendientes de Aram","scopeId":"tribes-lineages","kind":"genealogical-line","eraIds":["primeval"],"summary":"Génesis enumera a Uz, Hul, Guéter y Mash dentro de la línea de Aram.","references":["Génesis 10:23"],"historicalStatus":"tradition"},
+    {"id":"eber","title":"Éber","scopeId":"tribes-lineages","kind":"genealogical-ancestor","eraIds":["primeval","patriarchs"],"summary":"Antepasado de las líneas de Péleg y Joctán dentro de la genealogía de Génesis.","references":["Génesis 10:24–25; 11:14–17"],"historicalStatus":"tradition"},
+    {"id":"abram","title":"Abram / Abraham","scopeId":"identities-ethnonyms","kind":"patriarch","eraIds":["patriarchs"],"regionIds":["mesopotamia","canaan"],"summary":"Patriarca presentado en la línea de Sem y llamado desde Ur de los caldeos hacia Canaán.","references":["Génesis 11:26–32; 12:1–5"],"historicalStatus":"textual"},
+    {"id":"mesopotamia","title":"Mesopotamia","scopeId":"places-regions","kind":"region","eraIds":["primeval","patriarchs","exile-restoration"],"summary":"Región entre los ríos Tigris y Éufrates. Es un marco geográfico para varias culturas y reinos, no una etnia única.","references":["Génesis 24:10; Deuteronomio 23:4"],"historicalStatus":"geographic"},
+    {"id":"ur","title":"Ur","scopeId":"places-regions","kind":"city","eraIds":["primeval","patriarchs"],"regionIds":["mesopotamia"],"summary":"Ciudad del sur de Mesopotamia asociada en Génesis con la partida de Abram; sus habitantes cambiaron según el período histórico.","references":["Génesis 11:28–31"],"historicalStatus":"geographic"},
+    {"id":"sumerians","title":"Sumerios","scopeId":"peoples-nations","kind":"people","eraIds":["primeval"],"regionIds":["mesopotamia"],"summary":"Pueblo y cultura del sur de Mesopotamia, asociado con ciudades como Ur y Uruk. No debe colocarse automáticamente dentro de una genealogía semítica.","references":["Contexto histórico de Ur y Sumer"],"historicalStatus":"historical"},
+    {"id":"akkadians","title":"Akkadios","scopeId":"peoples-nations","kind":"people","eraIds":["primeval","patriarchs"],"regionIds":["mesopotamia"],"summary":"Poblaciones de lengua acadia que formaron uno de los grandes poderes de Mesopotamia.","references":["Contexto histórico de Akkad y Mesopotamia"],"historicalStatus":"historical"},
+    {"id":"babylonians","title":"Babilonios","scopeId":"peoples-nations","kind":"people-and-kingdom","eraIds":["monarchy","exile-restoration"],"regionIds":["mesopotamia"],"summary":"Población y tradición política de Babilonia, especialmente relevante para el exilio de Judá.","references":["2 Reyes 24–25; Daniel 1"],"historicalStatus":"historical"},
+    {"id":"assyrians","title":"Asirios","scopeId":"peoples-nations","kind":"people-and-kingdom","eraIds":["monarchy","exile-restoration"],"regionIds":["mesopotamia"],"summary":"Población y poder imperial del norte de Mesopotamia que aparece en la historia de Israel y Judá.","references":["2 Reyes 17–19; Isaías 36–37"],"historicalStatus":"historical"},
+    {"id":"aramaeans","title":"Arameos","scopeId":"peoples-nations","kind":"people","eraIds":["patriarchs","monarchy","exile-restoration"],"regionIds":["syria","mesopotamia"],"summary":"Conjunto de pueblos históricos relacionados con el arameo. La relación con Aram pertenece a la tradición bíblica; no equivale a una prueba genealógica moderna.","references":["Deuteronomio 26:5; 2 Reyes 5:1–14"],"relatedIds":["aram","aramaic"],"historicalStatus":"historical"},
+    {"id":"chaldeans","title":"Caldeos","scopeId":"peoples-nations","kind":"tribal-people","eraIds":["monarchy","exile-restoration"],"regionIds":["mesopotamia"],"summary":"Tribus semíticas occidentales del sur de Babilonia, asociadas posteriormente con la dinastía neobabilónica. No son el nombre de todos los habitantes de Ur.","references":["2 Reyes 24–25; Jeremías 50–51"],"historicalStatus":"historical"},
+    {"id":"semitic-languages","title":"Lenguas semíticas","scopeId":"language-genealogy","kind":"linguistic-family","eraIds":["primeval","patriarchs","monarchy","apostolic"],"summary":"Familia lingüística que incluye lenguas como el acadio, el arameo, el hebreo y el árabe. No es una genealogía biológica de los hijos de Sem.","references":["Génesis 10:22–31 como marco tradicional"],"relatedIds":["aram","aramaeans","aramaic","hebrew-language","arabic-language"],"historicalStatus":"modern-classification"},
+    {"id":"akkadian-language","title":"Akkadio","scopeId":"language-genealogy","kind":"language","eraIds":["primeval","patriarchs","monarchy"],"regionIds":["mesopotamia"],"summary":"Lengua semítica oriental documentada en Mesopotamia, con variedades babilónica y asiria.","references":["Contexto lingüístico de Mesopotamia"],"historicalStatus":"historical"},
+    {"id":"babylonian-language","title":"Babilonio","scopeId":"language-genealogy","kind":"language-variety","eraIds":["monarchy","exile-restoration"],"regionIds":["mesopotamia"],"summary":"Variedad del acadio utilizada en Babilonia.","references":["Contexto lingüístico de Babilonia"],"historicalStatus":"historical"},
+    {"id":"assyrian-language","title":"Asirio","scopeId":"language-genealogy","kind":"language-variety","eraIds":["monarchy"],"regionIds":["mesopotamia"],"summary":"Variedad del acadio utilizada en Asiria.","references":["Contexto lingüístico de Asiria"],"historicalStatus":"historical"},
+    {"id":"aramaic","title":"Arameo","scopeId":"language-genealogy","kind":"language","eraIds":["monarchy","exile-restoration","second-temple","apostolic"],"regionIds":["syria","mesopotamia"],"summary":"Lengua semítica noroccidental con numerosos dialectos y una amplia presencia en Siria y Mesopotamia.","references":["Daniel 2:4–7:28; Esdras 4:8–6:18"],"relatedIds":["aram","aramaeans"],"historicalStatus":"historical"},
+    {"id":"hebrew-language","title":"Hebreo","scopeId":"language-genealogy","kind":"language","eraIds":["patriarchs","monarchy","exile-restoration","second-temple"],"regionIds":["canaan","judea"],"summary":"Lengua semítica noroccidental asociada con Israel y Judá y con gran parte de la Biblia hebrea.","references":["2 Reyes 18:26; Nehemías 13:24"],"historicalStatus":"historical"},
+    {"id":"canaanite-language","title":"Cananeo","scopeId":"language-genealogy","kind":"language-group","eraIds":["patriarchs","monarchy"],"regionIds":["canaan"],"summary":"Conjunto de variedades lingüísticas del Levante relacionadas con el hebreo y otras lenguas semíticas noroccidentales.","references":["Contexto lingüístico del Levante"],"historicalStatus":"historical"},
+    {"id":"arabic-language","title":"Árabe","scopeId":"language-genealogy","kind":"language","eraIds":["patriarchs","apostolic"],"regionIds":["arabia"],"summary":"Lengua semítica de Arabia y de comunidades posteriores del Cercano Oriente.","references":["Contexto lingüístico de Arabia"],"historicalStatus":"historical"},
+    {"id":"hebreos","title":"Hebreos","scopeId":"identities-ethnonyms","kind":"ethnonym","eraIds":["patriarchs","exodus-judges"],"summary":"Término bíblico empleado en distintos contextos para personas asociadas con los antepasados de Israel.","references":["Génesis 14:13; Éxodo 1:15"],"historicalStatus":"textual"},
+    {"id":"israelitas","title":"Israelitas","scopeId":"identities-ethnonyms","kind":"people-identity","eraIds":["patriarchs","exodus-judges","monarchy"],"regionIds":["canaan"],"summary":"Nombre asociado con Israel/Jacob y con el pueblo de Israel; su uso cambia según el período y el contexto.","references":["Génesis 32:28; Éxodo 1:7"],"historicalStatus":"textual"},
+    {"id":"judios","title":"Judíos / Judeanos","scopeId":"identities-ethnonyms","kind":"ethnonym","eraIds":["exile-restoration","intertestamental","second-temple","apostolic"],"regionIds":["judea"],"summary":"Designación vinculada originalmente con Judá y, en períodos posteriores, con una identidad étnica, religiosa y comunitaria más amplia.","references":["Ester 2:5; Esdras 4:12"],"relatedIds":["israelitas","samaritanos"],"historicalStatus":"contextual"},
+    {"id":"cananeos","title":"Cananeos","scopeId":"peoples-nations","kind":"people","eraIds":["exodus-judges","monarchy"],"regionIds":["canaan"],"summary":"Poblaciones y ciudades de Canaán durante la Edad del Bronce y comienzos de la Edad del Hierro; no formaban necesariamente un único grupo homogéneo.","references":["Génesis 10:15–19; Josué 3:10"],"historicalStatus":"historical"},
+    {"id":"jebuseos","title":"Jebuseos","scopeId":"peoples-nations","kind":"people","eraIds":["exodus-judges","monarchy"],"regionIds":["canaan"],"summary":"Grupo identificado en la tradición bíblica con Jerusalén antes de su incorporación al reino de David.","references":["Josué 15:63; 2 Samuel 5:6–9"],"historicalStatus":"debated"},
+    {"id":"edomitas","title":"Edomitas","scopeId":"peoples-nations","kind":"people-and-kingdom","eraIds":["patriarchs","monarchy"],"regionIds":["transjordan"],"summary":"Población y reino de Edom, al sur y sureste del mar Muerto; la Biblia relaciona su origen con Esaú.","references":["Génesis 36; 2 Reyes 8:20"],"historicalStatus":"historical"},
+    {"id":"moabitas","title":"Moabitas","scopeId":"peoples-nations","kind":"people-and-kingdom","eraIds":["exodus-judges","monarchy"],"regionIds":["transjordan"],"summary":"Población del territorio de Moab, al este del mar Muerto.","references":["Rut 1:1–4; Números 22"],"historicalStatus":"historical"},
+    {"id":"amonitas","title":"Amonitas","scopeId":"peoples-nations","kind":"people-and-kingdom","eraIds":["exodus-judges","monarchy"],"regionIds":["transjordan"],"summary":"Población del territorio de Amón, al este del Jordán.","references":["Jueces 11; 1 Samuel 11"],"historicalStatus":"historical"},
+    {"id":"filisteos","title":"Filisteos","scopeId":"peoples-nations","kind":"people-and-kingdom","eraIds":["exodus-judges","monarchy"],"regionIds":["canaan"],"summary":"Población de ciudades de la costa meridional de Canaán, destacada en los relatos de Sansón, Saúl y David.","references":["Jueces 13–16; 1 Samuel 17"],"historicalStatus":"historical"},
+    {"id":"doce-tribus","title":"Las doce tribus","scopeId":"tribes-lineages","kind":"tribal-system","eraIds":["exodus-judges","monarchy"],"regionIds":["canaan"],"summary":"Tradición que organiza a Israel alrededor de los descendientes de Jacob. Las listas bíblicas varían según el propósito.","references":["Génesis 49; Números 1; Josué 13–21"],"historicalStatus":"tradition"},
+    {"id":"levitas","title":"Levitas","scopeId":"tribes-lineages","kind":"tribe-and-role","eraIds":["exodus-judges","monarchy","second-temple"],"regionIds":["canaan","judea"],"summary":"Miembros de la tribu de Leví vinculados al servicio religioso; no todos los levitas son sacerdotes.","references":["Números 3; Deuteronomio 18:1–8"],"historicalStatus":"textual"},
+    {"id":"sacerdotes","title":"Sacerdotes","scopeId":"roles-functions","kind":"religious-office","eraIds":["exodus-judges","monarchy","second-temple"],"regionIds":["canaan","judea"],"summary":"Oficiantes del culto de Israel. La tradición sacerdotal distingue a los descendientes de Aarón de otros levitas.","references":["Éxodo 28; Números 18"],"relatedIds":["levitas"],"historicalStatus":"textual"},
+    {"id":"samaritanos","title":"Samaritanos","scopeId":"communities","kind":"religious-community","eraIds":["second-temple","apostolic"],"regionIds":["samaria"],"summary":"Comunidad israelita con tradiciones propias y un centro de culto en el monte Gerizim; es una comunidad relacionada, no una subcategoría de los judíos.","references":["2 Reyes 17; Juan 4:1–42"],"relatedIds":["israelitas","judios"],"historicalStatus":"contextual"},
+    {"id":"fariseos","title":"Fariseos","scopeId":"religious-movements","kind":"religious-movement","eraIds":["second-temple","apostolic"],"regionIds":["judea","galilee"],"summary":"Movimiento judío del período del Segundo Templo asociado con la interpretación de la Torá.","references":["Mateo 23; Hechos 23:6–9"],"historicalStatus":"partial-sources"},
+    {"id":"saduceos","title":"Saduceos","scopeId":"religious-movements","kind":"religious-movement","eraIds":["second-temple","apostolic"],"regionIds":["judea"],"summary":"Grupo judío del Segundo Templo relacionado en las fuentes con sectores sacerdotales.","references":["Marcos 12:18–27; Hechos 23:8"],"historicalStatus":"partial-sources"},
+    {"id":"escribas","title":"Escribas","scopeId":"roles-functions","kind":"textual-role","eraIds":["second-temple","apostolic"],"regionIds":["judea","galilee"],"summary":"Especialistas en escritura, documentos e interpretación de textos.","references":["Marcos 12:28–34; Lucas 20:46"],"historicalStatus":"textual"},
+    {"id":"zelotes","title":"Zelotes","scopeId":"religious-movements","kind":"political-religious-movement","eraIds":["apostolic"],"regionIds":["judea"],"summary":"Término relacionado con el celo religioso y, en ciertos contextos, con corrientes de resistencia frente a Roma.","references":["Lucas 6:15; Josefo, Guerra judía"],"historicalStatus":"debated"},
+    {"id":"esenios","title":"Esenios","scopeId":"religious-movements","kind":"religious-movement","eraIds":["second-temple"],"regionIds":["judea"],"summary":"Grupo judío descrito por autores antiguos; su identificación con Qumrán es una hipótesis influyente, no una certeza absoluta.","references":["Josefo, Guerra judía 2; manuscritos del mar Muerto"],"relatedIds":["qumran"],"historicalStatus":"debated"},
+    {"id":"qumran","title":"Comunidad de Qumrán","scopeId":"communities","kind":"archaeological-community","eraIds":["second-temple"],"regionIds":["judea"],"summary":"Comunidad o movimiento relacionado con los manuscritos hallados cerca de Qumrán; su identidad precisa continúa en debate.","references":["Regla de la Comunidad (1QS); manuscritos del mar Muerto"],"relatedIds":["esenios"],"historicalStatus":"debated"},
+    {"id":"herodianos","title":"Herodianos","scopeId":"religious-movements","kind":"political-group","eraIds":["second-temple","apostolic"],"regionIds":["judea","galilee"],"summary":"Grupo mencionado en los evangelios en relación con el entorno político de la dinastía herodiana.","references":["Marcos 3:6; 12:13"],"historicalStatus":"uncertain"},
+    {"id":"publicanos","title":"Publicanos","scopeId":"roles-functions","kind":"tax-collector","eraIds":["apostolic"],"regionIds":["judea","galilee"],"summary":"Recaudadores de impuestos y agentes de cobro en el contexto romano y sus administraciones locales.","references":["Lucas 19:1–10; Mateo 9:9–13"],"historicalStatus":"textual"}
   ]
 }
