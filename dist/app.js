@@ -609,10 +609,13 @@ function renderChapterButton(book, chapter, selectedChapter, variant = "chapter-
   return `<button class="${variant} ${done ? "is-complete" : ""} ${selected ? "is-current" : ""}" data-action="select-chapter" data-chapter="${chapter}" aria-label="Capítulo ${chapter}${done ? ", leído" : ", pendiente"}" ${selected ? 'aria-current="step"' : ""}><span class="chapter-number">${done ? icon("check", 15) : chapter}</span><span class="chapter-label">${label}</span><span class="chapter-status">${status}</span></button>`;
 }
 
+const CANONICAL_BOOK_ORDER = ["genesis","exodo","levitico","numeros","deuteronomio","josue","jueces","rut","1-samuel","2-samuel","1-reyes","2-reyes","1-cronicas","2-cronicas","esdras","nehemias","ester","job","salmos","proverbios","eclesiastes","cantares","isaias","jeremias","lamentaciones","ezequiel","daniel","oseas","joel","amos","abdias","jonas","miqueas","nahum","habacuc","sofonias","ageo","zacarias","malaquias","mateo","marcos","lucas","juan","hechos","romanos","1-corintios","2-corintios","galatas","efesios","filipenses","colosenses","1-tesalonicenses","2-tesalonicenses","1-timoteo","2-timoteo","tito","filemon","hebreos","santiago","1-pedro","2-pedro","1-juan","2-juan","3-juan","judas","apocalipsis"];
+const CANONICAL_BOOK_RANK = new Map(CANONICAL_BOOK_ORDER.map((id,index)=>[id,index]));
 function renderChapterSheet(book, selectedChapter) {
   const open = state.chapterSheetOpen;
   const activeId = state.chapterSheetBookId || book.id;
-  const groups = BOOKS.map(item => {
+  const canonicalBooks = [...BOOKS].sort((a,b)=>(CANONICAL_BOOK_RANK.get(a.id)??999)-(CANONICAL_BOOK_RANK.get(b.id)??999));
+  const groups = canonicalBooks.map((item,index) => {
     const expanded = item.id === activeId;
     const count = getCompletedChapters(item).length;
     const buttons = expanded ? Array.from({length:item.chapters}, (_,i) => {
@@ -621,12 +624,12 @@ function renderChapterSheet(book, selectedChapter) {
       const done = getCompletedChapters(item).includes(n);
       return `<button class="chapter-sheet-button ${current ? "is-current" : ""} ${done ? "is-complete" : ""}" data-action="select-chapter" data-book-id="${escapeHtml(item.id)}" data-chapter="${n}" aria-label="${escapeHtml(item.name)}, capítulo ${n}${done ? ", leído" : ""}" ${current ? 'aria-current="step"' : ""}>${done ? icon("check",16) : n}</button>`;
     }).join("") : "";
-    return `<section class="chapter-sheet-book ${expanded ? "is-expanded" : ""}" data-book-section="${escapeHtml(item.id)}">
+    return `${index === 39 ? '<p class="chapter-sheet-testament">Nuevo Testamento</p>' : ""}<section class="chapter-sheet-book ${expanded ? "is-expanded" : ""}" data-book-name="${escapeHtml(item.name.toLocaleLowerCase("es"))}" data-book-section="${escapeHtml(item.id)}">
       <button class="chapter-sheet-book-trigger" data-action="expand-chapter-book" data-book-id="${escapeHtml(item.id)}" aria-expanded="${expanded}" aria-controls="chapter-book-${escapeHtml(item.id)}"><span>${escapeHtml(item.name)}</span><span class="chapter-sheet-book-count">${count ? count + "/" + item.chapters : ""}</span></button>
       ${expanded ? `<div class="chapter-sheet-book-content" id="chapter-book-${escapeHtml(item.id)}"><div class="chapter-sheet-grid"><button class="chapter-sheet-button chapter-sheet-info" data-action="open-chapter-book-info" data-book-id="${escapeHtml(item.id)}" aria-label="Información sobre ${escapeHtml(item.name)}">${icon("info",21)}</button>${buttons}</div></div>` : ""}
     </section>`;
   }).join("");
-  return `<div class="chapter-sheet-layer" ${open ? "" : "hidden"}><button class="chapter-sheet-backdrop" data-action="close-chapter-sheet" aria-label="Cerrar libros"></button><aside id="chapter-sheet" class="chapter-sheet" role="dialog" aria-modal="true" aria-labelledby="chapter-sheet-title"><header class="chapter-sheet-header"><h2 id="chapter-sheet-title">Libros</h2><button class="icon-button" data-action="close-chapter-sheet" aria-label="Cerrar libros">${icon("x",21)}</button></header><div class="chapter-sheet-book-list">${groups}</div></aside></div>`;
+  return `<div class="chapter-sheet-layer" ${open ? "" : "hidden"}><button class="chapter-sheet-backdrop" data-action="close-chapter-sheet" aria-label="Cerrar libros"></button><aside id="chapter-sheet" class="chapter-sheet" role="dialog" aria-modal="true" aria-labelledby="chapter-sheet-title"><header class="chapter-sheet-header"><h2 id="chapter-sheet-title">Libros</h2><button class="icon-button" data-action="close-chapter-sheet" aria-label="Cerrar libros">${icon("x",21)}</button></header><div class="chapter-sheet-search-wrap"><input class="chapter-sheet-search" type="search" placeholder="Buscar libro..." aria-label="Buscar libro bíblico" autocomplete="off" spellcheck="false"></div><div class="chapter-sheet-book-list"><p class="chapter-sheet-testament">Antiguo Testamento</p>${groups.split('<section').join('<section')}</div></aside></div>`;
 }
 
 function renderBookInfoTrigger(book, variant = "chapter-info-button") {
@@ -1005,6 +1008,21 @@ function syncReaderFromLocation() {
   render();
 }
 
+document.addEventListener("input",event=>{
+  if(!event.target.matches(".chapter-sheet-search"))return;
+  const query=event.target.value.trim().toLocaleLowerCase("es").normalize("NFD").replace(/[\\u0300-\\u036f]/g,"");
+  const list=event.target.closest(".chapter-sheet")?.querySelector(".chapter-sheet-book-list");
+  if(!list)return;
+  list.querySelectorAll(".chapter-sheet-book").forEach(section=>{
+    const name=(section.dataset.bookName||"").normalize("NFD").replace(/[\\u0300-\\u036f]/g,"");
+    section.hidden=!name.includes(query);
+  });
+  list.querySelectorAll(".chapter-sheet-testament").forEach(heading=>{
+    let node=heading.nextElementSibling,visible=false;
+    while(node&&!node.classList.contains("chapter-sheet-testament")){if(!node.hidden)visible=true;node=node.nextElementSibling;}
+    heading.hidden=!visible;
+  });
+});
 window.addEventListener("popstate", syncReaderFromLocation);
 window.addEventListener("hashchange", syncReaderFromLocation);
 window.addEventListener("resize", () => { if (state.readerTranslationOpen) positionReaderTranslationPopover(); });
