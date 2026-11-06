@@ -26,5 +26,5 @@ test('Bible history route renders its data asynchronously and preserves theme',(
   assert.match(page,/renderCommunities/);
   assert.match(page,/renderCards/);
   assert.match(page,/href="\.\.\/world\/"/);
-  assert.match(historyScript,/kb-history-bible-entry/);
+  assert.doesNotMatch(historyScript,/kb-history-bible-entry/);
 });
