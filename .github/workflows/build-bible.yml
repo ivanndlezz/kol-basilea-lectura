@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'scripts/convert-usfm.mjs'
+      - 'scripts/build-bibles.mjs'
       - 'dist/data/bible-translations.js'
       - '.github/workflows/build-bible.yml'
   workflow_dispatch:
@@ -14,23 +15,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Download verified official open USFM
-        run: |
-          set -euo pipefail
-          mkdir -p /tmp/kol-basilea-bibles
-          for spec in 'rvr1909|spaRV1909' 'pdt|spapddpt' 'onbv|spaonbv' 'bes|spabes'; do
-            id="${spec%%|*}"
-            archive="${spec##*|}"
-            curl --fail --location --retry 3 --silent --show-error "https://ebible.org/Scriptures/${archive}_usfm.zip" -o "/tmp/kol-basilea-bibles/$id.zip"
-            mkdir -p "/tmp/kol-basilea-bibles/$id"
-            unzip -q "/tmp/kol-basilea-bibles/$id.zip" -d "/tmp/kol-basilea-bibles/$id"
-          done
       - name: Convert and validate 66 books per translation
-        run: |
-          set -euo pipefail
-          for id in rvr1909 pdt onbv bes; do
-            node scripts/convert-usfm.mjs "/tmp/kol-basilea-bibles/$id" "dist/data/$id" "$id" "eBible.org"
-          done
+        run: node scripts/build-bibles.mjs
       - name: Validate generated text and verse counts
         run: node scripts/validate-generated.mjs
       - name: Validate editorial data relationships

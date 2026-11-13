@@ -4,6 +4,8 @@
   "type": "module",
   "scripts": {
     "test": "node --import ./tests/register-fetch.mjs --test tests/*.test.mjs",
+    "build:bibles": "node scripts/build-bibles.mjs",
+    "preview": "npm run build:bibles && npm run check && python3 -m http.server 4173 --directory dist",
     "validate:data": "node scripts/validate-data-integrity.mjs",
     "build:history": "node scripts/build-history-snapshot.mjs",
     "build:history:routes": "node scripts/build-history-routes.mjs",

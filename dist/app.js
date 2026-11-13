@@ -7,11 +7,14 @@ const pericopeLoadRequested = new Set();
 import { BOOKS, CATEGORIES, TOTAL_CHAPTERS, getCatalogBook, getCategoryColor, narrativeBookTitle } from "./data/bible-catalog.js";
 import { JUAN_VIDEO, BOOK_INFO, getBookEditorial, getBookEditorialVideos } from "./data/editorial-content.js";
 import { completedChapters, isBookFinished, completedChapterCount, completedBookCount, nextReadingBook, nextReadingChapter, markChapterComplete } from "./data/reading-progress.js";
+import { createProgressExport, createProgressId, isProgressId, mergeProgressState, validateProgressExport } from "./data/progress-export.js";
 import { normalizeDirectoryUrl } from "./url-routing.js?v=url-routing-v1";
 
 normalizeDirectoryUrl();
 
 const STORAGE_KEY = "kol-basilea-lectura-v1";
+const EXPORT_FILE_PREFIX = "kol-basilea-progreso";
+const MAX_IMPORT_BYTES = 512 * 1024;
 const ICONS = {
   checkCircle: '<circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/>',
   smartphone: '<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>',
@@ -21,6 +24,7 @@ const ICONS = {
   sparkles: '<path d="M9.937 15.5A2 2 0 0 0 8.5 14.063L2 12l6.5-2.063A2 2 0 0 0 9.937 8.5L12 2l2.063 6.5A2 2 0 0 0 15.5 9.937L22 12l-6.5 2.063a2 2 0 0 0-1.437 1.437L12 22z"/><path d="M20 3v4"/><path d="M22 5h-4"/>',
   house: '<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>',
   route: '<path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/>',
+  map: '<path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/>',
   scrollText: '<path d="M8 21h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H8"/><path d="M6 17V5a2 2 0 0 0-4 0v12a4 4 0 0 0 4 4h2"/><path d="M10 8h8M10 12h8M10 16h5"/>',
   chart: '<path d="M3 3v18h18"/><path d="M8 16v-5"/><path d="M13 16V7"/><path d="M18 16V4"/>',
   users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
@@ -44,6 +48,7 @@ function icon(name, size = 18) {
 }
 
 const defaultState = () => ({
+  progressId: createProgressId(),
   onboardingComplete: false,
   onboardingStep: 1,
   goal: "none",
@@ -67,6 +72,7 @@ const defaultState = () => ({
   readerDisplayOpen: false,
   readerMoreOpen: false,
   readerTranslationOpen: false,
+  readerReadingConfirmOpen: false,
   chapterSheetOpen: false,
   chapterSheetBookId: null,
   readerFont: "serif",
@@ -93,16 +99,25 @@ function slugify(value) {
 
 function loadState() {
   try {
-    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    return { ...defaultState(), ...saved, readerTranslation: saved?.defaultPdtMigrationV1 ? (isBibleTranslationId(saved.readerTranslation) ? saved.readerTranslation : DEFAULT_TRANSLATION_ID) : (saved?.readerTranslation === "rvr1909" || !isBibleTranslationId(saved?.readerTranslation) ? DEFAULT_TRANSLATION_ID : saved.readerTranslation), defaultPdtMigrationV1: true, atlasMenuOpen: saved?.atlasMenuDefaultExpandedV1 ? (saved.atlasMenuOpen ?? true) : true, atlasMenuDefaultExpandedV1: true, toast: "", navigationOpen: false, menuOptionsOpen: false, appearancePopoverOpen: false, readerMoreOpen: false, readerTranslationOpen: false };
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+    const loaded = { ...defaultState(), ...saved, readerTranslation: saved?.defaultPdtMigrationV1 ? (isBibleTranslationId(saved.readerTranslation) ? saved.readerTranslation : DEFAULT_TRANSLATION_ID) : (saved?.readerTranslation === "rvr1909" || !isBibleTranslationId(saved?.readerTranslation) ? DEFAULT_TRANSLATION_ID : saved.readerTranslation), defaultPdtMigrationV1: true, atlasMenuOpen: saved?.atlasMenuDefaultExpandedV1 ? (saved.atlasMenuOpen ?? true) : true, atlasMenuDefaultExpandedV1: true, toast: "", navigationOpen: false, menuOptionsOpen: false, appearancePopoverOpen: false, readerMoreOpen: false, readerTranslationOpen: false, readerReadingConfirmOpen: false };
+    if (!isProgressId(saved?.progressId)) {
+      loaded.progressId = createProgressId();
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(persistedState(loaded)));
+    }
+    return loaded;
   } catch {
     return defaultState();
   }
 }
 
+function persistedState(source) {
+  const { toast, navigationOpen, menuOptionsOpen, appearancePopoverOpen, readerMoreOpen, readerTranslationOpen, readerReadingConfirmOpen, activeMilestone, ...persisted } = source;
+  return persisted;
+}
+
 function saveState() {
-  const { toast, navigationOpen, menuOptionsOpen, appearancePopoverOpen, readerMoreOpen, readerTranslationOpen, activeMilestone, ...persisted } = state;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(persisted));
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(persistedState(state)));
 }
 
 function readReaderLocation() {
@@ -179,7 +194,12 @@ function updateReaderReadingProgress() {
   if (label) label.textContent = `${progress}% leído`;
   if (fill) fill.style.width = `${progress}%`;
   if (track) track.setAttribute("aria-valuenow", String(progress));
-  if (completeButton && !completeButton.dataset.completed) completeButton.disabled = progress < 100;
+  if (completeButton && !completeButton.dataset.completed) {
+    const muted = progress < 100;
+    completeButton.classList.toggle("reader-action-muted", muted);
+    completeButton.dataset.action = muted ? "open-reading-confirm" : "complete-chapter";
+    completeButton.dataset.readingBlocked = String(muted);
+  }
 }
 
 function scheduleReaderReadingProgress() {
@@ -249,6 +269,26 @@ function renderPendingVideoCard() {
   return `<div class="video-card video-card-pending"><div class="video-placeholder"><div class="video-poster-content"><span class="video-overline">Contexto editorial</span>${icon("sparkles", 22)}<small>Video de este libro · próximamente</small></div></div></div>`;
 }
 
+function renderReadingConfirmSheet() {
+  return `<div class="reading-confirm-layer" role="presentation"><button class="reading-confirm-backdrop" data-action="reading-confirm-dismiss" aria-label="Cerrar"></button><section class="reading-confirm-sheet" role="dialog" aria-modal="true" aria-labelledby="reading-confirm-title"><button class="reading-confirm-close" data-action="reading-confirm-dismiss" aria-label="Cerrar">${icon("x", 20)}</button><h2 id="reading-confirm-title">¿Ya has terminado de leer el texto?</h2><div class="reading-confirm-actions"><button class="button button-primary" data-action="reading-confirm-end">Sí. Deslizar al final.</button><button class="button button-secondary" data-action="reading-confirm-start">Aún no. Comenzar a leer.</button></div><button class="reading-confirm-cancel" data-action="reading-confirm-dismiss">Cancelar</button></section></div>`;
+}
+
+function closeReadingConfirm() {
+  state.readerReadingConfirmOpen = false;
+  render();
+  document.querySelector("#reader-complete-action")?.focus({ preventScroll: true });
+}
+
+function chooseReadingConfirm(destination) {
+  state.readerReadingConfirmOpen = false;
+  render();
+  window.requestAnimationFrame(() => {
+    const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth";
+    if (destination === "end") window.scrollTo({ top: document.documentElement.scrollHeight, behavior });
+    else document.querySelector("[data-reading-content]")?.scrollIntoView({ behavior, block: "start" });
+  });
+}
+
 function progressBar(value, total, label = "Progreso") {
   const amount = percent(value, total);
   return `<div class="progress-label"><span>${label}</span><strong>${value} de ${total}</strong></div><div class="progress-track" role="progressbar" aria-label="${label}" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${value}"><div class="progress-fill" style="width:${amount}%"></div></div>`;
@@ -259,6 +299,7 @@ function render() {
   document.body.dataset.readerTheme = state.view === "reader" ? state.readerTheme : "light";
   document.body.dataset.appAppearance = state.appAppearance || "system";
   root.innerHTML = state.onboardingComplete || state.view === "reader" ? renderApp() : renderOnboarding();
+  if (state.readerReadingConfirmOpen && state.view === "reader") root.insertAdjacentHTML("beforeend", renderReadingConfirmSheet());
   document.body.classList.toggle("kb-navigation-open", Boolean(state.navigationOpen));
   bindEvents();
   setupReaderSectionNav();
@@ -386,7 +427,7 @@ function renderNavigationSheet() {
     <button class="kb-navigation-backdrop" data-action="close-navigation" aria-label="Cerrar menú"></button>
     <aside class="kb-navigation-sheet" id="kb-navigation-sheet" role="dialog" aria-modal="true" aria-labelledby="kb-navigation-title">
       <div class="kb-navigation-head"><div><p class="eyebrow">Kol Basilea</p><h2 id="kb-navigation-title">Explorar</h2></div><button class="kb-navigation-close" data-action="close-navigation" aria-label="Cerrar menú">${icon("x",22)}</button></div>
-      <nav class="kb-navigation-links" aria-label="Secciones del proyecto">${items.map(([view,symbol,label,detail]) => `<button class="kb-navigation-link ${state.view === view ? "is-current" : ""}" data-action="navigation-go" data-view="${view}" ${state.view === view ? 'aria-current="page"' : ""}><span class="kb-navigation-link-icon">${icon(symbol,20)}</span><span class="kb-navigation-link-copy"><strong>${label}</strong><small>${detail}</small></span>${icon("chevronRight",17)}</button>`).join("")}</nav><section class="kb-atlas-menu" style="display:block;width:100%;min-height:92px;flex:none;margin:14px 0 18px;border:1px solid #bcd9c8;border-radius:20px;background:#e4f1e8;overflow:hidden;"><button type="button" class="kb-atlas-menu-trigger" style="display:flex!important;visibility:visible!important;opacity:1!important;align-items:center!important;justify-content:flex-start!important;gap:14px!important;width:100%!important;height:auto!important;min-height:92px!important;padding:16px!important;background:transparent!important;border:0!important;border-radius:18px!important;color:#214c37!important;text-align:left!important;white-space:normal!important;font-family:system-ui,sans-serif!important;line-height:normal!important;" data-action="toggle-atlas-menu" aria-expanded="${state.atlasMenuOpen}" aria-controls="kb-atlas-menu-panel"><span class="kb-atlas-menu-symbol" style="display:grid!important;place-items:center!important;flex:0 0 52px!important;width:52px!important;height:52px!important;border-radius:15px!important;background:#fff!important;color:#287452!important;">${icon("bookOpen",23)}</span><span class="kb-atlas-menu-title" style="display:flex!important;flex:1 1 auto!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;min-width:0!important;visibility:visible!important;opacity:1!important;gap:5px!important;"><strong style="display:block!important;visibility:visible!important;opacity:1!important;color:#214c37!important;font-size:18px!important;font-weight:800!important;line-height:1.2!important;">Atlas bíblico</strong><small style="display:block!important;visibility:visible!important;opacity:1!important;color:#61796a!important;font-size:12px!important;line-height:1.35!important;font-weight:400!important;">Explora el mundo de las Escrituras</small></span><span class="kb-atlas-menu-arrow" style="display:grid!important;place-items:center!important;flex:0 0 22px!important;color:#547563!important;">${icon("chevronDown",19)}</span></button><div id="kb-atlas-menu-panel" class="kb-atlas-menu-body" ${state.atlasMenuOpen ? "" : "hidden"}><p class="kb-atlas-menu-label">La Escritura</p><button type="button" data-action="navigation-go" data-view="authors">Autores ${icon("chevronRight",15)}</button><button type="button" data-action="navigation-go" data-view="compilation">Recopilación de textos ${icon("chevronRight",15)}</button><p class="kb-atlas-menu-label">Historia</p><a href="./history/">Eras y épocas ${icon("chevronRight",15)}</a><a href="./history/world/">Pueblos y culturas ${icon("chevronRight",15)}</a><span class="kb-atlas-menu-disabled" aria-disabled="true">Pesos y medidas <small>Próximamente</small></span><span class="kb-atlas-menu-disabled" aria-disabled="true">Mapas <small>Próximamente</small></span></div></section><a class="kb-navigation-project" href="https://ivanndlezz.github.io/kol-basilea/" target="_blank" rel="noopener noreferrer">${icon("info",19)}<span>Conoce Kol Basilea</span>${icon("externalLink",16)}</a>
+      <nav class="kb-navigation-links" aria-label="Secciones del proyecto">${items.map(([view,symbol,label,detail]) => `<button class="kb-navigation-link ${state.view === view ? "is-current" : ""}" data-action="navigation-go" data-view="${view}" ${state.view === view ? 'aria-current="page"' : ""}><span class="kb-navigation-link-icon">${icon(symbol,20)}</span><span class="kb-navigation-link-copy"><strong>${label}</strong><small>${detail}</small></span>${icon("chevronRight",17)}</button>`).join("")}</nav><section class="kb-atlas-menu" style="display:block;width:100%;min-height:92px;flex:none;margin:14px 0 18px;border:1px solid #bcd9c8;border-radius:20px;background:#e4f1e8;overflow:hidden;"><button type="button" class="kb-atlas-menu-trigger" style="display:flex!important;visibility:visible!important;opacity:1!important;align-items:center!important;justify-content:flex-start!important;gap:14px!important;width:100%!important;height:auto!important;min-height:92px!important;padding:16px!important;background:transparent!important;border:0!important;border-radius:18px!important;color:#214c37!important;text-align:left!important;white-space:normal!important;font-family:system-ui,sans-serif!important;line-height:normal!important;" data-action="toggle-atlas-menu" aria-expanded="${state.atlasMenuOpen}" aria-controls="kb-atlas-menu-panel"><span class="kb-atlas-menu-symbol" style="display:grid!important;place-items:center!important;flex:0 0 52px!important;width:52px!important;height:52px!important;border-radius:15px!important;background:#fff!important;color:#287452!important;">${icon("bookOpen",23)}</span><span class="kb-atlas-menu-title" style="display:flex!important;flex:1 1 auto!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;min-width:0!important;visibility:visible!important;opacity:1!important;gap:5px!important;"><strong style="display:block!important;visibility:visible!important;opacity:1!important;color:#214c37!important;font-size:18px!important;font-weight:800!important;line-height:1.2!important;">Atlas bíblico</strong><small style="display:block!important;visibility:visible!important;opacity:1!important;color:#61796a!important;font-size:12px!important;line-height:1.35!important;font-weight:400!important;">Explora el mundo de las Escrituras</small></span><span class="kb-atlas-menu-arrow" style="display:grid!important;place-items:center!important;flex:0 0 22px!important;color:#547563!important;">${icon("chevronDown",19)}</span></button><div id="kb-atlas-menu-panel" class="kb-atlas-menu-body" ${state.atlasMenuOpen ? "" : "hidden"}><p class="kb-atlas-menu-label">La Escritura</p><button type="button" data-action="navigation-go" data-view="authors">Autores ${icon("chevronRight",15)}</button><button type="button" data-action="navigation-go" data-view="compilation">Recopilación de textos ${icon("chevronRight",15)}</button><p class="kb-atlas-menu-label">Historia</p><a href="./history/">Eras y épocas ${icon("chevronRight",15)}</a><a href="./history/world/">Pueblos y culturas ${icon("chevronRight",15)}</a><button type="button" data-action="navigation-go" data-view="maps">Mapas bíblicos ${icon("chevronRight",15)}</button><span class="kb-atlas-menu-disabled" aria-disabled="true">Pesos y medidas <small>Próximamente</small></span></div></section><a class="kb-navigation-project" href="https://ivanndlezz.github.io/kol-basilea/" target="_blank" rel="noopener noreferrer">${icon("info",19)}<span>Conoce Kol Basilea</span>${icon("externalLink",16)}</a>
       <div class="kb-navigation-footer"><div class="kb-navigation-utilities"><span>Opciones</span><div class="kb-navigation-options-anchor"><button type="button" class="kb-navigation-options-trigger" data-action="toggle-menu-options" aria-label="Opciones del menú" aria-expanded="${state.menuOptionsOpen}" aria-controls="kb-navigation-options-popover">${icon("settings",19)}</button><div id="kb-navigation-options-popover" class="kb-navigation-options-popover" ${state.menuOptionsOpen ? "" : "hidden"}><button type="button" data-action="restart-onboarding">${icon("bookOpen",17)}<span>Volver a ver la introducción</span></button></div></div></div><div class="kb-navigation-appearance"><span class="kb-navigation-appearance-label">Apariencia</span><div class="kb-navigation-popover-anchor"><button class="kb-appearance-toggle" data-action="toggle-appearance-popover" aria-expanded="${state.appearancePopoverOpen}" aria-controls="kb-appearance-popover" aria-label="Elegir apariencia: ${appearance.find(([value]) => value === state.appAppearance)?.[1] || "Automático"}">${icon(selectedIcon,19)}<span>${appearance.find(([value]) => value === state.appAppearance)?.[1] || "Automático"}</span>${icon("chevronDown",15)}</button>
       <div id="kb-appearance-popover" class="kb-appearance-popover" role="group" aria-label="Opciones de apariencia" ${state.appearancePopoverOpen ? "" : "hidden"}>${appearance.map(([value,label,symbol]) => `<button class="kb-appearance-choice ${state.appAppearance === value ? "is-selected" : ""}" data-action="set-appearance" data-appearance="${value}" aria-pressed="${state.appAppearance === value}">${icon(symbol,19)}<span>${label}</span>${state.appAppearance === value ? icon("check",17) : ""}</button>`).join("")}</div></div></div><a class="kb-navigation-external" href="https://klef.agency/" target="_blank" rel="noopener noreferrer" style="display:none">Más</a><p class="kb-navigation-note">Tu recorrido por las Escrituras, a tu ritmo.</p></div>
     </aside>
@@ -394,7 +435,7 @@ function renderNavigationSheet() {
 }
 
 function renderBreadcrumb(view) {
-  const labels = { route: "Ruta", library: "Biblioteca", progress: "Progreso", more: "Configuración", authors: "Autores bíblicos", compilation: "Recopilación" };
+  const labels = { route: "Ruta", library: "Biblioteca", progress: "Progreso", more: "Configuración", authors: "Autores bíblicos", compilation: "Recopilación", maps: "Mapas bíblicos" };
   return `<nav class="breadcrumbs" aria-label="Ruta de navegación"><button class="breadcrumb-link" data-action="navigate" data-view="home">${icon("house", 15)}<span>Hoy</span></button><span class="breadcrumb-separator" aria-hidden="true">${icon("chevronRight", 15)}</span><span class="breadcrumb-current" aria-current="page">${labels[view] || "Hoy"}</span></nav>`;
 }
 
@@ -403,9 +444,20 @@ function renderView() {
   if (state.view === "library") return renderLibrary();
   if (state.view === "authors") return renderAuthors();
   if (state.view === "compilation") return renderCompilation();
+  if (state.view === "maps") return renderMaps();
   if (state.view === "progress") return renderProgress();
   if (state.view === "more") return renderMore();
   return renderHome();
+}
+
+function renderMaps() {
+  return `<main class="screen kb-maps-screen">
+    <header class="kb-maps-intro"><p class="eyebrow">Atlas bíblico</p><h1>La historia también se lee en el mapa.</h1><p>Explora rutas, lugares y acontecimientos bíblicos con mapas interactivos gratuitos. Cada vista abre el pasaje relacionado para que el contexto no se quede fuera de la lectura.</p></header>
+    <section class="kb-map-embed-card" aria-labelledby="kb-map-genesis-title"><div class="kb-map-card-head"><div><p class="eyebrow">Génesis 12:1</p><h2 id="kb-map-genesis-title">La salida de Abram</h2></div><a href="https://bible-atlas.com/embed/verse/genesis/12/1" target="_blank" rel="noopener noreferrer">Abrir aparte ${icon("externalLink",15)}</a></div><div class="kb-map-frame-wrap"><iframe title="Mapa interactivo de Génesis 12:1" src="https://bible-atlas.com/embed/verse/genesis/12/1?height=520" loading="lazy" allow="fullscreen"></iframe></div><p class="kb-map-credit">Mapa interactivo de <a href="https://bible-atlas.com/" target="_blank" rel="noopener noreferrer">Bible Atlas</a>. Su documentación permite enlazar e incrustar sus visualizaciones gratuitamente.</p></section>
+    <section class="kb-map-embed-card" aria-labelledby="kb-map-paul-title"><div class="kb-map-card-head"><div><p class="eyebrow">Hechos 13:4</p><h2 id="kb-map-paul-title">El primer viaje de Pablo</h2></div><a href="https://bible-atlas.com/embed/verse/acts/13/4" target="_blank" rel="noopener noreferrer">Abrir aparte ${icon("externalLink",15)}</a></div><div class="kb-map-frame-wrap"><iframe title="Mapa interactivo de Hechos 13:4" src="https://bible-atlas.com/embed/verse/acts/13/4?height=520" loading="lazy" allow="fullscreen"></iframe></div><p class="kb-map-credit">Una vista para seguir el movimiento de la iglesia primitiva desde el texto.</p></section>
+    <section class="kb-map-resources" aria-labelledby="kb-map-resources-title"><div><p class="eyebrow">Para seguir explorando</p><h2 id="kb-map-resources-title">Mapas abiertos y gratuitos</h2></div><div class="kb-map-resource-grid"><a class="kb-map-resource" href="https://scriptoria.digital/en/atlas" target="_blank" rel="noopener noreferrer"><span class="kb-map-resource-icon">✦</span><strong>Scriptoria</strong><small>Atlas con lugares bíblicos y referencias. Datos con atribución CC BY 4.0.</small><span>Ver atlas ${icon("externalLink",14)}</span></a><a class="kb-map-resource" href="https://commons.wikimedia.org/wiki/Category:Biblical_maps" target="_blank" rel="noopener noreferrer"><span class="kb-map-resource-icon">◎</span><strong>Wikimedia Commons</strong><small>Colección de mapas bíblicos; revisa la licencia de cada archivo antes de reutilizarlo.</small><span>Ver colección ${icon("externalLink",14)}</span></a><a class="kb-map-resource" href="https://atalayas21.com/en/maps/" target="_blank" rel="noopener noreferrer"><span class="kb-map-resource-icon">↗</span><strong>Atalayas21</strong><small>Mapas gratuitos de Israel, el Éxodo y los viajes de Pablo para estudio.</small><span>Ver mapas ${icon("externalLink",14)}</span></a></div></section>
+    <aside class="kb-map-note"><strong>Una nota sobre las licencias</strong><p>Los mapas incrustados permanecen alojados en sus sitios de origen; así conservamos la atribución y las condiciones de uso de cada recurso.</p></aside>
+  </main>`;
 }
 
 function categoryStyle(category) { return `--category-color:${getCategoryColor(category)};`; }
@@ -598,7 +650,7 @@ function renderProgress() {
 }
 
 function renderMore() {
-  return `<main class="screen settings-screen"><h1 class="settings-title">Configuración</h1><div class="more-list settings-list"><div class="more-row"><span><strong>Meta de lectura</strong><span>${state.goal === "none" ? "Sin fecha" : `${state.goal} días`}</span></span><button class="button button-secondary" data-action="change-goal">Cambiar</button></div><section class="appearance-setting" aria-labelledby="appearance-title"><h2 id="appearance-title">Apariencia</h2><div class="appearance-options" role="radiogroup" aria-label="Apariencia de la aplicación">${[["system","Automático","Sigue tu iPhone","smartphone"],["light","Claro","Siempre claro","sun"],["dark","Oscuro","Siempre oscuro","moon"]].map(([value,label,description,symbol]) => `<button type="button" class="appearance-option ${state.appAppearance === value ? "is-selected" : ""}" role="radio" aria-checked="${state.appAppearance === value}" data-action="set-appearance" data-appearance="${value}"><span class="appearance-option-icon" aria-hidden="true">${icon(symbol,20)}</span><span class="appearance-option-text"><strong>${label}</strong><small>${description}</small></span><span class="appearance-option-check" aria-hidden="true">${state.appAppearance === value ? icon("check",18) : ""}</span></button>`).join("")}</div></section><div class="more-row"><span><strong>Progreso local</strong><span>Guardado en este dispositivo</span></span><span aria-label="Activado">${icon("check", 17)}</span></div></div></main>`;
+  return `<main class="screen settings-screen"><h1 class="settings-title">Configuración</h1><div class="more-list settings-list"><div class="more-row"><span><strong>Meta de lectura</strong><span>${state.goal === "none" ? "Sin fecha" : `${state.goal} días`}</span></span><button class="button button-secondary" data-action="change-goal">Cambiar</button></div><section class="appearance-setting" aria-labelledby="appearance-title"><h2 id="appearance-title">Apariencia</h2><div class="appearance-options" role="radiogroup" aria-label="Apariencia de la aplicación">${[["system","Automático","Sigue tu iPhone","smartphone"],["light","Claro","Siempre claro","sun"],["dark","Oscuro","Siempre oscuro","moon"]].map(([value,label,description,symbol]) => `<button type="button" class="appearance-option ${state.appAppearance === value ? "is-selected" : ""}" role="radio" aria-checked="${state.appAppearance === value}" data-action="set-appearance" data-appearance="${value}"><span class="appearance-option-icon" aria-hidden="true">${icon(symbol,20)}</span><span class="appearance-option-text"><strong>${label}</strong><small>${description}</small></span><span class="appearance-option-check" aria-hidden="true">${state.appAppearance === value ? icon("check",18) : ""}</span></button>`).join("")}</div></section><section class="appearance-setting progress-export-setting" aria-labelledby="progress-export-title"><h2 id="progress-export-title">Transferir progreso</h2><p>Descarga una copia de tu avance para importarlo después en otra plataforma. La importación requiere tu confirmación y combina capítulos sin borrar el avance local.</p><div class="progress-transfer-actions"><button class="button button-secondary" data-action="export-progress">Exportar progreso</button><button class="button button-secondary" data-action="import-progress">Importar progreso</button></div><input id="progress-import-file" type="file" accept=".json,application/json" hidden data-progress-import-file></section><div class="more-row"><span><strong>Progreso local</strong><span>Guardado en este dispositivo</span></span><span aria-label="Activado">${icon("check", 17)}</span></div></div></main>`;
 }
 
 function renderChapterButton(book, chapter, selectedChapter, variant = "chapter-row") {
@@ -782,7 +834,9 @@ function renderReader() {
   const contextVideos = getBookVideosForChapter(book, chapter);
   const readerBody = `${renderReaderContext(book, contextVideos)}${renderChapterList(book, chapter)}${state.readerBookInfoOpen ? renderBookInfoPage(book) : renderReadingCopy(book, chapter) + (chapter === book.chapters ? renderBookTextCredits(book) : "")}`;
   const readProgress = Number.isFinite(state.readerReadingProgress) ? state.readerReadingProgress : 0;
-  const readerFooter = state.readerBookInfoOpen ? "" : `<footer class="reader-footer"><div class="reader-reading-meter" data-reading-meter><div class="reader-reading-meter-copy"><span data-reading-progress-label>${readProgress}% leído</span><span>Capítulo ${chapter}</span></div><div class="reader-reading-track" role="progressbar" aria-label="Progreso de lectura del capítulo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${readProgress}"><div class="reader-reading-fill" data-reading-progress-fill style="width:${readProgress}%"></div></div></div><button class="button button-primary button-wide ${completed && chapter < book.chapters ? "reader-action-continue" : chapter === book.chapters ? "reader-action-book-finish" : "reader-action-complete"}" data-action="${completed && chapter < book.chapters ? "continue-chapter" : "complete-chapter"}" data-complete-chapter ${completed ? 'data-completed="true"' : ""} ${!completed && readProgress < 100 ? "disabled" : ""}>${completed && chapter < book.chapters ? `Continuar al capítulo ${chapter + 1} ${icon("chevronRight", 17)}` : chapter === book.chapters ? `Completar libro ${icon("check", 17)}` : "Marcar como leído"}</button><p class="reader-open-versions-notice">En Kol Basilea usamos versiones bíblicas de uso libre. Para leer otras versiones comerciales, recomendamos utilizar tu aplicación de la Biblia o consultar tu Biblia en casa.</p></footer>`;
+  const mutedAction = !completed && readProgress < 100;
+  const readingAction = completed && chapter < book.chapters ? "continue-chapter" : mutedAction ? "open-reading-confirm" : "complete-chapter";
+  const readerFooter = state.readerBookInfoOpen ? "" : `<footer class="reader-footer"><div class="reader-reading-meter" data-reading-meter><div class="reader-reading-meter-copy"><span data-reading-progress-label>${readProgress}% leído</span><span>Capítulo ${chapter}</span></div><div class="reader-reading-track" role="progressbar" aria-label="Progreso de lectura del capítulo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${readProgress}"><div class="reader-reading-fill" data-reading-progress-fill style="width:${readProgress}%"></div></div></div><button id="reader-complete-action" class="button button-primary button-wide ${completed && chapter < book.chapters ? "reader-action-continue" : chapter === book.chapters ? "reader-action-book-finish" : "reader-action-complete"} ${mutedAction ? "reader-action-muted" : ""}" data-action="${readingAction}" data-complete-chapter ${completed ? 'data-completed="true"' : ""} ${mutedAction ? 'data-reading-blocked="true"' : ""}>${completed && chapter < book.chapters ? `Continuar al capítulo ${chapter + 1} ${icon("chevronRight", 17)}` : chapter === book.chapters ? `Completar libro ${icon("check", 17)}` : "Marcar como leído"}</button><p class="reader-open-versions-notice">En Kol Basilea usamos versiones bíblicas de uso libre. Para leer otras versiones comerciales, recomendamos utilizar tu aplicación de la Biblia o consultar tu Biblia en casa.</p></footer>`;
   return `<main class="reader-page" style="${categoryStyle(book.category)}"><header class="reader-topbar kb-reader-compact-header"><div class="kb-reader-toolbar"><button class="reader-back kb-reader-back" data-action="back-context" aria-label="Volver a ${origin}">${icon("arrowLeft", 21)}</button><div class="kb-reader-toolbar-right"><button class="reader-format-button kb-reader-format" data-action="toggle-reader-format" aria-label="Formato de lectura" aria-expanded="${state.readerDisplayOpen}" aria-controls="reader-display-menu">${icon("sliders", 19)}</button><div class="reader-more-anchor"><button class="icon-button reader-more-trigger" data-action="toggle-reader-more" aria-label="Más opciones del capítulo" aria-haspopup="menu" aria-expanded="${Boolean(state.readerMoreOpen)}" aria-controls="reader-more-menu">${icon("ellipsis", 20)}</button>${state.readerMoreOpen ? `<div class="reader-more-popover" id="reader-more-menu" role="menu">${completed ? `<button role="menuitem" data-action="mark-chapter-unread">${icon("bookOpen", 17)}<span>Marcar como no leído</span></button>` : `<p>Este capítulo aún no está marcado como leído.</p>`}</div>` : ""}</div></div></div><div class="kb-reader-selector-row">${renderReaderSelection(book, chapter)}</div></header>${renderReaderDisplayMenu()}<div class="reader-progress"><div class="reader-progress-copy"><span>Progreso del libro</span><strong>${bookProgress} de ${book.chapters} capítulos</strong></div><div class="progress-track" role="progressbar" aria-label="Progreso del libro" aria-valuemin="0" aria-valuemax="${book.chapters}" aria-valuenow="${bookProgress}"><div class="progress-fill" style="width:${percent(bookProgress, book.chapters)}%"></div></div></div><article class="reader-content"><div class="reader-heading"><div class="reader-meta-pill"><span>Capítulo ${chapter} de ${book.chapters}</span></div><h1>${escapeHtml(book.name)}</h1></div>${readerBody}</article>${readerFooter}</main>`;
 }
 
@@ -851,6 +905,12 @@ function continueChapter() {
 function completeChapter() {
   const book = getBook(state.readerBookId);
   const chapter = readerChapter(book);
+  if (!getCompletedChapters(book).includes(chapter) && state.readerReadingProgress < 100) {
+    state.readerReadingConfirmOpen = true;
+    render();
+    document.querySelector(".reading-confirm-close")?.focus({preventScroll:true});
+    return;
+  }
   const wasComplete = isBookComplete(book);
   if (!getCompletedChapters(book).includes(chapter)) {
     const updatedProgress = markChapterComplete(state, book, chapter);
@@ -892,6 +952,75 @@ function showToast(message) {
   toastTimer = setTimeout(() => { state.toast = ""; render(); }, 3500);
 }
 
+function downloadProgressExport() {
+  const exportData = createProgressExport(state, { books: BOOKS, origin: window.location.origin });
+  const json = JSON.stringify(exportData, null, 2);
+  const blob = new Blob([json], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  const date = new Date().toISOString().slice(0, 10);
+  anchor.href = url;
+  anchor.download = `${EXPORT_FILE_PREFIX}-${date}.json`;
+  document.body.append(anchor);
+  anchor.click();
+  anchor.remove();
+  window.setTimeout(() => URL.revokeObjectURL(url), 0);
+  showToast("Progreso exportado.");
+  render();
+}
+
+function completedChapterCountFromProgress(progress) {
+  return Object.values(progress?.completedChapters || {}).reduce((total, chapters) => total + (Array.isArray(chapters) ? chapters.length : 0), 0);
+}
+
+function newImportedChapterCount(current, imported) {
+  return Object.entries(imported.completedChapters || {}).reduce((total, [bookId, chapters]) => {
+    const currentChapters = new Set(current.completedChapters?.[bookId] || []);
+    return total + chapters.filter(chapter => !currentChapters.has(chapter)).length;
+  }, 0);
+}
+
+async function importProgressFile(file) {
+  if (!file) return;
+  if (file.size > MAX_IMPORT_BYTES) {
+    showToast("El archivo de progreso es demasiado grande.");
+    render();
+    return;
+  }
+
+  try {
+    const input = JSON.parse(await file.text());
+    const validation = validateProgressExport(input, { books: BOOKS });
+    if (!validation.ok) {
+      showToast(validation.error);
+      render();
+      return;
+    }
+
+    const imported = validation.value;
+    const newChapters = newImportedChapterCount(state, imported);
+    const importedChapters = completedChapterCountFromProgress(imported);
+    const confirmation = newChapters
+      ? `Se fusionarán ${newChapters} capítulo${newChapters === 1 ? "" : "s"} nuevo${newChapters === 1 ? "" : "s"} de ${importedChapters} exportado${importedChapters === 1 ? "" : "s"}. ¿Continuar?`
+      : "Este progreso ya está fusionado. ¿Volver a aplicar sus preferencias?";
+    if (!window.confirm(confirmation)) return;
+
+    state = mergeProgressState(state, imported, { books: BOOKS });
+    state.navigationOpen = false;
+    state.menuOptionsOpen = false;
+    state.appearancePopoverOpen = false;
+    state.readerMoreOpen = false;
+    state.readerTranslationOpen = false;
+    state.readerReadingProgress = 0;
+    saveState();
+    showToast(newChapters ? `Se fusionaron ${newChapters} capítulo${newChapters === 1 ? "" : "s"}.` : "El progreso ya estaba fusionado.");
+    render();
+  } catch {
+    showToast("No pudimos leer ese archivo de progreso.");
+    render();
+  }
+}
+
 function changeReaderTranslation(value) {
   state.readerTranslation = isBibleTranslationId(value) ? value : DEFAULT_TRANSLATION_ID;
   state.readerTranslationOpen = false;
@@ -924,6 +1053,8 @@ function bindEvents() {
       if (action === "open-more") { state.view = "more"; saveState(); render(); }
       if (action === "show-route") { state.view = "route"; saveState(); render(); }
       if (action === "show-progress") { state.view = "progress"; saveState(); render(); }
+      if (action === "export-progress") { downloadProgressExport(); }
+      if (action === "import-progress") { document.querySelector("[data-progress-import-file]")?.click(); }
       if (action === "open-compiler") { state.selectedCompilerId = element.dataset.compilerId; saveState(); render(); window.scrollTo({top:0,behavior:"instant"}); }
       if (action === "compilation-back") { state.selectedCompilerId = null; saveState(); render(); window.scrollTo({top:0,behavior:"instant"}); }
       if (action === "filter-authors") { state.authorsFilter = element.dataset.filter; state.selectedAuthorId = null; saveState(); render(); }
@@ -940,6 +1071,10 @@ function bindEvents() {
       if (action === "open-chapter-book-info") { state.readerBookId = element.dataset.bookId; state.readerChapter = 1; state.readerBookInfoOpen = true; state.chapterSheetOpen = false; saveState(); render(); }
       if (action === "close-chapter-sheet") { state.chapterSheetOpen = false; saveState(); render(); }
       if (action === "toggle-reader-format") { state.readerDisplayOpen = !state.readerDisplayOpen; saveState(); render(); }
+      if (action === "open-reading-confirm") { state.readerReadingConfirmOpen = true; render(); document.querySelector(".reading-confirm-close")?.focus({preventScroll:true}); }
+      if (action === "reading-confirm-dismiss") { closeReadingConfirm(); }
+      if (action === "reading-confirm-end") { chooseReadingConfirm("end"); }
+      if (action === "reading-confirm-start") { chooseReadingConfirm("start"); }
       if (action === "toggle-reader-context") { state.readerContextOpen = !state.readerContextOpen; saveState(); render(); }
       if (action === "set-reader-font") { state.readerFont = element.dataset.font === "sans" ? "sans" : "serif"; state.readerDisplayOpen = false; saveState(); render(); }
       if (action === "set-reader-theme") { state.readerTheme = ["light", "sepia", "dark"].includes(element.dataset.theme) ? element.dataset.theme : "light"; state.readerDisplayOpen = false; saveState(); render(); }
@@ -975,6 +1110,7 @@ function bindEvents() {
 }
 
 document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && state.readerReadingConfirmOpen) { event.preventDefault(); closeReadingConfirm(); return; }
   if (event.key === "Escape" && state.readerTranslationOpen) { event.preventDefault(); state.readerTranslationOpen = false; render(); document.querySelector(".reader-translation-trigger")?.focus({preventScroll:true}); return; }
   if (!state.navigationOpen) return;
   if (event.key === "Escape") { event.preventDefault(); state.navigationOpen = false; state.appearancePopoverOpen = false; render(); document.querySelector(".kb-menu-trigger")?.focus({preventScroll:true}); return; }
@@ -1026,6 +1162,12 @@ document.addEventListener("input",event=>{
     while(node&&!node.classList.contains("chapter-sheet-testament")){if(!node.hidden)visible=true;node=node.nextElementSibling;}
     heading.hidden=!visible;
   });
+});
+document.addEventListener("change", event => {
+  if (!event.target.matches("[data-progress-import-file]")) return;
+  const [file] = event.target.files || [];
+  event.target.value = "";
+  importProgressFile(file);
 });
 window.addEventListener("popstate", syncReaderFromLocation);
 window.addEventListener("hashchange", syncReaderFromLocation);
